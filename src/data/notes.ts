@@ -144,3 +144,78 @@ export const retrieveNoteHTML = (noteFilename: string): string => {
   console.log("Retrieved note:", filename, "from section:", noteInfo.section);
   return noteInfo.content;
 };
+
+// Search result interface
+export interface SearchResult {
+  filename: string;
+  title: string;
+  section: string;
+  sectionIcon: string;
+  matches: SearchMatch[];
+  totalMatches: number;
+}
+
+export interface SearchMatch {
+  context: string;
+  lineNumber: number;
+  highlightedText: string;
+}
+
+// Search through all notes
+export const searchNotes = (query: string): SearchResult[] => {
+  if (!query.trim()) return [];
+
+  const searchQuery = query.toLowerCase();
+  const results: SearchResult[] = [];
+
+  Object.entries(allNotesMap).forEach(([filename, noteInfo]) => {
+    const { content, section } = noteInfo;
+    const lines = content.split("\n");
+    const matches: SearchMatch[] = [];
+
+    lines.forEach((line, index) => {
+      const lowerLine = line.toLowerCase();
+      if (lowerLine.includes(searchQuery)) {
+        const highlightedText = highlightSearchTerm(line, query);
+        matches.push({
+          context: line.trim(),
+          lineNumber: index + 1,
+          highlightedText,
+        });
+      }
+    });
+
+    if (matches.length > 0) {
+      const sectionInfo =
+        section === "home"
+          ? { name: "Home", icon: "🏠" }
+          : NoteSections[section as NoteSection] || {
+              name: section,
+              icon: "📄",
+            };
+
+      results.push({
+        filename,
+        title: getCleanTitle(filename),
+        section: sectionInfo.name,
+        sectionIcon: sectionInfo.icon,
+        matches: matches.slice(0, 3), // Limit to first 3 matches per file
+        totalMatches: matches.length,
+      });
+    }
+  });
+
+  // Sort by relevance (total matches descending, then alphabetically)
+  return results.sort((a, b) => {
+    if (a.totalMatches !== b.totalMatches) {
+      return b.totalMatches - a.totalMatches;
+    }
+    return a.title.localeCompare(b.title);
+  });
+};
+
+// Helper function to highlight search terms in text
+const highlightSearchTerm = (text: string, query: string): string => {
+  const regex = new RegExp(`(${query})`, "gi");
+  return text.replace(regex, "<mark>$1</mark>");
+};

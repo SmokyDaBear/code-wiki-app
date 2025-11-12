@@ -44,13 +44,14 @@ p {
 ```css
 .highlight {
   background-color: yellow;
+  color: black;
   font-weight: bold;
 }
 ```
 
 #### Example Output:
 
-<p class="highlight" style="background-color: yellow; font-weight: bold;">This text is highlighted using a class selector.</p>
+<p class="highlight" style="background-color: yellow; color: black; font-weight: bold;">This text is highlighted using a class selector.</p>
 
 ### ID Selectors
 

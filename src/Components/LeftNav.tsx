@@ -1,13 +1,20 @@
 import { useState, useEffect } from "react";
 import { leftLinks } from "../data/data";
 import { NoteSections, type NoteSection } from "../data/notes";
+import { SearchBar } from "./SearchBar";
 
 export function LeftNav({
   setCurrentNote,
   currentSection,
+  currentNoteName,
+  onSearch,
+  onClearSearch,
 }: {
   setCurrentNote: (note: string) => void;
   currentSection: string | null;
+  currentNoteName?: string;
+  onSearch?: (query: string) => void;
+  onClearSearch?: () => void;
   isMobile?: boolean;
 }) {
   const [activeDropdown, setActiveDropdown] = useState<number | null>(null);
@@ -34,8 +41,22 @@ export function LeftNav({
     setActiveDropdown(activeDropdown === index ? null : index);
   };
 
+  const handleSearch = (query: string) => {
+    onSearch?.(query);
+  };
+
+  const handleClearSearch = () => {
+    onClearSearch?.();
+  };
+
   return (
     <div className="left-nav">
+      <SearchBar
+        onSearch={handleSearch}
+        onClear={handleClearSearch}
+        placeholder="Search all notes..."
+      />
+
       {leftLinks.map((link, index) => {
         if (link.children) {
           const isActive = activeDropdown === index;
@@ -58,7 +79,9 @@ export function LeftNav({
               >
                 {link.children.map((child, cIndex) => (
                   <p
-                    className="child-link"
+                    className={`child-link ${
+                      currentNoteName === child.href ? "active" : ""
+                    }`}
                     key={cIndex}
                     onClick={() => child.href && setCurrentNote(child.href)}
                   >
@@ -71,7 +94,9 @@ export function LeftNav({
         } else {
           return (
             <div
-              className="parent-link"
+              className={`parent-link ${
+                currentNoteName === link.href ? "active" : ""
+              }`}
               key={index}
               onClick={() => link.href && setCurrentNote(link.href)}
             >

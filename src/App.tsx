@@ -11,7 +11,26 @@ import {
   NoteSections,
   type NoteSection,
   getDisplayName,
+  searchNotes,
+  type SearchResult,
 } from "./data/notes";
+import { SearchResults } from "./Components/SearchResults";
+import { WelcomeModal } from "./Components/WelcomeModal";
+import { UserMenu } from "./Components/UserMenu";
+import { ReadingHistory } from "./Components/ReadingHistory";
+import {
+  getUserPreferences,
+  saveUserPreferences,
+  addVisitedNote,
+  clearAllUserData,
+  setStoragePermission,
+  hasStoragePermission,
+  isFirstVisit,
+  markAsVisited,
+  applyTheme,
+  watchSystemTheme,
+  type UserPreferences,
+} from "./utils/userPreferences";
 
 function App() {
   const [currentNote, setCurrentNote] = useState<string | null>(null);
@@ -19,6 +38,14 @@ function App() {
   const [noteHistory, setNoteHistory] = useState<string[]>(["home.md"]);
   const [currentSection, setCurrentSection] = useState<string | null>(null);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [searchResults, setSearchResults] = useState<SearchResult[]>([]);
+  const [searchQuery, setSearchQuery] = useState<string>("");
+  const [showSearchResults, setShowSearchResults] = useState(false);
+  const [userPreferences, setUserPreferences] = useState<UserPreferences>(() =>
+    getUserPreferences()
+  );
+  const [showWelcomeModal, setShowWelcomeModal] = useState(false);
+  const [showHistoryModal, setShowHistoryModal] = useState(false);
 
   const loadDefaultNote = useCallback(() => {
     const noteHTML = retrieveNoteHTML("home.md");
@@ -28,6 +55,28 @@ function App() {
     setCurrentSection("home");
     updateURL("home.md", "home");
   }, []);
+
+  // Initialize user preferences and check for first visit
+  useEffect(() => {
+    // Check if this is the first visit and we don't have storage permission
+    if (isFirstVisit() && !hasStoragePermission()) {
+      setShowWelcomeModal(true);
+      markAsVisited();
+    }
+
+    // Apply saved theme
+    applyTheme(userPreferences.theme);
+
+    // Watch for system theme changes if user selected system theme
+    if (userPreferences.theme === "system") {
+      const cleanup = watchSystemTheme(() => {
+        if (userPreferences.theme === "system") {
+          applyTheme("system");
+        }
+      });
+      return cleanup;
+    }
+  }, [userPreferences.theme]);
 
   // Initialize from URL parameters or default
   useEffect(() => {
@@ -88,6 +137,9 @@ function App() {
       setCurrentNoteName(note);
     }
 
+    // Add to visited notes for reading history
+    addVisitedNote(note);
+
     // Detect section and update current section
     const detectedSection = getNoteSection(note);
     setCurrentSection(detectedSection);
@@ -95,8 +147,9 @@ function App() {
     // Update URL
     updateURL(note, detectedSection);
 
-    // Close mobile menu when loading a note
+    // Close mobile menu and search results when loading a note
     setIsMobileMenuOpen(false);
+    setShowSearchResults(false);
 
     // Small delay to show loading state
     setTimeout(() => {
@@ -166,6 +219,78 @@ function App() {
     }
   };
 
+  const handleSearch = (query: string) => {
+    setSearchQuery(query);
+    if (query.trim()) {
+      const results = searchNotes(query);
+      setSearchResults(results);
+      setShowSearchResults(true);
+    } else {
+      setSearchResults([]);
+      setShowSearchResults(false);
+    }
+  };
+
+  const handleClearSearch = () => {
+    setSearchQuery("");
+    setSearchResults([]);
+    setShowSearchResults(false);
+  };
+
+  const handleSelectSearchResult = (filename: string) => {
+    loadNote(filename);
+    setShowSearchResults(false);
+  };
+
+  const handleWelcomeComplete = (preferences: {
+    allowsStorage: boolean;
+    username?: string;
+    theme: "system" | "light" | "dark";
+  }) => {
+    setStoragePermission(preferences.allowsStorage);
+
+    if (preferences.allowsStorage) {
+      const newPrefs: UserPreferences = {
+        ...userPreferences,
+        allowsStorage: true,
+        username: preferences.username,
+        theme: preferences.theme,
+        firstVisit: false,
+      };
+
+      setUserPreferences(newPrefs);
+      saveUserPreferences(newPrefs);
+    }
+
+    applyTheme(preferences.theme);
+    setShowWelcomeModal(false);
+  };
+
+  const handleThemeChange = (theme: "system" | "light" | "dark") => {
+    const newPrefs = { ...userPreferences, theme };
+    setUserPreferences(newPrefs);
+    saveUserPreferences({ theme });
+    applyTheme(theme);
+  };
+
+  const handleClearAllData = () => {
+    clearAllUserData();
+    const defaultPrefs: UserPreferences = {
+      theme: "system",
+      allowsStorage: false,
+      visitedNotes: [],
+      firstVisit: true,
+    };
+    setUserPreferences(defaultPrefs);
+    applyTheme("system");
+    // Optionally reload the page to reset everything
+    window.location.reload();
+  };
+
+  const handleShowHistory = () => {
+    setShowHistoryModal(true);
+  };
+
   // Get current section info for dynamic header
   const sectionInfo =
     currentSection && currentSection in NoteSections
@@ -192,6 +317,13 @@ function App() {
           <span></span>
         </button>
         <h1>{headerTitle}</h1>
+        <UserMenu
+          username={userPreferences.username}
+          preferences={userPreferences}
+          onThemeChange={handleThemeChange}
+          onClearData={handleClearAllData}
+          onShowHistory={handleShowHistory}
+        />
       </header>
       <div
         style={{
@@ -201,7 +333,13 @@ function App() {
         }}
       >
         {/* Desktop Navigation */}
-        <LeftNav setCurrentNote={loadNote} currentSection={currentSection} />
+        <LeftNav
+          setCurrentNote={loadNote}
+          currentSection={currentSection}
+          currentNoteName={currentNoteName}
+          onSearch={handleSearch}
+          onClearSearch={handleClearSearch}
+        />
 
         {/* Mobile Menu Overlay */}
         {isMobileMenuOpen && (
@@ -220,6 +358,9 @@ function App() {
               <LeftNav
                 setCurrentNote={loadNote}
                 currentSection={currentSection}
+                currentNoteName={currentNoteName}
+                onSearch={handleSearch}
+                onClearSearch={handleClearSearch}
                 isMobile={true}
               />
             </div>
@@ -262,6 +403,30 @@ function App() {
           />
         </div>
       </div>
+
+      {/* Search Results Overlay */}
+      {showSearchResults && (
+        <SearchResults
+          results={searchResults}
+          query={searchQuery}
+          onSelectNote={handleSelectSearchResult}
+          onClose={() => setShowSearchResults(false)}
+        />
+      )}
+
+      {/* Welcome Modal for First-Time Visitors */}
+      <WelcomeModal
+        isOpen={showWelcomeModal}
+        onComplete={handleWelcomeComplete}
+      />
+
+      {/* Reading History Modal */}
+      <ReadingHistory
+        isOpen={showHistoryModal}
+        preferences={userPreferences}
+        onClose={() => setShowHistoryModal(false)}
+        onSelectNote={loadNote}
+      />
     </>
   );
 }

@@ -1,5 +1,7 @@
 # 📚 Programming Notes Hub
 
+![SmokyDaBear](src/assets/images/profile-animated.png)
+
 #### Author: SmokyDaBear Follow me on [GitHub](https://github.com/SmokyDaBear)
 
 #### Want your own website, or help setting one up? Visit [Verdant Webworks](https://verdant-webworks.vercel.app/)
