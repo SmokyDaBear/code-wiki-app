@@ -1,6 +1,6 @@
 # 📚 Programming Notes Hub
 
-![SmokyDaBear](src/assets/images/profile-animated.png)
+![SmokyDaBear](/images/profile-animated.png)
 
 #### Author: SmokyDaBear Follow me on [GitHub](https://github.com/SmokyDaBear)
 

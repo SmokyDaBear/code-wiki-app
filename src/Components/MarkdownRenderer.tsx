@@ -200,22 +200,28 @@ function LazyMarkdown({
             {children}
           </td>
         ),
-        // Custom image component
-        img: ({ src, alt, ...props }) => (
-          <img
-            src={src}
-            alt={alt}
-            style={{
-              maxWidth: "100%",
-              height: "auto",
-              border: "1px solid #ddd",
-              borderRadius: "4px",
-              margin: "15px 0",
-              display: "block",
-            }}
-            {...props}
-          />
-        ),
+        // Custom image component with base path handling
+        img: ({ src, alt, ...props }) => {
+          // Ensure proper path for production with base path
+          const imageSrc = src?.startsWith("/")
+            ? `${import.meta.env.BASE_URL}${src.slice(1)}`
+            : src;
+          return (
+            <img
+              src={imageSrc}
+              alt={alt}
+              style={{
+                maxWidth: "100%",
+                height: "auto",
+                border: "1px solid #ddd",
+                borderRadius: "4px",
+                margin: "15px 0",
+                display: "block",
+              }}
+              {...props}
+            />
+          );
+        },
       }}
     >
       {content}
