@@ -179,8 +179,6 @@ The difference between \`em\` and \`rem\` is that \`em\` is relative to the font
 </div>
 
 Measurement are most commonly used in properties such as \`width\`, \`height\`, \`margin\`, \`padding\`, and \`font-size\`.
-
-#### Up Next [ Positioning ▶️](positioning.md)
 `,m=`# Positioning
 
 CSS positioning allows you to control the layout and placement of elements on a webpage. There are several positioning schemes available in CSS:
@@ -328,8 +326,6 @@ The \`z-index\` property controls the vertical stacking order of positioned elem
 </div>
 
 #### Tip: When using \`z-index\`, ensure that the elements are positioned (i.e., have a \`position\` value other than \`static\`). And also keep in mind that if an item has a parent with a defined \`z-index\`, it will be constrained within that parent's stacking context. For example, a child element cannot appear in front of an ancestor element with a lower \`z-index\`, even if the child has a higher \`z-index\` value.
-
-#### Up Next [ Flexbox ▶️](flexbox-basics.md)
 `,h=`# Flexbox Basics
 
 Flexbox, or the Flexible Box Layout, is a CSS layout model that allows you to design complex layouts more easily and efficiently. It provides a way to distribute space among items in a container, even when their size is unknown or dynamic.
@@ -391,7 +387,11 @@ Flexbox, or the Flexible Box Layout, is a CSS layout model that allows you to de
 One of the great things about Flexbox is its responsiveness. Flex containers and items can adapt to different screen sizes and orientations, making it easier to create responsive web designs, without the need for complex media queries.
 `,g=`# 📚 Programming Notes Hub
 
-Welcome to your comprehensive programming notes collection! This is your central hub for learning and referencing various programming languages and technologies.
+#### Author: SmokyDaBear Follow me on [GitHub](https://github.com/SmokyDaBear)
+
+#### Want your own website, or help setting one up? Visit [Verdant Webworks](https://verdant-webworks.vercel.app/)
+
+Welcome to what initially started as my personal notes collection but has since grown into a comprehensive resource for learning and referencing various programming languages and technologies. This is your central hub for all things programming! Built with React and Vite and a little help from ChatGPT, this app is designed to be fast, responsive, and easy to navigate.
 
 ## 🎯 What You'll Find Here
 
@@ -587,7 +587,6 @@ Here are some commonly used HTML tags:
 - Lists: \`<ul>\` for unordered lists and \`<ol>\` for ordered lists, with \`<li>\` for list items.
 - Divisions: \`<div>\` for grouping elements and applying styles.
 
-#### Up next Classes, IDs, and Data Attributes [Lesson 2](./classes-ids-data-attributes.md)
 
 #### Tip: Practice creating simple HTML pages to get comfortable with the structure and tags. Use online resources like [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/HTML) for reference and further learning.
 `,y=`# Classes, IDs, and Data Attributes
@@ -630,7 +629,6 @@ Example:
 
 These attributes provide flexibility in styling and scripting without cluttering the HTML structure.
 
-#### Up next HTML Forms [Lesson 3](./html-forms.md)
 
 #### Tip: Use classes for styling multiple elements, IDs for unique elements, and data attributes for storing custom data.
 `,b=`# HTML Forms
@@ -652,6 +650,27 @@ The \`<form>\` element is the container for all form elements. It defines how th
 
 - \`action\`: Specifies the URL where the form data will be sent.
 - \`method\`: Specifies the HTTP method to use when sending the form data (e.g., "get" or "post").
+
+## Label Element
+
+The \`<label>\` element is used to define labels for form controls. It improves accessibility by associating text with form elements.
+
+#### Example Code:
+
+\`\`\`html
+<label for="username">Username Label:</label>
+<input
+  type="text"
+  id="username"
+  name="username"
+  placeholder="Enter your username"
+/>
+\`\`\`
+
+#### Example Output:
+
+<label for="username">Username Label:</label>
+<input type="text" id="username" name="username" placeholder="Enter your username" />
 
 ## Common Form Elements
 
@@ -690,20 +709,71 @@ Here are some commonly used form elements notice the types:
 - **Button**: \`<button></button>\` for clickable buttons.
 - <button>Click Me</button>
 
+### Input Properties
+
+Common properties for input elements include:
+
+- \`name\`: The name of the input field, used to identify the data when submitted.
+- \`value\`: The default value of the input field.
+- \`placeholder\`: A short hint that describes the expected value of the input field.
+- \`required\`: Specifies that the input field must be filled out before submitting the form.
+- \`disabled\`: Disables the input field, preventing user interaction.
+- \`readonly\`: Makes the input field read-only, preventing user modification.
+- \`maxlength\`: Specifies the maximum number of characters allowed in the input field.
+- \`min\` and \`max\`: Define the minimum and maximum values for numeric inputs.
+
 ## Other Form Elements
 
-These elements are also commonly used in forms, but we'll go into more detail on them below:
+Radio buttons, checkboxes, and dropdowns are also commonly used in forms, but we'll go into more detail on them below:
+
+### Radio Buttons
 
 - **Radio Buttons**: \`<input type="radio" />\` for selecting one option from a group.
-- <input type="radio" for="radio-group"/><input type="radio" for="radio-group"/>
-- **Checkboxes**: \`<input type="checkbox" />\` for selecting multiple options.
-- <input type="checkbox" />
-- **Dropdowns**: \`<select>\` for creating a dropdown list of options.
-- <select name="dropdown"></select> <option for="dropdown">Dropdown Option</option>
-- **Text Area**: \`<textarea>\` for multi-line text input.
-- <textarea name="message" rows="4" cols="50">Enter your message here...</textarea>
 
-### Example
+  <input type="radio" name="radio-group" value="option1"/><label for="option1">Option 1</label>
+  <input type="radio" name="radio-group" value="option2"/><label for="option2">Option 2</label>
+
+### Checkboxes
+
+- **Checkboxes**: \`<input type="checkbox" />\` for selecting multiple options at one time.
+
+  <input type="checkbox" name="checkbox-group" value="option1"/><label for="option1">Option 1</label>
+  <input type="checkbox" name="checkbox-group" value="option2"/><label for="option2">Option 2</label>
+
+### Select Dropdowns
+
+- **Dropdowns**: \`<select>\` for creating a dropdown list of options.
+
+  Within the \`<select>\` element, use \`<option>\` elements to define the available choices.
+
+  #### Example Code:
+
+  \`\`\`html
+  <select name="dropdown">
+    <option value="option1">Option 1</option>
+    <option value="option2">Option 2</option>
+  </select>
+  \`\`\`
+
+  <select name="dropdown"><option for="dropdown">Dropdown Option</option><option value="option1">Option 1</option><option value="option2">Option 2</option></select>
+
+  Dropdowns can also support multiple selections by adding the \`multiple\` attribute.
+
+  <select name="multi-dropdown" multiple><option value="option1">Option 1</option><option value="option2">Option 2</option><option value="option3">Option 3</option></select>
+
+### Text Area
+
+- **Text Area**: \`<textarea>\` for multi-line text input.
+
+#### Example Code:
+
+\`\`\`html
+<textarea name="message" rows="4" cols="50">Enter your message here...</textarea
+\`\`\`
+
+<textarea name="message" rows="4" cols="50">Enter your message here...</textarea>
+
+## Example of a Complete Form
 
 \`\`\`html
 <form action="/submit" method="post">
@@ -714,6 +784,18 @@ These elements are also commonly used in forms, but we'll go into more detail on
   <input type="submit" value="Login" />
 </form>
 \`\`\`
+
+#### Example Output:
+
+<form action="/submit" method="post">
+  <label for="username">Username:</label>
+  <input type="text" id="username" name="username" required />
+  <br />
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password" required />
+  <br />
+  <input type="submit" value="Login" />
+</form>
 
 ## Form Validation
 
@@ -891,12 +973,6 @@ colors.forEach((color) => console.log(color));
 - Master [ES6+ Features](es6-features.md)
 `,C=`# Learn SQL 🌎
 
-#### Author: SmokyDaBear Follow me on [GitHub](https://github.com/SmokyDaBear)
-
-with contributions from ChatGPT
-
-#### Date: 2024-06-15
-
 ## Welcome to the SQL Learning Notes!
 
 Welcome to the SQL learning notes! Here, you'll find comprehensive information on various SQL topics, including data types, table creation, data manipulation, and database management.
@@ -941,8 +1017,6 @@ For more in-depth learning, consider exploring the following resources:
 - [Mode SQL Tutorial](https://mode.com/sql-tutorial/)
 - [LeetCode SQL Problems](https://leetcode.com/problemset/database/)
   Happy learning! 🚀
-
-### Up Next: Getting started with SQL in the [Getting started with SQL 🖥️ 🪛](get-started.md) notes.
 
 #### Setup Guide: Follow the [Setting Up SQL 🛠️](setting-up.md) notes to install and configure SQL on your machine.
 `,w=`# Getting started with SQL 🖥️ 🪛
@@ -1023,7 +1097,6 @@ The following SQL statement creates a differential back up of the database "test
 
 #### Tip: A differential back up reduces the back up time (since only the changes are backed up).
 
-#### Up Next: Learn about SQL data types in the [SQL Data Types 📊](data-types.md) notes.
 
 #### Previous: Explore the SQL learning notes overview in the [Learn SQL 🌎](sql-index.md) notes to understand the structure of the SQL learning material.
 `,T=`# Setting Up SQL 🛠️
@@ -1078,7 +1151,6 @@ SELECT VERSION();
 
 If the query returns the version of your SQL database, congratulations! Your setup is complete.
 
-#### Up Next: Learn about SQL data types in the [SQL Data Types 📊](data-types.md) notes.
 
 #### Home: Return to the [Learn SQL 🌎](sql-index.md) main index for more SQL topics and resources.
 `,E=`# Overview of SQL Data Types
@@ -1138,7 +1210,6 @@ Selecting the appropriate data type ensures efficient storage, accurate operatio
 
 Variables are used to store data values. When creating tables, you need to define the datatype for each column in the table.
 
-#### Up Next: Learn about creating tables in SQL and how to define columns with appropriate data types in the [Tables in SQL 🗄️](tables.md) notes.
 
 #### Previous: Review the [SQL Basics 📝](basics.md) notes to understand fundamental SQL concepts before diving into data types and tables.
 `,D=`# Tables in SQL 🗄️
@@ -1245,7 +1316,6 @@ The following SQL statements demonstrate how to alter the "Customers" table by a
 
 #### Tip: When altering a table, ensure that any changes made do not violate existing data integrity constraints or relationships with other tables.
 
-#### Up Next: Learn about inserting, updating, and deleting data in SQL tables in the [Manipulating Data in SQL 🛠️](manipulating-data.md) notes.
 
 #### Previous: Review the [SQL Data Types 📊](data-types.md) notes to understand different data types available in SQL before creating tables.
 `,O=`# SQL Constraints 📏
@@ -1329,7 +1399,6 @@ Useful for establishing relationships between tables, such as linking orders to 
       FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID)
     );
 
-#### Up Next: Learn how to use constraints when creating tables in the [Tables in SQL 🗄️](tables.md) notes.
 
 #### Home: Return to the [Learn SQL 🌎](sql-index.md) main index for more SQL topics and resources.
 `,k=`# Manipulating Data in SQL 🛠️
@@ -1412,7 +1481,6 @@ The following SQL statement deletes the customer with CustomerID 1:
 
 #### Tip: Always use the WHERE clause to specify which record(s) to delete. If you omit the WHERE clause, all records in the table will be deleted!
 
-#### Up Next: Explore advanced data manipulation techniques and transactions in SQL in the [Advanced SQL Data Manipulation 🚀](advanced-manipulating-data.md) notes.
 
 #### Previous: Review the [Tables in SQL 🗄️](tables.md) notes to understand how to create and define tables before manipulating data.
 `,A=`# Advanced Manipulating Data in SQL 🛠️
@@ -1653,6 +1721,6 @@ function greet(name: string): string {
 \`\`\`
 
 More detailed content coming soon!
-`,N={"../notes/css/01-CSS-index.md":f,"../notes/css/02-basics.md":p,"../notes/css/03-positioning.md":m,"../notes/css/04-flexbox-basics.md":h,"../notes/home.md":g,"../notes/html/00-html-index.md":_,"../notes/html/01-get-started-with-html.md":v,"../notes/html/02-classes-ids-and-data-attributes.md":y,"../notes/html/03-html-three.md":b,"../notes/javascript/00-javascript-index.md":x,"../notes/javascript/01-javascript-basics.md":S,"../notes/sql/00-sql-index.md":C,"../notes/sql/01-get-started.md":w,"../notes/sql/02-setting-up.md":T,"../notes/sql/03-data-types.md":E,"../notes/sql/04-tables.md":D,"../notes/sql/05-constraints.md":O,"../notes/sql/06-manipulating-data.md":k,"../notes/sql/07-advanced-manipulating-data.md":A,"../notes/typescript/typescript-basics.md":j,"../notes/typescript/typescript-index.md":M},P={},F={};Object.entries(N).forEach(([e,t])=>{let n=e.split(`/`),r=n[n.length-1]||``;if(n.length===3&&r===`home.md`){F[r]={content:t,section:`home`};return}if(n.length>3){let e=n[n.length-2];P[e]||(P[e]={}),P[e][r]=t,F[r]={content:t,section:e}}});const I={sql:{name:`SQL`,icon:`🗃️`},html:{name:`HTML`,icon:`🌐`},css:{name:`CSS`,icon:`🎨`},javascript:{name:`JavaScript`,icon:`⚡`},typescript:{name:`TypeScript`,icon:`📘`}},L={home:`sql-index.md`,getStarted:`get-started.md`,settingUp:`setting-up.md`,tables:`tables.md`,advancedManipulatingData:`advanced-manipulating-data.md`,constraints:`constraints.md`,dataTypes:`data-types.md`,basicManipulatingData:`manipulating-data.md`,dataStructures:`dataStructures.md`,introToData:`introToData.md`,manipulatingStrings:`manipulatingStrings.md`,workingWithNumbers:`workingWithNumbers.md`},R=e=>e.replace(/^\d{2}-/,``),z=e=>Object.keys(P[e]||{}).sort((e,t)=>{let n=parseInt(e.match(/^\d+/)?.[0]||`999`),r=parseInt(t.match(/^\d+/)?.[0]||`999`);return n===r?e.localeCompare(t):n-r}),B=()=>Object.keys(P),V=e=>{let t=F[e];return t?t.section:null},H=e=>{let t=e.replace(/^\/notes\/[^/]+\//,``).replace(/^\/notes\//,``),n=F[t];if(!n){let e=Object.keys(F).join(`, `);throw Error(`Note not found: ${t}. Available: ${e}`)}return console.log(`Retrieved note:`,t,`from section:`,n.section),n.content},U=()=>{let e=B(),t=[];return t.push({text:`🏠 Home`,href:`home.md`}),e.forEach(e=>{let n=I[e],r=z(e);if(r.length>0){let e=r.map(e=>({text:W(e),href:e}));t.push({text:`${n.icon} ${n.name}`,children:e})}}),t};var W=e=>R(e).replace(`.md`,``).replace(/-/g,` `).replace(/\b\w/g,e=>e.toUpperCase());L.home,L.constraints,L.advancedManipulatingData,L.dataTypes,L.getStarted,L.basicManipulatingData,L.settingUp,L.tables;const G=U();function K({setCurrentNote:e,currentSection:t}){let[n,r]=(0,l.useState)(null);(0,l.useEffect)(()=>{if(t){let e=G.findIndex(e=>{if(e.text&&t in I){let n=I[t];return e.text.includes(n.name)}return!1});e!==-1&&r(e)}},[t]);let i=e=>{r(n===e?null:e)};return(0,u.jsx)(`div`,{className:`left-nav`,children:G.map((t,r)=>{if(t.children){let a=n===r;return(0,u.jsxs)(`div`,{className:`dropdown-parent ${a?`active`:``}`,children:[(0,u.jsxs)(`div`,{className:`dropdown-title`,onClick:()=>i(r),children:[(0,u.jsx)(`span`,{className:`section-arrow`,children:a?`▼`:`▶`}),t.text]}),(0,u.jsx)(`div`,{className:`dropdown-children ${a?`expanded`:`collapsed`}`,children:t.children.map((t,n)=>(0,u.jsx)(`p`,{className:`child-link`,onClick:()=>t.href&&e(t.href),children:t.text},n))})]},r)}else return(0,u.jsx)(`div`,{className:`parent-link`,onClick:()=>t.href&&e(t.href),children:t.text},r)})})}function q({currentNote:e,currentNoteName:t}){let[n,r]=(0,l.useState)([]),[i,a]=(0,l.useState)(null),[o,s]=(0,l.useState)(``);(0,l.useEffect)(()=>{if(!e){r([]),a(null);return}let t=/^(#{1,6})\s+(.+)$/gm,n=[],i;for(;(i=t.exec(e))!==null;){let e=i[1].length,t=i[2].trim(),r=t.toLowerCase().includes(`up next`);if(e===4&&!r)continue;let a=t.toLowerCase().replace(/[^\w\s-]/g,``).replace(/\s+/g,`-`);n.push({id:a,text:t,level:e,isUpNext:r})}r(n);let o=e.replace(/#{1,6}\s+/g,``).replace(/\[([^\]]+)\]\([^)]+\)/g,`$1`).replace(/[*_`]/g,``).trim().split(/\s+/).filter(e=>e.length>0).length,s=Math.max(1,Math.ceil(o/200)),c=e.length;a({wordCount:o,readingTime:s,characterCount:c})},[e]);let c=e=>{let t=document.getElementById(e);t&&(t.scrollIntoView({behavior:`smooth`,block:`start`}),s(e))};return(0,l.useEffect)(()=>{let e=()=>{let e=n.map(e=>({id:e.id,element:document.getElementById(e.id)})),t=``;for(let n of e)n.element&&n.element.getBoundingClientRect().top<=100&&(t=n.id);s(t)},t=document.querySelector(`.center.main`);if(t)return t.addEventListener(`scroll`,e),()=>t.removeEventListener(`scroll`,e)},[n]),e?(0,u.jsxs)(`div`,{className:`right-sidebar`,children:[(0,u.jsxs)(`div`,{className:`sidebar-section`,children:[(0,u.jsx)(`h3`,{children:`📊 Note Info`}),(0,u.jsxs)(`div`,{className:`note-stats`,children:[(0,u.jsxs)(`div`,{className:`stat-item`,children:[(0,u.jsx)(`span`,{className:`stat-label`,children:`📄 File:`}),(0,u.jsx)(`span`,{className:`stat-value`,children:R(t)})]}),i&&(0,u.jsxs)(u.Fragment,{children:[(0,u.jsxs)(`div`,{className:`stat-item`,children:[(0,u.jsx)(`span`,{className:`stat-label`,children:`📝 Words:`}),(0,u.jsx)(`span`,{className:`stat-value`,children:i.wordCount.toLocaleString()})]}),(0,u.jsxs)(`div`,{className:`stat-item`,children:[(0,u.jsx)(`span`,{className:`stat-label`,children:`⏱️ Read time:`}),(0,u.jsxs)(`span`,{className:`stat-value`,children:[i.readingTime,` min`]})]}),(0,u.jsxs)(`div`,{className:`stat-item`,children:[(0,u.jsx)(`span`,{className:`stat-label`,children:`🔤 Characters:`}),(0,u.jsx)(`span`,{className:`stat-value`,children:i.characterCount.toLocaleString()})]})]})]})]}),n.length>0&&(0,u.jsxs)(`div`,{className:`sidebar-section`,children:[(0,u.jsx)(`h3`,{children:`📚 Table of Contents`}),(0,u.jsx)(`nav`,{className:`toc-nav`,children:n.map((e,t)=>(0,u.jsxs)(`button`,{className:`toc-item level-${e.level} ${o===e.id?`active`:``} ${e.isUpNext?`up-next`:``}`,onClick:()=>c(e.id),title:e.text,children:[e.isUpNext&&(0,u.jsx)(`span`,{className:`up-next-icon`,children:`🚀`}),e.text]},t))})]})]}):(0,u.jsx)(`div`,{className:`right-sidebar`,children:(0,u.jsxs)(`div`,{className:`sidebar-section`,children:[(0,u.jsx)(`h3`,{children:`📖 Note Info`}),(0,u.jsx)(`p`,{className:`no-note-message`,children:`Select a note to see its table of contents and information.`})]})})}var J=`modulepreload`,Y=function(e){return`/code-wiki-app/`+e},X={};const Z=function(e,t,n){let r=Promise.resolve();if(t&&t.length>0){let e=document.getElementsByTagName(`link`),i=document.querySelector(`meta[property=csp-nonce]`),a=i?.nonce||i?.getAttribute(`nonce`);function o(e){return Promise.all(e.map(e=>Promise.resolve(e).then(e=>({status:`fulfilled`,value:e}),e=>({status:`rejected`,reason:e}))))}r=o(t.map(t=>{if(t=Y(t,n),t in X)return;X[t]=!0;let r=t.endsWith(`.css`),i=r?`[rel="stylesheet"]`:``;if(n)for(let n=e.length-1;n>=0;n--){let i=e[n];if(i.href===t&&(!r||i.rel===`stylesheet`))return}else if(document.querySelector(`link[href="${t}"]${i}`))return;let o=document.createElement(`link`);if(o.rel=r?`stylesheet`:J,r||(o.as=`script`),o.crossOrigin=``,o.href=t,a&&o.setAttribute(`nonce`,a),document.head.appendChild(o),r)return new Promise((e,n)=>{o.addEventListener(`load`,e),o.addEventListener(`error`,()=>n(Error(`Unable to preload CSS for ${t}`)))})}))}function i(e){let t=new Event(`vite:preloadError`,{cancelable:!0});if(t.payload=e,window.dispatchEvent(t),!t.defaultPrevented)throw e}return r.then(t=>{for(let e of t||[])e.status===`rejected`&&i(e.reason);return e().catch(i)})};var Q=(0,l.lazy)(()=>Z(()=>import(`./react-markdown-C4yMs8Ql.js`),__vite__mapDeps([0,1,2,3,4,5])));function $({content:e,styleUpNextSections:t,loadNote:n}){return(0,u.jsx)(l.Suspense,{fallback:(0,u.jsx)(d,{}),children:(0,u.jsx)(ee,{content:e,styleUpNextSections:t,loadNote:n})})}function ee({content:e,styleUpNextSections:t,loadNote:n}){let r=e=>({"html-two.md":`02-classes-ids-and-data-attributes.md`,"classes-ids-data-attributes.md":`02-classes-ids-and-data-attributes.md`,"positioning.md":`03-positioning.md`,"positioning-basics.md":`03-positioning.md`,"flexbox.md":`04-flexbox-basics.md`,"flexbox-basics.md":`04-flexbox-basics.md`,"basics.md":`02-basics.md`,"sql-index.md":`00-sql-index.md`,"get-started.md":`01-get-started.md`,"setting-up.md":`02-setting-up.md`,"data-types.md":`03-data-types.md`,"tables.md":`04-tables.md`,"constraints.md":`05-constraints.md`,"manipulating-data.md":`06-manipulating-data.md`,"advanced-manipulating-data.md":`07-advanced-manipulating-data.md`})[e]||e;return(0,u.jsx)(Q,{remarkPlugins:[o,s],rehypePlugins:[i,a],components:{h1:({children:e,...t})=>(0,u.jsx)(`h1`,{...t,id:String(e)?.toLowerCase().replace(/[^\w\s-]/g,``).replace(/\s+/g,`-`),children:e}),h2:({children:e,...t})=>(0,u.jsx)(`h2`,{...t,id:String(e)?.toLowerCase().replace(/[^\w\s-]/g,``).replace(/\s+/g,`-`),children:e}),h3:({children:e,...t})=>(0,u.jsx)(`h3`,{...t,id:String(e)?.toLowerCase().replace(/[^\w\s-]/g,``).replace(/\s+/g,`-`),children:e}),h4:({children:e,...n})=>(0,u.jsx)(`h4`,{...n,id:String(e)?.toLowerCase().replace(/[^\w\s-]/g,``).replace(/\s+/g,`-`),onLoad:()=>{setTimeout(t,100)},children:e}),h5:({children:e,...t})=>(0,u.jsx)(`h5`,{...t,id:String(e)?.toLowerCase().replace(/[^\w\s-]/g,``).replace(/\s+/g,`-`),children:e}),h6:({children:e,...t})=>(0,u.jsx)(`h6`,{...t,id:String(e)?.toLowerCase().replace(/[^\w\s-]/g,``).replace(/\s+/g,`-`),children:e}),a:({href:e,children:t,...i})=>(0,u.jsx)(`a`,{href:e,onClick:t=>{if(e&&e.endsWith(`.md`)&&n){t.preventDefault();let i=e;e.includes(`/`)&&(i=e.split(`/`).pop()||e);let a=r(i);console.log(`Internal link clicked:`,e,`-> normalized:`,a);try{n(a)}catch(e){console.error(`Failed to load note: ${a}`,e);try{n(i)}catch(e){console.error(`Failed to load note with filename: ${i}`,e),alert(`Note not found: ${i}`)}}}},className:`markdown-link`,...i,children:t}),table:({children:e,...t})=>(0,u.jsx)(`table`,{...t,className:`markdown-table`,children:e}),th:({children:e,...t})=>(0,u.jsx)(`th`,{...t,className:`markdown-th`,children:e}),td:({children:e,...t})=>(0,u.jsx)(`td`,{...t,className:`markdown-td`,children:e}),img:({src:e,alt:t,...n})=>(0,u.jsx)(`img`,{src:e,alt:t,style:{maxWidth:`100%`,height:`auto`,border:`1px solid #ddd`,borderRadius:`4px`,margin:`15px 0`,display:`block`},...n})},children:e})}function te(){let[e,t]=(0,l.useState)(null),[n,r]=(0,l.useState)(`home.md`),[i,a]=(0,l.useState)([`home.md`]),[o,s]=(0,l.useState)(null),[c,f]=(0,l.useState)(!1),p=(0,l.useCallback)(()=>{t(H(`home.md`)),r(`home.md`),a([`home.md`]),s(`home`),m(`home.md`,`home`)},[]);(0,l.useEffect)(()=>{let e=new URLSearchParams(window.location.search),n=e.get(`note`),i=e.get(`section`);if(n)try{t(H(n)),r(n),a([n]);let e=i||V(n);s(e),m(n,e)}catch(e){console.error(`Failed to load note from URL:`,n,e),p()}else p()},[p]),(0,l.useEffect)(()=>{if(e){let e=setTimeout(()=>{v()},100);return()=>clearTimeout(e)}},[e]);let m=(e,t)=>{let n=new URLSearchParams;n.set(`note`,e),t&&n.set(`section`,t);let r=`${window.location.pathname}?${n.toString()}`;window.history.pushState({},``,r)},h=e=>{console.log(`Loading note:`,e),t(null),e!==n&&(a(t=>[...t,e]),r(e));let i=V(e);s(i),m(e,i),f(!1),setTimeout(()=>{try{t(H(e));let n=document.querySelector(`.center.main`);n&&(n.scrollTop=0),setTimeout(()=>{v()},50)}catch(n){console.error(`Error loading note:`,e,n),t(`# Error
+`,N={"../notes/css/01-CSS-index.md":f,"../notes/css/02-basics.md":p,"../notes/css/03-positioning.md":m,"../notes/css/04-flexbox-basics.md":h,"../notes/home.md":g,"../notes/html/00-html-index.md":_,"../notes/html/01-get-started-with-html.md":v,"../notes/html/02-classes-ids-and-data-attributes.md":y,"../notes/html/03-forms.md":b,"../notes/javascript/00-javascript-index.md":x,"../notes/javascript/01-javascript-basics.md":S,"../notes/sql/00-sql-index.md":C,"../notes/sql/01-get-started.md":w,"../notes/sql/02-setting-up.md":T,"../notes/sql/03-data-types.md":E,"../notes/sql/04-tables.md":D,"../notes/sql/05-constraints.md":O,"../notes/sql/06-manipulating-data.md":k,"../notes/sql/07-advanced-manipulating-data.md":A,"../notes/typescript/typescript-basics.md":j,"../notes/typescript/typescript-index.md":M},P={},F={};Object.entries(N).forEach(([e,t])=>{let n=e.split(`/`),r=n[n.length-1]||``;if(n.length===3&&r===`home.md`){F[r]={content:t,section:`home`};return}if(n.length>3){let e=n[n.length-2];P[e]||(P[e]={}),P[e][r]=t,F[r]={content:t,section:e}}});const I={sql:{name:`SQL`,icon:`🗃️`},html:{name:`HTML`,icon:`🌐`},css:{name:`CSS`,icon:`🎨`},javascript:{name:`JavaScript`,icon:`⚡`},typescript:{name:`TypeScript`,icon:`📘`}},L={home:`sql-index.md`,getStarted:`get-started.md`,settingUp:`setting-up.md`,tables:`tables.md`,advancedManipulatingData:`advanced-manipulating-data.md`,constraints:`constraints.md`,dataTypes:`data-types.md`,basicManipulatingData:`manipulating-data.md`,dataStructures:`dataStructures.md`,introToData:`introToData.md`,manipulatingStrings:`manipulatingStrings.md`,workingWithNumbers:`workingWithNumbers.md`},R=e=>e.replace(/^\d{2}-/,``),z=e=>R(e).replace(`.md`,``).replace(/-/g,` `).replace(/\b\w/g,e=>e.toUpperCase()),B=e=>Object.keys(P[e]||{}).sort((e,t)=>{let n=parseInt(e.match(/^\d+/)?.[0]||`999`),r=parseInt(t.match(/^\d+/)?.[0]||`999`);return n===r?e.localeCompare(t):n-r}),V=()=>Object.keys(P),H=e=>{let t=F[e];return t?t.section:null},U=e=>{let t=H(e);if(!t)return null;let n=B(t),r=n.indexOf(e);if(r===-1||r>=n.length-1)return null;let i=n[r+1];return{filename:i,title:z(i)}},W=e=>{let t=e.replace(/^\/notes\/[^/]+\//,``).replace(/^\/notes\//,``),n=F[t];if(!n){let e=Object.keys(F).join(`, `);throw Error(`Note not found: ${t}. Available: ${e}`)}return console.log(`Retrieved note:`,t,`from section:`,n.section),n.content},G=()=>{let e=V(),t=[];return t.push({text:`🏠 Home`,href:`home.md`}),e.forEach(e=>{let n=I[e],r=B(e);if(r.length>0){let e=r.map(e=>({text:K(e),href:e}));t.push({text:`${n.icon} ${n.name}`,children:e})}}),t};var K=e=>R(e).replace(`.md`,``).replace(/-/g,` `).replace(/\b\w/g,e=>e.toUpperCase());L.home,L.constraints,L.advancedManipulatingData,L.dataTypes,L.getStarted,L.basicManipulatingData,L.settingUp,L.tables;const q=G();function J({setCurrentNote:e,currentSection:t}){let[n,r]=(0,l.useState)(null);(0,l.useEffect)(()=>{if(t){let e=q.findIndex(e=>{if(e.text&&t in I){let n=I[t];return e.text.includes(n.name)}return!1});e!==-1&&r(e)}},[t]);let i=e=>{r(n===e?null:e)};return(0,u.jsx)(`div`,{className:`left-nav`,children:q.map((t,r)=>{if(t.children){let a=n===r;return(0,u.jsxs)(`div`,{className:`dropdown-parent ${a?`active`:``}`,children:[(0,u.jsxs)(`div`,{className:`dropdown-title`,onClick:()=>i(r),children:[(0,u.jsx)(`span`,{className:`section-arrow`,children:a?`▼`:`▶`}),t.text]}),(0,u.jsx)(`div`,{className:`dropdown-children ${a?`expanded`:`collapsed`}`,children:t.children.map((t,n)=>(0,u.jsx)(`p`,{className:`child-link`,onClick:()=>t.href&&e(t.href),children:t.text},n))})]},r)}else return(0,u.jsx)(`div`,{className:`parent-link`,onClick:()=>t.href&&e(t.href),children:t.text},r)})})}function Y({currentNote:e,currentNoteName:t,onLoadNote:n}){let[r,i]=(0,l.useState)([]),[a,o]=(0,l.useState)(null),[s,c]=(0,l.useState)(``);(0,l.useEffect)(()=>{if(!e){i([]),o(null);return}let r=/^(#{1,6})\s+(.+)$/gm,a=[],s;for(;(s=r.exec(e))!==null;){let e=s[1].length,t=s[2].trim();if(e===4)continue;let n=t.toLowerCase().replace(/[^\w\s-]/g,``).replace(/\s+/g,`-`);a.push({id:n,text:t,level:e})}if(n){let e=U(t);e&&a.push({id:`next-lesson`,text:`Next: ${e.title}`,level:2})}i(a);let c=e.replace(/#{1,6}\s+/g,``).replace(/\[([^\]]+)\]\([^)]+\)/g,`$1`).replace(/[*_`]/g,``).trim().split(/\s+/).filter(e=>e.length>0).length,l=Math.max(1,Math.ceil(c/200)),u=e.length;o({wordCount:c,readingTime:l,characterCount:u})},[e,t,n]);let d=e=>{if(e===`next-lesson`&&n){let e=U(t);e&&n(e.filename);return}let r=document.getElementById(e);r&&(r.scrollIntoView({behavior:`smooth`,block:`start`}),c(e))};return(0,l.useEffect)(()=>{let e=()=>{let e=r.map(e=>({id:e.id,element:document.getElementById(e.id)})),t=``;for(let n of e)n.element&&n.element.getBoundingClientRect().top<=100&&(t=n.id);c(t)},t=document.querySelector(`.center.main`);if(t)return t.addEventListener(`scroll`,e),()=>t.removeEventListener(`scroll`,e)},[r]),e?(0,u.jsxs)(`div`,{className:`right-sidebar`,children:[(0,u.jsxs)(`div`,{className:`sidebar-section`,children:[(0,u.jsx)(`h3`,{children:`📊 Note Info`}),(0,u.jsxs)(`div`,{className:`note-stats`,children:[(0,u.jsxs)(`div`,{className:`stat-item`,children:[(0,u.jsx)(`span`,{className:`stat-label`,children:`📄 File:`}),(0,u.jsx)(`span`,{className:`stat-value`,children:R(t)})]}),a&&(0,u.jsxs)(u.Fragment,{children:[(0,u.jsxs)(`div`,{className:`stat-item`,children:[(0,u.jsx)(`span`,{className:`stat-label`,children:`📝 Words:`}),(0,u.jsx)(`span`,{className:`stat-value`,children:a.wordCount.toLocaleString()})]}),(0,u.jsxs)(`div`,{className:`stat-item`,children:[(0,u.jsx)(`span`,{className:`stat-label`,children:`⏱️ Read time:`}),(0,u.jsxs)(`span`,{className:`stat-value`,children:[a.readingTime,` min`]})]}),(0,u.jsxs)(`div`,{className:`stat-item`,children:[(0,u.jsx)(`span`,{className:`stat-label`,children:`🔤 Characters:`}),(0,u.jsx)(`span`,{className:`stat-value`,children:a.characterCount.toLocaleString()})]})]})]})]}),r.length>0&&(0,u.jsxs)(`div`,{className:`sidebar-section`,children:[(0,u.jsx)(`h3`,{children:`📚 Table of Contents`}),(0,u.jsx)(`nav`,{className:`toc-nav`,children:r.map((e,t)=>(0,u.jsxs)(`button`,{className:`toc-item level-${e.level} ${s===e.id?`active`:``} ${e.id===`next-lesson`?`next-lesson`:``}`,onClick:()=>d(e.id),title:e.text,children:[e.id===`next-lesson`&&(0,u.jsx)(`span`,{className:`next-lesson-icon`,children:`🚀`}),e.text]},t))})]})]}):(0,u.jsx)(`div`,{className:`right-sidebar`,children:(0,u.jsxs)(`div`,{className:`sidebar-section`,children:[(0,u.jsx)(`h3`,{children:`📖 Note Info`}),(0,u.jsx)(`p`,{className:`no-note-message`,children:`Select a note to see its table of contents and information.`})]})})}var X=`modulepreload`,Z=function(e){return`/code-wiki-app/`+e},Q={};const $=function(e,t,n){let r=Promise.resolve();if(t&&t.length>0){let e=document.getElementsByTagName(`link`),i=document.querySelector(`meta[property=csp-nonce]`),a=i?.nonce||i?.getAttribute(`nonce`);function o(e){return Promise.all(e.map(e=>Promise.resolve(e).then(e=>({status:`fulfilled`,value:e}),e=>({status:`rejected`,reason:e}))))}r=o(t.map(t=>{if(t=Z(t,n),t in Q)return;Q[t]=!0;let r=t.endsWith(`.css`),i=r?`[rel="stylesheet"]`:``;if(n)for(let n=e.length-1;n>=0;n--){let i=e[n];if(i.href===t&&(!r||i.rel===`stylesheet`))return}else if(document.querySelector(`link[href="${t}"]${i}`))return;let o=document.createElement(`link`);if(o.rel=r?`stylesheet`:X,r||(o.as=`script`),o.crossOrigin=``,o.href=t,a&&o.setAttribute(`nonce`,a),document.head.appendChild(o),r)return new Promise((e,n)=>{o.addEventListener(`load`,e),o.addEventListener(`error`,()=>n(Error(`Unable to preload CSS for ${t}`)))})}))}function i(e){let t=new Event(`vite:preloadError`,{cancelable:!0});if(t.payload=e,window.dispatchEvent(t),!t.defaultPrevented)throw e}return r.then(t=>{for(let e of t||[])e.status===`rejected`&&i(e.reason);return e().catch(i)})};var ee=(0,l.lazy)(()=>$(()=>import(`./react-markdown-C4yMs8Ql.js`),__vite__mapDeps([0,1,2,3,4,5])));function te({content:e,styleUpNextSections:t,loadNote:n}){return(0,u.jsx)(l.Suspense,{fallback:(0,u.jsx)(d,{}),children:(0,u.jsx)(ne,{content:e,styleUpNextSections:t,loadNote:n})})}function ne({content:e,styleUpNextSections:t,loadNote:n}){let r=e=>({"html-two.md":`02-classes-ids-and-data-attributes.md`,"classes-ids-data-attributes.md":`02-classes-ids-and-data-attributes.md`,"positioning.md":`03-positioning.md`,"positioning-basics.md":`03-positioning.md`,"flexbox.md":`04-flexbox-basics.md`,"flexbox-basics.md":`04-flexbox-basics.md`,"basics.md":`02-basics.md`,"sql-index.md":`00-sql-index.md`,"get-started.md":`01-get-started.md`,"setting-up.md":`02-setting-up.md`,"data-types.md":`03-data-types.md`,"tables.md":`04-tables.md`,"constraints.md":`05-constraints.md`,"manipulating-data.md":`06-manipulating-data.md`,"advanced-manipulating-data.md":`07-advanced-manipulating-data.md`})[e]||e;return(0,u.jsx)(ee,{remarkPlugins:[o,s],rehypePlugins:[i,a],components:{h1:({children:e,...t})=>(0,u.jsx)(`h1`,{...t,id:String(e)?.toLowerCase().replace(/[^\w\s-]/g,``).replace(/\s+/g,`-`),children:e}),h2:({children:e,...t})=>(0,u.jsx)(`h2`,{...t,id:String(e)?.toLowerCase().replace(/[^\w\s-]/g,``).replace(/\s+/g,`-`),children:e}),h3:({children:e,...t})=>(0,u.jsx)(`h3`,{...t,id:String(e)?.toLowerCase().replace(/[^\w\s-]/g,``).replace(/\s+/g,`-`),children:e}),h4:({children:e,...n})=>(0,u.jsx)(`h4`,{...n,id:String(e)?.toLowerCase().replace(/[^\w\s-]/g,``).replace(/\s+/g,`-`),onLoad:()=>{setTimeout(t,100)},children:e}),h5:({children:e,...t})=>(0,u.jsx)(`h5`,{...t,id:String(e)?.toLowerCase().replace(/[^\w\s-]/g,``).replace(/\s+/g,`-`),children:e}),h6:({children:e,...t})=>(0,u.jsx)(`h6`,{...t,id:String(e)?.toLowerCase().replace(/[^\w\s-]/g,``).replace(/\s+/g,`-`),children:e}),a:({href:e,children:t,...i})=>(0,u.jsx)(`a`,{href:e,onClick:t=>{if(e&&e.endsWith(`.md`)&&n){t.preventDefault();let i=e;e.includes(`/`)&&(i=e.split(`/`).pop()||e);let a=r(i);console.log(`Internal link clicked:`,e,`-> normalized:`,a);try{n(a)}catch(e){console.error(`Failed to load note: ${a}`,e);try{n(i)}catch(e){console.error(`Failed to load note with filename: ${i}`,e),alert(`Note not found: ${i}`)}}}},className:`markdown-link`,...i,children:t}),table:({children:e,...t})=>(0,u.jsx)(`table`,{...t,className:`markdown-table`,children:e}),th:({children:e,...t})=>(0,u.jsx)(`th`,{...t,className:`markdown-th`,children:e}),td:({children:e,...t})=>(0,u.jsx)(`td`,{...t,className:`markdown-td`,children:e}),img:({src:e,alt:t,...n})=>(0,u.jsx)(`img`,{src:e,alt:t,style:{maxWidth:`100%`,height:`auto`,border:`1px solid #ddd`,borderRadius:`4px`,margin:`15px 0`,display:`block`},...n})},children:e})}function re({currentFilename:e,onLoadNote:t}){let n=U(e);return n?(0,u.jsx)(`div`,{className:`next-lesson-container`,children:(0,u.jsx)(`button`,{className:`next-lesson-button`,onClick:()=>{t(n.filename)},"aria-label":`Go to next lesson: ${n.title}`,children:(0,u.jsxs)(`div`,{className:`next-lesson-content`,children:[(0,u.jsx)(`span`,{className:`next-lesson-label`,children:`Up Next`}),(0,u.jsx)(`span`,{className:`next-lesson-title`,children:n.title}),(0,u.jsx)(`span`,{className:`next-lesson-arrow`,children:`→`})]})})}):null}function ie(){let[e,t]=(0,l.useState)(null),[n,r]=(0,l.useState)(`home.md`),[i,a]=(0,l.useState)([`home.md`]),[o,s]=(0,l.useState)(null),[c,f]=(0,l.useState)(!1),p=(0,l.useCallback)(()=>{t(W(`home.md`)),r(`home.md`),a([`home.md`]),s(`home`),m(`home.md`,`home`)},[]);(0,l.useEffect)(()=>{let e=new URLSearchParams(window.location.search),n=e.get(`note`),i=e.get(`section`);if(n)try{t(W(n)),r(n),a([n]);let e=i||H(n);s(e),m(n,e)}catch(e){console.error(`Failed to load note from URL:`,n,e),p()}else p()},[p]),(0,l.useEffect)(()=>{if(e){let e=setTimeout(()=>{v()},100);return()=>clearTimeout(e)}},[e]);let m=(e,t)=>{let n=new URLSearchParams;n.set(`note`,e),t&&n.set(`section`,t);let r=`${window.location.pathname}?${n.toString()}`;window.history.pushState({},``,r)},h=e=>{console.log(`Loading note:`,e),t(null),e!==n&&(a(t=>[...t,e]),r(e));let i=H(e);s(i),m(e,i),f(!1),setTimeout(()=>{try{t(W(e));let n=document.querySelector(`.center.main`);n&&(n.scrollTop=0),setTimeout(()=>{v()},50)}catch(n){console.error(`Error loading note:`,e,n),t(`# Error
 
-Note not found: `+e)}},100)},g=()=>{f(!c)},_=()=>{f(!1)},v=()=>{document.querySelectorAll(`.markdown-content h3, .markdown-content h4`).forEach(e=>{e.textContent&&e.textContent.includes(`Up Next`)&&e.classList.add(`up-next-section`)})},y=()=>{if(i.length>1){let e=[...i];e.pop();let n=e[e.length-1];a(e),r(n);try{t(H(n));let e=document.querySelector(`.center.main`);e&&(e.scrollTop=0)}catch(e){console.error(`Error loading previous note:`,n,e)}}},b=o&&o in I?I[o]:null,x=o===`home`?`📚 Programming Notes Hub`:b?`${b.icon} ${b.name} Notes`:`📚 Programming Notes`;return(0,u.jsxs)(u.Fragment,{children:[(0,u.jsxs)(`header`,{children:[(0,u.jsxs)(`button`,{className:`hamburger-menu`,onClick:g,"aria-label":`Toggle navigation menu`,children:[(0,u.jsx)(`span`,{}),(0,u.jsx)(`span`,{}),(0,u.jsx)(`span`,{})]}),(0,u.jsx)(`h1`,{children:x})]}),(0,u.jsxs)(`div`,{style:{display:`flex`,width:`100%`,marginTop:`var(--header-height)`},children:[(0,u.jsx)(K,{setCurrentNote:h,currentSection:o}),c&&(0,u.jsx)(`div`,{className:`mobile-overlay`,onClick:_,children:(0,u.jsxs)(`div`,{className:`mobile-menu`,onClick:e=>e.stopPropagation(),children:[(0,u.jsxs)(`div`,{className:`mobile-menu-header`,children:[(0,u.jsx)(`h2`,{children:`Navigation`}),(0,u.jsx)(`button`,{className:`close-mobile-menu`,onClick:_,"aria-label":`Close navigation menu`,children:`✕`})]}),(0,u.jsx)(K,{setCurrentNote:h,currentSection:o,isMobile:!0})]})}),(0,u.jsxs)(`div`,{className:`center main`,children:[(0,u.jsxs)(`div`,{className:`navigation-bar`,children:[i.length>1&&(0,u.jsx)(`button`,{onClick:y,className:`back-button`,children:`← Back`}),(0,u.jsx)(`span`,{className:`current-note`,children:R(n)})]}),e===null&&(0,u.jsx)(d,{}),e!==null&&(0,u.jsx)(`div`,{className:`markdown-content`,children:(0,u.jsx)($,{content:e,styleUpNextSections:v,loadNote:h})})]}),(0,u.jsx)(`div`,{className:`right-nav`,children:(0,u.jsx)(q,{currentNote:e,currentNoteName:n})})]})]})}var ne=te;(0,c.createRoot)(document.getElementById(`root`)).render((0,u.jsx)(l.StrictMode,{children:(0,u.jsx)(ne,{})}));
+Note not found: `+e)}},100)},g=()=>{f(!c)},_=()=>{f(!1)},v=()=>{document.querySelectorAll(`.markdown-content h3, .markdown-content h4`).forEach(e=>{e.textContent&&e.textContent.includes(`Up Next`)&&e.classList.add(`up-next-section`)})},y=()=>{if(i.length>1){let e=[...i];e.pop();let n=e[e.length-1];a(e),r(n);try{t(W(n));let e=document.querySelector(`.center.main`);e&&(e.scrollTop=0)}catch(e){console.error(`Error loading previous note:`,n,e)}}},b=o&&o in I?I[o]:null,x=o===`home`?`📚 Programming Notes Hub`:b?`${b.icon} ${b.name} Notes`:`📚 Programming Notes`;return(0,u.jsxs)(u.Fragment,{children:[(0,u.jsxs)(`header`,{children:[(0,u.jsxs)(`button`,{className:`hamburger-menu`,onClick:g,"aria-label":`Toggle navigation menu`,children:[(0,u.jsx)(`span`,{}),(0,u.jsx)(`span`,{}),(0,u.jsx)(`span`,{})]}),(0,u.jsx)(`h1`,{children:x})]}),(0,u.jsxs)(`div`,{style:{display:`flex`,width:`100%`,marginTop:`var(--header-height)`},children:[(0,u.jsx)(J,{setCurrentNote:h,currentSection:o}),c&&(0,u.jsx)(`div`,{className:`mobile-overlay`,onClick:_,children:(0,u.jsxs)(`div`,{className:`mobile-menu`,onClick:e=>e.stopPropagation(),children:[(0,u.jsxs)(`div`,{className:`mobile-menu-header`,children:[(0,u.jsx)(`h2`,{children:`Navigation`}),(0,u.jsx)(`button`,{className:`close-mobile-menu`,onClick:_,"aria-label":`Close navigation menu`,children:`✕`})]}),(0,u.jsx)(J,{setCurrentNote:h,currentSection:o,isMobile:!0})]})}),(0,u.jsxs)(`div`,{className:`center main`,children:[(0,u.jsxs)(`div`,{className:`navigation-bar`,children:[i.length>1&&(0,u.jsx)(`button`,{onClick:y,className:`back-button`,children:`← Back`}),(0,u.jsx)(`span`,{className:`current-note`,children:R(n)})]}),e===null&&(0,u.jsx)(d,{}),e!==null&&(0,u.jsxs)(`div`,{className:`markdown-content`,children:[(0,u.jsx)(te,{content:e,styleUpNextSections:v,loadNote:h}),(0,u.jsx)(re,{currentFilename:n,onLoadNote:h})]})]}),(0,u.jsx)(`div`,{className:`right-nav`,children:(0,u.jsx)(Y,{currentNote:e,currentNoteName:n,onLoadNote:h})})]})]})}var ae=ie;(0,c.createRoot)(document.getElementById(`root`)).render((0,u.jsx)(l.StrictMode,{children:(0,u.jsx)(ae,{})}));
