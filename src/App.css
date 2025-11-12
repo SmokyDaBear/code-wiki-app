@@ -215,7 +215,7 @@ header h1 {
 
 .toc-item.active {
   background-color: #4caf50;
-  color: white;
+  color: white !important;
   font-weight: 600;
 }
 
@@ -280,7 +280,8 @@ header h1 {
 }
 
 @keyframes pulse {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 1;
     transform: scale(1);
   }

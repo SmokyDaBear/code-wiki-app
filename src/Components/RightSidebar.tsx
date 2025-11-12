@@ -40,14 +40,19 @@ export function RightSidebar({
     while ((match = headerRegex.exec(currentNote)) !== null) {
       const level = match[1].length;
       const text = match[2].trim();
+
+      // For H4 headers (level 4), only include them if they are "Up Next" items
+      // This excludes code examples, tips, and other H4 content from the TOC
+      const isUpNext = text.toLowerCase().includes("up next");
+      if (level === 4 && !isUpNext) {
+        continue; // Skip H4 headers that are not "Up Next" items
+      }
+
       // Create a simple ID from the text
       const id = text
         .toLowerCase()
         .replace(/[^\w\s-]/g, "")
         .replace(/\s+/g, "-");
-
-      // Check if this is an "Up Next" section
-      const isUpNext = text.toLowerCase().includes("up next");
 
       headers.push({ id, text, level, isUpNext });
     }
