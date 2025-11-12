@@ -4,6 +4,7 @@ import {
   NoteSections,
   getNotesBySection,
   getAvailableSections,
+  getDisplayName,
 } from "./notes";
 
 // Define types for navigation links
@@ -47,10 +48,10 @@ export const generateSectionLinks = (): NavLink[] => {
 
 // Helper function to format note filenames into readable titles
 const formatNoteTitle = (filename: string): string => {
-  return filename
+  return getDisplayName(filename)
     .replace(".md", "")
     .replace(/-/g, " ")
-    .replace(/\b\w/g, (l) => l.toUpperCase());
+    .replace(/\b\w/g, (l: string) => l.toUpperCase());
 };
 
 // Legacy SQL Links (for backward compatibility)

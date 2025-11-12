@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { getDisplayName } from "../data/notes";
 
 interface TocItem {
   id: string;
@@ -140,7 +141,9 @@ export function RightSidebar({
         <div className="note-stats">
           <div className="stat-item">
             <span className="stat-label">📄 File:</span>
-            <span className="stat-value">{currentNoteName}</span>
+            <span className="stat-value">
+              {getDisplayName(currentNoteName)}
+            </span>
           </div>
           {noteInfo && (
             <>

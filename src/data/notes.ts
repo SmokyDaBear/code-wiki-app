@@ -69,9 +69,29 @@ export const getAllNotes = (): string[] => {
   return Object.keys(allNotesMap);
 };
 
-// Get notes by section
+// Utility function to remove number prefix from filename for display
+export const getDisplayName = (filename: string): string => {
+  return filename.replace(/^\d{2}-/, "");
+};
+
+// Utility function to get clean title from filename
+export const getCleanTitle = (filename: string): string => {
+  return getDisplayName(filename)
+    .replace(".md", "")
+    .replace(/-/g, " ")
+    .replace(/\b\w/g, (l) => l.toUpperCase());
+};
+
+// Get notes by section (sorted by number prefix)
 export const getNotesBySection = (section: NoteSection): string[] => {
-  return Object.keys(sectionNotesMap[section] || {});
+  const notes = Object.keys(sectionNotesMap[section] || {});
+  // Sort by number prefix, then alphabetically
+  return notes.sort((a, b) => {
+    const aNum = parseInt(a.match(/^\d+/)?.[0] || "999");
+    const bNum = parseInt(b.match(/^\d+/)?.[0] || "999");
+    if (aNum !== bNum) return aNum - bNum;
+    return a.localeCompare(b);
+  });
 };
 
 // Get all sections that have notes

@@ -3,17 +3,14 @@ import "./App.css";
 import { SpinLoader } from "./Components/SpinLoader";
 import { LeftNav } from "./Components/LeftNav";
 import { RightSidebar } from "./Components/RightSidebar";
+import { MarkdownRenderer } from "./Components/MarkdownRenderer";
 import {
   retrieveNoteHTML,
   getNoteSection,
   NoteSections,
   type NoteSection,
+  getDisplayName,
 } from "./data/notes";
-import Markdown from "react-markdown";
-import remarkGfm from "remark-gfm";
-import remarkBreaks from "remark-breaks";
-import rehypeHighlight from "rehype-highlight";
-import rehypeRaw from "rehype-raw";
 
 function App() {
   const [currentNote, setCurrentNote] = useState<string | null>(null);
@@ -166,70 +163,6 @@ function App() {
         console.error("Error loading previous note:", previousNote, error);
       }
     }
-  }; // Helper function to normalize filename
-  const normalizeFilename = (filename: string): string => {
-    // Handle common filename variations
-    const normalizations: Record<string, string> = {
-      "getting-started.md": "get-started.md",
-      "basics.md": "sql-index.md", // Assuming basics refers to the index
-    };
-
-    return normalizations[filename] || filename;
-  };
-
-  // Custom link component for internal navigation
-  const CustomLink = ({
-    href,
-    children,
-    ...props
-  }: React.AnchorHTMLAttributes<HTMLAnchorElement>) => {
-    const handleClick = (e: React.MouseEvent) => {
-      // Check if it's an internal markdown file link
-      if (href && href.endsWith(".md")) {
-        e.preventDefault();
-
-        // Extract filename from various path formats
-        let filename = href;
-
-        // Handle relative paths like "../html/html-two.md" or "./file.md"
-        if (href.includes("/")) {
-          filename = href.split("/").pop() || href;
-        }
-
-        const normalizedFilename = normalizeFilename(filename);
-        console.log(
-          "Internal link clicked:",
-          href,
-          "-> extracted filename:",
-          filename,
-          "-> normalized:",
-          normalizedFilename
-        );
-
-        try {
-          loadNote(normalizedFilename);
-        } catch (error) {
-          console.error(`Failed to load note: ${normalizedFilename}`, error);
-          // Fallback: try the original extracted filename
-          try {
-            loadNote(filename);
-          } catch (fallbackError) {
-            console.error(
-              `Failed to load note with filename: ${filename}`,
-              fallbackError
-            );
-            alert(`Note not found: ${filename}`);
-          }
-        }
-      }
-      // For external links, let them work normally
-    };
-
-    return (
-      <a href={href} onClick={handleClick} className="markdown-link" {...props}>
-        {children}
-      </a>
-    );
   };
 
   // Get current section info for dynamic header
@@ -300,141 +233,19 @@ function App() {
                 ← Back
               </button>
             )}
-            <span className="current-note">{currentNoteName}</span>
+            <span className="current-note">
+              {getDisplayName(currentNoteName)}
+            </span>
           </div>
 
           {currentNote === null && <SpinLoader />}
           {currentNote !== null && (
             <div className="markdown-content">
-              <Markdown
-                remarkPlugins={[remarkGfm, remarkBreaks]}
-                rehypePlugins={[rehypeHighlight, rehypeRaw]}
-                components={{
-                  h1: ({ children, ...props }) => {
-                    const text =
-                      typeof children === "string"
-                        ? children
-                        : children?.toString() || "";
-                    const id = text
-                      .toLowerCase()
-                      .replace(/[^\w\s-]/g, "")
-                      .replace(/\s+/g, "-");
-                    return (
-                      <h1 id={id} {...props}>
-                        {children}
-                      </h1>
-                    );
-                  },
-                  h2: ({ children, ...props }) => {
-                    const text =
-                      typeof children === "string"
-                        ? children
-                        : children?.toString() || "";
-                    const id = text
-                      .toLowerCase()
-                      .replace(/[^\w\s-]/g, "")
-                      .replace(/\s+/g, "-");
-                    return (
-                      <h2 id={id} {...props}>
-                        {children}
-                      </h2>
-                    );
-                  },
-                  h3: ({ children, ...props }) => {
-                    const text =
-                      typeof children === "string"
-                        ? children
-                        : children?.toString() || "";
-                    const id = text
-                      .toLowerCase()
-                      .replace(/[^\w\s-]/g, "")
-                      .replace(/\s+/g, "-");
-                    return (
-                      <h3 id={id} {...props}>
-                        {children}
-                      </h3>
-                    );
-                  },
-                  h4: ({ children, ...props }) => {
-                    const text =
-                      typeof children === "string"
-                        ? children
-                        : children?.toString() || "";
-                    const id = text
-                      .toLowerCase()
-                      .replace(/[^\w\s-]/g, "")
-                      .replace(/\s+/g, "-");
-                    return (
-                      <h4 id={id} {...props}>
-                        {children}
-                      </h4>
-                    );
-                  },
-                  h5: ({ children, ...props }) => {
-                    const text =
-                      typeof children === "string"
-                        ? children
-                        : children?.toString() || "";
-                    const id = text
-                      .toLowerCase()
-                      .replace(/[^\w\s-]/g, "")
-                      .replace(/\s+/g, "-");
-                    return (
-                      <h5 id={id} {...props}>
-                        {children}
-                      </h5>
-                    );
-                  },
-                  h6: ({ children, ...props }) => {
-                    const text =
-                      typeof children === "string"
-                        ? children
-                        : children?.toString() || "";
-                    const id = text
-                      .toLowerCase()
-                      .replace(/[^\w\s-]/g, "")
-                      .replace(/\s+/g, "-");
-                    return (
-                      <h6 id={id} {...props}>
-                        {children}
-                      </h6>
-                    );
-                  },
-                  table: ({ children, ...props }) => (
-                    <table className="markdown-table" {...props}>
-                      {children}
-                    </table>
-                  ),
-                  th: ({ children, ...props }) => (
-                    <th className="markdown-th" {...props}>
-                      {children}
-                    </th>
-                  ),
-                  td: ({ children, ...props }) => (
-                    <td className="markdown-td" {...props}>
-                      {children}
-                    </td>
-                  ),
-                  img: ({ src, alt, ...props }) => (
-                    <img
-                      src={src}
-                      alt={alt}
-                      style={{
-                        maxWidth: "100%",
-                        height: "auto",
-                        border: "1px solid #ddd",
-                        borderRadius: "4px",
-                        margin: "15px 0",
-                        display: "block",
-                      }}
-                      {...props}
-                    />
-                  ),
-                  a: CustomLink,
-                }}
-              >
-                {currentNote}
-              </Markdown>
+              <MarkdownRenderer
+                content={currentNote}
+                styleUpNextSections={styleUpNextSections}
+                loadNote={loadNote}
+              />
             </div>
           )}
         </div>
