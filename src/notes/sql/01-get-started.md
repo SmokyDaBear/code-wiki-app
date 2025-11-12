@@ -76,6 +76,5 @@ The following SQL statement creates a differential back up of the database "test
 
 #### Tip: A differential back up reduces the back up time (since only the changes are backed up).
 
-#### Up Next: Learn about SQL data types in the [SQL Data Types 📊](data-types.md) notes.
 
 #### Previous: Explore the SQL learning notes overview in the [Learn SQL 🌎](sql-index.md) notes to understand the structure of the SQL learning material.

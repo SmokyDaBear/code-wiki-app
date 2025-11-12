@@ -55,6 +55,5 @@ Selecting the appropriate data type ensures efficient storage, accurate operatio
 
 Variables are used to store data values. When creating tables, you need to define the datatype for each column in the table.
 
-#### Up Next: Learn about creating tables in SQL and how to define columns with appropriate data types in the [Tables in SQL 🗄️](tables.md) notes.
 
 #### Previous: Review the [SQL Basics 📝](basics.md) notes to understand fundamental SQL concepts before diving into data types and tables.

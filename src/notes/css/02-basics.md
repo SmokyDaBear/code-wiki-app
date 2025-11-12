@@ -140,5 +140,3 @@ The difference between `em` and `rem` is that `em` is relative to the font size 
 </div>
 
 Measurement are most commonly used in properties such as `width`, `height`, `margin`, `padding`, and `font-size`.
-
-#### Up Next [ Positioning ▶️](positioning.md)

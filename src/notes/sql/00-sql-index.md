@@ -1,11 +1,5 @@
 # Learn SQL 🌎
 
-#### Author: SmokyDaBear Follow me on [GitHub](https://github.com/SmokyDaBear)
-
-with contributions from ChatGPT
-
-#### Date: 2024-06-15
-
 ## Welcome to the SQL Learning Notes!
 
 Welcome to the SQL learning notes! Here, you'll find comprehensive information on various SQL topics, including data types, table creation, data manipulation, and database management.
@@ -50,7 +44,5 @@ For more in-depth learning, consider exploring the following resources:
 - [Mode SQL Tutorial](https://mode.com/sql-tutorial/)
 - [LeetCode SQL Problems](https://leetcode.com/problemset/database/)
   Happy learning! 🚀
-
-### Up Next: Getting started with SQL in the [Getting started with SQL 🖥️ 🪛](get-started.md) notes.
 
 #### Setup Guide: Follow the [Setting Up SQL 🛠️](setting-up.md) notes to install and configure SQL on your machine.

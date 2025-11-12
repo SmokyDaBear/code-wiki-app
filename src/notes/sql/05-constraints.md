@@ -79,6 +79,5 @@ Useful for establishing relationships between tables, such as linking orders to 
       FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID)
     );
 
-#### Up Next: Learn how to use constraints when creating tables in the [Tables in SQL 🗄️](tables.md) notes.
 
 #### Home: Return to the [Learn SQL 🌎](sql-index.md) main index for more SQL topics and resources.

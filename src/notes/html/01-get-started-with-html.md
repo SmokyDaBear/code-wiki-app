@@ -52,6 +52,5 @@ Here are some commonly used HTML tags:
 - Lists: `<ul>` for unordered lists and `<ol>` for ordered lists, with `<li>` for list items.
 - Divisions: `<div>` for grouping elements and applying styles.
 
-#### Up next Classes, IDs, and Data Attributes [Lesson 2](./classes-ids-data-attributes.md)
 
 #### Tip: Practice creating simple HTML pages to get comfortable with the structure and tags. Use online resources like [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/HTML) for reference and further learning.

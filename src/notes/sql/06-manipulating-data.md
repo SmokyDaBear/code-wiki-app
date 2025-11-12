@@ -78,6 +78,5 @@ The following SQL statement deletes the customer with CustomerID 1:
 
 #### Tip: Always use the WHERE clause to specify which record(s) to delete. If you omit the WHERE clause, all records in the table will be deleted!
 
-#### Up Next: Explore advanced data manipulation techniques and transactions in SQL in the [Advanced SQL Data Manipulation 🚀](advanced-manipulating-data.md) notes.
 
 #### Previous: Review the [Tables in SQL 🗄️](tables.md) notes to understand how to create and define tables before manipulating data.

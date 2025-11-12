@@ -102,6 +102,5 @@ The following SQL statements demonstrate how to alter the "Customers" table by a
 
 #### Tip: When altering a table, ensure that any changes made do not violate existing data integrity constraints or relationships with other tables.
 
-#### Up Next: Learn about inserting, updating, and deleting data in SQL tables in the [Manipulating Data in SQL 🛠️](manipulating-data.md) notes.
 
 #### Previous: Review the [SQL Data Types 📊](data-types.md) notes to understand different data types available in SQL before creating tables.

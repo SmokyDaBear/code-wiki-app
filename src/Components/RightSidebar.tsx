@@ -1,11 +1,10 @@
 import { useEffect, useState } from "react";
-import { getDisplayName } from "../data/notes";
+import { getDisplayName, getNextLesson } from "../data/notes";
 
 interface TocItem {
   id: string;
   text: string;
   level: number;
-  isUpNext?: boolean;
 }
 
 interface NoteInfo {
@@ -17,9 +16,11 @@ interface NoteInfo {
 export function RightSidebar({
   currentNote,
   currentNoteName,
+  onLoadNote,
 }: {
   currentNote: string | null;
   currentNoteName: string;
+  onLoadNote?: (filename: string) => void;
 }) {
   const [tocItems, setTocItems] = useState<TocItem[]>([]);
   const [noteInfo, setNoteInfo] = useState<NoteInfo | null>(null);
@@ -42,11 +43,9 @@ export function RightSidebar({
       const level = match[1].length;
       const text = match[2].trim();
 
-      // For H4 headers (level 4), only include them if they are "Up Next" items
-      // This excludes code examples, tips, and other H4 content from the TOC
-      const isUpNext = text.toLowerCase().includes("up next");
-      if (level === 4 && !isUpNext) {
-        continue; // Skip H4 headers that are not "Up Next" items
+      // Skip H4 headers as they're usually code examples or tips
+      if (level === 4) {
+        continue;
       }
 
       // Create a simple ID from the text
@@ -55,7 +54,19 @@ export function RightSidebar({
         .replace(/[^\w\s-]/g, "")
         .replace(/\s+/g, "-");
 
-      headers.push({ id, text, level, isUpNext });
+      headers.push({ id, text, level });
+    }
+
+    // Add Next Lesson item if available
+    if (onLoadNote) {
+      const nextLesson = getNextLesson(currentNoteName);
+      if (nextLesson) {
+        headers.push({
+          id: "next-lesson",
+          text: `Next: ${nextLesson.title}`,
+          level: 2, // Make it prominent like an H2
+        });
+      }
     }
 
     setTocItems(headers);
@@ -78,10 +89,19 @@ export function RightSidebar({
       readingTime,
       characterCount,
     });
-  }, [currentNote]);
+  }, [currentNote, currentNoteName, onLoadNote]);
 
   // Handle TOC link clicks
   const scrollToSection = (id: string) => {
+    if (id === "next-lesson" && onLoadNote) {
+      // Handle next lesson navigation
+      const nextLesson = getNextLesson(currentNoteName);
+      if (nextLesson) {
+        onLoadNote(nextLesson.filename);
+      }
+      return;
+    }
+
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({
@@ -178,11 +198,13 @@ export function RightSidebar({
                 key={index}
                 className={`toc-item level-${item.level} ${
                   activeSection === item.id ? "active" : ""
-                } ${item.isUpNext ? "up-next" : ""}`}
+                } ${item.id === "next-lesson" ? "next-lesson" : ""}`}
                 onClick={() => scrollToSection(item.id)}
                 title={item.text}
               >
-                {item.isUpNext && <span className="up-next-icon">🚀</span>}
+                {item.id === "next-lesson" && (
+                  <span className="next-lesson-icon">🚀</span>
+                )}
                 {item.text}
               </button>
             ))}

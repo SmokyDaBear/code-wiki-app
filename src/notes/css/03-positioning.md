@@ -145,5 +145,3 @@ The `z-index` property controls the vertical stacking order of positioned elemen
 </div>
 
 #### Tip: When using `z-index`, ensure that the elements are positioned (i.e., have a `position` value other than `static`). And also keep in mind that if an item has a parent with a defined `z-index`, it will be constrained within that parent's stacking context. For example, a child element cannot appear in front of an ancestor element with a lower `z-index`, even if the child has a higher `z-index` value.
-
-#### Up Next [ Flexbox ▶️](flexbox-basics.md)

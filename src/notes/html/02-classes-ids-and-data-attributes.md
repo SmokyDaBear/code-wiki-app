@@ -38,6 +38,5 @@ Example:
 
 These attributes provide flexibility in styling and scripting without cluttering the HTML structure.
 
-#### Up next HTML Forms [Lesson 3](./html-forms.md)
 
 #### Tip: Use classes for styling multiple elements, IDs for unique elements, and data attributes for storing custom data.

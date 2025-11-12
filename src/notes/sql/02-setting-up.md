@@ -50,6 +50,5 @@ SELECT VERSION();
 
 If the query returns the version of your SQL database, congratulations! Your setup is complete.
 
-#### Up Next: Learn about SQL data types in the [SQL Data Types 📊](data-types.md) notes.
 
 #### Home: Return to the [Learn SQL 🌎](sql-index.md) main index for more SQL topics and resources.

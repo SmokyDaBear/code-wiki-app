@@ -105,6 +105,29 @@ export const getNoteSection = (filename: string): NoteSection | null => {
   return noteInfo ? (noteInfo.section as NoteSection) : null;
 };
 
+// Get the next lesson in sequence based on number prefix
+export const getNextLesson = (
+  currentFilename: string
+): { filename: string; title: string } | null => {
+  const section = getNoteSection(currentFilename);
+  if (!section) return null;
+
+  const sectionNotes = getNotesBySection(section);
+  const currentIndex = sectionNotes.indexOf(currentFilename);
+
+  if (currentIndex === -1 || currentIndex >= sectionNotes.length - 1) {
+    return null; // Current note not found or it's the last lesson
+  }
+
+  const nextFilename = sectionNotes[currentIndex + 1];
+  const nextTitle = getCleanTitle(nextFilename);
+
+  return {
+    filename: nextFilename,
+    title: nextTitle,
+  };
+};
+
 // Synchronous retrieval - no async/await needed!
 export const retrieveNoteHTML = (noteFilename: string): string => {
   // Handle both old and new path formats

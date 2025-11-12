@@ -1,6 +1,10 @@
 # 📚 Programming Notes Hub
 
-Welcome to your comprehensive programming notes collection! This is your central hub for learning and referencing various programming languages and technologies.
+#### Author: SmokyDaBear Follow me on [GitHub](https://github.com/SmokyDaBear)
+
+#### Want your own website, or help setting one up? Visit [Verdant Webworks](https://verdant-webworks.vercel.app/)
+
+Welcome to what initially started as my personal notes collection but has since grown into a comprehensive resource for learning and referencing various programming languages and technologies. This is your central hub for all things programming! Built with React and Vite and a little help from ChatGPT, this app is designed to be fast, responsive, and easy to navigate.
 
 ## 🎯 What You'll Find Here
 

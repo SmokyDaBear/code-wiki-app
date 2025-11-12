@@ -4,6 +4,7 @@ import { SpinLoader } from "./Components/SpinLoader";
 import { LeftNav } from "./Components/LeftNav";
 import { RightSidebar } from "./Components/RightSidebar";
 import { MarkdownRenderer } from "./Components/MarkdownRenderer";
+import { NextLessonButton } from "./Components/NextLessonButton";
 import {
   retrieveNoteHTML,
   getNoteSection,
@@ -246,6 +247,10 @@ function App() {
                 styleUpNextSections={styleUpNextSections}
                 loadNote={loadNote}
               />
+              <NextLessonButton
+                currentFilename={currentNoteName}
+                onLoadNote={loadNote}
+              />
             </div>
           )}
         </div>
@@ -253,6 +258,7 @@ function App() {
           <RightSidebar
             currentNote={currentNote}
             currentNoteName={currentNoteName}
+            onLoadNote={loadNote}
           />
         </div>
       </div>
