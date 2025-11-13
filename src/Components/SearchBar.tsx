@@ -77,9 +77,6 @@ export function SearchBar({
           </button>
         )}
       </div>
-      <div className="search-shortcut">
-        <span>⌘K</span>
-      </div>
     </div>
   );
 }
