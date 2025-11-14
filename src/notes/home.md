@@ -2,17 +2,19 @@
 
 ![SmokyDaBear](/images/profile-animated.png)
 
-#### Author: SmokyDaBear Follow me on [GitHub](https://github.com/SmokyDaBear)
+#### Author: SmokyDaBear Check out my [GitHub](https://github.com/SmokyDaBear)
 
-#### Want your own website, or help setting one up? Visit [Verdant Webworks](https://verdant-webworks.vercel.app/)
+#### Disclaimer: These notes are a collection of my personal learning journey and may contain simplifications or omissions. Always refer to official documentation for comprehensive information. Some of these notes were directly or indirectly assisted by AI tools like ChatGPT, or copied from other sources and then modified to fit my learning style. If you find any content that infringes on your rights, please contact me to have it removed or properly credited. You can reach me by email at [verdant-webworks@gmail.com](mailto:verdant-webworks@gmail.com).
 
-Welcome to what initially started as my personal notes collection but has since grown into a comprehensive resource for learning and referencing various programming languages and technologies. This is your central hub for all things programming! Built with React and Vite and a little help from ChatGPT, this app is designed to be fast, responsive, and easy to navigate.
+<br/>
 
-## 🎯 What You'll Find Here
+#### Want your own website, or help setting one up? Visit my Landing Page [Verdant Webworks](https://verdant-webworks.vercel.app/)
 
-This collection covers fundamental concepts, best practices, and practical examples across multiple programming domains. Whether you're learning your first programming language or expanding your skill set, these notes are designed to be clear, concise, and actionable.
+## About
 
----
+Welcome to what initially started as my personal notes collection but has since grown into a comprehensive resource for learning and referencing various programming languages and technologies. This is your central hub for all things programming! Built with React and Vite, utilizing Markdown for the actual notes themselves which are then converted to HTML for easy reading. I didn't feel like rewriting notes in HTML, but I wanted to be able to search them and have a nice interface to read them in. You are free to fork the repository and use it for your own notes if you like, just if you do, please add a link back to my GitHub profile or website somewhere in your version. Enjoy exploring and learning!
+
+If you do decide to use this as a base for your own notes, there is a CSS file dedicated to styling the notes located at `src/styles/base.css`. Feel free to modify it to suit your preferences!
 
 ## 📖 Available Sections
 
