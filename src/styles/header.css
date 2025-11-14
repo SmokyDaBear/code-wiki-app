@@ -1,6 +1,9 @@
 /* Header Styles */
 
 header {
+  height: var(--header-height);
+}
+header .header-container {
   background: var(--accent-color);
   color: white;
   padding: 10px;

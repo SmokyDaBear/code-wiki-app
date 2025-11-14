@@ -6,7 +6,7 @@
   box-sizing: border-box;
   position: relative;
   overflow-y: auto;
-  height: calc(100vh - var(--header-height));
+  height: 100%;
   background: var(--bg-primary);
   color: var(--text-primary);
 }
@@ -119,15 +119,19 @@
   color: var(--heading-primary);
   border-bottom: 3px solid var(--accent-color);
   padding-bottom: 10px;
+  padding: 10px 0;
   margin-bottom: 25px;
+  text-align: center;
 }
 
 .center.main h2 {
   color: var(--heading-secondary);
+  border-bottom: 2px solid var(--accent-blue-dark);
+  padding: 10px 0;
   margin-top: 30px;
   margin-bottom: 15px;
+  text-align: center;
 }
-
 .center.main h3 {
   color: var(--heading-tertiary);
   margin-top: 25px;
