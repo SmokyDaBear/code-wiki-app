@@ -301,10 +301,10 @@ function App() {
 
   const headerTitle =
     currentSection === "home"
-      ? "📚 Programming Notes Hub"
+      ? "Verdant Webworks Learning Hub"
       : sectionInfo
       ? `${sectionInfo.icon} ${sectionInfo.name} Notes`
-      : "📚 Programming Notes";
+      : "Learning Hub";
 
   return (
     <>
@@ -406,6 +406,19 @@ function App() {
           />
         </div>
       </div>
+      <footer>
+        <div className="footer-content">
+          <span>© 2025 Verdant Webworks</span>
+          <span className="footer-separator">|</span>
+          <a
+            href="https://verdant-webworks.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            verdantwebworks.vercel.app
+          </a>
+        </div>
+      </footer>
 
       {/* Search Results Overlay */}
       {showSearchResults && (
