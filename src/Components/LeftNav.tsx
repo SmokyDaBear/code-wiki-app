@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { leftLinks } from "../data/data";
 import { NoteSections, type NoteSection } from "../data/notes";
 import { SearchBar } from "./SearchBar";
+import "../styles/left-nav.css";
 
 export function LeftNav({
   setCurrentNote,
@@ -9,6 +10,8 @@ export function LeftNav({
   currentNoteName,
   onSearch,
   onClearSearch,
+  isMobile,
+  rightSidebarContent,
 }: {
   setCurrentNote: (note: string) => void;
   currentSection: string | null;
@@ -16,8 +19,10 @@ export function LeftNav({
   onSearch?: (query: string) => void;
   onClearSearch?: () => void;
   isMobile?: boolean;
+  rightSidebarContent?: React.ReactNode;
 }) {
   const [activeDropdown, setActiveDropdown] = useState<number | null>(null);
+  const [mobileView, setMobileView] = useState<"chapters" | "page">("chapters");
 
   // Update active dropdown based on current section
   useEffect(() => {
@@ -51,60 +56,91 @@ export function LeftNav({
 
   return (
     <div className="left-nav">
-      <SearchBar
-        onSearch={handleSearch}
-        onClear={handleClearSearch}
-        placeholder="Search all notes..."
-      />
+      {isMobile && rightSidebarContent && (
+        <div className="mobile-nav-toggle">
+          <button
+            className={`mobile-nav-btn ${
+              mobileView === "chapters" ? "active" : ""
+            }`}
+            onClick={() => setMobileView("chapters")}
+          >
+            All Chapters
+          </button>
+          <button
+            className={`mobile-nav-btn ${
+              mobileView === "page" ? "active" : ""
+            }`}
+            onClick={() => setMobileView("page")}
+          >
+            On this page
+          </button>
+        </div>
+      )}
 
-      {leftLinks.map((link, index) => {
-        if (link.children) {
-          const isActive = activeDropdown === index;
-          return (
-            <div
-              className={`dropdown-parent ${isActive ? "active" : ""}`}
-              key={index}
-            >
-              <div
-                className="dropdown-title"
-                onClick={() => toggleDropdown(index)}
-              >
-                <span className="section-arrow">{isActive ? "▼" : "▶"}</span>
-                {link.text}
-              </div>
-              <div
-                className={`dropdown-children ${
-                  isActive ? "expanded" : "collapsed"
-                }`}
-              >
-                {link.children.map((child, cIndex) => (
-                  <p
-                    className={`child-link ${
-                      currentNoteName === child.href ? "active" : ""
-                    }`}
-                    key={cIndex}
-                    onClick={() => child.href && setCurrentNote(child.href)}
+      {(!isMobile || mobileView === "chapters") && (
+        <>
+          <SearchBar
+            onSearch={handleSearch}
+            onClear={handleClearSearch}
+            placeholder="Search all notes..."
+          />
+
+          {leftLinks.map((link, index) => {
+            if (link.children) {
+              const isActive = activeDropdown === index;
+              return (
+                <div
+                  className={`dropdown-parent ${isActive ? "active" : ""}`}
+                  key={index}
+                >
+                  <div
+                    className="dropdown-title"
+                    onClick={() => toggleDropdown(index)}
                   >
-                    {child.text}
-                  </p>
-                ))}
-              </div>
-            </div>
-          );
-        } else {
-          return (
-            <div
-              className={`parent-link ${
-                currentNoteName === link.href ? "active" : ""
-              }`}
-              key={index}
-              onClick={() => link.href && setCurrentNote(link.href)}
-            >
-              {link.text}
-            </div>
-          );
-        }
-      })}
+                    <span className="section-arrow">
+                      {isActive ? "▼" : "▶"}
+                    </span>
+                    {link.text}
+                  </div>
+                  <div
+                    className={`dropdown-children ${
+                      isActive ? "expanded" : "collapsed"
+                    }`}
+                  >
+                    {link.children.map((child, cIndex) => (
+                      <p
+                        className={`child-link ${
+                          currentNoteName === child.href ? "active" : ""
+                        }`}
+                        key={cIndex}
+                        onClick={() => child.href && setCurrentNote(child.href)}
+                      >
+                        {child.text}
+                      </p>
+                    ))}
+                  </div>
+                </div>
+              );
+            } else {
+              return (
+                <div
+                  className={`parent-link ${
+                    currentNoteName === link.href ? "active" : ""
+                  }`}
+                  key={index}
+                  onClick={() => link.href && setCurrentNote(link.href)}
+                >
+                  {link.text}
+                </div>
+              );
+            }
+          })}
+        </>
+      )}
+
+      {isMobile && mobileView === "page" && rightSidebarContent && (
+        <div className="mobile-page-overview">{rightSidebarContent}</div>
+      )}
     </div>
   );
 }

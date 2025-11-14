@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import type { UserPreferences } from "../utils/userPreferences";
+import "../styles/modals.css";
 
 interface UserMenuProps {
   username?: string;

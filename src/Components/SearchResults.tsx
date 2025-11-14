@@ -1,4 +1,5 @@
 import type { SearchResult } from "../data/notes";
+import "../styles/search.css";
 
 interface SearchResultsProps {
   results: SearchResult[];

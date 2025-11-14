@@ -1,4 +1,4 @@
-import { getNextLesson } from "../data/notes";
+import { getNextLesson } from "../../data/notes";
 import "./NextLessonButton.css";
 
 interface NextLessonButtonProps {

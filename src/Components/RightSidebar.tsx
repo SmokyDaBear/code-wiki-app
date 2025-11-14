@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { getDisplayName, getNextLesson } from "../data/notes";
+import "../styles/right-nav.css";
 
 interface TocItem {
   id: string;

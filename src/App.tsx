@@ -1,10 +1,12 @@
 import { useEffect, useState, useCallback } from "react";
-import "./App.css";
+import "./styles/header.css";
+import "./styles/markdown.css";
+import "./styles/responsive.css";
 import { SpinLoader } from "./Components/SpinLoader";
 import { LeftNav } from "./Components/LeftNav";
 import { RightSidebar } from "./Components/RightSidebar";
 import { MarkdownRenderer } from "./Components/MarkdownRenderer";
-import { NextLessonButton } from "./Components/NextLessonButton";
+import { NextLessonButton } from "./Components/NextLessonButton/NextLessonButton";
 import {
   retrieveNoteHTML,
   getNoteSection,
@@ -325,13 +327,7 @@ function App() {
           onShowHistory={handleShowHistory}
         />
       </header>
-      <div
-        style={{
-          display: "flex",
-          width: "100%",
-          marginTop: "var(--header-height)",
-        }}
-      >
+      <div className="body-container">
         {/* Desktop Navigation */}
         <LeftNav
           setCurrentNote={loadNote}
@@ -362,6 +358,13 @@ function App() {
                 onSearch={handleSearch}
                 onClearSearch={handleClearSearch}
                 isMobile={true}
+                rightSidebarContent={
+                  <RightSidebar
+                    currentNote={currentNote}
+                    currentNoteName={currentNoteName}
+                    onLoadNote={loadNote}
+                  />
+                }
               />
             </div>
           </div>

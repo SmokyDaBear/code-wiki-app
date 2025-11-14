@@ -1,5 +1,6 @@
 import type { UserPreferences } from "../utils/userPreferences";
 import { getCleanTitle, getNoteSection, NoteSections } from "../data/notes";
+import "../styles/modals.css";
 
 interface ReadingHistoryProps {
   isOpen: boolean;

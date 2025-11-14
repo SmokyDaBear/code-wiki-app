@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { applyTheme } from "../utils/userPreferences";
+import "../styles/modals.css";
 
 interface WelcomeModalProps {
   isOpen: boolean;

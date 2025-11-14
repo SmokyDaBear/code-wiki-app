@@ -1,0 +1,260 @@
+/* Markdown Content Styles */
+
+.center.main {
+  width: 70%;
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative;
+  overflow-y: auto;
+  height: calc(100vh - var(--header-height));
+  background: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+/* Smooth content transitions */
+.center.main .markdown-content {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Markdown Table Styles */
+.markdown-table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 15px 0;
+  font-size: 14px;
+  border: 2px solid var(--border-color);
+  background-color: var(--bg-secondary);
+}
+
+.markdown-th {
+  background-color: var(--accent-color);
+  color: white;
+  font-weight: bold;
+  padding: 12px 8px;
+  text-align: left;
+  border: 1px solid var(--border-color);
+}
+
+.markdown-td {
+  padding: 10px 8px;
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-primary);
+}
+
+/* Alternating row colors */
+.markdown-table tbody tr:nth-child(even) .markdown-td {
+  background-color: var(--bg-secondary);
+}
+
+/* Hover effect for table rows */
+.markdown-table tbody tr:hover .markdown-td {
+  background-color: var(--bg-tertiary);
+}
+
+/* Code blocks in markdown */
+.center.main pre {
+  background-color: var(--code-bg);
+  color: var(--code-text);
+  padding: 15px;
+  border-radius: 5px;
+  overflow-x: auto;
+  border-left: 4px solid var(--accent-color);
+}
+
+.center.main code {
+  background-color: var(--code-bg);
+  color: var(--code-text);
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-family: "Courier New", monospace;
+}
+
+.center.main pre code {
+  background-color: transparent;
+  color: inherit;
+  padding: 0;
+}
+
+/* Blockquotes */
+.center.main blockquote {
+  border-left: 4px solid var(--accent-color);
+  margin: 15px 0;
+  padding: 10px 20px;
+  background-color: var(--bg-secondary);
+  font-style: italic;
+}
+
+/* Markdown Links */
+.markdown-link {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: 500;
+  border-bottom: 1px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.markdown-link:hover {
+  color: var(--accent-hover);
+  border-bottom: 1px solid var(--accent-color);
+  background-color: var(--accent-10);
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+/* Internal navigation links styling */
+.markdown-link[href$=".md"] {
+  color: var(--accent-blue);
+  font-weight: 600;
+}
+
+.markdown-link[href$=".md"]:hover {
+  color: var(--accent-blue-dark);
+  border-bottom: 1px solid var(--accent-blue);
+  background-color: var(--blue-10);
+  cursor: pointer;
+}
+
+/* Home Page Specific Styles */
+.center.main h1 {
+  color: var(--heading-primary);
+  border-bottom: 3px solid var(--accent-color);
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+}
+
+.center.main h2 {
+  color: var(--heading-secondary);
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.center.main h3 {
+  color: var(--heading-tertiary);
+  margin-top: 25px;
+  margin-bottom: 12px;
+}
+
+.center.main hr {
+  border: none;
+  height: 2px;
+  background: linear-gradient(
+    to right,
+    var(--accent-color),
+    var(--accent-light),
+    var(--accent-color)
+  );
+  margin: 30px 0;
+  border-radius: 2px;
+}
+
+/* Section overview styling */
+.center.main p strong {
+  color: var(--accent-hover);
+}
+
+.center.main blockquote {
+  background-color: var(--success-bg-very-light);
+  border-left: 4px solid var(--accent-color);
+  padding: 15px 20px;
+  margin: 20px 0;
+  font-style: italic;
+  color: var(--accent-hover);
+}
+
+/* Enhanced list styling for topic lists */
+.center.main ul {
+  list-style: none;
+}
+.center.main ul li {
+  background-color: var(--bg-secondary);
+  padding: 10px 15px;
+  border-left: var(--accent-dark) 3px solid;
+  border-radius: 4px;
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.center.main ul li strong {
+  font-weight: 600;
+}
+
+/* Special styling for the tips section */
+.center.main ul li:first-child {
+  font-weight: 500;
+}
+
+.center.main ul li:nth-of-type(odd) {
+  background-color: var(--bg-tertiary);
+  border-left-color: var(--accent-hover);
+}
+
+/* Up Next Button Styling - Using valid CSS selectors only */
+.center.main h4[id*="up-next"],
+.center.main h3[id*="up-next"],
+.center.main .up-next-section,
+.center.main h4.up-next-section,
+.center.main h3.up-next-section {
+  background: linear-gradient(135deg, var(--accent-color), var(--accent-hover));
+  color: white;
+  padding: 15px 20px;
+  border-radius: 8px;
+  margin: 25px 0 15px 0;
+  box-shadow: 0 4px 12px var(--accent-30);
+  position: relative;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* Fallback: Style any h4 or h3 containing "Up Next" text */
+.markdown-content h4,
+.markdown-content h3 {
+  position: relative;
+}
+
+/* Enhanced Up Next styling using JavaScript-applied class */
+.up-next-section {
+  background: linear-gradient(
+    135deg,
+    var(--accent-color),
+    var(--accent-hover)
+  ) !important;
+  color: white !important;
+  padding: 15px 20px !important;
+  border-radius: 8px !important;
+  margin: 25px 0 15px 0 !important;
+  box-shadow: 0 4px 12px var(--accent-30) !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.5px !important;
+  transition: all 0.3s ease !important;
+}
+
+.up-next-section:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 16px var(--accent-40) !important;
+}
+
+.up-next-section::before {
+  content: "🚀";
+  margin-right: 8px;
+  font-size: 1.2em;
+}
+
+/* Style the links inside Up Next sections */
+.up-next-section .markdown-link,
+.up-next-section a {
+  color: var(--success-bg-variant) !important;
+  text-decoration: none !important;
+  font-weight: 700 !important;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3) !important;
+  padding: 2px 0 !important;
+  transition: all 0.2s ease !important;
+}
+
+.up-next-section .markdown-link:hover,
+.up-next-section a:hover {
+  color: white !important;
+  border-bottom: 2px solid white !important;
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border-radius: 3px !important;
+  padding: 4px 6px 2px 6px !important;
+}
