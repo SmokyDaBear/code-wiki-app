@@ -309,23 +309,25 @@ function App() {
   return (
     <>
       <header>
-        <button
-          className="hamburger-menu"
-          onClick={toggleMobileMenu}
-          aria-label="Toggle navigation menu"
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-        <h1>{headerTitle}</h1>
-        <UserMenu
-          username={userPreferences.username}
-          preferences={userPreferences}
-          onThemeChange={handleThemeChange}
-          onClearData={handleClearAllData}
-          onShowHistory={handleShowHistory}
-        />
+        <div className="header-container">
+          <button
+            className="hamburger-menu"
+            onClick={toggleMobileMenu}
+            aria-label="Toggle navigation menu"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <h1>{headerTitle}</h1>
+          <UserMenu
+            username={userPreferences.username}
+            preferences={userPreferences}
+            onThemeChange={handleThemeChange}
+            onClearData={handleClearAllData}
+            onShowHistory={handleShowHistory}
+          />
+        </div>
       </header>
       <div className="body-container">
         {/* Desktop Navigation */}
