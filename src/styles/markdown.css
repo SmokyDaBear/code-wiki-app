@@ -191,6 +191,14 @@
   background-color: var(--bg-tertiary);
   border-left-color: var(--accent-hover);
 }
+.center.main ul li ul li {
+  background-color: var(--bg-primary) !important;
+  border: 1px solid var(--accent-blue) !important;
+  border-radius: 4px;
+  list-style: circle;
+  margin: 8px 0 8px !important;
+  font-style: italic;
+}
 
 /* Up Next Button Styling - Using valid CSS selectors only */
 .center.main h4[id*="up-next"],
