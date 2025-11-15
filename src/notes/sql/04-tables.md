@@ -39,6 +39,23 @@ The following SQL statement creates a table called "Customers" with three column
 
 #### Tip: Always define the appropriate data type for each column based on the kind of data you expect to store in that column. This helps in optimizing storage and ensuring data integrity.
 
+## Columns and Rows in SQL Tables
+
+In SQL tables, data is organized into columns and rows:
+
+### Columns
+
+- Columns represent the fields or attributes of the data. Each column has a specific data type that defines the kind of data it can hold (e.g., integer, varchar, date).
+- In the "Customers" table example above, "CustomerID", "CustomerFirstName", and "CustomerLastName" are the columns.
+
+### Rows
+
+- Rows represent individual records or entries in the table. Each row contains data for each column defined in the table.
+- For example, a row in the "Customers" table might contain the following data:
+  - CustomerID: 1
+  - CustomerFirstName: 'John'
+  - CustomerLastName: 'Doe'
+
 ## Dropping a Table
 
 The DROP TABLE statement is used to delete an existing table and all of its data from the database.
@@ -92,7 +109,7 @@ The following SQL statements demonstrate how to alter the "Customers" table by a
 ### Example
 
     ALTER TABLE Customers
-    ADD CustomerEmail varchar(255);
+    ADD COLUMN CustomerEmail varchar(255);
 
     ALTER TABLE Customers
     DROP COLUMN CustomerLastName;
@@ -102,5 +119,17 @@ The following SQL statements demonstrate how to alter the "Customers" table by a
 
 #### Tip: When altering a table, ensure that any changes made do not violate existing data integrity constraints or relationships with other tables.
 
+## Selecting Data from a Table
+
+The `SELECT` statement is used to retrieve data from a table.
+
+Using the `*` wildcard allows you to select all columns from the specified table, but normally you would specify particular columns to retrieve.
+Remeber that a column is a variable name in a table, like CustomerID or CustomerFirstName in the Customers table, while a row is a single record in that table, containing values for each column.
+
+### Syntax
+
+    SELECT * FROM _tablename;
+
+`SELECT` and `FROM` are SQL clauses and should be written in uppercase for better readability, while `_tablename` should be replaced with the actual name of the table you want to query.
 
 #### Previous: Review the [SQL Data Types 📊](data-types.md) notes to understand different data types available in SQL before creating tables.
