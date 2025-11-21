@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { leftLinks } from "../data/data";
-import { NoteSections, type NoteSection } from "../data/notes";
+import { NoteSections, type NoteSection } from "../data/sectionsIndex";
 import { SearchBar } from "./SearchBar";
 import "../styles/left-nav.css";
 

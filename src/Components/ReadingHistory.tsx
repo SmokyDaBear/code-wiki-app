@@ -1,5 +1,6 @@
 import type { UserPreferences } from "../utils/userPreferences";
-import { getCleanTitle, getNoteSection, NoteSections } from "../data/notes";
+import { getCleanTitle, getNoteSection } from "../data/notes";
+import { NoteSections } from "../data/sectionsIndex";
 import "../styles/modals.css";
 
 interface ReadingHistoryProps {

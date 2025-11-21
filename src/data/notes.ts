@@ -1,3 +1,4 @@
+import { NoteSections, type NoteSection } from "./sectionsIndex";
 // Vite's glob import - automatically imports all .md files at build time from all sections
 const notesModules = import.meta.glob("../notes/**/*.md", {
   query: "?raw",
@@ -36,34 +37,6 @@ Object.entries(notesModules).forEach(([path, content]) => {
     allNotesMap[filename] = { content, section };
   }
 });
-
-// Define note sections and their display names
-export const NoteSections = {
-  sql: { name: "SQL", icon: "🗃️" },
-  html: { name: "HTML", icon: "🌐" },
-  css: { name: "CSS", icon: "🎨" },
-  javascript: { name: "JavaScript", icon: "⚡" },
-  typescript: { name: "TypeScript", icon: "📘" },
-} as const;
-
-export type NoteSection = keyof typeof NoteSections;
-
-// Legacy Notes object for SQL (for backward compatibility)
-export const Notes = {
-  home: "sql-index.md",
-  getStarted: "get-started.md",
-  settingUp: "setting-up.md",
-  tables: "tables.md",
-  advancedManipulatingData: "advanced-manipulating-data.md",
-  constraints: "constraints.md",
-  dataTypes: "data-types.md",
-  basicManipulatingData: "manipulating-data.md",
-  dataStructures: "dataStructures.md",
-  introToData: "introToData.md",
-  manipulatingStrings: "manipulatingStrings.md",
-  workingWithNumbers: "workingWithNumbers.md",
-};
-
 // Get all available notes
 export const getAllNotes = (): string[] => {
   return Object.keys(allNotesMap);

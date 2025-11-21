@@ -10,12 +10,11 @@ import { NextLessonButton } from "./Components/NextLessonButton/NextLessonButton
 import {
   retrieveNoteHTML,
   getNoteSection,
-  NoteSections,
-  type NoteSection,
   getDisplayName,
   searchNotes,
   type SearchResult,
 } from "./data/notes";
+import { NoteSections, type NoteSection } from "./data/sectionsIndex";
 import { SearchResults } from "./Components/SearchResults";
 import { WelcomeModal } from "./Components/WelcomeModal";
 import { UserMenu } from "./Components/UserMenu";

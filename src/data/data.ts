@@ -1,12 +1,11 @@
 // All Links
 import {
-  Notes,
-  NoteSections,
   getNotesBySection,
   getAvailableSections,
   getDisplayName,
 } from "./notes";
 
+import { NoteSections } from "./sectionsIndex";
 // Define types for navigation links
 export type NavLink = {
   text: string;
@@ -26,8 +25,11 @@ export const generateSectionLinks = (): NavLink[] => {
   });
 
   availableSections.forEach((section) => {
-    const sectionInfo = NoteSections[section];
+    const sectionKey = section.toLowerCase() as keyof typeof NoteSections;
+    const sectionInfo = NoteSections[sectionKey];
     const notesInSection = getNotesBySection(section);
+
+    console.log('Section:', section, 'Key:', sectionKey, 'Info:', sectionInfo);
 
     if (notesInSection.length > 0) {
       // Create section with its notes as children
@@ -36,8 +38,13 @@ export const generateSectionLinks = (): NavLink[] => {
         href: filename,
       }));
 
+      // Fallback for sections not defined in NoteSections
+      const icon = sectionInfo?.icon || "📁";
+      const name =
+        sectionInfo?.name || section.charAt(0).toUpperCase() + section.slice(1);
+
       sectionLinks.push({
-        text: `${sectionInfo.icon} ${sectionInfo.name}`,
+        text: `${icon} ${name}`,
         children: children,
       });
     }
@@ -53,21 +60,5 @@ const formatNoteTitle = (filename: string): string => {
     .replace(/-/g, " ")
     .replace(/\b\w/g, (l: string) => l.toUpperCase());
 };
-
-// Legacy SQL Links (for backward compatibility)
-export const allLinks = [
-  { text: "Home 🏠", href: Notes.home }, //0
-  { text: "SQL Constraints 📏", href: Notes.constraints }, //1
-  {
-    text: "Advanced Manipulating Data 🛠️",
-    href: Notes.advancedManipulatingData,
-  }, //2
-  { text: "Data Types in SQL 📚", href: Notes.dataTypes }, //3
-  { text: "Get Started 🚀", href: Notes.getStarted }, //4
-  { text: "Manipulating Data 🛠️", href: Notes.basicManipulatingData }, //5
-  { text: "Setting Up SQL Environment ⚙️", href: Notes.settingUp }, //6
-  { text: "Tables in SQL 🗄️", href: Notes.tables }, //7
-];
-
 // Dynamic Left Navigation Links
 export const leftLinks = generateSectionLinks();

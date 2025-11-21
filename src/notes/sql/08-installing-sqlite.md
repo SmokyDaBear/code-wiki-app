@@ -13,7 +13,7 @@ SQLite is a lightweight, serverless, self-contained SQL database engine. It is w
 ### CON's
 
 - Limited concurrency support
-- ## Doesn't validate data types strictly
+- **Doesn't validate data types strictly**
 - Not suitable for high-volume, multi-user applications
 - Only one write operation at a time, though multiple read operations can occur simultaneously
 - Lacks some advanced features found in larger RDBMS (e.g., stored procedures, user-defined functions)
