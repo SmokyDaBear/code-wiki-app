@@ -1,5 +1,37 @@
 const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/react-markdown-C4yMs8Ql.js","assets/markdown-wrf23eDy.js","assets/highlight-0zkRWLrt.js","assets/rolldown-runtime-DGruFWvd.js","assets/highlight-DdKuH37F.css","assets/react-gpxh9kH1.js"])))=>i.map(i=>d[i]);
-import{r as e}from"./rolldown-runtime-DGruFWvd.js";import{a as t,o as n,s as r}from"./react-gpxh9kH1.js";import{f as i,i as a,m as o,p as s}from"./markdown-wrf23eDy.js";import"./highlight-0zkRWLrt.js";(function(){let e=document.createElement(`link`).relList;if(e&&e.supports&&e.supports(`modulepreload`))return;for(let e of document.querySelectorAll(`link[rel="modulepreload"]`))n(e);new MutationObserver(e=>{for(let t of e)if(t.type===`childList`)for(let e of t.addedNodes)e.tagName===`LINK`&&e.rel===`modulepreload`&&n(e)}).observe(document,{childList:!0,subtree:!0});function t(e){let t={};return e.integrity&&(t.integrity=e.integrity),e.referrerPolicy&&(t.referrerPolicy=e.referrerPolicy),e.crossOrigin===`use-credentials`?t.credentials=`include`:e.crossOrigin===`anonymous`?t.credentials=`omit`:t.credentials=`same-origin`,t}function n(e){if(e.ep)return;e.ep=!0;let n=t(e);fetch(e.href,n)}})();var c=e(n(),1),l=e(r(),1),u=e(t(),1);function d(){return(0,u.jsx)(`div`,{className:`spinner-bg`,id:`spinner-bg`,children:(0,u.jsx)(`div`,{className:`spinner`})})}var f=`# CSS Notes
+import{r as e}from"./rolldown-runtime-DGruFWvd.js";import{a as t,o as n,s as r}from"./react-gpxh9kH1.js";import{f as i,i as a,m as o,p as s}from"./markdown-wrf23eDy.js";import"./highlight-0zkRWLrt.js";(function(){let e=document.createElement(`link`).relList;if(e&&e.supports&&e.supports(`modulepreload`))return;for(let e of document.querySelectorAll(`link[rel="modulepreload"]`))n(e);new MutationObserver(e=>{for(let t of e)if(t.type===`childList`)for(let e of t.addedNodes)e.tagName===`LINK`&&e.rel===`modulepreload`&&n(e)}).observe(document,{childList:!0,subtree:!0});function t(e){let t={};return e.integrity&&(t.integrity=e.integrity),e.referrerPolicy&&(t.referrerPolicy=e.referrerPolicy),e.crossOrigin===`use-credentials`?t.credentials=`include`:e.crossOrigin===`anonymous`?t.credentials=`omit`:t.credentials=`same-origin`,t}function n(e){if(e.ep)return;e.ep=!0;let n=t(e);fetch(e.href,n)}})();var c=e(n(),1),l=e(r(),1),u=e(t(),1);function d(){return(0,u.jsx)(`div`,{className:`spinner-bg`,id:`spinner-bg`,children:(0,u.jsx)(`div`,{className:`spinner`})})}const f={sql:{name:`SQL`,icon:`🗃️`},html:{name:`HTML`,icon:`🌐`},css:{name:`CSS`,icon:`🎨`},javascript:{name:`JavaScript`,icon:`⚡`},typescript:{name:`TypeScript`,icon:`📘`},git:{name:`Git`,icon:`🔧`},c:{name:`C`,icon:`💻`},cpp:{name:`C++`,icon:`💻`}};var p=`# C Programming Language
+
+C is a low-level, procedural programming language that was developed in the early 1970s by Dennis Ritchie at Bell Labs. It is widely used for system programming, embedded systems, and applications that require high performance and low-level hardware access.
+
+## Key Features of C
+
+- **Low-Level Access**: C provides direct access to memory through pointers, allowing for efficient manipulation of data structures and hardware resources.
+- **Portability**: C code can be compiled on various platforms with minimal changes, making it a portable language.
+- **Rich Standard Library**: C has a comprehensive standard library that provides functions for input/output, string manipulation, memory management, and more.
+- **Modularity**: C supports modular programming through functions and header files, allowing for code reuse and better organization.
+- **Efficiency**: C is known for its performance and efficiency, making it suitable for resource-constrained environments and high-performance applications.
+`,m=`# C++ Programming Language
+
+C++ is a high-level, general-purpose programming language that was developed as an extension of the C programming language by Bjarne Stroustrup in the early 1980s. It is widely used for system/software development, game development, real-time simulations, and applications requiring high performance.
+
+## Key Features of C++
+
+- **Object-Oriented Programming (OOP)**: C++ supports OOP principles such as encapsulation, inheritance, and polymorphism, allowing for modular and reusable code.
+- **Low-Level Manipulation**: C++ provides low-level memory manipulation capabilities through pointers, enabling efficient resource management.
+- **Standard Template Library (STL)**: C++ includes a rich standard library that provides data structures (like vectors, lists, and maps) and algorithms (like sorting and searching) for efficient programming.
+- **Performance**: C++ is known for its performance and efficiency, making it suitable for resource-constrained environments and high-performance applications.
+- **Portability**: C++ code can be compiled on various platforms with minimal changes, making it a portable language.
+
+## What separates C++ from C?
+
+- **Object-Oriented Features**: C++ introduces classes and objects, enabling OOP, which is not present in C.
+- **Function Overloading**: C++ allows multiple functions with the same name but different parameters, while C does not support this feature.
+- **Operator Overloading**: C++ allows operators to be redefined for user-defined types, enhancing code readability and usability.
+- **Stronger Type Checking**: C++ has stricter type checking compared to C, reducing the chances of type-related errors.
+- **Standard Template Library (STL)**: C++ includes the STL, which provides a collection of template classes and functions for data structures and algorithms, while C lacks this feature.
+- **Namespaces**: C++ introduces namespaces to avoid name conflicts, a feature not available in C.
+- **Exception Handling**: C++ provides built-in support for exception handling using \`try\`, \`catch\`, and \`throw\` keywords, while C relies on error codes for error handling.
+`,h=`# CSS Notes
 
 Welcome to the CSS section! Here you'll find notes about CSS styling, layout, and design principles.
 
@@ -43,7 +75,7 @@ selector {
 \`\`\`
 
 Stay tuned for more detailed content!
-`,p=`# CSS Basics
+`,g=`# CSS Basics
 
 Welcome to CSS! This guide covers the fundamentals of Cascading Style Sheets.
 
@@ -265,7 +297,7 @@ CSS provides various properties to style text and fonts:
 <div class="small-caps-text" style="font-variant: small-caps; font-size: 16px; margin-top: 10px;">
   This text is in small-caps, which automatically capitalizes lowercase letters, while leaving them smaller than uppercase letters.
 </div>
-`,m=`# Colors
+`,_=`# Colors
 
 CSS supports various ways to define colors:
 
@@ -461,7 +493,7 @@ The \`text-shadow\` property can also use color values to create shadow effects 
      1px  1px 0 #000; font-size: 24px; color: white; background-color: lightgray; padding: 5px;">
   This text has an outline effect using text shadows.
 </p>
-`,h=`# Display
+`,v=`# Display
 
 The \`display\` property in CSS is used to define how an element is displayed on the web page. It determines the layout behavior of an element and its children.
 
@@ -564,7 +596,7 @@ This is useful for hiding elements without deleting them from the HTML, like dro
 The \`flex\` and \`grid\` display values are used to create flexible and grid-based layouts, respectively allowing for more complex arrangements of elements.
 These layout models provide powerful tools for designing responsive and adaptive web pages that are fully customizable.
 Learn more about Flexbox in the [Flexbox Basics](06-flexbox-basics.md) section and Grid in the [Grid Basics](07-grid-basics.md) section.
-`,g=`# Positioning
+`,y=`# Positioning
 
 CSS positioning allows you to control the layout and placement of elements on a webpage. There are several positioning schemes available in CSS:
 
@@ -711,13 +743,106 @@ The \`z-index\` property controls the vertical stacking order of positioned elem
 </div>
 
 #### Tip: When using \`z-index\`, ensure that the elements are positioned (i.e., have a \`position\` value other than \`static\`). And also keep in mind that if an item has a parent with a defined \`z-index\`, it will be constrained within that parent's stacking context. For example, a child element cannot appear in front of an ancestor element with a lower \`z-index\`, even if the child has a higher \`z-index\` value.
-`,ee=`# CSS Selectors
+`,b=`# CSS Selectors
 
 CSS selectors are patterns used to select and style HTML elements. They define which elements a set of CSS rules will apply to.
 Selectors can target elements based on their tag name, class, ID, attributes, and more.
 
 As we learned in the [CSS Basics](../css/02-basics.md) section, we can use classes, ids, and element names as selectors, as well as data attributes from HTML.
-`,_=`# Pseudo-Selectors
+
+## Types of Selectors
+
+- **Element Selector**: Selects all elements of a specific type.
+  \`\`\`css
+  p {
+    color: blue;
+  }
+  \`\`\`
+- **Class Selector**: Selects all elements with a specific class.
+  \`\`\`css
+  .highlight {
+    background-color: yellow;
+  }
+  \`\`\`
+- **ID Selector**: Selects a single element with a specific ID.
+  \`\`\`css
+  #header {
+    font-size: 24px;
+  }
+  \`\`\`
+- **Attribute Selector**: Selects elements based on the presence or value of an attribute.
+  \`\`\`css
+  input[type="text"] {
+    border: 1px solid black;
+  }
+  \`\`\`
+- **Universal Selector**: Selects all elements on the page.
+  \`\`\`css
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  \`\`\`
+- **Descendant Selector**: Selects elements that are descendants of a specified element using a space between the ancestor and descendant selectors.
+  \`\`\`css
+  div p {
+    color: green;
+  }
+  \`\`\`
+- **Child Selector**: Selects elements that are direct children of a specified element using the \`>\` symbol.
+  \`\`\`css
+  ul > li {
+    list-style-type: square;
+  }
+  \`\`\`
+  #### Note the difference between descendant and child selectors: the descendant selector targets all nested elements, while the child selector only targets direct children.
+- **Pseudo-class Selector**: Selects elements based on their state or position using a colon (\`:\`).
+  \`\`\`css
+  a:hover {
+    color: red;
+  }
+  \`\`\`
+- **Pseudo-element Selector**: Selects and styles specific parts of an element using double colons (\`::\`).
+  \`\`\`css
+  p::first-letter {
+    font-size: 200%;
+  }
+  \`\`\`
+  #### Types of Pseudo-elements:
+  - \`::before\`: Inserts content before an element's content.
+  - \`::after\`: Inserts content after an element's content.
+  - \`::first-letter\`: Styles the first letter of an element.
+  - \`::first-line\`: Styles the first line of an element.
+
+## Combining Selectors
+
+Selectors can be combined to create more specific rules. Here are some examples:
+
+- **Multiple Class Selectors**: Selects elements with multiple classes.
+  \`\`\`css
+  .btn.primary {
+    background-color: blue;
+  }
+  \`\`\`
+- **Class and Element Selector**: Selects specific elements with a certain class.
+  \`\`\`css
+  div.container {
+    padding: 20px;
+  }
+  \`\`\`
+- **ID and Pseudo-class Selector**: Selects an element with a specific ID when it is hovered over.
+  \`\`\`css
+  #submit-button:hover {
+    background-color: green;
+  }
+  \`\`\`
+- **Attribute and Pseudo-element Selector**: Selects input elements of type text and styles the first letter.
+  \`\`\`css
+  input[type="text"]::first-letter {
+    font-weight: bold;
+  }
+  \`\`\`
+`,x=`# Pseudo-Selectors
 
 Pseudo-selectors in CSS allow you to style elements based on their state or position in the document tree, rather than just their attributes. They are prefixed with a colon (\`:\`) and can be categorized into two main types: pseudo-classes and pseudo-elements.
 
@@ -1028,7 +1153,107 @@ Pseudo-elements allow you to style specific parts of an element. Common pseudo-e
 - **Form styling**: Use \`:focus\` for input fields and \`:invalid\` for form validation
 - **Table styling**: Use \`:nth-child()\` for alternating row colors
 - **Content decoration**: Use \`::before\` and \`::after\` for icons and decorative elements
-`,v=`# Flexbox Basics
+`,ee=`# Specificity in CSS
+
+CSS follows a set of rules to determine which styles are applied to an element when multiple rules could apply. Two key concepts in this process are specificity and inheritance.
+
+## Specificity
+
+Specificity is a measure of how specific a CSS selector is. When multiple rules target the same element, the rule with the highest specificity takes precedence. Specificity is calculated based on the types of selectors used:
+
+- Inline styles (e.g., \`style="..."\`) have the highest specificity, these are placed directly on the HTML element, or in JavaScript using the \`style\` property.
+- ID selectors (e.g., \`#header\`) have high specificity.
+- Class selectors (e.g., \`.menu\`), attribute selectors (e.g., \`[type="text"]\`), and pseudo-classes (e.g., \`:hover\`) have moderate specificity.
+- Element selectors (e.g., \`div\`, \`p\`) and pseudo-elements (e.g., \`::before\`) have the lowest specificity.
+
+  When calculating specificity, each type of selector is assigned a value, and the total specificity is determined by combining these values. If two rules have the same specificity, the one that appears later in the CSS file takes precedence.
+
+| Selector Type                          | Specificity Value |
+| -------------------------------------- | ----------------- |
+| Inline Styles                          | 1000              |
+| ID Selectors                           | 100               |
+| Class/Attribute/Pseudo-class Selectors | 10                |
+| Element/Pseudo-element Selectors       | 1                 |
+
+### Stacking Specificity
+
+When multiple selectors are combined, their specificity values are added together. For example:
+
+\`\`\`css
+#header .menu li a {
+  color: blue;
+}
+\`\`\`
+
+In this case, the specificity would be calculated as follows:
+
+- ID selector (\`#header\`): 100
+- Class selector (\`.menu\`): 10
+- Element selectors (\`li\` and \`a\`): 1 + 1 = 2
+  Total Specificity: 100 + 10 + 2 = 112
+
+#### Overriding Styles
+
+The best practice is to use specificity intentionally to override styles when necessary. However, overusing high-specificity selectors can lead to maintenance challenges. It's often better to structure your CSS in a way that minimizes the need for high specificity.
+
+## The !important Declaration
+
+The \`!important\` declaration can be added to a CSS rule to give it the highest priority, overriding any other conflicting rules, regardless of specificity. For example:
+
+\`\`\`css
+.red-text {
+  color: red !important;
+}
+\`\`\`
+
+The only way to override an \`!important\` rule is to use another \`!important\` rule with equal or higher specificity, or to use inline styles with \`!important\`.
+
+\`\`\`html
+<p style="color: blue !important;">This text will be blue.</p>
+\`\`\`
+`,S=`# Inheritance in CSS
+
+Inheritance is a fundamental concept in CSS that allows certain properties to be passed down from parent elements to their child elements. This mechanism helps maintain consistency in styling and reduces redundancy in CSS code.
+
+## How Inheritance Works
+
+When a CSS property is set on a parent element, that property can be inherited by its child elements unless the child elements have their own specific styles defined for that property. Not all CSS properties are inheritable; only certain properties related to text and font styling are inherited by default.
+
+### Inheritable Properties
+
+Some common CSS properties that are inheritable include:
+
+- color
+- font-family
+- font-size
+- font-style
+- font-variant
+- font-weight
+- letter-spacing
+- line-height
+- text-align
+- text-indent
+- text-shadow
+- text-transform
+- visibility
+- white-space
+- word-spacing
+
+### Non-Inheritable Properties
+
+Properties that are not inheritable by default include (and for good reason, just imagine if these were inherited and had to be overridden all the time):
+
+- margin
+- padding
+- border
+- width
+- height
+- background
+- display
+- position
+- float
+- box-shadow
+`,C=`# Flexbox Basics
 
 Flexbox, or the Flexible Box Layout, is a CSS layout model that allows you to design complex layouts more easily and efficiently. It provides a way to distribute space among items in a container, even when their size is unknown or dynamic.
 
@@ -1157,7 +1382,7 @@ Let's say we have a navigation bar with menu items that need to be spaced evenly
   <div class="nav-item" style="padding: 10px; background-color: lightgray;">Services</div>
   <div class="nav-item" style="padding: 10px; background-color: lightgray;">Contact</div>
 </div>
-`,y=`# CSS Grid Layouts
+`,w=`# CSS Grid Layouts
 
 ## Overview
 
@@ -1312,12 +1537,149 @@ When designing your own grid layouts, you can adjust the number of columns and r
 - [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)
 - [CSS-Tricks Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
 - [W3Schools CSS Grid Tutorial](https://www.w3schools.com/css/css_grid.asp)
-`,te=`# Modals
+`,T=`# Styling Forms with CSS
+
+Forms are essential components of web applications, allowing users to input and submit data. Properly styling forms enhances user experience and makes them visually appealing. In this note, we will explore various techniques for styling forms using CSS.
+
+## Form Specific Elements
+
+When styling forms, it's important to target specific form elements such as input fields, labels, buttons, and text areas. Here are some common CSS properties used to style these elements:
+
+- **Input Fields**: You can style input fields using properties like \`border\`, \`padding\`, \`font-size\`, and \`background-color\`.
+  \`\`\`css
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+  }
+  \`\`\`
+- **Labels**: Labels can be styled to improve readability and alignment with input fields.
+  \`\`\`css
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+  }
+  \`\`\`
+- **Buttons**: Buttons can be styled to make them more attractive and interactive.
+  \`\`\`css
+  button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  \`\`\`
+- **Text Areas**: Text areas can be styled similarly to input fields, with additional properties for height and resize behavior.
+  \`\`\`css
+  textarea {
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    height: 100px;
+    resize: vertical;
+  }
+  \`\`\`
+
+## Form Layout
+
+Proper layout is crucial for a well-organized form. You can use CSS Flexbox or Grid to create responsive and structured form layouts. Although I personally like using grid for forms, here's an example using Flexbox:
+
+\`\`\`css
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin: 1rem auto;
+}
+.form-container label {
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+  background-color: #1d7e25ff;
+  padding: 0.4rem 0.75rem;
+  border-radius: 4px;
+  color: white;
+}
+.form-container input[type="text"],
+.form-container input[type="email"] {
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+}
+.form-container button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+\`\`\`
+
+#### Rendered HTML:
+
+<style>
+  .form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin: 1rem auto;
+}
+.form-container label {
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+  background-color: #1d7e25ff;
+  padding: 0.4rem 0.75rem;
+  border-radius: 4px;
+  color: white;
+}
+.form-container input[type="text"],
+.form-container input[type="email"] {
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+}
+.form-container button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+</style>
+
+<div class="form-container">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" />
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" />
+  <button type="submit">Submit</button>
+</div>
+`,E=`# Modals
 
 A modal is a dialog box/popup window that is displayed on top of the current page. Modals are commonly used for user notifications, forms, or additional content without navigating away from the current page.
 
 They are typically implemented using a combination of HTML, CSS, and JavaScript. However, we can create simple modals using pure CSS and HTML.
-`,b=`# CSS Animations
+`,D=`# CSS Animations
 
 CSS animations allow you to create dynamic and engaging user experiences by animating the properties of HTML elements over time. You can define animations using keyframes and control their behavior with various animation properties.
 
@@ -1592,7 +1954,7 @@ CSS provides several built-in timing functions to control the pacing of animatio
 \`ease\` and \`ease-in-out\` are similar but differ in their pacing profiles. \`ease\` has a more pronounced acceleration and deceleration, while \`ease-in-out\` provides a smoother transition at both the start and end of the animation.
 
 ### Combining Multiple Transformations with Delays
-`,x=`# Themes in CSS
+`,te=`# Themes in CSS
 
 Themes in CSS allow developers to create different visual styles for a website or application, enabling users to switch between them easily. This can enhance user experience by providing options that suit individual preferences, typically light and dark modes although you can create custom themes as well.
 
@@ -1612,7 +1974,129 @@ CSS variables (also known as custom properties) are defined using the \`--\` pre
   --text-color: #333333;
 }
 \`\`\`
-`,S=`# 📚 Programming Notes Hub
+`,O=`# Git
+
+Git is a distributed version control system that allows you to track changes in your codebase, collaborate with others, and manage different versions of your projects.
+
+Version Control is the idea of tracking and managing changes to software code. It allows multiple developers to work on the same codebase simultaneously without overwriting each other's changes. Version control systems (VCS) keep a history of changes, making it easy to revert to previous versions if needed.
+
+## Installing Git
+
+Note that \`bash\` commands are to be run in your terminal.
+
+### Linux (Ubuntu/Debian)
+
+\`\`\`bash
+sudo apt update
+sudo apt install git
+\`\`\`
+
+### On macOS
+
+You can install Git using Homebrew:
+
+\`\`\`bash
+brew install git
+\`\`\`
+
+### On Windows
+
+You can install Git using the Git for Windows installer:
+
+[https://gitforwindows.org/](https://gitforwindows.org/)
+
+## Initializing a Git Repository
+
+To navigate to your project directory, use the \`cd\`(change directory) command followed by the path to your project folder. For example:
+
+\`\`\`
+cd path/to/your/project
+
+\`\`\`
+
+Once you are in the project directory in the terminal, run the following command to initialize a new Git repository:
+
+\`\`\`
+git init
+\`\`\`
+
+This command creates a new subdirectory named \`.git\` that contains all the necessary files for the repository. You can then start tracking your project files with Git.
+
+The \`.git\` directory is where Git stores all the information about the repository, including commit history, branches, and configuration settings. It is a hidden directory, so you may need to enable the option to view hidden files in your file explorer to see it.
+
+You can verify that the repository has been initialized by running:
+
+\`\`\`
+git status
+
+\`\`\`
+
+## Using Git
+
+Once you have initialized a Git repository, you can start using Git commands to manage your project. Here are some basic Git commands:
+
+- \`git add <file>\`: Stages changes to a specific file for the next commit.
+  - staging means preparing the changes to be committed.
+- \`git add .\`: Stages all changes in the current directory for the next commit.
+- \`git commit -m "message"\`: Commits the staged changes with a descriptive message.
+- \`git status\`: Displays the current status of the repository, including staged and unstaged changes.
+- \`git log\`: Shows the commit history of the repository.
+- \`git branch\`: Lists all branches in the repository.
+
+#### Note: A branch in Git is a separate line of development that allows you to work on different features or fixes without affecting the main codebase. Branches enable parallel development and make it easier to manage changes before merging them back into the main branch (usually called \`main\` or \`master\`).
+
+- \`git branch <branch>\`: Creates a new branch with the specified name.
+- \`git checkout <branch>\`: Switches to the specified branch.
+- \`git merge <branch>\`: Merges the specified branch into the current branch.
+- \`git remote add origin <url>\`: Adds a remote repository URL.
+- \`git push -u origin <branch>\`: Pushes the local branch to the remote repository.
+
+## Commits
+
+A commit in Git is a snapshot of your project's files at a specific point in time. Each commit has a unique identifier (SHA-1 hash) and includes information about the changes made, the author, and the timestamp. Commits allow you to track the history of your project and revert to previous versions if needed.
+
+To create a commit, you first need to stage the changes using \`git add\`, and then use \`git commit\` to save the changes to the repository. For example:
+
+\`\`\`
+git add . //Using the \`.\` stages ALL changes in the current directory
+git commit -m "Initial commit"// -m flag is used to provide a commit message
+\`\`\`
+
+#### Note that if you only want to commit specific files, you can replace the \`.\` in the \`git add\` command with the names of those files like \`git add file1.txt file2.txt\`
+`,k=`# Branching in Git
+
+Branching is a powerful feature in Git that allows you to create separate lines of development within a repository. Each branch represents an independent version of your codebase, enabling you to work on new features, bug fixes, or experiments without affecting the main codebase.
+
+This is the whole point of git basically, whether you are working solo or in a team.
+
+#### For solo use:
+
+- You can create branches to try out new ideas or features without risking the stability of your main codebase.
+
+#### For team use:
+
+- Branches allow multiple developers to work on different features or fixes simultaneously without interfering with each other's work.
+- The branches can later be merged back into the main branch (usually called \`main\` or \`master\`) once the changes are tested and reviewed.
+
+## Creating a Branch
+
+To create a new branch in Git, you can use the \`git branch\` command followed by the name of the branch you want to create. For example, to create a branch named \`feature-xyz\`, you would run:
+
+\`\`\`
+git branch feature-xyz
+
+\`\`\`
+
+this will now put any new commits on this branch, leaving the main branch unaffected until you decide to merge it back.
+
+## Switching Between Branches
+
+To switch to a different branch, you can use the \`git checkout\` command followed by the name of the branch you want to switch to. For example, to switch to the \`feature-xyz\` branch, you would run:
+
+\`\`\`
+git checkout feature-xyz
+\`\`\`
+`,ne=`# 📚 Programming Notes Hub
 
 ![SmokyDaBear](/images/profile-animated.png)
 
@@ -1733,7 +2217,7 @@ This notes app is fully responsive! Use the hamburger menu (☰) on mobile devic
 _Happy Learning! 🎉_
 
 > Last updated: November 2025
-`,C=`# HTML Notes
+`,A=`# HTML Notes
 
 Welcome to the HTML section! Here you'll find notes about HTML fundamentals, elements, and best practices.
 
@@ -1764,7 +2248,7 @@ HTML (HyperText Markup Language) is the standard markup language for creating we
 \`\`\`
 
 Navigate through the topics using the links above or the navigation menu on the left.
-`,w=`# Getting Started with HTML
+`,j=`# Getting Started with HTML
 
 This section will teach the basics of HTML, the standard markup language for creating web pages. You'll learn about the structure of an HTML document, common tags, and how to create links and images.
 
@@ -1820,7 +2304,7 @@ Here are some commonly used HTML tags:
 
 
 #### Tip: Practice creating simple HTML pages to get comfortable with the structure and tags. Use online resources like [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/HTML) for reference and further learning.
-`,T=`# Classes, IDs, and Data Attributes
+`,M=`# Classes, IDs, and Data Attributes
 
 In HTML, classes, IDs, and data attributes are used to add metadata to elements for styling, scripting, and accessibility purposes.
 
@@ -1862,7 +2346,7 @@ These attributes provide flexibility in styling and scripting without cluttering
 
 
 #### Tip: Use classes for styling multiple elements, IDs for unique elements, and data attributes for storing custom data.
-`,ne=`# HTML Forms
+`,N=`# HTML Forms
 
 HTML forms are essential for collecting user input on web pages. They allow users to submit data, which can then be processed by a server or used within the client-side application.
 
@@ -2055,7 +2539,7 @@ To make forms accessible, use labels, fieldsets, and legends to provide context 
   <input type="email" id="email" name="email" />
 </form>
 \`\`\`
-`,E=`# JavaScript Notes
+`,P=`# JavaScript Notes
 
 Welcome to the JavaScript section! Here you'll find comprehensive notes about JavaScript programming.
 
@@ -2100,7 +2584,7 @@ const person = {
 \`\`\`
 
 More comprehensive content coming soon!
-`,D=`# JavaScript Fundamentals
+`,F=`# JavaScript Fundamentals
 
 Welcome to JavaScript! This guide covers the core concepts of the JavaScript programming language.
 
@@ -2202,7 +2686,7 @@ colors.forEach((color) => console.log(color));
 - Learn about [DOM Manipulation](dom-manipulation.md)
 - Explore [Async JavaScript](async-javascript.md)
 - Master [ES6+ Features](es6-features.md)
-`,re=`# Learn SQL 🌎
+`,I=`# Learn SQL 🌎
 
 ## Welcome to the SQL Learning Notes!
 
@@ -2250,7 +2734,7 @@ For more in-depth learning, consider exploring the following resources:
   Happy learning! 🚀
 
 #### Setup Guide: Follow the [Setting Up SQL 🛠️](setting-up.md) notes to install and configure SQL on your machine.
-`,O=`# Getting started with SQL 🖥️ 🪛
+`,L=`# Getting started with SQL 🖥️ 🪛
 
 ## Intro
 
@@ -2342,7 +2826,7 @@ The following SQL statement creates a differential back up of the database "test
 #### Tip: A differential back up reduces the back up time (since only the changes are backed up).
 
 #### Previous: Explore the SQL learning notes overview in the [Learn SQL 🌎](sql-index.md) notes to understand the structure of the SQL learning material.
-`,k=`# Setting Up SQL 🛠️
+`,R=`# Setting Up SQL 🛠️
 
 Welcome to the SQL setup guide! This document will help you get started with installing and configuring SQL on your local machine or server.
 
@@ -2396,7 +2880,7 @@ If the query returns the version of your SQL database, congratulations! Your set
 
 
 #### Home: Return to the [Learn SQL 🌎](sql-index.md) main index for more SQL topics and resources.
-`,ie=`# Overview of SQL Data Types
+`,re=`# Overview of SQL Data Types
 
 SQL data types define the kind of data that can be stored in a column of a database table. Choosing the correct data type is essential for data integrity, storage efficiency, and query performance.
 
@@ -2455,7 +2939,7 @@ Variables are used to store data values. When creating tables, you need to defin
 
 
 #### Previous: Review the [SQL Basics 📝](basics.md) notes to understand fundamental SQL concepts before diving into data types and tables.
-`,A=`# Tables in SQL 🗄️
+`,ie=`# Tables in SQL 🗄️
 
 to get started with tables in SQL, you first need to understand the concept of variables and datatypes in SQL.
 
@@ -2590,7 +3074,7 @@ Remeber that a column is a variable name in a table, like CustomerID or Customer
 \`SELECT\` and \`FROM\` are SQL clauses and should be written in uppercase for better readability, while \`_tablename\` should be replaced with the actual name of the table you want to query.
 
 #### Previous: Review the [SQL Data Types 📊](data-types.md) notes to understand different data types available in SQL before creating tables.
-`,j=`# SQL Constraints 📏
+`,ae=`# SQL Constraints 📏
 
 SQL constraints are rules applied to table columns to enforce data integrity and consistency. They help ensure that the data entered into the database adheres to specific requirements.
 
@@ -2673,7 +3157,7 @@ Useful for establishing relationships between tables, such as linking orders to 
 
 
 #### Home: Return to the [Learn SQL 🌎](sql-index.md) main index for more SQL topics and resources.
-`,M=`# Manipulating Data in SQL 🛠️
+`,oe=`# Manipulating Data in SQL 🛠️
 
 ## The SQL INSERT INTO Statement
 
@@ -2755,7 +3239,7 @@ The following SQL statement deletes the customer with CustomerID 1:
 
 
 #### Previous: Review the [Tables in SQL 🗄️](tables.md) notes to understand how to create and define tables before manipulating data.
-`,N=`# Advanced Manipulating Data in SQL 🛠️
+`,se=`# Advanced Manipulating Data in SQL 🛠️
 
 ## The SQL MERGE Statement
 
@@ -2816,7 +3300,7 @@ ON CONFLICT (CustomerID)
 DO UPDATE SET CustomerFirstName = EXCLUDED.CustomerFirstName, CustomerLastName = EXCLUDED.CustomerLastName;
 
 #### Tip: The UPSERT operation is useful for maintaining data integrity and avoiding duplicate records in a table.
-`,P=`# SQLite
+`,ce=`# SQLite
 
 SQLite is a lightweight, serverless, self-contained SQL database engine. It is widely used in mobile applications, embedded systems, and for prototyping due to its simplicity and minimal setup requirements.
 
@@ -2831,7 +3315,7 @@ SQLite is a lightweight, serverless, self-contained SQL database engine. It is w
 ### CON's
 
 - Limited concurrency support
-- ## Doesn't validate data types strictly
+- **Doesn't validate data types strictly**
 - Not suitable for high-volume, multi-user applications
 - Only one write operation at a time, though multiple read operations can occur simultaneously
 - Lacks some advanced features found in larger RDBMS (e.g., stored procedures, user-defined functions)
@@ -2905,7 +3389,7 @@ Once you have SQLite installed, you can use the following basic commands to inte
 - \`.tables\` - Lists all tables in the current database.
 - \`.schema tablename\` - Displays the schema (structure) of the specified table.
 - \`.exit\` - Exits the SQLite shell.
-`,ae=`# TypeScript Basics
+`,le=`# TypeScript Basics
 
 Welcome to TypeScript! This guide covers the fundamentals of TypeScript, a typed superset of JavaScript.
 
@@ -3033,7 +3517,7 @@ interface Repository<T> {
 - Learn about [Advanced Types](advanced-types.md)
 - Explore [Decorators](decorators.md)
 - Master [Module Systems](modules.md)
-`,oe=`# TypeScript Notes
+`,ue=`# TypeScript Notes
 
 Welcome to the TypeScript section! Here you'll find notes about TypeScript, the typed superset of JavaScript.
 
@@ -3082,7 +3566,7 @@ function greet(name: string): string {
 \`\`\`
 
 More detailed content coming soon!
-`,se={"../notes/css/01-CSS-index.md":f,"../notes/css/02-basics.md":p,"../notes/css/03-colors.md":m,"../notes/css/04-display-property.md":h,"../notes/css/05-positioning.md":g,"../notes/css/06-selectors.md":ee,"../notes/css/07-pseudo-selectors.md":_,"../notes/css/08-specificity-inheritance.md":``,"../notes/css/09-flexbox-basics.md":v,"../notes/css/10-grid-layouts.md":y,"../notes/css/11-building-a-dropdown.md":``,"../notes/css/12-form-styling.md":``,"../notes/css/13-modals.md":te,"../notes/css/14-animations.md":b,"../notes/css/15-themeing.md":x,"../notes/home.md":S,"../notes/html/00-html-index.md":C,"../notes/html/01-get-started-with-html.md":w,"../notes/html/02-classes-ids-and-data-attributes.md":T,"../notes/html/03-forms.md":ne,"../notes/javascript/00-javascript-index.md":E,"../notes/javascript/01-javascript-basics.md":D,"../notes/sql/00-sql-index.md":re,"../notes/sql/01-get-started.md":O,"../notes/sql/02-setting-up.md":k,"../notes/sql/03-data-types.md":ie,"../notes/sql/04-tables.md":A,"../notes/sql/05-constraints.md":j,"../notes/sql/06-manipulating-data.md":M,"../notes/sql/07-advanced-manipulating-data.md":N,"../notes/sql/08-installing-sqlite.md":P,"../notes/typescript/typescript-basics.md":ae,"../notes/typescript/typescript-index.md":oe},F={},I={};Object.entries(se).forEach(([e,t])=>{let n=e.split(`/`),r=n[n.length-1]||``;if(n.length===3&&r===`home.md`){I[r]={content:t,section:`home`};return}if(n.length>3){let e=n[n.length-2];F[e]||(F[e]={}),F[e][r]=t,I[r]={content:t,section:e}}});const L={sql:{name:`SQL`,icon:`🗃️`},html:{name:`HTML`,icon:`🌐`},css:{name:`CSS`,icon:`🎨`},javascript:{name:`JavaScript`,icon:`⚡`},typescript:{name:`TypeScript`,icon:`📘`}},R={home:`sql-index.md`,getStarted:`get-started.md`,settingUp:`setting-up.md`,tables:`tables.md`,advancedManipulatingData:`advanced-manipulating-data.md`,constraints:`constraints.md`,dataTypes:`data-types.md`,basicManipulatingData:`manipulating-data.md`,dataStructures:`dataStructures.md`,introToData:`introToData.md`,manipulatingStrings:`manipulatingStrings.md`,workingWithNumbers:`workingWithNumbers.md`},z=e=>e.replace(/^\d{2}-/,``),B=e=>z(e).replace(`.md`,``).replace(/-/g,` `).replace(/\b\w/g,e=>e.toUpperCase()),V=e=>Object.keys(F[e]||{}).sort((e,t)=>{let n=parseInt(e.match(/^\d+/)?.[0]||`999`),r=parseInt(t.match(/^\d+/)?.[0]||`999`);return n===r?e.localeCompare(t):n-r}),ce=()=>Object.keys(F),H=e=>{let t=I[e];return t?t.section:null},U=e=>{let t=H(e);if(!t)return null;let n=V(t),r=n.indexOf(e);if(r===-1||r>=n.length-1)return null;let i=n[r+1];return{filename:i,title:B(i)}},W=e=>{let t=e.replace(/^\/notes\/[^/]+\//,``).replace(/^\/notes\//,``),n=I[t];if(!n){let e=Object.keys(I).join(`, `);throw Error(`Note not found: ${t}. Available: ${e}`)}return console.log(`Retrieved note:`,t,`from section:`,n.section),n.content},le=e=>{if(!e.trim())return[];let t=e.toLowerCase(),n=[];return Object.entries(I).forEach(([r,i])=>{let{content:a,section:o}=i,s=a.split(`
-`),c=[];if(s.forEach((n,r)=>{if(n.toLowerCase().includes(t)){let t=ue(n,e);c.push({context:n.trim(),lineNumber:r+1,highlightedText:t})}}),c.length>0){let e=o===`home`?{name:`Home`,icon:`🏠`}:L[o]||{name:o,icon:`📄`};n.push({filename:r,title:B(r),section:e.name,sectionIcon:e.icon,matches:c.slice(0,3),totalMatches:c.length})}}),n.sort((e,t)=>e.totalMatches===t.totalMatches?e.title.localeCompare(t.title):t.totalMatches-e.totalMatches)};var ue=(e,t)=>{let n=RegExp(`(${t})`,`gi`);return e.replace(n,`<mark>$1</mark>`)};const de=()=>{let e=ce(),t=[];return t.push({text:`🏠 Home`,href:`home.md`}),e.forEach(e=>{let n=L[e],r=V(e);if(r.length>0){let e=r.map(e=>({text:fe(e),href:e}));t.push({text:`${n.icon} ${n.name}`,children:e})}}),t};var fe=e=>z(e).replace(`.md`,``).replace(/-/g,` `).replace(/\b\w/g,e=>e.toUpperCase());R.home,R.constraints,R.advancedManipulatingData,R.dataTypes,R.getStarted,R.basicManipulatingData,R.settingUp,R.tables;const G=de();function pe({onSearch:e,onClear:t,placeholder:n=`Search all notes...`}){let[r,i]=(0,l.useState)(``),[a,o]=(0,l.useState)(!1),s=(0,l.useRef)(null),c=n=>{let r=n.target.value;i(r),r.trim()?e(r):t()},d=()=>{i(``),t(),s.current?.focus()};return(0,l.useEffect)(()=>{let e=e=>{(e.ctrlKey||e.metaKey)&&e.key===`k`&&(e.preventDefault(),s.current?.focus())};return document.addEventListener(`keydown`,e),()=>document.removeEventListener(`keydown`,e)},[]),(0,u.jsx)(`div`,{className:`search-bar ${a?`focused`:``}`,children:(0,u.jsxs)(`div`,{className:`search-input-container`,children:[(0,u.jsx)(`span`,{className:`search-icon`,children:`🔍`}),(0,u.jsx)(`input`,{ref:s,type:`text`,value:r,onChange:c,onKeyDown:e=>{e.key===`Escape`&&d()},onFocus:()=>o(!0),onBlur:()=>o(!1),placeholder:n,className:`search-input`}),r&&(0,u.jsx)(`button`,{onClick:d,className:`search-clear`,"aria-label":`Clear search`,children:`✕`})]})})}function K({setCurrentNote:e,currentSection:t,currentNoteName:n,onSearch:r,onClearSearch:i,isMobile:a,rightSidebarContent:o}){let[s,c]=(0,l.useState)(null),[d,f]=(0,l.useState)(`chapters`);(0,l.useEffect)(()=>{if(t){let e=G.findIndex(e=>{if(e.text&&t in L){let n=L[t];return e.text.includes(n.name)}return!1});e!==-1&&c(e)}},[t]);let p=e=>{c(s===e?null:e)};return(0,u.jsxs)(`div`,{className:`left-nav`,children:[a&&o&&(0,u.jsxs)(`div`,{className:`mobile-nav-toggle`,children:[(0,u.jsx)(`button`,{className:`mobile-nav-btn ${d===`chapters`?`active`:``}`,onClick:()=>f(`chapters`),children:`All Chapters`}),(0,u.jsx)(`button`,{className:`mobile-nav-btn ${d===`page`?`active`:``}`,onClick:()=>f(`page`),children:`On this page`})]}),(!a||d===`chapters`)&&(0,u.jsxs)(u.Fragment,{children:[(0,u.jsx)(pe,{onSearch:e=>{r?.(e)},onClear:()=>{i?.()},placeholder:`Search all notes...`}),G.map((t,r)=>{if(t.children){let i=s===r;return(0,u.jsxs)(`div`,{className:`dropdown-parent ${i?`active`:``}`,children:[(0,u.jsxs)(`div`,{className:`dropdown-title`,onClick:()=>p(r),children:[(0,u.jsx)(`span`,{className:`section-arrow`,children:i?`▼`:`▶`}),t.text]}),(0,u.jsx)(`div`,{className:`dropdown-children ${i?`expanded`:`collapsed`}`,children:t.children.map((t,r)=>(0,u.jsx)(`p`,{className:`child-link ${n===t.href?`active`:``}`,onClick:()=>t.href&&e(t.href),children:t.text},r))})]},r)}else return(0,u.jsx)(`div`,{className:`parent-link ${n===t.href?`active`:``}`,onClick:()=>t.href&&e(t.href),children:t.text},r)})]}),a&&d===`page`&&o&&(0,u.jsx)(`div`,{className:`mobile-page-overview`,children:o})]})}function q({currentNote:e,currentNoteName:t,onLoadNote:n}){let[r,i]=(0,l.useState)([]),[a,o]=(0,l.useState)(null),[s,c]=(0,l.useState)(``);(0,l.useEffect)(()=>{if(!e){i([]),o(null);return}let r=/^(#{1,6})\s+(.+)$/gm,a=[],s;for(;(s=r.exec(e))!==null;){let e=s[1].length,t=s[2].trim();if(e===4)continue;let n=t.toLowerCase().replace(/[^\w\s-]/g,``).replace(/\s+/g,`-`);a.push({id:n,text:t,level:e})}if(n){let e=U(t);e&&a.push({id:`next-lesson`,text:`Next: ${e.title}`,level:2})}i(a);let c=e.replace(/#{1,6}\s+/g,``).replace(/\[([^\]]+)\]\([^)]+\)/g,`$1`).replace(/[*_`]/g,``).trim().split(/\s+/).filter(e=>e.length>0).length,l=Math.max(1,Math.ceil(c/200)),u=e.length;o({wordCount:c,readingTime:l,characterCount:u})},[e,t,n]);let d=e=>{if(e===`next-lesson`&&n){let e=U(t);e&&n(e.filename);return}let r=document.getElementById(e);r&&(r.scrollIntoView({behavior:`smooth`,block:`start`}),c(e))};return(0,l.useEffect)(()=>{let e=()=>{let e=r.map(e=>({id:e.id,element:document.getElementById(e.id)})),t=``;for(let n of e)n.element&&n.element.getBoundingClientRect().top<=100&&(t=n.id);c(t)},t=document.querySelector(`.center.main`);if(t)return t.addEventListener(`scroll`,e),()=>t.removeEventListener(`scroll`,e)},[r]),e?(0,u.jsxs)(`div`,{className:`right-sidebar`,children:[(0,u.jsxs)(`div`,{className:`sidebar-section`,children:[(0,u.jsx)(`h3`,{children:`📊 Note Info`}),(0,u.jsxs)(`div`,{className:`note-stats`,children:[(0,u.jsxs)(`div`,{className:`stat-item`,children:[(0,u.jsx)(`span`,{className:`stat-label`,children:`📄 File:`}),(0,u.jsx)(`span`,{className:`stat-value`,children:z(t)})]}),a&&(0,u.jsxs)(u.Fragment,{children:[(0,u.jsxs)(`div`,{className:`stat-item`,children:[(0,u.jsx)(`span`,{className:`stat-label`,children:`📝 Words:`}),(0,u.jsx)(`span`,{className:`stat-value`,children:a.wordCount.toLocaleString()})]}),(0,u.jsxs)(`div`,{className:`stat-item`,children:[(0,u.jsx)(`span`,{className:`stat-label`,children:`⏱️ Read time:`}),(0,u.jsxs)(`span`,{className:`stat-value`,children:[a.readingTime,` min`]})]}),(0,u.jsxs)(`div`,{className:`stat-item`,children:[(0,u.jsx)(`span`,{className:`stat-label`,children:`🔤 Characters:`}),(0,u.jsx)(`span`,{className:`stat-value`,children:a.characterCount.toLocaleString()})]})]})]})]}),r.length>0&&(0,u.jsxs)(`div`,{className:`sidebar-section`,children:[(0,u.jsx)(`h3`,{children:`📚 Table of Contents`}),(0,u.jsx)(`nav`,{className:`toc-nav`,children:r.map((e,t)=>(0,u.jsxs)(`button`,{className:`toc-item level-${e.level} ${s===e.id?`active`:``} ${e.id===`next-lesson`?`next-lesson`:``}`,onClick:()=>d(e.id),title:e.text,children:[e.id===`next-lesson`&&(0,u.jsx)(`span`,{className:`next-lesson-icon`,children:`🚀`}),e.text]},t))})]})]}):(0,u.jsx)(`div`,{className:`right-sidebar`,children:(0,u.jsxs)(`div`,{className:`sidebar-section`,children:[(0,u.jsx)(`h3`,{children:`📖 Note Info`}),(0,u.jsx)(`p`,{className:`no-note-message`,children:`Select a note to see its table of contents and information.`})]})})}var me=`modulepreload`,he=function(e){return`/code-wiki-app/`+e},ge={};const _e=function(e,t,n){let r=Promise.resolve();if(t&&t.length>0){let e=document.getElementsByTagName(`link`),i=document.querySelector(`meta[property=csp-nonce]`),a=i?.nonce||i?.getAttribute(`nonce`);function o(e){return Promise.all(e.map(e=>Promise.resolve(e).then(e=>({status:`fulfilled`,value:e}),e=>({status:`rejected`,reason:e}))))}r=o(t.map(t=>{if(t=he(t,n),t in ge)return;ge[t]=!0;let r=t.endsWith(`.css`),i=r?`[rel="stylesheet"]`:``;if(n)for(let n=e.length-1;n>=0;n--){let i=e[n];if(i.href===t&&(!r||i.rel===`stylesheet`))return}else if(document.querySelector(`link[href="${t}"]${i}`))return;let o=document.createElement(`link`);if(o.rel=r?`stylesheet`:me,r||(o.as=`script`),o.crossOrigin=``,o.href=t,a&&o.setAttribute(`nonce`,a),document.head.appendChild(o),r)return new Promise((e,n)=>{o.addEventListener(`load`,e),o.addEventListener(`error`,()=>n(Error(`Unable to preload CSS for ${t}`)))})}))}function i(e){let t=new Event(`vite:preloadError`,{cancelable:!0});if(t.payload=e,window.dispatchEvent(t),!t.defaultPrevented)throw e}return r.then(t=>{for(let e of t||[])e.status===`rejected`&&i(e.reason);return e().catch(i)})};var ve=(0,l.lazy)(()=>_e(()=>import(`./react-markdown-C4yMs8Ql.js`),__vite__mapDeps([0,1,2,3,4,5])));function ye({content:e,styleUpNextSections:t,loadNote:n}){return(0,u.jsx)(l.Suspense,{fallback:(0,u.jsx)(d,{}),children:(0,u.jsx)(be,{content:e,styleUpNextSections:t,loadNote:n})})}function be({content:e,styleUpNextSections:t,loadNote:n}){let r=e=>({"html-two.md":`02-classes-ids-and-data-attributes.md`,"classes-ids-data-attributes.md":`02-classes-ids-and-data-attributes.md`,"positioning.md":`03-positioning.md`,"positioning-basics.md":`03-positioning.md`,"flexbox.md":`04-flexbox-basics.md`,"flexbox-basics.md":`04-flexbox-basics.md`,"basics.md":`02-basics.md`,"sql-index.md":`00-sql-index.md`,"get-started.md":`01-get-started.md`,"setting-up.md":`02-setting-up.md`,"data-types.md":`03-data-types.md`,"tables.md":`04-tables.md`,"constraints.md":`05-constraints.md`,"manipulating-data.md":`06-manipulating-data.md`,"advanced-manipulating-data.md":`07-advanced-manipulating-data.md`})[e]||e;return(0,u.jsx)(ve,{remarkPlugins:[o,s],rehypePlugins:[i,a],components:{h1:({children:e,...t})=>(0,u.jsx)(`h1`,{...t,id:String(e)?.toLowerCase().replace(/[^\w\s-]/g,``).replace(/\s+/g,`-`),children:e}),h2:({children:e,...t})=>(0,u.jsx)(`h2`,{...t,id:String(e)?.toLowerCase().replace(/[^\w\s-]/g,``).replace(/\s+/g,`-`),children:e}),h3:({children:e,...t})=>(0,u.jsx)(`h3`,{...t,id:String(e)?.toLowerCase().replace(/[^\w\s-]/g,``).replace(/\s+/g,`-`),children:e}),h4:({children:e,...n})=>(0,u.jsx)(`h4`,{...n,id:String(e)?.toLowerCase().replace(/[^\w\s-]/g,``).replace(/\s+/g,`-`),onLoad:()=>{setTimeout(t,100)},children:e}),h5:({children:e,...t})=>(0,u.jsx)(`h5`,{...t,id:String(e)?.toLowerCase().replace(/[^\w\s-]/g,``).replace(/\s+/g,`-`),children:e}),h6:({children:e,...t})=>(0,u.jsx)(`h6`,{...t,id:String(e)?.toLowerCase().replace(/[^\w\s-]/g,``).replace(/\s+/g,`-`),children:e}),a:({href:e,children:t,...i})=>(0,u.jsx)(`a`,{href:e,onClick:t=>{if(e&&e.endsWith(`.md`)&&n){t.preventDefault();let i=e;e.includes(`/`)&&(i=e.split(`/`).pop()||e);let a=r(i);console.log(`Internal link clicked:`,e,`-> normalized:`,a);try{n(a)}catch(e){console.error(`Failed to load note: ${a}`,e);try{n(i)}catch(e){console.error(`Failed to load note with filename: ${i}`,e),alert(`Note not found: ${i}`)}}}},className:`markdown-link`,...i,children:t}),table:({children:e,...t})=>(0,u.jsx)(`table`,{...t,className:`markdown-table`,children:e}),th:({children:e,...t})=>(0,u.jsx)(`th`,{...t,className:`markdown-th`,children:e}),td:({children:e,...t})=>(0,u.jsx)(`td`,{...t,className:`markdown-td`,children:e}),img:({src:e,alt:t,...n})=>(0,u.jsx)(`img`,{src:e?.startsWith(`/`)?`/code-wiki-app/${e.slice(1)}`:e,alt:t,style:{maxWidth:`100%`,height:`auto`,border:`1px solid #ddd`,borderRadius:`4px`,margin:`15px 0`,display:`block`},...n})},children:e})}function xe({currentFilename:e,onLoadNote:t}){let n=U(e);return n?(0,u.jsx)(`div`,{className:`next-lesson-container`,children:(0,u.jsx)(`button`,{className:`next-lesson-button`,onClick:()=>{t(n.filename)},"aria-label":`Go to next lesson: ${n.title}`,children:(0,u.jsxs)(`div`,{className:`next-lesson-content`,children:[(0,u.jsx)(`span`,{className:`next-lesson-label`,children:`Up Next`}),(0,u.jsx)(`span`,{className:`next-lesson-title`,children:n.title}),(0,u.jsx)(`span`,{className:`next-lesson-arrow`,children:`→`})]})})}):null}function Se({results:e,query:t,isLoading:n=!1,onSelectNote:r,onClose:i}){let a=e=>{r(e),i()};return t.trim()?(0,u.jsx)(`div`,{className:`search-results-overlay`,onClick:i,children:(0,u.jsxs)(`div`,{className:`search-results-container`,onClick:e=>e.stopPropagation(),children:[(0,u.jsxs)(`div`,{className:`search-results-header`,children:[(0,u.jsx)(`h3`,{children:`Search Results`}),(0,u.jsx)(`button`,{onClick:i,className:`search-results-close`,"aria-label":`Close search results`,children:`✕`})]}),n?(0,u.jsxs)(`div`,{className:`search-loading`,children:[(0,u.jsx)(`div`,{className:`search-spinner`}),(0,u.jsx)(`span`,{children:`Searching...`})]}):(0,u.jsxs)(u.Fragment,{children:[(0,u.jsx)(`div`,{className:`search-results-info`,children:e.length===0?(0,u.jsxs)(`span`,{children:[`No results found for "`,t,`"`]}):(0,u.jsxs)(`span`,{children:[`Found `,e.length,` `,e.length===1?`result`:`results`,` for "`,t,`"`]})}),(0,u.jsx)(`div`,{className:`search-results-list`,children:e.map((e,t)=>(0,u.jsxs)(`div`,{className:`search-result-card`,onClick:()=>a(e.filename),children:[(0,u.jsxs)(`div`,{className:`search-result-header`,children:[(0,u.jsxs)(`div`,{className:`search-result-title`,children:[(0,u.jsx)(`span`,{className:`search-result-icon`,children:e.sectionIcon}),(0,u.jsx)(`span`,{className:`search-result-name`,children:e.title})]}),(0,u.jsxs)(`div`,{className:`search-result-meta`,children:[(0,u.jsx)(`span`,{className:`search-result-section`,children:e.section}),(0,u.jsxs)(`span`,{className:`search-result-count`,children:[e.totalMatches,` `,e.totalMatches===1?`match`:`matches`]})]})]}),(0,u.jsxs)(`div`,{className:`search-result-matches`,children:[e.matches.map((e,t)=>(0,u.jsxs)(`div`,{className:`search-result-match`,children:[(0,u.jsxs)(`div`,{className:`search-result-line-number`,children:[`Line `,e.lineNumber]}),(0,u.jsx)(`div`,{className:`search-result-context`,dangerouslySetInnerHTML:{__html:e.highlightedText}})]},t)),e.totalMatches>e.matches.length&&(0,u.jsxs)(`div`,{className:`search-result-more`,children:[`+`,e.totalMatches-e.matches.length,` more`,` `,e.totalMatches-e.matches.length===1?`match`:`matches`]})]})]},`${e.filename}-${t}`))})]})]})}):null}var J=`notes-app-preferences`,Y=`notes-app-storage-allowed`;const X=()=>{try{return localStorage.getItem(Y)===`true`}catch{return!1}},Ce=()=>{try{return!localStorage.getItem(`notes-app-visited`)}catch{return!0}},we=()=>{try{localStorage.setItem(`notes-app-visited`,`true`)}catch{}},Te=e=>{try{e?localStorage.setItem(Y,`true`):localStorage.removeItem(Y)}catch{}},Z=()=>{let e={theme:`system`,allowsStorage:!1,visitedNotes:[],firstVisit:!0};if(!X())return e;try{let t=localStorage.getItem(J);if(t){let n=JSON.parse(t);return{...e,...n}}}catch{}return e},Q=e=>{if(X())try{let t={...Z(),...e};localStorage.setItem(J,JSON.stringify(t))}catch{}},Ee=e=>{X()&&Q({visitedNotes:[e,...(Z().visitedNotes||[]).filter(t=>t!==e)].slice(0,20)})},De=()=>{try{localStorage.removeItem(J),localStorage.removeItem(Y),localStorage.removeItem(`notes-app-visited`)}catch{}},Oe=()=>typeof window<`u`&&window.matchMedia&&window.matchMedia(`(prefers-color-scheme: dark)`).matches?`dark`:`light`,$=e=>{let t=document.documentElement,n;n=e===`system`?Oe():e,t.setAttribute(`data-theme`,n),t.classList.remove(`theme-light`,`theme-dark`),t.classList.add(`theme-${n}`)},ke=e=>{if(typeof window>`u`||!window.matchMedia)return()=>{};let t=window.matchMedia(`(prefers-color-scheme: dark)`),n=t=>{e(t.matches?`dark`:`light`)};return t.addEventListener(`change`,n),()=>t.removeEventListener(`change`,n)};function Ae({isOpen:e,onComplete:t}){let[n,r]=(0,l.useState)(`storage`),[i,a]=(0,l.useState)(!1),[o,s]=(0,l.useState)(``),[c,d]=(0,l.useState)(`system`);if(!e)return null;let f=e=>{a(e),e?r(`setup`):t({allowsStorage:!1,theme:`system`})},p=()=>{t({allowsStorage:i,username:o.trim()||void 0,theme:c})},m=()=>{s(``),p()},h=e=>{d(e),$(e)};return(0,u.jsx)(`div`,{className:`welcome-modal-overlay`,children:(0,u.jsx)(`div`,{className:`welcome-modal`,children:n===`storage`?(0,u.jsxs)(u.Fragment,{children:[(0,u.jsx)(`div`,{className:`welcome-modal-header`,children:(0,u.jsx)(`h2`,{children:`Welcome to Programming Notes! 📚`})}),(0,u.jsxs)(`div`,{className:`welcome-modal-content`,children:[(0,u.jsx)(`p`,{children:`To provide you with a personalized experience, we'd like to save your preferences and reading history locally on your device.`}),(0,u.jsxs)(`div`,{className:`storage-benefits`,children:[(0,u.jsxs)(`div`,{className:`benefit-item`,children:[(0,u.jsx)(`span`,{className:`benefit-icon`,children:`🎨`}),(0,u.jsx)(`span`,{children:`Remember your theme preference`})]}),(0,u.jsxs)(`div`,{className:`benefit-item`,children:[(0,u.jsx)(`span`,{className:`benefit-icon`,children:`📖`}),(0,u.jsx)(`span`,{children:`Track your reading history`})]}),(0,u.jsxs)(`div`,{className:`benefit-item`,children:[(0,u.jsx)(`span`,{className:`benefit-icon`,children:`👤`}),(0,u.jsx)(`span`,{children:`Personalized welcome messages`})]})]}),(0,u.jsxs)(`p`,{className:`storage-note`,children:[(0,u.jsx)(`strong`,{children:`Your privacy matters:`}),` All data stays on your device. Nothing is sent to any servers.`]})]}),(0,u.jsxs)(`div`,{className:`welcome-modal-actions`,children:[(0,u.jsx)(`button`,{onClick:()=>f(!1),className:`btn-secondary`,children:`No Thanks`}),(0,u.jsx)(`button`,{onClick:()=>f(!0),className:`btn-primary`,children:`Allow Local Storage`})]})]}):(0,u.jsxs)(u.Fragment,{children:[(0,u.jsx)(`div`,{className:`welcome-modal-header`,children:(0,u.jsx)(`h2`,{children:`Let's Personalize Your Experience ✨`})}),(0,u.jsxs)(`div`,{className:`welcome-modal-content`,children:[(0,u.jsxs)(`div`,{className:`setup-section`,children:[(0,u.jsx)(`label`,{htmlFor:`username`,className:`setup-label`,children:`What should we call you? (Optional)`}),(0,u.jsx)(`input`,{id:`username`,type:`text`,value:o,onChange:e=>s(e.target.value),placeholder:`Enter your name...`,className:`setup-input`,maxLength:50})]}),(0,u.jsxs)(`div`,{className:`setup-section`,children:[(0,u.jsx)(`label`,{className:`setup-label`,children:`Choose your theme`}),(0,u.jsxs)(`div`,{className:`theme-options`,children:[(0,u.jsxs)(`button`,{onClick:()=>h(`system`),className:`theme-option ${c===`system`?`active`:``}`,children:[(0,u.jsx)(`span`,{className:`theme-icon`,children:`🖥️`}),(0,u.jsxs)(`div`,{className:`theme-info`,children:[(0,u.jsx)(`div`,{className:`theme-name`,children:`System`}),(0,u.jsx)(`div`,{className:`theme-desc`,children:`Match your device`})]})]}),(0,u.jsxs)(`button`,{onClick:()=>h(`light`),className:`theme-option ${c===`light`?`active`:``}`,children:[(0,u.jsx)(`span`,{className:`theme-icon`,children:`☀️`}),(0,u.jsxs)(`div`,{className:`theme-info`,children:[(0,u.jsx)(`div`,{className:`theme-name`,children:`Light`}),(0,u.jsx)(`div`,{className:`theme-desc`,children:`Bright and clean`})]})]}),(0,u.jsxs)(`button`,{onClick:()=>h(`dark`),className:`theme-option ${c===`dark`?`active`:``}`,children:[(0,u.jsx)(`span`,{className:`theme-icon`,children:`🌙`}),(0,u.jsxs)(`div`,{className:`theme-info`,children:[(0,u.jsx)(`div`,{className:`theme-name`,children:`Dark`}),(0,u.jsx)(`div`,{className:`theme-desc`,children:`Easy on the eyes`})]})]})]})]})]}),(0,u.jsxs)(`div`,{className:`welcome-modal-actions`,children:[(0,u.jsx)(`button`,{onClick:m,className:`btn-secondary`,children:`Skip Name`}),(0,u.jsx)(`button`,{onClick:p,className:`btn-primary`,children:`Get Started`})]})]})})})}function je({username:e,preferences:t,onThemeChange:n,onClearData:r,onShowHistory:i}){let[a,o]=(0,l.useState)(!1),[s,c]=(0,l.useState)(!1),d=(0,l.useRef)(null);(0,l.useEffect)(()=>{let e=e=>{d.current&&!d.current.contains(e.target)&&o(!1)};return document.addEventListener(`mousedown`,e),()=>document.removeEventListener(`mousedown`,e)},[]);let f=()=>{c(!0),o(!1)},p=()=>{r(),c(!1)},m=e=>{switch(e){case`light`:return`☀️`;case`dark`:return`🌙`;case`system`:return`🖥️`;default:return`🖥️`}};return(0,u.jsxs)(u.Fragment,{children:[(0,u.jsxs)(`div`,{className:`user-menu`,ref:d,children:[(0,u.jsxs)(`button`,{onClick:()=>o(!a),className:`user-menu-trigger`,"aria-label":`User menu`,children:[(0,u.jsx)(`div`,{className:`user-avatar`,children:e?e.charAt(0).toUpperCase():`👤`}),(0,u.jsx)(`span`,{className:`user-menu-arrow`,children:a?`▴`:`▾`})]}),a&&(0,u.jsxs)(`div`,{className:`user-menu-dropdown`,children:[e&&(0,u.jsx)(`div`,{className:`user-menu-header`,children:(0,u.jsxs)(`div`,{className:`user-greeting`,children:[`Welcome back, `,(0,u.jsx)(`strong`,{children:e}),`!`]})}),(0,u.jsxs)(`div`,{className:`user-menu-section`,children:[(0,u.jsx)(`div`,{className:`user-menu-label`,children:`Theme`}),(0,u.jsx)(`div`,{className:`theme-selector`,children:[`system`,`light`,`dark`].map(e=>(0,u.jsxs)(`button`,{onClick:()=>{n(e),o(!1)},className:`theme-selector-btn ${t.theme===e?`active`:``}`,children:[(0,u.jsx)(`span`,{className:`theme-selector-icon`,children:m(e)}),(0,u.jsx)(`span`,{className:`theme-selector-name`,children:e.charAt(0).toUpperCase()+e.slice(1)})]},e))})]}),(0,u.jsx)(`div`,{className:`user-menu-section`,children:(0,u.jsxs)(`button`,{onClick:()=>{i(),o(!1)},className:`user-menu-item`,children:[(0,u.jsx)(`span`,{className:`user-menu-icon`,children:`📚`}),`Reading History`,t.visitedNotes.length>0&&(0,u.jsx)(`span`,{className:`history-count`,children:t.visitedNotes.length})]})}),(0,u.jsx)(`div`,{className:`user-menu-section user-menu-danger`,children:(0,u.jsxs)(`button`,{onClick:f,className:`user-menu-item danger`,children:[(0,u.jsx)(`span`,{className:`user-menu-icon`,children:`🗑️`}),`Clear All Data`]})})]})]}),s&&(0,u.jsx)(`div`,{className:`confirm-modal-overlay`,children:(0,u.jsxs)(`div`,{className:`confirm-modal`,children:[(0,u.jsx)(`div`,{className:`confirm-modal-header`,children:(0,u.jsx)(`h3`,{children:`⚠️ Clear All Data`})}),(0,u.jsxs)(`div`,{className:`confirm-modal-content`,children:[(0,u.jsx)(`p`,{children:`This will permanently delete all your saved preferences, reading history, and personal settings.`}),(0,u.jsx)(`p`,{className:`confirm-warning`,children:(0,u.jsx)(`strong`,{children:`Once you delete your progress, this cannot be undone!`})})]}),(0,u.jsxs)(`div`,{className:`confirm-modal-actions`,children:[(0,u.jsx)(`button`,{onClick:()=>c(!1),className:`btn-secondary`,children:`Cancel`}),(0,u.jsx)(`button`,{onClick:p,className:`btn-danger`,children:`Yes, Delete Everything`})]})]})})]})}function Me({isOpen:e,preferences:t,onClose:n,onSelectNote:r}){if(!e)return null;let i=e=>{r(e),n()},a=e=>{let t=H(e);return t?e===`home.md`?{name:`Home`,icon:`🏠`}:L[t]||{name:t,icon:`📄`}:{name:`General`,icon:`📄`}};return(0,u.jsx)(`div`,{className:`history-modal-overlay`,onClick:n,children:(0,u.jsxs)(`div`,{className:`history-modal`,onClick:e=>e.stopPropagation(),children:[(0,u.jsxs)(`div`,{className:`history-modal-header`,children:[(0,u.jsx)(`h3`,{children:`📚 Reading History`}),(0,u.jsx)(`button`,{onClick:n,className:`history-modal-close`,"aria-label":`Close history`,children:`✕`})]}),(0,u.jsx)(`div`,{className:`history-modal-content`,children:t.visitedNotes.length===0?(0,u.jsxs)(`div`,{className:`history-empty`,children:[(0,u.jsx)(`div`,{className:`history-empty-icon`,children:`📖`}),(0,u.jsx)(`div`,{className:`history-empty-title`,children:`No reading history yet`}),(0,u.jsx)(`div`,{className:`history-empty-desc`,children:`Start exploring the notes to build your reading history!`})]}):(0,u.jsxs)(u.Fragment,{children:[(0,u.jsxs)(`div`,{className:`history-info`,children:[`You've visited `,t.visitedNotes.length,t.visitedNotes.length===1?` note`:` notes`,` `,`recently`]}),(0,u.jsx)(`div`,{className:`history-list`,children:t.visitedNotes.map((e,t)=>{let n=a(e),r=B(e);return(0,u.jsxs)(`div`,{className:`history-item`,onClick:()=>i(e),children:[(0,u.jsxs)(`div`,{className:`history-item-main`,children:[(0,u.jsxs)(`div`,{className:`history-item-header`,children:[(0,u.jsx)(`span`,{className:`history-item-icon`,children:n.icon}),(0,u.jsx)(`span`,{className:`history-item-title`,children:r})]}),(0,u.jsxs)(`div`,{className:`history-item-meta`,children:[(0,u.jsx)(`span`,{className:`history-item-section`,children:n.name}),(0,u.jsxs)(`span`,{className:`history-item-position`,children:[`#`,t+1]})]})]}),(0,u.jsx)(`div`,{className:`history-item-arrow`,children:`→`})]},`${e}-${t}`)})})]})})]})})}function Ne(){let[e,t]=(0,l.useState)(null),[n,r]=(0,l.useState)(`home.md`),[i,a]=(0,l.useState)([`home.md`]),[o,s]=(0,l.useState)(null),[c,f]=(0,l.useState)(!1),[p,m]=(0,l.useState)([]),[h,g]=(0,l.useState)(``),[ee,_]=(0,l.useState)(!1),[v,y]=(0,l.useState)(()=>Z()),[te,b]=(0,l.useState)(!1),[x,S]=(0,l.useState)(!1),C=(0,l.useCallback)(()=>{t(W(`home.md`)),r(`home.md`),a([`home.md`]),s(`home`),w(`home.md`,`home`)},[]);(0,l.useEffect)(()=>{if(Ce()&&!X()&&(b(!0),we()),$(v.theme),v.theme===`system`)return ke(()=>{v.theme===`system`&&$(`system`)})},[v.theme]),(0,l.useEffect)(()=>{let e=new URLSearchParams(window.location.search),n=e.get(`note`),i=e.get(`section`);if(n)try{t(W(n)),r(n),a([n]);let e=i||H(n);s(e),w(n,e)}catch(e){console.error(`Failed to load note from URL:`,n,e),C()}else C()},[C]),(0,l.useEffect)(()=>{if(e){let e=setTimeout(()=>{D()},100);return()=>clearTimeout(e)}},[e]);let w=(e,t)=>{let n=new URLSearchParams;n.set(`note`,e),t&&n.set(`section`,t);let r=`${window.location.pathname}?${n.toString()}`;window.history.pushState({},``,r)},T=e=>{console.log(`Loading note:`,e),t(null),e!==n&&(a(t=>[...t,e]),r(e)),Ee(e);let i=H(e);s(i),w(e,i),f(!1),_(!1),setTimeout(()=>{try{t(W(e));let n=document.querySelector(`.center.main`);n&&(n.scrollTop=0),setTimeout(()=>{D()},50)}catch(n){console.error(`Error loading note:`,e,n),t(`# Error
+`,de={"../notes/c/00-c-index.md":p,"../notes/cpp/00-cpp-index.md":m,"../notes/css/01-CSS-index.md":h,"../notes/css/02-basics.md":g,"../notes/css/03-colors.md":_,"../notes/css/04-display-property.md":v,"../notes/css/05-positioning.md":y,"../notes/css/06-selectors.md":b,"../notes/css/07-pseudo-selectors.md":x,"../notes/css/08-specificity.md":ee,"../notes/css/09-inheritance.md":S,"../notes/css/10-flexbox-basics.md":C,"../notes/css/11-grid-layouts.md":w,"../notes/css/12-form-styling.md":T,"../notes/css/13-modals.md":E,"../notes/css/14-animations.md":D,"../notes/css/15-themeing.md":te,"../notes/css/16-building-a-dropdown.md":``,"../notes/git/00-git-init.md":O,"../notes/git/01-git-branching.md":k,"../notes/home.md":ne,"../notes/html/00-html-index.md":A,"../notes/html/01-get-started-with-html.md":j,"../notes/html/02-classes-ids-and-data-attributes.md":M,"../notes/html/03-forms.md":N,"../notes/javascript/00-javascript-index.md":P,"../notes/javascript/01-javascript-basics.md":F,"../notes/sql/00-sql-index.md":I,"../notes/sql/01-get-started.md":L,"../notes/sql/02-setting-up.md":R,"../notes/sql/03-data-types.md":re,"../notes/sql/04-tables.md":ie,"../notes/sql/05-constraints.md":ae,"../notes/sql/06-manipulating-data.md":oe,"../notes/sql/07-advanced-manipulating-data.md":se,"../notes/sql/08-installing-sqlite.md":ce,"../notes/typescript/typescript-basics.md":le,"../notes/typescript/typescript-index.md":ue},z={},B={};Object.entries(de).forEach(([e,t])=>{let n=e.split(`/`),r=n[n.length-1]||``;if(n.length===3&&r===`home.md`){B[r]={content:t,section:`home`};return}if(n.length>3){let e=n[n.length-2];z[e]||(z[e]={}),z[e][r]=t,B[r]={content:t,section:e}}});const V=e=>e.replace(/^\d{2}-/,``),H=e=>V(e).replace(`.md`,``).replace(/-/g,` `).replace(/\b\w/g,e=>e.toUpperCase()),U=e=>Object.keys(z[e]||{}).sort((e,t)=>{let n=parseInt(e.match(/^\d+/)?.[0]||`999`),r=parseInt(t.match(/^\d+/)?.[0]||`999`);return n===r?e.localeCompare(t):n-r}),fe=()=>Object.keys(z),W=e=>{let t=B[e];return t?t.section:null},G=e=>{let t=W(e);if(!t)return null;let n=U(t),r=n.indexOf(e);if(r===-1||r>=n.length-1)return null;let i=n[r+1];return{filename:i,title:H(i)}},K=e=>{let t=e.replace(/^\/notes\/[^/]+\//,``).replace(/^\/notes\//,``),n=B[t];if(!n){let e=Object.keys(B).join(`, `);throw Error(`Note not found: ${t}. Available: ${e}`)}return console.log(`Retrieved note:`,t,`from section:`,n.section),n.content},pe=e=>{if(!e.trim())return[];let t=e.toLowerCase(),n=[];return Object.entries(B).forEach(([r,i])=>{let{content:a,section:o}=i,s=a.split(`
+`),c=[];if(s.forEach((n,r)=>{if(n.toLowerCase().includes(t)){let t=me(n,e);c.push({context:n.trim(),lineNumber:r+1,highlightedText:t})}}),c.length>0){let e=o===`home`?{name:`Home`,icon:`🏠`}:f[o]||{name:o,icon:`📄`};n.push({filename:r,title:H(r),section:e.name,sectionIcon:e.icon,matches:c.slice(0,3),totalMatches:c.length})}}),n.sort((e,t)=>e.totalMatches===t.totalMatches?e.title.localeCompare(t.title):t.totalMatches-e.totalMatches)};var me=(e,t)=>{let n=RegExp(`(${t})`,`gi`);return e.replace(n,`<mark>$1</mark>`)};const he=()=>{let e=fe(),t=[];return t.push({text:`🏠 Home`,href:`home.md`}),e.forEach(e=>{let n=e.toLowerCase(),r=f[n],i=U(e);if(console.log(`Section:`,e,`Key:`,n,`Info:`,r),i.length>0){let n=i.map(e=>({text:ge(e),href:e})),a=r?.icon||`📁`,o=r?.name||e.charAt(0).toUpperCase()+e.slice(1);t.push({text:`${a} ${o}`,children:n})}}),t};var ge=e=>V(e).replace(`.md`,``).replace(/-/g,` `).replace(/\b\w/g,e=>e.toUpperCase());const q=he();function _e({onSearch:e,onClear:t,placeholder:n=`Search all notes...`}){let[r,i]=(0,l.useState)(``),[a,o]=(0,l.useState)(!1),s=(0,l.useRef)(null),c=n=>{let r=n.target.value;i(r),r.trim()?e(r):t()},d=()=>{i(``),t(),s.current?.focus()};return(0,l.useEffect)(()=>{let e=e=>{(e.ctrlKey||e.metaKey)&&e.key===`k`&&(e.preventDefault(),s.current?.focus())};return document.addEventListener(`keydown`,e),()=>document.removeEventListener(`keydown`,e)},[]),(0,u.jsx)(`div`,{className:`search-bar ${a?`focused`:``}`,children:(0,u.jsxs)(`div`,{className:`search-input-container`,children:[(0,u.jsx)(`span`,{className:`search-icon`,children:`🔍`}),(0,u.jsx)(`input`,{ref:s,type:`text`,value:r,onChange:c,onKeyDown:e=>{e.key===`Escape`&&d()},onFocus:()=>o(!0),onBlur:()=>o(!1),placeholder:n,className:`search-input`}),r&&(0,u.jsx)(`button`,{onClick:d,className:`search-clear`,"aria-label":`Clear search`,children:`✕`})]})})}function ve({setCurrentNote:e,currentSection:t,currentNoteName:n,onSearch:r,onClearSearch:i,isMobile:a,rightSidebarContent:o}){let[s,c]=(0,l.useState)(null),[d,p]=(0,l.useState)(`chapters`);(0,l.useEffect)(()=>{if(t){let e=q.findIndex(e=>{if(e.text&&t in f){let n=f[t];return e.text.includes(n.name)}return!1});e!==-1&&c(e)}},[t]);let m=e=>{c(s===e?null:e)};return(0,u.jsxs)(`div`,{className:`left-nav`,children:[a&&o&&(0,u.jsxs)(`div`,{className:`mobile-nav-toggle`,children:[(0,u.jsx)(`button`,{className:`mobile-nav-btn ${d===`chapters`?`active`:``}`,onClick:()=>p(`chapters`),children:`All Chapters`}),(0,u.jsx)(`button`,{className:`mobile-nav-btn ${d===`page`?`active`:``}`,onClick:()=>p(`page`),children:`On this page`})]}),(!a||d===`chapters`)&&(0,u.jsxs)(u.Fragment,{children:[(0,u.jsx)(_e,{onSearch:e=>{r?.(e)},onClear:()=>{i?.()},placeholder:`Search all notes...`}),q.map((t,r)=>{if(t.children){let i=s===r;return(0,u.jsxs)(`div`,{className:`dropdown-parent ${i?`active`:``}`,children:[(0,u.jsxs)(`div`,{className:`dropdown-title`,onClick:()=>m(r),children:[(0,u.jsx)(`span`,{className:`section-arrow`,children:i?`▼`:`▶`}),t.text]}),(0,u.jsx)(`div`,{className:`dropdown-children ${i?`expanded`:`collapsed`}`,children:t.children.map((t,r)=>(0,u.jsx)(`p`,{className:`child-link ${n===t.href?`active`:``}`,onClick:()=>t.href&&e(t.href),children:t.text},r))})]},r)}else return(0,u.jsx)(`div`,{className:`parent-link ${n===t.href?`active`:``}`,onClick:()=>t.href&&e(t.href),children:t.text},r)})]}),a&&d===`page`&&o&&(0,u.jsx)(`div`,{className:`mobile-page-overview`,children:o})]})}function ye({currentNote:e,currentNoteName:t,onLoadNote:n}){let[r,i]=(0,l.useState)([]),[a,o]=(0,l.useState)(null),[s,c]=(0,l.useState)(``);(0,l.useEffect)(()=>{if(!e){i([]),o(null);return}let r=/^(#{1,6})\s+(.+)$/gm,a=[],s;for(;(s=r.exec(e))!==null;){let e=s[1].length,t=s[2].trim();if(e===4)continue;let n=t.toLowerCase().replace(/[^\w\s-]/g,``).replace(/\s+/g,`-`);a.push({id:n,text:t,level:e})}if(n){let e=G(t);e&&a.push({id:`next-lesson`,text:`Next: ${e.title}`,level:2})}i(a);let c=e.replace(/#{1,6}\s+/g,``).replace(/\[([^\]]+)\]\([^)]+\)/g,`$1`).replace(/[*_`]/g,``).trim().split(/\s+/).filter(e=>e.length>0).length,l=Math.max(1,Math.ceil(c/200)),u=e.length;o({wordCount:c,readingTime:l,characterCount:u})},[e,t,n]);let d=e=>{if(e===`next-lesson`&&n){let e=G(t);e&&n(e.filename);return}let r=document.getElementById(e);r&&(r.scrollIntoView({behavior:`smooth`,block:`start`}),c(e))};return(0,l.useEffect)(()=>{let e=()=>{let e=r.map(e=>({id:e.id,element:document.getElementById(e.id)})),t=``;for(let n of e)n.element&&n.element.getBoundingClientRect().top<=100&&(t=n.id);c(t)},t=document.querySelector(`.center.main`);if(t)return t.addEventListener(`scroll`,e),()=>t.removeEventListener(`scroll`,e)},[r]),e?(0,u.jsxs)(`div`,{className:`right-sidebar`,children:[(0,u.jsxs)(`div`,{className:`sidebar-section`,children:[(0,u.jsx)(`h3`,{children:`📊 Note Info`}),(0,u.jsxs)(`div`,{className:`note-stats`,children:[(0,u.jsxs)(`div`,{className:`stat-item`,children:[(0,u.jsx)(`span`,{className:`stat-label`,children:`📄 File:`}),(0,u.jsx)(`span`,{className:`stat-value`,children:V(t)})]}),a&&(0,u.jsxs)(u.Fragment,{children:[(0,u.jsxs)(`div`,{className:`stat-item`,children:[(0,u.jsx)(`span`,{className:`stat-label`,children:`📝 Words:`}),(0,u.jsx)(`span`,{className:`stat-value`,children:a.wordCount.toLocaleString()})]}),(0,u.jsxs)(`div`,{className:`stat-item`,children:[(0,u.jsx)(`span`,{className:`stat-label`,children:`⏱️ Read time:`}),(0,u.jsxs)(`span`,{className:`stat-value`,children:[a.readingTime,` min`]})]}),(0,u.jsxs)(`div`,{className:`stat-item`,children:[(0,u.jsx)(`span`,{className:`stat-label`,children:`🔤 Characters:`}),(0,u.jsx)(`span`,{className:`stat-value`,children:a.characterCount.toLocaleString()})]})]})]})]}),r.length>0&&(0,u.jsxs)(`div`,{className:`sidebar-section`,children:[(0,u.jsx)(`h3`,{children:`📚 Table of Contents`}),(0,u.jsx)(`nav`,{className:`toc-nav`,children:r.map((e,t)=>(0,u.jsxs)(`button`,{className:`toc-item level-${e.level} ${s===e.id?`active`:``} ${e.id===`next-lesson`?`next-lesson`:``}`,onClick:()=>d(e.id),title:e.text,children:[e.id===`next-lesson`&&(0,u.jsx)(`span`,{className:`next-lesson-icon`,children:`🚀`}),e.text]},t))})]})]}):(0,u.jsx)(`div`,{className:`right-sidebar`,children:(0,u.jsxs)(`div`,{className:`sidebar-section`,children:[(0,u.jsx)(`h3`,{children:`📖 Note Info`}),(0,u.jsx)(`p`,{className:`no-note-message`,children:`Select a note to see its table of contents and information.`})]})})}var be=`modulepreload`,xe=function(e){return`/code-wiki-app/`+e},Se={};const Ce=function(e,t,n){let r=Promise.resolve();if(t&&t.length>0){let e=document.getElementsByTagName(`link`),i=document.querySelector(`meta[property=csp-nonce]`),a=i?.nonce||i?.getAttribute(`nonce`);function o(e){return Promise.all(e.map(e=>Promise.resolve(e).then(e=>({status:`fulfilled`,value:e}),e=>({status:`rejected`,reason:e}))))}r=o(t.map(t=>{if(t=xe(t,n),t in Se)return;Se[t]=!0;let r=t.endsWith(`.css`),i=r?`[rel="stylesheet"]`:``;if(n)for(let n=e.length-1;n>=0;n--){let i=e[n];if(i.href===t&&(!r||i.rel===`stylesheet`))return}else if(document.querySelector(`link[href="${t}"]${i}`))return;let o=document.createElement(`link`);if(o.rel=r?`stylesheet`:be,r||(o.as=`script`),o.crossOrigin=``,o.href=t,a&&o.setAttribute(`nonce`,a),document.head.appendChild(o),r)return new Promise((e,n)=>{o.addEventListener(`load`,e),o.addEventListener(`error`,()=>n(Error(`Unable to preload CSS for ${t}`)))})}))}function i(e){let t=new Event(`vite:preloadError`,{cancelable:!0});if(t.payload=e,window.dispatchEvent(t),!t.defaultPrevented)throw e}return r.then(t=>{for(let e of t||[])e.status===`rejected`&&i(e.reason);return e().catch(i)})};var we=(0,l.lazy)(()=>Ce(()=>import(`./react-markdown-C4yMs8Ql.js`),__vite__mapDeps([0,1,2,3,4,5])));function Te({content:e,styleUpNextSections:t,loadNote:n}){return(0,u.jsx)(l.Suspense,{fallback:(0,u.jsx)(d,{}),children:(0,u.jsx)(Ee,{content:e,styleUpNextSections:t,loadNote:n})})}function Ee({content:e,styleUpNextSections:t,loadNote:n}){let r=e=>({"html-two.md":`02-classes-ids-and-data-attributes.md`,"classes-ids-data-attributes.md":`02-classes-ids-and-data-attributes.md`,"positioning.md":`03-positioning.md`,"positioning-basics.md":`03-positioning.md`,"flexbox.md":`04-flexbox-basics.md`,"flexbox-basics.md":`04-flexbox-basics.md`,"basics.md":`02-basics.md`,"sql-index.md":`00-sql-index.md`,"get-started.md":`01-get-started.md`,"setting-up.md":`02-setting-up.md`,"data-types.md":`03-data-types.md`,"tables.md":`04-tables.md`,"constraints.md":`05-constraints.md`,"manipulating-data.md":`06-manipulating-data.md`,"advanced-manipulating-data.md":`07-advanced-manipulating-data.md`})[e]||e;return(0,u.jsx)(we,{remarkPlugins:[o,s],rehypePlugins:[i,a],components:{h1:({children:e,...t})=>(0,u.jsx)(`h1`,{...t,id:String(e)?.toLowerCase().replace(/[^\w\s-]/g,``).replace(/\s+/g,`-`),children:e}),h2:({children:e,...t})=>(0,u.jsx)(`h2`,{...t,id:String(e)?.toLowerCase().replace(/[^\w\s-]/g,``).replace(/\s+/g,`-`),children:e}),h3:({children:e,...t})=>(0,u.jsx)(`h3`,{...t,id:String(e)?.toLowerCase().replace(/[^\w\s-]/g,``).replace(/\s+/g,`-`),children:e}),h4:({children:e,...n})=>(0,u.jsx)(`h4`,{...n,id:String(e)?.toLowerCase().replace(/[^\w\s-]/g,``).replace(/\s+/g,`-`),onLoad:()=>{setTimeout(t,100)},children:e}),h5:({children:e,...t})=>(0,u.jsx)(`h5`,{...t,id:String(e)?.toLowerCase().replace(/[^\w\s-]/g,``).replace(/\s+/g,`-`),children:e}),h6:({children:e,...t})=>(0,u.jsx)(`h6`,{...t,id:String(e)?.toLowerCase().replace(/[^\w\s-]/g,``).replace(/\s+/g,`-`),children:e}),a:({href:e,children:t,...i})=>(0,u.jsx)(`a`,{href:e,onClick:t=>{if(e&&e.endsWith(`.md`)&&n){t.preventDefault();let i=e;e.includes(`/`)&&(i=e.split(`/`).pop()||e);let a=r(i);console.log(`Internal link clicked:`,e,`-> normalized:`,a);try{n(a)}catch(e){console.error(`Failed to load note: ${a}`,e);try{n(i)}catch(e){console.error(`Failed to load note with filename: ${i}`,e),alert(`Note not found: ${i}`)}}}},className:`markdown-link`,...i,children:t}),table:({children:e,...t})=>(0,u.jsx)(`table`,{...t,className:`markdown-table`,children:e}),th:({children:e,...t})=>(0,u.jsx)(`th`,{...t,className:`markdown-th`,children:e}),td:({children:e,...t})=>(0,u.jsx)(`td`,{...t,className:`markdown-td`,children:e}),img:({src:e,alt:t,...n})=>(0,u.jsx)(`img`,{src:e?.startsWith(`/`)?`/code-wiki-app/${e.slice(1)}`:e,alt:t,style:{maxWidth:`100%`,height:`auto`,border:`1px solid #ddd`,borderRadius:`4px`,margin:`15px 0`,display:`block`},...n})},children:e})}function De({currentFilename:e,onLoadNote:t}){let n=G(e);return n?(0,u.jsx)(`div`,{className:`next-lesson-container`,children:(0,u.jsx)(`button`,{className:`next-lesson-button`,onClick:()=>{t(n.filename)},"aria-label":`Go to next lesson: ${n.title}`,children:(0,u.jsxs)(`div`,{className:`next-lesson-content`,children:[(0,u.jsx)(`span`,{className:`next-lesson-label`,children:`Up Next`}),(0,u.jsx)(`span`,{className:`next-lesson-title`,children:n.title}),(0,u.jsx)(`span`,{className:`next-lesson-arrow`,children:`→`})]})})}):null}function Oe({results:e,query:t,isLoading:n=!1,onSelectNote:r,onClose:i}){let a=e=>{r(e),i()};return t.trim()?(0,u.jsx)(`div`,{className:`search-results-overlay`,onClick:i,children:(0,u.jsxs)(`div`,{className:`search-results-container`,onClick:e=>e.stopPropagation(),children:[(0,u.jsxs)(`div`,{className:`search-results-header`,children:[(0,u.jsx)(`h3`,{children:`Search Results`}),(0,u.jsx)(`button`,{onClick:i,className:`search-results-close`,"aria-label":`Close search results`,children:`✕`})]}),n?(0,u.jsxs)(`div`,{className:`search-loading`,children:[(0,u.jsx)(`div`,{className:`search-spinner`}),(0,u.jsx)(`span`,{children:`Searching...`})]}):(0,u.jsxs)(u.Fragment,{children:[(0,u.jsx)(`div`,{className:`search-results-info`,children:e.length===0?(0,u.jsxs)(`span`,{children:[`No results found for "`,t,`"`]}):(0,u.jsxs)(`span`,{children:[`Found `,e.length,` `,e.length===1?`result`:`results`,` for "`,t,`"`]})}),(0,u.jsx)(`div`,{className:`search-results-list`,children:e.map((e,t)=>(0,u.jsxs)(`div`,{className:`search-result-card`,onClick:()=>a(e.filename),children:[(0,u.jsxs)(`div`,{className:`search-result-header`,children:[(0,u.jsxs)(`div`,{className:`search-result-title`,children:[(0,u.jsx)(`span`,{className:`search-result-icon`,children:e.sectionIcon}),(0,u.jsx)(`span`,{className:`search-result-name`,children:e.title})]}),(0,u.jsxs)(`div`,{className:`search-result-meta`,children:[(0,u.jsx)(`span`,{className:`search-result-section`,children:e.section}),(0,u.jsxs)(`span`,{className:`search-result-count`,children:[e.totalMatches,` `,e.totalMatches===1?`match`:`matches`]})]})]}),(0,u.jsxs)(`div`,{className:`search-result-matches`,children:[e.matches.map((e,t)=>(0,u.jsxs)(`div`,{className:`search-result-match`,children:[(0,u.jsxs)(`div`,{className:`search-result-line-number`,children:[`Line `,e.lineNumber]}),(0,u.jsx)(`div`,{className:`search-result-context`,dangerouslySetInnerHTML:{__html:e.highlightedText}})]},t)),e.totalMatches>e.matches.length&&(0,u.jsxs)(`div`,{className:`search-result-more`,children:[`+`,e.totalMatches-e.matches.length,` more`,` `,e.totalMatches-e.matches.length===1?`match`:`matches`]})]})]},`${e.filename}-${t}`))})]})]})}):null}var J=`notes-app-preferences`,Y=`notes-app-storage-allowed`;const X=()=>{try{return localStorage.getItem(Y)===`true`}catch{return!1}},ke=()=>{try{return!localStorage.getItem(`notes-app-visited`)}catch{return!0}},Ae=()=>{try{localStorage.setItem(`notes-app-visited`,`true`)}catch{}},je=e=>{try{e?localStorage.setItem(Y,`true`):localStorage.removeItem(Y)}catch{}},Z=()=>{let e={theme:`system`,allowsStorage:!1,visitedNotes:[],firstVisit:!0};if(!X())return e;try{let t=localStorage.getItem(J);if(t){let n=JSON.parse(t);return{...e,...n}}}catch{}return e},Q=e=>{if(X())try{let t={...Z(),...e};localStorage.setItem(J,JSON.stringify(t))}catch{}},Me=e=>{X()&&Q({visitedNotes:[e,...(Z().visitedNotes||[]).filter(t=>t!==e)].slice(0,20)})},Ne=()=>{try{localStorage.removeItem(J),localStorage.removeItem(Y),localStorage.removeItem(`notes-app-visited`)}catch{}},Pe=()=>typeof window<`u`&&window.matchMedia&&window.matchMedia(`(prefers-color-scheme: dark)`).matches?`dark`:`light`,$=e=>{let t=document.documentElement,n;n=e===`system`?Pe():e,t.setAttribute(`data-theme`,n),t.classList.remove(`theme-light`,`theme-dark`),t.classList.add(`theme-${n}`)},Fe=e=>{if(typeof window>`u`||!window.matchMedia)return()=>{};let t=window.matchMedia(`(prefers-color-scheme: dark)`),n=t=>{e(t.matches?`dark`:`light`)};return t.addEventListener(`change`,n),()=>t.removeEventListener(`change`,n)};function Ie({isOpen:e,onComplete:t}){let[n,r]=(0,l.useState)(`storage`),[i,a]=(0,l.useState)(!1),[o,s]=(0,l.useState)(``),[c,d]=(0,l.useState)(`system`);if(!e)return null;let f=e=>{a(e),e?r(`setup`):t({allowsStorage:!1,theme:`system`})},p=()=>{t({allowsStorage:i,username:o.trim()||void 0,theme:c})},m=()=>{s(``),p()},h=e=>{d(e),$(e)};return(0,u.jsx)(`div`,{className:`welcome-modal-overlay`,children:(0,u.jsx)(`div`,{className:`welcome-modal`,children:n===`storage`?(0,u.jsxs)(u.Fragment,{children:[(0,u.jsx)(`div`,{className:`welcome-modal-header`,children:(0,u.jsx)(`h2`,{children:`Welcome to Programming Notes! 📚`})}),(0,u.jsxs)(`div`,{className:`welcome-modal-content`,children:[(0,u.jsx)(`p`,{children:`To provide you with a personalized experience, we'd like to save your preferences and reading history locally on your device.`}),(0,u.jsxs)(`div`,{className:`storage-benefits`,children:[(0,u.jsxs)(`div`,{className:`benefit-item`,children:[(0,u.jsx)(`span`,{className:`benefit-icon`,children:`🎨`}),(0,u.jsx)(`span`,{children:`Remember your theme preference`})]}),(0,u.jsxs)(`div`,{className:`benefit-item`,children:[(0,u.jsx)(`span`,{className:`benefit-icon`,children:`📖`}),(0,u.jsx)(`span`,{children:`Track your reading history`})]}),(0,u.jsxs)(`div`,{className:`benefit-item`,children:[(0,u.jsx)(`span`,{className:`benefit-icon`,children:`👤`}),(0,u.jsx)(`span`,{children:`Personalized welcome messages`})]})]}),(0,u.jsxs)(`p`,{className:`storage-note`,children:[(0,u.jsx)(`strong`,{children:`Your privacy matters:`}),` All data stays on your device. Nothing is sent to any servers.`]})]}),(0,u.jsxs)(`div`,{className:`welcome-modal-actions`,children:[(0,u.jsx)(`button`,{onClick:()=>f(!1),className:`btn-secondary`,children:`No Thanks`}),(0,u.jsx)(`button`,{onClick:()=>f(!0),className:`btn-primary`,children:`Allow Local Storage`})]})]}):(0,u.jsxs)(u.Fragment,{children:[(0,u.jsx)(`div`,{className:`welcome-modal-header`,children:(0,u.jsx)(`h2`,{children:`Let's Personalize Your Experience ✨`})}),(0,u.jsxs)(`div`,{className:`welcome-modal-content`,children:[(0,u.jsxs)(`div`,{className:`setup-section`,children:[(0,u.jsx)(`label`,{htmlFor:`username`,className:`setup-label`,children:`What should we call you? (Optional)`}),(0,u.jsx)(`input`,{id:`username`,type:`text`,value:o,onChange:e=>s(e.target.value),placeholder:`Enter your name...`,className:`setup-input`,maxLength:50})]}),(0,u.jsxs)(`div`,{className:`setup-section`,children:[(0,u.jsx)(`label`,{className:`setup-label`,children:`Choose your theme`}),(0,u.jsxs)(`div`,{className:`theme-options`,children:[(0,u.jsxs)(`button`,{onClick:()=>h(`system`),className:`theme-option ${c===`system`?`active`:``}`,children:[(0,u.jsx)(`span`,{className:`theme-icon`,children:`🖥️`}),(0,u.jsxs)(`div`,{className:`theme-info`,children:[(0,u.jsx)(`div`,{className:`theme-name`,children:`System`}),(0,u.jsx)(`div`,{className:`theme-desc`,children:`Match your device`})]})]}),(0,u.jsxs)(`button`,{onClick:()=>h(`light`),className:`theme-option ${c===`light`?`active`:``}`,children:[(0,u.jsx)(`span`,{className:`theme-icon`,children:`☀️`}),(0,u.jsxs)(`div`,{className:`theme-info`,children:[(0,u.jsx)(`div`,{className:`theme-name`,children:`Light`}),(0,u.jsx)(`div`,{className:`theme-desc`,children:`Bright and clean`})]})]}),(0,u.jsxs)(`button`,{onClick:()=>h(`dark`),className:`theme-option ${c===`dark`?`active`:``}`,children:[(0,u.jsx)(`span`,{className:`theme-icon`,children:`🌙`}),(0,u.jsxs)(`div`,{className:`theme-info`,children:[(0,u.jsx)(`div`,{className:`theme-name`,children:`Dark`}),(0,u.jsx)(`div`,{className:`theme-desc`,children:`Easy on the eyes`})]})]})]})]})]}),(0,u.jsxs)(`div`,{className:`welcome-modal-actions`,children:[(0,u.jsx)(`button`,{onClick:m,className:`btn-secondary`,children:`Skip Name`}),(0,u.jsx)(`button`,{onClick:p,className:`btn-primary`,children:`Get Started`})]})]})})})}function Le({username:e,preferences:t,onThemeChange:n,onClearData:r,onShowHistory:i}){let[a,o]=(0,l.useState)(!1),[s,c]=(0,l.useState)(!1),d=(0,l.useRef)(null);(0,l.useEffect)(()=>{let e=e=>{d.current&&!d.current.contains(e.target)&&o(!1)};return document.addEventListener(`mousedown`,e),()=>document.removeEventListener(`mousedown`,e)},[]);let f=()=>{c(!0),o(!1)},p=()=>{r(),c(!1)},m=e=>{switch(e){case`light`:return`☀️`;case`dark`:return`🌙`;case`system`:return`🖥️`;default:return`🖥️`}};return(0,u.jsxs)(u.Fragment,{children:[(0,u.jsxs)(`div`,{className:`user-menu`,ref:d,children:[(0,u.jsxs)(`button`,{onClick:()=>o(!a),className:`user-menu-trigger`,"aria-label":`User menu`,children:[(0,u.jsx)(`div`,{className:`user-avatar`,children:e?e.charAt(0).toUpperCase():`👤`}),(0,u.jsx)(`span`,{className:`user-menu-arrow`,children:a?`▴`:`▾`})]}),a&&(0,u.jsxs)(`div`,{className:`user-menu-dropdown`,children:[e&&(0,u.jsx)(`div`,{className:`user-menu-header`,children:(0,u.jsxs)(`div`,{className:`user-greeting`,children:[`Welcome back, `,(0,u.jsx)(`strong`,{children:e}),`!`]})}),(0,u.jsxs)(`div`,{className:`user-menu-section`,children:[(0,u.jsx)(`div`,{className:`user-menu-label`,children:`Theme`}),(0,u.jsx)(`div`,{className:`theme-selector`,children:[`system`,`light`,`dark`].map(e=>(0,u.jsxs)(`button`,{onClick:()=>{n(e),o(!1)},className:`theme-selector-btn ${t.theme===e?`active`:``}`,children:[(0,u.jsx)(`span`,{className:`theme-selector-icon`,children:m(e)}),(0,u.jsx)(`span`,{className:`theme-selector-name`,children:e.charAt(0).toUpperCase()+e.slice(1)})]},e))})]}),(0,u.jsx)(`div`,{className:`user-menu-section`,children:(0,u.jsxs)(`button`,{onClick:()=>{i(),o(!1)},className:`user-menu-item`,children:[(0,u.jsx)(`span`,{className:`user-menu-icon`,children:`📚`}),`Reading History`,t.visitedNotes.length>0&&(0,u.jsx)(`span`,{className:`history-count`,children:t.visitedNotes.length})]})}),(0,u.jsx)(`div`,{className:`user-menu-section user-menu-danger`,children:(0,u.jsxs)(`button`,{onClick:f,className:`user-menu-item danger`,children:[(0,u.jsx)(`span`,{className:`user-menu-icon`,children:`🗑️`}),`Clear All Data`]})})]})]}),s&&(0,u.jsx)(`div`,{className:`confirm-modal-overlay`,children:(0,u.jsxs)(`div`,{className:`confirm-modal`,children:[(0,u.jsx)(`div`,{className:`confirm-modal-header`,children:(0,u.jsx)(`h3`,{children:`⚠️ Clear All Data`})}),(0,u.jsxs)(`div`,{className:`confirm-modal-content`,children:[(0,u.jsx)(`p`,{children:`This will permanently delete all your saved preferences, reading history, and personal settings.`}),(0,u.jsx)(`p`,{className:`confirm-warning`,children:(0,u.jsx)(`strong`,{children:`Once you delete your progress, this cannot be undone!`})})]}),(0,u.jsxs)(`div`,{className:`confirm-modal-actions`,children:[(0,u.jsx)(`button`,{onClick:()=>c(!1),className:`btn-secondary`,children:`Cancel`}),(0,u.jsx)(`button`,{onClick:p,className:`btn-danger`,children:`Yes, Delete Everything`})]})]})})]})}function Re({isOpen:e,preferences:t,onClose:n,onSelectNote:r}){if(!e)return null;let i=e=>{r(e),n()},a=e=>{let t=W(e);return t?e===`home.md`?{name:`Home`,icon:`🏠`}:f[t]||{name:t,icon:`📄`}:{name:`General`,icon:`📄`}};return(0,u.jsx)(`div`,{className:`history-modal-overlay`,onClick:n,children:(0,u.jsxs)(`div`,{className:`history-modal`,onClick:e=>e.stopPropagation(),children:[(0,u.jsxs)(`div`,{className:`history-modal-header`,children:[(0,u.jsx)(`h3`,{children:`📚 Reading History`}),(0,u.jsx)(`button`,{onClick:n,className:`history-modal-close`,"aria-label":`Close history`,children:`✕`})]}),(0,u.jsx)(`div`,{className:`history-modal-content`,children:t.visitedNotes.length===0?(0,u.jsxs)(`div`,{className:`history-empty`,children:[(0,u.jsx)(`div`,{className:`history-empty-icon`,children:`📖`}),(0,u.jsx)(`div`,{className:`history-empty-title`,children:`No reading history yet`}),(0,u.jsx)(`div`,{className:`history-empty-desc`,children:`Start exploring the notes to build your reading history!`})]}):(0,u.jsxs)(u.Fragment,{children:[(0,u.jsxs)(`div`,{className:`history-info`,children:[`You've visited `,t.visitedNotes.length,t.visitedNotes.length===1?` note`:` notes`,` `,`recently`]}),(0,u.jsx)(`div`,{className:`history-list`,children:t.visitedNotes.map((e,t)=>{let n=a(e),r=H(e);return(0,u.jsxs)(`div`,{className:`history-item`,onClick:()=>i(e),children:[(0,u.jsxs)(`div`,{className:`history-item-main`,children:[(0,u.jsxs)(`div`,{className:`history-item-header`,children:[(0,u.jsx)(`span`,{className:`history-item-icon`,children:n.icon}),(0,u.jsx)(`span`,{className:`history-item-title`,children:r})]}),(0,u.jsxs)(`div`,{className:`history-item-meta`,children:[(0,u.jsx)(`span`,{className:`history-item-section`,children:n.name}),(0,u.jsxs)(`span`,{className:`history-item-position`,children:[`#`,t+1]})]})]}),(0,u.jsx)(`div`,{className:`history-item-arrow`,children:`→`})]},`${e}-${t}`)})})]})})]})})}function ze(){let[e,t]=(0,l.useState)(null),[n,r]=(0,l.useState)(`home.md`),[i,a]=(0,l.useState)([`home.md`]),[o,s]=(0,l.useState)(null),[c,p]=(0,l.useState)(!1),[m,h]=(0,l.useState)([]),[g,_]=(0,l.useState)(``),[v,y]=(0,l.useState)(!1),[b,x]=(0,l.useState)(()=>Z()),[ee,S]=(0,l.useState)(!1),[C,w]=(0,l.useState)(!1),T=(0,l.useCallback)(()=>{t(K(`home.md`)),r(`home.md`),a([`home.md`]),s(`home`),E(`home.md`,`home`)},[]);(0,l.useEffect)(()=>{if(ke()&&!X()&&(S(!0),Ae()),$(b.theme),b.theme===`system`)return Fe(()=>{b.theme===`system`&&$(`system`)})},[b.theme]),(0,l.useEffect)(()=>{let e=new URLSearchParams(window.location.search),n=e.get(`note`),i=e.get(`section`);if(n)try{t(K(n)),r(n),a([n]);let e=i||W(n);s(e),E(n,e)}catch(e){console.error(`Failed to load note from URL:`,n,e),T()}else T()},[T]),(0,l.useEffect)(()=>{if(e){let e=setTimeout(()=>{k()},100);return()=>clearTimeout(e)}},[e]);let E=(e,t)=>{let n=new URLSearchParams;n.set(`note`,e),t&&n.set(`section`,t);let r=`${window.location.pathname}?${n.toString()}`;window.history.pushState({},``,r)},D=e=>{console.log(`Loading note:`,e),t(null),e!==n&&(a(t=>[...t,e]),r(e)),Me(e);let i=W(e);s(i),E(e,i),p(!1),y(!1),setTimeout(()=>{try{t(K(e));let n=document.querySelector(`.center.main`);n&&(n.scrollTop=0),setTimeout(()=>{k()},50)}catch(n){console.error(`Error loading note:`,e,n),t(`# Error
 
-Note not found: `+e)}},100)},ne=()=>{f(!c)},E=()=>{f(!1)},D=()=>{document.querySelectorAll(`.markdown-content h3, .markdown-content h4`).forEach(e=>{e.textContent&&e.textContent.includes(`Up Next`)&&e.classList.add(`up-next-section`)})},re=()=>{if(i.length>1){let e=[...i];e.pop();let n=e[e.length-1];a(e),r(n);try{t(W(n));let e=document.querySelector(`.center.main`);e&&(e.scrollTop=0)}catch(e){console.error(`Error loading previous note:`,n,e)}}},O=e=>{g(e),e.trim()?(m(le(e)),_(!0)):(m([]),_(!1))},k=()=>{g(``),m([]),_(!1)},ie=e=>{T(e),_(!1)},A=e=>{if(Te(e.allowsStorage),e.allowsStorage){let t={...v,allowsStorage:!0,username:e.username,theme:e.theme,firstVisit:!1};y(t),Q(t)}$(e.theme),b(!1)},j=e=>{y({...v,theme:e}),Q({theme:e}),$(e)},M=()=>{De(),y({theme:`system`,allowsStorage:!1,visitedNotes:[],firstVisit:!0}),$(`system`),window.location.reload()},N=()=>{S(!0)},P=o&&o in L?L[o]:null,ae=o===`home`?`Verdant Webworks Learning Hub`:P?`${P.icon} ${P.name} Notes`:`Learning Hub`;return(0,u.jsxs)(u.Fragment,{children:[(0,u.jsx)(`header`,{children:(0,u.jsxs)(`div`,{className:`header-container`,children:[(0,u.jsxs)(`button`,{className:`hamburger-menu`,onClick:ne,"aria-label":`Toggle navigation menu`,children:[(0,u.jsx)(`span`,{}),(0,u.jsx)(`span`,{}),(0,u.jsx)(`span`,{})]}),(0,u.jsx)(`h1`,{children:ae}),(0,u.jsx)(je,{username:v.username,preferences:v,onThemeChange:j,onClearData:M,onShowHistory:N})]})}),(0,u.jsxs)(`div`,{className:`body-container`,children:[(0,u.jsx)(K,{setCurrentNote:T,currentSection:o,currentNoteName:n,onSearch:O,onClearSearch:k}),c&&(0,u.jsx)(`div`,{className:`mobile-overlay`,onClick:E,children:(0,u.jsxs)(`div`,{className:`mobile-menu`,onClick:e=>e.stopPropagation(),children:[(0,u.jsxs)(`div`,{className:`mobile-menu-header`,children:[(0,u.jsx)(`h2`,{children:`Navigation`}),(0,u.jsx)(`button`,{className:`close-mobile-menu`,onClick:E,"aria-label":`Close navigation menu`,children:`✕`})]}),(0,u.jsx)(K,{setCurrentNote:T,currentSection:o,currentNoteName:n,onSearch:O,onClearSearch:k,isMobile:!0,rightSidebarContent:(0,u.jsx)(q,{currentNote:e,currentNoteName:n,onLoadNote:T})})]})}),(0,u.jsxs)(`div`,{className:`center main`,children:[(0,u.jsxs)(`div`,{className:`navigation-bar`,children:[i.length>1&&(0,u.jsx)(`button`,{onClick:re,className:`back-button`,children:`← Back`}),(0,u.jsx)(`span`,{className:`current-note`,children:z(n)})]}),e===null&&(0,u.jsx)(d,{}),e!==null&&(0,u.jsxs)(`div`,{className:`markdown-content`,children:[(0,u.jsx)(ye,{content:e,styleUpNextSections:D,loadNote:T}),(0,u.jsx)(xe,{currentFilename:n,onLoadNote:T})]})]}),(0,u.jsx)(`div`,{className:`right-nav`,children:(0,u.jsx)(q,{currentNote:e,currentNoteName:n,onLoadNote:T})})]}),(0,u.jsx)(`footer`,{children:(0,u.jsxs)(`div`,{className:`footer-content`,children:[(0,u.jsx)(`span`,{children:`© 2025 Verdant Webworks`}),(0,u.jsx)(`span`,{className:`footer-separator`,children:`|`}),(0,u.jsx)(`a`,{href:`https://verdant-webworks.vercel.app/`,target:`_blank`,rel:`noopener noreferrer`,children:`verdantwebworks.vercel.app`})]})}),ee&&(0,u.jsx)(Se,{results:p,query:h,onSelectNote:ie,onClose:()=>_(!1)}),(0,u.jsx)(Ae,{isOpen:te,onComplete:A}),(0,u.jsx)(Me,{isOpen:x,preferences:v,onClose:()=>S(!1),onSelectNote:T})]})}var Pe=Ne;(0,c.createRoot)(document.getElementById(`root`)).render((0,u.jsx)(l.StrictMode,{children:(0,u.jsx)(Pe,{})}));
+Note not found: `+e)}},100)},te=()=>{p(!c)},O=()=>{p(!1)},k=()=>{document.querySelectorAll(`.markdown-content h3, .markdown-content h4`).forEach(e=>{e.textContent&&e.textContent.includes(`Up Next`)&&e.classList.add(`up-next-section`)})},ne=()=>{if(i.length>1){let e=[...i];e.pop();let n=e[e.length-1];a(e),r(n);try{t(K(n));let e=document.querySelector(`.center.main`);e&&(e.scrollTop=0)}catch(e){console.error(`Error loading previous note:`,n,e)}}},A=e=>{_(e),e.trim()?(h(pe(e)),y(!0)):(h([]),y(!1))},j=()=>{_(``),h([]),y(!1)},M=e=>{D(e),y(!1)},N=e=>{if(je(e.allowsStorage),e.allowsStorage){let t={...b,allowsStorage:!0,username:e.username,theme:e.theme,firstVisit:!1};x(t),Q(t)}$(e.theme),S(!1)},P=e=>{x({...b,theme:e}),Q({theme:e}),$(e)},F=()=>{Ne(),x({theme:`system`,allowsStorage:!1,visitedNotes:[],firstVisit:!0}),$(`system`),window.location.reload()},I=()=>{w(!0)},L=o&&o in f?f[o]:null,R=o===`home`?`Verdant Webworks Learning Hub`:L?`${L.icon} ${L.name} Notes`:`Learning Hub`;return(0,u.jsxs)(u.Fragment,{children:[(0,u.jsx)(`header`,{children:(0,u.jsxs)(`div`,{className:`header-container`,children:[(0,u.jsxs)(`button`,{className:`hamburger-menu`,onClick:te,"aria-label":`Toggle navigation menu`,children:[(0,u.jsx)(`span`,{}),(0,u.jsx)(`span`,{}),(0,u.jsx)(`span`,{})]}),(0,u.jsx)(`h1`,{children:R}),(0,u.jsx)(Le,{username:b.username,preferences:b,onThemeChange:P,onClearData:F,onShowHistory:I})]})}),(0,u.jsxs)(`div`,{className:`body-container`,children:[(0,u.jsx)(ve,{setCurrentNote:D,currentSection:o,currentNoteName:n,onSearch:A,onClearSearch:j}),c&&(0,u.jsx)(`div`,{className:`mobile-overlay`,onClick:O,children:(0,u.jsxs)(`div`,{className:`mobile-menu`,onClick:e=>e.stopPropagation(),children:[(0,u.jsxs)(`div`,{className:`mobile-menu-header`,children:[(0,u.jsx)(`h2`,{children:`Navigation`}),(0,u.jsx)(`button`,{className:`close-mobile-menu`,onClick:O,"aria-label":`Close navigation menu`,children:`✕`})]}),(0,u.jsx)(ve,{setCurrentNote:D,currentSection:o,currentNoteName:n,onSearch:A,onClearSearch:j,isMobile:!0,rightSidebarContent:(0,u.jsx)(ye,{currentNote:e,currentNoteName:n,onLoadNote:D})})]})}),(0,u.jsxs)(`div`,{className:`center main`,children:[(0,u.jsxs)(`div`,{className:`navigation-bar`,children:[i.length>1&&(0,u.jsx)(`button`,{onClick:ne,className:`back-button`,children:`← Back`}),(0,u.jsx)(`span`,{className:`current-note`,children:V(n)})]}),e===null&&(0,u.jsx)(d,{}),e!==null&&(0,u.jsxs)(`div`,{className:`markdown-content`,children:[(0,u.jsx)(Te,{content:e,styleUpNextSections:k,loadNote:D}),(0,u.jsx)(De,{currentFilename:n,onLoadNote:D})]})]}),(0,u.jsx)(`div`,{className:`right-nav`,children:(0,u.jsx)(ye,{currentNote:e,currentNoteName:n,onLoadNote:D})})]}),(0,u.jsx)(`footer`,{children:(0,u.jsxs)(`div`,{className:`footer-content`,children:[(0,u.jsx)(`span`,{children:`© 2025 Verdant Webworks`}),(0,u.jsx)(`span`,{className:`footer-separator`,children:`|`}),(0,u.jsx)(`a`,{href:`https://verdant-webworks.vercel.app/`,target:`_blank`,rel:`noopener noreferrer`,children:`verdantwebworks.vercel.app`})]})}),v&&(0,u.jsx)(Oe,{results:m,query:g,onSelectNote:M,onClose:()=>y(!1)}),(0,u.jsx)(Ie,{isOpen:ee,onComplete:N}),(0,u.jsx)(Re,{isOpen:C,preferences:b,onClose:()=>w(!1),onSelectNote:D})]})}var Be=ze;(0,c.createRoot)(document.getElementById(`root`)).render((0,u.jsx)(l.StrictMode,{children:(0,u.jsx)(Be,{})}));
