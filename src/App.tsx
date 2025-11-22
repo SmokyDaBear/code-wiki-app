@@ -299,21 +299,21 @@ function App() {
       : null;
 
   const headerTitle: React.ReactNode =
-    currentSection === "home"
-      ? "Verdant Webworks Learning Hub"
-      : sectionInfo
-      ? (
-          <span className="header-title-with-icon">
-            <img
-              src={sectionInfo.icon}
-              alt={`${sectionInfo.name} icon`}
-              className="section-icon-img"
-            />
-            {" "}
-            {sectionInfo.name} Notes
-          </span>
-        )
-      : "Learning Hub";
+    currentSection === "home" ? (
+      "Verdant Webworks Learning Hub"
+    ) : sectionInfo ? (
+      <span className="header-title-with-icon">
+        <img
+          src={sectionInfo.icon}
+          alt={`${sectionInfo.name} icon`}
+          className="section-icon-img"
+        />{" "}
+        {sectionInfo.name} Notes
+      </span>
+    ) : (
+      "Learning Hub"
+    );
+  const displayName = getDisplayName(currentNoteName);
 
   return (
     <>
@@ -389,9 +389,7 @@ function App() {
                 ← Back
               </button>
             )}
-            <span className="current-note">
-              {getDisplayName(currentNoteName)}
-            </span>
+            <span className="current-note">{displayName}</span>
           </div>
 
           {currentNote === null && <SpinLoader />}
@@ -399,6 +397,8 @@ function App() {
             <div className="markdown-content">
               <MarkdownRenderer
                 content={currentNote}
+                displayName={displayName}
+                languageDirectory={sectionInfo?.name}
                 styleUpNextSections={styleUpNextSections}
                 loadNote={loadNote}
               />

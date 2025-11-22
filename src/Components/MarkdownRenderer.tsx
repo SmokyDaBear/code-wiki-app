@@ -1,24 +1,34 @@
-import { lazy, Suspense } from "react";
+import { lazy, Suspense, useEffect } from "react";
 import { SpinLoader } from "./SpinLoader";
 import remarkGfm from "remark-gfm";
 import remarkBreaks from "remark-breaks";
 import rehypeHighlight from "rehype-highlight";
 import rehypeRaw from "rehype-raw";
+import { getCleanTitle } from "../data/notes";
 
 // Lazy load only the Markdown component
 const Markdown = lazy(() => import("react-markdown"));
 
 interface MarkdownRendererProps {
+  languageDirectory?: string;
   content: string;
+  displayName?: string;
   styleUpNextSections: () => void;
   loadNote?: (filename: string) => void;
 }
 
 export function MarkdownRenderer({
+  displayName,
   content,
+  languageDirectory,
   styleUpNextSections,
   loadNote,
 }: MarkdownRendererProps) {
+  useEffect(() => {
+    document.title = displayName
+      ? `${getCleanTitle(displayName)} - ${languageDirectory || "Notes"}`
+      : "Programming Notes";
+  }, [displayName, languageDirectory]);
   return (
     <Suspense fallback={<SpinLoader />}>
       <LazyMarkdown
@@ -36,30 +46,6 @@ function LazyMarkdown({
   styleUpNextSections,
   loadNote,
 }: MarkdownRendererProps) {
-  // Normalize filename function to handle both old and new numbered filenames
-  const normalizeFilename = (filename: string): string => {
-    // First handle old-style references to new numbered files
-    const oldToNew: Record<string, string> = {
-      "html-two.md": "02-classes-ids-and-data-attributes.md",
-      "classes-ids-data-attributes.md": "02-classes-ids-and-data-attributes.md",
-      "positioning.md": "03-positioning.md",
-      "positioning-basics.md": "03-positioning.md",
-      "flexbox.md": "04-flexbox-basics.md",
-      "flexbox-basics.md": "04-flexbox-basics.md",
-      "basics.md": "02-basics.md",
-      "sql-index.md": "00-sql-index.md",
-      "get-started.md": "01-get-started.md",
-      "setting-up.md": "02-setting-up.md",
-      "data-types.md": "03-data-types.md",
-      "tables.md": "04-tables.md",
-      "constraints.md": "05-constraints.md",
-      "manipulating-data.md": "06-manipulating-data.md",
-      "advanced-manipulating-data.md": "07-advanced-manipulating-data.md",
-    };
-
-    return oldToNew[filename] || filename;
-  };
-
   // Custom link component for internal navigation
   const CustomLink = ({
     href,
@@ -74,19 +60,12 @@ function LazyMarkdown({
         if (href.includes("/")) {
           filename = href.split("/").pop() || href;
         }
-
-        const normalizedFilename = normalizeFilename(filename);
-        console.log(
-          "Internal link clicked:",
-          href,
-          "-> normalized:",
-          normalizedFilename
-        );
+        console.log("Internal link clicked:", href, "-> normalized:", filename);
 
         try {
-          loadNote(normalizedFilename);
+          loadNote(filename);
         } catch (error) {
-          console.error(`Failed to load note: ${normalizedFilename}`, error);
+          console.error(`Failed to load note: ${filename}`, error);
           try {
             loadNote(filename);
           } catch (fallbackError) {
