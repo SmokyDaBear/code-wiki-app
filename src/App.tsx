@@ -298,11 +298,21 @@ function App() {
       ? NoteSections[currentSection as NoteSection]
       : null;
 
-  const headerTitle =
+  const headerTitle: React.ReactNode =
     currentSection === "home"
       ? "Verdant Webworks Learning Hub"
       : sectionInfo
-      ? `${sectionInfo.icon} ${sectionInfo.name} Notes`
+      ? (
+          <span className="header-title-with-icon">
+            <img
+              src={sectionInfo.icon}
+              alt={`${sectionInfo.name} icon`}
+              className="section-icon-img"
+            />
+            {" "}
+            {sectionInfo.name} Notes
+          </span>
+        )
       : "Learning Hub";
 
   return (

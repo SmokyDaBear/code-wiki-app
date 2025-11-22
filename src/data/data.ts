@@ -11,6 +11,7 @@ export type NavLink = {
   text: string;
   href?: string;
   children?: NavLink[];
+  icon?: string; // optional icon path (image)
 };
 
 // Generate dynamic links based on available sections and notes
@@ -20,8 +21,9 @@ export const generateSectionLinks = (): NavLink[] => {
 
   // Add home button at the top
   sectionLinks.push({
-    text: "🏠 Home",
+    text: "Home",
     href: "home.md",
+    icon: "🏠", // keep emoji for home (not part of NoteSections)
   });
 
   availableSections.forEach((section) => {
@@ -29,7 +31,7 @@ export const generateSectionLinks = (): NavLink[] => {
     const sectionInfo = NoteSections[sectionKey];
     const notesInSection = getNotesBySection(section);
 
-    console.log('Section:', section, 'Key:', sectionKey, 'Info:', sectionInfo);
+    console.log("Section:", section, "Key:", sectionKey, "Info:", sectionInfo);
 
     if (notesInSection.length > 0) {
       // Create section with its notes as children
@@ -44,7 +46,8 @@ export const generateSectionLinks = (): NavLink[] => {
         sectionInfo?.name || section.charAt(0).toUpperCase() + section.slice(1);
 
       sectionLinks.push({
-        text: `${icon} ${name}`,
+        text: name,
+        icon: icon,
         children: children,
       });
     }

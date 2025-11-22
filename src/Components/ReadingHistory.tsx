@@ -81,7 +81,15 @@ export function ReadingHistory({
                       <div className="history-item-main">
                         <div className="history-item-header">
                           <span className="history-item-icon">
-                            {sectionInfo.icon}
+                            {typeof sectionInfo.icon === "string" && /\.(png|jpg|jpeg|svg)$/i.test(sectionInfo.icon) ? (
+                              <img
+                                src={sectionInfo.icon}
+                                alt={`${sectionInfo.name} icon`}
+                                className="section-icon-img"
+                              />
+                            ) : (
+                              sectionInfo.icon
+                            )}
                           </span>
                           <span className="history-item-title">{title}</span>
                         </div>

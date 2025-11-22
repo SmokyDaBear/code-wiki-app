@@ -68,7 +68,15 @@ export function SearchResults({
                   <div className="search-result-header">
                     <div className="search-result-title">
                       <span className="search-result-icon">
-                        {result.sectionIcon}
+                        {/\.(png|jpg|jpeg|svg)$/i.test(result.sectionIcon) ? (
+                          <img
+                            src={result.sectionIcon}
+                            alt={`${result.section} icon`}
+                            className="section-icon-img"
+                          />
+                        ) : (
+                          result.sectionIcon
+                        )}
                       </span>
                       <span className="search-result-name">{result.title}</span>
                     </div>

@@ -100,7 +100,18 @@ export function LeftNav({
                     <span className="section-arrow">
                       {isActive ? "▼" : "▶"}
                     </span>
-                    {link.text}
+                    {link.icon &&
+                    typeof link.icon === "string" &&
+                    /\.(png|jpg|jpeg|svg)$/i.test(link.icon) ? (
+                      <img
+                        src={link.icon}
+                        alt={`${link.text} icon`}
+                        className="section-icon-img"
+                      />
+                    ) : link.icon ? (
+                      <span className="emoji-icon">{link.icon}</span>
+                    ) : null}
+                    <span>{link.text}</span>
                   </div>
                   <div
                     className={`dropdown-children ${
@@ -130,7 +141,18 @@ export function LeftNav({
                   key={index}
                   onClick={() => link.href && setCurrentNote(link.href)}
                 >
-                  {link.text}
+                  {link.icon &&
+                  typeof link.icon === "string" &&
+                  /\.(png|jpg|jpeg|svg)$/i.test(link.icon) ? (
+                    <img
+                      src={link.icon}
+                      alt={`${link.text} icon`}
+                      className="section-icon-img"
+                    />
+                  ) : link.icon ? (
+                    <span className="emoji-icon">{link.icon}</span>
+                  ) : null}
+                  <span>{link.text}</span>
                 </div>
               );
             }
