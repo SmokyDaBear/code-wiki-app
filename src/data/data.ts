@@ -31,8 +31,6 @@ export const generateSectionLinks = (): NavLink[] => {
     const sectionInfo = NoteSections[sectionKey];
     const notesInSection = getNotesBySection(section);
 
-    console.log("Section:", section, "Key:", sectionKey, "Info:", sectionInfo);
-
     if (notesInSection.length > 0) {
       // Create section with its notes as children
       const children = notesInSection.map((filename) => ({

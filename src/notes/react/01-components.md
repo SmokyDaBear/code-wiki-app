@@ -18,7 +18,7 @@ export function Greeting(props) {
 }
 ```
 
-#### Note: the returned JSX must have a single root element. If you need to return multiple elements, you can wrap them in a `<div>` or use React Fragments (`<>...</>`).
+- Note: the returned JSX must have a single root element. If you need to return multiple elements, you can wrap them in a `<div>` or use React Fragments (`<>...</>`).
 
 ## React Fragments `<>...</>`
 
@@ -116,6 +116,8 @@ export function UserCard({ user }: UserCardProps) {
 
 Then, you can use the `map` function to render a list of `UserCard` components based on the `users` array:
 
+- Note: When rendering lists in React, it's important to provide a unique `key` prop to each item. This helps React identify which items have changed, been added, or removed, improving performance during re-renders. In this example, we use the `id` property of each user as the key.
+
 ```tsx
 import React from "react";
 import { UserCard } from "./UserCard";
@@ -148,7 +150,7 @@ export class Greeting extends Component {
 }
 ```
 
-#### Notice the `render()` method that returns the JSX, and the use of `this.props` to access the props passed to the component, and the `this.props` to access the props passed to the component.
+- Notice the `render()` method that returns the JSX, and the use of `this.props` to access the props passed to the component, and the `this.props` to access the props passed to the component.
 
 ### Passing down props in Class Components
 
