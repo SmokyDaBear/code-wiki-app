@@ -159,3 +159,128 @@ This will output:
 1: Mango
 2: Orange
 ```
+
+## ES6+ Built-in Functions
+
+ES6 (ECMAScript 2015) introduced several new built-in functions that enhance JavaScript's capabilities. Here are some commonly used ES6+ built-in functions:
+
+### Array.from()
+
+The `Array.from()` function creates a new array instance from an array-like or iterable object.
+
+```javascript
+const str = "hello";
+const arr = Array.from(str);
+console.log(arr); // Output: ['h', 'e', 'l', 'l', 'o']
+```
+
+### Object.assign()
+
+The `Object.assign()` function copies the values of all enumerable own properties from one or more source objects to a target object. It returns the target object.
+
+```javascript
+const target = { a: 1, b: 2 };
+const source = { b: 4, c: 5 };
+const returnedTarget = Object.assign(target, source);
+console.log(returnedTarget); // Output: { a: 1, b: 4, c: 5 }
+```
+
+#### When using `Object.assign()`, if there are properties with the same key in multiple source objects, the value from the last source object will overwrite the previous values. Which is why in the example above, the value of property `b` in the `target` object is overwritten by the value from the `source` object.
+
+### Array.map()
+
+The `Array.map()` function creates a new array populated with the results of calling a provided function on every element in the calling array.
+
+```javascript
+const numbers = [1, 2, 3, 4];
+const doubled = numbers.map((num) => num * 2);
+console.log(doubled); // Output: [2, 4, 6, 8]
+```
+
+### Array.filter()
+
+The `Array.filter()` function creates a new array with all elements that pass the test implemented by the provided function.
+
+```javascript
+const numbers = [1, 2, 3, 4, 5];
+const evenNumbers = numbers.filter((num) => num % 2 === 0);
+console.log(evenNumbers); // Output: [2, 4]
+```
+
+### Array.reduce()
+
+The `Array.reduce()` function executes a reducer function on each element of the array, resulting in a single output value.
+
+Takes in two arguments:
+
+- a reducer function, which itself takes in four arguments:
+  - the accumulator (the accumulated value previously returned in the last invocation of the reducer, or initial value, if supplied)
+  - the current value (the current element being processed in the array)
+  - the current index (the index of the current element being processed in the array)
+  - the array (the array reduce was called upon)
+- an optional initial value.
+
+```javascript
+const numbers = [1, 2, 3, 4];
+let intialValue = 0;
+const sum = numbers.reduce(
+  (accumulator, currentValue) => accumulator + currentValue,
+  intialValue
+);
+console.log(sum); // Output: 10
+```
+
+### Array.find() and Array.findIndex()
+
+The `Array.find()` function returns the value of the first element in the array that satisfies the provided testing function. If no elements satisfy the testing function, it returns `undefined`.
+
+```javascript
+const numbers = [1, 2, 3, 4, 5];
+const firstGreaterThanThree = numbers.find((num) => num > 3);
+console.log(firstGreaterThanThree); // Output: 4
+```
+
+#### Note that `Array.find()` returns the element itself, not its index. If you need the index, you can use `Array.findIndex()` instead, which works the same but returns the index of the found element or `-1` if not found.
+
+```javascript
+const numbers = [1, 2, 3, 4, 5];
+const indexFirstGreaterThanThree = numbers.findIndex((num) => num > 3);
+console.log(indexFirstGreaterThanThree); // Output: 3, the index of the element 4
+```
+
+### Sorting Arrays with Array.sort()
+
+The `Array.sort()` function sorts the elements of an array in place and returns the sorted array. By default, it sorts elements as strings in ascending order.
+
+To sort numbers or custom objects, you can provide a compare function.
+
+The compare function takes two arguments (a and b) and should return:
+
+- A negative value if `a` should come before `b`
+- A positive value if `b` should come after `a`
+- Zero if `a` and `b` are considered equal
+
+```javascript
+const numbers = [4, 2, 5, 1, 3];
+numbers.sort((a, b) => a - b); // Sorts numbers in ascending order
+console.log(numbers); // Output: [1, 2, 3, 4, 5]
+```
+
+When comparing strings, you can use the `localeCompare()` method for proper alphabetical sorting:
+
+```javascript
+const fruits = ["banana", "apple", "cherry"];
+fruits.sort((a, b) => a.localeCompare(b)); // Sorts strings in alphabetical order
+console.log(fruits); // Output: ["apple", "banana", "cherry"]
+```
+
+Note that the sort method is a mutating method, meaning it changes the original array.
+
+If you want to return a sorted copy of an array without modifying the original array, you can create a shallow copy of the array using the `slice()` method or the spread operator (`...`) before sorting.
+
+```javascript
+const numbers = [4, 2, 5, 1, 3];
+const sortedNumbers = numbers.slice().sort(); // or use [...numbers].sort()
+console.log(sortedNumbers); // Output: [1, 2, 3, 4, 5]
+console.log(numbers); // Original array remains unchanged: [4, 2, 5, 1, 3]
+```

@@ -78,3 +78,44 @@ If the function body contains a single expression, you can omit the curly braces
 const square = (x) => x * x;
 console.log(square(4)); // Output: 16
 ```
+
+## Methods
+
+Methods are functions that are properties of an object. They can be defined using function expressions or shorthand syntax.
+
+```javascript
+const person = {
+  name: "Alice",
+  greet() {
+    console.log(`Hello, my name is ${this.name}`);
+  },
+};
+
+person.greet(); // Output: Hello, my name is Alice
+```
+
+## Higher-Order Functions
+
+Higher-order functions are functions that can take other functions as arguments or return functions as their result. They are commonly used for operations like mapping, filtering, and reducing arrays.
+
+- The functions taken as arguments are called "callback functions" or "callbacks".
+
+```javascript
+const numbers = [1, 2, 3, 4, 5];
+const doubled = numbers.map((num) => num * 2);
+console.log(doubled); // Output: [2, 4, 6, 8, 10]
+```
+
+## Recursion
+
+Recursion is a technique where a function calls itself in order to solve a problem. A recursive function typically has a base case to stop the recursion and a recursive case to continue calling itself.
+
+```javascript
+function factorial(n) {
+  if (n === 0) {
+    return 1; // Base case
+  }
+  return n * factorial(n - 1); // Recursive case
+}
+console.log(factorial(5)); // Output: 120
+```

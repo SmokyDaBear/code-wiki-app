@@ -1,10 +1,15 @@
 # Template Strings
 
-Template strings (also known as template literals) in JavaScript are a way to work with strings that allow for easier embedding of expressions and multi-line strings. They are enclosed by backticks (`` ` ` ``) instead of single ( `' '`) or double (`" "`) quotes.
+Template strings (also known as template literals) in JavaScript are a way to work with strings that allow for easier embedding of expressions and multi-line strings.
+
+They are enclosed by backticks (`` ` ` ``) instead of single ( `' '`) or double (`" "`) quotes.
 
 ## Features of Template Strings
 
 1. **Expression Interpolation**: You can embed expressions inside a template string using `${expression}` syntax. The expression is evaluated, and the result is included in the string.
+
+   - An expression can be a variable, a mathematical operation, a function call, or any valid JavaScript expression.
+     - It must be enclosed within `${}` to be evaluated, and the result is converted to a string and inserted into the template.
 
    ```javascript
    const name = "Alice";
