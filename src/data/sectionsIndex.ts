@@ -34,6 +34,7 @@ export const NoteSections = {
   cpp: { name: "C++", icon: CodeLogos.cpp },
   react: { name: "React", icon: CodeLogos.react },
   java: { name: "Java", icon: CodeLogos.java },
+  "computer-science": { name: "Computer Science", icon: "💻" },
 } as const;
 
 export type NoteSection = keyof typeof NoteSections;
