@@ -33,7 +33,7 @@ Computers are electronic devices that process data according to a set of instruc
 - **Programming Languages**: Formal languages used to write computer programs (e.g., Python, Java, C++).
 - **Databases**: Organized collections of data that can be easily accessed, managed, and updated.
 - **Cybersecurity**: The practice of protecting computer systems and networks from digital attacks.
-`,w=`# Computer Hardware
+`,ee=`# Computer Hardware
 
 Hardware refers to the physical components of a computer system. This section covers the essential hardware elements that make up a computer, including input and output devices, storage solutions, and internal components.
 
@@ -147,7 +147,7 @@ The motherboard is the main circuit board of a computer that connects all the co
 - **Input/Output Ports**: Connectors for peripherals such as USB devices, audio jacks, and network cables
 - **Memory Slots**: Slots for installing RAM modules.
   - These are referred to as DIMM Slots: Dual Inline Memory Module slots where RAM sticks are installed.
-`,T=`# How Computers Work: Numbers and Data Representation
+`,w=`# How Computers Work: Numbers and Data Representation
 
 Numbers are fundamental to how computers operate and process information.
 
@@ -293,7 +293,7 @@ In Unicode, the character '€' (Euro sign) is represented by the decimal value 
 #### Note: Unicode can represent a vast number of characters from different languages and symbol sets, making it suitable for global applications.
 
 #### Both ASCII and Unicode have the same values for the first 128 characters, ensuring compatibility between the two encoding schemes for basic English text.
-`,E=`# Strings and Text Representation in Computers
+`,T=`# Strings and Text Representation in Computers
 
 Strings are sequences of characters used to represent text in computer systems. They can include letters, numbers, symbols, and whitespace. In programming, strings are typically enclosed in quotation marks (single, double, or backticks) to differentiate them from other data types.
 
@@ -388,7 +388,7 @@ When a string (or any object) is no longer needed, the garbage collector identif
 This process helps prevent memory leaks and optimizes memory usage, allowing developers to focus on writing code without worrying about manual memory management. However, the specifics of garbage collection can vary between programming languages and their respective runtime environments.
 
 Some languages, like Java and Python, have built-in garbage collectors that automatically handle memory management. Others, like C and C++, require developers to manually manage memory allocation and deallocation, which can lead to issues if not handled properly.
-`,D=`# How Computers Perform Basic Math Operations
+`,E=`# How Computers Perform Basic Math Operations
 
 Computers perform basic math operations using a combination of binary arithmetic and logic gates within the CPU (Central Processing Unit). The fundamental operations include addition, subtraction, multiplication, and division. These operations are executed using binary numbers, which are represented using only two digits: 0 and 1.
 
@@ -508,7 +508,7 @@ If we compare \`1010\` and \`1001\`(decimal 10 and 9):
 \`\`\`
 
 Since not all outputs are 1, the two numbers are not equal.
-`,O=`# C++ Programming Language
+`,D=`# C++ Programming Language
 
 C++ is a high-level, general-purpose programming language that was developed as an extension of the C programming language by Bjarne Stroustrup in the early 1980s. It is widely used for system/software development, game development, real-time simulations, and applications requiring high performance.
 
@@ -529,7 +529,7 @@ C++ is a high-level, general-purpose programming language that was developed as 
 - **Standard Template Library (STL)**: C++ includes the STL, which provides a collection of template classes and functions for data structures and algorithms, while C lacks this feature.
 - **Namespaces**: C++ introduces namespaces to avoid name conflicts, a feature not available in C.
 - **Exception Handling**: C++ provides built-in support for exception handling using \`try\`, \`catch\`, and \`throw\` keywords, while C relies on error codes for error handling.
-`,k=`# CSS Notes
+`,O=`# CSS Notes
 
 Welcome to the CSS section! Here you'll find notes about CSS styling, layout, and design principles.
 
@@ -573,7 +573,7 @@ selector {
 \`\`\`
 
 Stay tuned for more detailed content!
-`,A=`# CSS Basics
+`,k=`# CSS Basics
 
 Welcome to CSS! This guide covers the fundamentals of Cascading Style Sheets.
 
@@ -795,7 +795,7 @@ CSS provides various properties to style text and fonts:
 <div class="small-caps-text" style="font-variant: small-caps; font-size: 16px; margin-top: 10px;">
   This text is in small-caps, which automatically capitalizes lowercase letters, while leaving them smaller than uppercase letters.
 </div>
-`,j=`# Colors
+`,A=`# Colors
 
 CSS supports various ways to define colors:
 
@@ -991,7 +991,7 @@ The \`text-shadow\` property can also use color values to create shadow effects 
      1px  1px 0 #000; font-size: 24px; color: white; background-color: lightgray; padding: 5px;">
   This text has an outline effect using text shadows.
 </p>
-`,ee=`# Display
+`,j=`# Display
 
 The \`display\` property in CSS is used to define how an element is displayed on the web page. It determines the layout behavior of an element and its children.
 
@@ -1340,7 +1340,7 @@ Selectors can be combined to create more specific rules. Here are some examples:
     font-weight: bold;
   }
   \`\`\`
-`,P=`# Pseudo-Selectors
+`,te=`# Pseudo-Selectors
 
 Pseudo-selectors in CSS allow you to style elements based on their state or position in the document tree, rather than just their attributes. They are prefixed with a colon (\`:\`) and can be categorized into two main types: pseudo-classes and pseudo-elements.
 
@@ -1651,7 +1651,7 @@ Pseudo-elements allow you to style specific parts of an element. Common pseudo-e
 - **Form styling**: Use \`:focus\` for input fields and \`:invalid\` for form validation
 - **Table styling**: Use \`:nth-child()\` for alternating row colors
 - **Content decoration**: Use \`::before\` and \`::after\` for icons and decorative elements
-`,F=`# Specificity in CSS
+`,P=`# Specificity in CSS
 
 CSS follows a set of rules to determine which styles are applied to an element when multiple rules could apply. Two key concepts in this process are specificity and inheritance.
 
@@ -1709,7 +1709,7 @@ The only way to override an \`!important\` rule is to use another \`!important\`
 \`\`\`html
 <p style="color: blue !important;">This text will be blue.</p>
 \`\`\`
-`,te=`# Inheritance in CSS
+`,F=`# Inheritance in CSS
 
 Inheritance is a fundamental concept in CSS that allows certain properties to be passed down from parent elements to their child elements. This mechanism helps maintain consistency in styling and reduces redundancy in CSS code.
 
@@ -2172,12 +2172,12 @@ Proper layout is crucial for a well-organized form. You can use CSS Flexbox or G
   <input type="email" id="email" name="email" />
   <button type="submit">Submit</button>
 </div>
-`,ne=`# Modals
+`,z=`# Modals
 
 A modal is a dialog box/popup window that is displayed on top of the current page. Modals are commonly used for user notifications, forms, or additional content without navigating away from the current page.
 
 They are typically implemented using a combination of HTML, CSS, and JavaScript. However, we can create simple modals using pure CSS and HTML.
-`,z=`# CSS Animations
+`,B=`# CSS Animations
 
 CSS animations allow you to create dynamic and engaging user experiences by animating the properties of HTML elements over time. You can define animations using keyframes and control their behavior with various animation properties.
 
@@ -2452,7 +2452,7 @@ CSS provides several built-in timing functions to control the pacing of animatio
 \`ease\` and \`ease-in-out\` are similar but differ in their pacing profiles. \`ease\` has a more pronounced acceleration and deceleration, while \`ease-in-out\` provides a smoother transition at both the start and end of the animation.
 
 ### Combining Multiple Transformations with Delays
-`,re=`# Themes in CSS
+`,ne=`# Themes in CSS
 
 Themes in CSS allow developers to create different visual styles for a website or application, enabling users to switch between them easily. This can enhance user experience by providing options that suit individual preferences, typically light and dark modes although you can create custom themes as well.
 
@@ -2472,7 +2472,7 @@ CSS variables (also known as custom properties) are defined using the \`--\` pre
   --text-color: #333333;
 }
 \`\`\`
-`,ie=`# Git
+`,re=`# Git
 
 Git is a distributed version control system that allows you to track changes in your codebase, collaborate with others, and manage different versions of your projects.
 
@@ -2561,7 +2561,64 @@ git commit -m "Initial commit"// -m flag is used to provide a commit message
 \`\`\`
 
 #### Note that if you only want to commit specific files, you can replace the \`.\` in the \`git add\` command with the names of those files like \`git add file1.txt file2.txt\`
-`,ae=`# Branching in Git
+`,ie="# Pushing and Pulling in Git\n\nOnce you have initialized a Git repository and made some commits, you may want to share your changes with a remote repository or fetch changes made by others. This is where pushing and pulling come into play.\n\n## Pushing Changes\n\nPushing is the process of sending your committed changes to a remote repository. This is typically done using the `git push` command.\n\n```bash\ngit push <remote> <branch>\n```\n\n- `<remote>`: The name of the remote repository (e.g., `origin`).\n- `<branch>`: The name of the branch you want to push (e.g., `main`).\n  For example, to push your changes to the `main` branch of the `origin` remote, you would run:\n\n```bash\ngit push origin main\n```\n\nThis command uploads your local commits to the remote repository, making them available to others.\n\n## Pulling Changes\n\nPulling is the process of fetching and integrating changes from a remote repository into your local repository. This is typically done using the `git pull` command.\n\n```bash\ngit pull <remote> <branch>\n```\n\n- `<remote>`: The name of the remote repository (e.g., `origin`).\n- `<branch>`: The name of the branch you want to pull (e.g., `main`).\n  For example, to pull changes from the `main` branch of the `origin` remote, you would run:\n\n```bash\ngit pull origin main\n```\n\nThis command fetches the latest changes from the remote repository and merges them into your current branch.\n",ae=`# Reverting Changes in Git
+
+In Git, reverting changes refers to the process of undoing modifications made to files in your repository. There are several ways to revert changes depending on the state of the changes (staged, unstaged, or committed).
+
+## Reverting Unstaged Changes
+
+If you have made changes to a file but have not yet staged them (i.e., you haven't run \`git add\`), you can revert those changes using the following command:
+
+\`\`\`bash
+git checkout -- <file>
+\`\`\`
+
+This command will discard the changes made to the specified file and restore it to the last committed state.
+
+## Reverting Staged Changes
+
+If you have staged changes (i.e., you have run \`git add\`), but want to unstage them, you can use the following command:
+
+\`\`\`bash
+git reset HEAD <file>
+\`\`\`
+
+This command will unstage the specified file, but keep the changes in your working directory. You can then choose to either discard the changes or modify them further.
+
+## Reverting Committed Changes
+
+If you have already committed changes and want to revert them, you can use the \`git revert\` command. This command creates a new commit that undoes the changes made in a specific commit.
+
+\`\`\`bash
+git revert <commit-hash>
+\`\`\`
+
+- \`<commit-hash>\`: The hash of the commit you want to revert.
+  For example, to revert the most recent commit, you can use:
+
+\`\`\`bash
+git revert HEAD
+\`\`\`
+
+This will open your default text editor to create a commit message for the revert. Save and close the editor to complete the revert.
+
+## Force Reverting to a Previous Commit
+
+If you want to discard all changes after a specific commit and reset your branch to that commit, you can use the \`git reset\` command with the \`--hard\` option:
+
+\`\`\`bash
+git reset --hard <commit-hash>
+\`\`\`
+
+- \`<commit-hash>\`: The hash of the commit you want to reset to.
+  For example, to reset to the commit before the most recent one, you can use:
+
+\`\`\`bash
+git reset --hard HEAD~1
+\`\`\`
+
+**Warning:** This command will discard all changes made after the specified commit, including uncommitted changes. Use it with caution.
+`,oe=`# Branching in Git
 
 Branching is a powerful feature in Git that allows you to create separate lines of development within a repository. Each branch represents an independent version of your codebase, enabling you to work on new features, bug fixes, or experiments without affecting the main codebase.
 
@@ -2594,7 +2651,112 @@ To switch to a different branch, you can use the \`git checkout\` command follow
 \`\`\`
 git checkout feature-xyz
 \`\`\`
-`,oe=`# 📚 Programming Notes Hub
+`,se=`# Rebasing
+
+Rebasing is a Git operation that allows you to integrate changes from one branch into another by moving or combining a sequence of commits. It is an alternative to merging and can help maintain a cleaner project history.
+
+Sometimes, when working on a branch, you may attempt to push changes only to be met with an error message indicating that your local branch is behind its remote counterpart. This situation often arises when new commits have been added to the remote branch since your last pull or fetch.
+
+In such cases, rebasing can be a useful tool to update your local branch with the latest changes from the remote branch before pushing your commits. Instead of creating a merge commit, rebasing rewrites your local commits on top of the latest commits from the remote branch.
+
+## Why Use Rebasing?
+
+- Linear History: Rebasing creates a linear sequence of commits, making it easier to follow the project history.
+- Conflict Resolution: It allows you to resolve conflicts as they arise during the rebase process, rather than during a merge.
+- Updating Feature Branches: It is commonly used to update feature branches with the latest changes from the main branch.
+
+## How to Rebase
+
+To rebase a branch onto another branch, you can use the \`git rebase\` command. Here’s a basic example:
+
+\`\`\`
+# First, switch to the branch you want to rebase
+git checkout feature-branch
+\`\`\`
+
+\`\`\`
+# Then, rebase it onto the main branch
+git rebase main
+\`\`\`
+
+This will take the commits from \`feature-branch\` and replay them on top of the latest commit in \`main\`.
+
+## Handling Conflicts
+
+If there are conflicts during the rebase process, Git will pause and allow you to resolve them. You can use \`git status\` to see which files are in conflict. After resolving the conflicts, you can continue the rebase with:
+
+\`\`\`
+git add <file-with-conflict>
+git rebase --continue
+\`\`\`
+
+If you want to abort the rebase process and return to the state before the rebase started, you can use:
+
+\`\`\`
+git rebase --abort
+\`\`\`
+
+## Interactive Rebasing
+
+Interactive rebasing allows you to edit, reorder, squash, or drop commits during the rebase process. You can start an interactive rebase with:
+
+\`\`\`
+git rebase -i <commit-hash>
+\`\`\`
+
+This will open an editor where you can specify how to handle each commit.
+`,ce=`# Merging in Git
+
+Merging in Git is the process of integrating changes from one branch into another. This is typically done using the \`git merge\` command.
+
+## Basic Merge
+
+To merge changes from one branch into another, first, ensure you are on the branch you want to merge into (the target branch). You can switch branches using the \`git checkout\` command:
+
+\`\`\`bash
+git checkout <target-branch>
+\`\`\`
+
+You can then merge the changes from the source branch using the \`git merge\` command:
+
+\`\`\`bash
+git merge <source-branch>
+\`\`\`
+
+### Target and Source Branches
+
+- The \`<target-branch>\` is the branch you want to merge changes into.
+- The \`<source-branch>\` is the branch you want to merge changes from.
+
+For example, to merge changes from a branch named \`feature\` into the \`main\` branch, you would run:
+
+\`\`\`bash
+git checkout main
+git merge feature
+\`\`\`
+
+## Merge Conflicts
+
+Sometimes, Git may encounter conflicts when merging branches. This happens when changes in the source branch conflict with changes in the target branch. When a conflict occurs, Git will pause the merge process and mark the conflicted files. You will need to manually resolve the conflicts by editing the files and choosing which changes to keep.
+
+If using VS Code, it provides a user-friendly interface to resolve merge conflicts, and you can go line by line to accept incoming changes, keep current changes, or combine both.
+After resolving the conflicts, you need to stage the resolved files and complete the merge by committing the changes:
+
+\`\`\`bash
+git add <resolved-file>
+git commit -m "Resolved merge conflicts"
+\`\`\`
+
+## Fast-Forward Merge
+
+A fast-forward merge occurs when the target branch has not diverged from the source branch. In this case, Git simply moves the pointer of the target branch forward to the latest commit of the source branch.
+To perform a fast-forward merge, use the same \`git merge\` command as before. If a fast-forward merge is possible, Git will automatically perform it without creating a new commit.
+
+\`\`\`bash
+git checkout main
+git merge feature
+\`\`\`
+`,le="# Remotes and Repositories in Git\n\nA remote repository in Git is a version of your project that is hosted on the internet or another network. It allows multiple collaborators to work on the same project from different locations. Common platforms for hosting remote repositories include GitHub, GitLab, and Bitbucket.\n\n## Adding a Remote Repository\n\nTo add a remote repository to your local Git repository, you can use the `git remote add` command followed by the name you want to give to the remote (commonly `origin`) and the URL of the remote repository.\n\n```bash\ngit remote add <origin-name> <remote-repository-URL>\n```\n\n- `<remote-repository-URL>`: The URL of the remote repository (e.g., `https://github.com/username/repository.git`)\n- `<origin-name>`: The name for the remote repository on your local machine, typically `origin` or `upstream`.\n\n## Cloning a Remote Repository\n\nTo create a local copy of a remote repository, you can use the `git clone` command followed by the URL of the remote repository.\n\n```bash\ngit clone <remote-repository-URL>\n```\n\n- `<remote-repository-URL>`: The URL of the remote repository you want to clone.\n\nThis command will create a new directory with the name of the repository and download all the files and commit history from the remote repository to your local machine.\n\nIf using ssh, the URL might look like this:\n\n```bash\ngit clone git@github.com:username/repository.git\n```\n\n- SSH URLs require you to have your SSH keys set up with the remote repository hosting service, allowing for secure authentication without needing to enter your username and password each time.\n- Using SSH is often preferred for its security and convenience, especially for frequent interactions with the remote repository.\n\n## Viewing Remote Repositories\n\nTo view the remote repositories associated with your local Git repository, you can use the `git remote -v` command. This will list all the remote repositories along with their URLs.\n\n```bash\ngit remote -v\n```\n\nThis command will display output similar to the following:\n\n```bash\norigin  https://github.com/username/repository.git (fetch)\norigin  https://github.com/username/repository.git (push)\n```\n\n- The `(fetch)` URL is used when you pull changes from the remote repository.\n- The `(push)` URL is used when you push changes to the remote repository.\n\n## Removing a Remote Repository\n\nTo remove a remote repository from your local Git repository, you can use the `git remote remove` command followed by the name of the remote you want to remove.\n\n```bash\ngit remote remove <origin-name>\n```\n\n- `<origin-name>`: The name of the remote repository you want to remove (e.g., `origin`).\n  This command will delete the reference to the specified remote repository from your local Git configuration, without affecting the remote repository itself, or the local files in your repository.\n\n## Renaming a Remote Repository\n\nTo rename a remote repository in your local Git configuration, you can use the `git remote rename` command followed by the current name of the remote and the new name you want to assign.\n\n```bash\ngit remote rename <old-origin-name> <new-origin-name>\n```\n\n- `<old-origin-name>`: The current name of the remote repository (e.g., `origin`).\n- `<new-origin-name>`: The new name you want to assign to the remote repository (e.g., `upstream`).\n\nThis command updates the reference to the remote repository in your **local** Git configuration, allowing you to use the new name for future interactions with that remote.\n\nIt doesn't affect the remote repository itself or any other collaborators' configurations.\n",ue=`# 📚 Programming Notes Hub
 
 ![SmokyDaBear](/images/profile-animated.png)
 
@@ -2715,7 +2877,7 @@ This notes app is fully responsive! Use the hamburger menu (☰) on mobile devic
 _Happy Learning! 🎉_
 
 > Last updated: November 2025
-`,se=`# HTML Notes
+`,de=`# HTML Notes
 
 Welcome to the HTML section! Here you'll find notes about HTML fundamentals, elements, and best practices.
 
@@ -2746,7 +2908,7 @@ HTML (HyperText Markup Language) is the standard markup language for creating we
 \`\`\`
 
 Navigate through the topics using the links above or the navigation menu on the left.
-`,ce=`# Getting Started with HTML
+`,fe=`# Getting Started with HTML
 
 This section will teach the basics of HTML, the standard markup language for creating web pages. You'll learn about the structure of an HTML document, common tags, and how to create links and images.
 
@@ -2802,7 +2964,7 @@ Here are some commonly used HTML tags:
 
 
 #### Tip: Practice creating simple HTML pages to get comfortable with the structure and tags. Use online resources like [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/HTML) for reference and further learning.
-`,le=`# Classes, IDs, and Data Attributes
+`,pe=`# Classes, IDs, and Data Attributes
 
 In HTML, classes, IDs, and data attributes are used to add metadata to elements for styling, scripting, and accessibility purposes.
 
@@ -2844,7 +3006,7 @@ These attributes provide flexibility in styling and scripting without cluttering
 
 
 #### Tip: Use classes for styling multiple elements, IDs for unique elements, and data attributes for storing custom data.
-`,ue=`# HTML Forms
+`,me=`# HTML Forms
 
 HTML forms are essential for collecting user input on web pages. They allow users to submit data, which can then be processed by a server or used within the client-side application.
 
@@ -3037,7 +3199,7 @@ To make forms accessible, use labels, fieldsets, and legends to provide context 
   <input type="email" id="email" name="email" />
 </form>
 \`\`\`
-`,de=`# Java
+`,he=`# Java
 
 Java is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible. It is widely used for building enterprise-scale applications, mobile applications (especially Android apps), and large systems.
 
@@ -3083,7 +3245,7 @@ To start programming in Java, you need to:
 3. Choose an Integrated Development Environment (IDE) such as IntelliJ IDEA, Eclipse, or NetBeans.
 4. Write your first Java program, compile it using the \`javac\` command, and run it using the \`java\` command.
 5. Explore Java documentation and tutorials to deepen your understanding of the language and its features.
-`,fe=`# JavaScript Notes
+`,ge=`# JavaScript Notes
 
 Welcome to the JavaScript section! Here you'll find comprehensive notes about JavaScript programming.
 
@@ -3164,6 +3326,29 @@ const person = {
 };
 \`\`\`
 
+## Comments
+
+Comments in JavaScript are used to explain code and make it more readable. They are ignored by the JavaScript engine during execution, and are meant for developers to understand the code better.
+There are two types of comments in JavaScript:
+
+1. **Single-line Comments**: These comments start with \`//\` and continue until the end of the line.
+
+   \`\`\`javascript
+   // This is a single-line comment
+   let x = 5; // This comment is after a line of code
+   \`\`\`
+
+2. **Multi-line Comments**: These comments start with \`/*\` and end with \`*/\`. They can span multiple lines.
+
+   \`\`\`javascript
+   /* This is a multi-line comment
+      It can span multiple lines
+      and is useful for longer explanations */
+   let y = 10;
+   \`\`\`
+
+#### Comments are essential for documenting your code, explaining complex logic, and providing context for future reference or for other developers who may work on the code.
+
 ## Frameworks and Libraries
 
 Frameworks use JavaScript to provide pre-written code to help build applications faster. Some popular JavaScript frameworks and libraries include:
@@ -3219,7 +3404,7 @@ Some other useful methods of the \`console\` object include:
 - \`console.info()\`: Outputs an informational message to the console.
 - \`console.debug()\`: Outputs a debug message to the console.
 - \`console.clear()\`: Clears the console.
-`,pe=`# Variables and Data Types in JavaScript
+`,_e=`# Variables and Data Types in JavaScript
 
 A **variable** is a named container used to store data values. In JavaScript, you can declare variables using three keywords: \`var\`, \`let\`, and \`const\`. Each has its own characteristics and scope rules.
 
@@ -3351,7 +3536,7 @@ let b = 10;
 \`\`\`
 
 #### This is one of the reasons why \`let\` and \`const\` are preferred over \`var\` in modern JavaScript, as the temporal dead zone helps catch errors related to variable usage before declaration.
-`,me='# Operators in JavaScript\n\nOperators are special symbols or keywords in JavaScript that perform operations on operands (values or variables). They are used to manipulate data and perform calculations.\nThey are similar to most other commone programming languages.\n\n## Types of Operators\n\nJavaScript provides several types of operators, including:\n\n- Arithmetic Operators\n- Comparison Operators\n- Logical Operators\n- Assignment Operators\n\n## Arithmetic Operators\n\nArithmetic operators are used to perform mathematical operations.\n\n### Common arithmetic operators:\n\n- `+` : Addition\n- `-` : Subtraction\n- `*` : Multiplication\n- `/` : Division\n\n### Additional arithmetic operators:\n\n- `%` : Modulus (Remainder)\n  - Example: `5 % 2` results in `1`, since 5 divided by 2 leaves a remainder of 1.\n- `**` : Exponentiation\n  - Example: `2 ** 3` results in `8`, since 2 raised to the power of 3 is 8.\n- `++` : Increment by 1\n  - Example: `let a = 5; a++;` results in `a` being `6`.\n- `--` : Decrement by 1\n  - Example: `let a = 5; a--;` results in `a` being `4`.\n\n#### Note: the increment (`++`) and decrement (`--`) operators can only be used with let and var declared variables, not with const, unless the const holds an object or array and you are modifying its properties or elements.\n\n### Syntax Using Arithmetic Operators:\n\n```javascript\nlet a = 10;\n\nlet b = 5;\n\nlet sum = a + b; // 15\n\nlet difference = a - b; // 5\n\nlet product = a * b; // 50\n\nlet quotient = a / b; // 2\n\nlet remainder = a % b; // 0\n\nlet power = a ** 2; // 100\n\na++; // a is now 11\n\nb--; // b is now 4\n```\n\n## Comparison Operators\n\nComparison operators are used to compare two values and return a boolean result (`true` or `false`).\n\n### Common comparison operators:\n\n- `==` : Equal to (loose equality)\n- `===` : Strict equal to\n- `!=` : Not equal to (loose inequality)\n- `!==` : Strict not equal to\n- `>` : Greater than\n- `<` : Less than\n- `>=` : Greater than or equal to\n- `<=` : Less than or equal to\n\n#### The `loose` tag refers to the fact that these operators perform type coercion, meaning they convert the operands to the same type before making the comparison. The `strict` tag means that no type conversion is performed, and both value and type must be the same for the comparison to return true.\n\n### Syntax Using Comparison Operators:\n\n```javascript\nlet x = 10;\n\nlet y = "10";\n\nconst areStringsEqualToNumbers = x === y; // false, because types are different\n\nconst areValuesEqual = x == y; // true, because values are equal after type coercion\n\nconst isNotEqual = x != 5; // true\n\nconst isGreaterThan = x > 5; // true\n\nconst isLessThanOrEqual = x <= 10; // true\n```\n\n### Type Coercion\n\n- The `==` and `!=` operators perform type coercion, meaning they convert the operands to the same type before making the comparison.\n- The `===` and `!==` operators do not perform type coercion and compare both value and type.\n  - It is generally recommended to use `===` and `!==` to avoid unexpected results due to type coercion.\n\n## Logical Operators\n\nLogical operators are used to combine multiple boolean expressions and return a boolean result.\n\n#### Common logical operators:\n\n- `&&` : Logical AND\n- `||` : Logical OR\n- `!` : Logical NOT\n\n#### Syntax Using Logical Operators:\n\n```javascript\nlet a = true;\n\nlet b = false;\n\nconst aAndB = a && b; // false\n\nconst aOrB = a || b; // true\n\nconst notA = !a; // false\n```\n\n## Assignment Operators\n\nAssignment operators are used to assign values to variables.\n\n#### Common assignment operators:\n\n- `=` : Simple assignment\n  - Example: `let x = 10;` assigns the value `10` to the variable `x`.\n- `+=` : Addition assignment\\\n  - Example: `x += 5;` is equivalent to `x = x + 5;`, so if `x` was `10`, it becomes `15`.\n- `-=` : Subtraction assignment\n  - Example: `x -= 3;` is equivalent to `x = x - 3;`, so if `x` was `10`, it becomes `7`.\n- `*=` : Multiplication assignment\n  - Example: `x *= 2;` is equivalent to `x = x * 2;`, so if `x` was `10`, it becomes `20`.\n- `**=` : Exponentiation assignment\n  - Example: `x **= 3;` is equivalent to `x = x ** 3;`, so if `x` was `2`, it becomes `8`.\n- `/=` : Division assignment\n  - Example: `x /= 2;` is equivalent to `x = x / 2;`, so if `x` was `10`, it becomes `5`.\n- `%=` : Modulus assignment\n  - Example: `x %= 3;` is equivalent to `x = x % 3;`, so if `x` was `10`, it becomes `1`.\n\n#### Note: Assignment operators can only be used with `let` and `var` declared variables, not with `const`, unless the `const` holds an object or array and you are modifying its properties or elements.\n',he=`# Conditionals
+`,ve='# Operators in JavaScript\n\nOperators are special symbols or keywords in JavaScript that perform operations on operands (values or variables). They are used to manipulate data and perform calculations.\nThey are similar to most other commone programming languages.\n\n## Types of Operators\n\nJavaScript provides several types of operators, including:\n\n- Arithmetic Operators\n- Comparison Operators\n- Logical Operators\n- Assignment Operators\n\n## Arithmetic Operators\n\nArithmetic operators are used to perform mathematical operations.\n\n### Common arithmetic operators:\n\n- `+` : Addition\n- `-` : Subtraction\n- `*` : Multiplication\n- `/` : Division\n\n### Additional arithmetic operators:\n\n- `%` : Modulus (Remainder)\n  - Example: `5 % 2` results in `1`, since 5 divided by 2 leaves a remainder of 1.\n- `**` : Exponentiation\n  - Example: `2 ** 3` results in `8`, since 2 raised to the power of 3 is 8.\n- `++` : Increment by 1\n  - Example: `let a = 5; a++;` results in `a` being `6`.\n- `--` : Decrement by 1\n  - Example: `let a = 5; a--;` results in `a` being `4`.\n\n#### Note: the increment (`++`) and decrement (`--`) operators can only be used with let and var declared variables, not with const, unless the const holds an object or array and you are modifying its properties or elements.\n\n### Syntax Using Arithmetic Operators:\n\n```javascript\nlet a = 10;\n\nlet b = 5;\n\nlet sum = a + b; // 15\n\nlet difference = a - b; // 5\n\nlet product = a * b; // 50\n\nlet quotient = a / b; // 2\n\nlet remainder = a % b; // 0\n\nlet power = a ** 2; // 100\n\na++; // a is now 11\n\nb--; // b is now 4\n```\n\n## Comparison Operators\n\nComparison operators are used to compare two values and return a boolean result (`true` or `false`).\n\n### Common comparison operators:\n\n- `==` : Equal to (loose equality)\n- `===` : Strict equal to\n- `!=` : Not equal to (loose inequality)\n- `!==` : Strict not equal to\n- `>` : Greater than\n- `<` : Less than\n- `>=` : Greater than or equal to\n- `<=` : Less than or equal to\n\n#### The `loose` tag refers to the fact that these operators perform type coercion, meaning they convert the operands to the same type before making the comparison. The `strict` tag means that no type conversion is performed, and both value and type must be the same for the comparison to return true.\n\n### Syntax Using Comparison Operators:\n\n```javascript\nlet x = 10;\n\nlet y = "10";\n\nconst areStringsEqualToNumbers = x === y; // false, because types are different\n\nconst areValuesEqual = x == y; // true, because values are equal after type coercion\n\nconst isNotEqual = x != 5; // true\n\nconst isGreaterThan = x > 5; // true\n\nconst isLessThanOrEqual = x <= 10; // true\n```\n\n### Type Coercion\n\n- The `==` and `!=` operators perform type coercion, meaning they convert the operands to the same type before making the comparison.\n- The `===` and `!==` operators do not perform type coercion and compare both value and type.\n  - It is generally recommended to use `===` and `!==` to avoid unexpected results due to type coercion.\n\n## Logical Operators\n\nLogical operators are used to combine multiple boolean expressions and return a boolean result.\n\n#### Common logical operators:\n\n- `&&` : Logical AND\n- `||` : Logical OR\n- `!` : Logical NOT\n\n#### Syntax Using Logical Operators:\n\n```javascript\nlet a = true;\n\nlet b = false;\n\nconst aAndB = a && b; // false\n\nconst aOrB = a || b; // true\n\nconst notA = !a; // false\n```\n\n## Assignment Operators\n\nAssignment operators are used to assign values to variables.\n\n#### Common assignment operators:\n\n- `=` : Simple assignment\n  - Example: `let x = 10;` assigns the value `10` to the variable `x`.\n- `+=` : Addition assignment\\\n  - Example: `x += 5;` is equivalent to `x = x + 5;`, so if `x` was `10`, it becomes `15`.\n- `-=` : Subtraction assignment\n  - Example: `x -= 3;` is equivalent to `x = x - 3;`, so if `x` was `10`, it becomes `7`.\n- `*=` : Multiplication assignment\n  - Example: `x *= 2;` is equivalent to `x = x * 2;`, so if `x` was `10`, it becomes `20`.\n- `**=` : Exponentiation assignment\n  - Example: `x **= 3;` is equivalent to `x = x ** 3;`, so if `x` was `2`, it becomes `8`.\n- `/=` : Division assignment\n  - Example: `x /= 2;` is equivalent to `x = x / 2;`, so if `x` was `10`, it becomes `5`.\n- `%=` : Modulus assignment\n  - Example: `x %= 3;` is equivalent to `x = x % 3;`, so if `x` was `10`, it becomes `1`.\n\n#### Note: Assignment operators can only be used with `let` and `var` declared variables, not with `const`, unless the `const` holds an object or array and you are modifying its properties or elements.\n',ye=`# Conditionals
 
 Conditionals in JavaScript are used to perform different actions based on different conditions. The primary conditional statements in JavaScript are:
 
@@ -3449,7 +3634,7 @@ switch (day) {
 
 console.log(dayName);
 \`\`\`
-`,ge='# Ternary Expressions\n\nThe ternary operator is a concise way to perform conditional evaluations in JavaScript. It is often used as a shorthand for simple `if-else` statements.\n\n### Syntax\n\n```javascript\ncondition ? expressionIfTrue : expressionIfFalse;\n```\n\n- `condition`: A boolean expression that evaluates to `true` or `false`.\n  - The condition is followed by a `?` operator.\n- `expressionIfTrue`: The expression that is executed if the condition is `true`.\n  - This is followed by a `:` operator, or another ternary expression for nested conditions.\n- `expressionIfFalse`: The expression that is executed if the condition is `false`.\n\n### Example\n\n```javascript\nlet age = 20;\nlet canVote = age >= 18 ? "Yes" : "No";\nconsole.log(canVote);\n```\n\nIn this example, the condition `age >= 18` is evaluated. Since `age` is `20`, which is greater than `18`, the expression `"Yes"` is assigned to the variable `canVote`. If `age` were less than `18`, `"No"` would be assigned instead.\n\n### Nested Ternary Operators\n\nTernary operators can be nested to handle multiple conditions, but be cautious as it can reduce code readability.\n\n```javascript\nlet score = 85;\nlet grade = score >= 90 ? "A" : score >= 80 ? "B" : score >= 70 ? "C" : "F";\nconsole.log(grade);\n```\n\nIn this example, the `score` is evaluated against multiple conditions to determine the corresponding `grade`. Since `score` is `85`, the result will be `"B"`.\n\n### When to Use\n\n- Use the ternary operator for simple conditional assignments to improve code conciseness.\n- Avoid using it for complex conditions or multiple nested ternary operators, as it can make the code harder to read and maintain. In such cases, prefer using traditional `if-else` statements.\n\nAn example of a good use case for the ternary operator is when assigning a value based on a simple condition, such as determining if a number is even or odd:\n\n```javascript\nlet number = 4;\nlet isEven = number % 2 === 0 ? "Even" : "Odd";\nconsole.log(isEven); // Output: Even\n```\n\nIn this case, the ternary operator provides a clear and concise way to assign the value of `isEven` based on whether `number` is even or odd, and is easily readable.\n',_e=`# Loops in JavaScript
+`,be='# Ternary Expressions\n\nThe ternary operator is a concise way to perform conditional evaluations in JavaScript. It is often used as a shorthand for simple `if-else` statements.\n\n### Syntax\n\n```javascript\ncondition ? expressionIfTrue : expressionIfFalse;\n```\n\n- `condition`: A boolean expression that evaluates to `true` or `false`.\n  - The condition is followed by a `?` operator.\n- `expressionIfTrue`: The expression that is executed if the condition is `true`.\n  - This is followed by a `:` operator, or another ternary expression for nested conditions.\n- `expressionIfFalse`: The expression that is executed if the condition is `false`.\n\n### Example\n\n```javascript\nlet age = 20;\nlet canVote = age >= 18 ? "Yes" : "No";\nconsole.log(canVote);\n```\n\nIn this example, the condition `age >= 18` is evaluated. Since `age` is `20`, which is greater than `18`, the expression `"Yes"` is assigned to the variable `canVote`. If `age` were less than `18`, `"No"` would be assigned instead.\n\n### Nested Ternary Operators\n\nTernary operators can be nested to handle multiple conditions, but be cautious as it can reduce code readability.\n\n```javascript\nlet score = 85;\nlet grade = score >= 90 ? "A" : score >= 80 ? "B" : score >= 70 ? "C" : "F";\nconsole.log(grade);\n```\n\nIn this example, the `score` is evaluated against multiple conditions to determine the corresponding `grade`. Since `score` is `85`, the result will be `"B"`.\n\n### When to Use\n\n- Use the ternary operator for simple conditional assignments to improve code conciseness.\n- Avoid using it for complex conditions or multiple nested ternary operators, as it can make the code harder to read and maintain. In such cases, prefer using traditional `if-else` statements.\n\nAn example of a good use case for the ternary operator is when assigning a value based on a simple condition, such as determining if a number is even or odd:\n\n```javascript\nlet number = 4;\nlet isEven = number % 2 === 0 ? "Even" : "Odd";\nconsole.log(isEven); // Output: Even\n```\n\nIn this case, the ternary operator provides a clear and concise way to assign the value of `isEven` based on whether `number` is even or odd, and is easily readable.\n',xe=`# Loops in JavaScript
 
 Loops are used in JavaScript to execute a block of code multiple times until a specified condition is met. They are essential for tasks that require repetition, such as iterating over arrays or performing actions a certain number of times.
 
@@ -3568,7 +3753,7 @@ for (value of iterable) {
 \`\`\`
 
 We will cover these loops in more detail in later notes, after we learn about objects and arrays.
-`,ve=`# Functions
+`,Se=`# Functions
 
 Functions are reusable blocks of code that perform a specific task. They can take inputs (parameters) and return an output (return value).
 
@@ -3648,7 +3833,104 @@ If the function body contains a single expression, you can omit the curly braces
 const square = (x) => x * x;
 console.log(square(4)); // Output: 16
 \`\`\`
-`,ye=`# Methods
+
+## Methods
+
+Methods are functions that are properties of an object. They can be defined using function expressions or shorthand syntax.
+
+\`\`\`javascript
+const person = {
+  name: "Alice",
+  greet() {
+    console.log(\`Hello, my name is \${this.name}\`);
+  },
+};
+
+person.greet(); // Output: Hello, my name is Alice
+\`\`\`
+
+## Higher-Order Functions
+
+Higher-order functions are functions that can take other functions as arguments or return functions as their result. They are commonly used for operations like mapping, filtering, and reducing arrays.
+
+- The functions taken as arguments are called "callback functions" or "callbacks".
+
+\`\`\`javascript
+const numbers = [1, 2, 3, 4, 5];
+const doubled = numbers.map((num) => num * 2);
+console.log(doubled); // Output: [2, 4, 6, 8, 10]
+\`\`\`
+
+## Recursion
+
+Recursion is a technique where a function calls itself in order to solve a problem. A recursive function typically has a base case to stop the recursion and a recursive case to continue calling itself.
+
+\`\`\`javascript
+function factorial(n) {
+  if (n === 0) {
+    return 1; // Base case
+  }
+  return n * factorial(n - 1); // Recursive case
+}
+console.log(factorial(5)); // Output: 120
+\`\`\`
+`,Ce=`# Function Generators
+
+Generators are a special type of function in JavaScript that can be paused and resumed, allowing you to produce a sequence of values over time.
+
+Generators are asynchronous in nature and are useful for handling sequences of data, implementing iterators, and managing asynchronous programming patterns.
+
+They are defined using the \`function*\` syntax and use the \`yield\` keyword to yield values.
+
+## Defining a Generator Function
+
+A generator function is defined using the \`function*\` syntax. Inside the function, you can use the \`yield\` keyword to yield values.
+
+\`\`\`javascript
+function* numberGenerator() {
+  yield 1;
+  yield 2;
+  yield 3;
+}
+\`\`\`
+
+#### Note the asterisk (\\*) after the \`function\` keyword, which indicates that it is a generator function.
+
+## Calling a Generator Function
+
+When you call a generator function, it does not execute the function body immediately. Instead, it returns a generator object that can be used to control the execution of the function.
+
+You can call the \`next()\` method on the generator object to resume execution until the next \`yield\` statement is encountered.
+
+\`\`\`javascript
+const gen = numberGenerator();
+
+console.log(gen.next()); // Output: { value: 1, done: false }
+console.log(gen.next()); // Output: { value: 2, done: false }
+console.log(gen.next()); // Output: { value: 3, done: false }
+console.log(gen.next()); // Output: { value: undefined, done: true }
+\`\`\`
+
+## Using Generators for Iteration
+
+Generators can be used to create custom iterators. You can use a \`for...of\` loop to iterate over the values produced by a generator.
+
+\`\`\`javascript
+function* fibonacciGenerator() {
+  let a = 0,
+    b = 1;
+  while (true) {
+    yield a;
+    [a, b] = [b, a + b];
+  }
+}
+const fibGen = fibonacciGenerator();
+for (let i = 0; i < 10; i++) {
+  console.log(fibGen.next().value);
+}
+// Output: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34
+\`\`\`
+`,we=`# Methods
 
 In JavaScript, methods are functions that are associated with objects. They are used to define behaviors for objects and can manipulate the object's properties or perform actions related to the object.
 
@@ -3772,13 +4054,18 @@ Now you can use the \`reverse\` method on any string:
 let str = "hello";
 console.log(str.reverse()); // Output: "olleh"
 \`\`\`
-`,be=`# Template Strings
+`,Te=`# Template Strings
 
-Template strings (also known as template literals) in JavaScript are a way to work with strings that allow for easier embedding of expressions and multi-line strings. They are enclosed by backticks (\`\` \` \` \`\`) instead of single ( \`' '\`) or double (\`" "\`) quotes.
+Template strings (also known as template literals) in JavaScript are a way to work with strings that allow for easier embedding of expressions and multi-line strings.
+
+They are enclosed by backticks (\`\` \` \` \`\`) instead of single ( \`' '\`) or double (\`" "\`) quotes.
 
 ## Features of Template Strings
 
 1. **Expression Interpolation**: You can embed expressions inside a template string using \`\${expression}\` syntax. The expression is evaluated, and the result is included in the string.
+
+   - An expression can be a variable, a mathematical operation, a function call, or any valid JavaScript expression.
+     - It must be enclosed within \`\${}\` to be evaluated, and the result is converted to a string and inserted into the template.
 
    \`\`\`javascript
    const name = "Alice";
@@ -3825,7 +4112,176 @@ Template strings (also known as template literals) in JavaScript are a way to wo
    }.\`;
    console.log(membershipStatus); // Output: You are a member.
    \`\`\`
-`,xe=`# Scope
+`,Ee=`# JavaScript Built-in Functions
+
+JavaScript provides several built-in functions that are readily available for use without needing to define them yourself. These functions perform common tasks and operations, making it easier to work with data and perform calculations.
+
+## Common Built-in Functions
+
+### parseInt()
+
+The \`parseInt()\` function converts a string to an integer. It takes two arguments: the string to be converted and an optional radix (base) for the conversion.
+
+\`\`\`javascript
+const str = "42";
+const num = parseInt(str, 10); // Converts to base 10 integer
+console.log(num); // Output: 42
+\`\`\`
+
+### parseFloat()
+
+The \`parseFloat()\` function converts a string to a floating-point number.
+
+\`\`\`javascript
+const str = "3.14";
+const num = parseFloat(str);
+console.log(num); // Output: 3.14
+\`\`\`
+
+### isNaN()
+
+The \`isNaN()\` function checks if a value is \`NaN\` (Not-a-Number). It returns \`true\` if the value is \`NaN\`, and \`false\` otherwise.
+
+\`\`\`javascript
+console.log(isNaN("hello")); // Output: true
+console.log(isNaN(42)); // Output: false
+\`\`\`
+
+### Number()
+
+The \`Number()\` function converts a value to a number.
+
+\`\`\`javascript
+console.log(Number("123")); // Output: 123
+console.log(Number(true)); // Output: 1
+\`\`\`
+
+### String()
+
+The \`String()\` function converts a value to a string.
+
+\`\`\`javascript
+console.log(String(123)); // Output: "123"
+console.log(String(false)); // Output: "false"
+\`\`\`
+
+### Boolean()
+
+The \`Boolean()\` function converts a value to a boolean (\`true\` or \`false\`).
+
+This function follows specific rules for conversion called "truthy" and "falsy" values:
+
+- Values like \`0\`, \`null\`, \`undefined\`, \`NaN\`, and empty strings (\`""\`) convert to \`false\`.
+- All other values convert to \`true\`.
+- This includes non-empty strings, non-zero numbers, objects, and arrays.
+
+\`\`\`javascript
+console.log(Boolean(1)); // Output: true
+console.log(Boolean(0)); // Output: false
+\`\`\`
+
+### encodeURIComponent() and decodeURIComponent()
+
+The \`encodeURIComponent()\` function encodes a URI component by replacing each instance of certain characters with one, two, three, or four escape sequences representing the UTF-8 encoding of the character.
+
+\`\`\`javascript
+const uri = "https://example.com/page?name=John Doe&age=25";
+const encodedUri = encodeURIComponent(uri);
+console.log(encodedUri); // Output: "https%3A%2F%2Fexample.com%2Fpage%3Fname%3DJohn%20Doe%26age%3D25"
+\`\`\`
+
+The \`decodeURIComponent()\` function decodes a URI component that was previously encoded.
+
+\`\`\`javascript
+const decodedUri = decodeURIComponent(encodedUri);
+console.log(decodedUri); // Output: "https://example.com/page?name=John Doe&age=25"
+\`\`\`
+
+## Math Functions
+
+JavaScript provides a built-in \`Math\` object that contains various mathematical functions and constants. Here are some commonly used \`Math\` functions:
+
+### Math.abs(x)
+
+Returns the absolute value of \`x\`.
+
+\`\`\`javascript
+console.log(Math.abs(-5)); // Output: 5
+\`\`\`
+
+### Math.ceil(x)
+
+Rounds \`x\` up to the nearest integer.
+
+\`\`\`javascript
+console.log(Math.ceil(4.2)); // Output: 5
+\`\`\`
+
+### Math.floor(x)
+
+Rounds \`x\` down to the nearest integer.
+
+\`\`\`javascript
+console.log(Math.floor(4.8)); // Output: 4
+\`\`\`
+
+### Math.round(x)
+
+Rounds \`x\` to the nearest integer.
+
+\`\`\`javascript
+console.log(Math.round(4.5)); // Output: 5
+console.log(Math.round(4.4)); // Output: 4
+\`\`\`
+
+### Math.max(a, b, ...)
+
+Returns the largest of the given numbers.
+
+\`\`\`javascript
+console.log(Math.max(1, 5, 3)); // Output: 5
+\`\`\`
+
+### Math.min(a, b, ...)
+
+Returns the smallest of the given numbers.
+
+\`\`\`javascript
+console.log(Math.min(1, 5, 3)); // Output: 1
+\`\`\`
+
+### Math.random()
+
+Returns a pseudo-random number between 0 (inclusive) and 1 (exclusive).
+
+\`\`\`javascript
+console.log(Math.random()); // Output: A random number between 0 and 1
+\`\`\`
+
+#### The \`Math.random()\` function generates pseudo-random numbers, which means they are not truly random but are generated using an algorithm. For cryptographic purposes or when higher quality randomness is needed, consider using the Web Crypto API.
+
+### Math.sqrt(x)
+
+Returns the square root of \`x\`.
+
+\`\`\`javascript
+console.log(Math.sqrt(16)); // Output: 4
+\`\`\`
+
+### Math.pow(base, exponent)
+
+Returns the base raised to the power of the exponent.
+
+- The first argument is the base number.
+- The second argument is the exponent to which the base number is raised.
+
+\`\`\`javascript
+const base = 2;
+const exponent = 3;
+
+console.log(Math.pow(base, exponent)); // Output: 8
+\`\`\`
+`,De=`# Scope
 
 Scope refers to the accessibility of variables and functions in different parts of your code. In JavaScript, there are two main types of scope: global scope and local scope.
 
@@ -3917,7 +4373,7 @@ If functionVar were declared with \`let\` or \`const\`, it would not be accessib
 This is called **hoisting** where \`var\` declarations are moved to the top of their enclosing function scope during compilation.
 
 It's as if they are immediately declared at the top of the function, but not initialized until the line where they are defined is executed.
-`,Se=`# Arrays
+`,Oe=`# Arrays
 
 A JavaScript **Array** is a data structure that can hold more than one value at a time. It is a list-like object used to store multiple values in a single variable.
 
@@ -4078,7 +4534,249 @@ This will output:
 1: Mango
 2: Orange
 \`\`\`
-`,Ce=`# Objects
+
+## ES6+ Built-in Functions
+
+ES6 (ECMAScript 2015) introduced several new built-in functions that enhance JavaScript's capabilities. Here are some commonly used ES6+ built-in functions:
+
+### Array.from()
+
+The \`Array.from()\` function creates a new array instance from an array-like or iterable object.
+
+\`\`\`javascript
+const str = "hello";
+const arr = Array.from(str);
+console.log(arr); // Output: ['h', 'e', 'l', 'l', 'o']
+\`\`\`
+
+### Object.assign()
+
+The \`Object.assign()\` function copies the values of all enumerable own properties from one or more source objects to a target object. It returns the target object.
+
+\`\`\`javascript
+const target = { a: 1, b: 2 };
+const source = { b: 4, c: 5 };
+const returnedTarget = Object.assign(target, source);
+console.log(returnedTarget); // Output: { a: 1, b: 4, c: 5 }
+\`\`\`
+
+#### When using \`Object.assign()\`, if there are properties with the same key in multiple source objects, the value from the last source object will overwrite the previous values. Which is why in the example above, the value of property \`b\` in the \`target\` object is overwritten by the value from the \`source\` object.
+
+### Array.map()
+
+The \`Array.map()\` function creates a new array populated with the results of calling a provided function on every element in the calling array.
+
+\`\`\`javascript
+const numbers = [1, 2, 3, 4];
+const doubled = numbers.map((num) => num * 2);
+console.log(doubled); // Output: [2, 4, 6, 8]
+\`\`\`
+
+### Array.filter()
+
+The \`Array.filter()\` function creates a new array with all elements that pass the test implemented by the provided function.
+
+\`\`\`javascript
+const numbers = [1, 2, 3, 4, 5];
+const evenNumbers = numbers.filter((num) => num % 2 === 0);
+console.log(evenNumbers); // Output: [2, 4]
+\`\`\`
+
+### Array.reduce()
+
+The \`Array.reduce()\` function executes a reducer function on each element of the array, resulting in a single output value.
+
+Takes in two arguments:
+
+- a reducer function, which itself takes in four arguments:
+  - the accumulator (the accumulated value previously returned in the last invocation of the reducer, or initial value, if supplied)
+  - the current value (the current element being processed in the array)
+  - the current index (the index of the current element being processed in the array)
+  - the array (the array reduce was called upon)
+- an optional initial value.
+
+\`\`\`javascript
+const numbers = [1, 2, 3, 4];
+let intialValue = 0;
+const sum = numbers.reduce(
+  (accumulator, currentValue) => accumulator + currentValue,
+  intialValue
+);
+console.log(sum); // Output: 10
+\`\`\`
+
+### Array.find() and Array.findIndex()
+
+The \`Array.find()\` function returns the value of the first element in the array that satisfies the provided testing function. If no elements satisfy the testing function, it returns \`undefined\`.
+
+\`\`\`javascript
+const numbers = [1, 2, 3, 4, 5];
+const firstGreaterThanThree = numbers.find((num) => num > 3);
+console.log(firstGreaterThanThree); // Output: 4
+\`\`\`
+
+#### Note that \`Array.find()\` returns the element itself, not its index. If you need the index, you can use \`Array.findIndex()\` instead, which works the same but returns the index of the found element or \`-1\` if not found.
+
+\`\`\`javascript
+const numbers = [1, 2, 3, 4, 5];
+const indexFirstGreaterThanThree = numbers.findIndex((num) => num > 3);
+console.log(indexFirstGreaterThanThree); // Output: 3, the index of the element 4
+\`\`\`
+
+### Sorting Arrays with Array.sort()
+
+The \`Array.sort()\` function sorts the elements of an array in place and returns the sorted array. By default, it sorts elements as strings in ascending order.
+
+To sort numbers or custom objects, you can provide a compare function.
+
+The compare function takes two arguments (a and b) and should return:
+
+- A negative value if \`a\` should come before \`b\`
+- A positive value if \`b\` should come after \`a\`
+- Zero if \`a\` and \`b\` are considered equal
+
+\`\`\`javascript
+const numbers = [4, 2, 5, 1, 3];
+numbers.sort((a, b) => a - b); // Sorts numbers in ascending order
+console.log(numbers); // Output: [1, 2, 3, 4, 5]
+\`\`\`
+
+When comparing strings, you can use the \`localeCompare()\` method for proper alphabetical sorting:
+
+\`\`\`javascript
+const fruits = ["banana", "apple", "cherry"];
+fruits.sort((a, b) => a.localeCompare(b)); // Sorts strings in alphabetical order
+console.log(fruits); // Output: ["apple", "banana", "cherry"]
+\`\`\`
+
+Note that the sort method is a mutating method, meaning it changes the original array.
+
+If you want to return a sorted copy of an array without modifying the original array, you can create a shallow copy of the array using the \`slice()\` method or the spread operator (\`...\`) before sorting.
+
+\`\`\`javascript
+const numbers = [4, 2, 5, 1, 3];
+const sortedNumbers = numbers.slice().sort(); // or use [...numbers].sort()
+console.log(sortedNumbers); // Output: [1, 2, 3, 4, 5]
+console.log(numbers); // Original array remains unchanged: [4, 2, 5, 1, 3]
+\`\`\`
+`,ke=`# Classes
+
+In JavaScript, classes are a way to create objects and manage inheritance using a more familiar syntax compared to traditional prototype-based inheritance. Classes were introduced in ECMAScript 2015 (ES6) and provide a clearer and more concise way to define object blueprints.
+
+## Defining a Class
+
+You can define a class using the \`class\` keyword followed by the class name. The class body contains a constructor method and other methods.
+
+\`\`\`javascript
+class Person {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+}
+\`\`\`
+
+## Creating Instances
+
+You can create instances of a class using the \`new\` keyword.
+
+\`\`\`javascript
+const person1 = new Person("Alice", 30);
+const person2 = new Person("Bob", 25);
+console.log(person1.name); // Output: Alice
+console.log(person2.age); // Output: 25
+\`\`\`
+
+## Adding Methods
+
+You can add methods to a class by defining them inside the class body.
+
+\`\`\`javascript
+class Person {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+
+  greet() {
+    console.log(
+      \`Hello, my name is \${this.name} and I am \${this.age} years old.\`
+    );
+  }
+}
+const person = new Person("Alice", 30);
+person.greet(); // Output: Hello, my name is Alice and I am 30 years old.
+\`\`\`
+
+### Static Methods
+
+You can define static methods that belong to the class itself rather than to instances of the class. Static methods are defined using the \`static\` keyword.
+
+\`\`\`javascript
+class MathUtils {
+  static add(a, b) {
+    return a + b;
+  }
+  static subtract(a, b) {
+    return a - b;
+  }
+  static multiply(a, b) {
+    return a * b;
+  }
+  static divide(a, b) {
+    if (b === 0) {
+      throw new Error("Division by zero is not allowed.");
+    }
+    return a / b;
+  }
+  static power(base, exponent) {
+    let result = base;
+
+    for (let i = 1; i < exponent; i++) {
+      result *= base;
+    }
+    return result;
+  }
+}
+\`\`\`
+
+### Calling Static Methods
+
+You can call static methods directly on the class without creating an instance.
+
+- Static methods are often used for utility functions that don't require any instance-specific data.
+
+\`\`\`javascript
+console.log(MathUtils.add(5, 3)); // Output: 8
+console.log(MathUtils.subtract(10, 4)); // Output: 6
+console.log(MathUtils.multiply(6, 7)); // Output: 42
+console.log(MathUtils.divide(20, 4)); // Output: 5
+console.log(MathUtils.power(2, 3)); // Output: 8
+\`\`\`
+
+## Inheritance
+
+You can create a subclass that inherits from a parent class using the \`extends\` keyword.
+
+\`\`\`javascript
+class Employee extends Person {
+  constructor(name, age, jobTitle) {
+    super(name, age); // Call the parent class constructor
+    this.jobTitle = jobTitle;
+  }
+}
+
+//Creating an instance of the Employee class:
+const employee = new Employee("Charlie", 28, "Developer");
+
+//Accessing properties from both the Employee and Person classes:
+console.log(employee.name); // Output: Charlie
+console.log(employee.jobTitle); // Output: Developer
+
+//Accessing the greet method inherited from the Person class:
+employee.greet(); // Output: Hello, my name is Charlie and I am 28 years old.
+\`\`\`
+`,Ae=`# Objects
 
 In JavaScript, an object is a collection of key-value pairs, where each key (also called a property) is a string (or symbol) and the value can be any data type, including other objects or functions. Objects are used to store and organize data in a structured way.
 
@@ -4240,7 +4938,7 @@ You can access nested object properties using dot notation or bracket notation.
 console.log(student.address.city); // Output: Wonderland
 student.address.zipCode = "54321"; // Modify nested property
 \`\`\`
-`,we=`# Importing and Exporting JavaScript Code
+`,je=`# Importing and Exporting JavaScript Code
 
 In JavaScript, you can organize your code into separate files and modules using the \`import\` and \`export\` statements. This allows you to reuse code across different parts of your application and maintain a cleaner codebase.
 
@@ -4372,7 +5070,1743 @@ console.log(math.add(2, 3)); // Output: 5
 - Use \`import\` to bring in exported items from other modules.
 - ES6 modules use \`import\` and \`export\`, while CommonJS uses \`require\` and \`module.exports\`.
 - You can have named exports, default exports, and import all exports as an object.
-`,Te=`# Learn SQL 🌎
+`,Me=`# Try and Catch
+
+The \`try...catch\` statement in JavaScript is used for error handling. It allows you to execute a block of code (the "try" block) and catch any errors that may occur during its execution (the "catch" block). This helps prevent your program from crashing due to unhandled exceptions.
+
+The \`try\` block contains the code that may potentially throw an error, while the \`catch\` block contains the code that handles the error if one occurs. Optionally, a \`finally\` block can be included to execute code that should run regardless of whether an error occurred or not.
+
+## Syntax
+
+\`\`\`javascript
+try {
+  // Code that may throw an error
+} catch (error) {
+  // Code to handle the error
+  console.log("An error occurred: ", error.message);
+} finally {
+  // Code that will always execute, regardless of whether an error occurred or not (optional)
+}
+\`\`\`
+
+Typically, you would use \`try...catch\` when you have code that might fail, such as network requests, file operations, or parsing data.
+
+## Example
+
+\`\`\`javascript
+function parseJSON(jsonString) {
+  try {
+    const data = JSON.parse(jsonString);
+    console.log("Parsed data:", data);
+  } catch (error) {
+    console.log("Failed to parse JSON:", error.message);
+  } finally {
+    console.log("Execution completed.");
+  }
+}
+const validJSON = '{"name": "Alice", "age": 30}';
+const invalidJSON = '{"name": "Alice", "age": 30'; // Missing closing brace
+parseJSON(validJSON); // Successfully parses and logs the data
+parseJSON(invalidJSON); // Catches the error and logs the error message
+\`\`\`
+
+In this example, the \`parseJSON\` function attempts to parse a JSON string. If the string is valid, it logs the parsed data. If the string is invalid, it catches the error and logs an error message. The \`finally\` block runs after either case, indicating that execution is complete.
+
+## Best Practices
+
+1. **Specific Error Handling**: Catch specific errors when possible to provide more meaningful error messages and handling logic.
+
+2. **Avoid Silent Failures**: Always log or handle errors in the \`catch\` block to avoid silent failures that can make debugging difficult.
+
+3. **Use Finally for Cleanup**: Use the \`finally\` block for cleanup tasks that should always run, such as closing resources or resetting states.
+
+4. **Limit Try Block Scope**: Keep the code inside the \`try\` block as small as possible to avoid catching unintended errors.
+
+5. **Rethrow Errors When Necessary**: If you cannot handle an error meaningfully, consider rethrowing it to be handled at a higher level in the call stack.
+
+## Error Object
+
+When an error is caught in the \`catch\` block, it is typically represented by an \`Error\` object. This object contains useful information about the error, such as:
+
+- \`name\`: The name of the error (e.g., "TypeError", "ReferenceError").
+- \`message\`: A descriptive message about the error.
+- \`stack\`: A stack trace that provides information about where the error occurred in the code (useful for debugging).
+  You can access these properties to get more details about the error and handle it appropriately.
+
+\`\`\`javascript
+try {
+  // Some code that may throw an error
+} catch (error) {
+  console.log("Error Name:", error.name);
+  console.log("Error Message:", error.message);
+  console.log("Stack Trace:", error.stack);
+}
+\`\`\`
+
+This will log the name, message, and stack trace of the error, helping you diagnose and fix the issue.
+
+### Throwing Custom Errors
+
+You can also throw your own custom errors using the \`throw\` statement. This is useful when you want to enforce certain conditions in your code.
+
+\`\`\`javascript
+function divide(a, b) {
+  if (b === 0) {
+    throw new Error("Division by zero is not allowed.");
+  }
+  return a / b;
+}
+try {
+  console.log(divide(10, 2)); // Output: 5
+  console.log(divide(10, 0)); // This will throw an error
+} catch (error) {
+  console.log("Caught an error:", error.message);
+}
+\`\`\`
+
+In this example, the \`divide\` function throws a custom error if an attempt is made to divide by zero. The error is then caught in the \`try...catch\` block, and an appropriate message is logged.
+
+You can also create custom errors, extending the \`Error\` class and throwing them as needed.
+
+\`\`\`javascript
+const appErrors = {
+  ValidationError: class extends Error {
+    constructor(message) {
+      super(message);
+      this.name = "ValidationError";
+      this.errorCode = 1001;
+    }
+  },
+  DatabaseError: class extends Error {
+    constructor(message) {
+      super(message);
+      this.name = "DatabaseError";
+      this.errorCode = 2001;
+    }
+  },
+};
+
+try {
+  throw new appErrors.ValidationError("Invalid input data.");
+} catch (error) {
+  if (
+    error instanceof appErrors.ValidationError ||
+    error instanceof appErrors.DatabaseError
+  ) {
+    console.log(
+      "Caught a validation error:",
+      error.message,
+      "Error Code:",
+      error.errorCode
+    );
+  } else {
+    console.log("Caught an unknown error:", error.message);
+  }
+}
+\`\`\`
+`,Ne=`# Promises
+
+Promises are a way to handle asynchronous operations in JavaScript. They represent a value that may be available now, later, or never. A Promise can be in one of three states: pending, fulfilled, or rejected.
+
+- Asynchronous operations allow your program to continue running while waiting for an operation to complete, such as fetching data from a server or reading a file.
+
+## Creating a Promise
+
+The \`Promise\` constructor is used to create a new Promise. It takes a single argument: a function called the executor, which has two parameters: \`resolve\` and \`reject\`.
+
+\`\`\`javascript
+const myPromise = new Promise((resolve, reject) => {
+  // Asynchronous operation
+  const success = true; // Simulate success or failure
+  if (success) {
+    resolve("Operation was successful!");
+  } else {
+    reject("Operation failed.");
+  }
+});
+\`\`\`
+
+## Consuming a Promise
+
+To handle the result of a Promise, you can use the \`then()\` and \`catch()\` methods.
+
+- then(): This method is called when the Promise is fulfilled. It takes a callback function that receives the resolved value.
+- catch(): This method is called when the Promise is rejected. It takes a callback function that receives the error reason.
+
+\`\`\`javascript
+myPromise
+  .then((result) => {
+    console.log(result); // Output: Operation was successful!
+  })
+  .catch((error) => {
+    console.error(error); // Output: Operation failed.
+  });
+\`\`\`
+
+then() functions can be chained to handle multiple asynchronous operations in sequence.
+
+\`\`\`javascript
+myPromise
+  .then((result) => {
+    console.log(result);
+    return "Next operation";
+  })
+  .then((nextResult) => {
+    console.log(nextResult); // Output: Next operation
+  })
+  .catch((error) => {
+    console.error(error);
+  });
+\`\`\`
+
+## Set Timeout
+
+You can create a promise that resolves after a certain amount of time using \`setTimeout\`.
+
+This is useful for simulating delays or timeouts in asynchronous operations during development.
+
+Great for:
+
+- Simulating network requests
+- Testing loading states in UI components
+
+Set Timeout Takes in 2 arguments:
+
+- a callback function to be executed after the delay
+- a time in milliseconds
+
+After the timeout, it executes the callback function and returns a promise that resolves after that time has passed.
+
+\`\`\`javascript
+const delay = (ms) => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve(\`Resolved after \${ms} milliseconds\`);
+    }, ms);
+  });
+};
+delay(2000).then((message) => {
+  console.log(message); // Output: Resolved after 2000 milliseconds
+});
+\`\`\`
+
+In production code, timeouts can be useful for:
+
+- Implementing retry logic for network requests
+- Creating loading indicators that appear after a certain delay
+- UI Components that need to wait before rendering or updating like a slideshow or carousel
+
+## Promise Prototype Methods
+
+The Promise prototype includes several useful methods for working with multiple promises:
+
+- Promise.resolve()
+- Promise.reject()
+- Promise.all()
+- Promise.allSettled()
+- Promise.race()
+- Promise.any()
+
+### Promise.resolve(value)
+
+Creates a Promise that is resolved with the given value.
+
+\`\`\`javascript
+const resolvedPromise = Promise.resolve("Resolved value");
+resolvedPromise.then((value) => {
+  console.log(value); // Output: Resolved value
+});
+\`\`\`
+
+### Promise.reject(reason)
+
+Creates a Promise that is rejected with the given reason.
+
+\`\`\`javascript
+const rejectedPromise = Promise.reject("Rejection reason");
+rejectedPromise.catch((reason) => {
+  console.error(reason); // Output: Rejection reason
+});
+\`\`\`
+
+### Promise.all(iterable)
+
+Waits for all promises in the iterable to be fulfilled, or for any to be rejected. Returns a new promise that resolves to an array of the results.
+Takes in an iterable (like an array) of promises and returns a single Promise that resolves when all of the promises in the iterable have resolved, or rejects if any of the promises reject.
+
+\`\`\`javascript
+const promise1 = Promise.resolve(3);
+const promise2 = 42;
+const promise3 = new Promise((resolve) => {
+  setTimeout(resolve, 100, "foo");
+});
+Promise.all([promise1, promise2, promise3]).then((values) => {
+  console.log(values); // Output: [3, 42, "foo"]
+});
+\`\`\`
+
+### Promise.allSettled(iterable)
+
+Waits for all promises in the iterable to settle (either fulfilled or rejected). Returns a new promise that resolves to an array of objects describing the outcome of each promise.
+
+\`\`\`javascript
+const promise1 = Promise.resolve(3);
+const promise2 = new Promise((_, reject) => {
+  setTimeout(reject, 100, "error");
+});
+Promise.allSettled([promise1, promise2]).then((results) => {
+  console.log(results);
+  // Output:
+  // [
+  //   { status: "fulfilled", value: 3 },
+  //   { status: "rejected", reason: "error" }
+  // ]
+});
+\`\`\`
+
+### Promise.race(iterable)
+
+Returns a promise that resolves or rejects as soon as one of the promises in the iterable resolves or rejects, with the value or reason from that promise.
+
+\`\`\`javascript
+const promise1 = new Promise((resolve) => {
+  setTimeout(resolve, 500, "one");
+});
+const promise2 = new Promise((resolve) => {
+  setTimeout(resolve, 100, "two");
+});
+Promise.race([promise1, promise2]).then((value) => {
+  console.log(value); // Output: "two"
+});
+\`\`\`
+
+### Promise.any(iterable)
+
+Returns a promise that resolves as soon as any of the promises in the iterable fulfills, with the value of the fulfilled promise. If all promises are rejected, it rejects with an AggregateError.
+
+\`\`\`javascript
+const promise1 = Promise.reject("error1");
+const promise2 = Promise.reject("error2");
+const promise3 = Promise.resolve("success");
+Promise.any([promise1, promise2, promise3])
+  .then((value) => {
+    console.log(value); // Output: "success"
+  })
+  .catch((error) => {
+    console.error(error);
+  });
+\`\`\`
+`,Pe=`# JSON
+
+JSON (JavaScript Object Notation) is a lightweight data interchange format that is easy for humans to read and write, and easy for machines to parse and generate. It is commonly used for transmitting data between a server and a web application as text.
+
+## JSON Syntax
+
+JSON syntax is a subset of JavaScript object syntax and consists of the following data types:
+
+- **Objects**: Collections of key-value pairs enclosed in curly braces \`{}\`. Keys are strings, and values can be any valid JSON data type.
+
+  \`\`\`json
+  {
+    "name": "Alice",
+    "age": 30,
+    "isStudent": false
+  }
+  \`\`\`
+
+- **Arrays**: Ordered lists of values enclosed in square brackets \`[]\`. Values can be any valid JSON data type.
+
+  \`\`\`json
+  ["apple", "banana", "cherry"]
+  \`\`\`
+
+- **Values**: Can be strings (enclosed in double quotes), numbers, objects, arrays, booleans (\`true\` or \`false\`), or \`null\`.
+  \`\`\`json
+  {
+    "string": "Hello, World!",
+    "number": 42,
+    "boolean": true,
+    "nullValue": null,
+    "array": [1, 2, 3],
+    "object": { "key": "value" }
+  }
+  \`\`\`
+
+#### Note that in JSON, keys must be strings enclosed in double quotes, and string values must also be enclosed in double quotes. Single quotes are not allowed.
+
+## Working with JSON in JavaScript
+
+JavaScript provides built-in methods to work with JSON data: \`JSON.stringify()\` and \`JSON.parse()\`.
+
+1. **JSON.stringify()**: Converts a JavaScript object or value to a JSON string.
+
+   \`\`\`javascript
+   const obj = { name: "Alice", age: 30, isStudent: false };
+   const jsonString = JSON.stringify(obj);
+   console.log(jsonString); // Output: '{"name":"Alice","age":30,"isStudent":false}'
+   \`\`\`
+
+2. **JSON.parse()**: Parses a JSON string and converts it into a JavaScript object.
+
+   \`\`\`javascript
+   const jsonString = '{"name":"Alice","age":30,"isStudent":false}';
+   const obj = JSON.parse(jsonString);
+   console.log(obj); // Output: { name: 'Alice', age: 30, isStudent: false }
+   \`\`\`
+
+## Use Cases of JSON
+
+JSON is widely used in various scenarios, including:
+
+1. **Data Exchange**: JSON is commonly used for exchanging data between a client and a server in web applications, especially in RESTful APIs.
+
+2. **Configuration Files**: Many applications use JSON files for configuration settings due to their simplicity and readability.
+
+3. **Data Storage**: JSON is often used for storing structured data in databases, such as NoSQL databases like MongoDB.
+
+4. **Serialization**: JSON is used to serialize and deserialize data structures for storage or transmission.
+
+5. **Deep Copying**: JSON can be used to create deep copies of objects by serializing and then parsing them, this method has limitations with functions and special object types, but can be useful to clone simple objects, and create new instances.
+
+- Creating a deep copy will ensure that nested objects are also copied, rather than just copying references, so if the original object is modified, the copied object remains unchanged and vice versa.
+
+  \`\`\`javascript
+  const original = { name: "Alice", age: 30 };
+  const copy = JSON.parse(JSON.stringify(original));
+  console.log(copy); // Output: { name: 'Alice', age: 30 }
+  \`\`\`
+
+## Advantages of JSON
+
+- **Human-Readable**: JSON's simple syntax makes it easy for humans to read and write.
+
+- **Lightweight**: JSON is a compact format, which makes it efficient for data transmission.
+
+- **Language Independent**: JSON is language-agnostic and can be used with many programming languages, making it a versatile choice for data interchange.
+
+- **Easy to Parse**: Most programming languages provide built-in support for parsing and generating JSON, making it easy to work with.
+
+## Using JSON with JavaScript
+
+JavaScript has native support for JSON, making it straightforward to work with JSON data.
+
+JSON is primarily used for data interchange rather than as a data storage format within JavaScript code itself. However, it can be effectively utilized in various scenarios, such as:
+
+- **APIs**: When fetching data from APIs, the response is often in JSON format. You can use \`fetch()\` to retrieve the data and then parse it using \`JSON.parse()\`.
+
+  \`\`\`javascript
+  fetch("https://api.example.com/data")
+    .then((response) => response.json()) // Parses JSON response into JavaScript object
+    .then((data) => console.log(data))
+    .catch((error) => console.error("Error fetching data:", error));
+  \`\`\`
+
+- **Local Storage**: You can store JSON strings in the browser's local storage and retrieve them later.
+
+  \`\`\`javascript
+  const user = { name: "Alice", age: 30 };
+  localStorage.setItem("user", JSON.stringify(user)); // Store as JSON string
+  localStorage.getItem("user"); // Retrieve JSON string
+  JSON.parse(localStorage.getItem("user")); // Convert JSON string back to JavaScript object
+  \`\`\`
+
+### Json Server
+
+Javascript can be used with the JSON Server node package to create a mock REST API quickly for testing and prototyping.
+
+\`\`\`bash
+npm install -g json-server
+\`\`\`
+
+Create a \`db.json\` file with sample data:
+
+\`\`\`json
+{
+  "posts": [
+    { "id": 1, "title": "Hello World", "author": "Alice" },
+    { "id": 2, "title": "JSON in JavaScript", "author": "Bob" }
+  ],
+  "comments": [
+    { "id": 1, "body": "Great post!", "postId": 1 },
+    { "id": 2, "body": "Very informative.", "postId": 2 }
+  ]
+}
+\`\`\`
+
+Start the JSON Server:
+
+\`\`\`bash
+json-server --watch db.json
+\`\`\`
+
+This will create a RESTful API at \`http://localhost:3000\`, allowing you to perform CRUD operations on the data in \`db.json\`.
+
+The individual objects in the JSON file can be accessed via endpoints like:
+
+- \`http://localhost:3000/posts\`
+- \`http://localhost:3000/comments\`
+`,Fe=`# Eval
+
+Eval is a built-in JavaScript function that evaluates a string as code. It can execute arbitrary code represented as a string, which can lead to security vulnerabilities and performance issues. Therefore, its use is generally discouraged unless absolutely necessary, although there are some legitimate use cases.
+
+## Syntax
+
+\`\`\`javascript
+eval(string);
+\`\`\`
+
+- \`string\`: A string representing the code to be evaluated. If the argument is not a string, it is returned unchanged. It can contain any valid JavaScript code, including expressions, statements, or function definitions.
+
+## Use Cases
+
+1. **Dynamic Code Execution**: Eval can be used to execute code that is generated at runtime. This can be useful in scenarios where the code to be executed is not known until runtime.
+
+   \`\`\`javascript
+   const code = "2 + 2";
+   const result = eval(code); // result will be 4
+   \`\`\`
+
+2. **Parsing JSON**: Before \`JSON.parse()\` was widely supported, eval was sometimes used to parse JSON strings. However, this is not recommended due to security risks.
+
+   \`\`\`javascript
+   const jsonString = '{"name": "Alice", "age": 30}';
+   const object = eval("(" + jsonString + ")"); // object will be { name: "Alice", age: 30 }
+   \`\`\`
+
+## Risks and Considerations
+
+1. **Security Risks**: Using eval can expose your code to injection attacks, where malicious code can be executed. Always avoid using eval with untrusted input.
+2. **Performance Issues**: Eval can slow down your code because it forces the JavaScript engine to recompile the code at runtime, which can be less efficient than pre-compiled code.
+3. **Debugging Difficulties**: Code executed via eval can be harder to debug, as it may not provide meaningful stack traces or error messages.
+
+## Alternatives
+
+In most cases, there are safer and more efficient alternatives to eval:
+
+1. **Function Constructor**: For dynamic function creation, consider using the Function constructor instead of eval.
+
+   \`\`\`javascript
+   const func = new Function("a", "b", "return a + b;");
+   console.log(func(2, 3)); // Output: 5
+   \`\`\`
+
+2. **JSON.parse()**: For parsing JSON strings, always use \`JSON.parse()\` instead of eval.
+
+   \`\`\`javascript
+   const jsonString = '{"name": "Alice", "age": 30}';
+   const object = JSON.parse(jsonString); // object will be { name: "Alice", age: 30 }
+   \`\`\`
+
+3. **Template Literals**: For dynamic string construction, use template literals instead of eval.
+
+   \`\`\`javascript
+   const name = "Alice";
+   const greeting = \`Hello, \${name}!\`;
+   console.log(greeting); // Output: Hello, Alice!
+   \`\`\`
+`,Ie=`# Types and Instances
+
+In JavaScript, types and instances are fundamental concepts that help define the nature of data and how it behaves in the language.
+
+## Types
+
+The type refers to an item's data classification, which determines the kind of values it can hold and the operations that can be performed on it. JavaScript has several built-in types, including:
+
+### Primitive Types:
+
+- \`Number\`: Represents numeric values, both integers and floating-point numbers.
+- \`String\`: Represents sequences of characters used for text.
+- \`Boolean\`: Represents logical values, either \`true\` or \`false\`.
+- \`Undefined\`: Represents a variable that has been declared but not assigned a value.
+- \`Null\`: Represents the intentional absence of any object value.
+- \`Symbol\`: Represents a unique and immutable identifier.
+- \`BigInt\`: Represents integers with arbitrary precision.
+
+### Object Types:
+
+- \`Object\`: A collection of key-value pairs, where keys are strings (or symbols) and values can be of any type.
+- \`Array\`: An ordered list of values, which can hold multiple values of any type.
+- \`Function\`: A callable object that encapsulates a block of code to be executed.
+- \`Date\`: Represents dates and times.
+- \`RegExp\`: Represents regular expressions for pattern matching in strings.
+
+## Instances
+
+An instance refers to a specific occurrence of a type. When you create an object or a value of a certain type, you are creating an instance of that type. For example:
+
+- When you create a number like \`42\`, you are creating an instance of the \`Number\` type.
+- When you create a string like \`"Hello, World!"\`, you are creating an instance of the \`String\` type.
+- When you create an object using an object literal like \`{ name: "Alice", age: 30 }\`, you are creating an instance of the \`Object\` type.
+  Instances can have their own properties and methods, which are defined by their type. For example, a \`String\` instance has methods like \`toUpperCase()\` and \`substring()\`, while an \`Array\` instance has methods like \`push()\` and \`pop()\`.
+
+## The typeof Operator
+
+You can use the \`typeof\` operator to determine the type of a value or variable in JavaScript. It returns a string indicating the type.
+
+\`\`\`javascript
+console.log(typeof 42); // Output: "number"
+console.log(typeof "Hello"); // Output: "string"
+console.log(typeof true); // Output: "boolean"
+console.log(typeof {}); // Output: "object"
+console.log(typeof []); // Output: "object"
+console.log(typeof function () {}); // Output: "function"
+\`\`\`
+
+Using typeof, you can perform type checks in a function or conditional statement to ensure that values are of the expected type before performing operations on them.
+
+\`\`\`javascript
+function add(a, b) {
+  if (typeof a === "number" && typeof b === "number") {
+    return a + b;
+  } else {
+    throw new Error("Both arguments must be numbers.");
+  }
+}
+console.log(add(5, 10)); // Output: 15
+console.log(add(5, "10")); // Throws Error: Both arguments must be numbers.
+\`\`\`
+
+## The instanceof Operator
+
+The \`instanceof\` operator is used to check if an object is an instance of a specific type (constructor function). It returns \`true\` if the object is an instance of the specified type, and \`false\` otherwise.
+
+\`\`\`javascript
+const date = new Date();
+console.log(date instanceof Date); // Output: true
+console.log(date instanceof Object); // Output: true
+console.log(date instanceof Array); // Output: false
+\`\`\`
+
+This can be useful for ensuring that an object is an instance of a particular class or type before performing operations specific to that type.
+
+\`\`\`javascript
+class Person {
+  constructor(name) {
+    this.name = name;
+  }
+}
+const alice = new Person("Alice");
+
+console.log(alice instanceof Person); // Output: true
+console.log(alice instanceof Object); // Output: true
+
+const notAPerson = {};
+console.log(notAPerson instanceof Person); // Output: false
+
+const greetPerson = (obj) => {
+  if (obj instanceof Person) {
+    console.log(\`Hello, \${obj.name}!\`);
+  } else {
+    console.log("Hello, stranger!");
+  }
+};
+
+greetPerson(alice); // Output: Hello, Alice!
+greetPerson(notAPerson); // Output: Hello, stranger!
+\`\`\`
+`,Le=`# Destructuring
+
+Destructuring is a convenient way to extract values from arrays or properties from objects into distinct variables. It allows for cleaner and more readable code.
+
+## Array Destructuring
+
+You can extract values from an array and assign them to variables using square brackets \`[]\`.
+
+\`\`\`javascript
+const numbers = [1, 2, 3];
+const [a, b, c] = numbers;
+console.log(a); // Output: 1
+console.log(b); // Output: 2
+console.log(c); // Output: 3
+\`\`\`
+
+You can also skip elements by leaving empty spaces in the destructuring pattern.
+
+\`\`\`javascript
+const numbers = [1, 2, 3];
+const [a, , c] = numbers;
+console.log(a); // Output: 1
+console.log(c); // Output: 3
+\`\`\`
+
+## Object Destructuring
+
+You can extract properties from an object and assign them to variables using curly braces \`{}\`.
+
+\`\`\`javascript
+const person = {
+  name: "Alice",
+  age: 30,
+};
+const { name, age } = person;
+console.log(name); // Output: Alice
+console.log(age); // Output: 30
+\`\`\`
+
+You can also assign properties to variables with different names.
+
+\`\`\`javascript
+const person = {
+  name: "Alice",
+  age: 30,
+};
+const { name: personName, age: personAge } = person;
+console.log(personName); // Output: Alice
+console.log(personAge); // Output: 30
+\`\`\`
+
+## Nested Destructuring
+
+Destructuring can be used with nested objects and arrays as well.
+
+\`\`\`javascript
+const student = {
+  name: "Bob",
+  scores: {
+    math: 90,
+    english: 85,
+  },
+};
+const {
+  name,
+  scores: { math, english },
+} = student;
+console.log(name); // Output: Bob
+console.log(math); // Output: 90
+console.log(english); // Output: 85
+\`\`\`
+
+## The Rest Operator
+
+You can use the rest operator (\`...\`) to collect the remaining elements of an array or properties of an object into a new array or object.
+
+\`\`\`javascript
+// Array Rest Operator
+const numbers = [1, 2, 3, 4, 5];
+const [first, second, ...rest] = numbers;
+console.log(first); // Output: 1
+console.log(second); // Output: 2
+console.log(rest); // Output: [3, 4, 5]
+\`\`\`
+
+You can also destructure objects using the rest operator:
+
+\`\`\`javascript
+// Object Rest Operator
+const person = {
+  name: "Alice",
+  age: 30,
+  city: "New York",
+};
+const { name, ...rest } = person;
+console.log(name); // Output: Alice
+console.log(rest); // Output: { age: 30, city: "New York" }
+\`\`\`
+
+The rest operator is useful when you want to extract specific values while keeping the rest of the data intact, but still accessible for edge cases.
+
+## Using the Rest Operator in Function Parameters
+
+You can use the rest operator in function parameters to accept a variable number of arguments.
+
+\`\`\`javascript
+function sum(...numbers) {
+  return numbers.reduce((acc, curr) => acc + curr, 0);
+}
+console.log(sum(1, 2, 3)); // Output: 6
+console.log(sum(4, 5, 6, 7, 8)); // Output: 30
+\`\`\`
+`,Re=`# Fetch API
+
+The Fetch API provides a modern way to make network requests in JavaScript. It is built into most modern browsers and allows you to make HTTP requests to servers and handle responses using Promises.
+
+There are a few different requests you can make with the Fetch API, including GET, POST, PUT, PATCH, and DELETE.
+
+- GET: Used to retrieve data from a server.
+- POST: Used to send data to a server to create a new resource.
+- PUT: Used to update an existing resource on the server.
+- PATCH: Used to partially update an existing resource on the server.
+- DELETE: Used to delete a resource from the server.
+
+These operations correspond to the standard CRUD (Create, Read, Update, Delete) operations used in RESTful APIs.
+
+## Fetch Syntax
+
+The basic syntax for making a fetch request is as follows:
+
+\`\`\`javascript
+fetch(url, options);
+\`\`\`
+
+The \`fetch\` function takes two arguments:
+
+- \`url\`: The URL of the resource you want to fetch.
+- \`options\`: An optional object that contains settings for the request:
+  - \`method\`: The HTTP method (GET, POST, etc.).
+  - \`headers\`: An object containing any headers you want to include in the request.
+  - \`body\`: The body of the request (for POST, PUT, etc.).
+  - \`mode\`: The mode of the request (e.g., cors, no-cors, same-origin).
+  - \`credentials\`: Indicates whether to include cookies in the request.
+
+### Headers
+
+Headers are used to provide additional information about the request or response. You can set headers in the \`options\` object when making a fetch request.
+Header Options Include:
+
+- \`Content-Type\`: Specifies the media type of the resource (e.g., application/json).
+- \`Authorization\`: Contains credentials for authenticating the request.
+- \`Accept\`: Indicates the media types that are acceptable for the response.
+- \`Cache-Control\`: Directives for caching mechanisms in both requests and responses.
+
+Typically, most basic fetch requests will at least include the \`Content-Type\` header to specify the format of the data being sent or expected.
+
+\`\`\`javascript
+fetch("https://api.example.com/data", {
+  method: "GET",
+  headers: {
+    "Content-Type": "application/json",
+    Authorization: "Bearer your-token-here",
+  },
+});
+\`\`\`
+
+### Body
+
+The \`body\` property in the \`options\` object is used to send data to the server when making POST, PUT, or DELETE requests. The body can be a string, FormData, Blob, or other types depending on the content type.
+
+Typically, we will be sending JSON data, so we will convert a JavaScript object to a JSON string using \`JSON.stringify()\`.
+
+\`\`\`javascript
+const data = { name: "John", age: 30 };
+fetch("https://api.example.com/users", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json",
+  },
+  body: JSON.stringify(data),
+});
+\`\`\`
+
+### Mode
+
+The \`mode\` property in the \`options\` object specifies the mode of the request. The available modes are:
+
+- \`cors\`: Allows cross-origin requests with CORS headers.
+- \`no-cors\`: Restricts the request to same-origin only.
+- \`same-origin\`: Ensures the request is made to the same origin as the calling script.
+
+### Credentials
+
+The \`credentials\` property in the \`options\` object indicates whether to include cookies in the request. The available options are:
+
+- \`omit\`: Never send cookies.
+- \`same-origin\`: Send cookies for same-origin requests.
+- \`include\`: Always send cookies, even for cross-origin requests.
+
+\`\`\`javascript
+fetch("https://api.example.com/data", {
+  method: "GET",
+  credentials: "include", // Include cookies in the request
+});
+\`\`\`
+
+## Get Requests
+
+Here's an example of making a GET request using the Fetch API:
+
+\`\`\`javascript
+fetch("https://api.example.com/data", {
+  method: "GET",
+}).then((response) => {
+  if (response.ok) {
+    return response.json(); // Parse the JSON from the response
+  }
+});
+\`\`\`
+
+## POST Requests
+
+Here's an example of making a POST request using the Fetch API:
+
+\`\`\`javascript
+const newUser = { name: "Jane Doe", age: 25 };
+fetch("https://api.example.com/users", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json",
+  },
+  body: JSON.stringify(newUser),
+}).then((response) => {
+  if (response.ok) {
+    return response.json();
+  }
+});
+\`\`\`
+
+In this example, we create a new user object and send it to the server using a POST request. We set the appropriate headers and convert the user object to a JSON string for the request body. We then handle the response and any potential errors as before.
+
+## PUT and PATCH Requests
+
+You can use the Fetch API to make PUT and PATCH requests to update existing resources on the server.
+
+A PUT request is used to update an entire resource, while a PATCH request is used to update only specific fields of a resource.
+
+### PUT Request
+
+This will replace or _overwrite_ the entire resource with the new data provided.
+
+Any fields not included in the request will be removed from the resource.
+
+\`\`\`javascript
+// Example: Making a PUT request
+const updatedUser = { name: "Alice Smith", age: 31 };
+fetch("https://api.example.com/users/1", {
+  method: "PUT",
+  headers: {
+    "Content-Type": "application/json",
+  },
+  body: JSON.stringify(updatedUser),
+}).then((response) => response.json());
+\`\`\`
+
+### PATCH Request
+
+A PATCH request is used to update only specific fields of a resource.
+
+Fields not included in the request will remain unchanged.
+
+\`\`\`javascript
+// Example: Making a PATCH request
+const partialUpdate = { age: 32 };
+fetch("https://api.example.com/users/1", {
+  method: "PATCH",
+  headers: {
+    "Content-Type": "application/json",
+  },
+  body: JSON.stringify(partialUpdate),
+}).then((response) => response.json());
+\`\`\`
+
+## DELETE Request
+
+You can use the Fetch API to make DELETE requests to remove resources from the server.
+
+\`\`\`javascript
+// Example: Making a DELETE request
+fetch("https://api.example.com/users/1", {
+  method: "DELETE",
+}).then((response) => {
+  if (response.ok) {
+    console.log("User deleted successfully.");
+  }
+});
+\`\`\`
+
+## Handling Responses
+
+The Fetch API returns a Promise that resolves to the Response object representing the response to the request. You can use the \`then()\` method to handle the response.
+
+\`\`\`javascript
+fetch("https://api.example.com/data")
+  .then((response) => {
+    if (!response.ok) {
+      throw new Error("Network response was not ok " + response.statusText);
+    }
+    return response.json(); // Parse the JSON from the response
+  })
+  .then((data) => {
+    console.log(data); // Handle the parsed data
+  })
+  .catch((error) => {
+    console.error("There was a problem with the fetch operation:", error);
+  });
+\`\`\`
+
+In this example, we first check if the response is okay using the \`ok\` property. If it is not, we throw an error. Then, we parse the JSON from the response using the \`json()\` method, which also returns a Promise. Finally, we handle the parsed data in the next \`then()\` method and catch any errors that occur during the fetch operation.
+
+## Creating a Restful API with JSON Server
+
+You can use the Fetch API in combination with a mock RESTful API created using the JSON Server package.
+
+This is useful for testing and prototyping your applications without needing a real backend server.
+
+Learn how to set up a JSON Server in the [JSON notes](./17-JSON.md).
+
+Let's say we have a create new user form, we can use fetch to send the data to our JSON server.
+
+\`\`\`javascript
+// Example: Creating a new user
+const newUser = { name: "Charlie", age: 28, email: "charlie@example.com" };
+
+export function createUser(formData) {
+  const { name, age, email } = formData;
+  // You can add validation or transformation logic here if needed
+  if (!name || !age || !email) {
+    console.error("All fields are required.");
+    return;
+  }
+  const newFormData = {
+    name,
+    age,
+    email,
+  };
+
+  fetch("http://localhost:3000/users", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(newFormData),
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      console.log("New user created:", data);
+    })
+    .catch((error) => {
+      console.error("Error creating user:", error);
+    });
+}
+\`\`\`
+
+Now, if we want to retrieve that data later, we can use a GET request.
+
+\`\`\`javascript
+// Example: Fetching all users
+export function fetchUsers() {
+  fetch("http://localhost:3000/users")
+    .then((response) => response.json())
+    .then((data) => {
+      console.log("Fetched users:", data);
+    })
+    .catch((error) => {
+      console.error("Error fetching users:", error);
+    });
+}
+\`\`\`
+
+Then, we can create a function to update a user using a PUT request.
+
+\`\`\`javascript
+// Example: Updating a user
+export function updateUser(userId, updatedData) {
+  fetch(\`http://localhost:3000/users/\${userId}\`, {
+    method: "PUT",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(updatedData),
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      console.log("User updated:", data);
+    })
+    .catch((error) => {
+      console.error("Error updating user:", error);
+    });
+}
+\`\`\`
+`,ze=`# The DOM
+
+The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of a document as a tree of objects, allowing programming languages like JavaScript to manipulate the content, structure, and style of web pages dynamically.
+With the DOM, you can:
+
+- Access and modify HTML elements and their attributes.
+- Change the CSS styles of elements.
+- Add or remove elements from the document.
+- Respond to user events like clicks and key presses.
+
+## Key Words:
+
+- **Element**: An individual HTML tag in the document, such as \`<div>\`, \`<p>\`, or \`<a>\`.
+- **Node**: A single point in the DOM tree, which can be an element, text, or attribute.
+- **Document Object**: The root of the DOM tree, representing the entire HTML document.
+- **Event**: An action or occurrence that happens in the system, such as a user clicking a button or loading a page.
+- **Event Listener**: A function that waits for a specific event to occur and executes code in response.
+
+## Accessing DOM Elements
+
+You can access DOM elements using various methods provided by the \`document\` object. Some common methods include:
+
+- \`getElementById()\`: Selects an element by its ID.
+- \`getElementsByClassName()\`: Selects elements by their class name.
+- \`getElementsByTagName()\`: Selects elements by their tag name.
+- \`querySelector()\`: Selects the first element that matches a CSS selector.
+- \`querySelectorAll()\`: Selects all elements that match a CSS selector.
+
+### Getting an Element by ID
+
+getElementById() is used to select a single element with a specific ID, which is taken as an argument in string format.
+
+\`\`\`javascript
+const elementById = document.getElementById("myId");
+
+elementById.style.color = "blue";
+\`\`\`
+
+### Query Selector
+
+You can use querySelector() to select the first element that matches a specified CSS selector.
+
+The syntax is similar to CSS, so for an ID, you use \`#\`, and for a class, you use \`.\` before the name.
+
+Query selectors can be:
+
+- IDs
+  - Use a \`#\` followed by the ID name like \`#myId\`.
+- classes
+  - Use a \`.\` followed by the class name like \`.myClass\`.
+- tags/element types
+  - Simply use the tag name like \`div\`, \`p\`, \`span\`, etc.
+- data attributes
+  - For data attributes, you can use the attribute selector syntax like \`[data-attribute="value"]\`.
+- or any valid CSS selector.
+
+Theses can also be combined to form more specific selectors.
+
+\`\`\`javascript
+const firstParagraph = document.querySelector("p");
+firstParagraph.style.fontSize = "20px";
+\`\`\`
+
+### Query Selector All
+
+querySelectorAll() is used to select all elements that match a specified CSS selector. It returns a NodeList of all matching elements.
+
+\`\`\`javascript
+const allParagraphs = document.querySelectorAll("p");
+allParagraphs.forEach((para) => {
+  para.style.color = "green";
+});
+\`\`\`
+
+## Modifying DOM Elements
+
+Once you have accessed DOM elements, you can modify their properties, attributes, and styles. Here are some common ways to modify DOM elements:
+
+### Changing Content
+
+You can change the content of an element using the \`innerHTML\`, \`innerText\`, or \`textContent\` properties.
+
+#### InnerHTML
+
+When setting \`innerHTML\`, this is sometimes a security risk if the content includes user input, as it can lead to Cross-Site Scripting (XSS) attacks. Always sanitize user input before inserting it into the DOM.
+
+This is referred to as "dangerously set innerHTML" in some frameworks.
+
+\`\`\`javascript
+const myDiv = document.getElementById("myDiv");
+myDiv.innerHTML = "<strong>New Content</strong>";
+\`\`\`
+
+#### InnerText
+
+Setting \`innerText\` will treat the content as plain text, so don't use any HTML tags as they will be displayed as text rather than being rendered.
+
+\`\`\`javascript
+const myDiv = document.getElementById("myDiv");
+myDiv.innerText = "New Text Content";
+\`\`\`
+
+#### TextContent
+
+Setting \`textContent\` will also treat the content as plain text, similar to \`innerText\`. However, \`textContent\` is generally faster and more efficient for simply updating text.
+
+\`\`\`javascript
+const myDiv = document.getElementById("myDiv");
+myDiv.textContent = "New Text Content";
+\`\`\`
+
+### Changing Styles
+
+You can change the CSS styles of an element using the \`style\` property.
+
+Most CSS properties are accessed using camelCase notation in JavaScript. For example, \`background-color\` becomes \`backgroundColor\`, and \`font-size\` becomes \`fontSize\`.
+
+\`\`\`javascript
+const myDiv = document.getElementById("myDiv");
+myDiv.style.backgroundColor = "yellow";
+myDiv.style.fontSize = "18px";
+\`\`\`
+
+### Adding and Removing Elements
+
+You can add new elements to the DOM using methods like \`createElement()\`, \`appendChild()\`, and \`insertBefore()\`. You can remove elements using the \`removeChild()\` method.
+
+\`\`\`javascript
+const newParagraph = document.createElement("p");
+newParagraph.textContent = "This is a new paragraph.";
+document.body.appendChild(newParagraph); // Adds the new paragraph to the end of the body
+const oldParagraph = document.getElementById("oldParagraph");
+document.body.removeChild(oldParagraph); // Removes the old paragraph from the body
+\`\`\`
+
+You can also use the \`remove()\` method directly on the element to remove it from the DOM.
+
+\`\`\`javascript
+const oldParagraph = document.getElementById("oldParagraph");
+oldParagraph.remove(); // Removes the old paragraph from the DOM
+\`\`\`
+
+### Nodes and Node Lists
+
+When you use methods like \`getElementsByClassName()\`, \`getElementsByTagName()\`, or \`querySelectorAll()\`, they return a Node or NodeList. This is a HTMLCollection of elements. You can iterate over these collections using loops or the \`forEach()\` method (for NodeLists).
+
+To iterate over a NodeList, you can use:
+
+- A \`for\` loop
+- A \`for...of\` loop
+- The \`forEach()\` method (for NodeLists)
+
+#### Converting HTMLCollection to Array
+
+If you need to use array methods on an HTMLCollection, you can convert it to an array using \`Array.from()\` or the spread operator (\`...\`).
+
+\`\`\`javascript
+const items = document.getElementsByClassName("item");
+for (let item of ...items) {
+  item.style.color = "red";
+}
+\`\`\`
+
+We can can then use array methods like \`map()\`, \`filter()\`, etc., on the converted array.
+
+Sorting and filtering can also be done on the array.
+
+\`\`\`javascript
+const filteredItems = itemsArray.filter((item) =>
+  item.textContent.includes("important")
+);
+filteredItems.forEach((item) => {
+  item.style.fontWeight = "bold";
+});
+\`\`\`
+
+To sort the items based on their text content:
+
+\`\`\`javascript
+const container = document.getElementById("container");
+const items = container.getElementsByClassName("item");
+
+const itemsArray = Array.from(items);
+const sortedItems = itemsArray.sort((a, b) =>
+  a.textContent.localeCompare(b.textContent)
+);
+sortedItems.forEach((item) => {
+  container.appendChild(item); // Re-append to container in sorted order
+});
+\`\`\`
+
+#### Children and Parents
+
+You can access the child elements of a parent element using the \`children\` property, and you can access the parent element of a child using the \`parentElement\` property.
+
+\`\`\`javascript
+const parent = document.getElementById("parentElement");
+const children = parent.children; // HTMLCollection of child elements
+const firstChild = children[0];
+const parentOfChild = firstChild.parentElement; // Accessing the parent element
+\`\`\`
+`,Be=`# Regular Expressions (RegEx)
+
+Regular expressions in JavaScript are patterns used to match character combinations in strings. They are implemented using the \`RegExp\` object or by using literal syntax.
+
+## Creating Regular Expressions
+
+You can create a regular expression in two ways: using the \`RegExp\` constructor or using literal syntax.
+
+### Using the RegExp Constructor
+
+\`\`\`javascript
+const regex1 = new RegExp("ab+c"); // Matches 'a' followed by one or more 'b's and then 'c'
+\`\`\`
+
+### Using Literal Syntax
+
+\`\`\`javascript
+const regex2 = /ab+c/; // Same pattern as above
+\`\`\`
+
+## Functions and Methods
+
+### .test()
+
+Returns a boolean if the string matches or not
+
+\`\`\`javascript
+let regExp = /Hello/;
+let string = "Hello, world!";
+regExp.test(string); //returns true because the characters in the string match the expression
+//Regular expressions are case sensitive
+//so...
+regExp = /hello/;
+regExp.test(string); //returns false
+regExp = /hello/i; //the "i" flag makes it case insensitive
+regExp.test(string); //returns true
+\`\`\`
+
+### .exec()
+
+Executes a search with this regular expression for a match in a specified string and returns a result array, or null.
+
+\`\`\`javascript
+const regexTwo = /fo+/g;
+const strT = "table football, foosball";
+let arrayT;
+
+while ((arrayT = regexTwo.exec(strT)) !== null) {
+  console.log(\`Found \${arrayT[0]}. Next starts at \${regexTwo.lastIndex}.\`);
+  // Expected output: "Found foo. Next starts at 9."
+  // Expected output: "Found foo. Next starts at 19."
+}
+\`\`\`
+
+## SOME String methods can also be used:
+
+The function must be called on the STRING, and the regexp is passed as a parameter
+
+### .match(..)
+
+- Returns an array containing all of the matches, including capturing groups, or null if no match is found.
+
+\`\`\`javascript
+regExp = /t(e)(st(\\d?))/g;
+string = "test1test2test3";
+let matcherS = string.match(regExp);
+console.log(matcherS); //prints the first found element that matches the expression
+\`\`\`
+
+### .matchAll(..)
+
+- Returns an iterator containing all of the matches, including capturing groups
+
+### .search(..)
+
+- Tests for a match in a string. It returns the index of the match, or -1 if the search fails.
+
+### .replace(..)
+
+- Executes a search for a match in a string, and replaces the matched substring with a replacement substring.
+
+### .replaceAll(..)
+
+- Executes a search for all matches in a string, and replaces the matched substrings with a replacement substring.
+
+### .split(..)
+
+- Uses a regular expression or a fixed string to break a string into an array of substrings.
+
+### Others that will throw an error, as they are not allowed with reg Expressions
+
+such as:
+
+- .includes(..)
+- .startsWith(..)
+- .endsWith(..)
+
+## Flags
+
+Flags are added at the end of the regular expression i.e. : \`/hello/i\` -note the "i" at the end.
+
+If using "new" they are passed as a string as the second param : new RegExp("pattern", "g")
+
+Some common flags are:
+
+- **d** - generate indices for substring matches
+
+- **g** - global search
+
+- **i** - case insensitive search
+
+- **m** - Makes \`^\` and \`$\` match the start and end of each line instead of those of the entire string.
+
+- **s** - Allows \`.\` to match newline characters.
+
+- **u** - "Unicode" treat a pattern as a sequence of Unicode code points.
+
+- **v** - An upgrade to the u mode with more Unicode features.
+
+- **y** - Perform a "sticky" search that matches starting at the current position in the target string.
+
+## Character classes:
+
+visit the Mozilla Developer Network for a full cheat sheet: [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions/Cheatsheet)
+
+Using the \`\\\` (backslash) will allow an escape character to be used.
+
+Also keep in mind if using the "new RegExp" method, backslashes must also be escaped, or doubled up like \`\\\\d\` to represent \`\\d\`.
+
+- **\\d** - digit: is used to find numbers 0-9
+
+- **\\D**(CAPITALIZED) - non-digit: any character that is not 0-9
+
+- **\\w** - word: is used to find letters, numbers and underscore characters. Matches any alphanumeric character from the basic Latin alphabet, including the underscore. Equivalent to [A-Za-z0-9_].
+
+- **\\W** (CAPITALIZED) - non Word: Matches any character that is not a word character from the basic Latin alphabet. Equivalent to [^A-Za-z0-9_].
+
+- **\\s** - space character " "
+
+- **\\S** (CAPITALIZED) - Everything EXCEPT space character " "
+
+- **\\b** - word Boundary assertion: Word boundary assertion: Matches a word boundary. This is the position where a word character is not followed or preceded by another word-character, such as between a letter and a space. Note that a matched word boundary is not included in the match. In other words, the length of a matched word boundary is zero.
+  Examples:
+
+  - /\\bm/ matches the "m" in "moon".
+  - /oo\\b/ does not match the "oo" in "moon", because "oo" is followed by "n" which is a word character.
+  - /oon\\b/ matches the "oon" in "moon", because "oon" is the end of the string, thus not followed by a word character.
+  - /\\w\\b\\w/ will never match anything, because a word character can never be followed by both a non-word and a word character.
+
+- **\\B** (CAPITALIZED) - Non-word-boundary assertion: Matches a non-word boundary. This is a position where the previous and next character are of the same type: Either both must be words,
+  or both must be non-words, for example between two letters or between two spaces. The beginning and end of a string are considered non-words. Same as the matched word boundary, the matched
+  non-word boundary is also not included in the match. For example, /\\Bon/ matches "on" in "at noon", and /ye\\B/ matches "ye" in "possibly yesterday".
+
+## Other Important Characters
+
+### \\* - Asterisk:
+
+put after the character to indicate that the character may either NOT match at all or can match MULTIPLE times. like this : /be\\*r/ - will select "br","ber", "beer", "beeeeer" etc.
+
+### + - Plus:
+
+put after the character to indicate that the character can occur ONE OR MORE times. like this : /be\\*r/ will select "ber", "beer", "beeeeer" but NOT "br".
+
+### | - Pipe/OR:
+
+this is an OR character similar to || in javaScript. Use like: /(b|d)og/ to select "bog" or "dog"
+
+### \\ - Escape Character:
+
+used when a character such as "\\*,{,},?,!" or any other symbol that represents a character class is to be checked literally. Like: /\\.com/ checks for ".com"
+
+### [] - Brackets:
+
+Matches any one of the enclosed characters. You can specify a range of characters by using a hyphen, but if the hyphen appears as the first or last character enclosed in the square brackets,
+
+- it is taken as a literal hyphen to be included in the character class as a normal character.
+- use like [a-j] and then can add other things before and after
+
+### {} - Curly Braces:
+
+To express a certain number of occurrences of a character, at the end we write curly braces {n} along with how many times we want it to occur. i.e.\`/be{2}r/\` for "beer".
+
+- Can also be used to determine a range. Must be separated by a comma "," like \`/be{1,5}a?r/\` will select "ber", "beer", "bear", and "beeeeear"
+
+### () - Parentheses/Grouping:
+
+We can group an expression and use these groups to reference or enforce some rules. To group an expression, we enclose () in parentheses. This is used to assign a reference to the group
+
+For example:\` /(ha)-\\1,(haa)-\\2/\` "ha" is assigned reference "1", and "haa" is "2".
+
+When we want to reference these groups later in the pattern, we use \\1 for the first group and \\2 for the second group.
+
+You can also group an expression without "Capturing" it like this \`/(?:ha)-ha,(haa)-\\1/\` now the first group in parentheses "\`(?:ha)-\`" is not stored while the second "\`(haa)-\\1\`" is, and can be called later in the expression.
+
+### $ - Dollar Sign:
+
+used as a suffix to check for the expression at the END of the line. Like /html$/ selects the last html from "html-is-cool.'html'"
+
+### ^ - Caret Sign:
+
+used as a prefix to check for START of line. Like: /^Hello/ selects "Hello" from "Hello there and Hello again", but the second "Hello" is not selected if /m for multiline is selected will also match after line break
+
+### ^ - Negated character class:
+
+Matches anything that is not enclosed in the square brackets. You can specify a range of characters by using a hyphen, but if the hyphen appears as the first character
+
+- after the ^ or the last character enclosed in the square brackets, it is taken as a literal hyphen to be included in the character class as a normal character.
+
+For example, \`[^abc]\` is the same as \`[^a-c]\`. They initially match "o" in "bacon" and "h" in "chop".
+
+### . - Wildcard:
+
+Matches any single character except line terminators: \`\\n\`, \`\\r\`, \`\\u2028\` or \`\\u2029\`. For example,\`/.y/\` matches "my" and "ay", but not "yes", in "yes make my day", as there is no character before "y" in "yes". If the dotAll (s) flag is enabled, also matches line terminators. Inside a character class, the dot loses its special meaning and matches a literal dot.
+
+### ? Question Mark:
+
+has several uses such as lookaheads below, as well as to make a character optional when placed directly after i.e. \`/colou?r/\`will select both "color" and "colour"
+
+## Lookaheads and Lookbehinds
+
+### Positive lookahead:
+
+\`a+(?=bc)\` looks for \`a\` followed by \`bc\`.
+
+### Negative lookahead:
+
+\`\\d+(?!PM)\` matches digits not followed by \`PM\`.
+
+### Positive lookbehind:
+
+\`\\d+(?<=\\$)\` matches digits preceded by \`$\` (prices).
+
+### Negative lookbehind:
+
+\`\\d+(?<!\\$)\` matches digits not preceded by \`$\`.
+
+### Greedy matching (default)
+
+continues as long as possible.
+
+#### Example greedy: \`/.*r/\` matches all occurrences up to the last \`r\`.
+
+### Lazy matching
+
+stops at the first possible match.
+
+#### Example lazy: \`/.*?r/\` stops at first \`r\`.
+
+## Examples of common patterns
+
+### Minimum length example:
+
+\`/.{1,}/\` ensures at least one character.
+
+### Simple password validator (example pattern to refine):
+
+\`^(?=.*\\d)(?=.*[a-z])(?=.*[A-Z])[A-Za-z\\d]{6,}$\` requires at least six characters including uppercase, lowercase, and a digit.
+`,Ve=`# Constructors and Prototypes
+
+In JavaScript, constructors are special functions used to create and initialize objects. Prototypes are a mechanism by which JavaScript objects inherit features from one another.
+
+## Constructors
+
+A constructor function is defined using the \`function\` keyword or the \`class\` syntax. When called with the \`new\` keyword, it creates a new object instance.
+
+They are a bit dated now, but still important to understand.
+
+\`\`\`javascript
+// Constructor function
+function Person(name, age) {
+  this.name = name;
+  this.age = age;
+}
+
+const john = new Person("John", 30);
+console.log(john.name); // Output: John
+\`\`\`
+
+Classes provide a more modern syntax for defining constructors. Learn more about classes in the [Classes](./12-classes.md) section.
+
+\`\`\`javascript
+// Class syntax
+class Person {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+}
+const jane = new Person("Jane", 25);
+console.log(jane.age); // Output: 25
+\`\`\`
+
+## Prototypes
+
+Every JavaScript object has a prototype. A prototype is also an object. All JavaScript objects inherit their properties and methods from their prototype.
+
+You can add methods to a constructor's prototype so that all instances of that constructor share those methods.
+
+\`\`\`javascript
+function Person(name) {
+  this.name = name;
+}
+
+Person.prototype.greet = function () {
+  console.log(\`Hello, my name is \${this.name}\`);
+};
+
+john.greet(); // Output: Hello, my name is John
+\`\`\`
+
+This is more memory efficient than defining the method inside the constructor, as all instances share the same method.
+
+\`\`\`javascript
+function Person(name) {
+  this.name = name;
+  this.greet = function () {
+    console.log(\`Hello, my name is \${this.name}\`);
+  };
+}
+\`\`\`
+`,He=`# Sets and Maps
+
+Sets and Maps, as well as WeakSets and WeakMaps, are built-in data structures in JavaScript that provide efficient ways to store and manage collections of data.
+
+They feature unique properties and methods that differentiate them from traditional arrays and objects, and also offer specific use cases including memory management with weak references.
+
+If a object is only referenced by a WeakMap or WeakSet, it can be garbage collected, which helps in managing memory effectively.
+
+## Sets
+
+A **Set** is a collection of unique values. It can store any type of value, whether primitive or object references.
+
+One of its main features is that it automatically removes duplicate values.
+
+### Creating a Set
+
+You can create a Set using the \`Set\` constructor.
+
+\`\`\`javascript
+const mySet = new Set();
+\`\`\`
+
+You can also initialize a Set with an array of values:
+
+\`\`\`javascript
+const numArray = [1, 2, 3, 4, 5, 5, 4];
+const mySet = new Set(numArray); // Duplicates will be removed
+\`\`\`
+
+### Adding and Removing Values
+
+You can add values to a Set using the \`add()\` method and remove them using the \`delete()\` method.
+
+\`\`\`javascript
+mySet.add(6);
+mySet.delete(3);
+\`\`\`
+
+### Checking for Values
+
+You can check if a Set contains a specific value using the \`has()\` method.
+
+\`\`\`javascript
+console.log(mySet.has(2)); // Output: true
+console.log(mySet.has(10)); // Output: false
+\`\`\`
+
+### Iterating Over a Set
+
+You can iterate over the values in a Set using a \`for...of\` loop or the \`forEach()\` method.
+
+\`\`\`javascript
+for (let value of mySet) {
+  console.log(value);
+}
+\`\`\`
+
+\`\`\`javascript
+mySet.forEach((value) => {
+  console.log(value);
+});
+\`\`\`
+
+## Maps
+
+A **Map** is a collection of key-value pairs where both keys and values can be of any type. Unlike objects, Maps maintain the order of insertion and allow for keys of any type.
+
+### Creating a Map
+
+You can create a Map using the \`Map\` constructor.
+
+\`\`\`javascript
+const myMap = new Map();
+\`\`\`
+
+You can also initialize a Map with an array of key-value pairs:
+
+\`\`\`javascript
+const keyValueArray = [
+  ["name", "Alice"],
+  ["age", 30],
+];
+const myMap = new Map(keyValueArray);
+\`\`\`
+
+Initializing a Map with an object literal is not directly supported; you need to convert the object to an array of key-value pairs first.
+
+To do this, you can use \`Object.entries()\`:
+
+\`\`\`javascript
+const obj = { name: "Alice", age: 30 };
+const myMap = new Map(Object.entries(obj));
+\`\`\`
+
+### Adding and Removing Key-Value Pairs
+
+You can add key-value pairs to a Map using the \`set()\` method and remove them using the \`delete()\` method.
+
+\`\`\`javascript
+myMap.set("city", "New York");
+myMap.delete("age");
+\`\`\`
+
+### Checking for Keys
+
+You can check if a Map contains a specific key using the \`has()\` method.
+
+\`\`\`javascript
+console.log(myMap.has("name")); // Output: true
+console.log(myMap.has("age")); // Output: false
+\`\`\`
+
+### Iterating Over a Map
+
+You can iterate over the key-value pairs in a Map using a \`for...of\` loop or the \`forEach()\` method.
+
+#### Using for...of loop
+
+\`\`\`javascript
+for (let [key, value] of myMap) {
+  console.log(\`\${key}: \${value}\`);
+}
+\`\`\`
+
+#### Using forEach() method
+
+\`\`\`javascript
+myMap.forEach((value, key) => {
+  console.log(\`\${key}: \${value}\`);
+});
+\`\`\`
+
+## WeakSets and WeakMaps
+
+**WeakSets** and **WeakMaps** are similar to Sets and Maps, but they only hold weak references to their objects. This means that if there are no other references to an object stored in a WeakSet or WeakMap, it can be garbage collected.
+
+### Creating a WeakSet
+
+You can create a WeakSet using the \`WeakSet\` constructor. This works the same way as a Set, but only accepts objects as values.
+
+\`\`\`javascript
+const myWeakSet = new WeakSet();
+\`\`\`
+
+### Adding and Removing Values
+
+You can add objects to a WeakSet using the \`add()\` method and remove them using the \`delete()\` method.
+Same as Sets, but only objects are allowed.
+
+\`\`\`javascript
+const obj1 = { name: "Object 1" };
+myWeakSet.add(obj1);
+myWeakSet.delete(obj1);
+\`\`\`
+
+You can also use the \`has()\` method to check for the presence of an object in a WeakSet.
+
+\`\`\`javascript
+console.log(myWeakSet.has(obj1)); // Output: true or false depending on whether obj1 is in the WeakSet
+\`\`\`
+
+### Creating a WeakMap
+
+You can create a WeakMap using the \`WeakMap\` constructor. This works the same way as a Map, but only accepts objects as keys.
+
+\`\`\`javascript
+const myWeakMap = new WeakMap();
+\`\`\`
+
+### Adding and Removing Key-Value Pairs
+
+You can add key-value pairs to a WeakMap using the \`set()\` method and remove them using the \`delete()\` method.
+Same as Maps, but only objects are allowed as keys.
+
+## When to Use Sets and Maps, and their Weak Counterparts
+
+- Use **Sets** when you need to store a collection of unique values and want to efficiently check for the presence of a value.
+- Use **Maps** when you need to store key-value pairs and want to maintain the order of insertion.
+- Use **WeakSets** when you need to store a collection of objects without preventing them from being garbage collected.
+- Use **WeakMaps** when you need to associate data with objects without preventing those objects from being garbage collected.
+`,Ue=`# Learn SQL 🌎
 
 ## Welcome to the SQL Learning Notes!
 
@@ -4420,7 +6854,7 @@ For more in-depth learning, consider exploring the following resources:
   Happy learning! 🚀
 
 #### Setup Guide: Follow the [Setting Up SQL 🛠️](setting-up.md) notes to install and configure SQL on your machine.
-`,Ee=`# Getting started with SQL 🖥️ 🪛
+`,We=`# Getting started with SQL 🖥️ 🪛
 
 ## Intro
 
@@ -4512,7 +6946,7 @@ The following SQL statement creates a differential back up of the database "test
 #### Tip: A differential back up reduces the back up time (since only the changes are backed up).
 
 #### Previous: Explore the SQL learning notes overview in the [Learn SQL 🌎](sql-index.md) notes to understand the structure of the SQL learning material.
-`,De=`# Setting Up SQL 🛠️
+`,Ge=`# Setting Up SQL 🛠️
 
 Welcome to the SQL setup guide! This document will help you get started with installing and configuring SQL on your local machine or server.
 
@@ -4566,7 +7000,7 @@ If the query returns the version of your SQL database, congratulations! Your set
 
 
 #### Home: Return to the [Learn SQL 🌎](sql-index.md) main index for more SQL topics and resources.
-`,Oe=`# Overview of SQL Data Types
+`,Ke=`# Overview of SQL Data Types
 
 SQL data types define the kind of data that can be stored in a column of a database table. Choosing the correct data type is essential for data integrity, storage efficiency, and query performance.
 
@@ -4625,7 +7059,7 @@ Variables are used to store data values. When creating tables, you need to defin
 
 
 #### Previous: Review the [SQL Basics 📝](basics.md) notes to understand fundamental SQL concepts before diving into data types and tables.
-`,ke=`# Tables in SQL 🗄️
+`,qe=`# Tables in SQL 🗄️
 
 to get started with tables in SQL, you first need to understand the concept of variables and datatypes in SQL.
 
@@ -4760,7 +7194,7 @@ Remeber that a column is a variable name in a table, like CustomerID or Customer
 \`SELECT\` and \`FROM\` are SQL clauses and should be written in uppercase for better readability, while \`_tablename\` should be replaced with the actual name of the table you want to query.
 
 #### Previous: Review the [SQL Data Types 📊](data-types.md) notes to understand different data types available in SQL before creating tables.
-`,Ae=`# SQL Constraints 📏
+`,Je=`# SQL Constraints 📏
 
 SQL constraints are rules applied to table columns to enforce data integrity and consistency. They help ensure that the data entered into the database adheres to specific requirements.
 
@@ -4843,7 +7277,7 @@ Useful for establishing relationships between tables, such as linking orders to 
 
 
 #### Home: Return to the [Learn SQL 🌎](sql-index.md) main index for more SQL topics and resources.
-`,je=`# Manipulating Data in SQL 🛠️
+`,Ye=`# Manipulating Data in SQL 🛠️
 
 ## The SQL INSERT INTO Statement
 
@@ -4925,7 +7359,7 @@ The following SQL statement deletes the customer with CustomerID 1:
 
 
 #### Previous: Review the [Tables in SQL 🗄️](tables.md) notes to understand how to create and define tables before manipulating data.
-`,Me=`# Advanced Manipulating Data in SQL 🛠️
+`,Xe=`# Advanced Manipulating Data in SQL 🛠️
 
 ## The SQL MERGE Statement
 
@@ -4986,7 +7420,7 @@ ON CONFLICT (CustomerID)
 DO UPDATE SET CustomerFirstName = EXCLUDED.CustomerFirstName, CustomerLastName = EXCLUDED.CustomerLastName;
 
 #### Tip: The UPSERT operation is useful for maintaining data integrity and avoiding duplicate records in a table.
-`,Ne=`# SQLite
+`,Ze=`# SQLite
 
 SQLite is a lightweight, serverless, self-contained SQL database engine. It is widely used in mobile applications, embedded systems, and for prototyping due to its simplicity and minimal setup requirements.
 
@@ -5075,7 +7509,7 @@ Once you have SQLite installed, you can use the following basic commands to inte
 - \`.tables\` - Lists all tables in the current database.
 - \`.schema tablename\` - Displays the schema (structure) of the specified table.
 - \`.exit\` - Exits the SQLite shell.
-`,Pe=`# TypeScript Basics
+`,Qe=`# TypeScript Basics
 
 Welcome to TypeScript! This guide covers the fundamentals of TypeScript, a typed superset of JavaScript.
 
@@ -5203,7 +7637,7 @@ interface Repository<T> {
 - Learn about [Advanced Types](advanced-types.md)
 - Explore [Decorators](decorators.md)
 - Master [Module Systems](modules.md)
-`,Fe=`# TypeScript Notes
+`,$e=`# TypeScript Notes
 
 Welcome to the TypeScript section! Here you'll find notes about TypeScript, the typed superset of JavaScript.
 
@@ -5252,7 +7686,7 @@ function greet(name: string): string {
 \`\`\`
 
 More detailed content coming soon!
-`,Ie={"../notes/c/00-c-index.md":S,"../notes/computer-science/00-general-knowledge.md":C,"../notes/computer-science/01-hardware.md":w,"../notes/computer-science/02-numbers.md":T,"../notes/computer-science/03-strings.md":E,"../notes/computer-science/04-math-operations.md":D,"../notes/cpp/00-cpp-index.md":O,"../notes/css/01-CSS-index.md":k,"../notes/css/02-basics.md":A,"../notes/css/03-colors.md":j,"../notes/css/04-display-property.md":ee,"../notes/css/05-positioning.md":M,"../notes/css/06-selectors.md":N,"../notes/css/07-pseudo-selectors.md":P,"../notes/css/08-specificity.md":F,"../notes/css/09-inheritance.md":te,"../notes/css/10-flexbox-basics.md":I,"../notes/css/11-grid-layouts.md":L,"../notes/css/12-form-styling.md":R,"../notes/css/13-modals.md":ne,"../notes/css/14-animations.md":z,"../notes/css/15-themeing.md":re,"../notes/css/16-building-a-dropdown.md":``,"../notes/git/00-git-init.md":ie,"../notes/git/01-git-branching.md":ae,"../notes/home.md":oe,"../notes/html/00-html-index.md":se,"../notes/html/01-get-started-with-html.md":ce,"../notes/html/02-classes-ids-and-data-attributes.md":le,"../notes/html/03-forms.md":ue,"../notes/java/00-java-index.md":de,"../notes/javascript/00-javascript-index.md":fe,"../notes/javascript/01-variables-and-datatypes.md":pe,"../notes/javascript/02-operators.md":me,"../notes/javascript/03-conditionals.md":he,"../notes/javascript/04-ternary-operator.md":ge,"../notes/javascript/05-loops.md":_e,"../notes/javascript/06-functions.md":ve,"../notes/javascript/07-string-methods.md":ye,"../notes/javascript/08-template-literals.md":be,"../notes/javascript/09-scope.md":xe,"../notes/javascript/10-arrays.md":Se,"../notes/javascript/11-objects.md":Ce,"../notes/javascript/12-imports-and-exports.md":we,"../notes/react/00-react-index.md":r,"../notes/react/01-components.md":d,"../notes/react/02-state.md":o,"../notes/react/03-conditional-rendering.md":n,"../notes/react/04-hooks.md":u,"../notes/react/05-use-effect.md":c,"../notes/react/06-use-ref.md":t,"../notes/sql/00-sql-index.md":Te,"../notes/sql/01-get-started.md":Ee,"../notes/sql/02-setting-up.md":De,"../notes/sql/03-data-types.md":Oe,"../notes/sql/04-tables.md":ke,"../notes/sql/05-constraints.md":Ae,"../notes/sql/06-manipulating-data.md":je,"../notes/sql/07-advanced-manipulating-data.md":Me,"../notes/sql/08-installing-sqlite.md":Ne,"../notes/typescript/typescript-basics.md":Pe,"../notes/typescript/typescript-index.md":Fe},B={},V={};Object.entries(Ie).forEach(([e,t])=>{let n=e.split(`/`),r=n[n.length-1]||``;if(n.length===3&&r===`home.md`){V[r]={content:t,section:`home`};return}if(n.length>3){let e=n[n.length-2];B[e]||(B[e]={}),B[e][r]=t,V[r]={content:t,section:e}}});const H=e=>e.replace(/^\d{2}-/,``),U=e=>H(e).replace(`.md`,``).replace(/-/g,` `).replace(/\b\w/g,e=>e.toUpperCase()),W=e=>Object.keys(B[e]||{}).sort((e,t)=>{let n=parseInt(e.match(/^\d+/)?.[0]||`999`),r=parseInt(t.match(/^\d+/)?.[0]||`999`);return n===r?e.localeCompare(t):n-r}),Le=()=>Object.keys(B),G=e=>{let t=V[e];return t?t.section:null},K=e=>{let t=G(e);if(!t)return null;let n=W(t),r=n.indexOf(e);if(r===-1||r>=n.length-1)return null;let i=n[r+1];return{filename:i,title:U(i)}},q=e=>{let t=e.replace(/^\/notes\/[^/]+\//,``).replace(/^\/notes\//,``),n=V[t];if(!n){let e=Object.keys(V).join(`, `);throw Error(`Note not found: ${t}. Available: ${e}`)}return console.log(`Retrieved note:`,t,`from section:`,n.section),n.content},Re=e=>{if(!e.trim())return[];let t=e.toLowerCase(),n=[];return Object.entries(V).forEach(([r,i])=>{let{content:a,section:o}=i,s=a.split(`
-`),c=[];if(s.forEach((n,r)=>{if(n.toLowerCase().includes(t)){let t=ze(n,e);c.push({context:n.trim(),lineNumber:r+1,highlightedText:t})}}),c.length>0){let e=o===`home`?{name:`Home`,icon:`🏠`}:x[o]||{name:o,icon:`📄`};n.push({filename:r,title:U(r),section:e.name,sectionIcon:e.icon,matches:c.slice(0,3),totalMatches:c.length})}}),n.sort((e,t)=>e.totalMatches===t.totalMatches?e.title.localeCompare(t.title):t.totalMatches-e.totalMatches)};var ze=(e,t)=>{let n=RegExp(`(${t})`,`gi`);return e.replace(n,`<mark>$1</mark>`)};const Be=()=>{let e=Le(),t=[];return t.push({text:`Home`,href:`home.md`,icon:`🏠`}),e.forEach(e=>{let n=x[e.toLowerCase()],r=W(e);if(r.length>0){let i=r.map(e=>({text:Ve(e),href:e})),a=n?.icon||`📁`,o=n?.name||e.charAt(0).toUpperCase()+e.slice(1);t.push({text:o,icon:a,children:i})}}),t};var Ve=e=>H(e).replace(`.md`,``).replace(/-/g,` `).replace(/\b\w/g,e=>e.toUpperCase());const He=Be();function Ue({onSearch:e,onClear:t,placeholder:n=`Search all notes...`}){let[r,i]=(0,_.useState)(``),[a,o]=(0,_.useState)(!1),s=(0,_.useRef)(null),c=n=>{let r=n.target.value;i(r),r.trim()?e(r):t()},l=()=>{i(``),t(),s.current?.focus()};return(0,_.useEffect)(()=>{let e=e=>{(e.ctrlKey||e.metaKey)&&e.key===`k`&&(e.preventDefault(),s.current?.focus())};return document.addEventListener(`keydown`,e),()=>document.removeEventListener(`keydown`,e)},[]),(0,v.jsx)(`div`,{className:`search-bar ${a?`focused`:``}`,children:(0,v.jsxs)(`div`,{className:`search-input-container`,children:[(0,v.jsx)(`span`,{className:`search-icon`,children:`🔍`}),(0,v.jsx)(`input`,{ref:s,type:`text`,value:r,onChange:c,onKeyDown:e=>{e.key===`Escape`&&l()},onFocus:()=>o(!0),onBlur:()=>o(!1),placeholder:n,className:`search-input`}),r&&(0,v.jsx)(`button`,{onClick:l,className:`search-clear`,"aria-label":`Clear search`,children:`✕`})]})})}function We({setCurrentNote:e,currentSection:t,currentNoteName:n,onSearch:r,onClearSearch:i,isMobile:a,rightSidebarContent:o}){let[s,c]=(0,_.useState)(null),[l,u]=(0,_.useState)(`chapters`);(0,_.useEffect)(()=>{if(t){let e=He.findIndex(e=>{if(e.text&&t in x){let n=x[t];return e.text.includes(n.name)}return!1});e!==-1&&c(e)}},[t]);let d=e=>{c(s===e?null:e)};return(0,v.jsxs)(`div`,{className:`left-nav`,children:[a&&o&&(0,v.jsxs)(`div`,{className:`mobile-nav-toggle`,children:[(0,v.jsx)(`button`,{className:`mobile-nav-btn ${l===`chapters`?`active`:``}`,onClick:()=>u(`chapters`),children:`All Chapters`}),(0,v.jsx)(`button`,{className:`mobile-nav-btn ${l===`page`?`active`:``}`,onClick:()=>u(`page`),children:`On this page`})]}),(!a||l===`chapters`)&&(0,v.jsxs)(v.Fragment,{children:[(0,v.jsx)(Ue,{onSearch:e=>{r?.(e)},onClear:()=>{i?.()},placeholder:`Search all notes...`}),He.map((t,r)=>{if(t.children){let i=s===r;return(0,v.jsxs)(`div`,{className:`dropdown-parent ${i?`active`:``}`,children:[(0,v.jsxs)(`div`,{className:`dropdown-title`,onClick:()=>d(r),children:[(0,v.jsx)(`span`,{className:`section-arrow`,children:i?`▼`:`▶`}),t.icon&&typeof t.icon==`string`&&/\.(png|jpg|jpeg|svg)$/i.test(t.icon)?(0,v.jsx)(`img`,{src:t.icon,alt:`${t.text} icon`,className:`section-icon-img`}):t.icon?(0,v.jsx)(`span`,{className:`emoji-icon`,children:t.icon}):null,(0,v.jsx)(`span`,{children:t.text})]}),(0,v.jsx)(`div`,{className:`dropdown-children ${i?`expanded`:`collapsed`}`,children:t.children.map((t,r)=>(0,v.jsx)(`p`,{className:`child-link ${n===t.href?`active`:``}`,onClick:()=>t.href&&e(t.href),children:t.text},r))})]},r)}else return(0,v.jsxs)(`div`,{className:`parent-link ${n===t.href?`active`:``}`,onClick:()=>t.href&&e(t.href),children:[t.icon&&typeof t.icon==`string`&&/\.(png|jpg|jpeg|svg)$/i.test(t.icon)?(0,v.jsx)(`img`,{src:t.icon,alt:`${t.text} icon`,className:`section-icon-img`}):t.icon?(0,v.jsx)(`span`,{className:`emoji-icon`,children:t.icon}):null,(0,v.jsx)(`span`,{children:t.text})]},r)})]}),a&&l===`page`&&o&&(0,v.jsx)(`div`,{className:`mobile-page-overview`,children:o})]})}function Ge({currentNote:e,currentNoteName:t,onLoadNote:n}){let[r,i]=(0,_.useState)([]),[a,o]=(0,_.useState)(null),[s,c]=(0,_.useState)(``);(0,_.useEffect)(()=>{if(!e){i([]),o(null);return}let r=/^(#{1,6})\s+(.+)$/gm,a=[],s;for(;(s=r.exec(e))!==null;){let e=s[1].length,t=s[2].trim();if(e===4)continue;let n=t.toLowerCase().replace(/[^\w\s-]/g,``).replace(/\s+/g,`-`);a.push({id:n,text:t,level:e})}if(n){let e=K(t);e&&a.push({id:`next-lesson`,text:`Next: ${e.title}`,level:2})}i(a);let c=e.replace(/#{1,6}\s+/g,``).replace(/\[([^\]]+)\]\([^)]+\)/g,`$1`).replace(/[*_`]/g,``).trim().split(/\s+/).filter(e=>e.length>0).length,l=Math.max(1,Math.ceil(c/200)),u=e.length;o({wordCount:c,readingTime:l,characterCount:u})},[e,t,n]);let l=e=>{if(e===`next-lesson`&&n){let e=K(t);e&&n(e.filename);return}let r=document.getElementById(e);r&&(r.scrollIntoView({behavior:`smooth`,block:`start`}),c(e))};return(0,_.useEffect)(()=>{let e=()=>{let e=r.map(e=>({id:e.id,element:document.getElementById(e.id)})),t=``;for(let n of e)n.element&&n.element.getBoundingClientRect().top<=100&&(t=n.id);c(t)},t=document.querySelector(`.center.main`);if(t)return t.addEventListener(`scroll`,e),()=>t.removeEventListener(`scroll`,e)},[r]),e?(0,v.jsxs)(`div`,{className:`right-sidebar`,children:[(0,v.jsxs)(`div`,{className:`sidebar-section`,children:[(0,v.jsx)(`h3`,{children:`📊 Note Info`}),(0,v.jsxs)(`div`,{className:`note-stats`,children:[(0,v.jsxs)(`div`,{className:`stat-item`,children:[(0,v.jsx)(`span`,{className:`stat-label`,children:`📄 File:`}),(0,v.jsx)(`span`,{className:`stat-value`,children:H(t)})]}),a&&(0,v.jsxs)(v.Fragment,{children:[(0,v.jsxs)(`div`,{className:`stat-item`,children:[(0,v.jsx)(`span`,{className:`stat-label`,children:`📝 Words:`}),(0,v.jsx)(`span`,{className:`stat-value`,children:a.wordCount.toLocaleString()})]}),(0,v.jsxs)(`div`,{className:`stat-item`,children:[(0,v.jsx)(`span`,{className:`stat-label`,children:`⏱️ Read time:`}),(0,v.jsxs)(`span`,{className:`stat-value`,children:[a.readingTime,` min`]})]}),(0,v.jsxs)(`div`,{className:`stat-item`,children:[(0,v.jsx)(`span`,{className:`stat-label`,children:`🔤 Characters:`}),(0,v.jsx)(`span`,{className:`stat-value`,children:a.characterCount.toLocaleString()})]})]})]})]}),r.length>0&&(0,v.jsxs)(`div`,{className:`sidebar-section`,children:[(0,v.jsx)(`h3`,{children:`📚 Table of Contents`}),(0,v.jsx)(`nav`,{className:`toc-nav`,children:r.map((e,t)=>(0,v.jsxs)(`button`,{className:`toc-item level-${e.level} ${s===e.id?`active`:``} ${e.id===`next-lesson`?`next-lesson`:``}`,onClick:()=>l(e.id),title:e.text,children:[e.id===`next-lesson`&&(0,v.jsx)(`span`,{className:`next-lesson-icon`,children:`🚀`}),e.text]},t))})]})]}):(0,v.jsx)(`div`,{className:`right-sidebar`,children:(0,v.jsxs)(`div`,{className:`sidebar-section`,children:[(0,v.jsx)(`h3`,{children:`📖 Note Info`}),(0,v.jsx)(`p`,{className:`no-note-message`,children:`Select a note to see its table of contents and information.`})]})})}var Ke=`modulepreload`,qe=function(e){return`/code-wiki-app/`+e},Je={};const Ye=function(e,t,n){let r=Promise.resolve();if(t&&t.length>0){let e=document.getElementsByTagName(`link`),i=document.querySelector(`meta[property=csp-nonce]`),a=i?.nonce||i?.getAttribute(`nonce`);function o(e){return Promise.all(e.map(e=>Promise.resolve(e).then(e=>({status:`fulfilled`,value:e}),e=>({status:`rejected`,reason:e}))))}r=o(t.map(t=>{if(t=qe(t,n),t in Je)return;Je[t]=!0;let r=t.endsWith(`.css`),i=r?`[rel="stylesheet"]`:``;if(n)for(let n=e.length-1;n>=0;n--){let i=e[n];if(i.href===t&&(!r||i.rel===`stylesheet`))return}else if(document.querySelector(`link[href="${t}"]${i}`))return;let o=document.createElement(`link`);if(o.rel=r?`stylesheet`:Ke,r||(o.as=`script`),o.crossOrigin=``,o.href=t,a&&o.setAttribute(`nonce`,a),document.head.appendChild(o),r)return new Promise((e,n)=>{o.addEventListener(`load`,e),o.addEventListener(`error`,()=>n(Error(`Unable to preload CSS for ${t}`)))})}))}function i(e){let t=new Event(`vite:preloadError`,{cancelable:!0});if(t.payload=e,window.dispatchEvent(t),!t.defaultPrevented)throw e}return r.then(t=>{for(let e of t||[])e.status===`rejected`&&i(e.reason);return e().catch(i)})};var Xe=(0,_.lazy)(()=>Ye(()=>import(`./react-markdown-BYjrAzbE.js`),__vite__mapDeps([0,1,2,3,4,5])));function Ze({displayName:e,content:t,languageDirectory:n,styleUpNextSections:r,loadNote:i}){return(0,_.useEffect)(()=>{document.title=e?`${U(e)} - ${n||`Notes`}`:`Programming Notes`},[e,n]),(0,v.jsx)(_.Suspense,{fallback:(0,v.jsx)(y,{}),children:(0,v.jsx)(Qe,{content:t,styleUpNextSections:r,loadNote:i})})}function Qe({content:e,styleUpNextSections:t,loadNote:n}){return(0,v.jsx)(Xe,{remarkPlugins:[m,h],rehypePlugins:[f,p],components:{h1:({children:e,...t})=>(0,v.jsx)(`h1`,{...t,id:String(e)?.toLowerCase().replace(/[^\w\s-]/g,``).replace(/\s+/g,`-`),children:e}),h2:({children:e,...t})=>(0,v.jsx)(`h2`,{...t,id:String(e)?.toLowerCase().replace(/[^\w\s-]/g,``).replace(/\s+/g,`-`),children:e}),h3:({children:e,...t})=>(0,v.jsx)(`h3`,{...t,id:String(e)?.toLowerCase().replace(/[^\w\s-]/g,``).replace(/\s+/g,`-`),children:e}),h4:({children:e,...n})=>(0,v.jsx)(`h4`,{...n,id:String(e)?.toLowerCase().replace(/[^\w\s-]/g,``).replace(/\s+/g,`-`),onLoad:()=>{setTimeout(t,100)},children:e}),h5:({children:e,...t})=>(0,v.jsx)(`h5`,{...t,id:String(e)?.toLowerCase().replace(/[^\w\s-]/g,``).replace(/\s+/g,`-`),children:e}),h6:({children:e,...t})=>(0,v.jsx)(`h6`,{...t,id:String(e)?.toLowerCase().replace(/[^\w\s-]/g,``).replace(/\s+/g,`-`),children:e}),a:({href:e,children:t,...r})=>(0,v.jsx)(`a`,{href:e,onClick:t=>{if(e&&e.endsWith(`.md`)&&n){t.preventDefault();let r=e;e.includes(`/`)&&(r=e.split(`/`).pop()||e),console.log(`Internal link clicked:`,e,`-> normalized:`,r);try{n(r)}catch(e){console.error(`Failed to load note: ${r}`,e);try{n(r)}catch(e){console.error(`Failed to load note with filename: ${r}`,e),alert(`Note not found: ${r}`)}}}},className:`markdown-link`,...r,children:t}),table:({children:e,...t})=>(0,v.jsx)(`table`,{...t,className:`markdown-table`,children:e}),th:({children:e,...t})=>(0,v.jsx)(`th`,{...t,className:`markdown-th`,children:e}),td:({children:e,...t})=>(0,v.jsx)(`td`,{...t,className:`markdown-td`,children:e}),img:({src:e,alt:t,...n})=>(0,v.jsx)(`img`,{src:e?.startsWith(`/`)?`/code-wiki-app/${e.slice(1)}`:e,alt:t,style:{maxWidth:`100%`,height:`auto`,border:`1px solid #ddd`,borderRadius:`4px`,margin:`15px 0`,display:`block`},...n})},children:e})}function $e({currentFilename:e,onLoadNote:t}){let n=K(e);return n?(0,v.jsx)(`div`,{className:`next-lesson-container`,children:(0,v.jsx)(`button`,{className:`next-lesson-button`,onClick:()=>{t(n.filename)},"aria-label":`Go to next lesson: ${n.title}`,children:(0,v.jsxs)(`div`,{className:`next-lesson-content`,children:[(0,v.jsx)(`span`,{className:`next-lesson-label`,children:`Up Next`}),(0,v.jsx)(`span`,{className:`next-lesson-title`,children:n.title}),(0,v.jsx)(`span`,{className:`next-lesson-arrow`,children:`→`})]})})}):null}function et({results:e,query:t,isLoading:n=!1,onSelectNote:r,onClose:i}){let a=e=>{r(e),i()};return t.trim()?(0,v.jsx)(`div`,{className:`search-results-overlay`,onClick:i,children:(0,v.jsxs)(`div`,{className:`search-results-container`,onClick:e=>e.stopPropagation(),children:[(0,v.jsxs)(`div`,{className:`search-results-header`,children:[(0,v.jsx)(`h3`,{children:`Search Results`}),(0,v.jsx)(`button`,{onClick:i,className:`search-results-close`,"aria-label":`Close search results`,children:`✕`})]}),n?(0,v.jsxs)(`div`,{className:`search-loading`,children:[(0,v.jsx)(`div`,{className:`search-spinner`}),(0,v.jsx)(`span`,{children:`Searching...`})]}):(0,v.jsxs)(v.Fragment,{children:[(0,v.jsx)(`div`,{className:`search-results-info`,children:e.length===0?(0,v.jsxs)(`span`,{children:[`No results found for "`,t,`"`]}):(0,v.jsxs)(`span`,{children:[`Found `,e.length,` `,e.length===1?`result`:`results`,` for "`,t,`"`]})}),(0,v.jsx)(`div`,{className:`search-results-list`,children:e.map((e,t)=>(0,v.jsxs)(`div`,{className:`search-result-card`,onClick:()=>a(e.filename),children:[(0,v.jsxs)(`div`,{className:`search-result-header`,children:[(0,v.jsxs)(`div`,{className:`search-result-title`,children:[(0,v.jsx)(`span`,{className:`search-result-icon`,children:/\.(png|jpg|jpeg|svg)$/i.test(e.sectionIcon)?(0,v.jsx)(`img`,{src:e.sectionIcon,alt:`${e.section} icon`,className:`section-icon-img`}):e.sectionIcon}),(0,v.jsx)(`span`,{className:`search-result-name`,children:e.title})]}),(0,v.jsxs)(`div`,{className:`search-result-meta`,children:[(0,v.jsx)(`span`,{className:`search-result-section`,children:e.section}),(0,v.jsxs)(`span`,{className:`search-result-count`,children:[e.totalMatches,` `,e.totalMatches===1?`match`:`matches`]})]})]}),(0,v.jsxs)(`div`,{className:`search-result-matches`,children:[e.matches.map((e,t)=>(0,v.jsxs)(`div`,{className:`search-result-match`,children:[(0,v.jsxs)(`div`,{className:`search-result-line-number`,children:[`Line `,e.lineNumber]}),(0,v.jsx)(`div`,{className:`search-result-context`,dangerouslySetInnerHTML:{__html:e.highlightedText}})]},t)),e.totalMatches>e.matches.length&&(0,v.jsxs)(`div`,{className:`search-result-more`,children:[`+`,e.totalMatches-e.matches.length,` more`,` `,e.totalMatches-e.matches.length===1?`match`:`matches`]})]})]},`${e.filename}-${t}`))})]})]})}):null}var J=`notes-app-preferences`,Y=`notes-app-storage-allowed`;const X=()=>{try{return localStorage.getItem(Y)===`true`}catch{return!1}},tt=()=>{try{return!localStorage.getItem(`notes-app-visited`)}catch{return!0}},nt=()=>{try{localStorage.setItem(`notes-app-visited`,`true`)}catch{}},rt=e=>{try{e?localStorage.setItem(Y,`true`):localStorage.removeItem(Y)}catch{}},Z=()=>{let e={theme:`system`,allowsStorage:!1,visitedNotes:[],firstVisit:!0};if(!X())return e;try{let t=localStorage.getItem(J);if(t){let n=JSON.parse(t);return{...e,...n}}}catch{}return e},Q=e=>{if(X())try{let t={...Z(),...e};localStorage.setItem(J,JSON.stringify(t))}catch{}},it=e=>{X()&&Q({visitedNotes:[e,...(Z().visitedNotes||[]).filter(t=>t!==e)].slice(0,20)})},at=()=>{try{localStorage.removeItem(J),localStorage.removeItem(Y),localStorage.removeItem(`notes-app-visited`)}catch{}},ot=()=>typeof window<`u`&&window.matchMedia&&window.matchMedia(`(prefers-color-scheme: dark)`).matches?`dark`:`light`,$=e=>{let t=document.documentElement,n;n=e===`system`?ot():e,t.setAttribute(`data-theme`,n),t.classList.remove(`theme-light`,`theme-dark`),t.classList.add(`theme-${n}`)},st=e=>{if(typeof window>`u`||!window.matchMedia)return()=>{};let t=window.matchMedia(`(prefers-color-scheme: dark)`),n=t=>{e(t.matches?`dark`:`light`)};return t.addEventListener(`change`,n),()=>t.removeEventListener(`change`,n)};function ct({isOpen:e,onComplete:t}){let[n,r]=(0,_.useState)(`storage`),[i,a]=(0,_.useState)(!1),[o,s]=(0,_.useState)(``),[c,l]=(0,_.useState)(`system`);if(!e)return null;let u=e=>{a(e),e?r(`setup`):t({allowsStorage:!1,theme:`system`})},d=()=>{t({allowsStorage:i,username:o.trim()||void 0,theme:c})},f=()=>{s(``),d()},p=e=>{l(e),$(e)};return(0,v.jsx)(`div`,{className:`welcome-modal-overlay`,children:(0,v.jsx)(`div`,{className:`welcome-modal`,children:n===`storage`?(0,v.jsxs)(v.Fragment,{children:[(0,v.jsx)(`div`,{className:`welcome-modal-header`,children:(0,v.jsx)(`h2`,{children:`Welcome to Programming Notes! 📚`})}),(0,v.jsxs)(`div`,{className:`welcome-modal-content`,children:[(0,v.jsx)(`p`,{children:`To provide you with a personalized experience, we'd like to save your preferences and reading history locally on your device.`}),(0,v.jsxs)(`div`,{className:`storage-benefits`,children:[(0,v.jsxs)(`div`,{className:`benefit-item`,children:[(0,v.jsx)(`span`,{className:`benefit-icon`,children:`🎨`}),(0,v.jsx)(`span`,{children:`Remember your theme preference`})]}),(0,v.jsxs)(`div`,{className:`benefit-item`,children:[(0,v.jsx)(`span`,{className:`benefit-icon`,children:`📖`}),(0,v.jsx)(`span`,{children:`Track your reading history`})]}),(0,v.jsxs)(`div`,{className:`benefit-item`,children:[(0,v.jsx)(`span`,{className:`benefit-icon`,children:`👤`}),(0,v.jsx)(`span`,{children:`Personalized welcome messages`})]})]}),(0,v.jsxs)(`p`,{className:`storage-note`,children:[(0,v.jsx)(`strong`,{children:`Your privacy matters:`}),` All data stays on your device. Nothing is sent to any servers.`]})]}),(0,v.jsxs)(`div`,{className:`welcome-modal-actions`,children:[(0,v.jsx)(`button`,{onClick:()=>u(!1),className:`btn-secondary`,children:`No Thanks`}),(0,v.jsx)(`button`,{onClick:()=>u(!0),className:`btn-primary`,children:`Allow Local Storage`})]})]}):(0,v.jsxs)(v.Fragment,{children:[(0,v.jsx)(`div`,{className:`welcome-modal-header`,children:(0,v.jsx)(`h2`,{children:`Let's Personalize Your Experience ✨`})}),(0,v.jsxs)(`div`,{className:`welcome-modal-content`,children:[(0,v.jsxs)(`div`,{className:`setup-section`,children:[(0,v.jsx)(`label`,{htmlFor:`username`,className:`setup-label`,children:`What should we call you? (Optional)`}),(0,v.jsx)(`input`,{id:`username`,type:`text`,value:o,onChange:e=>s(e.target.value),placeholder:`Enter your name...`,className:`setup-input`,maxLength:50})]}),(0,v.jsxs)(`div`,{className:`setup-section`,children:[(0,v.jsx)(`label`,{className:`setup-label`,children:`Choose your theme`}),(0,v.jsxs)(`div`,{className:`theme-options`,children:[(0,v.jsxs)(`button`,{onClick:()=>p(`system`),className:`theme-option ${c===`system`?`active`:``}`,children:[(0,v.jsx)(`span`,{className:`theme-icon`,children:`🖥️`}),(0,v.jsxs)(`div`,{className:`theme-info`,children:[(0,v.jsx)(`div`,{className:`theme-name`,children:`System`}),(0,v.jsx)(`div`,{className:`theme-desc`,children:`Match your device`})]})]}),(0,v.jsxs)(`button`,{onClick:()=>p(`light`),className:`theme-option ${c===`light`?`active`:``}`,children:[(0,v.jsx)(`span`,{className:`theme-icon`,children:`☀️`}),(0,v.jsxs)(`div`,{className:`theme-info`,children:[(0,v.jsx)(`div`,{className:`theme-name`,children:`Light`}),(0,v.jsx)(`div`,{className:`theme-desc`,children:`Bright and clean`})]})]}),(0,v.jsxs)(`button`,{onClick:()=>p(`dark`),className:`theme-option ${c===`dark`?`active`:``}`,children:[(0,v.jsx)(`span`,{className:`theme-icon`,children:`🌙`}),(0,v.jsxs)(`div`,{className:`theme-info`,children:[(0,v.jsx)(`div`,{className:`theme-name`,children:`Dark`}),(0,v.jsx)(`div`,{className:`theme-desc`,children:`Easy on the eyes`})]})]})]})]})]}),(0,v.jsxs)(`div`,{className:`welcome-modal-actions`,children:[(0,v.jsx)(`button`,{onClick:f,className:`btn-secondary`,children:`Skip Name`}),(0,v.jsx)(`button`,{onClick:d,className:`btn-primary`,children:`Get Started`})]})]})})})}function lt({username:e,preferences:t,onThemeChange:n,onClearData:r,onShowHistory:i}){let[a,o]=(0,_.useState)(!1),[s,c]=(0,_.useState)(!1),l=(0,_.useRef)(null);(0,_.useEffect)(()=>{let e=e=>{l.current&&!l.current.contains(e.target)&&o(!1)};return document.addEventListener(`mousedown`,e),()=>document.removeEventListener(`mousedown`,e)},[]);let u=()=>{c(!0),o(!1)},d=()=>{r(),c(!1)},f=e=>{switch(e){case`light`:return`☀️`;case`dark`:return`🌙`;case`system`:return`🖥️`;default:return`🖥️`}};return(0,v.jsxs)(v.Fragment,{children:[(0,v.jsxs)(`div`,{className:`user-menu`,ref:l,children:[(0,v.jsxs)(`button`,{onClick:()=>o(!a),className:`user-menu-trigger`,"aria-label":`User menu`,children:[(0,v.jsx)(`div`,{className:`user-avatar`,children:e?e.charAt(0).toUpperCase():`👤`}),(0,v.jsx)(`span`,{className:`user-menu-arrow`,children:a?`▴`:`▾`})]}),a&&(0,v.jsxs)(`div`,{className:`user-menu-dropdown`,children:[e&&(0,v.jsx)(`div`,{className:`user-menu-header`,children:(0,v.jsxs)(`div`,{className:`user-greeting`,children:[`Welcome back, `,(0,v.jsx)(`strong`,{children:e}),`!`]})}),(0,v.jsxs)(`div`,{className:`user-menu-section`,children:[(0,v.jsx)(`div`,{className:`user-menu-label`,children:`Theme`}),(0,v.jsx)(`div`,{className:`theme-selector`,children:[`system`,`light`,`dark`].map(e=>(0,v.jsxs)(`button`,{onClick:()=>{n(e),o(!1)},className:`theme-selector-btn ${t.theme===e?`active`:``}`,children:[(0,v.jsx)(`span`,{className:`theme-selector-icon`,children:f(e)}),(0,v.jsx)(`span`,{className:`theme-selector-name`,children:e.charAt(0).toUpperCase()+e.slice(1)})]},e))})]}),(0,v.jsx)(`div`,{className:`user-menu-section`,children:(0,v.jsxs)(`button`,{onClick:()=>{i(),o(!1)},className:`user-menu-item`,children:[(0,v.jsx)(`span`,{className:`user-menu-icon`,children:`📚`}),`Reading History`,t.visitedNotes.length>0&&(0,v.jsx)(`span`,{className:`history-count`,children:t.visitedNotes.length})]})}),(0,v.jsx)(`div`,{className:`user-menu-section user-menu-danger`,children:(0,v.jsxs)(`button`,{onClick:u,className:`user-menu-item danger`,children:[(0,v.jsx)(`span`,{className:`user-menu-icon`,children:`🗑️`}),`Clear All Data`]})})]})]}),s&&(0,v.jsx)(`div`,{className:`confirm-modal-overlay`,children:(0,v.jsxs)(`div`,{className:`confirm-modal`,children:[(0,v.jsx)(`div`,{className:`confirm-modal-header`,children:(0,v.jsx)(`h3`,{children:`⚠️ Clear All Data`})}),(0,v.jsxs)(`div`,{className:`confirm-modal-content`,children:[(0,v.jsx)(`p`,{children:`This will permanently delete all your saved preferences, reading history, and personal settings.`}),(0,v.jsx)(`p`,{className:`confirm-warning`,children:(0,v.jsx)(`strong`,{children:`Once you delete your progress, this cannot be undone!`})})]}),(0,v.jsxs)(`div`,{className:`confirm-modal-actions`,children:[(0,v.jsx)(`button`,{onClick:()=>c(!1),className:`btn-secondary`,children:`Cancel`}),(0,v.jsx)(`button`,{onClick:d,className:`btn-danger`,children:`Yes, Delete Everything`})]})]})})]})}function ut({isOpen:e,preferences:t,onClose:n,onSelectNote:r}){if(!e)return null;let i=e=>{r(e),n()},a=e=>{let t=G(e);return t?e===`home.md`?{name:`Home`,icon:`🏠`}:x[t]||{name:t,icon:`📄`}:{name:`General`,icon:`📄`}};return(0,v.jsx)(`div`,{className:`history-modal-overlay`,onClick:n,children:(0,v.jsxs)(`div`,{className:`history-modal`,onClick:e=>e.stopPropagation(),children:[(0,v.jsxs)(`div`,{className:`history-modal-header`,children:[(0,v.jsx)(`h3`,{children:`📚 Reading History`}),(0,v.jsx)(`button`,{onClick:n,className:`history-modal-close`,"aria-label":`Close history`,children:`✕`})]}),(0,v.jsx)(`div`,{className:`history-modal-content`,children:t.visitedNotes.length===0?(0,v.jsxs)(`div`,{className:`history-empty`,children:[(0,v.jsx)(`div`,{className:`history-empty-icon`,children:`📖`}),(0,v.jsx)(`div`,{className:`history-empty-title`,children:`No reading history yet`}),(0,v.jsx)(`div`,{className:`history-empty-desc`,children:`Start exploring the notes to build your reading history!`})]}):(0,v.jsxs)(v.Fragment,{children:[(0,v.jsxs)(`div`,{className:`history-info`,children:[`You've visited `,t.visitedNotes.length,t.visitedNotes.length===1?` note`:` notes`,` `,`recently`]}),(0,v.jsx)(`div`,{className:`history-list`,children:t.visitedNotes.map((e,t)=>{let n=a(e),r=U(e);return(0,v.jsxs)(`div`,{className:`history-item`,onClick:()=>i(e),children:[(0,v.jsxs)(`div`,{className:`history-item-main`,children:[(0,v.jsxs)(`div`,{className:`history-item-header`,children:[(0,v.jsx)(`span`,{className:`history-item-icon`,children:typeof n.icon==`string`&&/\.(png|jpg|jpeg|svg)$/i.test(n.icon)?(0,v.jsx)(`img`,{src:n.icon,alt:`${n.name} icon`,className:`section-icon-img`}):n.icon}),(0,v.jsx)(`span`,{className:`history-item-title`,children:r})]}),(0,v.jsxs)(`div`,{className:`history-item-meta`,children:[(0,v.jsx)(`span`,{className:`history-item-section`,children:n.name}),(0,v.jsxs)(`span`,{className:`history-item-position`,children:[`#`,t+1]})]})]}),(0,v.jsx)(`div`,{className:`history-item-arrow`,children:`→`})]},`${e}-${t}`)})})]})})]})})}function dt(){let[e,t]=(0,_.useState)(null),[n,r]=(0,_.useState)(`home.md`),[i,a]=(0,_.useState)([`home.md`]),[o,s]=(0,_.useState)(null),[c,l]=(0,_.useState)(!1),[u,d]=(0,_.useState)([]),[f,p]=(0,_.useState)(``),[m,h]=(0,_.useState)(!1),[g,b]=(0,_.useState)(()=>Z()),[S,C]=(0,_.useState)(!1),[w,T]=(0,_.useState)(!1),E=(0,_.useCallback)(()=>{t(q(`home.md`)),r(`home.md`),a([`home.md`]),s(`home`),D(`home.md`,`home`)},[]);(0,_.useEffect)(()=>{if(tt()&&!X()&&(C(!0),nt()),$(g.theme),g.theme===`system`)return st(()=>{g.theme===`system`&&$(`system`)})},[g.theme]),(0,_.useEffect)(()=>{let e=new URLSearchParams(window.location.search),n=e.get(`note`),i=e.get(`section`);if(n)try{t(q(n)),r(n),a([n]);let e=i||G(n);s(e),D(n,e)}catch(e){console.error(`Failed to load note from URL:`,n,e),E()}else E()},[E]),(0,_.useEffect)(()=>{if(e){let e=setTimeout(()=>{j()},100);return()=>clearTimeout(e)}},[e]);let D=(e,t)=>{let n=new URLSearchParams;n.set(`note`,e),t&&n.set(`section`,t);let r=`${window.location.pathname}?${n.toString()}`;window.history.pushState({},``,r)},O=e=>{console.log(`Loading note:`,e),t(null),e!==n&&(a(t=>[...t,e]),r(e)),it(e);let i=G(e);s(i),D(e,i),l(!1),h(!1),setTimeout(()=>{try{t(q(e));let n=document.querySelector(`.center.main`);n&&(n.scrollTop=0),setTimeout(()=>{j()},50)}catch(n){console.error(`Error loading note:`,e,n),t(`# Error
+`,et={"../notes/c/00-c-index.md":S,"../notes/computer-science/00-general-knowledge.md":C,"../notes/computer-science/01-hardware.md":ee,"../notes/computer-science/02-numbers.md":w,"../notes/computer-science/03-strings.md":T,"../notes/computer-science/04-math-operations.md":E,"../notes/cpp/00-cpp-index.md":D,"../notes/css/01-CSS-index.md":O,"../notes/css/02-basics.md":k,"../notes/css/03-colors.md":A,"../notes/css/04-display-property.md":j,"../notes/css/05-positioning.md":M,"../notes/css/06-selectors.md":N,"../notes/css/07-pseudo-selectors.md":te,"../notes/css/08-specificity.md":P,"../notes/css/09-inheritance.md":F,"../notes/css/10-flexbox-basics.md":I,"../notes/css/11-grid-layouts.md":L,"../notes/css/12-form-styling.md":R,"../notes/css/13-modals.md":z,"../notes/css/14-animations.md":B,"../notes/css/15-themeing.md":ne,"../notes/css/16-building-a-dropdown.md":``,"../notes/git/00-git-init.md":re,"../notes/git/01-pushing-and-pulling.md":ie,"../notes/git/02-reverting-changes.md":ae,"../notes/git/03-git-branching.md":oe,"../notes/git/04-rebasing.md":se,"../notes/git/05-merging.md":ce,"../notes/git/06-remotes-repositories.md":le,"../notes/home.md":ue,"../notes/html/00-html-index.md":de,"../notes/html/01-get-started-with-html.md":fe,"../notes/html/02-classes-ids-and-data-attributes.md":pe,"../notes/html/03-forms.md":me,"../notes/java/00-java-index.md":he,"../notes/javascript/00-javascript-index.md":ge,"../notes/javascript/01-variables-and-datatypes.md":_e,"../notes/javascript/02-operators.md":ve,"../notes/javascript/03-conditionals.md":ye,"../notes/javascript/04-ternary-operator.md":be,"../notes/javascript/05-loops.md":xe,"../notes/javascript/06-functions.md":Se,"../notes/javascript/07-generators.md":Ce,"../notes/javascript/08-string-methods.md":we,"../notes/javascript/08-template-literals.md":Te,"../notes/javascript/09-built-in-functions.md":Ee,"../notes/javascript/10-scope.md":De,"../notes/javascript/11-arrays.md":Oe,"../notes/javascript/12-classes.md":ke,"../notes/javascript/13-objects.md":Ae,"../notes/javascript/14-imports-and-exports.md":je,"../notes/javascript/15-try-catch.md":Me,"../notes/javascript/16-promises.md":Ne,"../notes/javascript/17-JSON.md":Pe,"../notes/javascript/18-the-eval-dilemma.md":Fe,"../notes/javascript/19-types-and-instances.md":Ie,"../notes/javascript/20-destructuring.md":Le,"../notes/javascript/21-fetch.md":Re,"../notes/javascript/22-DOM-manipulation.md":ze,"../notes/javascript/23-regular-expressions.md":Be,"../notes/javascript/24-constructors-and-prototypes.md":Ve,"../notes/javascript/25-sets-and-maps.md":He,"../notes/react/00-react-index.md":r,"../notes/react/01-components.md":d,"../notes/react/02-state.md":o,"../notes/react/03-conditional-rendering.md":n,"../notes/react/04-hooks.md":u,"../notes/react/05-use-effect.md":c,"../notes/react/06-use-ref.md":t,"../notes/sql/00-sql-index.md":Ue,"../notes/sql/01-get-started.md":We,"../notes/sql/02-setting-up.md":Ge,"../notes/sql/03-data-types.md":Ke,"../notes/sql/04-tables.md":qe,"../notes/sql/05-constraints.md":Je,"../notes/sql/06-manipulating-data.md":Ye,"../notes/sql/07-advanced-manipulating-data.md":Xe,"../notes/sql/08-installing-sqlite.md":Ze,"../notes/typescript/typescript-basics.md":Qe,"../notes/typescript/typescript-index.md":$e},V={},H={};Object.entries(et).forEach(([e,t])=>{let n=e.split(`/`),r=n[n.length-1]||``;if(n.length===3&&r===`home.md`){H[r]={content:t,section:`home`};return}if(n.length>3){let e=n[n.length-2];V[e]||(V[e]={}),V[e][r]=t,H[r]={content:t,section:e}}});const U=e=>e.replace(/^\d{2}-/,``),W=e=>U(e).replace(`.md`,``).replace(/-/g,` `).replace(/\b\w/g,e=>e.toUpperCase()),tt=e=>Object.keys(V[e]||{}).sort((e,t)=>{let n=parseInt(e.match(/^\d+/)?.[0]||`999`),r=parseInt(t.match(/^\d+/)?.[0]||`999`);return n===r?e.localeCompare(t):n-r}),nt=()=>Object.keys(V),G=e=>{let t=H[e];return t?t.section:null},K=e=>{let t=G(e);if(!t)return null;let n=tt(t),r=n.indexOf(e);if(r===-1||r>=n.length-1)return null;let i=n[r+1];return{filename:i,title:W(i)}},q=e=>{let t=e.replace(/^\/notes\/[^/]+\//,``).replace(/^\/notes\//,``),n=H[t];if(!n){let e=Object.keys(H).join(`, `);throw Error(`Note not found: ${t}. Available: ${e}`)}return console.log(`Retrieved note:`,t,`from section:`,n.section),n.content},rt=e=>{if(!e.trim())return[];let t=e.toLowerCase(),n=[];return Object.entries(H).forEach(([r,i])=>{let{content:a,section:o}=i,s=a.split(`
+`),c=[];if(s.forEach((n,r)=>{if(n.toLowerCase().includes(t)){let t=it(n,e);c.push({context:n.trim(),lineNumber:r+1,highlightedText:t})}}),c.length>0){let e=o===`home`?{name:`Home`,icon:`🏠`}:x[o]||{name:o,icon:`📄`};n.push({filename:r,title:W(r),section:e.name,sectionIcon:e.icon,matches:c.slice(0,3),totalMatches:c.length})}}),n.sort((e,t)=>e.totalMatches===t.totalMatches?e.title.localeCompare(t.title):t.totalMatches-e.totalMatches)};var it=(e,t)=>{let n=RegExp(`(${t})`,`gi`);return e.replace(n,`<mark>$1</mark>`)};const at=()=>{let e=nt(),t=[];return t.push({text:`Home`,href:`home.md`,icon:`🏠`}),e.forEach(e=>{let n=x[e.toLowerCase()],r=tt(e);if(r.length>0){let i=r.map(e=>({text:ot(e),href:e})),a=n?.icon||`📁`,o=n?.name||e.charAt(0).toUpperCase()+e.slice(1);t.push({text:o,icon:a,children:i})}}),t};var ot=e=>U(e).replace(`.md`,``).replace(/-/g,` `).replace(/\b\w/g,e=>e.toUpperCase());const st=at();function ct({onSearch:e,onClear:t,placeholder:n=`Search all notes...`}){let[r,i]=(0,_.useState)(``),[a,o]=(0,_.useState)(!1),s=(0,_.useRef)(null),c=n=>{let r=n.target.value;i(r),r.trim()?e(r):t()},l=()=>{i(``),t(),s.current?.focus()};return(0,_.useEffect)(()=>{let e=e=>{(e.ctrlKey||e.metaKey)&&e.key===`k`&&(e.preventDefault(),s.current?.focus())};return document.addEventListener(`keydown`,e),()=>document.removeEventListener(`keydown`,e)},[]),(0,v.jsx)(`div`,{className:`search-bar ${a?`focused`:``}`,children:(0,v.jsxs)(`div`,{className:`search-input-container`,children:[(0,v.jsx)(`span`,{className:`search-icon`,children:`🔍`}),(0,v.jsx)(`input`,{ref:s,type:`text`,value:r,onChange:c,onKeyDown:e=>{e.key===`Escape`&&l()},onFocus:()=>o(!0),onBlur:()=>o(!1),placeholder:n,className:`search-input`}),r&&(0,v.jsx)(`button`,{onClick:l,className:`search-clear`,"aria-label":`Clear search`,children:`✕`})]})})}function lt({setCurrentNote:e,currentSection:t,currentNoteName:n,onSearch:r,onClearSearch:i,isMobile:a,rightSidebarContent:o}){let[s,c]=(0,_.useState)(null),[l,u]=(0,_.useState)(`chapters`);(0,_.useEffect)(()=>{if(t){let e=st.findIndex(e=>{if(e.text&&t in x){let n=x[t];return e.text.includes(n.name)}return!1});e!==-1&&c(e)}},[t]);let d=e=>{c(s===e?null:e)};return(0,v.jsxs)(`div`,{className:`left-nav`,children:[a&&o&&(0,v.jsxs)(`div`,{className:`mobile-nav-toggle`,children:[(0,v.jsx)(`button`,{className:`mobile-nav-btn ${l===`chapters`?`active`:``}`,onClick:()=>u(`chapters`),children:`All Chapters`}),(0,v.jsx)(`button`,{className:`mobile-nav-btn ${l===`page`?`active`:``}`,onClick:()=>u(`page`),children:`On this page`})]}),(!a||l===`chapters`)&&(0,v.jsxs)(v.Fragment,{children:[(0,v.jsx)(ct,{onSearch:e=>{r?.(e)},onClear:()=>{i?.()},placeholder:`Search all notes...`}),st.map((t,r)=>{if(t.children){let i=s===r;return(0,v.jsxs)(`div`,{className:`dropdown-parent ${i?`active`:``}`,children:[(0,v.jsxs)(`div`,{className:`dropdown-title`,onClick:()=>d(r),children:[(0,v.jsx)(`span`,{className:`section-arrow`,children:i?`▼`:`▶`}),t.icon&&typeof t.icon==`string`&&/\.(png|jpg|jpeg|svg)$/i.test(t.icon)?(0,v.jsx)(`img`,{src:t.icon,alt:`${t.text} icon`,className:`section-icon-img`}):t.icon?(0,v.jsx)(`span`,{className:`emoji-icon`,children:t.icon}):null,(0,v.jsx)(`span`,{children:t.text})]}),(0,v.jsx)(`div`,{className:`dropdown-children ${i?`expanded`:`collapsed`}`,children:t.children.map((t,r)=>(0,v.jsx)(`p`,{className:`child-link ${n===t.href?`active`:``}`,onClick:()=>t.href&&e(t.href),children:t.text},r))})]},r)}else return(0,v.jsxs)(`div`,{className:`parent-link ${n===t.href?`active`:``}`,onClick:()=>t.href&&e(t.href),children:[t.icon&&typeof t.icon==`string`&&/\.(png|jpg|jpeg|svg)$/i.test(t.icon)?(0,v.jsx)(`img`,{src:t.icon,alt:`${t.text} icon`,className:`section-icon-img`}):t.icon?(0,v.jsx)(`span`,{className:`emoji-icon`,children:t.icon}):null,(0,v.jsx)(`span`,{children:t.text})]},r)})]}),a&&l===`page`&&o&&(0,v.jsx)(`div`,{className:`mobile-page-overview`,children:o})]})}function ut({currentNote:e,currentNoteName:t,onLoadNote:n}){let[r,i]=(0,_.useState)([]),[a,o]=(0,_.useState)(null),[s,c]=(0,_.useState)(``);(0,_.useEffect)(()=>{if(!e){i([]),o(null);return}let r=/^(#{1,6})\s+(.+)$/gm,a=[],s;for(;(s=r.exec(e))!==null;){let e=s[1].length,t=s[2].trim();if(e===4)continue;let n=t.toLowerCase().replace(/[^\w\s-]/g,``).replace(/\s+/g,`-`);a.push({id:n,text:t,level:e})}if(n){let e=K(t);e&&a.push({id:`next-lesson`,text:`Next: ${e.title}`,level:2})}i(a);let c=e.replace(/#{1,6}\s+/g,``).replace(/\[([^\]]+)\]\([^)]+\)/g,`$1`).replace(/[*_`]/g,``).trim().split(/\s+/).filter(e=>e.length>0).length,l=Math.max(1,Math.ceil(c/200)),u=e.length;o({wordCount:c,readingTime:l,characterCount:u})},[e,t,n]);let l=e=>{if(e===`next-lesson`&&n){let e=K(t);e&&n(e.filename);return}let r=document.getElementById(e);r&&(r.scrollIntoView({behavior:`smooth`,block:`start`}),c(e))};return(0,_.useEffect)(()=>{let e=()=>{let e=r.map(e=>({id:e.id,element:document.getElementById(e.id)})),t=``;for(let n of e)n.element&&n.element.getBoundingClientRect().top<=100&&(t=n.id);c(t)},t=document.querySelector(`.center.main`);if(t)return t.addEventListener(`scroll`,e),()=>t.removeEventListener(`scroll`,e)},[r]),e?(0,v.jsxs)(`div`,{className:`right-sidebar`,children:[(0,v.jsxs)(`div`,{className:`sidebar-section`,children:[(0,v.jsx)(`h3`,{children:`📊 Note Info`}),(0,v.jsxs)(`div`,{className:`note-stats`,children:[(0,v.jsxs)(`div`,{className:`stat-item`,children:[(0,v.jsx)(`span`,{className:`stat-label`,children:`📄 File:`}),(0,v.jsx)(`span`,{className:`stat-value`,children:U(t)})]}),a&&(0,v.jsxs)(v.Fragment,{children:[(0,v.jsxs)(`div`,{className:`stat-item`,children:[(0,v.jsx)(`span`,{className:`stat-label`,children:`📝 Words:`}),(0,v.jsx)(`span`,{className:`stat-value`,children:a.wordCount.toLocaleString()})]}),(0,v.jsxs)(`div`,{className:`stat-item`,children:[(0,v.jsx)(`span`,{className:`stat-label`,children:`⏱️ Read time:`}),(0,v.jsxs)(`span`,{className:`stat-value`,children:[a.readingTime,` min`]})]}),(0,v.jsxs)(`div`,{className:`stat-item`,children:[(0,v.jsx)(`span`,{className:`stat-label`,children:`🔤 Characters:`}),(0,v.jsx)(`span`,{className:`stat-value`,children:a.characterCount.toLocaleString()})]})]})]})]}),r.length>0&&(0,v.jsxs)(`div`,{className:`sidebar-section`,children:[(0,v.jsx)(`h3`,{children:`📚 Table of Contents`}),(0,v.jsx)(`nav`,{className:`toc-nav`,children:r.map((e,t)=>(0,v.jsxs)(`button`,{className:`toc-item level-${e.level} ${s===e.id?`active`:``} ${e.id===`next-lesson`?`next-lesson`:``}`,onClick:()=>l(e.id),title:e.text,children:[e.id===`next-lesson`&&(0,v.jsx)(`span`,{className:`next-lesson-icon`,children:`🚀`}),e.text]},t))})]})]}):(0,v.jsx)(`div`,{className:`right-sidebar`,children:(0,v.jsxs)(`div`,{className:`sidebar-section`,children:[(0,v.jsx)(`h3`,{children:`📖 Note Info`}),(0,v.jsx)(`p`,{className:`no-note-message`,children:`Select a note to see its table of contents and information.`})]})})}var dt=`modulepreload`,ft=function(e){return`/code-wiki-app/`+e},pt={};const mt=function(e,t,n){let r=Promise.resolve();if(t&&t.length>0){let e=document.getElementsByTagName(`link`),i=document.querySelector(`meta[property=csp-nonce]`),a=i?.nonce||i?.getAttribute(`nonce`);function o(e){return Promise.all(e.map(e=>Promise.resolve(e).then(e=>({status:`fulfilled`,value:e}),e=>({status:`rejected`,reason:e}))))}r=o(t.map(t=>{if(t=ft(t,n),t in pt)return;pt[t]=!0;let r=t.endsWith(`.css`),i=r?`[rel="stylesheet"]`:``;if(n)for(let n=e.length-1;n>=0;n--){let i=e[n];if(i.href===t&&(!r||i.rel===`stylesheet`))return}else if(document.querySelector(`link[href="${t}"]${i}`))return;let o=document.createElement(`link`);if(o.rel=r?`stylesheet`:dt,r||(o.as=`script`),o.crossOrigin=``,o.href=t,a&&o.setAttribute(`nonce`,a),document.head.appendChild(o),r)return new Promise((e,n)=>{o.addEventListener(`load`,e),o.addEventListener(`error`,()=>n(Error(`Unable to preload CSS for ${t}`)))})}))}function i(e){let t=new Event(`vite:preloadError`,{cancelable:!0});if(t.payload=e,window.dispatchEvent(t),!t.defaultPrevented)throw e}return r.then(t=>{for(let e of t||[])e.status===`rejected`&&i(e.reason);return e().catch(i)})};var ht=(0,_.lazy)(()=>mt(()=>import(`./react-markdown-BYjrAzbE.js`),__vite__mapDeps([0,1,2,3,4,5])));function gt({displayName:e,content:t,languageDirectory:n,styleUpNextSections:r,loadNote:i}){return(0,_.useEffect)(()=>{document.title=e?`${W(e)} - ${n||`Notes`}`:`Programming Notes`},[e,n]),(0,v.jsx)(_.Suspense,{fallback:(0,v.jsx)(y,{}),children:(0,v.jsx)(_t,{content:t,styleUpNextSections:r,loadNote:i})})}function _t({content:e,styleUpNextSections:t,loadNote:n}){return(0,v.jsx)(ht,{remarkPlugins:[m,h],rehypePlugins:[f,p],components:{h1:({children:e,...t})=>(0,v.jsx)(`h1`,{...t,id:String(e)?.toLowerCase().replace(/[^\w\s-]/g,``).replace(/\s+/g,`-`),children:e}),h2:({children:e,...t})=>(0,v.jsx)(`h2`,{...t,id:String(e)?.toLowerCase().replace(/[^\w\s-]/g,``).replace(/\s+/g,`-`),children:e}),h3:({children:e,...t})=>(0,v.jsx)(`h3`,{...t,id:String(e)?.toLowerCase().replace(/[^\w\s-]/g,``).replace(/\s+/g,`-`),children:e}),h4:({children:e,...n})=>(0,v.jsx)(`h4`,{...n,id:String(e)?.toLowerCase().replace(/[^\w\s-]/g,``).replace(/\s+/g,`-`),onLoad:()=>{setTimeout(t,100)},children:e}),h5:({children:e,...t})=>(0,v.jsx)(`h5`,{...t,id:String(e)?.toLowerCase().replace(/[^\w\s-]/g,``).replace(/\s+/g,`-`),children:e}),h6:({children:e,...t})=>(0,v.jsx)(`h6`,{...t,id:String(e)?.toLowerCase().replace(/[^\w\s-]/g,``).replace(/\s+/g,`-`),children:e}),a:({href:e,children:t,...r})=>(0,v.jsx)(`a`,{href:e,onClick:t=>{if(e&&e.endsWith(`.md`)&&n){t.preventDefault();let r=e;e.includes(`/`)&&(r=e.split(`/`).pop()||e),console.log(`Internal link clicked:`,e,`-> normalized:`,r);try{n(r)}catch(e){console.error(`Failed to load note: ${r}`,e);try{n(r)}catch(e){console.error(`Failed to load note with filename: ${r}`,e),alert(`Note not found: ${r}`)}}}},className:`markdown-link`,...r,children:t}),table:({children:e,...t})=>(0,v.jsx)(`table`,{...t,className:`markdown-table`,children:e}),th:({children:e,...t})=>(0,v.jsx)(`th`,{...t,className:`markdown-th`,children:e}),td:({children:e,...t})=>(0,v.jsx)(`td`,{...t,className:`markdown-td`,children:e}),img:({src:e,alt:t,...n})=>(0,v.jsx)(`img`,{src:e?.startsWith(`/`)?`/code-wiki-app/${e.slice(1)}`:e,alt:t,style:{maxWidth:`100%`,height:`auto`,border:`1px solid #ddd`,borderRadius:`4px`,margin:`15px 0`,display:`block`},...n})},children:e})}function vt({currentFilename:e,onLoadNote:t}){let n=K(e);return n?(0,v.jsx)(`div`,{className:`next-lesson-container`,children:(0,v.jsx)(`button`,{className:`next-lesson-button`,onClick:()=>{t(n.filename)},"aria-label":`Go to next lesson: ${n.title}`,children:(0,v.jsxs)(`div`,{className:`next-lesson-content`,children:[(0,v.jsx)(`span`,{className:`next-lesson-label`,children:`Up Next`}),(0,v.jsx)(`span`,{className:`next-lesson-title`,children:n.title}),(0,v.jsx)(`span`,{className:`next-lesson-arrow`,children:`→`})]})})}):null}function yt({results:e,query:t,isLoading:n=!1,onSelectNote:r,onClose:i}){let a=e=>{r(e),i()};return t.trim()?(0,v.jsx)(`div`,{className:`search-results-overlay`,onClick:i,children:(0,v.jsxs)(`div`,{className:`search-results-container`,onClick:e=>e.stopPropagation(),children:[(0,v.jsxs)(`div`,{className:`search-results-header`,children:[(0,v.jsx)(`h3`,{children:`Search Results`}),(0,v.jsx)(`button`,{onClick:i,className:`search-results-close`,"aria-label":`Close search results`,children:`✕`})]}),n?(0,v.jsxs)(`div`,{className:`search-loading`,children:[(0,v.jsx)(`div`,{className:`search-spinner`}),(0,v.jsx)(`span`,{children:`Searching...`})]}):(0,v.jsxs)(v.Fragment,{children:[(0,v.jsx)(`div`,{className:`search-results-info`,children:e.length===0?(0,v.jsxs)(`span`,{children:[`No results found for "`,t,`"`]}):(0,v.jsxs)(`span`,{children:[`Found `,e.length,` `,e.length===1?`result`:`results`,` for "`,t,`"`]})}),(0,v.jsx)(`div`,{className:`search-results-list`,children:e.map((e,t)=>(0,v.jsxs)(`div`,{className:`search-result-card`,onClick:()=>a(e.filename),children:[(0,v.jsxs)(`div`,{className:`search-result-header`,children:[(0,v.jsxs)(`div`,{className:`search-result-title`,children:[(0,v.jsx)(`span`,{className:`search-result-icon`,children:/\.(png|jpg|jpeg|svg)$/i.test(e.sectionIcon)?(0,v.jsx)(`img`,{src:e.sectionIcon,alt:`${e.section} icon`,className:`section-icon-img`}):e.sectionIcon}),(0,v.jsx)(`span`,{className:`search-result-name`,children:e.title})]}),(0,v.jsxs)(`div`,{className:`search-result-meta`,children:[(0,v.jsx)(`span`,{className:`search-result-section`,children:e.section}),(0,v.jsxs)(`span`,{className:`search-result-count`,children:[e.totalMatches,` `,e.totalMatches===1?`match`:`matches`]})]})]}),(0,v.jsxs)(`div`,{className:`search-result-matches`,children:[e.matches.map((e,t)=>(0,v.jsxs)(`div`,{className:`search-result-match`,children:[(0,v.jsxs)(`div`,{className:`search-result-line-number`,children:[`Line `,e.lineNumber]}),(0,v.jsx)(`div`,{className:`search-result-context`,dangerouslySetInnerHTML:{__html:e.highlightedText}})]},t)),e.totalMatches>e.matches.length&&(0,v.jsxs)(`div`,{className:`search-result-more`,children:[`+`,e.totalMatches-e.matches.length,` more`,` `,e.totalMatches-e.matches.length===1?`match`:`matches`]})]})]},`${e.filename}-${t}`))})]})]})}):null}var J=`notes-app-preferences`,Y=`notes-app-storage-allowed`;const X=()=>{try{return localStorage.getItem(Y)===`true`}catch{return!1}},bt=()=>{try{return!localStorage.getItem(`notes-app-visited`)}catch{return!0}},xt=()=>{try{localStorage.setItem(`notes-app-visited`,`true`)}catch{}},St=e=>{try{e?localStorage.setItem(Y,`true`):localStorage.removeItem(Y)}catch{}},Z=()=>{let e={theme:`system`,allowsStorage:!1,visitedNotes:[],firstVisit:!0};if(!X())return e;try{let t=localStorage.getItem(J);if(t){let n=JSON.parse(t);return{...e,...n}}}catch{}return e},Q=e=>{if(X())try{let t={...Z(),...e};localStorage.setItem(J,JSON.stringify(t))}catch{}},Ct=e=>{X()&&Q({visitedNotes:[e,...(Z().visitedNotes||[]).filter(t=>t!==e)].slice(0,20)})},wt=()=>{try{localStorage.removeItem(J),localStorage.removeItem(Y),localStorage.removeItem(`notes-app-visited`)}catch{}},Tt=()=>typeof window<`u`&&window.matchMedia&&window.matchMedia(`(prefers-color-scheme: dark)`).matches?`dark`:`light`,$=e=>{let t=document.documentElement,n;n=e===`system`?Tt():e,t.setAttribute(`data-theme`,n),t.classList.remove(`theme-light`,`theme-dark`),t.classList.add(`theme-${n}`)},Et=e=>{if(typeof window>`u`||!window.matchMedia)return()=>{};let t=window.matchMedia(`(prefers-color-scheme: dark)`),n=t=>{e(t.matches?`dark`:`light`)};return t.addEventListener(`change`,n),()=>t.removeEventListener(`change`,n)};function Dt({isOpen:e,onComplete:t}){let[n,r]=(0,_.useState)(`storage`),[i,a]=(0,_.useState)(!1),[o,s]=(0,_.useState)(``),[c,l]=(0,_.useState)(`system`);if(!e)return null;let u=e=>{a(e),e?r(`setup`):t({allowsStorage:!1,theme:`system`})},d=()=>{t({allowsStorage:i,username:o.trim()||void 0,theme:c})},f=()=>{s(``),d()},p=e=>{l(e),$(e)};return(0,v.jsx)(`div`,{className:`welcome-modal-overlay`,children:(0,v.jsx)(`div`,{className:`welcome-modal`,children:n===`storage`?(0,v.jsxs)(v.Fragment,{children:[(0,v.jsx)(`div`,{className:`welcome-modal-header`,children:(0,v.jsx)(`h2`,{children:`Welcome to Programming Notes! 📚`})}),(0,v.jsxs)(`div`,{className:`welcome-modal-content`,children:[(0,v.jsx)(`p`,{children:`To provide you with a personalized experience, we'd like to save your preferences and reading history locally on your device.`}),(0,v.jsxs)(`div`,{className:`storage-benefits`,children:[(0,v.jsxs)(`div`,{className:`benefit-item`,children:[(0,v.jsx)(`span`,{className:`benefit-icon`,children:`🎨`}),(0,v.jsx)(`span`,{children:`Remember your theme preference`})]}),(0,v.jsxs)(`div`,{className:`benefit-item`,children:[(0,v.jsx)(`span`,{className:`benefit-icon`,children:`📖`}),(0,v.jsx)(`span`,{children:`Track your reading history`})]}),(0,v.jsxs)(`div`,{className:`benefit-item`,children:[(0,v.jsx)(`span`,{className:`benefit-icon`,children:`👤`}),(0,v.jsx)(`span`,{children:`Personalized welcome messages`})]})]}),(0,v.jsxs)(`p`,{className:`storage-note`,children:[(0,v.jsx)(`strong`,{children:`Your privacy matters:`}),` All data stays on your device. Nothing is sent to any servers.`]})]}),(0,v.jsxs)(`div`,{className:`welcome-modal-actions`,children:[(0,v.jsx)(`button`,{onClick:()=>u(!1),className:`btn-secondary`,children:`No Thanks`}),(0,v.jsx)(`button`,{onClick:()=>u(!0),className:`btn-primary`,children:`Allow Local Storage`})]})]}):(0,v.jsxs)(v.Fragment,{children:[(0,v.jsx)(`div`,{className:`welcome-modal-header`,children:(0,v.jsx)(`h2`,{children:`Let's Personalize Your Experience ✨`})}),(0,v.jsxs)(`div`,{className:`welcome-modal-content`,children:[(0,v.jsxs)(`div`,{className:`setup-section`,children:[(0,v.jsx)(`label`,{htmlFor:`username`,className:`setup-label`,children:`What should we call you? (Optional)`}),(0,v.jsx)(`input`,{id:`username`,type:`text`,value:o,onChange:e=>s(e.target.value),placeholder:`Enter your name...`,className:`setup-input`,maxLength:50})]}),(0,v.jsxs)(`div`,{className:`setup-section`,children:[(0,v.jsx)(`label`,{className:`setup-label`,children:`Choose your theme`}),(0,v.jsxs)(`div`,{className:`theme-options`,children:[(0,v.jsxs)(`button`,{onClick:()=>p(`system`),className:`theme-option ${c===`system`?`active`:``}`,children:[(0,v.jsx)(`span`,{className:`theme-icon`,children:`🖥️`}),(0,v.jsxs)(`div`,{className:`theme-info`,children:[(0,v.jsx)(`div`,{className:`theme-name`,children:`System`}),(0,v.jsx)(`div`,{className:`theme-desc`,children:`Match your device`})]})]}),(0,v.jsxs)(`button`,{onClick:()=>p(`light`),className:`theme-option ${c===`light`?`active`:``}`,children:[(0,v.jsx)(`span`,{className:`theme-icon`,children:`☀️`}),(0,v.jsxs)(`div`,{className:`theme-info`,children:[(0,v.jsx)(`div`,{className:`theme-name`,children:`Light`}),(0,v.jsx)(`div`,{className:`theme-desc`,children:`Bright and clean`})]})]}),(0,v.jsxs)(`button`,{onClick:()=>p(`dark`),className:`theme-option ${c===`dark`?`active`:``}`,children:[(0,v.jsx)(`span`,{className:`theme-icon`,children:`🌙`}),(0,v.jsxs)(`div`,{className:`theme-info`,children:[(0,v.jsx)(`div`,{className:`theme-name`,children:`Dark`}),(0,v.jsx)(`div`,{className:`theme-desc`,children:`Easy on the eyes`})]})]})]})]})]}),(0,v.jsxs)(`div`,{className:`welcome-modal-actions`,children:[(0,v.jsx)(`button`,{onClick:f,className:`btn-secondary`,children:`Skip Name`}),(0,v.jsx)(`button`,{onClick:d,className:`btn-primary`,children:`Get Started`})]})]})})})}function Ot({username:e,preferences:t,onThemeChange:n,onClearData:r,onShowHistory:i}){let[a,o]=(0,_.useState)(!1),[s,c]=(0,_.useState)(!1),l=(0,_.useRef)(null);(0,_.useEffect)(()=>{let e=e=>{l.current&&!l.current.contains(e.target)&&o(!1)};return document.addEventListener(`mousedown`,e),()=>document.removeEventListener(`mousedown`,e)},[]);let u=()=>{c(!0),o(!1)},d=()=>{r(),c(!1)},f=e=>{switch(e){case`light`:return`☀️`;case`dark`:return`🌙`;case`system`:return`🖥️`;default:return`🖥️`}};return(0,v.jsxs)(v.Fragment,{children:[(0,v.jsxs)(`div`,{className:`user-menu`,ref:l,children:[(0,v.jsxs)(`button`,{onClick:()=>o(!a),className:`user-menu-trigger`,"aria-label":`User menu`,children:[(0,v.jsx)(`div`,{className:`user-avatar`,children:e?e.charAt(0).toUpperCase():`👤`}),(0,v.jsx)(`span`,{className:`user-menu-arrow`,children:a?`▴`:`▾`})]}),a&&(0,v.jsxs)(`div`,{className:`user-menu-dropdown`,children:[e&&(0,v.jsx)(`div`,{className:`user-menu-header`,children:(0,v.jsxs)(`div`,{className:`user-greeting`,children:[`Welcome back, `,(0,v.jsx)(`strong`,{children:e}),`!`]})}),(0,v.jsxs)(`div`,{className:`user-menu-section`,children:[(0,v.jsx)(`div`,{className:`user-menu-label`,children:`Theme`}),(0,v.jsx)(`div`,{className:`theme-selector`,children:[`system`,`light`,`dark`].map(e=>(0,v.jsxs)(`button`,{onClick:()=>{n(e),o(!1)},className:`theme-selector-btn ${t.theme===e?`active`:``}`,children:[(0,v.jsx)(`span`,{className:`theme-selector-icon`,children:f(e)}),(0,v.jsx)(`span`,{className:`theme-selector-name`,children:e.charAt(0).toUpperCase()+e.slice(1)})]},e))})]}),(0,v.jsx)(`div`,{className:`user-menu-section`,children:(0,v.jsxs)(`button`,{onClick:()=>{i(),o(!1)},className:`user-menu-item`,children:[(0,v.jsx)(`span`,{className:`user-menu-icon`,children:`📚`}),`Reading History`,t.visitedNotes.length>0&&(0,v.jsx)(`span`,{className:`history-count`,children:t.visitedNotes.length})]})}),(0,v.jsx)(`div`,{className:`user-menu-section user-menu-danger`,children:(0,v.jsxs)(`button`,{onClick:u,className:`user-menu-item danger`,children:[(0,v.jsx)(`span`,{className:`user-menu-icon`,children:`🗑️`}),`Clear All Data`]})})]})]}),s&&(0,v.jsx)(`div`,{className:`confirm-modal-overlay`,children:(0,v.jsxs)(`div`,{className:`confirm-modal`,children:[(0,v.jsx)(`div`,{className:`confirm-modal-header`,children:(0,v.jsx)(`h3`,{children:`⚠️ Clear All Data`})}),(0,v.jsxs)(`div`,{className:`confirm-modal-content`,children:[(0,v.jsx)(`p`,{children:`This will permanently delete all your saved preferences, reading history, and personal settings.`}),(0,v.jsx)(`p`,{className:`confirm-warning`,children:(0,v.jsx)(`strong`,{children:`Once you delete your progress, this cannot be undone!`})})]}),(0,v.jsxs)(`div`,{className:`confirm-modal-actions`,children:[(0,v.jsx)(`button`,{onClick:()=>c(!1),className:`btn-secondary`,children:`Cancel`}),(0,v.jsx)(`button`,{onClick:d,className:`btn-danger`,children:`Yes, Delete Everything`})]})]})})]})}function kt({isOpen:e,preferences:t,onClose:n,onSelectNote:r}){if(!e)return null;let i=e=>{r(e),n()},a=e=>{let t=G(e);return t?e===`home.md`?{name:`Home`,icon:`🏠`}:x[t]||{name:t,icon:`📄`}:{name:`General`,icon:`📄`}};return(0,v.jsx)(`div`,{className:`history-modal-overlay`,onClick:n,children:(0,v.jsxs)(`div`,{className:`history-modal`,onClick:e=>e.stopPropagation(),children:[(0,v.jsxs)(`div`,{className:`history-modal-header`,children:[(0,v.jsx)(`h3`,{children:`📚 Reading History`}),(0,v.jsx)(`button`,{onClick:n,className:`history-modal-close`,"aria-label":`Close history`,children:`✕`})]}),(0,v.jsx)(`div`,{className:`history-modal-content`,children:t.visitedNotes.length===0?(0,v.jsxs)(`div`,{className:`history-empty`,children:[(0,v.jsx)(`div`,{className:`history-empty-icon`,children:`📖`}),(0,v.jsx)(`div`,{className:`history-empty-title`,children:`No reading history yet`}),(0,v.jsx)(`div`,{className:`history-empty-desc`,children:`Start exploring the notes to build your reading history!`})]}):(0,v.jsxs)(v.Fragment,{children:[(0,v.jsxs)(`div`,{className:`history-info`,children:[`You've visited `,t.visitedNotes.length,t.visitedNotes.length===1?` note`:` notes`,` `,`recently`]}),(0,v.jsx)(`div`,{className:`history-list`,children:t.visitedNotes.map((e,t)=>{let n=a(e),r=W(e);return(0,v.jsxs)(`div`,{className:`history-item`,onClick:()=>i(e),children:[(0,v.jsxs)(`div`,{className:`history-item-main`,children:[(0,v.jsxs)(`div`,{className:`history-item-header`,children:[(0,v.jsx)(`span`,{className:`history-item-icon`,children:typeof n.icon==`string`&&/\.(png|jpg|jpeg|svg)$/i.test(n.icon)?(0,v.jsx)(`img`,{src:n.icon,alt:`${n.name} icon`,className:`section-icon-img`}):n.icon}),(0,v.jsx)(`span`,{className:`history-item-title`,children:r})]}),(0,v.jsxs)(`div`,{className:`history-item-meta`,children:[(0,v.jsx)(`span`,{className:`history-item-section`,children:n.name}),(0,v.jsxs)(`span`,{className:`history-item-position`,children:[`#`,t+1]})]})]}),(0,v.jsx)(`div`,{className:`history-item-arrow`,children:`→`})]},`${e}-${t}`)})})]})})]})})}function At(){let[e,t]=(0,_.useState)(null),[n,r]=(0,_.useState)(`home.md`),[i,a]=(0,_.useState)([`home.md`]),[o,s]=(0,_.useState)(null),[c,l]=(0,_.useState)(!1),[u,d]=(0,_.useState)([]),[f,p]=(0,_.useState)(``),[m,h]=(0,_.useState)(!1),[g,b]=(0,_.useState)(()=>Z()),[S,C]=(0,_.useState)(!1),[ee,w]=(0,_.useState)(!1),T=(0,_.useCallback)(()=>{t(q(`home.md`)),r(`home.md`),a([`home.md`]),s(`home`),E(`home.md`,`home`)},[]);(0,_.useEffect)(()=>{if(bt()&&!X()&&(C(!0),xt()),$(g.theme),g.theme===`system`)return Et(()=>{g.theme===`system`&&$(`system`)})},[g.theme]),(0,_.useEffect)(()=>{let e=new URLSearchParams(window.location.search),n=e.get(`note`),i=e.get(`section`);if(n)try{t(q(n)),r(n),a([n]);let e=i||G(n);s(e),E(n,e)}catch(e){console.error(`Failed to load note from URL:`,n,e),T()}else T()},[T]),(0,_.useEffect)(()=>{if(e){let e=setTimeout(()=>{A()},100);return()=>clearTimeout(e)}},[e]);let E=(e,t)=>{let n=new URLSearchParams;n.set(`note`,e),t&&n.set(`section`,t);let r=`${window.location.pathname}?${n.toString()}`;window.history.pushState({},``,r)},D=e=>{console.log(`Loading note:`,e),t(null),e!==n&&(a(t=>[...t,e]),r(e)),Ct(e);let i=G(e);s(i),E(e,i),l(!1),h(!1),setTimeout(()=>{try{t(q(e));let n=document.querySelector(`.center.main`);n&&(n.scrollTop=0),setTimeout(()=>{A()},50)}catch(n){console.error(`Error loading note:`,e,n),t(`# Error
 
-Note not found: `+e)}},100)},k=()=>{l(!c)},A=()=>{l(!1)},j=()=>{document.querySelectorAll(`.markdown-content h3, .markdown-content h4`).forEach(e=>{e.textContent&&e.textContent.includes(`Up Next`)&&e.classList.add(`up-next-section`)})},ee=()=>{if(i.length>1){let e=[...i];e.pop();let n=e[e.length-1];a(e),r(n);try{t(q(n));let e=document.querySelector(`.center.main`);e&&(e.scrollTop=0)}catch(e){console.error(`Error loading previous note:`,n,e)}}},M=e=>{p(e),e.trim()?(d(Re(e)),h(!0)):(d([]),h(!1))},N=()=>{p(``),d([]),h(!1)},P=e=>{O(e),h(!1)},F=e=>{if(rt(e.allowsStorage),e.allowsStorage){let t={...g,allowsStorage:!0,username:e.username,theme:e.theme,firstVisit:!1};b(t),Q(t)}$(e.theme),C(!1)},te=e=>{b({...g,theme:e}),Q({theme:e}),$(e)},I=()=>{at(),b({theme:`system`,allowsStorage:!1,visitedNotes:[],firstVisit:!0}),$(`system`),window.location.reload()},L=()=>{T(!0)},R=o&&o in x?x[o]:null,ne=o===`home`?`Verdant Webworks Learning Hub`:R?(0,v.jsxs)(`span`,{className:`header-title-with-icon`,children:[(0,v.jsx)(`img`,{src:R.icon,alt:`${R.name} icon`,className:`section-icon-img`}),` `,R.name,` Notes`]}):`Learning Hub`,z=H(n);return(0,v.jsxs)(v.Fragment,{children:[(0,v.jsx)(`header`,{children:(0,v.jsxs)(`div`,{className:`header-container`,children:[(0,v.jsxs)(`button`,{className:`hamburger-menu`,onClick:k,"aria-label":`Toggle navigation menu`,children:[(0,v.jsx)(`span`,{}),(0,v.jsx)(`span`,{}),(0,v.jsx)(`span`,{})]}),(0,v.jsx)(`h1`,{children:ne}),(0,v.jsx)(lt,{username:g.username,preferences:g,onThemeChange:te,onClearData:I,onShowHistory:L})]})}),(0,v.jsxs)(`div`,{className:`body-container`,children:[(0,v.jsx)(We,{setCurrentNote:O,currentSection:o,currentNoteName:n,onSearch:M,onClearSearch:N}),c&&(0,v.jsx)(`div`,{className:`mobile-overlay`,onClick:A,children:(0,v.jsxs)(`div`,{className:`mobile-menu`,onClick:e=>e.stopPropagation(),children:[(0,v.jsxs)(`div`,{className:`mobile-menu-header`,children:[(0,v.jsx)(`h2`,{children:`Navigation`}),(0,v.jsx)(`button`,{className:`close-mobile-menu`,onClick:A,"aria-label":`Close navigation menu`,children:`✕`})]}),(0,v.jsx)(We,{setCurrentNote:O,currentSection:o,currentNoteName:n,onSearch:M,onClearSearch:N,isMobile:!0,rightSidebarContent:(0,v.jsx)(Ge,{currentNote:e,currentNoteName:n,onLoadNote:O})})]})}),(0,v.jsxs)(`div`,{className:`center main`,children:[(0,v.jsxs)(`div`,{className:`navigation-bar`,children:[i.length>1&&(0,v.jsx)(`button`,{onClick:ee,className:`back-button`,children:`← Back`}),(0,v.jsx)(`span`,{className:`current-note`,children:z})]}),e===null&&(0,v.jsx)(y,{}),e!==null&&(0,v.jsxs)(`div`,{className:`markdown-content`,children:[(0,v.jsx)(Ze,{content:e,displayName:z,languageDirectory:R?.name,styleUpNextSections:j,loadNote:O}),(0,v.jsx)($e,{currentFilename:n,onLoadNote:O})]})]}),(0,v.jsx)(`div`,{className:`right-nav`,children:(0,v.jsx)(Ge,{currentNote:e,currentNoteName:n,onLoadNote:O})})]}),(0,v.jsx)(`footer`,{children:(0,v.jsxs)(`div`,{className:`footer-content`,children:[(0,v.jsx)(`span`,{children:`© 2025 Verdant Webworks`}),(0,v.jsx)(`span`,{className:`footer-separator`,children:`|`}),(0,v.jsx)(`a`,{href:`https://verdant-webworks.vercel.app/`,target:`_blank`,rel:`noopener noreferrer`,children:`verdantwebworks.vercel.app`})]})}),m&&(0,v.jsx)(et,{results:u,query:f,onSelectNote:P,onClose:()=>h(!1)}),(0,v.jsx)(ct,{isOpen:S,onComplete:F}),(0,v.jsx)(ut,{isOpen:w,preferences:g,onClose:()=>T(!1),onSelectNote:O})]})}var ft=dt;(0,g.createRoot)(document.getElementById(`root`)).render((0,v.jsx)(_.StrictMode,{children:(0,v.jsx)(ft,{})}));
+Note not found: `+e)}},100)},O=()=>{l(!c)},k=()=>{l(!1)},A=()=>{document.querySelectorAll(`.markdown-content h3, .markdown-content h4`).forEach(e=>{e.textContent&&e.textContent.includes(`Up Next`)&&e.classList.add(`up-next-section`)})},j=()=>{if(i.length>1){let e=[...i];e.pop();let n=e[e.length-1];a(e),r(n);try{t(q(n));let e=document.querySelector(`.center.main`);e&&(e.scrollTop=0)}catch(e){console.error(`Error loading previous note:`,n,e)}}},M=e=>{p(e),e.trim()?(d(rt(e)),h(!0)):(d([]),h(!1))},N=()=>{p(``),d([]),h(!1)},te=e=>{D(e),h(!1)},P=e=>{if(St(e.allowsStorage),e.allowsStorage){let t={...g,allowsStorage:!0,username:e.username,theme:e.theme,firstVisit:!1};b(t),Q(t)}$(e.theme),C(!1)},F=e=>{b({...g,theme:e}),Q({theme:e}),$(e)},I=()=>{wt(),b({theme:`system`,allowsStorage:!1,visitedNotes:[],firstVisit:!0}),$(`system`),window.location.reload()},L=()=>{w(!0)},R=o&&o in x?x[o]:null,z=o===`home`?`Verdant Webworks Learning Hub`:R?(0,v.jsxs)(`span`,{className:`header-title-with-icon`,children:[(0,v.jsx)(`img`,{src:R.icon,alt:`${R.name} icon`,className:`section-icon-img`}),` `,R.name,` Notes`]}):`Learning Hub`,B=U(n);return(0,v.jsxs)(v.Fragment,{children:[(0,v.jsx)(`header`,{children:(0,v.jsxs)(`div`,{className:`header-container`,children:[(0,v.jsxs)(`button`,{className:`hamburger-menu`,onClick:O,"aria-label":`Toggle navigation menu`,children:[(0,v.jsx)(`span`,{}),(0,v.jsx)(`span`,{}),(0,v.jsx)(`span`,{})]}),(0,v.jsx)(`h1`,{children:z}),(0,v.jsx)(Ot,{username:g.username,preferences:g,onThemeChange:F,onClearData:I,onShowHistory:L})]})}),(0,v.jsxs)(`div`,{className:`body-container`,children:[(0,v.jsx)(lt,{setCurrentNote:D,currentSection:o,currentNoteName:n,onSearch:M,onClearSearch:N}),c&&(0,v.jsx)(`div`,{className:`mobile-overlay`,onClick:k,children:(0,v.jsxs)(`div`,{className:`mobile-menu`,onClick:e=>e.stopPropagation(),children:[(0,v.jsxs)(`div`,{className:`mobile-menu-header`,children:[(0,v.jsx)(`h2`,{children:`Navigation`}),(0,v.jsx)(`button`,{className:`close-mobile-menu`,onClick:k,"aria-label":`Close navigation menu`,children:`✕`})]}),(0,v.jsx)(lt,{setCurrentNote:D,currentSection:o,currentNoteName:n,onSearch:M,onClearSearch:N,isMobile:!0,rightSidebarContent:(0,v.jsx)(ut,{currentNote:e,currentNoteName:n,onLoadNote:D})})]})}),(0,v.jsxs)(`div`,{className:`center main`,children:[(0,v.jsxs)(`div`,{className:`navigation-bar`,children:[i.length>1&&(0,v.jsx)(`button`,{onClick:j,className:`back-button`,children:`← Back`}),(0,v.jsx)(`span`,{className:`current-note`,children:B})]}),e===null&&(0,v.jsx)(y,{}),e!==null&&(0,v.jsxs)(`div`,{className:`markdown-content`,children:[(0,v.jsx)(gt,{content:e,displayName:B,languageDirectory:R?.name,styleUpNextSections:A,loadNote:D}),(0,v.jsx)(vt,{currentFilename:n,onLoadNote:D})]})]}),(0,v.jsx)(`div`,{className:`right-nav`,children:(0,v.jsx)(ut,{currentNote:e,currentNoteName:n,onLoadNote:D})})]}),(0,v.jsx)(`footer`,{children:(0,v.jsxs)(`div`,{className:`footer-content`,children:[(0,v.jsx)(`span`,{children:`© 2025 Verdant Webworks`}),(0,v.jsx)(`span`,{className:`footer-separator`,children:`|`}),(0,v.jsx)(`a`,{href:`https://verdant-webworks.vercel.app/`,target:`_blank`,rel:`noopener noreferrer`,children:`verdantwebworks.vercel.app`})]})}),m&&(0,v.jsx)(yt,{results:u,query:f,onSelectNote:te,onClose:()=>h(!1)}),(0,v.jsx)(Dt,{isOpen:S,onComplete:P}),(0,v.jsx)(kt,{isOpen:ee,preferences:g,onClose:()=>w(!1),onSelectNote:D})]})}var jt=At;(0,g.createRoot)(document.getElementById(`root`)).render((0,v.jsx)(_.StrictMode,{children:(0,v.jsx)(jt,{})}));
