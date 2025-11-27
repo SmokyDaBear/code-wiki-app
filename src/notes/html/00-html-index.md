@@ -4,9 +4,16 @@ Welcome to the HTML section! Here you'll find notes about HTML fundamentals, ele
 
 ## Available Topics
 
-- [Get Started](get-started.md) - Basic HTML introduction
-- [HTML Two](html-two.md) - Intermediate HTML concepts
-- [HTML Three](html-three.md) - Advanced HTML topics
+- [Get Started](01-get-started.md) - Basic HTML introduction
+- [Classes, IDs, and Attributes](02-classes-ids-and-data-attributes.md) - Understanding HTML attributes
+- [Forms and Input Elements](03-forms.md) - Creating forms in HTML
+- [Tables](04-html-tables.md) - Structuring data with HTML tables
+- [Semantic HTML](05-semantic-html.md) - Using semantic elements for better structure
+- [Multimedia Elements](06-multimedia-elements.md) - Embedding images, audio, and video
+- [HTML5 New Features](07-html5-new-features.md) - Overview of HTML5 additions
+- [Accessibility in HTML](08-accessibility.md) - Making HTML content accessible
+- [Importing and Paths](09-imports-and-paths.md) - Linking resources and files
+- [Styling Elements](10-styling-elements.md) - Basics of styling HTML with CSS and inline styles
 
 ## Quick Reference
 
