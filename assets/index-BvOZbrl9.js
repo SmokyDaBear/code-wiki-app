@@ -2805,9 +2805,16 @@ Welcome to the HTML section! Here you'll find notes about HTML fundamentals, ele
 
 ## Available Topics
 
-- [Get Started](get-started.md) - Basic HTML introduction
-- [HTML Two](html-two.md) - Intermediate HTML concepts
-- [HTML Three](html-three.md) - Advanced HTML topics
+- [Get Started](01-get-started.md) - Basic HTML introduction
+- [Classes, IDs, and Attributes](02-classes-ids-and-data-attributes.md) - Understanding HTML attributes
+- [Forms and Input Elements](03-forms.md) - Creating forms in HTML
+- [Tables](04-html-tables.md) - Structuring data with HTML tables
+- [Semantic HTML](05-semantic-html.md) - Using semantic elements for better structure
+- [Multimedia Elements](06-multimedia-elements.md) - Embedding images, audio, and video
+- [HTML5 New Features](07-html5-new-features.md) - Overview of HTML5 additions
+- [Accessibility in HTML](08-accessibility.md) - Making HTML content accessible
+- [Importing and Paths](09-imports-and-paths.md) - Linking resources and files
+- [Styling Elements](10-styling-elements.md) - Basics of styling HTML with CSS and inline styles
 
 ## Quick Reference
 
@@ -3121,7 +3128,327 @@ To make forms accessible, use labels, fieldsets, and legends to provide context 
   <input type="email" id="email" name="email" />
 </form>
 \`\`\`
-`,_e=`# Java
+`,_e=`# HTML Tables
+
+HTML tables are used to display data in a structured format using rows and columns.
+
+They are defined using the \`<table>\` element, with rows represented by \`<tr>\`, headers by \`<th>\`, and data cells by \`<td>\`.
+
+## Basic Table Structure
+
+\`\`\`html
+<table>
+  <tr>
+    <th>Header 1</th>
+    <th>Header 2</th>
+  </tr>
+  <tr>
+    <td>Data 1</td>
+    <td>Data 2</td>
+  </tr>
+</table>
+\`\`\`
+
+When rendered, this will create a table with two columns and one row of data like this:
+| Header 1 | Header 2 |
+|----------|----------|
+| Data 1 | Data 2 |
+`,ve=`# Semantic HTML
+
+Semantic in this context means using HTML elements that convey the meaning and structure of the content they contain. Semantic HTML improves accessibility, SEO, and maintainability of web pages.
+Some common semantic HTML elements include:
+
+- \`<header>\`: Represents the introductory content or a set of navigational links.
+- \`<nav>\`: Defines a set of navigation links.
+- \`<main>\`: Represents the main content of the document.
+- \`<article>\`: Represents a self-contained piece of content that could be distributed independently.
+- \`<section>\`: Defines a section in a document, typically with a heading.
+- \`<aside>\`: Represents content that is tangentially related to the content around it.
+- \`<footer>\`: Represents the footer of a document or section, typically containing information about the author, copyright, or related links.
+
+Using semantic HTML elements helps browsers and assistive technologies understand the structure and meaning of the content, leading to better user experiences.
+
+## Best Practices
+
+- Use semantic elements whenever possible instead of generic \`<div>\` or \`<span>\` elements.
+- Ensure that the structure of your HTML reflects the logical structure of your content.
+- Combine semantic HTML with ARIA (Accessible Rich Internet Applications) roles and attributes to enhance accessibility further when necessary.
+
+## When to Use Semantic HTML
+
+### Header
+
+Header elements are used to define the header section of a webpage or a section within the page.
+
+They typically contain introductory content, navigation links, or branding elements.
+
+Use a header element for fixed navigation bars or introductory sections at the top of a page or section.
+
+### Nav
+
+The nav element is used to define a section of navigation links.
+
+Use the nav element to group primary navigation links, such as menus or tables of contents.
+
+Often, the nav element is placed within a header or sidebar, and will contain an \`<ul>\` list of links.
+
+- adding a \`<ul>\` inside a \`<nav>\` is a common practice for organizing navigation links, as it allows users to tab through the links easily and provides a clear structure for screen readers.
+
+### Main
+
+The main element is used to define the main content of a webpage, this is where all of the unique content for that page resides excluding headers, footers, and navigation, although headers and footers can be inside the main element if they are part of the main content or part of a section.
+
+### Article
+
+The article element is used to define a self-contained piece of content that could be distributed independently.
+
+Use the article element for blog posts, news articles, forum posts, or any other content that can stand alone.
+
+### Section
+
+The section element is used to define a thematic grouping of content, typically with a heading.
+
+Use the section element to group related content together, such as chapters in an article or different topics on a webpage.
+
+### Aside
+
+The aside element is used to define content that is tangentially related to the main content.
+
+Use the aside element for sidebars, pull quotes, or related links that provide additional context to the main content.
+
+This is also a good element to add advertisements, related articles, and cart widgets.
+
+### Footer
+
+The footer element is used to define the footer section of a webpage or a section within the page.
+
+Typically, it contains information about the author, copyright, or related links.
+
+It can also contain navigation links, contact information, or social media links, as well as links to privacy policies or terms of service.
+
+### Example of Semantic HTML Structure
+
+Here is an example of a simple webpage structure using semantic HTML elements:
+
+\`\`\`html
+<header>
+  <h1>Website Title</h1>
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<body>
+  <section id="home">
+    <h2>Home Section</h2>
+    <p>Welcome to the home section of the website.</p>
+  </section>
+  <section id="about">
+    <h2>About Section</h2>
+    <p>This section contains information about the website.</p>
+  </section>
+  <section id="contact">
+    <h2>Contact Section</h2>
+    <p>This section provides contact information.</p>
+  </section>
+  <aside>
+    <h2>Related Links</h2>
+    <p>Check out these related articles and resources.</p>
+    <article>
+      <h3>Related Article 1</h3>
+      <p>This is a summary of related article 1.</p>
+    </article>
+  </aside>
+</body>
+<footer>
+  <p>&copy; 2024 Website Name. All rights reserved.</p>
+</footer>
+\`\`\`
+
+#### Note that this example uses:
+
+- \`<header>\` for the top section containing the title and navigation.
+- \`<nav>\` for the navigation links, which have a relevant \`href\` to a page section.
+- \`<body>\` for the main content area.
+- \`<section>\` for different sections of content within the body.
+- \`<footer>\` for the footer section at the bottom of the page.
+
+This structure enhances the readability and accessibility of the webpage by clearly defining the purpose of each section.
+`,ye='# Multimedia Elements\n\nHTML provides several elements to embed multimedia content such as images, audio, and video into web pages. Here are the primary multimedia elements:\n\n1. **Image Element (`<img>`)**: The `<img>` element is used to embed images in an HTML document. It is a self-closing tag and requires the `src` attribute to specify the image source and the `alt` attribute for alternative text.\n\n   ```html\n   <img src="path/to/image.jpg" alt="Description of the image" />\n   ```\n\n2. **Audio Element (`<audio>`)**: The `<audio>` element is used to embed audio content. It can contain one or more `<source>` elements to specify different audio formats for better browser compatibility. The `controls` attribute adds playback controls.\n\n   ```html\n   <audio controls>\n     <source src="path/to/audio.mp3" type="audio/mpeg" />\n     <source src="path/to/audio.ogg" type="audio/ogg" />\n   </audio>\n   ```\n\n3. **Video Element (`<video>`)**: The `<video>` element is used to embed video content. Similar to the `<audio>` element, it can contain multiple `<source>` elements and the `controls` attribute for playback controls.\n\n   ```html\n   <video width="640" height="360" controls>\n     <source src="path/to/video.mp4" type="video/mp4" />\n     <source src="path/to/video.webm" type="video/webm" />\n   </video>\n   ```\n\n4. **Figure and Figcaption Elements (`<figure>` and `<figcaption>`)**: The `<figure>` element is used to group media content (like images, audio, or video) along with a caption provided by the `<figcaption>` element.\n\n   ```html\n   <figure>\n     <img src="path/to/image.jpg" alt="Description of the image" />\n     <figcaption>This is a caption for the image.</figcaption>\n   </figure>\n   ```\n\n## Attributes\n\nMultimedia elements support various attributes to enhance functionality:\n\n- `autoplay`: Automatically starts playing the media when the page loads (for `<audio>` and `<video>`).\n- `loop`: Repeats the media playback indefinitely (for `<audio>` and `<video>`).\n- `muted`: Mutes the audio of the media (for `<audio>` and `<video>`).\n- `poster`: Specifies an image to be shown while the video is downloading or until the user hits the play button (for `<video>`).\n- `width` and `height`: Define the dimensions of the media element (for `<video>` and `<img>`).\n- `preload`: Specifies if and how the media should be loaded when the page loads (for `<audio>` and `<video>`).\n- `src`: Specifies the URL of the media file (for `<img>`, `<audio>`, and `<video>`).\n',be="# New Features in HTML5\n\nHTML5 introduced several new features and elements that enhance the capabilities of web development. Here are some of the most notable additions:\n\n1. **New Semantic Elements**: HTML5 introduced new semantic elements that provide better structure and meaning to web documents. These include:\n\n   - `<header>`: Represents the header section of a document or a section.\n   - `<nav>`: Defines a section for navigation links.\n   - `<main>`: Represents the main content of a document.\n   - `<article>`: Defines a self-contained piece of content.\n   - `<section>`: Represents a thematic grouping of content.\n   - `<aside>`: Defines content that is tangentially related to the main content.\n   - `<footer>`: Represents the footer section of a document or a section.\n\n2. **Multimedia Elements**: HTML5 introduced native support for multimedia content without the need for external plugins:\n\n   - `<audio>`: Used to embed audio content.\n   - `<video>`: Used to embed video content.\n\n3. **Canvas Element**: The `<canvas>` element allows for dynamic, scriptable rendering of 2D shapes and bitmap images. It is commonly used for graphics, games, and visualizations.\n\n4. **New Form Controls**: HTML5 added new input types and attributes to enhance form functionality:\n\n   - New input types: `email`, `url`, `tel`, `date`, `number`, `range`, `color`, etc.\n   - New attributes: `placeholder`, `required`, `autofocus`, `pattern`, etc.\n\n5. **Local Storage and Session Storage**: HTML5 introduced the Web Storage API, which provides a way to store data on the client side. This includes:\n\n   - `localStorage`: Stores data with no expiration date.\n   - `sessionStorage`: Stores data for the duration of the page session.\n\n6. **Geolocation API**: HTML5 provides a way to access the geographical location of the user through the Geolocation API, allowing web applications to provide location-based services.\n\n7. **Drag and Drop API**: HTML5 introduced a native drag-and-drop feature that allows users to drag and drop elements within a web page.\n\n8. **Web Workers**: HTML5 introduced Web Workers, which allow for background scripts to run in parallel with the main page, improving performance for complex tasks.\n\n9. **Improved Accessibility**: HTML5 includes features that enhance accessibility, such as ARIA (Accessible Rich Internet Applications) roles and attributes.\n   These new features in HTML5 have significantly improved the capabilities of web development, making it easier to create rich, interactive, and user-friendly web applications.\n",xe='# Accessiblity in HTML\n\nAccessibility in HTML is crucial for ensuring that web content is usable by all individuals, including those with disabilities. Here are some key practices and elements to enhance accessibility in HTML:\n\n1. **Use Semantic HTML**: Utilize semantic elements like `<header>`, `<nav>`, `<main>`, `<article>`, `<section>`, `<aside>`, and `<footer>` to provide meaningful structure to your content. This helps screen readers and other assistive technologies understand the layout and purpose of different sections.\n\n2. **Alt Attributes for Images**: Always provide descriptive `alt` attributes for `<img>` elements. This text is read by screen readers and helps visually impaired users understand the content of images.\n\n   Example:\n\n   ```html\n   <img src="profile.jpg" alt="Profile picture of John Doe" />\n   ```\n\n3. **Keyboard Navigation**: Ensure that all interactive elements (links, buttons, forms) are accessible via keyboard navigation. Use the `tabindex` attribute to manage focus order when necessary.\n\n4. **ARIA Roles and Attributes**: Use ARIA (Accessible Rich Internet Applications) roles and attributes to enhance the accessibility of dynamic content and custom UI components. For example, use `role="button"` for custom button elements.\n\n   Example:\n\n   ```html\n   <div role="button" tabindex="0" onclick="submitForm()">Submit</div>\n   ```\n\n   #### The role attribute defines the purpose of an element, while tabindex makes it focusable.\n\n5. **Form Accessibility**: Label all form elements using the `<label>` element and associate it with the corresponding input using the `for` attribute. This improves usability for screen reader users.\n   Example:\n\n   ```html\n   <label for="email">Email:</label>\n   <input type="email" id="email" name="email" />\n   ```\n\n6. **Color Contrast**: Ensure sufficient color contrast between text and background colors to make content readable for users with visual impairments. Use tools to check contrast ratios.\n\n#### Keep in mind those that are colorblind may have difficulty distinguishing certain color combinations.\n\n7. **Headings Structure**: Use headings (`<h1>` to `<h6>`) to create a logical document structure. This helps users navigate content easily using screen readers.\n\n8. **Skip Navigation Links**: Provide "skip to content" links at the top of the page to allow keyboard users to bypass repetitive navigation links.\n\n   Example:\n\n   ```html\n   <a href="#main-content" class="skip-link">Skip to main content</a>\n   ```\n\n9. **Responsive Design**: Ensure your website is responsive and works well on various devices and screen sizes, which benefits all users, including those with disabilities.\n\n#### Responsive design ensures content is accessible on different devices, and is mainly achieved through CSS media queries and flexible layouts.\n',Se=`# Imports and Paths in HTML
+
+In HTML, importing resources such as stylesheets, scripts, and media files is essential for building functional and visually appealing web pages. This is typically done using specific HTML elements and attributes that define the paths to these resources.
+
+## Key Concepts
+
+### Absolute vs. Relative Paths
+
+The \`./\` notation represents the current directory, while \`../\` is used to navigate up one directory level. These relative paths are crucial for linking resources correctly based on the location of the HTML file.
+
+Lets say you have the following project structure:
+
+\`\`\`
+website/
+├── index.html
+├── styles/
+│   └── main.css
+├── scripts/
+│   └── app.js
+└── images/
+    └── logo.png
+\`\`\`
+
+To link the \`logo.png\` image in \`index.html\`, you would use the following relative path:
+
+\`\`\`html
+<img src="images/logo.png" alt="Logo" />
+\`\`\`
+
+Now, lets say you want to add more pages to your website, and you create a new folder called \`pages\`:
+
+\`\`\`
+website/
+├── index.html
+├── styles/
+│   └── main.css
+├── scripts/
+│   └── app.js
+├── images/
+│   └── logo.png
+└── pages/
+    └── about.html
+\`\`\`
+
+To link the \`main.css\` stylesheet from \`about.html\`, you would use the following relative path:
+
+\`\`\`html
+<link rel="stylesheet" href="../styles/main.css" />
+\`\`\`
+
+### Linking Outside Resources
+
+When linking to resources hosted on external servers, you use absolute URLs. For example, to include a CSS framework like Bootstrap, you would use:
+
+\`\`\`html
+<link
+  rel="stylesheet"
+  href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+/>
+\`\`\`
+
+## Linking Stylesheets
+
+To link an external CSS stylesheet to your HTML document, you use the \`<link>\` element within the \`<head>\` section. The \`href\` attribute specifies the path to the CSS file.
+
+\`\`\`html
+<head>
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+\`\`\`
+
+## Importing JavaScript Files
+
+To include an external JavaScript file, you use the \`<script>\` element. The \`src\` attribute specifies the path to the JavaScript file.
+
+\`\`\`html
+<body>
+  <script src="scripts/app.js"><\/script>
+</body>
+\`\`\`
+
+#### For importing small scripts, you can also include JavaScript directly within the \`<script>\` tags:
+
+\`\`\`html
+<body>
+  <script>
+    console.log("Hello, World!");
+  <\/script>
+</body>
+\`\`\`
+
+#### Also, sometimes the \`defer\` or \`async\` attributes are used with the \`<script>\` tag to control the loading behavior of the script.
+
+- \`defer\`: The script is executed after the document has been parsed.
+- \`async\`: The script is executed _Asynchronously_ as soon as it is downloaded, without blocking the parsing of the document.
+
+\`\`\`html
+<script src="scripts/app.js" defer><\/script>
+<script src="scripts/appTwo.js" async><\/script>
+\`\`\`
+
+#### For javaScript modules, you can use the \`type="module"\` attribute:
+
+\`\`\`html
+<script type="module" src="scripts/module.js"><\/script>
+\`\`\`
+
+## Image and Media Paths
+
+To include images in your HTML, you use the \`<img>\` element with the \`src\` attribute specifying the path to the image file.
+
+\`\`\`html
+<img src="images/photo.jpg" alt="A descriptive text" />
+\`\`\`
+`,Ce=`# Styling Elements
+
+Styling HTML elements is primarily done using CSS (Cascading Style Sheets). There are several ways to apply styles to your HTML elements:
+
+1. **Inline Styles**: You can add styles directly to an HTML element using the \`style\` attribute.
+
+   \`\`\`html
+   <p style="color: blue; font-size: 16px;">This is a blue paragraph.</p>
+   \`\`\`
+
+   This method is quick for small changes but is not recommended for larger projects due to maintainability issues.
+
+2. **Internal CSS**: You can include CSS styles within a \`<style>\` tag in the \`<head>\` section of your HTML document.
+   \`\`\`html
+   <head>
+     <style>
+       p {
+         color: green;
+         font-size: 18px;
+       }
+     </style>
+   </head>
+   <body>
+     <p>This is a green paragraph.</p>
+   </body>
+   \`\`\`
+   This method is useful for styling a single HTML document.
+3. **External CSS**: The most common and recommended way to style HTML is by linking to an external CSS file using the \`<link>\` tag in the \`<head>\` section.
+
+A link tag can have different attributes including:
+
+- \`rel\`: Specifies the relationship between the current document and the linked resource. For CSS files, this should be set to "stylesheet".
+- \`href\`: Specifies the URL of the linked resource.
+- \`type\`: Specifies the MIME type of the linked resource. For CSS files, this is typically "text/css", although it is optional and often omitted.
+- \`media\`: Specifies the media type for which the styles are intended (e.g., "screen", "print").
+
+At a minimum, you need to include the \`rel\`(relation) and \`href\`(hypertext reference) attributes to link an external CSS file.
+
+\`\`\`html
+<head>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <p>This paragraph will be styled by the external CSS file.</p>
+</body>
+\`\`\`
+
+In the \`styles.css\` file, you can define your styles:
+
+\`\`\`css
+p {
+  color: red;
+  font-size: 20px;
+}
+\`\`\`
+
+This method allows for better organization and reusability of styles across multiple HTML documents.
+`,we=`# Java
 
 Java is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible. It is widely used for building enterprise-scale applications, mobile applications (especially Android apps), and large systems.
 
@@ -3167,7 +3494,7 @@ To start programming in Java, you need to:
 3. Choose an Integrated Development Environment (IDE) such as IntelliJ IDEA, Eclipse, or NetBeans.
 4. Write your first Java program, compile it using the \`javac\` command, and run it using the \`java\` command.
 5. Explore Java documentation and tutorials to deepen your understanding of the language and its features.
-`,ve=`# JavaScript Notes
+`,Te=`# JavaScript Notes
 
 Welcome to the JavaScript section! Here you'll find comprehensive notes about JavaScript programming.
 
@@ -3326,7 +3653,7 @@ Some other useful methods of the \`console\` object include:
 - \`console.info()\`: Outputs an informational message to the console.
 - \`console.debug()\`: Outputs a debug message to the console.
 - \`console.clear()\`: Clears the console.
-`,ye=`# Variables and Data Types in JavaScript
+`,Ee=`# Variables and Data Types in JavaScript
 
 A **variable** is a named container used to store data values. In JavaScript, you can declare variables using three keywords: \`var\`, \`let\`, and \`const\`. Each has its own characteristics and scope rules.
 
@@ -3458,7 +3785,7 @@ let b = 10;
 \`\`\`
 
 #### This is one of the reasons why \`let\` and \`const\` are preferred over \`var\` in modern JavaScript, as the temporal dead zone helps catch errors related to variable usage before declaration.
-`,be='# Operators in JavaScript\n\nOperators are special symbols or keywords in JavaScript that perform operations on operands (values or variables). They are used to manipulate data and perform calculations.\nThey are similar to most other commone programming languages.\n\n## Types of Operators\n\nJavaScript provides several types of operators, including:\n\n- Arithmetic Operators\n- Comparison Operators\n- Logical Operators\n- Assignment Operators\n\n## Arithmetic Operators\n\nArithmetic operators are used to perform mathematical operations.\n\n### Common arithmetic operators:\n\n- `+` : Addition\n- `-` : Subtraction\n- `*` : Multiplication\n- `/` : Division\n\n### Additional arithmetic operators:\n\n- `%` : Modulus (Remainder)\n  - Example: `5 % 2` results in `1`, since 5 divided by 2 leaves a remainder of 1.\n- `**` : Exponentiation\n  - Example: `2 ** 3` results in `8`, since 2 raised to the power of 3 is 8.\n- `++` : Increment by 1\n  - Example: `let a = 5; a++;` results in `a` being `6`.\n- `--` : Decrement by 1\n  - Example: `let a = 5; a--;` results in `a` being `4`.\n\n#### Note: the increment (`++`) and decrement (`--`) operators can only be used with let and var declared variables, not with const, unless the const holds an object or array and you are modifying its properties or elements.\n\n### Syntax Using Arithmetic Operators:\n\n```javascript\nlet a = 10;\n\nlet b = 5;\n\nlet sum = a + b; // 15\n\nlet difference = a - b; // 5\n\nlet product = a * b; // 50\n\nlet quotient = a / b; // 2\n\nlet remainder = a % b; // 0\n\nlet power = a ** 2; // 100\n\na++; // a is now 11\n\nb--; // b is now 4\n```\n\n## Comparison Operators\n\nComparison operators are used to compare two values and return a boolean result (`true` or `false`).\n\n### Common comparison operators:\n\n- `==` : Equal to (loose equality)\n- `===` : Strict equal to\n- `!=` : Not equal to (loose inequality)\n- `!==` : Strict not equal to\n- `>` : Greater than\n- `<` : Less than\n- `>=` : Greater than or equal to\n- `<=` : Less than or equal to\n\n#### The `loose` tag refers to the fact that these operators perform type coercion, meaning they convert the operands to the same type before making the comparison. The `strict` tag means that no type conversion is performed, and both value and type must be the same for the comparison to return true.\n\n### Syntax Using Comparison Operators:\n\n```javascript\nlet x = 10;\n\nlet y = "10";\n\nconst areStringsEqualToNumbers = x === y; // false, because types are different\n\nconst areValuesEqual = x == y; // true, because values are equal after type coercion\n\nconst isNotEqual = x != 5; // true\n\nconst isGreaterThan = x > 5; // true\n\nconst isLessThanOrEqual = x <= 10; // true\n```\n\n### Type Coercion\n\n- The `==` and `!=` operators perform type coercion, meaning they convert the operands to the same type before making the comparison.\n- The `===` and `!==` operators do not perform type coercion and compare both value and type.\n  - It is generally recommended to use `===` and `!==` to avoid unexpected results due to type coercion.\n\n## Logical Operators\n\nLogical operators are used to combine multiple boolean expressions and return a boolean result.\n\n#### Common logical operators:\n\n- `&&` : Logical AND\n- `||` : Logical OR\n- `!` : Logical NOT\n\n#### Syntax Using Logical Operators:\n\n```javascript\nlet a = true;\n\nlet b = false;\n\nconst aAndB = a && b; // false\n\nconst aOrB = a || b; // true\n\nconst notA = !a; // false\n```\n\n## Assignment Operators\n\nAssignment operators are used to assign values to variables.\n\n#### Common assignment operators:\n\n- `=` : Simple assignment\n  - Example: `let x = 10;` assigns the value `10` to the variable `x`.\n- `+=` : Addition assignment\\\n  - Example: `x += 5;` is equivalent to `x = x + 5;`, so if `x` was `10`, it becomes `15`.\n- `-=` : Subtraction assignment\n  - Example: `x -= 3;` is equivalent to `x = x - 3;`, so if `x` was `10`, it becomes `7`.\n- `*=` : Multiplication assignment\n  - Example: `x *= 2;` is equivalent to `x = x * 2;`, so if `x` was `10`, it becomes `20`.\n- `**=` : Exponentiation assignment\n  - Example: `x **= 3;` is equivalent to `x = x ** 3;`, so if `x` was `2`, it becomes `8`.\n- `/=` : Division assignment\n  - Example: `x /= 2;` is equivalent to `x = x / 2;`, so if `x` was `10`, it becomes `5`.\n- `%=` : Modulus assignment\n  - Example: `x %= 3;` is equivalent to `x = x % 3;`, so if `x` was `10`, it becomes `1`.\n\n#### Note: Assignment operators can only be used with `let` and `var` declared variables, not with `const`, unless the `const` holds an object or array and you are modifying its properties or elements.\n',xe=`# Conditionals
+`,De='# Operators in JavaScript\n\nOperators are special symbols or keywords in JavaScript that perform operations on operands (values or variables). They are used to manipulate data and perform calculations.\nThey are similar to most other commone programming languages.\n\n## Types of Operators\n\nJavaScript provides several types of operators, including:\n\n- Arithmetic Operators\n- Comparison Operators\n- Logical Operators\n- Assignment Operators\n\n## Arithmetic Operators\n\nArithmetic operators are used to perform mathematical operations.\n\n### Common arithmetic operators:\n\n- `+` : Addition\n- `-` : Subtraction\n- `*` : Multiplication\n- `/` : Division\n\n### Additional arithmetic operators:\n\n- `%` : Modulus (Remainder)\n  - Example: `5 % 2` results in `1`, since 5 divided by 2 leaves a remainder of 1.\n- `**` : Exponentiation\n  - Example: `2 ** 3` results in `8`, since 2 raised to the power of 3 is 8.\n- `++` : Increment by 1\n  - Example: `let a = 5; a++;` results in `a` being `6`.\n- `--` : Decrement by 1\n  - Example: `let a = 5; a--;` results in `a` being `4`.\n\n#### Note: the increment (`++`) and decrement (`--`) operators can only be used with let and var declared variables, not with const, unless the const holds an object or array and you are modifying its properties or elements.\n\n### Syntax Using Arithmetic Operators:\n\n```javascript\nlet a = 10;\n\nlet b = 5;\n\nlet sum = a + b; // 15\n\nlet difference = a - b; // 5\n\nlet product = a * b; // 50\n\nlet quotient = a / b; // 2\n\nlet remainder = a % b; // 0\n\nlet power = a ** 2; // 100\n\na++; // a is now 11\n\nb--; // b is now 4\n```\n\n## Comparison Operators\n\nComparison operators are used to compare two values and return a boolean result (`true` or `false`).\n\n### Common comparison operators:\n\n- `==` : Equal to (loose equality)\n- `===` : Strict equal to\n- `!=` : Not equal to (loose inequality)\n- `!==` : Strict not equal to\n- `>` : Greater than\n- `<` : Less than\n- `>=` : Greater than or equal to\n- `<=` : Less than or equal to\n\n#### The `loose` tag refers to the fact that these operators perform type coercion, meaning they convert the operands to the same type before making the comparison. The `strict` tag means that no type conversion is performed, and both value and type must be the same for the comparison to return true.\n\n### Syntax Using Comparison Operators:\n\n```javascript\nlet x = 10;\n\nlet y = "10";\n\nconst areStringsEqualToNumbers = x === y; // false, because types are different\n\nconst areValuesEqual = x == y; // true, because values are equal after type coercion\n\nconst isNotEqual = x != 5; // true\n\nconst isGreaterThan = x > 5; // true\n\nconst isLessThanOrEqual = x <= 10; // true\n```\n\n### Type Coercion\n\n- The `==` and `!=` operators perform type coercion, meaning they convert the operands to the same type before making the comparison.\n- The `===` and `!==` operators do not perform type coercion and compare both value and type.\n  - It is generally recommended to use `===` and `!==` to avoid unexpected results due to type coercion.\n\n## Logical Operators\n\nLogical operators are used to combine multiple boolean expressions and return a boolean result.\n\n#### Common logical operators:\n\n- `&&` : Logical AND\n- `||` : Logical OR\n- `!` : Logical NOT\n\n#### Syntax Using Logical Operators:\n\n```javascript\nlet a = true;\n\nlet b = false;\n\nconst aAndB = a && b; // false\n\nconst aOrB = a || b; // true\n\nconst notA = !a; // false\n```\n\n## Assignment Operators\n\nAssignment operators are used to assign values to variables.\n\n#### Common assignment operators:\n\n- `=` : Simple assignment\n  - Example: `let x = 10;` assigns the value `10` to the variable `x`.\n- `+=` : Addition assignment\\\n  - Example: `x += 5;` is equivalent to `x = x + 5;`, so if `x` was `10`, it becomes `15`.\n- `-=` : Subtraction assignment\n  - Example: `x -= 3;` is equivalent to `x = x - 3;`, so if `x` was `10`, it becomes `7`.\n- `*=` : Multiplication assignment\n  - Example: `x *= 2;` is equivalent to `x = x * 2;`, so if `x` was `10`, it becomes `20`.\n- `**=` : Exponentiation assignment\n  - Example: `x **= 3;` is equivalent to `x = x ** 3;`, so if `x` was `2`, it becomes `8`.\n- `/=` : Division assignment\n  - Example: `x /= 2;` is equivalent to `x = x / 2;`, so if `x` was `10`, it becomes `5`.\n- `%=` : Modulus assignment\n  - Example: `x %= 3;` is equivalent to `x = x % 3;`, so if `x` was `10`, it becomes `1`.\n\n#### Note: Assignment operators can only be used with `let` and `var` declared variables, not with `const`, unless the `const` holds an object or array and you are modifying its properties or elements.\n',Oe=`# Conditionals
 
 Conditionals in JavaScript are used to perform different actions based on different conditions. The primary conditional statements in JavaScript are:
 
@@ -3556,7 +3883,7 @@ switch (day) {
 
 console.log(dayName);
 \`\`\`
-`,Se='# Ternary Expressions\n\nThe ternary operator is a concise way to perform conditional evaluations in JavaScript. It is often used as a shorthand for simple `if-else` statements.\n\n### Syntax\n\n```javascript\ncondition ? expressionIfTrue : expressionIfFalse;\n```\n\n- `condition`: A boolean expression that evaluates to `true` or `false`.\n  - The condition is followed by a `?` operator.\n- `expressionIfTrue`: The expression that is executed if the condition is `true`.\n  - This is followed by a `:` operator, or another ternary expression for nested conditions.\n- `expressionIfFalse`: The expression that is executed if the condition is `false`.\n\n### Example\n\n```javascript\nlet age = 20;\nlet canVote = age >= 18 ? "Yes" : "No";\nconsole.log(canVote);\n```\n\nIn this example, the condition `age >= 18` is evaluated. Since `age` is `20`, which is greater than `18`, the expression `"Yes"` is assigned to the variable `canVote`. If `age` were less than `18`, `"No"` would be assigned instead.\n\n### Nested Ternary Operators\n\nTernary operators can be nested to handle multiple conditions, but be cautious as it can reduce code readability.\n\n```javascript\nlet score = 85;\nlet grade = score >= 90 ? "A" : score >= 80 ? "B" : score >= 70 ? "C" : "F";\nconsole.log(grade);\n```\n\nIn this example, the `score` is evaluated against multiple conditions to determine the corresponding `grade`. Since `score` is `85`, the result will be `"B"`.\n\n### When to Use\n\n- Use the ternary operator for simple conditional assignments to improve code conciseness.\n- Avoid using it for complex conditions or multiple nested ternary operators, as it can make the code harder to read and maintain. In such cases, prefer using traditional `if-else` statements.\n\nAn example of a good use case for the ternary operator is when assigning a value based on a simple condition, such as determining if a number is even or odd:\n\n```javascript\nlet number = 4;\nlet isEven = number % 2 === 0 ? "Even" : "Odd";\nconsole.log(isEven); // Output: Even\n```\n\nIn this case, the ternary operator provides a clear and concise way to assign the value of `isEven` based on whether `number` is even or odd, and is easily readable.\n',Ce=`# Loops in JavaScript
+`,ke='# Ternary Expressions\n\nThe ternary operator is a concise way to perform conditional evaluations in JavaScript. It is often used as a shorthand for simple `if-else` statements.\n\n### Syntax\n\n```javascript\ncondition ? expressionIfTrue : expressionIfFalse;\n```\n\n- `condition`: A boolean expression that evaluates to `true` or `false`.\n  - The condition is followed by a `?` operator.\n- `expressionIfTrue`: The expression that is executed if the condition is `true`.\n  - This is followed by a `:` operator, or another ternary expression for nested conditions.\n- `expressionIfFalse`: The expression that is executed if the condition is `false`.\n\n### Example\n\n```javascript\nlet age = 20;\nlet canVote = age >= 18 ? "Yes" : "No";\nconsole.log(canVote);\n```\n\nIn this example, the condition `age >= 18` is evaluated. Since `age` is `20`, which is greater than `18`, the expression `"Yes"` is assigned to the variable `canVote`. If `age` were less than `18`, `"No"` would be assigned instead.\n\n### Nested Ternary Operators\n\nTernary operators can be nested to handle multiple conditions, but be cautious as it can reduce code readability.\n\n```javascript\nlet score = 85;\nlet grade = score >= 90 ? "A" : score >= 80 ? "B" : score >= 70 ? "C" : "F";\nconsole.log(grade);\n```\n\nIn this example, the `score` is evaluated against multiple conditions to determine the corresponding `grade`. Since `score` is `85`, the result will be `"B"`.\n\n### When to Use\n\n- Use the ternary operator for simple conditional assignments to improve code conciseness.\n- Avoid using it for complex conditions or multiple nested ternary operators, as it can make the code harder to read and maintain. In such cases, prefer using traditional `if-else` statements.\n\nAn example of a good use case for the ternary operator is when assigning a value based on a simple condition, such as determining if a number is even or odd:\n\n```javascript\nlet number = 4;\nlet isEven = number % 2 === 0 ? "Even" : "Odd";\nconsole.log(isEven); // Output: Even\n```\n\nIn this case, the ternary operator provides a clear and concise way to assign the value of `isEven` based on whether `number` is even or odd, and is easily readable.\n',Ae=`# Loops in JavaScript
 
 Loops are used in JavaScript to execute a block of code multiple times until a specified condition is met. They are essential for tasks that require repetition, such as iterating over arrays or performing actions a certain number of times.
 
@@ -3675,7 +4002,7 @@ for (value of iterable) {
 \`\`\`
 
 We will cover these loops in more detail in later notes, after we learn about objects and arrays.
-`,we=`# Functions
+`,je=`# Functions
 
 Functions are reusable blocks of code that perform a specific task. They can take inputs (parameters) and return an output (return value).
 
@@ -3796,7 +4123,7 @@ function factorial(n) {
 }
 console.log(factorial(5)); // Output: 120
 \`\`\`
-`,Te=`# Function Generators
+`,Me=`# Function Generators
 
 Generators are a special type of function in JavaScript that can be paused and resumed, allowing you to produce a sequence of values over time.
 
@@ -3852,7 +4179,7 @@ for (let i = 0; i < 10; i++) {
 }
 // Output: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34
 \`\`\`
-`,Ee=`# Methods
+`,Ne=`# Methods
 
 In JavaScript, methods are functions that are associated with objects. They are used to define behaviors for objects and can manipulate the object's properties or perform actions related to the object.
 
@@ -3976,7 +4303,7 @@ Now you can use the \`reverse\` method on any string:
 let str = "hello";
 console.log(str.reverse()); // Output: "olleh"
 \`\`\`
-`,De=`# Template Strings
+`,Pe=`# Template Strings
 
 Template strings (also known as template literals) in JavaScript are a way to work with strings that allow for easier embedding of expressions and multi-line strings.
 
@@ -4034,7 +4361,7 @@ They are enclosed by backticks (\`\` \` \` \`\`) instead of single ( \`' '\`) or
    }.\`;
    console.log(membershipStatus); // Output: You are a member.
    \`\`\`
-`,Oe=`# JavaScript Built-in Functions
+`,Fe=`# JavaScript Built-in Functions
 
 JavaScript provides several built-in functions that are readily available for use without needing to define them yourself. These functions perform common tasks and operations, making it easier to work with data and perform calculations.
 
@@ -4203,7 +4530,7 @@ const exponent = 3;
 
 console.log(Math.pow(base, exponent)); // Output: 8
 \`\`\`
-`,ke=`# Scope
+`,Ie=`# Scope
 
 Scope refers to the accessibility of variables and functions in different parts of your code. In JavaScript, there are two main types of scope: global scope and local scope.
 
@@ -4295,7 +4622,7 @@ If functionVar were declared with \`let\` or \`const\`, it would not be accessib
 This is called **hoisting** where \`var\` declarations are moved to the top of their enclosing function scope during compilation.
 
 It's as if they are immediately declared at the top of the function, but not initialized until the line where they are defined is executed.
-`,Ae=`# Arrays
+`,Le=`# Arrays
 
 A JavaScript **Array** is a data structure that can hold more than one value at a time. It is a list-like object used to store multiple values in a single variable.
 
@@ -4581,7 +4908,7 @@ const sortedNumbers = numbers.slice().sort(); // or use [...numbers].sort()
 console.log(sortedNumbers); // Output: [1, 2, 3, 4, 5]
 console.log(numbers); // Original array remains unchanged: [4, 2, 5, 1, 3]
 \`\`\`
-`,je=`# Classes
+`,Re=`# Classes
 
 In JavaScript, classes are a way to create objects and manage inheritance using a more familiar syntax compared to traditional prototype-based inheritance. Classes were introduced in ECMAScript 2015 (ES6) and provide a clearer and more concise way to define object blueprints.
 
@@ -4698,7 +5025,7 @@ console.log(employee.jobTitle); // Output: Developer
 //Accessing the greet method inherited from the Person class:
 employee.greet(); // Output: Hello, my name is Charlie and I am 28 years old.
 \`\`\`
-`,Me=`# Objects
+`,ze=`# Objects
 
 In JavaScript, an object is a collection of key-value pairs, where each key (also called a property) is a string (or symbol) and the value can be any data type, including other objects or functions. Objects are used to store and organize data in a structured way.
 
@@ -4860,7 +5187,7 @@ You can access nested object properties using dot notation or bracket notation.
 console.log(student.address.city); // Output: Wonderland
 student.address.zipCode = "54321"; // Modify nested property
 \`\`\`
-`,Ne=`# Importing and Exporting JavaScript Code
+`,Be=`# Importing and Exporting JavaScript Code
 
 In JavaScript, you can organize your code into separate files and modules using the \`import\` and \`export\` statements. This allows you to reuse code across different parts of your application and maintain a cleaner codebase.
 
@@ -4992,7 +5319,7 @@ console.log(math.add(2, 3)); // Output: 5
 - Use \`import\` to bring in exported items from other modules.
 - ES6 modules use \`import\` and \`export\`, while CommonJS uses \`require\` and \`module.exports\`.
 - You can have named exports, default exports, and import all exports as an object.
-`,Pe=`# Try and Catch
+`,Ve=`# Try and Catch
 
 The \`try...catch\` statement in JavaScript is used for error handling. It allows you to execute a block of code (the "try" block) and catch any errors that may occur during its execution (the "catch" block). This helps prevent your program from crashing due to unhandled exceptions.
 
@@ -5126,7 +5453,7 @@ try {
   }
 }
 \`\`\`
-`,Fe=`# Promises
+`,He=`# Promises
 
 Promises are a way to handle asynchronous operations in JavaScript. They represent a value that may be available now, later, or never. A Promise can be in one of three states: pending, fulfilled, or rejected.
 
@@ -5318,7 +5645,7 @@ Promise.any([promise1, promise2, promise3])
     console.error(error);
   });
 \`\`\`
-`,Ie=`# JSON
+`,Ue=`# JSON
 
 JSON (JavaScript Object Notation) is a lightweight data interchange format that is easy for humans to read and write, and easy for machines to parse and generate. It is commonly used for transmitting data between a server and a web application as text.
 
@@ -5467,7 +5794,7 @@ The individual objects in the JSON file can be accessed via endpoints like:
 
 - \`http://localhost:3000/posts\`
 - \`http://localhost:3000/comments\`
-`,Le=`# Eval
+`,We=`# Eval
 
 Eval is a built-in JavaScript function that evaluates a string as code. It can execute arbitrary code represented as a string, which can lead to security vulnerabilities and performance issues. Therefore, its use is generally discouraged unless absolutely necessary, although there are some legitimate use cases.
 
@@ -5526,7 +5853,7 @@ In most cases, there are safer and more efficient alternatives to eval:
    const greeting = \`Hello, \${name}!\`;
    console.log(greeting); // Output: Hello, Alice!
    \`\`\`
-`,Re=`# Types and Instances
+`,Ge=`# Types and Instances
 
 In JavaScript, types and instances are fundamental concepts that help define the nature of data and how it behaves in the language.
 
@@ -5626,7 +5953,7 @@ const greetPerson = (obj) => {
 greetPerson(alice); // Output: Hello, Alice!
 greetPerson(notAPerson); // Output: Hello, stranger!
 \`\`\`
-`,ze=`# Destructuring
+`,Ke=`# Destructuring
 
 Destructuring is a convenient way to extract values from arrays or properties from objects into distinct variables. It allows for cleaner and more readable code.
 
@@ -5738,7 +6065,7 @@ function sum(...numbers) {
 console.log(sum(1, 2, 3)); // Output: 6
 console.log(sum(4, 5, 6, 7, 8)); // Output: 30
 \`\`\`
-`,Be=`# Fetch API
+`,qe=`# Fetch API
 
 The Fetch API provides a modern way to make network requests in JavaScript. It is built into most modern browsers and allows you to make HTTP requests to servers and handle responses using Promises.
 
@@ -6027,7 +6354,7 @@ export function updateUser(userId, updatedData) {
     });
 }
 \`\`\`
-`,Ve=`# The DOM
+`,Je=`# The DOM
 
 The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of a document as a tree of objects, allowing programming languages like JavaScript to manipulate the content, structure, and style of web pages dynamically.
 With the DOM, you can:
@@ -6349,7 +6676,7 @@ element.addEventListener(
   true
 ); // true for capturing phase
 \`\`\`
-`,He=`# Regular Expressions (RegEx)
+`,Ye=`# Regular Expressions (RegEx)
 
 Regular expressions in JavaScript are patterns used to match character combinations in strings. They are implemented using the \`RegExp\` object or by using literal syntax.
 
@@ -6606,7 +6933,7 @@ stops at the first possible match.
 ### Simple password validator (example pattern to refine):
 
 \`^(?=.*\\d)(?=.*[a-z])(?=.*[A-Z])[A-Za-z\\d]{6,}$\` requires at least six characters including uppercase, lowercase, and a digit.
-`,Ue=`# Constructors and Prototypes
+`,Xe=`# Constructors and Prototypes
 
 In JavaScript, constructors are special functions used to create and initialize objects. Prototypes are a mechanism by which JavaScript objects inherit features from one another.
 
@@ -6669,7 +6996,7 @@ function Person(name) {
   };
 }
 \`\`\`
-`,We=`# Sets and Maps
+`,Ze=`# Sets and Maps
 
 Sets and Maps, as well as WeakSets and WeakMaps, are built-in data structures in JavaScript that provide efficient ways to store and manage collections of data.
 
@@ -6849,7 +7176,7 @@ Same as Maps, but only objects are allowed as keys.
 - Use **Maps** when you need to store key-value pairs and want to maintain the order of insertion.
 - Use **WeakSets** when you need to store a collection of objects without preventing them from being garbage collected.
 - Use **WeakMaps** when you need to associate data with objects without preventing those objects from being garbage collected.
-`,Ge=`# Learn SQL 🌎
+`,Qe=`# Learn SQL 🌎
 
 ## Welcome to the SQL Learning Notes!
 
@@ -6897,7 +7224,7 @@ For more in-depth learning, consider exploring the following resources:
   Happy learning! 🚀
 
 #### Setup Guide: Follow the [Setting Up SQL 🛠️](setting-up.md) notes to install and configure SQL on your machine.
-`,Ke=`# Getting started with SQL 🖥️ 🪛
+`,$e=`# Getting started with SQL 🖥️ 🪛
 
 ## Intro
 
@@ -6989,7 +7316,7 @@ The following SQL statement creates a differential back up of the database "test
 #### Tip: A differential back up reduces the back up time (since only the changes are backed up).
 
 #### Previous: Explore the SQL learning notes overview in the [Learn SQL 🌎](sql-index.md) notes to understand the structure of the SQL learning material.
-`,qe=`# Setting Up SQL 🛠️
+`,et=`# Setting Up SQL 🛠️
 
 Welcome to the SQL setup guide! This document will help you get started with installing and configuring SQL on your local machine or server.
 
@@ -7043,7 +7370,7 @@ If the query returns the version of your SQL database, congratulations! Your set
 
 
 #### Home: Return to the [Learn SQL 🌎](sql-index.md) main index for more SQL topics and resources.
-`,Je=`# Overview of SQL Data Types
+`,tt=`# Overview of SQL Data Types
 
 SQL data types define the kind of data that can be stored in a column of a database table. Choosing the correct data type is essential for data integrity, storage efficiency, and query performance.
 
@@ -7102,7 +7429,7 @@ Variables are used to store data values. When creating tables, you need to defin
 
 
 #### Previous: Review the [SQL Basics 📝](basics.md) notes to understand fundamental SQL concepts before diving into data types and tables.
-`,Ye=`# Tables in SQL 🗄️
+`,nt=`# Tables in SQL 🗄️
 
 to get started with tables in SQL, you first need to understand the concept of variables and datatypes in SQL.
 
@@ -7237,7 +7564,7 @@ Remeber that a column is a variable name in a table, like CustomerID or Customer
 \`SELECT\` and \`FROM\` are SQL clauses and should be written in uppercase for better readability, while \`_tablename\` should be replaced with the actual name of the table you want to query.
 
 #### Previous: Review the [SQL Data Types 📊](data-types.md) notes to understand different data types available in SQL before creating tables.
-`,Xe=`# SQL Constraints 📏
+`,rt=`# SQL Constraints 📏
 
 SQL constraints are rules applied to table columns to enforce data integrity and consistency. They help ensure that the data entered into the database adheres to specific requirements.
 
@@ -7320,7 +7647,7 @@ Useful for establishing relationships between tables, such as linking orders to 
 
 
 #### Home: Return to the [Learn SQL 🌎](sql-index.md) main index for more SQL topics and resources.
-`,Ze=`# Manipulating Data in SQL 🛠️
+`,it=`# Manipulating Data in SQL 🛠️
 
 ## The SQL INSERT INTO Statement
 
@@ -7402,7 +7729,7 @@ The following SQL statement deletes the customer with CustomerID 1:
 
 
 #### Previous: Review the [Tables in SQL 🗄️](tables.md) notes to understand how to create and define tables before manipulating data.
-`,Qe=`# Advanced Manipulating Data in SQL 🛠️
+`,at=`# Advanced Manipulating Data in SQL 🛠️
 
 ## The SQL MERGE Statement
 
@@ -7463,7 +7790,7 @@ ON CONFLICT (CustomerID)
 DO UPDATE SET CustomerFirstName = EXCLUDED.CustomerFirstName, CustomerLastName = EXCLUDED.CustomerLastName;
 
 #### Tip: The UPSERT operation is useful for maintaining data integrity and avoiding duplicate records in a table.
-`,$e=`# SQLite
+`,ot=`# SQLite
 
 SQLite is a lightweight, serverless, self-contained SQL database engine. It is widely used in mobile applications, embedded systems, and for prototyping due to its simplicity and minimal setup requirements.
 
@@ -7552,7 +7879,38 @@ Once you have SQLite installed, you can use the following basic commands to inte
 - \`.tables\` - Lists all tables in the current database.
 - \`.schema tablename\` - Displays the schema (structure) of the specified table.
 - \`.exit\` - Exits the SQLite shell.
-`,et=`# TypeScript Basics
+`,st=`# TypeScript Notes
+
+Welcome to the TypeScript section! Here you'll find notes about TypeScript, the typed superset of JavaScript.
+
+## About TypeScript
+
+TypeScript is a programming language developed by Microsoft that builds on JavaScript by adding static type definitions. It compiles to plain JavaScript and runs anywhere JavaScript runs.
+
+Anything you can do in JavaScript, you can do in TypeScript, but with the added benefit of type safety and improved tooling.
+
+## What is Type Safety?
+
+Type safety means that the types of variables, function parameters, and return values are checked at compile time. This helps catch errors early in the development process, reducing runtime errors and improving code quality.
+
+This means that if you try to assign a value of the wrong type to a variable, TypeScript will raise an error. For example:
+
+\`\`\`typescript
+let age: number = 25;
+age = "thirty"; // Error: Type 'string' is not assignable to type 'number'.
+\`\`\`
+
+## Why Type Safety Matters
+
+- **Early Error Detection**: Catch errors during development rather than at runtime.
+- **Improved Code Quality**: Types serve as documentation, making code easier to understand.
+- **Better Tooling**: Enhanced IDE support with autocompletion, refactoring, and navigation.
+- **Maintainability**: Easier to maintain and refactor codebases as they grow.
+
+## Available Topics
+
+- [TypeScript Basics](01-typescript-basics.md) - Introduction to TypeScript fundamentals
+`,ct=`# TypeScript Basics
 
 Welcome to TypeScript! This guide covers the fundamentals of TypeScript, a typed superset of JavaScript.
 
@@ -7566,10 +7924,36 @@ TypeScript is a programming language developed by Microsoft that builds on JavaS
 - **Better IDE Support**: Enhanced autocompletion and refactoring
 - **Self-Documenting Code**: Types serve as documentation
 - **Modern JavaScript Features**: Access to latest JavaScript features
+- **Large Ecosystem**: Compatible with existing JavaScript libraries
+- **Maintainability**: Easier to manage large codebases
+
+## Syntax Overview
+
+TypeScript syntax is similar to JavaScript, with additional type annotations.
+
+These annotations help define the types of variables, function parameters, and return values.
+
+For variables, you can specify types like this:
+
+\`\`\`typescript
+let message: string = "Hello, TypeScript!";
+let count: number = 42;
+let isActive: boolean = true;
+\`\`\`
+
+#### Note the colon (\`:\`) followed by the type after the variable name.
 
 ## Basic Types
 
 ### Primitive Types
+
+Primitive types in TypeScript include:
+
+- \`string\`
+- \`number\`
+- \`boolean\`
+- \`null\`
+- \`undefined\`
 
 \`\`\`typescript
 let name: string = "John";
@@ -7581,12 +7965,16 @@ let notDefined: undefined = undefined;
 
 ### Arrays
 
+Any primitive type can be used in arrays by appending \`[]\` or using the \`Array<type>\` syntax:
+
 \`\`\`typescript
 let numbers: number[] = [1, 2, 3, 4, 5];
 let strings: Array<string> = ["a", "b", "c"];
 \`\`\`
 
 ### Objects
+
+Objects can have specific property types:
 
 \`\`\`typescript
 let person: {
@@ -7598,6 +7986,8 @@ let person: {
   age: 30,
 };
 \`\`\`
+
+But, it is more common to use interfaces or type aliases for defining object shapes, at least for larger objects.
 
 ## Interfaces
 
@@ -7619,9 +8009,28 @@ const user: User = {
 };
 \`\`\`
 
+## Type Aliases and Union Types
+
+An alias creates a new name for a type. Union types allow a variable to hold more than one type like a \`string | number\`.
+
+\`\`\`typescript
+type Status = "pending" | "approved" | "rejected"; // Union of string literals
+type IDUnion = string | number; // Union of string and number
+
+interface Task {
+  id: IDUnion;
+  title: string;
+  status: Status;
+}
+\`\`\`
+
 ## Functions
 
 ### Function Types
+
+For functions, you can specify parameter and return types.
+
+Parameter types go inside the parentheses, and the return type follows the parentheses after a colon.
 
 \`\`\`typescript
 function add(a: number, b: number): number {
@@ -7631,10 +8040,29 @@ function add(a: number, b: number): number {
 const multiply = (a: number, b: number): number => a * b;
 \`\`\`
 
-### Optional and Default Parameters
+If destructuring parameters, you can type them like this:
 
 \`\`\`typescript
-function greet(name: string, greeting: string = "Hello"): string {
+function displayUser({ name, age }: { name: string; age: number }): void {
+  console.log(\`Name: \${name}, Age: \${age}\`);
+}
+\`\`\`
+
+#### Note that the the first object in the parameter list is the destructured object, and the second object defines the types of its properties.
+
+### Optional and Default Parameters
+
+Default parameters can be defined by assigning a value in the function signature. Optional parameters are marked with a question mark (\`?\`).
+
+\`\`\`typescript
+function greet(
+  name: string, // Required parameter
+  greeting: string = "Hello", // Default parameter
+  optional?: string // Optional parameter
+): string {
+  if (optional) {
+    return \`\${greeting}, \${name}! \${optional}\`;
+  }
   return \`\${greeting}, \${name}!\`;
 }
 
@@ -7648,20 +8076,9 @@ function createUser(name: string, age?: number): User {
 }
 \`\`\`
 
-## Type Aliases and Union Types
-
-\`\`\`typescript
-type Status = "pending" | "approved" | "rejected";
-type ID = string | number;
-
-interface Task {
-  id: ID;
-  title: string;
-  status: Status;
-}
-\`\`\`
-
 ## Generics
+
+Generics allow you to create reusable components that work with a variety of types.
 
 \`\`\`typescript
 function identity<T>(arg: T): T {
@@ -7674,62 +8091,7 @@ interface Repository<T> {
   delete(id: string): void;
 }
 \`\`\`
+`,lt={"../notes/c/00-c-index.md":S,"../notes/computer-science/00-general-knowledge.md":C,"../notes/computer-science/01-hardware.md":ee,"../notes/computer-science/02-numbers.md":w,"../notes/computer-science/03-strings.md":T,"../notes/computer-science/04-math-operations.md":E,"../notes/cpp/00-cpp-index.md":D,"../notes/css/01-CSS-index.md":O,"../notes/css/02-basics.md":k,"../notes/css/03-colors.md":A,"../notes/css/04-display-property.md":j,"../notes/css/05-positioning.md":M,"../notes/css/06-selectors.md":N,"../notes/css/07-pseudo-selectors.md":te,"../notes/css/08-specificity.md":ne,"../notes/css/09-inheritance.md":re,"../notes/css/10-flexbox-basics.md":P,"../notes/css/11-grid-layouts.md":F,"../notes/css/12-form-styling.md":I,"../notes/css/13-modals.md":L,"../notes/css/14-animations.md":R,"../notes/css/15-themeing.md":ie,"../notes/css/16-building-a-dropdown.md":``,"../notes/git/00-git-init.md":ae,"../notes/git/01-pushing-and-pulling.md":oe,"../notes/git/02-reverting-changes.md":se,"../notes/git/03-git-branching.md":ce,"../notes/git/04-rebasing.md":le,"../notes/git/05-merging.md":ue,"../notes/git/06-remote-repositories.md":de,"../notes/home.md":fe,"../notes/html/00-html-index.md":pe,"../notes/html/01-get-started-with-html.md":me,"../notes/html/02-classes-ids-and-data-attributes.md":he,"../notes/html/03-forms.md":ge,"../notes/html/04-html-tables.md":_e,"../notes/html/05-semantic-html.md":ve,"../notes/html/06-multimedia-elements.md":ye,"../notes/html/07-html5-new-fearures.md":be,"../notes/html/08-accessibility.md":xe,"../notes/html/09-imports-and-paths.md":Se,"../notes/html/10-styling-elements.md":Ce,"../notes/java/00-java-index.md":we,"../notes/javascript/00-javascript-index.md":Te,"../notes/javascript/01-variables-and-datatypes.md":Ee,"../notes/javascript/02-operators.md":De,"../notes/javascript/03-conditionals.md":Oe,"../notes/javascript/04-ternary-operator.md":ke,"../notes/javascript/05-loops.md":Ae,"../notes/javascript/06-functions.md":je,"../notes/javascript/07-generators.md":Me,"../notes/javascript/08-string-methods.md":Ne,"../notes/javascript/08-template-literals.md":Pe,"../notes/javascript/09-built-in-functions.md":Fe,"../notes/javascript/10-scope.md":Ie,"../notes/javascript/11-arrays.md":Le,"../notes/javascript/12-classes.md":Re,"../notes/javascript/13-objects.md":ze,"../notes/javascript/14-imports-and-exports.md":Be,"../notes/javascript/15-try-catch.md":Ve,"../notes/javascript/16-promises.md":He,"../notes/javascript/17-JSON.md":Ue,"../notes/javascript/18-the-eval-dilemma.md":We,"../notes/javascript/19-types-and-instances.md":Ge,"../notes/javascript/20-destructuring.md":Ke,"../notes/javascript/21-fetch.md":qe,"../notes/javascript/22-DOM-manipulation.md":Je,"../notes/javascript/23-regular-expressions.md":Ye,"../notes/javascript/24-constructors-and-prototypes.md":Xe,"../notes/javascript/25-sets-and-maps.md":Ze,"../notes/react/00-react-index.md":r,"../notes/react/01-components.md":d,"../notes/react/02-state.md":o,"../notes/react/03-conditional-rendering.md":n,"../notes/react/04-hooks.md":u,"../notes/react/05-use-effect.md":c,"../notes/react/06-use-ref.md":t,"../notes/sql/00-sql-index.md":Qe,"../notes/sql/01-get-started.md":$e,"../notes/sql/02-setting-up.md":et,"../notes/sql/03-data-types.md":tt,"../notes/sql/04-tables.md":nt,"../notes/sql/05-constraints.md":rt,"../notes/sql/06-manipulating-data.md":it,"../notes/sql/07-advanced-manipulating-data.md":at,"../notes/sql/08-installing-sqlite.md":ot,"../notes/typescript/00-typescript-index.md":st,"../notes/typescript/01-typescript-basics.md":ct},z={},B={};Object.entries(lt).forEach(([e,t])=>{let n=e.split(`/`),r=n[n.length-1]||``;if(n.length===3&&r===`home.md`){B[r]={content:t,section:`home`};return}if(n.length>3){let e=n[n.length-2];z[e]||(z[e]={}),z[e][r]=t,B[r]={content:t,section:e}}});const V=e=>e.replace(/^\d{2}-/,``),H=e=>V(e).replace(`.md`,``).replace(/-/g,` `).replace(/\b\w/g,e=>e.toUpperCase()),U=e=>Object.keys(z[e]||{}).sort((e,t)=>{let n=parseInt(e.match(/^\d+/)?.[0]||`999`),r=parseInt(t.match(/^\d+/)?.[0]||`999`);return n===r?e.localeCompare(t):n-r}),ut=()=>Object.keys(z),W=e=>{let t=B[e];return t?t.section:null},G=e=>{let t=W(e);if(!t)return null;let n=U(t),r=n.indexOf(e);if(r===-1||r>=n.length-1)return null;let i=n[r+1];return{filename:i,title:H(i)}},K=e=>{let t=e.replace(/^\/notes\/[^/]+\//,``).replace(/^\/notes\//,``),n=B[t];if(!n){let e=Object.keys(B).join(`, `);throw Error(`Note not found: ${t}. Available: ${e}`)}return console.log(`Retrieved note:`,t,`from section:`,n.section),n.content},dt=e=>{if(!e.trim())return[];let t=e.toLowerCase(),n=[];return Object.entries(B).forEach(([r,i])=>{let{content:a,section:o}=i,s=a.split(`
+`),c=[];if(s.forEach((n,r)=>{if(n.toLowerCase().includes(t)){let t=ft(n,e);c.push({context:n.trim(),lineNumber:r+1,highlightedText:t})}}),c.length>0){let e=o===`home`?{name:`Home`,emojiIcon:`🏠`}:x[o]||{name:o,icon:`📄`};n.push({filename:r,title:H(r),section:e.name,sectionIcon:`icon`in e?e.icon:null,sectionEmojiIcon:`emojiIcon`in e?e.emojiIcon:null,matches:c.slice(0,3),totalMatches:c.length})}}),n.sort((e,t)=>e.totalMatches===t.totalMatches?e.title.localeCompare(t.title):t.totalMatches-e.totalMatches)};var ft=(e,t)=>{let n=RegExp(`(${t})`,`gi`);return e.replace(n,`<mark>$1</mark>`)};const pt=()=>{let e=ut(),t=[];return t.push({text:`Home`,href:`home.md`,emojiIcon:`🏠`}),e.forEach(e=>{let n=x[e.toLowerCase()],r=U(e);if(r.length>0){let i=r.map(e=>({text:mt(e),href:e})),a=`icon`in n?n.icon:null,o={text:n?.name||e.charAt(0).toUpperCase()+e.slice(1),children:i};a&&(o.icon=a),a||(o.emojiIcon=`emojiIcon`in n?n.emojiIcon:`📄`),t.push(o)}}),t};var mt=e=>V(e).replace(`.md`,``).replace(/-/g,` `).replace(/\b\w/g,e=>e.toUpperCase());const q=pt();function ht({onSearch:e,onClear:t,placeholder:n=`Search all notes...`}){let[r,i]=(0,_.useState)(``),[a,o]=(0,_.useState)(!1),s=(0,_.useRef)(null),c=(0,_.useRef)(null),l=(0,_.useCallback)(t=>{c.current!==null&&(window.clearTimeout(c.current),c.current=null),c.current=window.setTimeout(()=>{e(t),c.current=null},800)},[e]),u=e=>{let n=e.target.value;i(n),n.trim()?l(n):(c.current!==null&&(window.clearTimeout(c.current),c.current=null),t())},d=()=>{i(``),t(),s.current?.focus()};return(0,_.useEffect)(()=>()=>{c.current!==null&&(window.clearTimeout(c.current),c.current=null)},[]),(0,_.useEffect)(()=>{let e=e=>{(e.ctrlKey||e.metaKey)&&e.key===`k`&&(e.preventDefault(),s.current?.focus())};return document.addEventListener(`keydown`,e),()=>document.removeEventListener(`keydown`,e)},[]),(0,v.jsx)(`div`,{className:`search-bar ${a?`focused`:``}`,children:(0,v.jsxs)(`div`,{className:`search-input-container`,children:[(0,v.jsx)(`span`,{className:`search-icon`,children:`🔍`}),(0,v.jsx)(`input`,{id:`search-input`,ref:s,type:`text`,value:r,onChange:u,onKeyDown:e=>{e.key===`Escape`&&d()},onFocus:()=>o(!0),onBlur:()=>o(!1),placeholder:n,className:`search-input`}),r&&(0,v.jsx)(`button`,{onClick:d,className:`search-clear`,"aria-label":`Clear search`,children:`✕`})]})})}function gt({setCurrentNote:e,currentSection:t,currentNoteName:n,onSearch:r,onClearSearch:i,isMobile:a,rightSidebarContent:o}){let[s,c]=(0,_.useState)(null),[l,u]=(0,_.useState)(`chapters`);(0,_.useEffect)(()=>{if(t){let e=q.findIndex(e=>{if(e.text&&t in x){let n=x[t];return e.text.includes(n.name)}return!1});e!==-1&&c(e)}},[t]);let d=e=>{c(s===e?null:e)};return(0,v.jsxs)(`div`,{className:`left-nav`,children:[a&&o&&(0,v.jsxs)(`div`,{className:`mobile-nav-toggle`,children:[(0,v.jsx)(`button`,{className:`mobile-nav-btn ${l===`chapters`?`active`:``}`,onClick:()=>u(`chapters`),children:`All Chapters`}),(0,v.jsx)(`button`,{className:`mobile-nav-btn ${l===`page`?`active`:``}`,onClick:()=>u(`page`),children:`On this page`})]}),(!a||l===`chapters`)&&(0,v.jsxs)(v.Fragment,{children:[(0,v.jsx)(ht,{onSearch:e=>{r?.(e)},onClear:()=>{i?.()},placeholder:`Search all notes...`}),q.map((t,r)=>{if(t.children){let i=s===r;return(0,v.jsxs)(`div`,{className:`dropdown-parent ${i?`active`:``}`,children:[(0,v.jsxs)(`div`,{className:`dropdown-title`,onClick:()=>d(r),children:[(0,v.jsx)(`span`,{className:`section-arrow`,children:i?`▼`:`▶`}),t.icon&&(0,v.jsx)(`img`,{src:t.icon,alt:`${t.text} icon`,className:`section-icon-img`}),!t.icon&&t.emojiIcon&&(0,v.jsx)(`span`,{className:`emoji-icon`,children:t.emojiIcon}),!t.icon&&!t.emojiIcon&&(0,v.jsx)(`div`,{style:{marginLeft:`20px`}}),(0,v.jsx)(`span`,{children:t.text})]}),(0,v.jsx)(`div`,{className:`dropdown-children ${i?`expanded`:`collapsed`}`,children:t.children.map((t,r)=>(0,v.jsx)(`p`,{className:`child-link ${n===t.href?`active`:``}`,onClick:()=>t.href&&e(t.href),children:t.text},r))})]},r)}else return(0,v.jsxs)(`div`,{className:`parent-link ${n===t.href?`active`:``}`,onClick:()=>t.href&&e(t.href),children:[t.icon&&(0,v.jsx)(`img`,{src:t.icon,alt:`${t.text} icon`,className:`section-icon-img`}),!t.icon&&t.emojiIcon&&(0,v.jsxs)(`span`,{className:`emoji-icon`,children:[t.emojiIcon,` `]}),(0,v.jsx)(`span`,{children:t.text})]},r)})]}),a&&l===`page`&&o&&(0,v.jsx)(`div`,{className:`mobile-page-overview`,children:o})]})}function _t({currentNote:e,currentNoteName:t,onLoadNote:n}){let[r,i]=(0,_.useState)([]),[a,o]=(0,_.useState)(null),[s,c]=(0,_.useState)(``);(0,_.useEffect)(()=>{if(!e){i([]),o(null);return}let r=/^(#{1,6})\s+(.+)$/gm,a=[],s;for(;(s=r.exec(e))!==null;){let e=s[1].length,t=s[2].trim();if(e===4)continue;let n=t.toLowerCase().replace(/[^\w\s-]/g,``).replace(/\s+/g,`-`);a.push({id:n,text:t,level:e})}if(n){let e=G(t);e&&a.push({id:`next-lesson`,text:`Next: ${e.title}`,level:2})}i(a);let c=e.replace(/#{1,6}\s+/g,``).replace(/\[([^\]]+)\]\([^)]+\)/g,`$1`).replace(/[*_`]/g,``).trim().split(/\s+/).filter(e=>e.length>0).length,l=Math.max(1,Math.ceil(c/200)),u=e.length;o({wordCount:c,readingTime:l,characterCount:u})},[e,t,n]);let l=e=>{if(e===`next-lesson`&&n){let e=G(t);e&&n(e.filename);return}let r=document.getElementById(e);r&&(r.scrollIntoView({behavior:`smooth`,block:`start`}),c(e))};return(0,_.useEffect)(()=>{let e=()=>{let e=r.map(e=>({id:e.id,element:document.getElementById(e.id)})),t=``;for(let n of e)n.element&&n.element.getBoundingClientRect().top<=100&&(t=n.id);c(t)},t=document.querySelector(`.center.main`);if(t)return t.addEventListener(`scroll`,e),()=>t.removeEventListener(`scroll`,e)},[r]),e?(0,v.jsxs)(`div`,{className:`right-sidebar`,children:[(0,v.jsxs)(`div`,{className:`sidebar-section`,children:[(0,v.jsx)(`h3`,{children:`📊 Note Info`}),(0,v.jsxs)(`div`,{className:`note-stats`,children:[(0,v.jsxs)(`div`,{className:`stat-item`,children:[(0,v.jsx)(`span`,{className:`stat-label`,children:`📄 File:`}),(0,v.jsx)(`span`,{className:`stat-value`,children:V(t)})]}),a&&(0,v.jsxs)(v.Fragment,{children:[(0,v.jsxs)(`div`,{className:`stat-item`,children:[(0,v.jsx)(`span`,{className:`stat-label`,children:`📝 Words:`}),(0,v.jsx)(`span`,{className:`stat-value`,children:a.wordCount.toLocaleString()})]}),(0,v.jsxs)(`div`,{className:`stat-item`,children:[(0,v.jsx)(`span`,{className:`stat-label`,children:`⏱️ Read time:`}),(0,v.jsxs)(`span`,{className:`stat-value`,children:[a.readingTime,` min`]})]}),(0,v.jsxs)(`div`,{className:`stat-item`,children:[(0,v.jsx)(`span`,{className:`stat-label`,children:`🔤 Characters:`}),(0,v.jsx)(`span`,{className:`stat-value`,children:a.characterCount.toLocaleString()})]})]})]})]}),r.length>0&&(0,v.jsxs)(`div`,{className:`sidebar-section`,children:[(0,v.jsx)(`h3`,{children:`📚 Table of Contents`}),(0,v.jsx)(`nav`,{className:`toc-nav`,children:r.map((e,t)=>(0,v.jsxs)(`button`,{className:`toc-item level-${e.level} ${s===e.id?`active`:``} ${e.id===`next-lesson`?`next-lesson`:``}`,onClick:()=>l(e.id),title:e.text,children:[e.id===`next-lesson`&&(0,v.jsx)(`span`,{className:`next-lesson-icon`,children:`🚀`}),e.text]},t))})]})]}):(0,v.jsx)(`div`,{className:`right-sidebar`,children:(0,v.jsxs)(`div`,{className:`sidebar-section`,children:[(0,v.jsx)(`h3`,{children:`📖 Note Info`}),(0,v.jsx)(`p`,{className:`no-note-message`,children:`Select a note to see its table of contents and information.`})]})})}var vt=`modulepreload`,yt=function(e){return`/code-wiki-app/`+e},bt={};const xt=function(e,t,n){let r=Promise.resolve();if(t&&t.length>0){let e=document.getElementsByTagName(`link`),i=document.querySelector(`meta[property=csp-nonce]`),a=i?.nonce||i?.getAttribute(`nonce`);function o(e){return Promise.all(e.map(e=>Promise.resolve(e).then(e=>({status:`fulfilled`,value:e}),e=>({status:`rejected`,reason:e}))))}r=o(t.map(t=>{if(t=yt(t,n),t in bt)return;bt[t]=!0;let r=t.endsWith(`.css`),i=r?`[rel="stylesheet"]`:``;if(n)for(let n=e.length-1;n>=0;n--){let i=e[n];if(i.href===t&&(!r||i.rel===`stylesheet`))return}else if(document.querySelector(`link[href="${t}"]${i}`))return;let o=document.createElement(`link`);if(o.rel=r?`stylesheet`:vt,r||(o.as=`script`),o.crossOrigin=``,o.href=t,a&&o.setAttribute(`nonce`,a),document.head.appendChild(o),r)return new Promise((e,n)=>{o.addEventListener(`load`,e),o.addEventListener(`error`,()=>n(Error(`Unable to preload CSS for ${t}`)))})}))}function i(e){let t=new Event(`vite:preloadError`,{cancelable:!0});if(t.payload=e,window.dispatchEvent(t),!t.defaultPrevented)throw e}return r.then(t=>{for(let e of t||[])e.status===`rejected`&&i(e.reason);return e().catch(i)})};var St=(0,_.lazy)(()=>xt(()=>import(`./react-markdown-BYjrAzbE.js`),__vite__mapDeps([0,1,2,3,4,5])));function Ct({displayName:e,content:t,languageDirectory:n,styleUpNextSections:r,loadNote:i}){return(0,_.useEffect)(()=>{document.title=e?`${H(e)} - ${n||`Notes`}`:`Programming Notes`},[e,n]),(0,v.jsx)(_.Suspense,{fallback:(0,v.jsx)(y,{}),children:(0,v.jsx)(wt,{content:t,styleUpNextSections:r,loadNote:i})})}function wt({content:e,styleUpNextSections:t,loadNote:n}){return(0,v.jsx)(St,{remarkPlugins:[m,h],rehypePlugins:[f,p],components:{h1:({children:e,...t})=>(0,v.jsx)(`h1`,{...t,id:String(e)?.toLowerCase().replace(/[^\w\s-]/g,``).replace(/\s+/g,`-`),children:e}),h2:({children:e,...t})=>(0,v.jsx)(`h2`,{...t,id:String(e)?.toLowerCase().replace(/[^\w\s-]/g,``).replace(/\s+/g,`-`),children:e}),h3:({children:e,...t})=>(0,v.jsx)(`h3`,{...t,id:String(e)?.toLowerCase().replace(/[^\w\s-]/g,``).replace(/\s+/g,`-`),children:e}),h4:({children:e,...n})=>(0,v.jsx)(`h4`,{...n,id:String(e)?.toLowerCase().replace(/[^\w\s-]/g,``).replace(/\s+/g,`-`),onLoad:()=>{setTimeout(t,100)},children:e}),h5:({children:e,...t})=>(0,v.jsx)(`h5`,{...t,id:String(e)?.toLowerCase().replace(/[^\w\s-]/g,``).replace(/\s+/g,`-`),children:e}),h6:({children:e,...t})=>(0,v.jsx)(`h6`,{...t,id:String(e)?.toLowerCase().replace(/[^\w\s-]/g,``).replace(/\s+/g,`-`),children:e}),a:({href:e,children:t,...r})=>(0,v.jsx)(`a`,{href:e,onClick:t=>{if(e&&e.endsWith(`.md`)&&n){t.preventDefault();let r=e;e.includes(`/`)&&(r=e.split(`/`).pop()||e),console.log(`Internal link clicked:`,e,`-> normalized:`,r);try{n(r)}catch(e){console.error(`Failed to load note: ${r}`,e);try{n(r)}catch(e){console.error(`Failed to load note with filename: ${r}`,e),alert(`Note not found: ${r}`)}}}},className:`markdown-link`,...r,children:t}),table:({children:e,...t})=>(0,v.jsx)(`table`,{...t,className:`markdown-table`,children:e}),th:({children:e,...t})=>(0,v.jsx)(`th`,{...t,className:`markdown-th`,children:e}),td:({children:e,...t})=>(0,v.jsx)(`td`,{...t,className:`markdown-td`,children:e}),img:({src:e,alt:t,...n})=>(0,v.jsx)(`img`,{src:e?.startsWith(`/`)?`/code-wiki-app/${e.slice(1)}`:e,alt:t,style:{maxWidth:`100%`,height:`auto`,border:`1px solid #ddd`,borderRadius:`4px`,margin:`15px 0`,display:`block`},...n})},children:e})}function Tt({currentFilename:e,onLoadNote:t}){let n=G(e);return n?(0,v.jsx)(`div`,{className:`next-lesson-container`,children:(0,v.jsx)(`button`,{className:`next-lesson-button`,onClick:()=>{t(n.filename)},"aria-label":`Go to next lesson: ${n.title}`,children:(0,v.jsxs)(`div`,{className:`next-lesson-content`,children:[(0,v.jsx)(`span`,{className:`next-lesson-label`,children:`Up Next`}),(0,v.jsx)(`span`,{className:`next-lesson-title`,children:n.title}),(0,v.jsx)(`span`,{className:`next-lesson-arrow`,children:`→`})]})})}):null}function Et({results:e,query:t,isLoading:n=!1,onSelectNote:r,onClose:i}){let a=e=>{r(e),i()};return t.trim()?(0,v.jsx)(`div`,{className:`search-results-overlay`,onClick:i,children:(0,v.jsxs)(`div`,{className:`search-results-container`,onClick:e=>e.stopPropagation(),children:[(0,v.jsxs)(`div`,{className:`search-results-header`,children:[(0,v.jsx)(`h3`,{children:`Search Results`}),(0,v.jsx)(`button`,{onClick:i,className:`search-results-close`,"aria-label":`Close search results`,children:`✕`})]}),n?(0,v.jsxs)(`div`,{className:`search-loading`,children:[(0,v.jsx)(`div`,{className:`search-spinner`}),(0,v.jsx)(`span`,{children:`Searching...`})]}):(0,v.jsxs)(v.Fragment,{children:[(0,v.jsx)(`div`,{className:`search-results-info`,children:e.length===0?(0,v.jsxs)(`span`,{children:[`No results found for "`,t,`"`]}):(0,v.jsxs)(`span`,{children:[`Found `,e.length,` `,e.length===1?`result`:`results`,` for "`,t,`"`]})}),(0,v.jsx)(`div`,{className:`search-results-list`,children:e.map((e,t)=>(0,v.jsxs)(`div`,{className:`search-result-card`,onClick:()=>a(e.filename),children:[(0,v.jsxs)(`div`,{className:`search-result-header`,children:[(0,v.jsxs)(`div`,{className:`search-result-title`,children:[(0,v.jsxs)(`span`,{className:`search-result-icon`,children:[e.sectionIcon&&(0,v.jsx)(`img`,{src:e.sectionIcon,alt:`${e.section} icon`,className:`section-icon-img`}),!e.sectionIcon&&e.sectionEmojiIcon&&(0,v.jsx)(`span`,{className:`emoji-icon`,children:e.sectionEmojiIcon}),!e.sectionIcon&&!e.sectionEmojiIcon&&(0,v.jsx)(`div`,{style:{width:`20px`},children:`💻`})]}),(0,v.jsx)(`span`,{className:`search-result-name`,children:e.title})]}),(0,v.jsxs)(`div`,{className:`search-result-meta`,children:[(0,v.jsx)(`span`,{className:`search-result-section`,children:e.section}),(0,v.jsxs)(`span`,{className:`search-result-count`,children:[e.totalMatches,` `,e.totalMatches===1?`match`:`matches`]})]})]}),(0,v.jsxs)(`div`,{className:`search-result-matches`,children:[e.matches.map((e,t)=>(0,v.jsxs)(`div`,{className:`search-result-match`,children:[(0,v.jsxs)(`div`,{className:`search-result-line-number`,children:[`Line `,e.lineNumber]}),(0,v.jsx)(`div`,{className:`search-result-context`,dangerouslySetInnerHTML:{__html:e.highlightedText}})]},t)),e.totalMatches>e.matches.length&&(0,v.jsxs)(`div`,{className:`search-result-more`,children:[`+`,e.totalMatches-e.matches.length,` more`,` `,e.totalMatches-e.matches.length===1?`match`:`matches`]})]})]},`${e.filename}-${t}`))})]})]})}):null}var J=`notes-app-preferences`,Y=`notes-app-storage-allowed`;const X=()=>{try{return localStorage.getItem(Y)===`true`}catch{return!1}},Dt=()=>{if(X())try{let e=Z();e.visitedNotes=[],localStorage.setItem(J,JSON.stringify(e))}catch{}},Ot=()=>{try{return!localStorage.getItem(`notes-app-visited`)}catch{return!0}},kt=()=>{try{localStorage.setItem(`notes-app-visited`,`true`)}catch{}},At=e=>{try{e?localStorage.setItem(Y,`true`):localStorage.removeItem(Y)}catch{}},Z=()=>{let e={theme:`system`,allowsStorage:!1,visitedNotes:[],firstVisit:!0};if(!X())return e;try{let t=localStorage.getItem(J);if(t){let n=JSON.parse(t);return{...e,...n}}}catch{}return e},Q=e=>{if(X())try{let t={...Z(),...e};localStorage.setItem(J,JSON.stringify(t))}catch{}},jt=e=>{X()&&Q({visitedNotes:[e,...(Z().visitedNotes||[]).filter(t=>t!==e)].slice(0,20)})},Mt=()=>{try{localStorage.removeItem(J),localStorage.removeItem(Y),localStorage.removeItem(`notes-app-visited`)}catch{}},Nt=()=>typeof window<`u`&&window.matchMedia&&window.matchMedia(`(prefers-color-scheme: dark)`).matches?`dark`:`light`,$=e=>{let t=document.documentElement,n;n=e===`system`?Nt():e,t.setAttribute(`data-theme`,n),t.classList.remove(`theme-light`,`theme-dark`),t.classList.add(`theme-${n}`)},Pt=e=>{if(typeof window>`u`||!window.matchMedia)return()=>{};let t=window.matchMedia(`(prefers-color-scheme: dark)`),n=t=>{e(t.matches?`dark`:`light`)};return t.addEventListener(`change`,n),()=>t.removeEventListener(`change`,n)};function Ft({isOpen:e,onComplete:t}){let[n,r]=(0,_.useState)(`storage`),[i,a]=(0,_.useState)(!1),[o,s]=(0,_.useState)(``),[c,l]=(0,_.useState)(`system`);if(!e)return null;let u=e=>{a(e),e?r(`setup`):t({allowsStorage:!1,theme:`system`})},d=()=>{t({allowsStorage:i,username:o.trim()||void 0,theme:c})},f=()=>{s(``),d()},p=e=>{l(e),$(e)};return(0,v.jsx)(`div`,{className:`welcome-modal-overlay`,children:(0,v.jsx)(`div`,{className:`welcome-modal`,children:n===`storage`?(0,v.jsxs)(v.Fragment,{children:[(0,v.jsx)(`div`,{className:`welcome-modal-header`,children:(0,v.jsx)(`h2`,{children:`Welcome to Programming Notes! 📚`})}),(0,v.jsxs)(`div`,{className:`welcome-modal-content`,children:[(0,v.jsx)(`p`,{children:`To provide you with a personalized experience, we'd like to save your preferences and reading history locally on your device.`}),(0,v.jsxs)(`div`,{className:`storage-benefits`,children:[(0,v.jsxs)(`div`,{className:`benefit-item`,children:[(0,v.jsx)(`span`,{className:`benefit-icon`,children:`🎨`}),(0,v.jsx)(`span`,{children:`Remember your theme preference`})]}),(0,v.jsxs)(`div`,{className:`benefit-item`,children:[(0,v.jsx)(`span`,{className:`benefit-icon`,children:`📖`}),(0,v.jsx)(`span`,{children:`Track your reading history`})]}),(0,v.jsxs)(`div`,{className:`benefit-item`,children:[(0,v.jsx)(`span`,{className:`benefit-icon`,children:`👤`}),(0,v.jsx)(`span`,{children:`Personalized welcome messages`})]})]}),(0,v.jsxs)(`p`,{className:`storage-note`,children:[(0,v.jsx)(`strong`,{children:`Your privacy matters:`}),` All data stays on your device. Nothing is sent to any servers.`]})]}),(0,v.jsxs)(`div`,{className:`welcome-modal-actions`,children:[(0,v.jsx)(`button`,{onClick:()=>u(!1),className:`btn-secondary`,children:`No Thanks`}),(0,v.jsx)(`button`,{onClick:()=>u(!0),className:`btn-primary`,children:`Allow Local Storage`})]})]}):(0,v.jsxs)(v.Fragment,{children:[(0,v.jsx)(`div`,{className:`welcome-modal-header`,children:(0,v.jsx)(`h2`,{children:`Let's Personalize Your Experience ✨`})}),(0,v.jsxs)(`div`,{className:`welcome-modal-content`,children:[(0,v.jsxs)(`div`,{className:`setup-section`,children:[(0,v.jsx)(`label`,{htmlFor:`username`,className:`setup-label`,children:`What should we call you? (Optional)`}),(0,v.jsx)(`input`,{id:`username`,type:`text`,value:o,onChange:e=>s(e.target.value),placeholder:`Enter your name...`,className:`setup-input`,maxLength:50})]}),(0,v.jsxs)(`div`,{className:`setup-section`,children:[(0,v.jsx)(`label`,{className:`setup-label`,children:`Choose your theme`}),(0,v.jsxs)(`div`,{className:`theme-options`,children:[(0,v.jsxs)(`button`,{onClick:()=>p(`system`),className:`theme-option ${c===`system`?`active`:``}`,children:[(0,v.jsx)(`span`,{className:`theme-icon`,children:`🖥️`}),(0,v.jsxs)(`div`,{className:`theme-info`,children:[(0,v.jsx)(`div`,{className:`theme-name`,children:`System`}),(0,v.jsx)(`div`,{className:`theme-desc`,children:`Match your device`})]})]}),(0,v.jsxs)(`button`,{onClick:()=>p(`light`),className:`theme-option ${c===`light`?`active`:``}`,children:[(0,v.jsx)(`span`,{className:`theme-icon`,children:`☀️`}),(0,v.jsxs)(`div`,{className:`theme-info`,children:[(0,v.jsx)(`div`,{className:`theme-name`,children:`Light`}),(0,v.jsx)(`div`,{className:`theme-desc`,children:`Bright and clean`})]})]}),(0,v.jsxs)(`button`,{onClick:()=>p(`dark`),className:`theme-option ${c===`dark`?`active`:``}`,children:[(0,v.jsx)(`span`,{className:`theme-icon`,children:`🌙`}),(0,v.jsxs)(`div`,{className:`theme-info`,children:[(0,v.jsx)(`div`,{className:`theme-name`,children:`Dark`}),(0,v.jsx)(`div`,{className:`theme-desc`,children:`Easy on the eyes`})]})]})]})]})]}),(0,v.jsxs)(`div`,{className:`welcome-modal-actions`,children:[(0,v.jsx)(`button`,{onClick:f,className:`btn-secondary`,children:`Skip Name`}),(0,v.jsx)(`button`,{onClick:d,className:`btn-primary`,children:`Get Started`})]})]})})})}function It(e){let t=document.documentElement;t.style.setProperty(`--bg-primary`,e[0]),t.style.setProperty(`--bg-secondary`,e[1]),t.style.setProperty(`--bg-tertiary`,e[2]),t.style.setProperty(`--text-primary`,e[3]),t.style.setProperty(`--text-secondary`,e[4]),t.style.setProperty(`--text-muted`,e[5]),t.style.setProperty(`--border-color`,e[6]),t.style.setProperty(`--border-light`,e[7]),t.style.setProperty(`--border-medium`,e[8]),t.style.setProperty(`--accent-color`,e[9]),t.style.setProperty(`--accent-hover`,e[10]),t.style.setProperty(`--accent-dark`,e[11]),t.style.setProperty(`--accent-light`,e[12]),t.style.setProperty(`--accent-blue`,e[13]),t.style.setProperty(`--accent-blue-dark`,e[14]),t.style.setProperty(`--heading-primary`,e[15]),t.style.setProperty(`--heading-secondary`,e[16]),t.style.setProperty(`--heading-tertiary`,e[17])}const Lt=()=>{localStorage.removeItem(`customTheme`),window.location.reload()},Rt=e=>{localStorage.setItem(`customTheme`,JSON.stringify(e))};function zt({handleClose:e}){let[t,n]=(0,_.useState)([]),r=[`Background Primary`,`Background Secondary`,`Background Tertiary`,`Text Primary`,`Text Secondary`,`Text Muted`,`Border Color`,`Border Light`,`Border Medium`,`Accent Color`,`Accent Hover`,`Accent Dark`,`Accent Light`,`Accent Secondary`,`Accent Secondary Dark`,`Heading Primary`,`Heading Secondary`,`Heading Tertiary`];return(0,_.useEffect)(()=>{let e=document.documentElement;n([`--bg-primary`,`--bg-secondary`,`--bg-tertiary`,`--text-primary`,`--text-secondary`,`--text-muted`,`--border-color`,`--border-light`,`--border-medium`,`--accent-color`,`--accent-hover`,`--accent-dark`,`--accent-light`,`--accent-blue`,`--accent-blue-dark`,`--heading-primary`,`--heading-secondary`,`--heading-tertiary`].map(t=>getComputedStyle(e).getPropertyValue(t).trim()))},[n]),(0,v.jsx)(v.Fragment,{children:(0,v.jsx)(`div`,{className:`modal-overlay`,onClick:e,children:(0,v.jsxs)(`div`,{className:`modal`,onClick:e=>e.stopPropagation(),children:[(0,v.jsx)(`span`,{className:`modal-close`,onClick:e,children:`X`}),(0,v.jsx)(`h2`,{children:`Customize Theme Colors`}),(0,v.jsxs)(`form`,{className:`color-inputs`,onSubmit:e=>{e.preventDefault(),It(t),Rt(t)},children:[(0,v.jsx)(`div`,{className:`custom-color-btns-grid`,children:t.map((e,i)=>(0,v.jsxs)(`div`,{className:`custom-color-btn`,children:[(0,v.jsxs)(`label`,{children:[r[i],`:`]}),(0,v.jsx)(`input`,{type:`color`,value:e,onChange:e=>{let r=[...t];r[i]=e.target.value,n(r)}})]},i))}),(0,v.jsxs)(`div`,{className:`selector-btns`,children:[(0,v.jsx)(`input`,{type:`submit`,value:`Apply Theme`,className:`selector-btn`}),(0,v.jsx)(`button`,{type:`button`,onClick:Lt,className:`btn-danger`,children:`Reset to Default`})]}),(0,v.jsx)(`br`,{})]}),(0,v.jsx)(`br`,{})]})})})}function Bt({username:e,preferences:t,onThemeChange:n,onClearData:r,onShowHistory:i}){let[a,o]=(0,_.useState)(!1),[s,c]=(0,_.useState)(!1),[l,u]=(0,_.useState)(!1),d=(0,_.useRef)(null);(0,_.useEffect)(()=>{let e=e=>{d.current&&!d.current.contains(e.target)&&o(!1)};return document.addEventListener(`mousedown`,e),()=>document.removeEventListener(`mousedown`,e)},[]);let f=()=>{c(!0),o(!1)},p=()=>{r(),c(!1)},m=e=>{switch(e){case`light`:return`☀️`;case`dark`:return`🌙`;case`system`:return`🖥️`;default:return`🖥️`}};return(0,v.jsxs)(v.Fragment,{children:[(0,v.jsxs)(`div`,{className:`user-menu`,ref:d,children:[(0,v.jsxs)(`button`,{onClick:()=>o(!a),className:`user-menu-trigger`,"aria-label":`User menu`,children:[(0,v.jsx)(`div`,{className:`user-avatar`,children:e?e.charAt(0).toUpperCase():`👤`}),(0,v.jsx)(`span`,{className:`user-menu-arrow`,children:a?`▴`:`▾`})]}),a&&(0,v.jsxs)(`div`,{className:`user-menu-dropdown`,children:[e&&(0,v.jsx)(`div`,{className:`user-menu-header`,children:(0,v.jsxs)(`div`,{className:`user-greeting`,children:[`Welcome back, `,(0,v.jsx)(`strong`,{children:e}),`!`]})}),(0,v.jsxs)(`div`,{className:`user-menu-section`,children:[(0,v.jsx)(`div`,{className:`user-menu-label`,children:`Theme`}),(0,v.jsxs)(`div`,{className:`theme-selector`,children:[[`system`,`light`,`dark`].map(e=>(0,v.jsxs)(`button`,{onClick:()=>{n(e),o(!1)},className:`theme-selector-btn ${t.theme===e?`active`:``}`,children:[(0,v.jsx)(`span`,{className:`theme-selector-icon`,children:m(e)}),(0,v.jsx)(`span`,{className:`theme-selector-name`,children:e.charAt(0).toUpperCase()+e.slice(1)})]},e)),(0,v.jsxs)(`button`,{onClick:()=>{u(!0),o(!1)},className:`theme-selector-btn`,children:[(0,v.jsx)(`span`,{className:`theme-selector-icon`,children:`🎨`}),(0,v.jsx)(`span`,{className:`theme-selector-name`,children:`Custom`})]})]})]}),(0,v.jsx)(`div`,{className:`user-menu-section`,children:(0,v.jsxs)(`button`,{onClick:()=>{i(),o(!1)},className:`user-menu-item`,children:[(0,v.jsx)(`span`,{className:`user-menu-icon`,children:`📚`}),`Reading History`,t.visitedNotes.length>0&&(0,v.jsx)(`span`,{className:`history-count`,children:t.visitedNotes.length})]})}),(0,v.jsx)(`div`,{className:`user-menu-section user-menu-danger`,children:(0,v.jsxs)(`button`,{onClick:f,className:`user-menu-item danger`,children:[(0,v.jsx)(`span`,{className:`user-menu-icon`,children:`🗑️`}),`Clear All Data`]})})]})]}),s&&(0,v.jsx)(`div`,{className:`confirm-modal-overlay`,children:(0,v.jsxs)(`div`,{className:`confirm-modal`,children:[(0,v.jsx)(`div`,{className:`confirm-modal-header`,children:(0,v.jsx)(`h3`,{children:`⚠️ Clear All Data`})}),(0,v.jsxs)(`div`,{className:`confirm-modal-content`,children:[(0,v.jsx)(`p`,{children:`This will permanently delete all your saved preferences, reading history, and personal settings.`}),(0,v.jsx)(`p`,{className:`confirm-warning`,children:(0,v.jsx)(`strong`,{children:`Once you delete your progress, this cannot be undone!`})})]}),(0,v.jsxs)(`div`,{className:`confirm-modal-actions`,children:[(0,v.jsx)(`button`,{onClick:()=>c(!1),className:`btn-secondary`,children:`Cancel`}),(0,v.jsx)(`button`,{onClick:p,className:`btn-danger`,children:`Yes, Delete Everything`})]})]})}),l&&(0,v.jsx)(zt,{handleClose:()=>u(!1)})]})}function Vt({isOpen:e,preferences:t,onClose:n,onSelectNote:r}){let[i,a]=(0,_.useState)(!1);if(!e)return null;let o=()=>{t.visitedNotes=[],a(!1),Dt(),n()},s=e=>{r(e),n()},c=e=>{let t=W(e);return t?e===`home.md`?{name:`Home`,emojiIcon:`🏠`}:x[t]||{name:t,icon:`📄`}:{name:`General`,icon:`📄`}};return(0,v.jsx)(`div`,{className:`history-modal-overlay`,onClick:n,children:(0,v.jsxs)(`div`,{className:`history-modal`,onClick:e=>e.stopPropagation(),children:[(0,v.jsxs)(`div`,{className:`history-modal-header`,children:[(0,v.jsx)(`h3`,{children:`📚 Reading History`}),(0,v.jsx)(`button`,{onClick:n,className:`history-modal-close`,"aria-label":`Close history`,children:`✕`})]}),(0,v.jsx)(`div`,{className:`history-modal-content`,children:t.visitedNotes.length===0?(0,v.jsxs)(`div`,{className:`history-empty`,children:[(0,v.jsx)(`div`,{className:`history-empty-icon`,children:`📖`}),(0,v.jsx)(`div`,{className:`history-empty-title`,children:`No reading history yet`}),(0,v.jsx)(`div`,{className:`history-empty-desc`,children:`Start exploring the notes to build your reading history!`})]}):(0,v.jsxs)(v.Fragment,{children:[(0,v.jsxs)(`div`,{className:`history-info`,children:[`You've visited `,t.visitedNotes.length,t.visitedNotes.length===1?` note`:` notes`,` `,`recently`]}),(0,v.jsx)(`div`,{className:`history-list`,children:t.visitedNotes.map((e,t)=>{let n=c(e),r=H(e);return(0,v.jsxs)(`div`,{className:`history-item`,onClick:()=>s(e),children:[(0,v.jsxs)(`div`,{className:`history-item-main`,children:[(0,v.jsxs)(`div`,{className:`history-item-header`,children:[(0,v.jsxs)(`span`,{className:`history-item-icon`,children:[`icon`in n&&(0,v.jsx)(`img`,{src:n.icon,alt:`${n.name} icon`,className:`section-icon-img`}),!(`icon`in n)&&`emojiIcon`in n&&(0,v.jsx)(`span`,{className:`emoji-icon`,children:n.emojiIcon})]}),(0,v.jsx)(`span`,{className:`history-item-title`,children:r})]}),(0,v.jsxs)(`div`,{className:`history-item-meta`,children:[(0,v.jsx)(`span`,{className:`history-item-section`,children:n.name}),(0,v.jsxs)(`span`,{className:`history-item-position`,children:[`#`,t+1]})]})]}),(0,v.jsx)(`div`,{className:`history-item-arrow`,children:`→`})]},`${e}-${t}`)})})]})}),(0,v.jsxs)(`div`,{className:`selector-btns`,children:[!i&&(0,v.jsx)(`button`,{className:`btn-danger`,onClick:()=>a(!0),children:`Clear History`}),i&&(0,v.jsxs)(v.Fragment,{children:[(0,v.jsx)(`span`,{children:`Are you sure?`}),(0,v.jsx)(`button`,{className:`btn-danger`,onClick:o,children:`Clear`}),(0,v.jsx)(`button`,{onClick:()=>a(!1),className:`btn-primary`,children:`Nevermind...`})]})]})]})})}function Ht(){let[e,t]=(0,_.useState)(null),[n,r]=(0,_.useState)(`home.md`),[i,a]=(0,_.useState)([`home.md`]),[o,s]=(0,_.useState)(null),[c,l]=(0,_.useState)(!1),[u,d]=(0,_.useState)([]),[f,p]=(0,_.useState)(``),[m,h]=(0,_.useState)(!1),[g,b]=(0,_.useState)(()=>Z()),[S,C]=(0,_.useState)(!1),[ee,w]=(0,_.useState)(!1),T=(0,_.useCallback)(()=>{t(K(`home.md`)),r(`home.md`),a([`home.md`]),s(`home`),E(`home.md`,`home`)},[]);(0,_.useEffect)(()=>{if(Ot()&&!X()&&(C(!0),kt()),$(g.theme),g.theme===`system`)return Pt(()=>{g.theme===`system`&&$(`system`)})},[g.theme]),(0,_.useEffect)(()=>{let e=new URLSearchParams(window.location.search),n=e.get(`note`),i=e.get(`section`);if(n)try{t(K(n)),r(n),a([n]);let e=i||W(n);s(e),E(n,e)}catch(e){console.error(`Failed to load note from URL:`,n,e),T()}else T()},[T]),(0,_.useEffect)(()=>{if(e){let e=setTimeout(()=>{A()},100);return()=>clearTimeout(e)}},[e]),(0,_.useEffect)(()=>{console.log(`Checking for custom theme on load`);let e=localStorage.getItem(`customTheme`);if(e!==null){let t=JSON.parse(e);console.log(`Applying custom theme on load:`,t),It(t)}});let E=(e,t)=>{let n=new URLSearchParams;n.set(`note`,e),t&&n.set(`section`,t);let r=`${window.location.pathname}?${n.toString()}`;window.history.pushState({},``,r)},D=e=>{console.log(`Loading note:`,e),t(null),e!==n&&(a(t=>[...t,e]),r(e)),jt(e);let i=W(e);s(i),E(e,i),l(!1),h(!1),setTimeout(()=>{try{t(K(e));let n=document.querySelector(`.center.main`);n&&(n.scrollTop=0),setTimeout(()=>{A()},50)}catch(n){console.error(`Error loading note:`,e,n),t(`# Error
 
-## Next Steps
-
-- Learn about [Advanced Types](advanced-types.md)
-- Explore [Decorators](decorators.md)
-- Master [Module Systems](modules.md)
-`,tt=`# TypeScript Notes
-
-Welcome to the TypeScript section! Here you'll find notes about TypeScript, the typed superset of JavaScript.
-
-## Coming Soon
-
-TypeScript notes are being prepared. Check back soon for comprehensive guides on:
-
-- TypeScript Fundamentals
-- Type Annotations
-- Interfaces and Types
-- Generics
-- Advanced TypeScript Features
-
-## Quick Reference
-
-TypeScript is a strongly typed programming language that builds on JavaScript, giving you better tooling at any scale.
-
-### Basic Types
-
-\`\`\`typescript
-// Basic types
-let id: number = 1;
-let name: string = "John";
-let isActive: boolean = true;
-
-// Arrays
-let numbers: number[] = [1, 2, 3];
-let strings: Array<string> = ["a", "b", "c"];
-
-// Objects
-interface User {
-  id: number;
-  name: string;
-  email?: string; // Optional property
-}
-
-const user: User = {
-  id: 1,
-  name: "John Doe",
-};
-
-// Functions
-function greet(name: string): string {
-  return \`Hello, \${name}!\`;
-}
-\`\`\`
-
-More detailed content coming soon!
-`,nt={"../notes/c/00-c-index.md":S,"../notes/computer-science/00-general-knowledge.md":C,"../notes/computer-science/01-hardware.md":ee,"../notes/computer-science/02-numbers.md":w,"../notes/computer-science/03-strings.md":T,"../notes/computer-science/04-math-operations.md":E,"../notes/cpp/00-cpp-index.md":D,"../notes/css/01-CSS-index.md":O,"../notes/css/02-basics.md":k,"../notes/css/03-colors.md":A,"../notes/css/04-display-property.md":j,"../notes/css/05-positioning.md":M,"../notes/css/06-selectors.md":N,"../notes/css/07-pseudo-selectors.md":te,"../notes/css/08-specificity.md":ne,"../notes/css/09-inheritance.md":re,"../notes/css/10-flexbox-basics.md":P,"../notes/css/11-grid-layouts.md":F,"../notes/css/12-form-styling.md":I,"../notes/css/13-modals.md":L,"../notes/css/14-animations.md":R,"../notes/css/15-themeing.md":ie,"../notes/css/16-building-a-dropdown.md":``,"../notes/git/00-git-init.md":ae,"../notes/git/01-pushing-and-pulling.md":oe,"../notes/git/02-reverting-changes.md":se,"../notes/git/03-git-branching.md":ce,"../notes/git/04-rebasing.md":le,"../notes/git/05-merging.md":ue,"../notes/git/06-remote-repositories.md":de,"../notes/home.md":fe,"../notes/html/00-html-index.md":pe,"../notes/html/01-get-started-with-html.md":me,"../notes/html/02-classes-ids-and-data-attributes.md":he,"../notes/html/03-forms.md":ge,"../notes/java/00-java-index.md":_e,"../notes/javascript/00-javascript-index.md":ve,"../notes/javascript/01-variables-and-datatypes.md":ye,"../notes/javascript/02-operators.md":be,"../notes/javascript/03-conditionals.md":xe,"../notes/javascript/04-ternary-operator.md":Se,"../notes/javascript/05-loops.md":Ce,"../notes/javascript/06-functions.md":we,"../notes/javascript/07-generators.md":Te,"../notes/javascript/08-string-methods.md":Ee,"../notes/javascript/08-template-literals.md":De,"../notes/javascript/09-built-in-functions.md":Oe,"../notes/javascript/10-scope.md":ke,"../notes/javascript/11-arrays.md":Ae,"../notes/javascript/12-classes.md":je,"../notes/javascript/13-objects.md":Me,"../notes/javascript/14-imports-and-exports.md":Ne,"../notes/javascript/15-try-catch.md":Pe,"../notes/javascript/16-promises.md":Fe,"../notes/javascript/17-JSON.md":Ie,"../notes/javascript/18-the-eval-dilemma.md":Le,"../notes/javascript/19-types-and-instances.md":Re,"../notes/javascript/20-destructuring.md":ze,"../notes/javascript/21-fetch.md":Be,"../notes/javascript/22-DOM-manipulation.md":Ve,"../notes/javascript/23-regular-expressions.md":He,"../notes/javascript/24-constructors-and-prototypes.md":Ue,"../notes/javascript/25-sets-and-maps.md":We,"../notes/react/00-react-index.md":r,"../notes/react/01-components.md":d,"../notes/react/02-state.md":o,"../notes/react/03-conditional-rendering.md":n,"../notes/react/04-hooks.md":u,"../notes/react/05-use-effect.md":c,"../notes/react/06-use-ref.md":t,"../notes/sql/00-sql-index.md":Ge,"../notes/sql/01-get-started.md":Ke,"../notes/sql/02-setting-up.md":qe,"../notes/sql/03-data-types.md":Je,"../notes/sql/04-tables.md":Ye,"../notes/sql/05-constraints.md":Xe,"../notes/sql/06-manipulating-data.md":Ze,"../notes/sql/07-advanced-manipulating-data.md":Qe,"../notes/sql/08-installing-sqlite.md":$e,"../notes/typescript/typescript-basics.md":et,"../notes/typescript/typescript-index.md":tt},z={},B={};Object.entries(nt).forEach(([e,t])=>{let n=e.split(`/`),r=n[n.length-1]||``;if(n.length===3&&r===`home.md`){B[r]={content:t,section:`home`};return}if(n.length>3){let e=n[n.length-2];z[e]||(z[e]={}),z[e][r]=t,B[r]={content:t,section:e}}});const V=e=>e.replace(/^\d{2}-/,``),H=e=>V(e).replace(`.md`,``).replace(/-/g,` `).replace(/\b\w/g,e=>e.toUpperCase()),U=e=>Object.keys(z[e]||{}).sort((e,t)=>{let n=parseInt(e.match(/^\d+/)?.[0]||`999`),r=parseInt(t.match(/^\d+/)?.[0]||`999`);return n===r?e.localeCompare(t):n-r}),rt=()=>Object.keys(z),W=e=>{let t=B[e];return t?t.section:null},G=e=>{let t=W(e);if(!t)return null;let n=U(t),r=n.indexOf(e);if(r===-1||r>=n.length-1)return null;let i=n[r+1];return{filename:i,title:H(i)}},K=e=>{let t=e.replace(/^\/notes\/[^/]+\//,``).replace(/^\/notes\//,``),n=B[t];if(!n){let e=Object.keys(B).join(`, `);throw Error(`Note not found: ${t}. Available: ${e}`)}return console.log(`Retrieved note:`,t,`from section:`,n.section),n.content},it=e=>{if(!e.trim())return[];let t=e.toLowerCase(),n=[];return Object.entries(B).forEach(([r,i])=>{let{content:a,section:o}=i,s=a.split(`
-`),c=[];if(s.forEach((n,r)=>{if(n.toLowerCase().includes(t)){let t=at(n,e);c.push({context:n.trim(),lineNumber:r+1,highlightedText:t})}}),c.length>0){let e=o===`home`?{name:`Home`,emojiIcon:`🏠`}:x[o]||{name:o,icon:`📄`};n.push({filename:r,title:H(r),section:e.name,sectionIcon:`icon`in e?e.icon:null,sectionEmojiIcon:`emojiIcon`in e?e.emojiIcon:null,matches:c.slice(0,3),totalMatches:c.length})}}),n.sort((e,t)=>e.totalMatches===t.totalMatches?e.title.localeCompare(t.title):t.totalMatches-e.totalMatches)};var at=(e,t)=>{let n=RegExp(`(${t})`,`gi`);return e.replace(n,`<mark>$1</mark>`)};const ot=()=>{let e=rt(),t=[];return t.push({text:`Home`,href:`home.md`,emojiIcon:`🏠`}),e.forEach(e=>{let n=x[e.toLowerCase()],r=U(e);if(r.length>0){let i=r.map(e=>({text:st(e),href:e})),a=`icon`in n?n.icon:null,o={text:n?.name||e.charAt(0).toUpperCase()+e.slice(1),children:i};a&&(o.icon=a),a||(o.emojiIcon=`emojiIcon`in n?n.emojiIcon:`📄`),t.push(o)}}),t};var st=e=>V(e).replace(`.md`,``).replace(/-/g,` `).replace(/\b\w/g,e=>e.toUpperCase());const q=ot();function ct({onSearch:e,onClear:t,placeholder:n=`Search all notes...`}){let[r,i]=(0,_.useState)(``),[a,o]=(0,_.useState)(!1),s=(0,_.useRef)(null),c=(0,_.useRef)(null),l=(0,_.useCallback)(t=>{c.current!==null&&(window.clearTimeout(c.current),c.current=null),c.current=window.setTimeout(()=>{e(t),c.current=null},800)},[e]),u=e=>{let n=e.target.value;i(n),n.trim()?l(n):(c.current!==null&&(window.clearTimeout(c.current),c.current=null),t())},d=()=>{i(``),t(),s.current?.focus()};return(0,_.useEffect)(()=>()=>{c.current!==null&&(window.clearTimeout(c.current),c.current=null)},[]),(0,_.useEffect)(()=>{let e=e=>{(e.ctrlKey||e.metaKey)&&e.key===`k`&&(e.preventDefault(),s.current?.focus())};return document.addEventListener(`keydown`,e),()=>document.removeEventListener(`keydown`,e)},[]),(0,v.jsx)(`div`,{className:`search-bar ${a?`focused`:``}`,children:(0,v.jsxs)(`div`,{className:`search-input-container`,children:[(0,v.jsx)(`span`,{className:`search-icon`,children:`🔍`}),(0,v.jsx)(`input`,{id:`search-input`,ref:s,type:`text`,value:r,onChange:u,onKeyDown:e=>{e.key===`Escape`&&d()},onFocus:()=>o(!0),onBlur:()=>o(!1),placeholder:n,className:`search-input`}),r&&(0,v.jsx)(`button`,{onClick:d,className:`search-clear`,"aria-label":`Clear search`,children:`✕`})]})})}function lt({setCurrentNote:e,currentSection:t,currentNoteName:n,onSearch:r,onClearSearch:i,isMobile:a,rightSidebarContent:o}){let[s,c]=(0,_.useState)(null),[l,u]=(0,_.useState)(`chapters`);(0,_.useEffect)(()=>{if(t){let e=q.findIndex(e=>{if(e.text&&t in x){let n=x[t];return e.text.includes(n.name)}return!1});e!==-1&&c(e)}},[t]);let d=e=>{c(s===e?null:e)};return(0,v.jsxs)(`div`,{className:`left-nav`,children:[a&&o&&(0,v.jsxs)(`div`,{className:`mobile-nav-toggle`,children:[(0,v.jsx)(`button`,{className:`mobile-nav-btn ${l===`chapters`?`active`:``}`,onClick:()=>u(`chapters`),children:`All Chapters`}),(0,v.jsx)(`button`,{className:`mobile-nav-btn ${l===`page`?`active`:``}`,onClick:()=>u(`page`),children:`On this page`})]}),(!a||l===`chapters`)&&(0,v.jsxs)(v.Fragment,{children:[(0,v.jsx)(ct,{onSearch:e=>{r?.(e)},onClear:()=>{i?.()},placeholder:`Search all notes...`}),q.map((t,r)=>{if(t.children){let i=s===r;return(0,v.jsxs)(`div`,{className:`dropdown-parent ${i?`active`:``}`,children:[(0,v.jsxs)(`div`,{className:`dropdown-title`,onClick:()=>d(r),children:[(0,v.jsx)(`span`,{className:`section-arrow`,children:i?`▼`:`▶`}),t.icon&&(0,v.jsx)(`img`,{src:t.icon,alt:`${t.text} icon`,className:`section-icon-img`}),!t.icon&&t.emojiIcon&&(0,v.jsx)(`span`,{className:`emoji-icon`,children:t.emojiIcon}),!t.icon&&!t.emojiIcon&&(0,v.jsx)(`div`,{style:{marginLeft:`20px`}}),(0,v.jsx)(`span`,{children:t.text})]}),(0,v.jsx)(`div`,{className:`dropdown-children ${i?`expanded`:`collapsed`}`,children:t.children.map((t,r)=>(0,v.jsx)(`p`,{className:`child-link ${n===t.href?`active`:``}`,onClick:()=>t.href&&e(t.href),children:t.text},r))})]},r)}else return(0,v.jsxs)(`div`,{className:`parent-link ${n===t.href?`active`:``}`,onClick:()=>t.href&&e(t.href),children:[t.icon&&(0,v.jsx)(`img`,{src:t.icon,alt:`${t.text} icon`,className:`section-icon-img`}),!t.icon&&t.emojiIcon&&(0,v.jsxs)(`span`,{className:`emoji-icon`,children:[t.emojiIcon,` `]}),(0,v.jsx)(`span`,{children:t.text})]},r)})]}),a&&l===`page`&&o&&(0,v.jsx)(`div`,{className:`mobile-page-overview`,children:o})]})}function ut({currentNote:e,currentNoteName:t,onLoadNote:n}){let[r,i]=(0,_.useState)([]),[a,o]=(0,_.useState)(null),[s,c]=(0,_.useState)(``);(0,_.useEffect)(()=>{if(!e){i([]),o(null);return}let r=/^(#{1,6})\s+(.+)$/gm,a=[],s;for(;(s=r.exec(e))!==null;){let e=s[1].length,t=s[2].trim();if(e===4)continue;let n=t.toLowerCase().replace(/[^\w\s-]/g,``).replace(/\s+/g,`-`);a.push({id:n,text:t,level:e})}if(n){let e=G(t);e&&a.push({id:`next-lesson`,text:`Next: ${e.title}`,level:2})}i(a);let c=e.replace(/#{1,6}\s+/g,``).replace(/\[([^\]]+)\]\([^)]+\)/g,`$1`).replace(/[*_`]/g,``).trim().split(/\s+/).filter(e=>e.length>0).length,l=Math.max(1,Math.ceil(c/200)),u=e.length;o({wordCount:c,readingTime:l,characterCount:u})},[e,t,n]);let l=e=>{if(e===`next-lesson`&&n){let e=G(t);e&&n(e.filename);return}let r=document.getElementById(e);r&&(r.scrollIntoView({behavior:`smooth`,block:`start`}),c(e))};return(0,_.useEffect)(()=>{let e=()=>{let e=r.map(e=>({id:e.id,element:document.getElementById(e.id)})),t=``;for(let n of e)n.element&&n.element.getBoundingClientRect().top<=100&&(t=n.id);c(t)},t=document.querySelector(`.center.main`);if(t)return t.addEventListener(`scroll`,e),()=>t.removeEventListener(`scroll`,e)},[r]),e?(0,v.jsxs)(`div`,{className:`right-sidebar`,children:[(0,v.jsxs)(`div`,{className:`sidebar-section`,children:[(0,v.jsx)(`h3`,{children:`📊 Note Info`}),(0,v.jsxs)(`div`,{className:`note-stats`,children:[(0,v.jsxs)(`div`,{className:`stat-item`,children:[(0,v.jsx)(`span`,{className:`stat-label`,children:`📄 File:`}),(0,v.jsx)(`span`,{className:`stat-value`,children:V(t)})]}),a&&(0,v.jsxs)(v.Fragment,{children:[(0,v.jsxs)(`div`,{className:`stat-item`,children:[(0,v.jsx)(`span`,{className:`stat-label`,children:`📝 Words:`}),(0,v.jsx)(`span`,{className:`stat-value`,children:a.wordCount.toLocaleString()})]}),(0,v.jsxs)(`div`,{className:`stat-item`,children:[(0,v.jsx)(`span`,{className:`stat-label`,children:`⏱️ Read time:`}),(0,v.jsxs)(`span`,{className:`stat-value`,children:[a.readingTime,` min`]})]}),(0,v.jsxs)(`div`,{className:`stat-item`,children:[(0,v.jsx)(`span`,{className:`stat-label`,children:`🔤 Characters:`}),(0,v.jsx)(`span`,{className:`stat-value`,children:a.characterCount.toLocaleString()})]})]})]})]}),r.length>0&&(0,v.jsxs)(`div`,{className:`sidebar-section`,children:[(0,v.jsx)(`h3`,{children:`📚 Table of Contents`}),(0,v.jsx)(`nav`,{className:`toc-nav`,children:r.map((e,t)=>(0,v.jsxs)(`button`,{className:`toc-item level-${e.level} ${s===e.id?`active`:``} ${e.id===`next-lesson`?`next-lesson`:``}`,onClick:()=>l(e.id),title:e.text,children:[e.id===`next-lesson`&&(0,v.jsx)(`span`,{className:`next-lesson-icon`,children:`🚀`}),e.text]},t))})]})]}):(0,v.jsx)(`div`,{className:`right-sidebar`,children:(0,v.jsxs)(`div`,{className:`sidebar-section`,children:[(0,v.jsx)(`h3`,{children:`📖 Note Info`}),(0,v.jsx)(`p`,{className:`no-note-message`,children:`Select a note to see its table of contents and information.`})]})})}var dt=`modulepreload`,ft=function(e){return`/code-wiki-app/`+e},pt={};const mt=function(e,t,n){let r=Promise.resolve();if(t&&t.length>0){let e=document.getElementsByTagName(`link`),i=document.querySelector(`meta[property=csp-nonce]`),a=i?.nonce||i?.getAttribute(`nonce`);function o(e){return Promise.all(e.map(e=>Promise.resolve(e).then(e=>({status:`fulfilled`,value:e}),e=>({status:`rejected`,reason:e}))))}r=o(t.map(t=>{if(t=ft(t,n),t in pt)return;pt[t]=!0;let r=t.endsWith(`.css`),i=r?`[rel="stylesheet"]`:``;if(n)for(let n=e.length-1;n>=0;n--){let i=e[n];if(i.href===t&&(!r||i.rel===`stylesheet`))return}else if(document.querySelector(`link[href="${t}"]${i}`))return;let o=document.createElement(`link`);if(o.rel=r?`stylesheet`:dt,r||(o.as=`script`),o.crossOrigin=``,o.href=t,a&&o.setAttribute(`nonce`,a),document.head.appendChild(o),r)return new Promise((e,n)=>{o.addEventListener(`load`,e),o.addEventListener(`error`,()=>n(Error(`Unable to preload CSS for ${t}`)))})}))}function i(e){let t=new Event(`vite:preloadError`,{cancelable:!0});if(t.payload=e,window.dispatchEvent(t),!t.defaultPrevented)throw e}return r.then(t=>{for(let e of t||[])e.status===`rejected`&&i(e.reason);return e().catch(i)})};var ht=(0,_.lazy)(()=>mt(()=>import(`./react-markdown-BYjrAzbE.js`),__vite__mapDeps([0,1,2,3,4,5])));function gt({displayName:e,content:t,languageDirectory:n,styleUpNextSections:r,loadNote:i}){return(0,_.useEffect)(()=>{document.title=e?`${H(e)} - ${n||`Notes`}`:`Programming Notes`},[e,n]),(0,v.jsx)(_.Suspense,{fallback:(0,v.jsx)(y,{}),children:(0,v.jsx)(_t,{content:t,styleUpNextSections:r,loadNote:i})})}function _t({content:e,styleUpNextSections:t,loadNote:n}){return(0,v.jsx)(ht,{remarkPlugins:[m,h],rehypePlugins:[f,p],components:{h1:({children:e,...t})=>(0,v.jsx)(`h1`,{...t,id:String(e)?.toLowerCase().replace(/[^\w\s-]/g,``).replace(/\s+/g,`-`),children:e}),h2:({children:e,...t})=>(0,v.jsx)(`h2`,{...t,id:String(e)?.toLowerCase().replace(/[^\w\s-]/g,``).replace(/\s+/g,`-`),children:e}),h3:({children:e,...t})=>(0,v.jsx)(`h3`,{...t,id:String(e)?.toLowerCase().replace(/[^\w\s-]/g,``).replace(/\s+/g,`-`),children:e}),h4:({children:e,...n})=>(0,v.jsx)(`h4`,{...n,id:String(e)?.toLowerCase().replace(/[^\w\s-]/g,``).replace(/\s+/g,`-`),onLoad:()=>{setTimeout(t,100)},children:e}),h5:({children:e,...t})=>(0,v.jsx)(`h5`,{...t,id:String(e)?.toLowerCase().replace(/[^\w\s-]/g,``).replace(/\s+/g,`-`),children:e}),h6:({children:e,...t})=>(0,v.jsx)(`h6`,{...t,id:String(e)?.toLowerCase().replace(/[^\w\s-]/g,``).replace(/\s+/g,`-`),children:e}),a:({href:e,children:t,...r})=>(0,v.jsx)(`a`,{href:e,onClick:t=>{if(e&&e.endsWith(`.md`)&&n){t.preventDefault();let r=e;e.includes(`/`)&&(r=e.split(`/`).pop()||e),console.log(`Internal link clicked:`,e,`-> normalized:`,r);try{n(r)}catch(e){console.error(`Failed to load note: ${r}`,e);try{n(r)}catch(e){console.error(`Failed to load note with filename: ${r}`,e),alert(`Note not found: ${r}`)}}}},className:`markdown-link`,...r,children:t}),table:({children:e,...t})=>(0,v.jsx)(`table`,{...t,className:`markdown-table`,children:e}),th:({children:e,...t})=>(0,v.jsx)(`th`,{...t,className:`markdown-th`,children:e}),td:({children:e,...t})=>(0,v.jsx)(`td`,{...t,className:`markdown-td`,children:e}),img:({src:e,alt:t,...n})=>(0,v.jsx)(`img`,{src:e?.startsWith(`/`)?`/code-wiki-app/${e.slice(1)}`:e,alt:t,style:{maxWidth:`100%`,height:`auto`,border:`1px solid #ddd`,borderRadius:`4px`,margin:`15px 0`,display:`block`},...n})},children:e})}function vt({currentFilename:e,onLoadNote:t}){let n=G(e);return n?(0,v.jsx)(`div`,{className:`next-lesson-container`,children:(0,v.jsx)(`button`,{className:`next-lesson-button`,onClick:()=>{t(n.filename)},"aria-label":`Go to next lesson: ${n.title}`,children:(0,v.jsxs)(`div`,{className:`next-lesson-content`,children:[(0,v.jsx)(`span`,{className:`next-lesson-label`,children:`Up Next`}),(0,v.jsx)(`span`,{className:`next-lesson-title`,children:n.title}),(0,v.jsx)(`span`,{className:`next-lesson-arrow`,children:`→`})]})})}):null}function yt({results:e,query:t,isLoading:n=!1,onSelectNote:r,onClose:i}){let a=e=>{r(e),i()};return t.trim()?(0,v.jsx)(`div`,{className:`search-results-overlay`,onClick:i,children:(0,v.jsxs)(`div`,{className:`search-results-container`,onClick:e=>e.stopPropagation(),children:[(0,v.jsxs)(`div`,{className:`search-results-header`,children:[(0,v.jsx)(`h3`,{children:`Search Results`}),(0,v.jsx)(`button`,{onClick:i,className:`search-results-close`,"aria-label":`Close search results`,children:`✕`})]}),n?(0,v.jsxs)(`div`,{className:`search-loading`,children:[(0,v.jsx)(`div`,{className:`search-spinner`}),(0,v.jsx)(`span`,{children:`Searching...`})]}):(0,v.jsxs)(v.Fragment,{children:[(0,v.jsx)(`div`,{className:`search-results-info`,children:e.length===0?(0,v.jsxs)(`span`,{children:[`No results found for "`,t,`"`]}):(0,v.jsxs)(`span`,{children:[`Found `,e.length,` `,e.length===1?`result`:`results`,` for "`,t,`"`]})}),(0,v.jsx)(`div`,{className:`search-results-list`,children:e.map((e,t)=>(0,v.jsxs)(`div`,{className:`search-result-card`,onClick:()=>a(e.filename),children:[(0,v.jsxs)(`div`,{className:`search-result-header`,children:[(0,v.jsxs)(`div`,{className:`search-result-title`,children:[(0,v.jsxs)(`span`,{className:`search-result-icon`,children:[e.sectionIcon&&(0,v.jsx)(`img`,{src:e.sectionIcon,alt:`${e.section} icon`,className:`section-icon-img`}),!e.sectionIcon&&e.sectionEmojiIcon&&(0,v.jsx)(`span`,{className:`emoji-icon`,children:e.sectionEmojiIcon}),!e.sectionIcon&&!e.sectionEmojiIcon&&(0,v.jsx)(`div`,{style:{width:`20px`},children:`💻`})]}),(0,v.jsx)(`span`,{className:`search-result-name`,children:e.title})]}),(0,v.jsxs)(`div`,{className:`search-result-meta`,children:[(0,v.jsx)(`span`,{className:`search-result-section`,children:e.section}),(0,v.jsxs)(`span`,{className:`search-result-count`,children:[e.totalMatches,` `,e.totalMatches===1?`match`:`matches`]})]})]}),(0,v.jsxs)(`div`,{className:`search-result-matches`,children:[e.matches.map((e,t)=>(0,v.jsxs)(`div`,{className:`search-result-match`,children:[(0,v.jsxs)(`div`,{className:`search-result-line-number`,children:[`Line `,e.lineNumber]}),(0,v.jsx)(`div`,{className:`search-result-context`,dangerouslySetInnerHTML:{__html:e.highlightedText}})]},t)),e.totalMatches>e.matches.length&&(0,v.jsxs)(`div`,{className:`search-result-more`,children:[`+`,e.totalMatches-e.matches.length,` more`,` `,e.totalMatches-e.matches.length===1?`match`:`matches`]})]})]},`${e.filename}-${t}`))})]})]})}):null}var J=`notes-app-preferences`,Y=`notes-app-storage-allowed`;const X=()=>{try{return localStorage.getItem(Y)===`true`}catch{return!1}},bt=()=>{if(X())try{let e=Z();e.visitedNotes=[],localStorage.setItem(J,JSON.stringify(e))}catch{}},xt=()=>{try{return!localStorage.getItem(`notes-app-visited`)}catch{return!0}},St=()=>{try{localStorage.setItem(`notes-app-visited`,`true`)}catch{}},Ct=e=>{try{e?localStorage.setItem(Y,`true`):localStorage.removeItem(Y)}catch{}},Z=()=>{let e={theme:`system`,allowsStorage:!1,visitedNotes:[],firstVisit:!0};if(!X())return e;try{let t=localStorage.getItem(J);if(t){let n=JSON.parse(t);return{...e,...n}}}catch{}return e},Q=e=>{if(X())try{let t={...Z(),...e};localStorage.setItem(J,JSON.stringify(t))}catch{}},wt=e=>{X()&&Q({visitedNotes:[e,...(Z().visitedNotes||[]).filter(t=>t!==e)].slice(0,20)})},Tt=()=>{try{localStorage.removeItem(J),localStorage.removeItem(Y),localStorage.removeItem(`notes-app-visited`)}catch{}},Et=()=>typeof window<`u`&&window.matchMedia&&window.matchMedia(`(prefers-color-scheme: dark)`).matches?`dark`:`light`,$=e=>{let t=document.documentElement,n;n=e===`system`?Et():e,t.setAttribute(`data-theme`,n),t.classList.remove(`theme-light`,`theme-dark`),t.classList.add(`theme-${n}`)},Dt=e=>{if(typeof window>`u`||!window.matchMedia)return()=>{};let t=window.matchMedia(`(prefers-color-scheme: dark)`),n=t=>{e(t.matches?`dark`:`light`)};return t.addEventListener(`change`,n),()=>t.removeEventListener(`change`,n)};function Ot({isOpen:e,onComplete:t}){let[n,r]=(0,_.useState)(`storage`),[i,a]=(0,_.useState)(!1),[o,s]=(0,_.useState)(``),[c,l]=(0,_.useState)(`system`);if(!e)return null;let u=e=>{a(e),e?r(`setup`):t({allowsStorage:!1,theme:`system`})},d=()=>{t({allowsStorage:i,username:o.trim()||void 0,theme:c})},f=()=>{s(``),d()},p=e=>{l(e),$(e)};return(0,v.jsx)(`div`,{className:`welcome-modal-overlay`,children:(0,v.jsx)(`div`,{className:`welcome-modal`,children:n===`storage`?(0,v.jsxs)(v.Fragment,{children:[(0,v.jsx)(`div`,{className:`welcome-modal-header`,children:(0,v.jsx)(`h2`,{children:`Welcome to Programming Notes! 📚`})}),(0,v.jsxs)(`div`,{className:`welcome-modal-content`,children:[(0,v.jsx)(`p`,{children:`To provide you with a personalized experience, we'd like to save your preferences and reading history locally on your device.`}),(0,v.jsxs)(`div`,{className:`storage-benefits`,children:[(0,v.jsxs)(`div`,{className:`benefit-item`,children:[(0,v.jsx)(`span`,{className:`benefit-icon`,children:`🎨`}),(0,v.jsx)(`span`,{children:`Remember your theme preference`})]}),(0,v.jsxs)(`div`,{className:`benefit-item`,children:[(0,v.jsx)(`span`,{className:`benefit-icon`,children:`📖`}),(0,v.jsx)(`span`,{children:`Track your reading history`})]}),(0,v.jsxs)(`div`,{className:`benefit-item`,children:[(0,v.jsx)(`span`,{className:`benefit-icon`,children:`👤`}),(0,v.jsx)(`span`,{children:`Personalized welcome messages`})]})]}),(0,v.jsxs)(`p`,{className:`storage-note`,children:[(0,v.jsx)(`strong`,{children:`Your privacy matters:`}),` All data stays on your device. Nothing is sent to any servers.`]})]}),(0,v.jsxs)(`div`,{className:`welcome-modal-actions`,children:[(0,v.jsx)(`button`,{onClick:()=>u(!1),className:`btn-secondary`,children:`No Thanks`}),(0,v.jsx)(`button`,{onClick:()=>u(!0),className:`btn-primary`,children:`Allow Local Storage`})]})]}):(0,v.jsxs)(v.Fragment,{children:[(0,v.jsx)(`div`,{className:`welcome-modal-header`,children:(0,v.jsx)(`h2`,{children:`Let's Personalize Your Experience ✨`})}),(0,v.jsxs)(`div`,{className:`welcome-modal-content`,children:[(0,v.jsxs)(`div`,{className:`setup-section`,children:[(0,v.jsx)(`label`,{htmlFor:`username`,className:`setup-label`,children:`What should we call you? (Optional)`}),(0,v.jsx)(`input`,{id:`username`,type:`text`,value:o,onChange:e=>s(e.target.value),placeholder:`Enter your name...`,className:`setup-input`,maxLength:50})]}),(0,v.jsxs)(`div`,{className:`setup-section`,children:[(0,v.jsx)(`label`,{className:`setup-label`,children:`Choose your theme`}),(0,v.jsxs)(`div`,{className:`theme-options`,children:[(0,v.jsxs)(`button`,{onClick:()=>p(`system`),className:`theme-option ${c===`system`?`active`:``}`,children:[(0,v.jsx)(`span`,{className:`theme-icon`,children:`🖥️`}),(0,v.jsxs)(`div`,{className:`theme-info`,children:[(0,v.jsx)(`div`,{className:`theme-name`,children:`System`}),(0,v.jsx)(`div`,{className:`theme-desc`,children:`Match your device`})]})]}),(0,v.jsxs)(`button`,{onClick:()=>p(`light`),className:`theme-option ${c===`light`?`active`:``}`,children:[(0,v.jsx)(`span`,{className:`theme-icon`,children:`☀️`}),(0,v.jsxs)(`div`,{className:`theme-info`,children:[(0,v.jsx)(`div`,{className:`theme-name`,children:`Light`}),(0,v.jsx)(`div`,{className:`theme-desc`,children:`Bright and clean`})]})]}),(0,v.jsxs)(`button`,{onClick:()=>p(`dark`),className:`theme-option ${c===`dark`?`active`:``}`,children:[(0,v.jsx)(`span`,{className:`theme-icon`,children:`🌙`}),(0,v.jsxs)(`div`,{className:`theme-info`,children:[(0,v.jsx)(`div`,{className:`theme-name`,children:`Dark`}),(0,v.jsx)(`div`,{className:`theme-desc`,children:`Easy on the eyes`})]})]})]})]})]}),(0,v.jsxs)(`div`,{className:`welcome-modal-actions`,children:[(0,v.jsx)(`button`,{onClick:f,className:`btn-secondary`,children:`Skip Name`}),(0,v.jsx)(`button`,{onClick:d,className:`btn-primary`,children:`Get Started`})]})]})})})}function kt(e){let t=document.documentElement;t.style.setProperty(`--bg-primary`,e[0]),t.style.setProperty(`--bg-secondary`,e[1]),t.style.setProperty(`--bg-tertiary`,e[2]),t.style.setProperty(`--text-primary`,e[3]),t.style.setProperty(`--text-secondary`,e[4]),t.style.setProperty(`--text-muted`,e[5]),t.style.setProperty(`--border-color`,e[6]),t.style.setProperty(`--border-light`,e[7]),t.style.setProperty(`--border-medium`,e[8]),t.style.setProperty(`--accent-color`,e[9]),t.style.setProperty(`--accent-hover`,e[10]),t.style.setProperty(`--accent-dark`,e[11]),t.style.setProperty(`--accent-light`,e[12]),t.style.setProperty(`--accent-blue`,e[13]),t.style.setProperty(`--accent-blue-dark`,e[14]),t.style.setProperty(`--heading-primary`,e[15]),t.style.setProperty(`--heading-secondary`,e[16]),t.style.setProperty(`--heading-tertiary`,e[17])}const At=()=>{localStorage.removeItem(`customTheme`),window.location.reload()},jt=e=>{localStorage.setItem(`customTheme`,JSON.stringify(e))};function Mt({handleClose:e}){let[t,n]=(0,_.useState)([]),r=[`Background Primary`,`Background Secondary`,`Background Tertiary`,`Text Primary`,`Text Secondary`,`Text Muted`,`Border Color`,`Border Light`,`Border Medium`,`Accent Color`,`Accent Hover`,`Accent Dark`,`Accent Light`,`Accent Secondary`,`Accent Secondary Dark`,`Heading Primary`,`Heading Secondary`,`Heading Tertiary`];return(0,_.useEffect)(()=>{let e=document.documentElement;n([`--bg-primary`,`--bg-secondary`,`--bg-tertiary`,`--text-primary`,`--text-secondary`,`--text-muted`,`--border-color`,`--border-light`,`--border-medium`,`--accent-color`,`--accent-hover`,`--accent-dark`,`--accent-light`,`--accent-blue`,`--accent-blue-dark`,`--heading-primary`,`--heading-secondary`,`--heading-tertiary`].map(t=>getComputedStyle(e).getPropertyValue(t).trim()))},[n]),(0,v.jsx)(v.Fragment,{children:(0,v.jsx)(`div`,{className:`modal-overlay`,onClick:e,children:(0,v.jsxs)(`div`,{className:`modal`,onClick:e=>e.stopPropagation(),children:[(0,v.jsx)(`span`,{className:`modal-close`,onClick:e,children:`X`}),(0,v.jsx)(`h2`,{children:`Customize Theme Colors`}),(0,v.jsxs)(`form`,{className:`color-inputs`,onSubmit:e=>{e.preventDefault(),kt(t),jt(t)},children:[(0,v.jsx)(`div`,{className:`custom-color-btns-grid`,children:t.map((e,i)=>(0,v.jsxs)(`div`,{className:`custom-color-btn`,children:[(0,v.jsxs)(`label`,{children:[r[i],`:`]}),(0,v.jsx)(`input`,{type:`color`,value:e,onChange:e=>{let r=[...t];r[i]=e.target.value,n(r)}})]},i))}),(0,v.jsxs)(`div`,{className:`selector-btns`,children:[(0,v.jsx)(`input`,{type:`submit`,value:`Apply Theme`,className:`selector-btn`}),(0,v.jsx)(`button`,{type:`button`,onClick:At,className:`btn-danger`,children:`Reset to Default`})]}),(0,v.jsx)(`br`,{})]}),(0,v.jsx)(`br`,{})]})})})}function Nt({username:e,preferences:t,onThemeChange:n,onClearData:r,onShowHistory:i}){let[a,o]=(0,_.useState)(!1),[s,c]=(0,_.useState)(!1),[l,u]=(0,_.useState)(!1),d=(0,_.useRef)(null);(0,_.useEffect)(()=>{let e=e=>{d.current&&!d.current.contains(e.target)&&o(!1)};return document.addEventListener(`mousedown`,e),()=>document.removeEventListener(`mousedown`,e)},[]);let f=()=>{c(!0),o(!1)},p=()=>{r(),c(!1)},m=e=>{switch(e){case`light`:return`☀️`;case`dark`:return`🌙`;case`system`:return`🖥️`;default:return`🖥️`}};return(0,v.jsxs)(v.Fragment,{children:[(0,v.jsxs)(`div`,{className:`user-menu`,ref:d,children:[(0,v.jsxs)(`button`,{onClick:()=>o(!a),className:`user-menu-trigger`,"aria-label":`User menu`,children:[(0,v.jsx)(`div`,{className:`user-avatar`,children:e?e.charAt(0).toUpperCase():`👤`}),(0,v.jsx)(`span`,{className:`user-menu-arrow`,children:a?`▴`:`▾`})]}),a&&(0,v.jsxs)(`div`,{className:`user-menu-dropdown`,children:[e&&(0,v.jsx)(`div`,{className:`user-menu-header`,children:(0,v.jsxs)(`div`,{className:`user-greeting`,children:[`Welcome back, `,(0,v.jsx)(`strong`,{children:e}),`!`]})}),(0,v.jsxs)(`div`,{className:`user-menu-section`,children:[(0,v.jsx)(`div`,{className:`user-menu-label`,children:`Theme`}),(0,v.jsxs)(`div`,{className:`theme-selector`,children:[[`system`,`light`,`dark`].map(e=>(0,v.jsxs)(`button`,{onClick:()=>{n(e),o(!1)},className:`theme-selector-btn ${t.theme===e?`active`:``}`,children:[(0,v.jsx)(`span`,{className:`theme-selector-icon`,children:m(e)}),(0,v.jsx)(`span`,{className:`theme-selector-name`,children:e.charAt(0).toUpperCase()+e.slice(1)})]},e)),(0,v.jsxs)(`button`,{onClick:()=>{u(!0),o(!1)},className:`theme-selector-btn`,children:[(0,v.jsx)(`span`,{className:`theme-selector-icon`,children:`🎨`}),(0,v.jsx)(`span`,{className:`theme-selector-name`,children:`Custom`})]})]})]}),(0,v.jsx)(`div`,{className:`user-menu-section`,children:(0,v.jsxs)(`button`,{onClick:()=>{i(),o(!1)},className:`user-menu-item`,children:[(0,v.jsx)(`span`,{className:`user-menu-icon`,children:`📚`}),`Reading History`,t.visitedNotes.length>0&&(0,v.jsx)(`span`,{className:`history-count`,children:t.visitedNotes.length})]})}),(0,v.jsx)(`div`,{className:`user-menu-section user-menu-danger`,children:(0,v.jsxs)(`button`,{onClick:f,className:`user-menu-item danger`,children:[(0,v.jsx)(`span`,{className:`user-menu-icon`,children:`🗑️`}),`Clear All Data`]})})]})]}),s&&(0,v.jsx)(`div`,{className:`confirm-modal-overlay`,children:(0,v.jsxs)(`div`,{className:`confirm-modal`,children:[(0,v.jsx)(`div`,{className:`confirm-modal-header`,children:(0,v.jsx)(`h3`,{children:`⚠️ Clear All Data`})}),(0,v.jsxs)(`div`,{className:`confirm-modal-content`,children:[(0,v.jsx)(`p`,{children:`This will permanently delete all your saved preferences, reading history, and personal settings.`}),(0,v.jsx)(`p`,{className:`confirm-warning`,children:(0,v.jsx)(`strong`,{children:`Once you delete your progress, this cannot be undone!`})})]}),(0,v.jsxs)(`div`,{className:`confirm-modal-actions`,children:[(0,v.jsx)(`button`,{onClick:()=>c(!1),className:`btn-secondary`,children:`Cancel`}),(0,v.jsx)(`button`,{onClick:p,className:`btn-danger`,children:`Yes, Delete Everything`})]})]})}),l&&(0,v.jsx)(Mt,{handleClose:()=>u(!1)})]})}function Pt({isOpen:e,preferences:t,onClose:n,onSelectNote:r}){let[i,a]=(0,_.useState)(!1);if(!e)return null;let o=()=>{t.visitedNotes=[],a(!1),bt(),n()},s=e=>{r(e),n()},c=e=>{let t=W(e);return t?e===`home.md`?{name:`Home`,emojiIcon:`🏠`}:x[t]||{name:t,icon:`📄`}:{name:`General`,icon:`📄`}};return(0,v.jsx)(`div`,{className:`history-modal-overlay`,onClick:n,children:(0,v.jsxs)(`div`,{className:`history-modal`,onClick:e=>e.stopPropagation(),children:[(0,v.jsxs)(`div`,{className:`history-modal-header`,children:[(0,v.jsx)(`h3`,{children:`📚 Reading History`}),(0,v.jsx)(`button`,{onClick:n,className:`history-modal-close`,"aria-label":`Close history`,children:`✕`})]}),(0,v.jsx)(`div`,{className:`history-modal-content`,children:t.visitedNotes.length===0?(0,v.jsxs)(`div`,{className:`history-empty`,children:[(0,v.jsx)(`div`,{className:`history-empty-icon`,children:`📖`}),(0,v.jsx)(`div`,{className:`history-empty-title`,children:`No reading history yet`}),(0,v.jsx)(`div`,{className:`history-empty-desc`,children:`Start exploring the notes to build your reading history!`})]}):(0,v.jsxs)(v.Fragment,{children:[(0,v.jsxs)(`div`,{className:`history-info`,children:[`You've visited `,t.visitedNotes.length,t.visitedNotes.length===1?` note`:` notes`,` `,`recently`]}),(0,v.jsx)(`div`,{className:`history-list`,children:t.visitedNotes.map((e,t)=>{let n=c(e),r=H(e);return(0,v.jsxs)(`div`,{className:`history-item`,onClick:()=>s(e),children:[(0,v.jsxs)(`div`,{className:`history-item-main`,children:[(0,v.jsxs)(`div`,{className:`history-item-header`,children:[(0,v.jsxs)(`span`,{className:`history-item-icon`,children:[`icon`in n&&(0,v.jsx)(`img`,{src:n.icon,alt:`${n.name} icon`,className:`section-icon-img`}),!(`icon`in n)&&`emojiIcon`in n&&(0,v.jsx)(`span`,{className:`emoji-icon`,children:n.emojiIcon})]}),(0,v.jsx)(`span`,{className:`history-item-title`,children:r})]}),(0,v.jsxs)(`div`,{className:`history-item-meta`,children:[(0,v.jsx)(`span`,{className:`history-item-section`,children:n.name}),(0,v.jsxs)(`span`,{className:`history-item-position`,children:[`#`,t+1]})]})]}),(0,v.jsx)(`div`,{className:`history-item-arrow`,children:`→`})]},`${e}-${t}`)})})]})}),(0,v.jsxs)(`div`,{className:`selector-btns`,children:[!i&&(0,v.jsx)(`button`,{className:`btn-danger`,onClick:()=>a(!0),children:`Clear History`}),i&&(0,v.jsxs)(v.Fragment,{children:[(0,v.jsx)(`span`,{children:`Are you sure?`}),(0,v.jsx)(`button`,{className:`btn-danger`,onClick:o,children:`Clear`}),(0,v.jsx)(`button`,{onClick:()=>a(!1),className:`btn-primary`,children:`Nevermind...`})]})]})]})})}function Ft(){let[e,t]=(0,_.useState)(null),[n,r]=(0,_.useState)(`home.md`),[i,a]=(0,_.useState)([`home.md`]),[o,s]=(0,_.useState)(null),[c,l]=(0,_.useState)(!1),[u,d]=(0,_.useState)([]),[f,p]=(0,_.useState)(``),[m,h]=(0,_.useState)(!1),[g,b]=(0,_.useState)(()=>Z()),[S,C]=(0,_.useState)(!1),[ee,w]=(0,_.useState)(!1),T=(0,_.useCallback)(()=>{t(K(`home.md`)),r(`home.md`),a([`home.md`]),s(`home`),E(`home.md`,`home`)},[]);(0,_.useEffect)(()=>{if(xt()&&!X()&&(C(!0),St()),$(g.theme),g.theme===`system`)return Dt(()=>{g.theme===`system`&&$(`system`)})},[g.theme]),(0,_.useEffect)(()=>{let e=new URLSearchParams(window.location.search),n=e.get(`note`),i=e.get(`section`);if(n)try{t(K(n)),r(n),a([n]);let e=i||W(n);s(e),E(n,e)}catch(e){console.error(`Failed to load note from URL:`,n,e),T()}else T()},[T]),(0,_.useEffect)(()=>{if(e){let e=setTimeout(()=>{A()},100);return()=>clearTimeout(e)}},[e]),(0,_.useEffect)(()=>{console.log(`Checking for custom theme on load`);let e=localStorage.getItem(`customTheme`);if(e!==null){let t=JSON.parse(e);console.log(`Applying custom theme on load:`,t),kt(t)}});let E=(e,t)=>{let n=new URLSearchParams;n.set(`note`,e),t&&n.set(`section`,t);let r=`${window.location.pathname}?${n.toString()}`;window.history.pushState({},``,r)},D=e=>{console.log(`Loading note:`,e),t(null),e!==n&&(a(t=>[...t,e]),r(e)),wt(e);let i=W(e);s(i),E(e,i),l(!1),h(!1),setTimeout(()=>{try{t(K(e));let n=document.querySelector(`.center.main`);n&&(n.scrollTop=0),setTimeout(()=>{A()},50)}catch(n){console.error(`Error loading note:`,e,n),t(`# Error
-
-Note not found: `+e)}},100)},O=()=>{l(!c)},k=()=>{l(!1)},A=()=>{document.querySelectorAll(`.markdown-content h3, .markdown-content h4`).forEach(e=>{e.textContent&&e.textContent.includes(`Up Next`)&&e.classList.add(`up-next-section`)})},j=()=>{if(i.length>1){let e=[...i];e.pop();let n=e[e.length-1];a(e),r(n);try{t(K(n));let e=document.querySelector(`.center.main`);e&&(e.scrollTop=0)}catch(e){console.error(`Error loading previous note:`,n,e)}}},M=e=>{p(e),e.trim()?(d(it(e)),h(!0)):(d([]),h(!1))},N=()=>{p(``),d([]),h(!1)},te=e=>{D(e),h(!1)},ne=e=>{if(Ct(e.allowsStorage),e.allowsStorage){let t={...g,allowsStorage:!0,username:e.username,theme:e.theme,firstVisit:!1};b(t),Q(t)}$(e.theme),C(!1)},re=e=>{b({...g,theme:e}),Q({theme:e}),$(e)},P=()=>{Tt(),b({theme:`system`,allowsStorage:!1,visitedNotes:[],firstVisit:!0}),$(`system`),window.location.reload()},F=()=>{w(!0)},I=o&&o in x?x[o]:null,L=o===`home`?`Verdant Webworks Learning Hub`:I?(0,v.jsxs)(`span`,{className:`header-title-with-icon`,children:[`icon`in I&&(0,v.jsx)(`img`,{src:I.icon,alt:`${I.name} icon`,className:`section-icon-img`}),!(`icon`in I)&&`emojiIcon`in I&&(0,v.jsx)(`span`,{children:I.emojiIcon}),` `,I.name,` Notes`]}):`Learning Hub`,R=V(n);return(0,v.jsxs)(v.Fragment,{children:[(0,v.jsx)(`header`,{children:(0,v.jsxs)(`div`,{className:`header-container`,children:[(0,v.jsxs)(`button`,{className:`hamburger-menu`,onClick:O,"aria-label":`Toggle navigation menu`,children:[(0,v.jsx)(`span`,{}),(0,v.jsx)(`span`,{}),(0,v.jsx)(`span`,{})]}),(0,v.jsx)(`h1`,{children:L}),(0,v.jsx)(Nt,{username:g.username,preferences:g,onThemeChange:re,onClearData:P,onShowHistory:F})]})}),(0,v.jsxs)(`div`,{className:`body-container`,children:[(0,v.jsx)(lt,{setCurrentNote:D,currentSection:o,currentNoteName:n,onSearch:M,onClearSearch:N}),c&&(0,v.jsx)(`div`,{className:`mobile-overlay`,onClick:k,children:(0,v.jsxs)(`div`,{className:`mobile-menu`,onClick:e=>e.stopPropagation(),children:[(0,v.jsxs)(`div`,{className:`mobile-menu-header`,children:[(0,v.jsx)(`h2`,{children:`Navigation`}),(0,v.jsx)(`button`,{className:`close-mobile-menu`,onClick:k,"aria-label":`Close navigation menu`,children:`✕`})]}),(0,v.jsx)(lt,{setCurrentNote:D,currentSection:o,currentNoteName:n,onSearch:M,onClearSearch:N,isMobile:!0,rightSidebarContent:(0,v.jsx)(ut,{currentNote:e,currentNoteName:n,onLoadNote:D})})]})}),(0,v.jsxs)(`div`,{className:`center main`,children:[(0,v.jsxs)(`div`,{className:`navigation-bar`,children:[i.length>1&&(0,v.jsx)(`button`,{onClick:j,className:`back-button`,children:`← Back`}),(0,v.jsx)(`span`,{className:`current-note`,children:R})]}),e===null&&(0,v.jsx)(y,{}),e!==null&&(0,v.jsxs)(`div`,{className:`markdown-content`,children:[(0,v.jsx)(gt,{content:e,displayName:R,languageDirectory:I?.name,styleUpNextSections:A,loadNote:D}),(0,v.jsx)(vt,{currentFilename:n,onLoadNote:D})]})]}),(0,v.jsx)(`div`,{className:`right-nav`,children:(0,v.jsx)(ut,{currentNote:e,currentNoteName:n,onLoadNote:D})})]}),(0,v.jsx)(`footer`,{children:(0,v.jsxs)(`div`,{className:`footer-content`,children:[(0,v.jsx)(`span`,{children:`© 2025 Verdant Webworks`}),(0,v.jsx)(`span`,{className:`footer-separator`,children:`|`}),(0,v.jsx)(`a`,{href:`https://verdant-webworks.vercel.app/`,target:`_blank`,rel:`noopener noreferrer`,children:`verdantwebworks.vercel.app`})]})}),m&&(0,v.jsx)(yt,{results:u,query:f,onSelectNote:te,onClose:()=>h(!1)}),(0,v.jsx)(Ot,{isOpen:S,onComplete:ne}),(0,v.jsx)(Pt,{isOpen:ee,preferences:g,onClose:()=>w(!1),onSelectNote:D})]})}var It=Ft;(0,g.createRoot)(document.getElementById(`root`)).render((0,v.jsx)(_.StrictMode,{children:(0,v.jsx)(It,{})}));
+Note not found: `+e)}},100)},O=()=>{l(!c)},k=()=>{l(!1)},A=()=>{document.querySelectorAll(`.markdown-content h3, .markdown-content h4`).forEach(e=>{e.textContent&&e.textContent.includes(`Up Next`)&&e.classList.add(`up-next-section`)})},j=()=>{if(i.length>1){let e=[...i];e.pop();let n=e[e.length-1];a(e),r(n);try{t(K(n));let e=document.querySelector(`.center.main`);e&&(e.scrollTop=0)}catch(e){console.error(`Error loading previous note:`,n,e)}}},M=e=>{p(e),e.trim()?(d(dt(e)),h(!0)):(d([]),h(!1))},N=()=>{p(``),d([]),h(!1)},te=e=>{D(e),h(!1)},ne=e=>{if(At(e.allowsStorage),e.allowsStorage){let t={...g,allowsStorage:!0,username:e.username,theme:e.theme,firstVisit:!1};b(t),Q(t)}$(e.theme),C(!1)},re=e=>{b({...g,theme:e}),Q({theme:e}),$(e)},P=()=>{Mt(),b({theme:`system`,allowsStorage:!1,visitedNotes:[],firstVisit:!0}),$(`system`),window.location.reload()},F=()=>{w(!0)},I=o&&o in x?x[o]:null,L=o===`home`?`Verdant Webworks Learning Hub`:I?(0,v.jsxs)(`span`,{className:`header-title-with-icon`,children:[`icon`in I&&(0,v.jsx)(`img`,{src:I.icon,alt:`${I.name} icon`,className:`section-icon-img`}),!(`icon`in I)&&`emojiIcon`in I&&(0,v.jsx)(`span`,{children:I.emojiIcon}),` `,I.name,` Notes`]}):`Learning Hub`,R=V(n);return(0,v.jsxs)(v.Fragment,{children:[(0,v.jsx)(`header`,{children:(0,v.jsxs)(`div`,{className:`header-container`,children:[(0,v.jsxs)(`button`,{className:`hamburger-menu`,onClick:O,"aria-label":`Toggle navigation menu`,children:[(0,v.jsx)(`span`,{}),(0,v.jsx)(`span`,{}),(0,v.jsx)(`span`,{})]}),(0,v.jsx)(`h1`,{children:L}),(0,v.jsx)(Bt,{username:g.username,preferences:g,onThemeChange:re,onClearData:P,onShowHistory:F})]})}),(0,v.jsxs)(`div`,{className:`body-container`,children:[(0,v.jsx)(gt,{setCurrentNote:D,currentSection:o,currentNoteName:n,onSearch:M,onClearSearch:N}),c&&(0,v.jsx)(`div`,{className:`mobile-overlay`,onClick:k,children:(0,v.jsxs)(`div`,{className:`mobile-menu`,onClick:e=>e.stopPropagation(),children:[(0,v.jsxs)(`div`,{className:`mobile-menu-header`,children:[(0,v.jsx)(`h2`,{children:`Navigation`}),(0,v.jsx)(`button`,{className:`close-mobile-menu`,onClick:k,"aria-label":`Close navigation menu`,children:`✕`})]}),(0,v.jsx)(gt,{setCurrentNote:D,currentSection:o,currentNoteName:n,onSearch:M,onClearSearch:N,isMobile:!0,rightSidebarContent:(0,v.jsx)(_t,{currentNote:e,currentNoteName:n,onLoadNote:D})})]})}),(0,v.jsxs)(`div`,{className:`center main`,children:[(0,v.jsxs)(`div`,{className:`navigation-bar`,children:[i.length>1&&(0,v.jsx)(`button`,{onClick:j,className:`back-button`,children:`← Back`}),(0,v.jsx)(`span`,{className:`current-note`,children:R})]}),e===null&&(0,v.jsx)(y,{}),e!==null&&(0,v.jsxs)(`div`,{className:`markdown-content`,children:[(0,v.jsx)(Ct,{content:e,displayName:R,languageDirectory:I?.name,styleUpNextSections:A,loadNote:D}),(0,v.jsx)(Tt,{currentFilename:n,onLoadNote:D})]})]}),(0,v.jsx)(`div`,{className:`right-nav`,children:(0,v.jsx)(_t,{currentNote:e,currentNoteName:n,onLoadNote:D})})]}),(0,v.jsx)(`footer`,{children:(0,v.jsxs)(`div`,{className:`footer-content`,children:[(0,v.jsx)(`span`,{children:`© 2025 Verdant Webworks`}),(0,v.jsx)(`span`,{className:`footer-separator`,children:`|`}),(0,v.jsx)(`a`,{href:`https://verdant-webworks.vercel.app/`,target:`_blank`,rel:`noopener noreferrer`,children:`verdantwebworks.vercel.app`})]})}),m&&(0,v.jsx)(Et,{results:u,query:f,onSelectNote:te,onClose:()=>h(!1)}),(0,v.jsx)(Ft,{isOpen:S,onComplete:ne}),(0,v.jsx)(Vt,{isOpen:ee,preferences:g,onClose:()=>w(!1),onSelectNote:D})]})}var Ut=Ht;(0,g.createRoot)(document.getElementById(`root`)).render((0,v.jsx)(_.StrictMode,{children:(0,v.jsx)(Ut,{})}));
