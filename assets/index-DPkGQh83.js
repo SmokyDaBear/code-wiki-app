@@ -2657,7 +2657,7 @@ Rebasing is a Git operation that allows you to integrate changes from one branch
 
 Sometimes, when working on a branch, you may attempt to push changes only to be met with an error message indicating that your local branch is behind its remote counterpart. This situation often arises when new commits have been added to the remote branch since your last pull or fetch.
 
-In such cases, rebasing can be a useful tool to update your local branch with the latest changes from the remote branch before pushing your commits. Instead of creating a merge commit, rebasing rewrites your local commits on top of the latest commits from the remote branch.
+In such cases, rebasing can be a useful tool to update your local branch with the latest changes from the remote branch before pushing your commits. Instead of creating a merge commit, rebasing rewrites your local commits on top of the latest commits from the remote branch. 
 
 ## Why Use Rebasing?
 
@@ -2770,109 +2770,31 @@ git merge feature
 
 ## About
 
-Welcome to what initially started as my personal notes collection but has since grown into a comprehensive resource for learning and referencing various programming languages and technologies. This is your central hub for all things programming! Built with React and Vite, utilizing Markdown for the actual notes themselves which are then converted to HTML for easy reading. I didn't feel like rewriting notes in HTML, but I wanted to be able to search them and have a nice interface to read them in. You are free to fork the repository and use it for your own notes if you like, just if you do, please add a link back to my GitHub profile or website somewhere in your version. Enjoy exploring and learning!
+This was a repository I created to store my personal programming notes. I decided to turn it into a website using Vite and React so It could be easily accessed from anywhere. The notes cover a variety of programming languages and topics that I have learned over time. It's continually being updated as I learn new things.
 
-If you do decide to use this as a base for your own notes, there is a CSS file dedicated to styling the notes located at \`src/styles/base.css\`. Feel free to modify it to suit your preferences!
+If you find this repository useful, leave a star on GitHub! [⭐](https://github.com/SmokyDaBear/code-wiki-app)
+
+If you do decide to use for this repository and use it as a base for your own notes, there is a CSS file dedicated to styling the notes located at \`src/styles/base.css\`. Feel free to modify it to suit your preferences!
 
 ## 📖 Available Sections
 
-### 🗃️ SQL - Database Management
+- [C Language](./notes/c/00-c-index.md)
 
-Learn the fundamentals of Structured Query Language for database operations.
+- [C++ Language](./notes/cpp/00-cpp-index.md)
 
-**Available Topics:**
+- [Git Basics](./notes/git/00-git-index.md)
 
-- [Getting Started with SQL](sql-index.md) - Introduction and overview
-- [Setting Up Your Environment](setting-up.md) - Installation and configuration
-- [Data Types](data-types.md) - Understanding SQL data types
-- [Working with Tables](tables.md) - Creating and managing database tables
-- [Data Manipulation](manipulating-data.md) - INSERT, UPDATE, DELETE operations
-- [Advanced Data Operations](advanced-manipulating-data.md) - Complex queries and joins
-- [Constraints](constraints.md) - Data integrity and validation rules
+- [Java Language](./notes/java/00-java-index.md)
 
----
+- [HTML Language](./notes/html/00-html-index.md)
 
-### 🌐 HTML - Web Structure
+- [CSS Language](./notes/css/00-CSS-index.md)
 
-Master the building blocks of web pages with HyperText Markup Language.
+- [JavaScript Language](./notes/javascript/00-javascript-index.md)
 
-**Available Topics:**
+- [TypeScript Language](./notes/typescript/00-typescript-index.md)
 
-- [HTML Overview](html-index.md) - Introduction to HTML
-- [Getting Started](get-started.md) - Basic HTML structure and syntax
-- [HTML Elements & Attributes](html-two.md) - Working with elements and attributes
-- [Advanced HTML](html-three.md) - Forms, semantic HTML, and best practices
-
----
-
-### 🎨 CSS - Styling & Design
-
-Learn how to style and layout web pages with Cascading Style Sheets.
-
-**Available Topics:**
-
-- [CSS Overview](css-index.md) - Introduction to CSS
-- [CSS Fundamentals](css-basics.md) - Selectors, properties, and the box model
-- [Layout Techniques](flexbox-basics.md) - Flexbox and Grid (coming soon)
-- [Responsive Design](responsive-design.md) - Mobile-first design principles (coming soon)
-
----
-
-### ⚡ JavaScript - Dynamic Web Programming
-
-Discover the power of JavaScript for interactive web development.
-
-**Available Topics:**
-
-- [JavaScript Overview](javascript-index.md) - Introduction to JavaScript
-- [JavaScript Fundamentals](javascript-basics.md) - Variables, functions, and control structures
-- [DOM Manipulation](dom-manipulation.md) - Interacting with web pages (coming soon)
-- [Async Programming](async-javascript.md) - Promises, async/await (coming soon)
-
----
-
-### 📘 TypeScript - Typed JavaScript
-
-Explore TypeScript for scalable and maintainable JavaScript applications.
-
-**Available Topics:**
-
-- [TypeScript Overview](typescript-index.md) - Introduction to TypeScript
-- [TypeScript Fundamentals](typescript-basics.md) - Types, interfaces, and generics
-- [Advanced Types](advanced-types.md) - Union types, mapped types (coming soon)
-- [Decorators & Modules](modules.md) - Modern TypeScript features (coming soon)
-
----
-
-## 🚀 Getting Started
-
-1. **Choose a Section**: Click on any section in the left navigation to explore topics
-2. **Follow Along**: Each topic builds upon previous concepts - start with the basics
-3. **Practice**: Try out the code examples in your own development environment
-4. **Cross-Reference**: Topics often link to related concepts in other sections
-
-## 🔗 Cross-Section Learning
-
-These notes are designed to work together! You'll find links between sections when concepts overlap:
-
-- HTML and CSS work hand-in-hand for web development
-- JavaScript and TypeScript share fundamental concepts
-- SQL knowledge applies to many programming scenarios
-
-## 💡 Tips for Success
-
-- **Start with the Basics**: Even experienced developers benefit from reviewing fundamentals
-- **Practice Regularly**: Programming is a skill that improves with consistent practice
-- **Experiment**: Don't just read - try modifying examples to see what happens
-- **Build Projects**: Apply what you learn by creating real applications
-
----
-
-## 📱 Mobile Friendly
-
-This notes app is fully responsive! Use the hamburger menu (☰) on mobile devices to navigate between sections and topics.
-
----
+- [React Library](./notes/react/00-react-index.md)
 
 _Happy Learning! 🎉_
 
@@ -6305,6 +6227,127 @@ const parent = document.getElementById("parentElement");
 const children = parent.children; // HTMLCollection of child elements
 const firstChild = children[0];
 const parentOfChild = firstChild.parentElement; // Accessing the parent element
+\`\`\`
+
+## Events and Listeners
+
+You can respond to user interactions and other events using event listeners. An event listener is a function that waits for a specific event to occur on an element and executes code in response.
+
+Types of Events:
+
+- \`click\`: Triggered when an element is clicked.
+- \`mouseover\`: Triggered when the mouse pointer moves over an element.
+- \`mouseout\`: Triggered when the mouse pointer moves out of an element.
+- \`keydown\`: Triggered when a key is pressed down.
+- \`keyup\`: Triggered when a key is released.
+- \`load\`: Triggered when the page or an image has finished loading.
+
+### Adding Event Listeners
+
+You can add an event listener to an element using the \`addEventListener()\` method.
+
+\`\`\`javascript
+const button = document.getElementById("myButton");
+button.addEventListener("click", function () {
+  alert("Button was clicked!");
+});
+\`\`\`
+
+- An alert is a popup box that displays a message to the user.
+
+### Removing Event Listeners
+
+You can remove an event listener using the \`removeEventListener()\` method. You need to provide the same function reference that was used when adding the listener.
+
+\`\`\`javascript
+function handleClick() {
+  alert("Button was clicked!");
+}
+button.addEventListener("click", handleClick);
+// To remove the event listener
+button.removeEventListener("click", handleClick);
+\`\`\`
+
+#### Note that in order to remove an event listener, the function must be named (not an anonymous function) so that the same reference can be passed to \`removeEventListener()\`.
+
+### Event Object
+
+When an event occurs, an event object is passed to the event listener function. This object contains information about the event, such as the target element, event type, and other properties.
+
+\`\`\`javascript
+button.addEventListener("click", function (event) {
+  console.log("Event type:", event.type); // Output: "click"
+  console.log("Target element:", event.target); // Output: the button element
+});
+\`\`\`
+
+### Event Delegation
+
+Event delegation is a technique where you add a single event listener to a parent element instead of adding separate listeners to each child element. This is useful for handling events on dynamically added elements.
+
+\`\`\`javascript
+window.addEventListener("click", function (event) {
+  if (event.target && event.target.matches("button.dynamic-button")) {
+    alert("Dynamic button clicked!");
+  }
+});
+\`\`\`
+
+In this example, the event listener is added to the \`window\` object, and it checks if the clicked target matches the selector for dynamically added buttons.
+
+Lets say you have a modal, and when the modal pops us we add an event listener to the entire window to close the modal when clicking outside of it. This is a common use case for event delegation.
+
+\`\`\`javascript
+const modal = document.getElementById("myModal");
+window.addEventListener("click", function (event) {
+  if (!modal.contains(event.target)) {
+    modal.style.display = "none"; // Close the modal
+  }
+});
+\`\`\`
+
+You can abstract this into a function to reuse it for multiple modals.
+
+\`\`\`javascript
+function addModalCloseListener(modal) {
+  window.addEventListener("click", function (event) {
+    if (!modal.contains(event.target)) {
+      modal.style.display = "none"; // Close the modal
+    }
+  });
+}
+\`\`\`
+
+Make sure to clean up the listener when the modal is closed to avoid wasting memory.
+
+\`\`\`javascript
+function addModalCloseListener(modal) {
+  function handleClick(event) {
+    if (!modal.contains(event.target)) {
+      modal.style.display = "none"; // Close the modal
+      window.removeEventListener("click", handleClick); // Clean up listener
+    }
+  }
+  window.addEventListener("click", handleClick);
+}
+\`\`\`
+
+## Bubbling and Capturing
+
+When an event occurs on an element, it goes through two phases: capturing and bubbling.
+
+- **Capturing Phase**: The event starts from the root of the DOM tree and travels down to the target element.
+- **Bubbling Phase**: After reaching the target element, the event bubbles up from the target element back to the root.
+  By default, event listeners are set to listen during the bubbling phase. However, you can specify that an event listener should listen during the capturing phase by passing a third argument as \`true\` to \`addEventListener()\`.
+
+\`\`\`javascript
+element.addEventListener(
+  "click",
+  function () {
+    console.log("Capturing phase");
+  },
+  true
+); // true for capturing phase
 \`\`\`
 `,Be=`# Regular Expressions (RegEx)
 
