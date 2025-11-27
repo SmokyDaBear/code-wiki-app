@@ -4,7 +4,7 @@ Rebasing is a Git operation that allows you to integrate changes from one branch
 
 Sometimes, when working on a branch, you may attempt to push changes only to be met with an error message indicating that your local branch is behind its remote counterpart. This situation often arises when new commits have been added to the remote branch since your last pull or fetch.
 
-In such cases, rebasing can be a useful tool to update your local branch with the latest changes from the remote branch before pushing your commits. Instead of creating a merge commit, rebasing rewrites your local commits on top of the latest commits from the remote branch.
+In such cases, rebasing can be a useful tool to update your local branch with the latest changes from the remote branch before pushing your commits. Instead of creating a merge commit, rebasing rewrites your local commits on top of the latest commits from the remote branch. 
 
 ## Why Use Rebasing?
 

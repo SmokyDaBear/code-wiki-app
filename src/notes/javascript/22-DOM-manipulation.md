@@ -199,3 +199,124 @@ const children = parent.children; // HTMLCollection of child elements
 const firstChild = children[0];
 const parentOfChild = firstChild.parentElement; // Accessing the parent element
 ```
+
+## Events and Listeners
+
+You can respond to user interactions and other events using event listeners. An event listener is a function that waits for a specific event to occur on an element and executes code in response.
+
+Types of Events:
+
+- `click`: Triggered when an element is clicked.
+- `mouseover`: Triggered when the mouse pointer moves over an element.
+- `mouseout`: Triggered when the mouse pointer moves out of an element.
+- `keydown`: Triggered when a key is pressed down.
+- `keyup`: Triggered when a key is released.
+- `load`: Triggered when the page or an image has finished loading.
+
+### Adding Event Listeners
+
+You can add an event listener to an element using the `addEventListener()` method.
+
+```javascript
+const button = document.getElementById("myButton");
+button.addEventListener("click", function () {
+  alert("Button was clicked!");
+});
+```
+
+- An alert is a popup box that displays a message to the user.
+
+### Removing Event Listeners
+
+You can remove an event listener using the `removeEventListener()` method. You need to provide the same function reference that was used when adding the listener.
+
+```javascript
+function handleClick() {
+  alert("Button was clicked!");
+}
+button.addEventListener("click", handleClick);
+// To remove the event listener
+button.removeEventListener("click", handleClick);
+```
+
+#### Note that in order to remove an event listener, the function must be named (not an anonymous function) so that the same reference can be passed to `removeEventListener()`.
+
+### Event Object
+
+When an event occurs, an event object is passed to the event listener function. This object contains information about the event, such as the target element, event type, and other properties.
+
+```javascript
+button.addEventListener("click", function (event) {
+  console.log("Event type:", event.type); // Output: "click"
+  console.log("Target element:", event.target); // Output: the button element
+});
+```
+
+### Event Delegation
+
+Event delegation is a technique where you add a single event listener to a parent element instead of adding separate listeners to each child element. This is useful for handling events on dynamically added elements.
+
+```javascript
+window.addEventListener("click", function (event) {
+  if (event.target && event.target.matches("button.dynamic-button")) {
+    alert("Dynamic button clicked!");
+  }
+});
+```
+
+In this example, the event listener is added to the `window` object, and it checks if the clicked target matches the selector for dynamically added buttons.
+
+Lets say you have a modal, and when the modal pops us we add an event listener to the entire window to close the modal when clicking outside of it. This is a common use case for event delegation.
+
+```javascript
+const modal = document.getElementById("myModal");
+window.addEventListener("click", function (event) {
+  if (!modal.contains(event.target)) {
+    modal.style.display = "none"; // Close the modal
+  }
+});
+```
+
+You can abstract this into a function to reuse it for multiple modals.
+
+```javascript
+function addModalCloseListener(modal) {
+  window.addEventListener("click", function (event) {
+    if (!modal.contains(event.target)) {
+      modal.style.display = "none"; // Close the modal
+    }
+  });
+}
+```
+
+Make sure to clean up the listener when the modal is closed to avoid wasting memory.
+
+```javascript
+function addModalCloseListener(modal) {
+  function handleClick(event) {
+    if (!modal.contains(event.target)) {
+      modal.style.display = "none"; // Close the modal
+      window.removeEventListener("click", handleClick); // Clean up listener
+    }
+  }
+  window.addEventListener("click", handleClick);
+}
+```
+
+## Bubbling and Capturing
+
+When an event occurs on an element, it goes through two phases: capturing and bubbling.
+
+- **Capturing Phase**: The event starts from the root of the DOM tree and travels down to the target element.
+- **Bubbling Phase**: After reaching the target element, the event bubbles up from the target element back to the root.
+  By default, event listeners are set to listen during the bubbling phase. However, you can specify that an event listener should listen during the capturing phase by passing a third argument as `true` to `addEventListener()`.
+
+```javascript
+element.addEventListener(
+  "click",
+  function () {
+    console.log("Capturing phase");
+  },
+  true
+); // true for capturing phase
+```
