@@ -19,6 +19,20 @@ export const hasStoragePermission = (): boolean => {
   }
 };
 
+export const clearVisitedNotes = (): void => {
+  if (!hasStoragePermission()) {
+    return;
+  }
+
+  try {
+    const preferences = getUserPreferences();
+    preferences.visitedNotes = [];
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(preferences));
+  } catch {
+    // Ignore if localStorage is not available
+  }
+};
+
 // Check if this is user's first visit
 export const isFirstVisit = (): boolean => {
   try {

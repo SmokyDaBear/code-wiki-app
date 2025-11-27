@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import type { UserPreferences } from "../utils/userPreferences";
 import "../styles/modals.css";
+import { CustomTheme } from "./CustomTheme";
 
 interface UserMenuProps {
   username?: string;
@@ -19,6 +20,7 @@ export function UserMenu({
 }: UserMenuProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [showClearConfirm, setShowClearConfirm] = useState(false);
+  const [showCustomTheme, setShowCustomTheme] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
 
   // Close menu when clicking outside
@@ -102,6 +104,17 @@ export function UserMenu({
                     </span>
                   </button>
                 ))}
+                <button
+                  onClick={() => {
+                    // Open custom theme modal
+                    setShowCustomTheme(true);
+                    setIsOpen(false);
+                  }}
+                  className="theme-selector-btn"
+                >
+                  <span className="theme-selector-icon">🎨</span>
+                  <span className="theme-selector-name">Custom</span>
+                </button>
               </div>
             </div>
 
@@ -169,6 +182,10 @@ export function UserMenu({
             </div>
           </div>
         </div>
+      )}
+      {/* Custom Theme Modal */}
+      {showCustomTheme && (
+        <CustomTheme handleClose={() => setShowCustomTheme(false)} />
       )}
     </>
   );

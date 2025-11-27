@@ -1,7 +1,11 @@
-import type { UserPreferences } from "../utils/userPreferences";
+import {
+  clearVisitedNotes,
+  type UserPreferences,
+} from "../utils/userPreferences";
 import { getCleanTitle, getNoteSection } from "../data/notes";
 import { NoteSections } from "../data/sectionsIndex";
 import "../styles/modals.css";
+import { useState } from "react";
 
 interface ReadingHistoryProps {
   isOpen: boolean;
@@ -16,7 +20,16 @@ export function ReadingHistory({
   onClose,
   onSelectNote,
 }: ReadingHistoryProps) {
+  const [showConfirmClear, setShowConfirmClear] = useState(false);
+
   if (!isOpen) return null;
+
+  const handleClearHistory = () => {
+    preferences.visitedNotes = [];
+    setShowConfirmClear(false);
+    clearVisitedNotes();
+    onClose();
+  };
 
   const handleSelectNote = (filename: string) => {
     onSelectNote(filename);
@@ -81,15 +94,19 @@ export function ReadingHistory({
                       <div className="history-item-main">
                         <div className="history-item-header">
                           <span className="history-item-icon">
-                            {typeof sectionInfo.icon === "string" && /\.(png|jpg|jpeg|svg)$/i.test(sectionInfo.icon) ? (
+                            {"icon" in sectionInfo && (
                               <img
                                 src={sectionInfo.icon}
                                 alt={`${sectionInfo.name} icon`}
                                 className="section-icon-img"
                               />
-                            ) : (
-                              sectionInfo.icon
                             )}
+                            {!("icon" in sectionInfo) &&
+                              "emojiIcon" in sectionInfo && (
+                                <span className="emoji-icon">
+                                  {sectionInfo.emojiIcon}
+                                </span>
+                              )}
                           </span>
                           <span className="history-item-title">{title}</span>
                         </div>
@@ -107,6 +124,30 @@ export function ReadingHistory({
                   );
                 })}
               </div>
+            </>
+          )}
+        </div>
+        <div className="selector-btns">
+          {!showConfirmClear && (
+            <button
+              className="btn-danger"
+              onClick={() => setShowConfirmClear(true)}
+            >
+              Clear History
+            </button>
+          )}
+          {showConfirmClear && (
+            <>
+              <span>Are you sure?</span>
+              <button className="btn-danger" onClick={handleClearHistory}>
+                Clear
+              </button>
+              <button
+                onClick={() => setShowConfirmClear(false)}
+                className="btn-primary"
+              >
+                Nevermind...
+              </button>
             </>
           )}
         </div>

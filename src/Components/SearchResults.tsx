@@ -68,14 +68,20 @@ export function SearchResults({
                   <div className="search-result-header">
                     <div className="search-result-title">
                       <span className="search-result-icon">
-                        {/\.(png|jpg|jpeg|svg)$/i.test(result.sectionIcon) ? (
+                        {result.sectionIcon && (
                           <img
                             src={result.sectionIcon}
                             alt={`${result.section} icon`}
                             className="section-icon-img"
                           />
-                        ) : (
-                          result.sectionIcon
+                        )}
+                        {!result.sectionIcon && result.sectionEmojiIcon && (
+                          <span className="emoji-icon">
+                            {result.sectionEmojiIcon}
+                          </span>
+                        )}
+                        {!result.sectionIcon && !result.sectionEmojiIcon && (
+                          <div style={{ width: "20px" }}>💻</div>
                         )}
                       </span>
                       <span className="search-result-name">{result.title}</span>

@@ -12,6 +12,7 @@ export type NavLink = {
   href?: string;
   children?: NavLink[];
   icon?: string; // optional icon path (image)
+  emojiIcon?: string; // optional emoji icon
 };
 
 // Generate dynamic links based on available sections and notes
@@ -23,7 +24,7 @@ export const generateSectionLinks = (): NavLink[] => {
   sectionLinks.push({
     text: "Home",
     href: "home.md",
-    icon: "🏠", // keep emoji for home (not part of NoteSections)
+    emojiIcon: "🏠", // keep emoji for home (not part of NoteSections)
   });
 
   availableSections.forEach((section) => {
@@ -39,15 +40,21 @@ export const generateSectionLinks = (): NavLink[] => {
       }));
 
       // Fallback for sections not defined in NoteSections
-      const icon = sectionInfo?.icon || "📁";
+      const icon = "icon" in sectionInfo ? sectionInfo.icon : null;
       const name =
         sectionInfo?.name || section.charAt(0).toUpperCase() + section.slice(1);
-
-      sectionLinks.push({
+      const sectionLink: NavLink = {
         text: name,
-        icon: icon,
         children: children,
-      });
+      };
+      if (icon) {
+        sectionLink.icon = icon;
+      }
+      if (!icon) {
+        sectionLink.emojiIcon =
+          "emojiIcon" in sectionInfo ? sectionInfo.emojiIcon : "📄";
+      }
+      sectionLinks.push(sectionLink);
     }
   });
 

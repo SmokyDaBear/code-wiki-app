@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, useCallback } from "react";
 import "../styles/search.css";
 
 interface SearchBarProps {
@@ -15,14 +15,36 @@ export function SearchBar({
   const [query, setQuery] = useState("");
   const [isFocused, setIsFocused] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
+  const debounceTimerRef = useRef<number | null>(null);
+
+  const triggerSearchDebounced = useCallback(
+    (value: string) => {
+      // Clear any pending timer
+      if (debounceTimerRef.current !== null) {
+        window.clearTimeout(debounceTimerRef.current);
+        debounceTimerRef.current = null;
+      }
+      // Start a new 500ms timer
+      debounceTimerRef.current = window.setTimeout(() => {
+        onSearch(value);
+        debounceTimerRef.current = null;
+      }, 800);
+    },
+    [onSearch]
+  );
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value;
     setQuery(value);
 
     if (value.trim()) {
-      onSearch(value);
+      triggerSearchDebounced(value);
     } else {
+      // Clear any pending search and propagate clear immediately
+      if (debounceTimerRef.current !== null) {
+        window.clearTimeout(debounceTimerRef.current);
+        debounceTimerRef.current = null;
+      }
       onClear();
     }
   };
@@ -38,6 +60,16 @@ export function SearchBar({
       handleClear();
     }
   };
+
+  // Cleanup any pending debounce on unmount
+  useEffect(() => {
+    return () => {
+      if (debounceTimerRef.current !== null) {
+        window.clearTimeout(debounceTimerRef.current);
+        debounceTimerRef.current = null;
+      }
+    };
+  }, []);
 
   // Focus search with Ctrl/Cmd + K
   useEffect(() => {
@@ -58,6 +90,7 @@ export function SearchBar({
       <div className="search-input-container">
         <span className="search-icon">🔍</span>
         <input
+          id="search-input"
           ref={inputRef}
           type="text"
           value={query}

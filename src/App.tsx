@@ -32,6 +32,7 @@ import {
   watchSystemTheme,
   type UserPreferences,
 } from "./utils/userPreferences";
+import { applyCustomTheme } from "./utils/customTheme";
 
 function App() {
   const [currentNote, setCurrentNote] = useState<string | null>(null);
@@ -117,6 +118,16 @@ function App() {
       return () => clearTimeout(timer);
     }
   }, [currentNote]);
+  useEffect(() => {
+    console.log("Checking for custom theme on load");
+    const customTheme = localStorage.getItem("customTheme");
+    const hasCustomTheme = customTheme !== null;
+    if (hasCustomTheme) {
+      const customColor = JSON.parse(customTheme) as string[];
+      console.log("Applying custom theme on load:", customColor);
+      applyCustomTheme(customColor);
+    }
+  });
 
   const updateURL = (noteName: string, section: string | null) => {
     const params = new URLSearchParams();
@@ -303,11 +314,16 @@ function App() {
       "Verdant Webworks Learning Hub"
     ) : sectionInfo ? (
       <span className="header-title-with-icon">
-        <img
-          src={sectionInfo.icon}
-          alt={`${sectionInfo.name} icon`}
-          className="section-icon-img"
-        />{" "}
+        {"icon" in sectionInfo && (
+          <img
+            src={sectionInfo.icon}
+            alt={`${sectionInfo.name} icon`}
+            className="section-icon-img"
+          />
+        )}
+        {!("icon" in sectionInfo) && "emojiIcon" in sectionInfo && (
+          <span>{sectionInfo.emojiIcon}</span>
+        )}{" "}
         {sectionInfo.name} Notes
       </span>
     ) : (

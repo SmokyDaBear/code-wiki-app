@@ -123,7 +123,8 @@ export interface SearchResult {
   filename: string;
   title: string;
   section: string;
-  sectionIcon: string;
+  sectionIcon?: string | null;
+  sectionEmojiIcon?: string | null;
   matches: SearchMatch[];
   totalMatches: number;
 }
@@ -171,7 +172,9 @@ export const searchNotes = (query: string): SearchResult[] => {
         filename,
         title: getCleanTitle(filename),
         section: sectionInfo.name,
-        sectionIcon: sectionInfo.icon,
+        sectionIcon: "icon" in sectionInfo ? sectionInfo.icon : null,
+        sectionEmojiIcon:
+          "emojiIcon" in sectionInfo ? sectionInfo.emojiIcon : null,
         matches: matches.slice(0, 3), // Limit to first 3 matches per file
         totalMatches: matches.length,
       });

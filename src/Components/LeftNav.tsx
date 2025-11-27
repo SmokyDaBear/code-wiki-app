@@ -100,17 +100,19 @@ export function LeftNav({
                     <span className="section-arrow">
                       {isActive ? "▼" : "▶"}
                     </span>
-                    {link.icon &&
-                    typeof link.icon === "string" &&
-                    /\.(png|jpg|jpeg|svg)$/i.test(link.icon) ? (
+                    {link.icon && (
                       <img
                         src={link.icon}
                         alt={`${link.text} icon`}
                         className="section-icon-img"
                       />
-                    ) : link.icon ? (
-                      <span className="emoji-icon">{link.icon}</span>
-                    ) : null}
+                    )}
+                    {!link.icon && link.emojiIcon && (
+                      <span className="emoji-icon">{link.emojiIcon}</span>
+                    )}
+                    {!link.icon && !link.emojiIcon && (
+                      <div style={{ marginLeft: "20px" }}></div>
+                    )}
                     <span>{link.text}</span>
                   </div>
                   <div
