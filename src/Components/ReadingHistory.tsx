@@ -41,7 +41,7 @@ export function ReadingHistory({
     if (!section) return { name: "General", icon: "📄" };
 
     if (filename === "home.md") {
-      return { name: "Home", icon: "🏠" };
+      return { name: "Home", emojiIcon: "🏠" };
     }
 
     return NoteSections[section] || { name: section, icon: "📄" };

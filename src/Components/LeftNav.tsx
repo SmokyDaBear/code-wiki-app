@@ -143,17 +143,16 @@ export function LeftNav({
                   key={index}
                   onClick={() => link.href && setCurrentNote(link.href)}
                 >
-                  {link.icon &&
-                  typeof link.icon === "string" &&
-                  /\.(png|jpg|jpeg|svg)$/i.test(link.icon) ? (
+                  {link.icon && (
                     <img
                       src={link.icon}
                       alt={`${link.text} icon`}
                       className="section-icon-img"
                     />
-                  ) : link.icon ? (
-                    <span className="emoji-icon">{link.icon}</span>
-                  ) : null}
+                  )}
+                  {!link.icon && link.emojiIcon && (
+                    <span className="emoji-icon">{link.emojiIcon} </span>
+                  )}
                   <span>{link.text}</span>
                 </div>
               );

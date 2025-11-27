@@ -162,7 +162,7 @@ export const searchNotes = (query: string): SearchResult[] => {
     if (matches.length > 0) {
       const sectionInfo =
         section === "home"
-          ? { name: "Home", icon: "🏠" }
+          ? { name: "Home", emojiIcon: "🏠" }
           : NoteSections[section as NoteSection] || {
               name: section,
               icon: "📄",
