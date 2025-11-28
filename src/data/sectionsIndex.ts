@@ -8,6 +8,9 @@ import sqlIcon from "../assets/code-icons/sql-icon.png";
 import tsIcon from "../assets/code-icons/ts-icon.png";
 import reactIcon from "../assets/code-icons/react-icon.png";
 import javaIcon from "../assets/code-icons/java-icon.png";
+import markdownIcon from "../assets/code-icons/md-icon.png";
+
+// Map of code logos for different sections
 
 export const CodeLogos = {
   sql: sqlIcon,
@@ -20,6 +23,7 @@ export const CodeLogos = {
   cpp: cppIcon,
   react: reactIcon,
   java: javaIcon,
+  markdown: markdownIcon,
 };
 
 // Define note sections and their display names
@@ -35,6 +39,7 @@ export const NoteSections = {
   react: { name: "React", icon: CodeLogos.react },
   java: { name: "Java", icon: CodeLogos.java },
   "computer-science": { name: "Computer Science", emojiIcon: "💻" },
+  markdown: { name: "Markdown", icon: CodeLogos.markdown },
 } as const;
 
 export type NoteSection = keyof typeof NoteSections;
