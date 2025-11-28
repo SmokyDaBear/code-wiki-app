@@ -146,6 +146,7 @@
 .selector-btn {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 12px;
   padding: 8px 12px;
   border: 1px solid var(--border-color);
@@ -486,7 +487,7 @@
   bottom: 0;
   background: var(--opacity-dark-50);
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   padding: 60px 20px 20px;
   z-index: 1000;
@@ -499,10 +500,10 @@
   background: var(--bg-primary);
   border-radius: 12px;
   box-shadow: var(--shadow-heavy);
-  width: 100%;
-  max-width: 600px;
-  max-height: min(70vh, 640px);
-  overflow: hidden;
+  width: 98%;
+  max-width: 750px;
+  max-height: min(95vh, 800px);
+  overflow: auto;
   display: flex;
   flex-direction: column;
   padding: 40px 6px 8px;

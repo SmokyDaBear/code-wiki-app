@@ -29,13 +29,21 @@ body {
 }
 
 /* Generic section icon image styling */
-.section-icon-img {
-  width: 1.4rem;
-  height: 1.4rem;
+.section-icon-img,
+.emoji-icon {
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 4px;
+  width: 1.8rem;
+  height: 1.8rem;
   object-fit: contain;
   vertical-align: middle;
   margin-right: 6px;
   display: inline-block;
+  background: radial-gradient(var(--opacity-dark-50) 0%, transparent 80%);
 }
 
 .header-title-with-icon .section-icon-img {
