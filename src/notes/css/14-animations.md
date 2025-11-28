@@ -272,4 +272,90 @@ CSS provides several built-in timing functions to control the pacing of animatio
 
 `ease` and `ease-in-out` are similar but differ in their pacing profiles. `ease` has a more pronounced acceleration and deceleration, while `ease-in-out` provides a smoother transition at both the start and end of the animation.
 
-### Combining Multiple Transformations with Delays
+### Using @property for variable animations
+
+The `@property` rule allows you to define custom properties that can be animated. This is particularly useful for creating more complex animations that involve CSS variables.
+
+Syntax:
+after the @property keyword, specify the name of the custom property, followed by its syntax, inheritance behavior, and initial value.
+
+```css
+@property --my-color {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: red;
+}
+```
+
+You can then use @keyframes to animate the custom property:
+
+```css
+@keyframes colorChange {
+  0% {
+    --my-color: red;
+  }
+  100% {
+    --my-color: blue;
+  }
+}
+```
+
+Using the custom property in a class:
+
+```css
+.animated-color-box {
+  width: 100px;
+  height: 100px;
+  background-color: var(--my-color);
+  animation: colorChange 3s infinite alternate;
+}
+```
+
+<style>
+  @property --my-color {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: red;
+  }
+  @keyframes colorChange {
+    0% {
+      --my-color: red;
+    }
+    100% {
+      --my-color: blue;
+    }
+  }
+  .animated-color-box {
+    width: 100px;
+    height: 100px;
+    background-color: var(--my-color);
+    animation: colorChange 3s infinite alternate;
+  }
+</style>
+<div class="animated-color-box"></div>
+
+## Accesiblity Considerations
+
+When implementing CSS animations, it's important to consider users with motion sensitivities. Excessive or rapid animations can cause discomfort or trigger vestibular disorders in some individuals.
+
+To accommodate these users, you can respect their system preferences by using the `prefers-reduced-motion` media query. This allows you to disable or simplify animations for users who have indicated a preference for reduced motion.
+
+```css
+@media (prefers-reduced-motion: reduce) {
+  .animated-box,
+  .animated-box-with-jump,
+  .animated-color-box {
+    animation: none;
+  }
+}
+```
+
+Another way to use this accesiblity feature is to ONLY perform the animation if the user has NOT indicated a preference for reduced motion:
+
+```css
+@media (prefers-reduced-motion: no-preference) {
+  .animated-element {
+    animation: slideIn 2s ease-in-out alternate infinite;
+  }
+}
+```
