@@ -38,9 +38,13 @@ export const generateSectionLinks = (): NavLink[] => {
         text: formatNoteTitle(filename),
         href: filename,
       }));
-
+      let icon = null;
       // Fallback for sections not defined in NoteSections
-      const icon = "icon" in sectionInfo ? sectionInfo.icon : null;
+      try {
+        icon = "icon" in sectionInfo ? sectionInfo.icon : null;
+      } catch {
+        icon = null;
+      }
       const name =
         sectionInfo?.name || section.charAt(0).toUpperCase() + section.slice(1);
       const sectionLink: NavLink = {
@@ -50,10 +54,13 @@ export const generateSectionLinks = (): NavLink[] => {
       if (icon) {
         sectionLink.icon = icon;
       }
-      if (!icon) {
-        sectionLink.emojiIcon =
-          "emojiIcon" in sectionInfo ? sectionInfo.emojiIcon : "📄";
-      }
+      if (!icon)
+        try {
+          sectionLink.emojiIcon =
+            "emojiIcon" in sectionInfo ? sectionInfo.emojiIcon : "📄";
+        } catch {
+          sectionLink.emojiIcon = "📁";
+        }
       sectionLinks.push(sectionLink);
     }
   });
