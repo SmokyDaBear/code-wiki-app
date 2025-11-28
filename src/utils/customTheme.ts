@@ -7,6 +7,14 @@ export function loadCustomTheme() {
 }
 
 export function applyCustomTheme(customColor: string[]) {
+  if (customColor.length !== 20) {
+    console.error(
+      "Invalid custom color array length. Expected 20, got",
+      customColor.length,
+      "This may be due to corrupted data or an outdated theme format."
+    );
+    return;
+  }
   const root = document.documentElement;
   root.style.setProperty("--bg-primary", customColor[0]);
   root.style.setProperty("--bg-secondary", customColor[1]);
@@ -26,6 +34,8 @@ export function applyCustomTheme(customColor: string[]) {
   root.style.setProperty("--heading-primary", customColor[15]);
   root.style.setProperty("--heading-secondary", customColor[16]);
   root.style.setProperty("--heading-tertiary", customColor[17]);
+  root.style.setProperty("--code-bg", customColor[18]);
+  root.style.setProperty("--code-text", customColor[19]);
 }
 
 export const resetCustomTheme = () => {
@@ -35,4 +45,33 @@ export const resetCustomTheme = () => {
 
 export const saveCustomTheme = (customColor: string[]) => {
   localStorage.setItem("customTheme", JSON.stringify(customColor));
+};
+
+export const getAppliedTheme = (): string[] => {
+  const root = document.documentElement;
+  const attributeCodeNames = [
+    "--bg-primary",
+    "--bg-secondary",
+    "--bg-tertiary",
+    "--text-primary",
+    "--text-secondary",
+    "--text-muted",
+    "--border-color",
+    "--border-light",
+    "--border-medium",
+    "--accent-color",
+    "--accent-hover",
+    "--accent-dark",
+    "--accent-light",
+    "--accent-blue",
+    "--accent-blue-dark",
+    "--heading-primary",
+    "--heading-secondary",
+    "--heading-tertiary",
+    "--code-bg",
+    "--code-text",
+  ];
+  return attributeCodeNames.map((name) =>
+    getComputedStyle(root).getPropertyValue(name).trim()
+  );
 };

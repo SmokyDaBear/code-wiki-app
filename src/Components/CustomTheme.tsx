@@ -1,10 +1,16 @@
 import { useEffect, useState } from "react";
-import { applyCustomTheme, saveCustomTheme } from "../utils/customTheme";
+import {
+  applyCustomTheme,
+  getAppliedTheme,
+  saveCustomTheme,
+} from "../utils/customTheme";
 import { resetCustomTheme } from "../utils/customTheme";
 import "../styles/modals.css";
+import { ImportExportTheme } from "./ImportExportTheme";
 
 export function CustomTheme({ handleClose }: { handleClose: () => void }) {
   const [customColor, setCustomColor] = useState<string[]>([]);
+  const [showDownload, setShowDownload] = useState(false);
   const attributeNames = [
     "Background Primary",
     "Background Secondary",
@@ -24,32 +30,11 @@ export function CustomTheme({ handleClose }: { handleClose: () => void }) {
     "Heading Primary",
     "Heading Secondary",
     "Heading Tertiary",
+    "Code Background",
+    "Code Text",
   ];
   useEffect(() => {
-    const root = document.documentElement;
-    const attributeCodeNames = [
-      "--bg-primary",
-      "--bg-secondary",
-      "--bg-tertiary",
-      "--text-primary",
-      "--text-secondary",
-      "--text-muted",
-      "--border-color",
-      "--border-light",
-      "--border-medium",
-      "--accent-color",
-      "--accent-hover",
-      "--accent-dark",
-      "--accent-light",
-      "--accent-blue",
-      "--accent-blue-dark",
-      "--heading-primary",
-      "--heading-secondary",
-      "--heading-tertiary",
-    ];
-    const initialColors = attributeCodeNames.map((name) =>
-      getComputedStyle(root).getPropertyValue(name).trim()
-    );
+    const initialColors = getAppliedTheme();
     setCustomColor(initialColors);
   }, [setCustomColor]);
 
@@ -86,11 +71,6 @@ export function CustomTheme({ handleClose }: { handleClose: () => void }) {
               ))}
             </div>
             <div className="selector-btns">
-              <input
-                type="submit"
-                value="Apply Theme"
-                className="selector-btn"
-              />
               <button
                 type="button"
                 onClick={resetCustomTheme}
@@ -98,6 +78,31 @@ export function CustomTheme({ handleClose }: { handleClose: () => void }) {
               >
                 Reset to Default
               </button>
+              <input
+                type="submit"
+                value="Apply Theme"
+                className="selector-btn"
+              />
+              <button
+                type="button"
+                onClick={() => setShowDownload(!showDownload)}
+                className="selector-btn"
+              >
+                Import/Export Theme
+              </button>
+              {showDownload && (
+                <>
+                  <ImportExportTheme
+                    customColor={customColor}
+                    setCustomColor={setCustomColor}
+                    applyCustomTheme={applyCustomTheme}
+                    saveCustomTheme={saveCustomTheme}
+                    requiredLength={attributeNames.length}
+                  />
+                  <br />
+                  <br />
+                </>
+              )}
             </div>
             <br />
           </form>
