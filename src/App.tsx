@@ -119,12 +119,10 @@ function App() {
     }
   }, [currentNote]);
   useEffect(() => {
-    console.log("Checking for custom theme on load");
     const customTheme = localStorage.getItem("customTheme");
     const hasCustomTheme = customTheme !== null;
     if (hasCustomTheme) {
       const customColor = JSON.parse(customTheme) as string[];
-      console.log("Applying custom theme on load:", customColor);
       applyCustomTheme(customColor);
     }
   });
@@ -140,7 +138,6 @@ function App() {
   };
 
   const loadNote = (note: string) => {
-    console.log("Loading note:", note);
     setCurrentNote(null);
 
     // Add to history if it's different from current note

@@ -114,7 +114,6 @@ export const retrieveNoteHTML = (noteFilename: string): string => {
     throw new Error(`Note not found: ${filename}. Available: ${available}`);
   }
 
-  console.log("Retrieved note:", filename, "from section:", noteInfo.section);
   return noteInfo.content;
 };
 
