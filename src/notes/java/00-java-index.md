@@ -1,6 +1,17 @@
-# Java
+# Java Programming Language
 
-Java is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible. It is widely used for building enterprise-scale applications, mobile applications (especially Android apps), and large systems.
+Java was developed by Sun Microsystems (now owned by Oracle Corporation) and released in 1995.
+
+Java is widely used for building a variety of applications, from web and mobile applications to enterprise-level software.
+
+## Key Characteristics of Java
+
+Java is a strictly typed high-level, object-oriented programming language that is designed to be platform-independent.
+
+- strictly typed: Variables must be declared with a specific data type before they can be used.
+- platform-independent: Java code is compiled into bytecode, which can run on any device with a Java Virtual Machine (JVM), it even runs on different operating systems without modification.
+- object-oriented: Java follows the principles of object-oriented programming (OOP), which promotes code reusability, modularity, and maintainability.
+- high-level: Java provides a high level of abstraction from the underlying hardware, making it easier for developers to write and understand code.
 
 ## Key Features of Java
 
@@ -42,5 +53,27 @@ To start programming in Java, you need to:
 - On macOS and Linux, you can add the JDK's `bin` directory to your shell profile (e.g., `.bash_profile`, `.zshrc`).
 
 3. Choose an Integrated Development Environment (IDE) such as IntelliJ IDEA, Eclipse, or NetBeans.
+
+- I use IntelliJ IDEA Community Edition, which is free and has great support for Java development, available at: [IntelliJ IDEA](https://www.jetbrains.com/idea/download/)
+
+If you use linux, or WSL on Windows, you can install IntelliJ Community Edition via snap:
+
+```bash
+sudo snap install intellij-idea-community --classic
+```
+
+Then, you can launch it by running:
+
+```bash
+intellij-idea-community
+```
+
+OR if this doesn't work, try:
+
+```bash
+snap run intellij-idea-community
+```
+
 4. Write your first Java program, compile it using the `javac` command, and run it using the `java` command.
+
 5. Explore Java documentation and tutorials to deepen your understanding of the language and its features.

@@ -89,11 +89,13 @@ console.log(matcherS); //prints the first found element that matches the express
 
 ### Others that will throw an error, as they are not allowed with reg Expressions
 
-such as:
+These string methods cannot be used with regular expressions, and aren't currently supported including:
 
 - .includes(..)
 - .startsWith(..)
 - .endsWith(..)
+
+However, similar functionality can be achieved using regular expressions with the appropriate patterns and methods like `.test()` or `.search()`.
 
 ## Flags
 
@@ -147,27 +149,39 @@ Also keep in mind if using the "new RegExp" method, backslashes must also be esc
   - /oon\b/ matches the "oon" in "moon", because "oon" is the end of the string, thus not followed by a word character.
   - /\w\b\w/ will never match anything, because a word character can never be followed by both a non-word and a word character.
 
-- **\B** (CAPITALIZED) - Non-word-boundary assertion: Matches a non-word boundary. This is a position where the previous and next character are of the same type: Either both must be words,
-  or both must be non-words, for example between two letters or between two spaces. The beginning and end of a string are considered non-words. Same as the matched word boundary, the matched
-  non-word boundary is also not included in the match. For example, /\Bon/ matches "on" in "at noon", and /ye\B/ matches "ye" in "possibly yesterday".
+- **\B** (CAPITALIZED) - Non-word-boundary assertion: Matches a non-word boundary.
+  This is a position where the previous and next character are of the same type:
+  Either both must be words, or both must be non-words, for example between two letters or between two spaces.
+  The beginning and end of a string are considered non-words.
+  Same as the matched word boundary, the matched non-word boundary is also not included in the match. For example:
+  - /\Bon/ matches "on" in "at noon"
+  - and /ye\B/ matches "ye" in "possibly yesterday".
 
 ## Other Important Characters
 
 ### \* - Asterisk:
 
-put after the character to indicate that the character may either NOT match at all or can match MULTIPLE times. like this : /be\*r/ - will select "br","ber", "beer", "beeeeer" etc.
+put after the character to indicate that the character may either NOT match at all or can match MULTIPLE times. like this :
+
+- /be\*r/ - will select "br","ber", "beer", "beeeeer" etc.
 
 ### + - Plus:
 
-put after the character to indicate that the character can occur ONE OR MORE times. like this : /be\*r/ will select "ber", "beer", "beeeeer" but NOT "br".
+put after the character to indicate that the character can occur ONE OR MORE times. like this :
+
+- /be\*r/ will select "ber", "beer", "beeeeer" but NOT "br".
 
 ### | - Pipe/OR:
 
-this is an OR character similar to || in javaScript. Use like: /(b|d)og/ to select "bog" or "dog"
+this is an OR character similar to || in javaScript. Use like:
+
+- /(b|d)og/ to select "bog" or "dog"
 
 ### \ - Escape Character:
 
-used when a character such as "\*,{,},?,!" or any other symbol that represents a character class is to be checked literally. Like: /\.com/ checks for ".com"
+used when a character such as "\*,{,},?,!" or any other symbol that represents a character class is to be checked literally. Like:
+
+- /\.com/ checks for ".com"
 
 ### [] - Brackets:
 
@@ -186,19 +200,28 @@ To express a certain number of occurrences of a character, at the end we write c
 
 We can group an expression and use these groups to reference or enforce some rules. To group an expression, we enclose () in parentheses. This is used to assign a reference to the group
 
-For example:` /(ha)-\1,(haa)-\2/` "ha" is assigned reference "1", and "haa" is "2".
+For example:
+
+- ` /(ha)-\1,(haa)-\2/` "ha" is assigned reference "1", and "haa" is "2".
 
 When we want to reference these groups later in the pattern, we use \1 for the first group and \2 for the second group.
 
-You can also group an expression without "Capturing" it like this `/(?:ha)-ha,(haa)-\1/` now the first group in parentheses "`(?:ha)-`" is not stored while the second "`(haa)-\1`" is, and can be called later in the expression.
+You can also group an expression without "Capturing" it like this:
+
+- `/(?:ha)-ha,(haa)-\1/`
+  Now the first group in parentheses "`(?:ha)-`" is not stored while the second "`(haa)-\1`" is, and can be called later in the expression.
 
 ### $ - Dollar Sign:
 
-used as a suffix to check for the expression at the END of the line. Like /html$/ selects the last html from "html-is-cool.'html'"
+used as a suffix to check for the expression at the END of the line. Like:
+
+- /html$/ selects the last html from "html-is-cool.'html'"
 
 ### ^ - Caret Sign:
 
-used as a prefix to check for START of line. Like: /^Hello/ selects "Hello" from "Hello there and Hello again", but the second "Hello" is not selected if /m for multiline is selected will also match after line break
+used as a prefix to check for START of line. Like:
+
+- /^Hello/ selects "Hello" from "Hello there and Hello again", but the second "Hello" is not selected if /m for multiline is selected will also match after line break
 
 ### ^ - Negated character class:
 
@@ -206,51 +229,71 @@ Matches anything that is not enclosed in the square brackets. You can specify a 
 
 - after the ^ or the last character enclosed in the square brackets, it is taken as a literal hyphen to be included in the character class as a normal character.
 
-For example, `[^abc]` is the same as `[^a-c]`. They initially match "o" in "bacon" and "h" in "chop".
+For example,
+
+- `[^abc]` is the same as `[^a-c]`.
+
+They initially match "o" in "bacon" and "h" in "chop".
 
 ### . - Wildcard:
 
-Matches any single character except line terminators: `\n`, `\r`, `\u2028` or `\u2029`. For example,`/.y/` matches "my" and "ay", but not "yes", in "yes make my day", as there is no character before "y" in "yes". If the dotAll (s) flag is enabled, also matches line terminators. Inside a character class, the dot loses its special meaning and matches a literal dot.
+Matches any single character except line terminators:
+
+- `\n`, `\r`, `\u2028` or `\u2029`.
+
+For example,`/.y/` matches "my" and "ay", but not "yes", in "yes make my day", as there is no character before "y" in "yes".
+
+If the dotAll (s) flag is enabled, also matches line terminators.
+
+Inside a character class, the dot loses its special meaning and matches a literal dot.
 
 ### ? Question Mark:
 
-has several uses such as lookaheads below, as well as to make a character optional when placed directly after i.e. `/colou?r/`will select both "color" and "colour"
+has several uses such as lookaheads below, as well as to make a character optional when placed directly after like this:
+
+- `/colou?r/`will select both "color" and "colour"
 
 ## Lookaheads and Lookbehinds
 
-### Positive lookahead:
+Lookaheads and lookbehinds are special types of assertions that allow you to match a pattern only if it is (or is not) followed or preceded by another pattern, without including that pattern in the match.
 
-`a+(?=bc)` looks for `a` followed by `bc`.
+### Positive lookahead`(?=...)`:
 
-### Negative lookahead:
+- `a+(?=bc)` looks for `a` followed by `bc`.
 
-`\d+(?!PM)` matches digits not followed by `PM`.
+### Negative lookahead`(?!...)`:
 
-### Positive lookbehind:
+- `\d+(?!PM)` matches digits not followed by `PM`.
 
-`\d+(?<=\$)` matches digits preceded by `$` (prices).
+### Positive lookbehind`(?<=...)`:
 
-### Negative lookbehind:
+- `\d+(?<=\$)` matches digits preceded by `$` (prices).
 
-`\d+(?<!\$)` matches digits not preceded by `$`.
+### Negative lookbehind`(?<!...)`:
+
+- `\d+(?<!\$)` matches digits not preceded by `$`.
+
+## Greedy vs Lazy Matching
 
 ### Greedy matching (default)
 
-continues as long as possible.
+Greedy matching is where the regex engine tries to match as many characters as possible. The `*`, `+`, and `{}` quantifiers are greedy by default.
 
-#### Example greedy: `/.*r/` matches all occurrences up to the last `r`.
+#### Example of greedy matching:
+
+- `/.*r/` matches all occurrences up to the last `r`.
 
 ### Lazy matching
 
-stops at the first possible match.
+Stops at the first possible match.
 
-#### Example lazy: `/.*?r/` stops at first `r`.
+#### Example of lazy matching: `/.*?r/` stops at first `r`.
 
 ## Examples of common patterns
 
 ### Minimum length example:
 
-`/.{1,}/` ensures at least one character.
+`/.{1,}/` ensures at least one character in a string.
 
 ### Simple password validator (example pattern to refine):
 
