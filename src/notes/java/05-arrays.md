@@ -4,6 +4,12 @@ Arrays in Java are a type of `object` that can hold multiple values of the same 
 
 ## Declaring and Initializing Arrays
 
+First, you need to import the package from java.util:
+
+```java
+import java.util.Arrays;
+```
+
 In Java, you must declare the type and size of the array before using it. Here are some examples of how to declare and initialize arrays:
 
 ```java
