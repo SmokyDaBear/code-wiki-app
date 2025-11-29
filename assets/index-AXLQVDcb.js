@@ -1,5 +1,5 @@
 const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/react-markdown-DPrgH-1Q.js","assets/markdown-wrf23eDy.js","assets/highlight-0zkRWLrt.js","assets/rolldown-runtime-DGruFWvd.js","assets/highlight-DdKuH37F.css","assets/react-ebLvzBwK.js"])))=>i.map(i=>d[i]);
-import{r as e}from"./rolldown-runtime-DGruFWvd.js";import{_ as t,a as n,c as r,d as i,f as a,g as o,h as s,l as c,m as l,o as u,p as d,s as f,u as p}from"./react-ebLvzBwK.js";import{f as m,i as h,m as g,p as _}from"./markdown-wrf23eDy.js";import"./highlight-0zkRWLrt.js";(function(){let e=document.createElement(`link`).relList;if(e&&e.supports&&e.supports(`modulepreload`))return;for(let e of document.querySelectorAll(`link[rel="modulepreload"]`))n(e);new MutationObserver(e=>{for(let t of e)if(t.type===`childList`)for(let e of t.addedNodes)e.tagName===`LINK`&&e.rel===`modulepreload`&&n(e)}).observe(document,{childList:!0,subtree:!0});function t(e){let t={};return e.integrity&&(t.integrity=e.integrity),e.referrerPolicy&&(t.referrerPolicy=e.referrerPolicy),e.crossOrigin===`use-credentials`?t.credentials=`include`:e.crossOrigin===`anonymous`?t.credentials=`omit`:t.credentials=`same-origin`,t}function n(e){if(e.ep)return;e.ep=!0;let n=t(e);fetch(e.href,n)}})();var v=e(o(),1),y=e(t(),1),b=e(s(),1);function x(){return(0,b.jsx)(`div`,{className:`spinner-bg`,id:`spinner-bg`,children:(0,b.jsx)(`div`,{className:`spinner`})})}const S={sql:`/code-wiki-app/assets/sql-icon-Dmz4QLqU.png`,html:`/code-wiki-app/assets/html-icon-BhL9-oMv.png`,css:`/code-wiki-app/assets/css-icon-dYMppHUw.png`,javascript:`/code-wiki-app/assets/js-icon-DFEiZ9Qo.png`,typescript:`/code-wiki-app/assets/ts-icon-yD2EpDXD.png`,git:`data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAYAAACtWK6eAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADioAAA4qAXmYqosAAAAZdEVYdFNvZnR3YXJlAFBhaW50Lk5FVCA1LjEuMTGKCBbOAAAAuGVYSWZJSSoACAAAAAUAGgEFAAEAAABKAAAAGwEFAAEAAABSAAAAKAEDAAEAAAACAAAAMQECABEAAABaAAAAaYcEAAEAAABsAAAAAAAAAN1nAQDoAwAA3WcBAOgDAABQYWludC5ORVQgNS4xLjExAAADAACQBwAEAAAAMDIzMAGgAwABAAAAAQAAAAWgBAABAAAAlgAAAAAAAAACAAEAAgAEAAAAUjk4AAIABwAEAAAAMDEwMAAAAAArataK8XbUwgAACKhJREFUeF7t3NtVXDkQhWFBKA7CUThcR+EgnIrngaWhafpcJNVd//eIoY+0qzbNGK95a3D199fPf88f6378/vP2/DHYYgBOzorxCmXxQejGRovxiJLYI3BDK+V4RFHsELQRqXJ0lMQGIRuQLkdHSfQRsDKtcnSURBfhKtIuR0dJ9BCsEqtydJREB6EqsC5HR0nkEagwr3J0lEQWYQryLkdHSeQQpJAo5egoiQxCFBCtHB0lWUeAi6KWo6MkawhvQfRydJRkHsFNylKOjpLMIbQJ2crRUZJxBDYoazk6SjKGsAZkL0dHSe4jqJuqlKOjJPcQ0g3VytFRkmvvzx/APqoWXxLfQW6qvEy8kxwjmAGUZD+EMoiS7IVAJlCSfRDGJEqyB4JYQEnqI4RFlKS27QOQQEnq2voXhVKLXXmJpDLKquxgrzwOXmrBKy+TVEbZbHnpV4sstQCvXrsKqYwy2e7CZwsstQBnz8hOKqMstrrsncWVWoA7z8pKKqMMtrnoyMJKLcDIM7ORyii6LS45s6hSCzDz7CykMoqs/AVXFlRqAVbOEJ1URlGVvpzEYkotgMRZopLKKKKyF5NcSKkFkDxTNFIZRVPyUhqLKLUAGmeLQiqjSMpdSHMBpRZA84zepDKKotRlLBZPagEszupFKqMIylzEcuGkFqCf+ez1LO8l6exOmZS4hMcSeSyAxz1XeGQkLf0FPJfGawE87zzKKyMpqQ8fYVG8FiDC3e/yykhC2oNHWhCvBYiUwRWvjFalPHTExfBagIhZHPHKaEW6A0deCK8FiJzJM6+MZqU6bIZF8FqADNl0XhnNSPM/bciyAFnO6SlTRimanCnQzuO7ZLacPDIaFf4dJNvQcV+G2YYuSIYAsSb6jMMWJHpwZzL86BBJ5FmHLEjkwCLLXMyoMw9XkKhBQV/E2YcqSMSAYCvaDoQpSLRg4CfSLoQoSKRAEEOUnXAvSJQgKqiWZYT7uBYkQgAaqt7Lg3eWbgXxvjjy8NwVl4J4XriyzL8HueK1M+aBel3Ug9fCVs7YOlPTd5DKg4vEeoksWe+QWZDWF4vCc1krZ26Vq8lDKg/qDqthvlI5e4tc1R9QeUAjLIZ5pPIMtHNVffHKg5mhPcwzlWehmavaC1ceyCrNgZ6pPBOtTFVetPIgpGgN9Erl2WhkKv6ClQcgTWOgd1SekXSmor8HqRx8BFL5Si9RJFIZdWIFkT4YXpPKmZLcI1IQyQPhmlTelOTackGkDoIxUrlTknNLBZE4AOZJ5U9Jjk0XZPXBkCE1B0ry2lRBVh4IeVLzoCTfDRdk9kHQJTUXSvLVUEFmHgA7UvOhJJ9uF2T0heFDak6U5MOtgoy8IPxJzYuS3Pi3WHdfCONGF3B0FqOvv2r0fBFcZXT6DpLxwvhkPb8fv/+8XS1cNFcZHRbk6guRg8ccsxXlLKOXBTn7AuTjNc8KJflWkKNPRG5ec81eki8FefUJqMNrvplL8n9Bnv8ANXnNOVNJHn37EQv1eZUki8d83p8/gD14zDzTu0jPh3eQjXmUJJt3QtqXx3d0j2eu4B0EOPD3189/FAQ4QUGAExQEOEFBgBMUBDjxnu2v3QBLvIMAB378/vNGQYAT7y3hbzchw+NfUXg8c0bvxP/vIJQE+I4fsTZn+R3d8lkrHt8svhSEdxHs7rkD395Bnj8B9Vl8Z7d4xqpXu/+tIO3gE1Gb5gJrvraUo51/WZB28gWoS2ORNV5T2tmuHxakXXwhapJcaMnX0nK146d/2GW4aEZXw3lmPYfR83XW55x1536Xn9BluXQmdwb0yGsGd8/pdb4Zd+9065O6TAFkcHdIHfnLGMn99L9Bno28MBDR6A4PFaRNPACIYmZ3hwvSJh8EeJrd2amCtIUHAtZWdnW6IG3xwYCF1R1dKkgTOACgRWI3lwvShA4CSJLaSZGCNMEDAaskd1GsIE34YMAM6R0ULUhTOCBwl8buiRekKR0UOKO1cyoFaYoHroJ85GhmqfbCHf/A7ruVgZLnVytZ3qH64h1D/SA5TDKVzfOI+gO63QeqMcydM9XI8xWTh3S7DlRzmDtmqpnnM7MHdbsN1GKYO2Vqkecjtb/FOmJ9QdThsTvmD+x2+K5nOdDqeVpm+cj8HaTzurCV6vez5JmlW0Ga88WrqZql971cC9ICBIC4IuyGe0FakCAkVbuPhygZhihICxRIZlUyjHSPMAVpwYKBj2g7EKogLWBAsBNx9uEK0oIGBV1RZx6yIC1wYJAXedZhC9KCBwcZ0Wcc+nBdxn9G4TH4bDl5ZDQq9DtIlyFIjMky0xQFaYkCxbVMs0xz0C7TjxGWi5AlF8tMJKR5B+myBYxPGWeX7sAd3zE/ZcjCIgcNKQ/dZViMprwcGTLQvL+2tAfvMixIU1qSDHfXuLel1IfvMixKE16WDHeWvK+X9BfoMixME1qaDHeVuGcEJS7RZVicbmaBstxv5m5RlblIl2WJHp0tVLb7nN0lo1KX6bItVRXVytGqFqRREnMVy9EqF6RREjNVy9GqF6RREnWVy9F2KEijJGqql6PtUpBGScTtUI62U0EaJRGzSznabgVplGTZTuVoOxakUZJpu5Wj7VqQRkmG7ViOtnNBGiW5bddytN0L0ijJpZ3L0SjIB0ry2u7laBTkEyX5inJ8IIQHlOQD5fhEEE92Lwnl+IowXti1JJTjOwI5sFtJKMdrhHJil5JQjmMEc6F6SSjHOcK5oWpJKMc1ArqpWkkoxz2ENKBKSSjHfQQ1KHtJKMcYwpqQtSSUYxyBTcpWEsoxh9AWZCkJ5ZhHcIuil4RyrCE8AVFLQjnWEaCQaCWhHDIIUVCUklAOOQQpzLsklEMWYSrwKgnlkEegSqxLQjl0EKoiq5JQDj0Eq0y7JJRDF+Ea0CoJ5dBHwEakS0I5bBCyIamSUA47BO1gpSiUwxZhOxktCcXwQegBnJWFYvj6DxiTStFMybqiAAAAAElFTkSuQmCC`,c:`/code-wiki-app/assets/c-icon-CMJjUWV6.png`,cpp:`/code-wiki-app/assets/c-pp-icon-BiMgfDVt.png`,react:l,java:`/code-wiki-app/assets/java-icon-DrzBm3oM.png`,markdown:`/code-wiki-app/assets/md-icon-bHz2h5Lh.png`},C={sql:{name:`SQL`,icon:S.sql},html:{name:`HTML`,icon:S.html},css:{name:`CSS`,icon:S.css},javascript:{name:`JavaScript`,icon:S.javascript},typescript:{name:`TypeScript`,icon:S.typescript},git:{name:`Git`,icon:S.git},c:{name:`C`,icon:S.c},cpp:{name:`C++`,icon:S.cpp},react:{name:`React`,icon:S.react},java:{name:`Java`,icon:S.java},"computer-science":{name:`Computer Science`,emojiIcon:`💻`},markdown:{name:`Markdown`,icon:S.markdown}};var ee=`# C Programming Language
+import{r as e}from"./rolldown-runtime-DGruFWvd.js";import{_ as t,a as n,c as r,d as i,f as a,g as o,h as s,l as c,m as l,o as u,p as d,s as f,u as p}from"./react-ebLvzBwK.js";import{f as m,i as h,m as g,p as _}from"./markdown-wrf23eDy.js";import"./highlight-0zkRWLrt.js";(function(){let e=document.createElement(`link`).relList;if(e&&e.supports&&e.supports(`modulepreload`))return;for(let e of document.querySelectorAll(`link[rel="modulepreload"]`))n(e);new MutationObserver(e=>{for(let t of e)if(t.type===`childList`)for(let e of t.addedNodes)e.tagName===`LINK`&&e.rel===`modulepreload`&&n(e)}).observe(document,{childList:!0,subtree:!0});function t(e){let t={};return e.integrity&&(t.integrity=e.integrity),e.referrerPolicy&&(t.referrerPolicy=e.referrerPolicy),e.crossOrigin===`use-credentials`?t.credentials=`include`:e.crossOrigin===`anonymous`?t.credentials=`omit`:t.credentials=`same-origin`,t}function n(e){if(e.ep)return;e.ep=!0;let n=t(e);fetch(e.href,n)}})();var v=e(o(),1),y=e(t(),1),b=e(s(),1);function x(){return(0,b.jsx)(`div`,{className:`spinner-bg`,id:`spinner-bg`,children:(0,b.jsx)(`div`,{className:`spinner`})})}const S={sql:`/code-wiki-app/assets/sql-icon-Dmz4QLqU.png`,html:`/code-wiki-app/assets/html-icon-BhL9-oMv.png`,css:`/code-wiki-app/assets/css-icon-dYMppHUw.png`,javascript:`/code-wiki-app/assets/js-icon-DFEiZ9Qo.png`,typescript:`/code-wiki-app/assets/ts-icon-yD2EpDXD.png`,git:`data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAYAAACtWK6eAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADioAAA4qAXmYqosAAAAZdEVYdFNvZnR3YXJlAFBhaW50Lk5FVCA1LjEuMTGKCBbOAAAAuGVYSWZJSSoACAAAAAUAGgEFAAEAAABKAAAAGwEFAAEAAABSAAAAKAEDAAEAAAACAAAAMQECABEAAABaAAAAaYcEAAEAAABsAAAAAAAAAN1nAQDoAwAA3WcBAOgDAABQYWludC5ORVQgNS4xLjExAAADAACQBwAEAAAAMDIzMAGgAwABAAAAAQAAAAWgBAABAAAAlgAAAAAAAAACAAEAAgAEAAAAUjk4AAIABwAEAAAAMDEwMAAAAAArataK8XbUwgAACKhJREFUeF7t3NtVXDkQhWFBKA7CUThcR+EgnIrngaWhafpcJNVd//eIoY+0qzbNGK95a3D199fPf88f6378/vP2/DHYYgBOzorxCmXxQejGRovxiJLYI3BDK+V4RFHsELQRqXJ0lMQGIRuQLkdHSfQRsDKtcnSURBfhKtIuR0dJ9BCsEqtydJREB6EqsC5HR0nkEagwr3J0lEQWYQryLkdHSeQQpJAo5egoiQxCFBCtHB0lWUeAi6KWo6MkawhvQfRydJRkHsFNylKOjpLMIbQJ2crRUZJxBDYoazk6SjKGsAZkL0dHSe4jqJuqlKOjJPcQ0g3VytFRkmvvzx/APqoWXxLfQW6qvEy8kxwjmAGUZD+EMoiS7IVAJlCSfRDGJEqyB4JYQEnqI4RFlKS27QOQQEnq2voXhVKLXXmJpDLKquxgrzwOXmrBKy+TVEbZbHnpV4sstQCvXrsKqYwy2e7CZwsstQBnz8hOKqMstrrsncWVWoA7z8pKKqMMtrnoyMJKLcDIM7ORyii6LS45s6hSCzDz7CykMoqs/AVXFlRqAVbOEJ1URlGVvpzEYkotgMRZopLKKKKyF5NcSKkFkDxTNFIZRVPyUhqLKLUAGmeLQiqjSMpdSHMBpRZA84zepDKKotRlLBZPagEszupFKqMIylzEcuGkFqCf+ez1LO8l6exOmZS4hMcSeSyAxz1XeGQkLf0FPJfGawE87zzKKyMpqQ8fYVG8FiDC3e/yykhC2oNHWhCvBYiUwRWvjFalPHTExfBagIhZHPHKaEW6A0deCK8FiJzJM6+MZqU6bIZF8FqADNl0XhnNSPM/bciyAFnO6SlTRimanCnQzuO7ZLacPDIaFf4dJNvQcV+G2YYuSIYAsSb6jMMWJHpwZzL86BBJ5FmHLEjkwCLLXMyoMw9XkKhBQV/E2YcqSMSAYCvaDoQpSLRg4CfSLoQoSKRAEEOUnXAvSJQgKqiWZYT7uBYkQgAaqt7Lg3eWbgXxvjjy8NwVl4J4XriyzL8HueK1M+aBel3Ug9fCVs7YOlPTd5DKg4vEeoksWe+QWZDWF4vCc1krZ26Vq8lDKg/qDqthvlI5e4tc1R9QeUAjLIZ5pPIMtHNVffHKg5mhPcwzlWehmavaC1ceyCrNgZ6pPBOtTFVetPIgpGgN9Erl2WhkKv6ClQcgTWOgd1SekXSmor8HqRx8BFL5Si9RJFIZdWIFkT4YXpPKmZLcI1IQyQPhmlTelOTackGkDoIxUrlTknNLBZE4AOZJ5U9Jjk0XZPXBkCE1B0ry2lRBVh4IeVLzoCTfDRdk9kHQJTUXSvLVUEFmHgA7UvOhJJ9uF2T0heFDak6U5MOtgoy8IPxJzYuS3Pi3WHdfCONGF3B0FqOvv2r0fBFcZXT6DpLxwvhkPb8fv/+8XS1cNFcZHRbk6guRg8ccsxXlLKOXBTn7AuTjNc8KJflWkKNPRG5ec81eki8FefUJqMNrvplL8n9Bnv8ANXnNOVNJHn37EQv1eZUki8d83p8/gD14zDzTu0jPh3eQjXmUJJt3QtqXx3d0j2eu4B0EOPD3189/FAQ4QUGAExQEOEFBgBMUBDjxnu2v3QBLvIMAB378/vNGQYAT7y3hbzchw+NfUXg8c0bvxP/vIJQE+I4fsTZn+R3d8lkrHt8svhSEdxHs7rkD395Bnj8B9Vl8Z7d4xqpXu/+tIO3gE1Gb5gJrvraUo51/WZB28gWoS2ORNV5T2tmuHxakXXwhapJcaMnX0nK146d/2GW4aEZXw3lmPYfR83XW55x1536Xn9BluXQmdwb0yGsGd8/pdb4Zd+9065O6TAFkcHdIHfnLGMn99L9Bno28MBDR6A4PFaRNPACIYmZ3hwvSJh8EeJrd2amCtIUHAtZWdnW6IG3xwYCF1R1dKkgTOACgRWI3lwvShA4CSJLaSZGCNMEDAaskd1GsIE34YMAM6R0ULUhTOCBwl8buiRekKR0UOKO1cyoFaYoHroJ85GhmqfbCHf/A7ruVgZLnVytZ3qH64h1D/SA5TDKVzfOI+gO63QeqMcydM9XI8xWTh3S7DlRzmDtmqpnnM7MHdbsN1GKYO2Vqkecjtb/FOmJ9QdThsTvmD+x2+K5nOdDqeVpm+cj8HaTzurCV6vez5JmlW0Ga88WrqZql971cC9ICBIC4IuyGe0FakCAkVbuPhygZhihICxRIZlUyjHSPMAVpwYKBj2g7EKogLWBAsBNx9uEK0oIGBV1RZx6yIC1wYJAXedZhC9KCBwcZ0Wcc+nBdxn9G4TH4bDl5ZDQq9DtIlyFIjMky0xQFaYkCxbVMs0xz0C7TjxGWi5AlF8tMJKR5B+myBYxPGWeX7sAd3zE/ZcjCIgcNKQ/dZViMprwcGTLQvL+2tAfvMixIU1qSDHfXuLel1IfvMixKE16WDHeWvK+X9BfoMixME1qaDHeVuGcEJS7RZVicbmaBstxv5m5RlblIl2WJHp0tVLb7nN0lo1KX6bItVRXVytGqFqRREnMVy9EqF6RREjNVy9GqF6RREnWVy9F2KEijJGqql6PtUpBGScTtUI62U0EaJRGzSznabgVplGTZTuVoOxakUZJpu5Wj7VqQRkmG7ViOtnNBGiW5bddytN0L0ijJpZ3L0SjIB0ry2u7laBTkEyX5inJ8IIQHlOQD5fhEEE92Lwnl+IowXti1JJTjOwI5sFtJKMdrhHJil5JQjmMEc6F6SSjHOcK5oWpJKMc1ArqpWkkoxz2ENKBKSSjHfQQ1KHtJKMcYwpqQtSSUYxyBTcpWEsoxh9AWZCkJ5ZhHcIuil4RyrCE8AVFLQjnWEaCQaCWhHDIIUVCUklAOOQQpzLsklEMWYSrwKgnlkEegSqxLQjl0EKoiq5JQDj0Eq0y7JJRDF+Ea0CoJ5dBHwEakS0I5bBCyIamSUA47BO1gpSiUwxZhOxktCcXwQegBnJWFYvj6DxiTStFMybqiAAAAAElFTkSuQmCC`,c:`/code-wiki-app/assets/c-icon-CMJjUWV6.png`,cpp:`/code-wiki-app/assets/c-pp-icon-BiMgfDVt.png`,react:l,java:`/code-wiki-app/assets/java-icon-DrzBm3oM.png`,markdown:`/code-wiki-app/assets/md-icon-bHz2h5Lh.png`},C={sql:{name:`SQL`,icon:S.sql},html:{name:`HTML`,icon:S.html},css:{name:`CSS`,icon:S.css},javascript:{name:`JavaScript`,icon:S.javascript},typescript:{name:`TypeScript`,icon:S.typescript},git:{name:`Git`,icon:S.git},c:{name:`C`,icon:S.c},cpp:{name:`C++`,icon:S.cpp},react:{name:`React`,icon:S.react},java:{name:`Java`,icon:S.java},"computer-science":{name:`Computer Science`,emojiIcon:`💻`},markdown:{name:`Markdown`,icon:S.markdown}};var w=`# C Programming Language
 
 C is a low-level, procedural programming language that was developed in the early 1970s by Dennis Ritchie at Bell Labs. It is widely used for system programming, embedded systems, and applications that require high performance and low-level hardware access.
 
@@ -10,7 +10,7 @@ C is a low-level, procedural programming language that was developed in the earl
 - **Rich Standard Library**: C has a comprehensive standard library that provides functions for input/output, string manipulation, memory management, and more.
 - **Modularity**: C supports modular programming through functions and header files, allowing for code reuse and better organization.
 - **Efficiency**: C is known for its performance and efficiency, making it suitable for resource-constrained environments and high-performance applications.
-`,w=`# Computer Science General Knowledge
+`,T=`# Computer Science General Knowledge
 
 This section contains general knowledge notes about computer science, covering fundamental concepts, theories, and principles that form the basis of the field. Topics include algorithms, data structures, computational theory, computer architecture, networking basics, and more.
 
@@ -33,7 +33,7 @@ Computers are electronic devices that process data according to a set of instruc
 - **Programming Languages**: Formal languages used to write computer programs (e.g., Python, Java, C++).
 - **Databases**: Organized collections of data that can be easily accessed, managed, and updated.
 - **Cybersecurity**: The practice of protecting computer systems and networks from digital attacks.
-`,T=`# Computer Hardware
+`,E=`# Computer Hardware
 
 Hardware refers to the physical components of a computer system. This section covers the essential hardware elements that make up a computer, including input and output devices, storage solutions, and internal components.
 
@@ -147,7 +147,7 @@ The motherboard is the main circuit board of a computer that connects all the co
 - **Input/Output Ports**: Connectors for peripherals such as USB devices, audio jacks, and network cables
 - **Memory Slots**: Slots for installing RAM modules.
   - These are referred to as DIMM Slots: Dual Inline Memory Module slots where RAM sticks are installed.
-`,E=`# How Computers Work: Numbers and Data Representation
+`,D=`# How Computers Work: Numbers and Data Representation
 
 Numbers are fundamental to how computers operate and process information.
 
@@ -293,7 +293,7 @@ In Unicode, the character '€' (Euro sign) is represented by the decimal value 
 #### Note: Unicode can represent a vast number of characters from different languages and symbol sets, making it suitable for global applications.
 
 #### Both ASCII and Unicode have the same values for the first 128 characters, ensuring compatibility between the two encoding schemes for basic English text.
-`,D=`# Strings and Text Representation in Computers
+`,O=`# Strings and Text Representation in Computers
 
 Strings are sequences of characters used to represent text in computer systems. They can include letters, numbers, symbols, and whitespace. In programming, strings are typically enclosed in quotation marks (single, double, or backticks) to differentiate them from other data types.
 
@@ -388,7 +388,7 @@ When a string (or any object) is no longer needed, the garbage collector identif
 This process helps prevent memory leaks and optimizes memory usage, allowing developers to focus on writing code without worrying about manual memory management. However, the specifics of garbage collection can vary between programming languages and their respective runtime environments.
 
 Some languages, like Java and Python, have built-in garbage collectors that automatically handle memory management. Others, like C and C++, require developers to manually manage memory allocation and deallocation, which can lead to issues if not handled properly.
-`,O=`# How Computers Perform Basic Math Operations
+`,k=`# How Computers Perform Basic Math Operations
 
 Computers perform basic math operations using a combination of binary arithmetic and logic gates within the CPU (Central Processing Unit). The fundamental operations include addition, subtraction, multiplication, and division. These operations are executed using binary numbers, which are represented using only two digits: 0 and 1.
 
@@ -508,7 +508,7 @@ If we compare \`1010\` and \`1001\`(decimal 10 and 9):
 \`\`\`
 
 Since not all outputs are 1, the two numbers are not equal.
-`,k=`# C++ Programming Language
+`,A=`# C++ Programming Language
 
 C++ is a high-level, general-purpose programming language that was developed as an extension of the C programming language by Bjarne Stroustrup in the early 1980s. It is widely used for system/software development, game development, real-time simulations, and applications requiring high performance.
 
@@ -529,7 +529,7 @@ C++ is a high-level, general-purpose programming language that was developed as 
 - **Standard Template Library (STL)**: C++ includes the STL, which provides a collection of template classes and functions for data structures and algorithms, while C lacks this feature.
 - **Namespaces**: C++ introduces namespaces to avoid name conflicts, a feature not available in C.
 - **Exception Handling**: C++ provides built-in support for exception handling using \`try\`, \`catch\`, and \`throw\` keywords, while C relies on error codes for error handling.
-`,A=`# CSS Notes
+`,j=`# CSS Notes
 
 Welcome to the CSS section! Here you'll find notes about CSS styling, layout, and design principles.
 
@@ -573,7 +573,7 @@ selector {
 \`\`\`
 
 Stay tuned for more detailed content!
-`,j=`# CSS Basics
+`,ee=`# CSS Basics
 
 Welcome to CSS! This guide covers the fundamentals of Cascading Style Sheets.
 
@@ -4258,6 +4258,12 @@ Arrays in Java are a type of \`object\` that can hold multiple values of the sam
 
 ## Declaring and Initializing Arrays
 
+First, you need to import the package from java.util:
+
+\`\`\`java
+import java.util.Arrays;
+\`\`\`
+
 In Java, you must declare the type and size of the array before using it. Here are some examples of how to declare and initialize arrays:
 
 \`\`\`java
@@ -4286,7 +4292,1809 @@ int firstNumber = numbers[0]; // Accessing the first element (10) and storing it
 System.out.println(firstNumber); // Output: 10
 System.out.println(numbers[1]); // Output: 20
 \`\`\`
-`,Ne=`# JavaScript Notes
+`,Ne=`# Array Lists
+
+Array Lists in Java are part of the \`java.util\` package and provide a dynamic array-like structure that can grow and shrink in size as needed. They are more flexible than traditional arrays, allowing for easy addition, removal, and manipulation of elements.
+
+They also require importing the \`java.util\` package to use them.
+
+\`\`\`java
+import java.util.ArrayList;
+\`\`\`
+
+## Creating an Array List
+
+To create an Array List, you need to specify the type of elements it will hold using generics. Here's an example of how to create an Array List of strings:
+
+\`\`\`java
+ArrayList<String> fruits = new ArrayList<>();
+\`\`\`
+
+In this example, \`fruits\` is an Array List that can hold string values.
+
+Notice the use of angle brackets \`<>\` to specify the type of elements (in this case, \`String\`), contrary to arrays which take the type followed by square brackets \`[]\`.
+
+## Adding Elements
+
+You can add elements to an Array List using the \`add()\` method. Here's how to add some fruits to the \`fruits\` Array List:
+
+\`\`\`java
+fruits.add("Apple");
+fruits.add("Banana");
+fruits.add("Orange");
+\`\`\`
+
+## Accessing Elements
+
+You can access elements in an Array List using the \`get()\` method, which takes the index of the element you want to retrieve. Here's an example:
+
+\`\`\`java
+String firstFruit = fruits.get(0); // Accessing the first element (Apple)
+System.out.println(firstFruit); // Output: Apple
+\`\`\`
+
+## Removing Elements
+
+You can remove elements from an Array List using the \`remove()\` method. You can remove an element by its index or by its value. Here's how to remove the second fruit (Banana) from the list:
+
+\`\`\`java
+fruits.remove(1); // Removes the element at index 1 (Banana)
+\`\`\`
+`,Pe=`# Comparisons and Conditionals in Java
+
+Comparisons and conditionals are fundamental concepts in programming that allow you to control the flow of your program based on certain conditions.
+
+## Conditional Statements
+
+Conditional statements allow you to execute different blocks of code based on certain conditions. The most common conditional statements in Java are \`if\`, \`else if\`, and \`else\`.
+
+### The \`if\` Statement
+
+The \`if\` statement evaluates a boolean expression and executes a block of code if the expression is true.
+
+\`\`\`java
+int number = 10;
+if (number > 5) {
+    System.out.println("The number is greater than 5");
+}
+\`\`\`
+
+### The \`else if\` Statement
+
+The \`else if\` statement allows you to check multiple conditions in sequence.
+
+\`\`\`java
+int number = 10;
+
+if (number > 15) {
+    System.out.println("The number is greater than 15");
+} else if (number > 5) {
+    System.out.println("The number is greater than 5 but less than or equal to 15");
+}
+\`\`\`
+
+### The \`else\` Statement
+
+The \`else\` statement provides a block of code that will execute if none of the previous conditions are true.
+
+\`\`\`java
+int number = 3;
+
+if (number > 5) {
+    System.out.println("The number is greater than 5");
+} else if(number == 5){
+    System.out.println("The number is equal to 5");
+} else {
+    System.out.println("The number is less than 5");
+}
+\`\`\`
+
+## Comparison Operators
+
+In Java, you can compare primitive data types using comparison operators including:
+
+- \`==\` - equal to.
+- \`!=\` - **not** equal to.
+- \`<\` - less than.
+- \`>\` - greater than.
+- \`<=\` - less than or equal to.
+- \`>=\` - greater than or equal to.
+
+\`\`\`java
+int a = 5;
+int b = 10;
+
+if (a < b) {
+    System.out.println("a is less than b");
+}
+\`\`\`
+
+### .equals() Method for Object Comparison
+
+When comparing objects (including arrays and strings), you should use the \`.equals()\` method instead of \`==\`, which checks for reference equality. For example:
+
+\`\`\`java
+String str1 = new String("hello");
+String str2 = new String("hello");
+
+if (str1.equals(str2)) {
+    System.out.println("str1 is equal to str2");
+}
+\`\`\`
+
+For arrays, you can use the \`Arrays.equals()\` method from the \`java.util.Arrays\` class to compare the contents of two arrays:
+
+\`\`\`java
+import java.util.Arrays;
+
+int[] arr1 = {1, 2, 3};
+int[] arr2 = {1, 2, 3};
+
+if (Arrays.equals(arr1, arr2)) {
+    System.out.println("arr1 is equal to arr2");
+}
+\`\`\`
+
+Remember that using \`==\` with objects checks if both references point to the same object in memory, not if their contents are the same.
+
+The exception to this rule is primitive data types (like \`int\`, \`char\`, \`boolean\`, etc.), where \`==\` checks for value equality.
+
+Think of it like numbers: a char is a number representing a character, so comparing two chars with \`==\` checks if they have the same numeric value, same for integers, and booleans are a \`1\` if true and \`0\` if false.
+
+## Ternary Operator
+
+The ternary operator is a shorthand way of writing simple \`if-else\` statements.
+
+It takes three operands:
+
+- a condition followed by a question mark \`?\`
+- a value if the condition is true followed by a colon \`:\`
+- and a value if the condition is false, ending the expression with a semicolon \`;\`.
+
+\`\`\`java
+int number = 10;
+
+String result = (number > 5) ? "Greater than 5" : "5 or less";
+
+System.out.println(result); // Output: Greater than 5
+\`\`\`
+
+### Chaining Ternary Operators
+
+Ternary operators can be chained to handle multiple conditions, but be cautious as it can reduce code readability.
+
+\`\`\`java
+int number = 10;
+String result =
+(number > 15) ? "Greater than 15" :
+(number > 5) ? "Greater than 5 but less than or equal to 15" :
+"5 or less";
+System.out.println(result); // Output: Greater than 5 but less than or equal to 15
+\`\`\`
+`,Fe=`# Loops and Iterables in Java
+
+Loops are fundamental constructs in programming that allow you to execute a block of code multiple times based on certain conditions. In Java, loops are commonly used to iterate over arrays, collections, and other data structures.
+
+Iterables are objects that can be iterated over, meaning you can traverse through their elements one by one. In Java, many data structures implement the \`Iterable\` interface, allowing you to use enhanced \`for\` loops to iterate over them easily.
+
+## Loops
+
+A loop is a programming construct that allows you to repeat a block of code multiple times based on a condition.
+
+In Java, there are several types of loops, including:
+
+- \`for\` - traditional for loops that iterate a specific number of times.
+- \`while\` - while loops that continue as long as a condition is true.
+- \`do-while\` - do-while loops that execute the block of code at least once before checking the condition.
+
+Additionally, Java provides the _enhanced_ \`for\` loop (also known as the "for-each" loop) for iterating over collections and arrays.
+
+### The \`for\` Loop
+
+The \`for\` loop is used when you know in advance how many times you want to execute a block of code.
+
+It consists of three main parts:
+
+- initialization
+- condition
+- and increment/decrement.
+
+Here is the syntax of a basic \`for\` loop, with \`i\` as the loop counter, a condition of \`i < 5\` and an increment of 1 or \`i++\`:
+
+\`\`\`java
+for (int i = 0; i < 5; i++) {
+    System.out.println("Iteration: " + i);
+}
+\`\`\`
+
+### The \`while\` Loop
+
+The \`while\` loop continues to execute a block of code as long as a specified condition is true.
+Here is the syntax of a basic \`while\` loop:
+
+\`\`\`java
+int i = 0;
+while (i < 5) {
+    System.out.println("Iteration: " + i);
+    i++;
+}
+\`\`\`
+
+### The \`do-while\` Loop
+
+The \`do-while\` loop is similar to the \`while\` loop, but it guarantees that the block of code will execute at least once before checking the condition.
+Here is the syntax of a basic \`do-while\` loop:
+
+\`\`\`java
+int i = 0;
+do {
+    System.out.println("Iteration: " + i);
+    i++;
+} while (false);
+\`\`\`
+
+In this case, even though the condition is \`false\`, the loop will execute once before terminating.
+
+## Iterables and the Enhanced \`for\` Loop
+
+Iterables are objects that can be iterated over, meaning you can traverse through their elements one by one. In Java, many data structures implement the \`Iterable\` interface, allowing you to use enhanced \`for\` loops to iterate over them easily.
+
+These objects include:
+
+- Arrays
+- ArrayLists
+- HashSets
+- Strings (as a sequence of characters)
+  The enhanced \`for\` loop provides a simpler syntax for iterating over these collections without needing to manage an index variable explicitly.
+
+### The Enhanced \`for\` Loop
+
+The enhanced \`for\` loop is used to iterate over elements in an array or any object that implements the \`Iterable\` interface. It simplifies the syntax and improves code readability.
+Here is the syntax of an enhanced \`for\` loop:
+
+\`\`\`java
+for (Type element : collection) {
+    // Use the element
+}
+\`\`\`
+
+Similar to the traditional \`for\` loop, but instead of managing an index, you directly access each element in the collection, and assign it to the variable \`element\` of type \`Type\`.
+
+To iterate over a string, you can use the enhanced \`for\` loop as follows:
+
+\`\`\`java
+String message = "Hello";
+for (char ch : message.toCharArray()) {
+    System.out.println(ch);
+}
+\`\`\`
+
+\`.toCharArray()\` converts the string into an array of characters, allowing you to iterate over each character in the string.
+
+### Example: Iterating Over an ArrayList or Array
+
+\`\`\`java
+// Importing the ArrayList utility class
+import java.util.ArrayList;
+
+// Initializing an ArrayList of strings
+ArrayList<String> fruits = new ArrayList<>();
+
+// Adding elements to the ArrayList
+fruits.add("Apple");
+fruits.add("Banana");
+fruits.add("Orange");
+
+// Using the enhanced for loop to iterate over the ArrayList
+for (String fruit : fruits) {
+    System.out.println(fruit);
+}
+
+\`\`\`
+
+## Break and Continue Statements
+
+In Java, the \`break\` and \`continue\` statements are used to control the flow of loops.
+
+### Break
+
+Break is used to exit a loop prematurely when a certain condition is met.
+
+\`\`\`java
+for (int i = 0; i < 10; i++) {
+    if (i == 5) {
+        break; // Exit the loop when i is 5
+    }
+    System.out.println(i);
+}
+\`\`\`
+
+This will print numbers from 0 to 4, and then exit the loop when \`i\` reaches 5.
+
+### Continue
+
+Continue is used to skip the current iteration of a loop and move to the next iteration.
+
+\`\`\`java
+for (int i = 0; i < 10; i++) {
+    if (i % 2 == 0) {
+        continue; // Skip even numbers
+    }
+    System.out.println(i);
+}
+\`\`\`
+
+This will print only odd numbers from 0 to 9, skipping the even numbers.
+`,Ie=`# Methods
+
+In Java, a method is a block of code that performs a specific task. Methods are used to organize code into reusable sections, making it easier to read, maintain, and debug.
+
+## Defining a Method
+
+To define a method in Java, you need to specify the following components:
+
+- Access Modifier: Specifies the visibility of the method (e.g., \`public\`, \`private\`, \`protected\`).
+- Return Type: Indicates the type of value the method will return (e.g., \`int\`, \`String\`, or \`void\` if it doesn't return anything).
+- Method Name: A descriptive name for the method that follows camelCase naming conventions.
+  - camelCase is the naming convention with a lowercase first letter of first word, then uppercase first letter of subsequent words and all other letters lowercase. Example: myMethodName
+- Parameters (optional): A comma-separated list of input values the method accepts, enclosed in parentheses \`()\`.
+- Method Body: The block of code enclosed in curly braces \`{}\` that defines what the method does.
+
+Here is an example of a simple method definition:
+
+\`\`\`java
+public int addNumbers(int a, int b) {
+    return a + b;
+}
+\`\`\`
+
+In this example:
+
+- \`public\` is the access modifier, allowing the method to be accessed from other classes.
+- \`int\` is the return type, indicating that the method will return an integer value.
+- \`addNumbers\` is the method name.
+- \`(int a, int b)\` are the parameters, which are two integers that the method takes as input.
+- The method body contains a single statement that returns the sum of \`a\` and \`b\`.
+
+## Calling a Method
+
+To call a method in Java, you use the method name followed by parentheses \`()\`, and pass any required arguments if the method has parameters.
+
+Here is an example of how to call the \`addNumbers\` method defined above:
+
+\`\`\`java
+int result = addNumbers(5, 10);
+System.out.println("The sum is: " + result); // Output: The sum is: 15
+\`\`\`
+
+## Method Overloading
+
+Method overloading is a feature in Java that allows you to define multiple methods with the same name but different parameter lists (different types, number, or both).
+
+This enables you to create methods that perform similar tasks but with different input data.
+
+Here is an example of method overloading:
+
+For an \`int\` addition method:
+
+\`\`\`java
+public int addNumbers(int a, int b) {
+    return a + b;
+}
+\`\`\`
+
+For a \`double\` addition method:
+
+\`\`\`java
+public double addNumbers(double a, double b) {
+    return a + b;
+}
+\`\`\`
+
+Both of these methods can coexist in the same class, and the appropriate method will be called based on the argument types provided during the method call.
+
+This is done automatically by the Java compiler.
+
+\`\`\`java
+int intResult = addNumbers(5, 10); // Calls the int version
+double doubleResult = addNumbers(5.5, 10.2); // Calls the double version
+\`\`\`
+
+## Recursion
+
+Recursion is a programming technique where a method calls itself to solve a problem. A recursive method typically has two main components:
+
+- Base Case: A condition that stops the recursion to prevent infinite loops.
+- Recursive Case: The part of the method that calls itself with modified arguments to approach the base case.
+
+Here is an example of a recursive method that calculates the factorial of a number:
+
+- A \`factorial\` of a non-negative integer \`n\` is the product of all positive integers less than or equal to \`n\`.
+  - The factorial of \`0\` is defined to be \`1\`. And for any positive integer \`n\`, the factorial is \`n * (n-1) * (n-2) * ... * 1\`.
+
+\`\`\`java
+public int factorial(int n) {
+    if (n == 0) { // Base case
+        return 1;
+    } else { // Recursive case
+        return n * factorial(n - 1);
+    }
+}
+\`\`\`
+
+In this example, the \`factorial\` method calls itself with \`n - 1\` until it reaches the base case where \`n\` is \`0\`.
+You can call the \`factorial\` method like this:
+
+\`\`\`java
+int result = factorial(5);
+System.out.println("Factorial of 5 is: " + result); // Output: Factorial of 5 is: 120
+\`\`\`
+`,Le=`# Classes in Java
+
+Classes in Java are blueprints for creating objects.
+
+They _encapsulate_ data for the object and methods to manipulate that data.
+
+A class defines the _properties_ (attributes) and behaviors (methods) that the objects created from the class will have.
+
+## Encapsulation
+
+Encapsulation is a fundamental principle of object-oriented programming that restricts direct access to an object's data and methods.
+
+In Java, this is typically achieved by declaring class variables as \`private\` and providing \`public\` getter and setter methods to access and modify those variables.
+
+- Private variables cannot be accessed directly from outside the class.
+
+- Getter methods allow you to retrieve the value of a private variable.
+- Setter methods allow you to modify the value of a private variable.
+
+- Public methods can be accessed from outside the class.
+
+## Scope
+
+Scope refers to the visibility and lifetime of variables and methods within a class.
+
+### **Instance Variables**
+
+These are variables declared within a class but outside any method.
+
+They are associated with an instance of the class and can be accessed by all methods within the class.
+
+### **Local Variables**
+
+These are variables declared within a method.
+
+They are only accessible within that method and are created when the method is called and destroyed when the method exits.
+
+### **Class Variables (Static Variables)**
+
+These are variables declared with the \`static\` keyword within a class but outside any method.
+
+They are shared among all instances of the class and can be accessed without creating an instance of the class.
+
+### **Method Variables**
+
+These are variables declared as parameters in method definitions.
+
+They are only accessible within the method and are created when the method is called and destroyed when the method exits.
+
+- similar to local variables but specifically used to pass values into methods as a parameter.
+
+## Creating a Class
+
+To create a class in Java, you use the \`class\` keyword followed by the class name and a pair of curly braces \`{}\` to define the body of the class.
+
+- Naming the class should follow the PascalCase convention, where each word starts with a capital letter.
+- A class should be defined in its own file with the same name as the class and a \`.java\` extension.
+- A class needs to be declared as \`public\` if it is to be accessed from other classes, and have a constructor method to initialize the object's properties.
+
+### The \`this\` Keyword
+
+The \`this\` keyword is a reference variable in Java that refers to the current object.
+
+Look at the example below using \`this\` to call its own instance variables.
+
+Example of a simple class definition:
+
+\`\`\`java
+public class Car {
+    // Instance variables
+    private String color;
+    private String model;
+    private int year;
+    // Constructor
+    public Car(String color, String model, int year) {
+        this.color = color;
+        this.model = model;
+        this.year = year;
+    }
+    // Getter methods
+    public String getColor() {
+        return color;
+    }
+    public String getModel() {
+        return model;
+    }
+    public int getYear() {
+        return year;
+    }
+}
+\`\`\`
+
+Notice the instance variables \`color\`, \`model\`, and \`year\` are declared as \`private\`, meaning they cannot be accessed directly from outside the class.
+
+We can provide a \`getter\` method for each variable to allow controlled access to their values like the \`getColor()\`, \`getModel()\`, and \`getYear()\` methods.
+
+We can also provide \`setter\` methods to allow controlled modification of these variables if needed.
+
+## Creating an Object
+
+An object is an instance of a class.
+
+To create an object, you use the \`new\` keyword followed by the class constructor.
+
+Example of creating an object of the \`Car\` class:
+
+\`\`\`java
+Car myCar = new Car("Red", "Toyota", 2020);
+\`\`\`
+
+In this example, we create a new \`Car\` object named \`myCar\` with the color "Red", model "Toyota", and year 2020.
+
+You can then access the object's properties using the getter methods:
+
+\`\`\`java
+System.out.println("Car Model: " + myCar.getModel());
+System.out.println("Car Color: " + myCar.getColor());
+System.out.println("Car Year: " + myCar.getYear());
+\`\`\`
+
+### Setter Methods
+
+If you want to modify the properties of an object after it has been created, you can use setter methods.
+Here is an example of adding setter methods to the \`Car\` class:
+
+\`\`\`java
+    // Setter methods
+    public void setColor(String color) {
+        this.color = color;
+    }
+    public void setModel(String model) {
+        this.model = model;
+    }
+    public void setYear(int year) {
+        this.year = year;
+    }
+\`\`\`
+
+You can then use these setter methods to change the properties of the \`myCar\` object:
+
+\`\`\`java
+myCar.setColor("Blue");
+System.out.println("Updated Car Color: " + myCar.getColor());
+\`\`\`
+
+This will change the color of \`myCar\` to "Blue" and print the updated color.
+
+## Static Keyword and Variables
+
+The \`static\` keyword in Java is used to indicate that a particular member (variable or method) belongs to the class itself rather than to any specific instance of the class.
+
+### Static Variables
+
+Static variables are shared among all instances of a class.
+
+They are declared using the \`static\` keyword and can be accessed without creating an instance of the class.
+
+Example of a static variable:
+
+\`\`\`java
+public class MathUtil {
+
+    public static double pi = 3.14159; // Static variable for pi
+
+    public static int add(int a, int b) {
+        return a + b; // Static method to add two numbers
+    }
+    public static double getCircumference(double radius) {
+        return 2 * pi * radius; // Static method to calculate circumference
+    }
+}
+\`\`\`
+
+In this example, the \`pi\` variable is static as well as public, so it is shared among all instances of the \`MathUtil\` class.
+
+You can access the static variable and methods directly using the class name without creating an instance:
+
+\`\`\`java
+// Accessing static variable 'pi'
+double area = MathUtil.pi * 5 * 5;
+System.out.println("Area: " + area);
+
+// Accessing static methods 'add' and 'getCircumference'
+int sum = MathUtil.add(10, 20);
+System.out.println("Sum: " + sum);
+
+double circumference = MathUtil.getCircumference(5.0);
+System.out.println("Circumference: " + circumference);
+\`\`\`
+
+This particular class also has static methods \`add\` and \`getCircumference\` that can be called without creating an instance of the class.
+
+This is also a special kind of class called a _utility_ class, which is a class that only contains static methods and variables and is not meant to be instantiated with \`new\`.
+
+## Creating a Main Method
+
+For testing purposes, you can create a \`main\` method to instantiate and interact with your classes.
+
+Example of a \`main\` method to test the \`Car\` class:
+
+\`\`\`java
+public class Car {
+    // Instance variables
+    private String color;
+    private String model;
+    private int year;
+    // Constructor
+    public Car(String color, String model, int year) {
+        this.color = color;
+        this.model = model;
+        this.year = year;
+    }
+    // Getter methods
+    public String getColor() {
+        return color;
+    }
+    public String getModel() {
+        return model;
+    }
+    public int getYear() {
+        return year;
+    }
+    // Setter methods
+    public void setColor(String color) {
+        this.color = color;
+    }
+    public void setModel(String model) {
+        this.model = model;
+    }
+    public void setYear(int year) {
+        this.year = year;
+    }
+    // Main method for testing
+    public static void main(String[] args) {
+        // Creating an object of the Car class
+        Car myCar = new Car("Red", "Toyota", 2020);
+        // Accessing object properties using getter methods
+        System.out.println("Car Model: " + myCar.getModel());
+        System.out.println("Car Color: " + myCar.getColor());
+        System.out.println("Car Year: " + myCar.getYear());
+        // Modifying object properties using setter methods
+        myCar.setColor("Blue");
+        System.out.println("Updated Car Color: " + myCar.getColor());
+    }
+}
+\`\`\`
+
+In this example, the \`Main\` class contains the \`main\` method, which is the starting point of the program.
+
+After compiling both the \`Car\` and \`Main\` classes, you can run the \`Main\` class to see the output of the program.
+`,Re=`# Inheritance and \`super\` in Java
+
+Inheritance is a key feature of object-oriented programming that allows a new class to inherit properties and methods from an existing class.
+
+- This promotes code reusability and establishes a hierarchical relationship between classes.
+
+When a class _inherits_ from another class, it is called a _subclass_ (or derived class), and the class it inherits from is called a _superclass_ (or base class).
+
+The \`extends\` keyword is used to create a subclass that inherits from a superclass.
+
+The \`super\` keyword is used to refer to the immediate parent class of a subclass.
+
+It is commonly used in two main scenarios:
+
+- to call a parent class constructor
+- and to access parent class methods and variables.
+
+## Extending a Class
+
+Let's say we have a base class called \`Animal\`:
+
+\`\`\`java
+public class Animal {
+    private String name;
+    public Animal(String name) {
+        this.name = name;
+    }
+    public void makeSound() {
+        System.out.println("Some generic animal sound");
+    }
+}
+\`\`\`
+
+Now, we can create a subclass called \`Dog\` that extends the \`Animal\` class:
+
+First, import the \`Animal\` class if it's in a different package:
+
+\`\`\`java
+import your.package.name.Animal;
+\`\`\`
+
+Then, use the \`extends\` keyword to create the subclass extending the \`Animal\` class:
+
+- the \`super\` keyword is used in the \`Dog\` constructor to call the parent class (\`Animal\`) constructor and initialize the \`name\` property.
+
+- the \`@override\` annotation indicates that the \`makeSound\` method in the \`Dog\` class is overriding the method from the \`Animal\` class.
+
+\`\`\`java
+public class Dog extends Animal {
+    public Dog(String name) {
+        super(name); // Calling the parent class constructor
+    }
+    @Override
+    public void makeSound() {
+        super.makeSound(); // Optionally calling the parent class method
+        System.out.println("Bark");
+    }
+}
+\`\`\`
+
+## Polymorphism through Inheritance
+
+Polymorphism is a concept in object-oriented programming that allows methods to do different things based on the object that it is acting upon.
+
+In the context of inheritance, polymorphism allows a subclass to provide a specific implementation of a method that is already defined in its superclass.
+
+In the example above, the \`Dog\` class overrides the \`makeSound\` method of the \`Animal\` class to provide a specific sound for dogs.
+
+When you call the \`makeSound\` method on an \`Animal\` reference that points to a \`Dog\` object, the overridden method in the \`Dog\` class is executed:
+
+\`\`\`java
+Animal myDog = new Dog("Buddy");
+myDog.makeSound(); // Output: Some generic animal sound
+                   //         Bark
+\`\`\`
+
+This demonstrates polymorphism, as the same method call behaves differently based on the actual object type (\`Dog\` in this case) rather than the reference type (\`Animal\`).
+`,ze=`# Comiling Java into Usable Programs
+
+After writing your Java code in \`.java\` files, you need to compile them into bytecode that the Java Virtual Machine (JVM) can execute. This bytecode is stored in \`.class\` files.
+
+## Installing the JDK
+
+To compile Java programs, you need to have the Java Development Kit (JDK) installed on your machine. You can download the JDK from the official Oracle website or use a package manager suitable for your operating system.
+
+On linux, you can install OpenJDK using your package manager. For example, on Ubuntu, you can run:
+
+\`\`\`bash
+sudo apt update
+sudo apt install openjdk-11-jdk # Install OpenJDK 11, or whatever version you need/prefer
+\`\`\`
+
+## The \`javac\` Compiler
+
+The Java compiler, \`javac\`, is used to compile Java source files into bytecode. You can run the \`javac\` command from the command line or terminal.
+
+To compile a Java file, use the following command:
+
+\`\`\`bash
+javac YourFileName.java
+\`\`\`
+
+If this command is successful, it will generate a \`YourFileName.class\` file in the same directory.
+
+If it fails, it will display error messages indicating what went wrong in your code.
+
+## Running the Compiled Program
+
+Once you have compiled your Java program, you can run it using the \`java\` command followed by the class name (without the \`.class\` extension).
+
+\`\`\`bash
+java YourFileName
+\`\`\`
+
+This command will start the Java Virtual Machine and execute the \`main\` method of the specified class.
+Make sure that the class you are trying to run contains a \`main\` method defined as follows:
+
+\`\`\`java
+public static void main(String[] args) {
+    // Your code here
+}
+\`\`\`
+`,Be=`# Packages and Imports
+
+In Java, packages are used to group related classes and interfaces together, providing a namespace management system that helps avoid naming conflicts.
+
+Imports are used to bring classes and interfaces from other packages into the current file, allowing you to use them without needing to specify their full package names.
+
+## Creating Packages
+
+To create a package, you use the \`package\` keyword at the very top of your Java source file, followed by the package name. Package names typically follow a hierarchical naming convention using lowercase letters and dots to separate different levels.
+
+Here is an example of how to declare a package:
+
+\`\`\`java
+package com.example.myapp;
+\`\`\`
+
+The folder structure of your project should reflect the package hierarchy. For example, the above package declaration would correspond to a directory structure like this:
+
+\`\`\`
+src/
+└── com/
+    └── example/
+        └── myapp/
+            └── MyClass.java
+\`\`\`
+
+## Importing Packages
+
+To use classes and interfaces from other packages, you need to import them using the \`import\` statement. You can import specific classes or entire packages.
+Here are some examples of import statements:
+
+\`\`\`java
+import java.util.ArrayList; // Importing a specific class
+import java.util.*;         // Importing all classes from the java.util package
+\`\`\`
+
+Java also provides a way to import static members (fields and methods) of a class using the \`import static\` statement:
+
+\`\`\`java
+import static java.lang.Math.PI; // Importing the static field PI from Math class
+import static java.lang.Math.*;  // Importing all static members from Math class
+\`\`\`
+
+## Using Imported Classes
+
+Once you have imported a class or package, you can use the classes and interfaces defined within them directly in your code without needing to specify their full package names.
+
+Here is an example of using the \`ArrayList\` class from the \`java.util\` package:
+
+\`\`\`java
+import java.util.ArrayList;
+public class MyApp {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        list.add("World");
+        System.out.println(list);
+    }
+}
+\`\`\`
+`,Ve=`# Interfaces and Abstract Classes in Java
+
+Abstraction is a core principle of object-oriented programming that allows you to define common behaviors and properties for related classes while hiding the implementation details.
+
+## Why Use Interfaces and Abstract Classes?
+
+They help in designing flexible and maintainable code by providing a way to define _contracts_ for classes without dictating how those contracts should be fulfilled.
+
+A **contract** specifies what methods a class must implement, ensuring consistency across different classes that share similar behaviors.
+
+In Java, both interfaces and abstract classes are used to achieve abstraction, but they have some key differences:
+
+## Abstract Classes
+
+An abstract class is a class that cannot be instantiated on its own and is meant to be subclassed.
+
+It can contain both abstract methods (without implementations) and concrete methods (with implementations), as well as instance variables.
+
+Example of an abstract class:
+
+- the \`abstract\` keyword is used to declare the class as abstract
+
+\`\`\`java
+public abstract class Animal {
+
+    // Instance variable, these will be inherited by subclasses
+    private String name;
+    // Constructor
+    public Animal(String name) {
+        this.name = name;
+    }
+    // Concrete method
+    public String getName() {
+        return name;
+    }
+    // Abstract method
+    public abstract void makeSound(); // abstract method
+}
+\`\`\`
+
+## Implementing Abstract Classes
+
+To use an abstract class, you need to create a subclass that extends the abstract class and provides implementations for all its abstract methods.
+
+\`\`\`java
+public class Dog extends Animal {
+    // Constructor extending the abstract class constructor with super()
+    public Dog(String name) {
+        super(name);
+    }
+    // Overriding the abstract method "makeSound"
+    @Override
+    public void makeSound() {
+        System.out.println("Bark");
+    }
+}
+\`\`\`
+
+## Interfaces
+
+An interface is a reference type in Java that defines a contract for classes that implement it. It can contain method signatures (without implementations), default methods (with implementations), static methods, and constants (static final variables).
+
+Key characteristics of interfaces:
+
+- A class can implement multiple interfaces, allowing for multiple inheritance of type.
+- All methods in an interface are implicitly public and abstract (except for default and static methods).
+- Interfaces cannot have instance variables; they can only have constants.
+
+Example of an interface:
+
+\`\`\`java
+public interface Animal {
+    void makeSound(); // abstract method
+
+    default void sleep() { // default method
+        System.out.println("Sleeping...");
+    }
+}
+\`\`\`
+
+### Functional Interfaces
+
+An interface with a single abstract method is called a functional interface.
+
+Functional interfaces can be implemented using lambda expressions, providing a concise way to represent single-method interfaces.[Learn about lambda expressions here](./17-streams-and-lambda-expressions.md).
+`,He=`# Collections
+
+Collections in Java are data structures that allow you to store, organize, and manipulate groups of objects.
+
+The Java Collections Framework provides a set of classes and interfaces to work with different types of collections, such as lists, sets, and maps.
+
+## Common Collection Types
+
+- **List**: An ordered collection that allows duplicate elements. Examples include \`ArrayList\` and \`LinkedList\`.
+- **Set**: A collection that does not allow duplicate elements. Examples include \`HashSet\` and \`TreeSet\`.
+- **Map**: A collection that stores key-value pairs, where each key is unique. Examples include \`HashMap\` and \`TreeMap\`.
+
+## Using Collections
+
+To use collections in Java, you need to import the relevant classes from the \`java.util\` package. Here are some examples of how to create and use different types of collections:
+
+\`\`\`java
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.HashMap;
+\`\`\`
+
+## Lists
+
+Lists are ordered collections that allow duplicate elements. You can create a list using the \`ArrayList\` class:
+
+\`\`\`java
+ArrayList<String> fruits = new ArrayList<>();
+fruits.add("Apple");
+fruits.add("Banana");
+fruits.add("Apple"); // Duplicate element allowed
+System.out.println(fruits); // Output: [Apple, Banana, Apple]
+\`\`\`
+
+## Sets
+
+Sets are collections that do not allow duplicate elements. You can create a set using the \`HashSet\` class:
+
+\`\`\`java
+HashSet<String> uniqueFruits = new HashSet<>();
+uniqueFruits.add("Apple");
+uniqueFruits.add("Banana");
+uniqueFruits.add("Apple"); // Duplicate element ignored
+System.out.println(uniqueFruits); // Output: [Apple, Banana]
+\`\`\`
+
+## Maps
+
+Maps store key-value pairs, where each key is unique. You can create a map using the \`HashMap\` class:
+
+\`\`\`java
+HashMap<String, Integer> fruitPrices = new HashMap<>();
+fruitPrices.put("Apple", 2);
+fruitPrices.put("Banana", 1);
+fruitPrices.put("Apple", 3); // Update value for key "Apple"
+System.out.println(fruitPrices); // Output: {Apple=3, Banana=1}
+\`\`\`
+
+## Iterating Over Collections
+
+You can iterate over collections using enhanced \`for\` loops or iterators. Here’s an example of iterating over a list:
+
+\`\`\`java
+for (String fruit : fruits) {
+    System.out.println(fruit);
+}
+\`\`\`
+
+To iterate over a map, you can use the \`entrySet()\` method:
+
+- use the \`entry.getKey()\` and \`entry.getValue()\` methods to access the key and value of each entry in the map.
+
+\`\`\`java
+for (Map.Entry<String, Integer> entry : fruitPrices.entrySet()) {
+    System.out.println(entry.getKey() + ": " + entry.getValue());
+}
+\`\`\`
+
+## Checking Collection Size and Emptiness
+
+You can check the size of a collection using the \`size()\` method (returns \`int\`) and whether it is empty using the \`isEmpty()\` method (returns \`boolean\`):
+
+\`\`\`java
+System.out.println("Number of fruits: " + fruits.size()); // Output: Number of fruits: 3
+System.out.println("Is the set empty? " + uniqueFruits.isEmpty()); // Output: Is the set empty? false
+\`\`\`
+
+## Removing Elements
+
+You can remove elements from collections using methods like \`remove()\` for lists and sets, and \`remove(key)\` for maps:
+
+\`\`\`java
+fruits.remove("Banana"); // Removes "Banana" from the list
+uniqueFruits.remove("Apple"); // Removes "Apple" from the set
+fruitPrices.remove("Banana"); // Removes the entry with key "Banana" from the map
+\`\`\`
+
+## Adding All Elements from Another Collection
+
+You can add all elements from one collection to another using the \`addAll()\` method.
+
+This combines the elements of two collections to the collection it was called on (the collection before the \`.\`) without altering the collection passed as an argument.
+
+Here's an example:
+
+\`\`\`java
+ArrayList<String> moreFruits = new ArrayList<>();
+moreFruits.add("Orange");
+moreFruits.add("Grapes");
+
+fruits.addAll(moreFruits);
+System.out.println(fruits); // Output: [Apple, Banana, Apple, Orange, Grapes]
+\`\`\`
+`,Ue=`# Inner Classes
+
+Similar to how classes can extend a superclass or implement interfaces, Java also allows you to define classes within other classes, known as inner classes.
+
+Inner classes can be useful for logically grouping classes that are only used in one place, increasing encapsulation, and improving code organization.
+
+Unlike regular classes, inner classes have access to the members (including private members) of the outer class, and they can also be set to \`private\`, \`protected\`, or \`public\`, wheras regular classes can only have package-private or public access.
+
+## Types of Inner Classes
+
+There are several types of inner classes in Java:
+
+- **Private Inner Classes**: These are inner classes declared with the \`private\` access modifier. They can only be accessed within the outer class.
+- **Protected Inner Classes**: These inner classes are declared with the \`protected\` access modifier. They can be accessed within the same package and by subclasses of the outer class.
+- **Static Inner Classes**: These are inner classes declared with the \`static\` keyword. They do not have access to instance variables and methods of the outer class unless they have a reference to an instance of the outer class.
+- **Anonymous Classes**: These are inner classes without a name, defined and instantiated in a single expression. They are often used for implementing interfaces or extending classes in a concise way.
+
+## Example of a Private Inner Class
+
+Here's an example of a private inner class:
+
+\`\`\`java
+public class OuterBank {
+  // Outer class member
+    public String bankName;
+    // Map to hold accounts
+    private Map<String, Account> accounts = new HashMap<>();
+    // Private inner class
+    private class Account {
+      // Inner class member
+        private String accountNumber;
+        private double balance;
+        // Inner class constructor
+        public Account(String accountNumber, double startingBalance) {
+            this.accountNumber = accountNumber;
+            this.balance = startingBalance;
+        }
+    }
+    // Outer class constructor
+    public OuterBank(String bankName) {
+        this.bankName = bankName;
+    }
+    // Method to create an instance of the private inner class
+    public Account createAccount(String accountNumber, double startingBalance) {
+        // Create a new Account instance
+        Account account = new Account(accountNumber, startingBalance);
+
+        // Store the account in the map
+        this.accounts.put(accountNumber, account);
+        // Return the created account
+        return account;
+    }
+}
+
+\`\`\`
+
+Here we created a public outer class \`OuterBank\` with a private inner class \`Account\`.
+
+The \`Account\` class is private and can only be accessed within the \`OuterBank\` class.
+
+The \`createAccount\` method in the outer class creates and returns an instance of the private inner class \`Account\`.
+
+## Example of a Static Inner Class
+
+Here's an example of a static inner class:
+
+\`\`\`java
+public class Utils {
+    // Static inner class
+    public static class String {
+        // Static method in the inner class
+        public static String reverse(String input) {
+            return new StringBuilder(input).reverse().toString();
+        }
+        public String toUpperCase(String input) {
+            return input.toUpperCase();
+        }
+    }
+    public static void main(String[] args) {
+        // Accessing the static inner class method
+        String reversed = Utils.String.reverse("Hello");
+        System.out.println(reversed); // Output: olleH
+    }
+}
+\`\`\`
+
+This is a utility class \`Utils\` that contains a static inner class \`String\` with a static method \`reverse\`.
+
+We could add on some other string utility methods to this inner class as well, or even create other static inner classes for different utilities, such as \`Math\` or \`DateTime\`.
+
+In the \`main\` method, we demonstrate how to access the static inner class method \`reverse\` without needing to create an instance of the outer class \`Utils\`.
+
+You can also create instances of static inner classes using the following syntax:
+
+\`\`\`java
+Utils.String stringUtil = new Utils.String();
+\`\`\`
+
+This creates an instance of the static inner class \`String\` from the outer class \`Utils\`.
+
+We can then call non-static methods on this instance:
+
+\`\`\`java
+String uppercased = stringUtil.toUpperCase("hello");
+System.out.println(uppercased); // Output: HELLO
+\`\`\`
+
+## Anonymous Inner Classes
+
+Anonymous inner classes are a way to define and instantiate a class at the same time, usually for implementing interfaces or extending classes in a concise manner.
+
+Here's an example of an anonymous inner class implementing an interface:
+
+\`\`\`java
+public interface Greeting {
+    void sayHello();
+}
+public class Main {
+    public static void main(String[] args) {
+        // Creating an anonymous inner class that implements the Greeting interface
+        Greeting greeting = new Greeting() {
+            @Override
+            public void sayHello() {
+                System.out.println("Hello, World!");
+            }
+        };
+        // Calling the method
+        greeting.sayHello(); // Output: Hello, World!
+    }
+}
+\`\`\`
+
+We didn't create a new named class that implements the \`Greeting\` interface; instead, we defined it inline as an anonymous inner class, using the \`new\` keyword followed by the interface name and a class body, and using the \`@Override\` annotation to implement the \`sayHello\` method.
+`,We=`# Streams and Lambda Expressions in Java
+
+**Streams** are a powerful feature in Java that allows for functional-style operations on collections of data.
+They provide a way to process sequences of elements (like collections, arrays, etc.) in a declarative manner.
+
+**Lambda Expressions** provide a way to implement functional interfaces in a more concise manner, often replacing the need for anonymous classes.
+
+## Streams
+
+Streams support various operations, including:
+
+- **Filtering**: Selecting elements based on a condition, and filtering out unwanted elements.
+- **Mapping**: Transforming elements from one form to another.
+- **Reducing**: Combining elements to produce a single result.
+
+### Filtering with Streams
+
+Here's an example of filtering a list of integers to get only even numbers:
+
+- The \`.stream()\` method converts the list into a stream.
+  - This allows you to perform stream operations on the collection.
+- The \`.filter()\` method takes a lambda expression that defines the condition for filtering (in this case, checking if a number is even).
+  - If the returned value is \`true\`, the element is included in the resulting stream. If \`false\`, it is removed.
+- The \`.collect(Collectors.toList())\` method collects the filtered results back into a list.
+
+These methods can be chained together to create a pipeline of operations that are applied to the data in a readable and efficient way.
+
+\`\`\`java
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class Main {
+    public static void main(String[] args) {
+        List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6);
+        List<Integer> evenNumbers = numbers
+        .stream()
+        .filter(n -> n % 2 == 0)
+        .collect(Collectors.toList());
+        System.out.println(evenNumbers); // Output: [2, 4, 6]
+    }
+}
+\`\`\`
+
+### Mapping with Streams
+
+Use the \`.map()\` method to transform elements in a stream. For example, you can square each number in a list:
+
+\`\`\`java
+List<Integer> squaredNumbers = numbers
+.stream()
+.map(n -> n * n)
+.collect(Collectors.toList());
+
+System.out.println(squaredNumbers); // Output: [1, 4, 9, 16, 25, 36]
+\`\`\`
+
+### Reducing with Streams
+
+Use the \`.reduce()\` method to combine elements in a stream. For example, you can calculate the sum of all numbers in a list:
+
+\`\`\`java
+int sum = numbers
+.stream()
+.reduce(0, (a, b) -> a + b);
+System.out.println(sum); // Output: 21
+\`\`\`
+
+## Functional Interfaces
+
+A functional interface is an interface that contains exactly one abstract method.
+
+They can be implemented using lambda expressions, providing a concise way to represent single-method interfaces.
+
+Here is an example of a functional interface:
+
+\`\`\`java
+@FunctionalInterface
+public interface Greeting {
+    void sayHello(); // single abstract method
+}
+\`\`\`
+
+- The \`@FunctionalInterface\` annotation is optional but recommended, as it indicates that the interface is intended to be a functional interface and helps the compiler enforce this constraint.
+
+If using an anonymous inner class to implement the \`Greeting\` interface, it would look like this:
+
+\`\`\`java
+public class Main {
+    public static void main(String[] args) {
+        // Creating an anonymous inner class that implements the Greeting interface
+        Greeting greeting = new Greeting() {
+            @Override
+            public void sayHello() {
+                System.out.println("Hello, World!");
+            }
+        };
+        // Calling the method
+        greeting.sayHello(); // Output: Hello, World!
+    }
+}
+\`\`\`
+
+## Lambda Expressions
+
+Lambda expressions provide a more concise way to implement functional interfaces (interfaces with a single abstract method) compared to anonymous inner classes.
+
+Here's an example of using a lambda expression to implement the same \`Greeting\` interface:
+
+\`\`\`java
+public class Main {
+    public static void main(String[] args) {
+        // Using a lambda expression to implement the Greeting interface
+        Greeting greeting = () -> System.out.println("Hello, World!");
+        // Calling the method
+        greeting.sayHello(); // Output: Hello, World!
+    }
+}
+\`\`\`
+
+These are like arrow functions in JavaScript, where \`()\` represents the parameters (none in this case), and \`->\` separates the parameters from the method body, removing the need for \`@Override\`, \`{}\`(curly braces) around the method body, and the class boilerplate.
+`,Ge=`# Handling Errors and Debugging in Java
+
+Errors and exceptions are inevitable in programming. Java provides a robust mechanism for handling errors through exceptions, allowing developers to manage unexpected situations gracefully.
+
+## Types of Errors
+
+1. **Compile-time Errors**: These errors occur during the compilation of the program, such as syntax errors or type mismatches.
+2. **Runtime Errors**: These errors occur during the execution of the program, such as division by zero or accessing an invalid array index.
+3. **Logical Errors**: These errors occur when the program runs without crashing but produces incorrect results due to flawed logic.
+
+## Exception Handling
+
+Java uses exceptions to handle runtime errors. An exception is an event that disrupts the normal flow of a program's execution.
+
+Java provides a built-in mechanism to catch and handle these exceptions using \`try\`, \`catch\`, \`finally\`, \`throw\`, and \`throws\` keywords.
+
+### The \`try\` and \`catch\` Blocks
+
+The \`try\` block contains code that might throw an exception, while the \`catch\` block contains code to handle the exception.
+
+\`\`\`java
+try {
+    int result = 10 / 0; // This will throw an ArithmeticException
+} catch (ArithmeticException e) {
+    System.out.println("Error: Division by zero is not allowed.");
+}
+\`\`\`
+
+In this example, if a division by zero occurs, the \`catch\` block will handle the \`ArithmeticException\` and print an error message instead of crashing the program.
+
+#### Catching Multiple Exceptions
+
+You can have multiple \`catch\` blocks to handle different types of exceptions:
+
+\`\`\`java
+try {
+    int[] numbers = {0, 1, 2, 3,};
+
+    System.out.println(numbers[5]); // This will throw an ArrayIndexOutOfBoundsException
+
+    int secondDividedByFirst = numbers[1] / numbers[0]; // This will throw an ArithmeticException
+
+} catch (ArithmeticException e) {
+    System.out.println("Error: Division by zero is not allowed.");
+
+} catch (ArrayIndexOutOfBoundsException e) {
+    System.out.println("Error: Array index is out of bounds.");
+
+}
+\`\`\`
+
+#### Stack Tracing
+
+A **stack trace** provides detailed information about the sequence of method calls that led to an exception.
+
+When an exception is thrown, Java provides a stack trace that shows the sequence of method calls that led to the exception.
+
+You can print the stack trace using the \`printStackTrace()\` method:
+
+\`\`\`java
+try {
+    int result = 10 / 0; // This will throw an ArithmeticException
+} catch (ArithmeticException e) {
+    e.printStackTrace(); // Prints the stack trace to the console
+}
+\`\`\`
+
+It will look something like this:
+
+\`\`\`
+java.lang.ArithmeticException: / by zero
+    at Main.main(Main.java:5)
+\`\`\`
+
+### The \`finally\` Block
+
+The \`finally\` block is optional and will always execute after the \`try\` and \`catch\` blocks, regardless of whether an exception was thrown or caught. It is typically used for cleanup activities, such as closing resources.
+
+\`\`\`java
+int numerator = 10;
+int denominator = 0;
+try {
+    int result = numerator / denominator;
+} catch (ArithmeticException e) {
+    System.out.println("Error: Division by zero is not allowed.");
+} finally {
+    System.out.println("Execution of the try-catch block is complete.");
+}
+\`\`\`
+
+### Throwing Exceptions
+
+You can throw exceptions explicitly using the \`throw\` keyword.
+
+This is useful when you want to signal that an error condition has occurred, with custom logic.
+
+\`\`\`java
+public void checkAge(int age) {
+    if (age < 18) {
+        throw new IllegalArgumentException("Age must be at least 18.");
+    }
+    System.out.println("Age is valid.");
+}
+\`\`\`
+
+Throwing an exception will immediately terminate the current method and propagate the exception to the caller, so the \`System.out.println("Age is valid.")\` line will not execute if the exception is thrown.
+
+### Declaring Exceptions with \`throws\`
+
+If a method can throw a checked exception, it must declare this using the \`throws\` keyword in its method signature.
+
+\`\`\`java
+public void readFile(String filePath) throws IOException {
+    FileReader file = new FileReader(filePath);
+    BufferedReader fileInput = new BufferedReader(file);
+
+    // Read file content
+    String line;
+    while ((line = fileInput.readLine()) != null) {
+        System.out.println(line);
+    }
+    fileInput.close();
+}
+\`\`\`
+
+In this example, the \`readFile\` method declares that it can throw an \`IOException\`. The caller of this method must handle or declare this exception.
+
+## Debugging Techniques
+
+Debugging is the process of identifying and fixing errors or bugs in your code. Here are some common debugging techniques in Java:
+
+1. **Using a Logger**: Use logging frameworks like \`java.util.logging\` or \`Log4j\` to log messages at different levels (INFO, DEBUG, ERROR) to help trace the program's execution flow.
+2. **Print Statements**: Insert \`System.out.println()\` statements at critical points in your code to display variable values and program state.
+3. **Using a Debugger**: Most IDEs (like IntelliJ IDEA, Eclipse) come with built-in debuggers that allow you to set breakpoints, step through code, and inspect variable values at runtime.
+4. **Unit Testing**: Write unit tests using frameworks like JUnit to test individual components of your code and ensure they work as expected.
+5. **Code Reviews**: Have peers review your code to catch potential issues and suggest improvements.
+
+## Using the Java Logging Framework
+
+Java provides a built-in logging framework in the \`java.util.logging\` package that allows you to log messages for debugging and monitoring purposes.
+
+Similar to print statements, logging provides insights into the application's flow and state, but with more flexibility and control, like printing messages at different severity levels and configuring output destinations like a file.
+
+#### Importing the Logging Package
+
+First, import the logging package:
+
+\`\`\`java
+import java.util.logging.Logger;// The Logger class
+import java.util.logging.Level;// The Level class for defining logging levels
+import java.util.logging.FileHandler;// The file handler to write logs to a file
+import java.util.logging.SimpleFormatter;// The simple formatter to format log messages
+\`\`\`
+
+#### Creating an Instance of Logger
+
+Next, create an instance of the Logger:
+
+\`\`\`java
+Logger logger = Logger.getLogger(Main.class.getName());
+\`\`\`
+
+#### Logging Messages
+
+To log messages, call the appropriate logging method:
+
+- You can use different logging levels such as \`Level.INFO\`, \`Level.WARNING\`, \`Level.SEVERE\`, etc., to categorize your log messages based on their severity.
+
+\`\`\`java
+logger.info("This is an info message.");
+logger.warning("This is a warning message.");
+logger.severe("This is an error message.");
+\`\`\`
+
+#### Adjusting Logging Levels
+
+You can adjust the logging level to control which messages are logged, like if you want to ignore info messages and only log warnings and errors.
+
+\`\`\`java
+logger.setLevel(Level.WARNING);
+\`\`\`
+
+- \`.setLevel(Level.WARNING)\` configures the logger to only log messages at the WARNING level and above (i.e., WARNING and SEVERE).
+
+#### Saving Logs to a File
+
+Saving logs to a file requires setting up a \`FileHandler\`:
+
+\`\`\`java
+// Create a FileHandler to write logs to a file passing a parameter for the log file name
+FileHandler fileHandler = new FileHandler("app.log");
+// Set a simple formatter to format the log messages
+fileHandler.setFormatter(new SimpleFormatter());
+// Add the file handler to the logger
+logger.addHandler(fileHandler);
+\`\`\`
+
+### Creating a Logging Utility Class
+
+To streamline logging across your application, you can create a utility class for logging:
+
+\`\`\`java
+import java.util.logging.*;
+
+public class LogUtil {
+    private static final Logger logger = Logger.getLogger(LogUtil.class.getName());
+
+    static {
+        try {
+            FileHandler fileHandler = new FileHandler("app.log", true);
+            fileHandler.setFormatter(new SimpleFormatter());
+            logger.addHandler(fileHandler);
+            logger.setLevel(Level.ALL);
+        } catch (IOException e) {
+            logger.severe("Failed to initialize logger handler.");
+        }
+    }
+
+    public static void logInfo(String message) {
+        logger.info(message);
+    }
+
+    public static void logWarning(String message) {
+        logger.warning(message);
+    }
+
+    public static void logSevere(String message) {
+        logger.severe(message);
+    }
+}
+\`\`\`
+
+You can then use this utility class throughout your application to log messages consistently:
+
+\`\`\`java
+LogUtil.logInfo("Application started.");
+LogUtil.logWarning("This is a warning message.");
+LogUtil.logSevere("This is a severe error message.");
+\`\`\`
+`,Ke=`# Testing Code in Java
+
+Testing is a crucial part of software development that helps ensure the correctness and reliability of your code. In Java, there are several approaches to testing, including:
+
+1. **Unit Testing**: This involves testing individual units or components of your code in isolation. The most popular framework for unit testing in Java is JUnit. You can write test cases to verify that your methods and classes behave as expected.
+
+2. **Integration Testing**: This type of testing focuses on verifying the interactions between different components or modules of your application to ensure they work together correctly.
+
+3. **System Testing**: This involves testing the entire system as a whole to ensure it meets the specified requirements.
+
+4. **Acceptance Testing**: This type of testing is performed to determine whether the system meets the business requirements and is ready for deployment.
+
+## Example of Unit Testing with JUnit
+
+Here is a simple example of how to write a unit test using JUnit:
+
+\`\`\`java
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+public class CalculatorTest {
+
+    @Test
+    public void testAdd() {
+        Calculator calculator = new Calculator();
+        int result = calculator.add(2, 3);
+        assertEquals(5, result); // Verify that 2 + 3 equals 5
+    }
+}
+\`\`\`
+
+In this example, we have a \`CalculatorTest\` class that contains a test method \`testAdd\`. This method creates an instance of the \`Calculator\` class, calls the \`add\` method, and uses the \`assertEquals\` method to verify that the result is as expected.
+
+To run the tests, you would typically use a build tool like Maven or Gradle, or an IDE that supports JUnit.
+
+## Integration Testing Example
+
+Integration tests can be written similarly to unit tests but focus on the interaction between multiple components. Here's a simple example:
+
+\`\`\`java
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+public class UserServiceIntegrationTest {
+    @Test
+    public void testUserCreationAndRetrieval() {
+        UserService userService = new UserService();
+        User user = new User("john_doe", "password123");
+        userService.createUser(user);
+        User retrievedUser = userService.getUser("john_doe");
+        assertTrue(retrievedUser != null); // Verify that the user was created and retrieved
+    }
+}
+\`\`\`
+
+In this example, the \`UserServiceIntegrationTest\` class tests the interaction between user creation and retrieval functionalities of the \`UserService\` class.
+
+Keep in mind that when testing, look out for edge cases and error conditions to ensure your code handles all scenarios gracefully.
+`,qe=`# Network Requests in Java
+
+To make network requests in Java, you can use the \`HttpURLConnection\` class from the \`java.net\` package for basic HTTP operations. For more advanced features, you can use the \`HttpClient\` class introduced in Java 11.
+
+This is similar to using \`fetch\` in JavaScript for making network requests with promises, albeit a bit more verbose.
+
+## Using \`HttpURLConnection\`
+
+Here is an example of how to make a simple GET request using \`HttpURLConnection\`:
+
+\`\`\`java
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.URL;
+
+public class GetDataFromAPIbyId {
+    public static void main(int id) {
+        try {
+          // Create a URL object with the target API endpoint using the id parameter
+            URL url = new URL("https://api.example.com/data/" + id);
+            // Open a connection to the URL
+            HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+            // Set the request method to GET
+            connection.setRequestMethod("GET");
+              // Get the response code
+            int responseCode = connection.getResponseCode();
+            // Check if the request was successful
+            if (responseCode == HttpURLConnection.HTTP_OK) {
+              // Read the response from the input stream
+                BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
+                String inputLine;
+                // Use StringBuilder to accumulate the response
+                StringBuilder response = new StringBuilder();
+
+                while ((inputLine = in.readLine()) != null) {
+                    response.append(inputLine);
+                }
+                in.close();
+
+                System.out.println("Response: " + response.toString());
+                // Error handling for unsuccessful requests
+            } else {
+                System.out.println("GET request failed. Response Code: " + responseCode);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
+\`\`\`
+
+Lets break down the code:
+
+- We create a \`URL\` object with the target API endpoint, appending the \`id\` parameter to the URL.
+- We open a connection to the URL using \`HttpURLConnection\`.
+- We set the request method to \`GET\`.
+- We check the response code to see if the request was successful (HTTP 200 OK).
+- If successful, we read the response using a \`BufferedReader\` and accumulate it in a \`StringBuilder\`.
+- Finally, we print the response or handle errors if the request was unsuccessful.
+
+## Using \`HttpClient\` (Java 11 and later)
+
+Here is an example of how to make a simple GET request using \`HttpClient\`:
+
+\`\`\`java
+import java.net.URI;
+import java.net.http.HttpClient;
+import java.net.http.HttpRequest;
+import java.net.http.HttpResponse;
+public class GetDataFromAPIbyId {
+    public static void main(int id) {
+        try {
+            // Create an HttpClient instance
+            HttpClient client = HttpClient.newHttpClient();
+            // Create an HttpRequest object with the target API endpoint using the id parameter
+            HttpRequest request = HttpRequest.newBuilder()
+                    .uri(URI.create("https://api.example.com/data/" + id))
+                    .GET() // Set the request method to GET
+                    .build();
+            // Send the request and get the response
+            HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
+            // Check if the request was successful
+            if (response.statusCode() == 200) {
+                System.out.println("Response: " + response.body());
+            } else {
+                System.out.println("GET request failed. Response Code: " + response.statusCode());
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
+\`\`\`
+
+In this example, we use the \`HttpClient\` class to create an HTTP client and the \`HttpRequest\` class to build a GET request to the specified API endpoint with the \`id\` parameter.
+
+- We create an \`HttpClient\` instance.
+- We build an \`HttpRequest\` object with the target URL and set the request method to \`GET\`.
+- We send the request using the \`send\` method of the \`HttpClient\`, which returns an \`HttpResponse\` object.
+- We check the status code of the response to determine if the request was successful and print the response body or handle errors accordingly.
+
+Both methods allow you to make network requests in Java, with \`HttpClient\` providing a more modern and flexible approach for handling HTTP operations.
+`,Je=`# Graphical User Interfaces (GUIs) in Java
+
+Graphical User Interfaces (GUIs) allow users to interact with applications through graphical elements such as windows, buttons, text fields, and menus. In Java, GUIs can be created using libraries such as Swing and JavaFX.
+
+## Swing
+
+Swing is a part of Java's standard library and provides a set of components for building GUIs. Here's a simple example of creating a basic Swing application:
+
+### Importing Swing Classes
+
+\`\`\`java
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+\`\`\`
+
+### JPanels and JFrames
+
+A \`JFrame\` is the main window of a Swing application, while a \`JPanel\` is a container that can hold other components. Here's how to create a simple window with a button:
+
+\`\`\`java
+public class SimpleSwingApp {
+    public static void main(String[] args) {
+        // Create a JFrame
+        JFrame frame = new JFrame("Simple Swing Application");
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setSize(300, 200);
+
+        // Create a JPanel
+        JPanel panel = new JPanel();
+
+        // Create a JButton
+        JButton button = new JButton("Click Me!");
+
+        // Add the button to the panel
+        panel.add(button);
+
+        // Add the panel to the frame
+        frame.add(panel);
+
+        // Make the frame visible
+        frame.setVisible(true);
+    }
+}
+\`\`\`
+
+#### Setting JFrame Properties
+
+The JFrame has several properties you can set, including:
+
+- Title: Set using the constructor or \`setTitle()\` method.
+  - This sets the text displayed in the title bar of the window.
+- Default Close Operation: Set using \`setDefaultCloseOperation()\`. Common options include \`JFrame.EXIT_ON_CLOSE\` to close the application when the window is closed.
+- Size: Set using the \`setSize(width, height)\` method.
+  - values are in pixels.
+- Visibility: Set using the \`setVisible(true)\` method to display the window.
+  - By default, a JFrame is not visible when created.
+  - You can also set the frame to be visible or invisible at any time using this method.
+- Layout: You can set a layout manager for the frame or panel to control the arrangement of components.
+  - Common layout managers include \`FlowLayout\`, \`BorderLayout\`, and \`GridLayout\`.
+- Resizability: You can control whether the user can resize the window using the \`setResizable(boolean)\` method.
+  - By default, a JFrame is resizable.
+- Location: You can set the initial position of the window on the screen using the \`setLocation(x, y)\` method.
+- Icon Image: You can set a custom icon for the window using the \`setIconImage(Image image)\` method.
+  - This icon appears in the title bar and taskbar, import \`java.awt.Image\` to use this feature.
+- Always on Top: You can make the window stay on top of other windows using the \`setAlwaysOnTop(boolean)\` method.
+  - You can make this adjustment based on user preferences in a settings menu.
+- Opacity: You can set the opacity of the window using the \`setOpacity(float opacity)\` method (values between 0.0f and 1.0f).
+  - This can be used to create transparent or semi-transparent windows for visual effects.
+- Undecorated: You can create a window without the title bar and borders using the \`setUndecorated(boolean)\` method.
+  - This is useful for splash screens or custom-shaped windows.
+- State: You can set the initial state of the window (e.g., maximized, minimized) using the \`setExtendedState(int state)\` method.
+  - Common states include \`JFrame.NORMAL\`, \`JFrame.ICONIFIED\`, and \`JFrame.MAXIMIZED_BOTH\`.
+- Content Pane: You can access and modify the content pane of the JFrame using the \`getContentPane()\` method.
+  - This allows you to add components directly to the content pane if needed.
+- Background Color: You can set the background color of the JFrame or JPanel using the \`setBackground(Color color)\` method.
+  - Import \`java.awt.Color\` to use this feature.
+- Font: You can set the font for components within the JFrame or JPanel using the \`setFont(Font font)\` method.
+  - Import \`java.awt.Font\` to use this feature.
+- Look and Feel: You can change the overall appearance of the Swing components using the \`UIManager.setLookAndFeel(String className)\` method.
+  - This allows you to apply different themes to your application, such as the system look and feel or custom themes.
+
+These properties allow you to customize the appearance and behavior of your Swing application windows to suit your needs.
+`,Ye=`# JavaScript Notes
 
 Welcome to the JavaScript section! Here you'll find comprehensive notes about JavaScript programming.
 
@@ -4445,7 +6253,7 @@ Some other useful methods of the \`console\` object include:
 - \`console.info()\`: Outputs an informational message to the console.
 - \`console.debug()\`: Outputs a debug message to the console.
 - \`console.clear()\`: Clears the console.
-`,Pe=`# Variables and Data Types in JavaScript
+`,Xe=`# Variables and Data Types in JavaScript
 
 A **variable** is a named container used to store data values. In JavaScript, you can declare variables using three keywords: \`var\`, \`let\`, and \`const\`. Each has its own characteristics and scope rules.
 
@@ -4577,7 +6385,7 @@ let b = 10;
 \`\`\`
 
 #### This is one of the reasons why \`let\` and \`const\` are preferred over \`var\` in modern JavaScript, as the temporal dead zone helps catch errors related to variable usage before declaration.
-`,Fe='# Operators in JavaScript\n\nOperators are special symbols or keywords in JavaScript that perform operations on operands (values or variables). They are used to manipulate data and perform calculations.\nThey are similar to most other commone programming languages.\n\n## Types of Operators\n\nJavaScript provides several types of operators, including:\n\n- Arithmetic Operators\n- Comparison Operators\n- Logical Operators\n- Assignment Operators\n\n## Arithmetic Operators\n\nArithmetic operators are used to perform mathematical operations.\n\n### Common arithmetic operators:\n\n- `+` : Addition\n- `-` : Subtraction\n- `*` : Multiplication\n- `/` : Division\n\n### Additional arithmetic operators:\n\n- `%` : Modulus (Remainder)\n  - Example: `5 % 2` results in `1`, since 5 divided by 2 leaves a remainder of 1.\n- `**` : Exponentiation\n  - Example: `2 ** 3` results in `8`, since 2 raised to the power of 3 is 8.\n- `++` : Increment by 1\n  - Example: `let a = 5; a++;` results in `a` being `6`.\n- `--` : Decrement by 1\n  - Example: `let a = 5; a--;` results in `a` being `4`.\n\n#### Note: the increment (`++`) and decrement (`--`) operators can only be used with let and var declared variables, not with const, unless the const holds an object or array and you are modifying its properties or elements.\n\n### Syntax Using Arithmetic Operators:\n\n```javascript\nlet a = 10;\n\nlet b = 5;\n\nlet sum = a + b; // 15\n\nlet difference = a - b; // 5\n\nlet product = a * b; // 50\n\nlet quotient = a / b; // 2\n\nlet remainder = a % b; // 0\n\nlet power = a ** 2; // 100\n\na++; // a is now 11\n\nb--; // b is now 4\n```\n\n## Comparison Operators\n\nComparison operators are used to compare two values and return a boolean result (`true` or `false`).\n\n### Common comparison operators:\n\n- `==` : Equal to (loose equality)\n- `===` : Strict equal to\n- `!=` : Not equal to (loose inequality)\n- `!==` : Strict not equal to\n- `>` : Greater than\n- `<` : Less than\n- `>=` : Greater than or equal to\n- `<=` : Less than or equal to\n\n#### The `loose` tag refers to the fact that these operators perform type coercion, meaning they convert the operands to the same type before making the comparison. The `strict` tag means that no type conversion is performed, and both value and type must be the same for the comparison to return true.\n\n### Syntax Using Comparison Operators:\n\n```javascript\nlet x = 10;\n\nlet y = "10";\n\nconst areStringsEqualToNumbers = x === y; // false, because types are different\n\nconst areValuesEqual = x == y; // true, because values are equal after type coercion\n\nconst isNotEqual = x != 5; // true\n\nconst isGreaterThan = x > 5; // true\n\nconst isLessThanOrEqual = x <= 10; // true\n```\n\n### Type Coercion\n\n- The `==` and `!=` operators perform type coercion, meaning they convert the operands to the same type before making the comparison.\n- The `===` and `!==` operators do not perform type coercion and compare both value and type.\n  - It is generally recommended to use `===` and `!==` to avoid unexpected results due to type coercion.\n\n## Logical Operators\n\nLogical operators are used to combine multiple boolean expressions and return a boolean result.\n\n#### Common logical operators:\n\n- `&&` : Logical AND\n- `||` : Logical OR\n- `!` : Logical NOT\n\n#### Syntax Using Logical Operators:\n\n```javascript\nlet a = true;\n\nlet b = false;\n\nconst aAndB = a && b; // false\n\nconst aOrB = a || b; // true\n\nconst notA = !a; // false\n```\n\n## Assignment Operators\n\nAssignment operators are used to assign values to variables.\n\n#### Common assignment operators:\n\n- `=` : Simple assignment\n  - Example: `let x = 10;` assigns the value `10` to the variable `x`.\n- `+=` : Addition assignment\\\n  - Example: `x += 5;` is equivalent to `x = x + 5;`, so if `x` was `10`, it becomes `15`.\n- `-=` : Subtraction assignment\n  - Example: `x -= 3;` is equivalent to `x = x - 3;`, so if `x` was `10`, it becomes `7`.\n- `*=` : Multiplication assignment\n  - Example: `x *= 2;` is equivalent to `x = x * 2;`, so if `x` was `10`, it becomes `20`.\n- `**=` : Exponentiation assignment\n  - Example: `x **= 3;` is equivalent to `x = x ** 3;`, so if `x` was `2`, it becomes `8`.\n- `/=` : Division assignment\n  - Example: `x /= 2;` is equivalent to `x = x / 2;`, so if `x` was `10`, it becomes `5`.\n- `%=` : Modulus assignment\n  - Example: `x %= 3;` is equivalent to `x = x % 3;`, so if `x` was `10`, it becomes `1`.\n\n#### Note: Assignment operators can only be used with `let` and `var` declared variables, not with `const`, unless the `const` holds an object or array and you are modifying its properties or elements.\n',Ie=`# Conditionals
+`,Ze='# Operators in JavaScript\n\nOperators are special symbols or keywords in JavaScript that perform operations on operands (values or variables). They are used to manipulate data and perform calculations.\nThey are similar to most other commone programming languages.\n\n## Types of Operators\n\nJavaScript provides several types of operators, including:\n\n- Arithmetic Operators\n- Comparison Operators\n- Logical Operators\n- Assignment Operators\n\n## Arithmetic Operators\n\nArithmetic operators are used to perform mathematical operations.\n\n### Common arithmetic operators:\n\n- `+` : Addition\n- `-` : Subtraction\n- `*` : Multiplication\n- `/` : Division\n\n### Additional arithmetic operators:\n\n- `%` : Modulus (Remainder)\n  - Example: `5 % 2` results in `1`, since 5 divided by 2 leaves a remainder of 1.\n- `**` : Exponentiation\n  - Example: `2 ** 3` results in `8`, since 2 raised to the power of 3 is 8.\n- `++` : Increment by 1\n  - Example: `let a = 5; a++;` results in `a` being `6`.\n- `--` : Decrement by 1\n  - Example: `let a = 5; a--;` results in `a` being `4`.\n\n#### Note: the increment (`++`) and decrement (`--`) operators can only be used with let and var declared variables, not with const, unless the const holds an object or array and you are modifying its properties or elements.\n\n### Syntax Using Arithmetic Operators:\n\n```javascript\nlet a = 10;\n\nlet b = 5;\n\nlet sum = a + b; // 15\n\nlet difference = a - b; // 5\n\nlet product = a * b; // 50\n\nlet quotient = a / b; // 2\n\nlet remainder = a % b; // 0\n\nlet power = a ** 2; // 100\n\na++; // a is now 11\n\nb--; // b is now 4\n```\n\n## Comparison Operators\n\nComparison operators are used to compare two values and return a boolean result (`true` or `false`).\n\n### Common comparison operators:\n\n- `==` : Equal to (loose equality)\n- `===` : Strict equal to\n- `!=` : Not equal to (loose inequality)\n- `!==` : Strict not equal to\n- `>` : Greater than\n- `<` : Less than\n- `>=` : Greater than or equal to\n- `<=` : Less than or equal to\n\n#### The `loose` tag refers to the fact that these operators perform type coercion, meaning they convert the operands to the same type before making the comparison. The `strict` tag means that no type conversion is performed, and both value and type must be the same for the comparison to return true.\n\n### Syntax Using Comparison Operators:\n\n```javascript\nlet x = 10;\n\nlet y = "10";\n\nconst areStringsEqualToNumbers = x === y; // false, because types are different\n\nconst areValuesEqual = x == y; // true, because values are equal after type coercion\n\nconst isNotEqual = x != 5; // true\n\nconst isGreaterThan = x > 5; // true\n\nconst isLessThanOrEqual = x <= 10; // true\n```\n\n### Type Coercion\n\n- The `==` and `!=` operators perform type coercion, meaning they convert the operands to the same type before making the comparison.\n- The `===` and `!==` operators do not perform type coercion and compare both value and type.\n  - It is generally recommended to use `===` and `!==` to avoid unexpected results due to type coercion.\n\n## Logical Operators\n\nLogical operators are used to combine multiple boolean expressions and return a boolean result.\n\n#### Common logical operators:\n\n- `&&` : Logical AND\n- `||` : Logical OR\n- `!` : Logical NOT\n\n#### Syntax Using Logical Operators:\n\n```javascript\nlet a = true;\n\nlet b = false;\n\nconst aAndB = a && b; // false\n\nconst aOrB = a || b; // true\n\nconst notA = !a; // false\n```\n\n## Assignment Operators\n\nAssignment operators are used to assign values to variables.\n\n#### Common assignment operators:\n\n- `=` : Simple assignment\n  - Example: `let x = 10;` assigns the value `10` to the variable `x`.\n- `+=` : Addition assignment\\\n  - Example: `x += 5;` is equivalent to `x = x + 5;`, so if `x` was `10`, it becomes `15`.\n- `-=` : Subtraction assignment\n  - Example: `x -= 3;` is equivalent to `x = x - 3;`, so if `x` was `10`, it becomes `7`.\n- `*=` : Multiplication assignment\n  - Example: `x *= 2;` is equivalent to `x = x * 2;`, so if `x` was `10`, it becomes `20`.\n- `**=` : Exponentiation assignment\n  - Example: `x **= 3;` is equivalent to `x = x ** 3;`, so if `x` was `2`, it becomes `8`.\n- `/=` : Division assignment\n  - Example: `x /= 2;` is equivalent to `x = x / 2;`, so if `x` was `10`, it becomes `5`.\n- `%=` : Modulus assignment\n  - Example: `x %= 3;` is equivalent to `x = x % 3;`, so if `x` was `10`, it becomes `1`.\n\n#### Note: Assignment operators can only be used with `let` and `var` declared variables, not with `const`, unless the `const` holds an object or array and you are modifying its properties or elements.\n',Qe=`# Conditionals
 
 Conditionals in JavaScript are used to perform different actions based on different conditions. The primary conditional statements in JavaScript are:
 
@@ -4675,7 +6483,7 @@ switch (day) {
 
 console.log(dayName);
 \`\`\`
-`,Le='# Ternary Expressions\n\nThe ternary operator is a concise way to perform conditional evaluations in JavaScript. It is often used as a shorthand for simple `if-else` statements.\n\n### Syntax\n\n```javascript\ncondition ? expressionIfTrue : expressionIfFalse;\n```\n\n- `condition`: A boolean expression that evaluates to `true` or `false`.\n  - The condition is followed by a `?` operator.\n- `expressionIfTrue`: The expression that is executed if the condition is `true`.\n  - This is followed by a `:` operator, or another ternary expression for nested conditions.\n- `expressionIfFalse`: The expression that is executed if the condition is `false`.\n\n### Example\n\n```javascript\nlet age = 20;\nlet canVote = age >= 18 ? "Yes" : "No";\nconsole.log(canVote);\n```\n\nIn this example, the condition `age >= 18` is evaluated. Since `age` is `20`, which is greater than `18`, the expression `"Yes"` is assigned to the variable `canVote`. If `age` were less than `18`, `"No"` would be assigned instead.\n\n### Nested Ternary Operators\n\nTernary operators can be nested to handle multiple conditions, but be cautious as it can reduce code readability.\n\n```javascript\nlet score = 85;\nlet grade = score >= 90 ? "A" : score >= 80 ? "B" : score >= 70 ? "C" : "F";\nconsole.log(grade);\n```\n\nIn this example, the `score` is evaluated against multiple conditions to determine the corresponding `grade`. Since `score` is `85`, the result will be `"B"`.\n\n### When to Use\n\n- Use the ternary operator for simple conditional assignments to improve code conciseness.\n- Avoid using it for complex conditions or multiple nested ternary operators, as it can make the code harder to read and maintain. In such cases, prefer using traditional `if-else` statements.\n\nAn example of a good use case for the ternary operator is when assigning a value based on a simple condition, such as determining if a number is even or odd:\n\n```javascript\nlet number = 4;\nlet isEven = number % 2 === 0 ? "Even" : "Odd";\nconsole.log(isEven); // Output: Even\n```\n\nIn this case, the ternary operator provides a clear and concise way to assign the value of `isEven` based on whether `number` is even or odd, and is easily readable.\n',Re=`# Loops in JavaScript
+`,$e='# Ternary Expressions\n\nThe ternary operator is a concise way to perform conditional evaluations in JavaScript. It is often used as a shorthand for simple `if-else` statements.\n\n### Syntax\n\n```javascript\ncondition ? expressionIfTrue : expressionIfFalse;\n```\n\n- `condition`: A boolean expression that evaluates to `true` or `false`.\n  - The condition is followed by a `?` operator.\n- `expressionIfTrue`: The expression that is executed if the condition is `true`.\n  - This is followed by a `:` operator, or another ternary expression for nested conditions.\n- `expressionIfFalse`: The expression that is executed if the condition is `false`.\n\n### Example\n\n```javascript\nlet age = 20;\nlet canVote = age >= 18 ? "Yes" : "No";\nconsole.log(canVote);\n```\n\nIn this example, the condition `age >= 18` is evaluated. Since `age` is `20`, which is greater than `18`, the expression `"Yes"` is assigned to the variable `canVote`. If `age` were less than `18`, `"No"` would be assigned instead.\n\n### Nested Ternary Operators\n\nTernary operators can be nested to handle multiple conditions, but be cautious as it can reduce code readability.\n\n```javascript\nlet score = 85;\nlet grade = score >= 90 ? "A" : score >= 80 ? "B" : score >= 70 ? "C" : "F";\nconsole.log(grade);\n```\n\nIn this example, the `score` is evaluated against multiple conditions to determine the corresponding `grade`. Since `score` is `85`, the result will be `"B"`.\n\n### When to Use\n\n- Use the ternary operator for simple conditional assignments to improve code conciseness.\n- Avoid using it for complex conditions or multiple nested ternary operators, as it can make the code harder to read and maintain. In such cases, prefer using traditional `if-else` statements.\n\nAn example of a good use case for the ternary operator is when assigning a value based on a simple condition, such as determining if a number is even or odd:\n\n```javascript\nlet number = 4;\nlet isEven = number % 2 === 0 ? "Even" : "Odd";\nconsole.log(isEven); // Output: Even\n```\n\nIn this case, the ternary operator provides a clear and concise way to assign the value of `isEven` based on whether `number` is even or odd, and is easily readable.\n',et=`# Loops in JavaScript
 
 Loops are used in JavaScript to execute a block of code multiple times until a specified condition is met. They are essential for tasks that require repetition, such as iterating over arrays or performing actions a certain number of times.
 
@@ -4794,7 +6602,7 @@ for (value of iterable) {
 \`\`\`
 
 We will cover these loops in more detail in later notes, after we learn about objects and arrays.
-`,ze=`# Functions
+`,tt=`# Functions
 
 Functions are reusable blocks of code that perform a specific task. They can take inputs (parameters) and return an output (return value).
 
@@ -4915,7 +6723,7 @@ function factorial(n) {
 }
 console.log(factorial(5)); // Output: 120
 \`\`\`
-`,Be=`# Function Generators
+`,nt=`# Function Generators
 
 Generators are a special type of function in JavaScript that can be paused and resumed, allowing you to produce a sequence of values over time.
 
@@ -4971,7 +6779,7 @@ for (let i = 0; i < 10; i++) {
 }
 // Output: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34
 \`\`\`
-`,Ve=`# Methods
+`,rt=`# Methods
 
 In JavaScript, methods are functions that are associated with objects. They are used to define behaviors for objects and can manipulate the object's properties or perform actions related to the object.
 
@@ -5095,7 +6903,7 @@ Now you can use the \`reverse\` method on any string:
 let str = "hello";
 console.log(str.reverse()); // Output: "olleh"
 \`\`\`
-`,He=`# Template Strings
+`,it=`# Template Strings
 
 Template strings (also known as template literals) in JavaScript are a way to work with strings that allow for easier embedding of expressions and multi-line strings.
 
@@ -5153,7 +6961,7 @@ They are enclosed by backticks (\`\` \` \` \`\`) instead of single ( \`' '\`) or
    }.\`;
    console.log(membershipStatus); // Output: You are a member.
    \`\`\`
-`,Ue=`# JavaScript Built-in Functions
+`,at=`# JavaScript Built-in Functions
 
 JavaScript provides several built-in functions that are readily available for use without needing to define them yourself. These functions perform common tasks and operations, making it easier to work with data and perform calculations.
 
@@ -5322,7 +7130,7 @@ const exponent = 3;
 
 console.log(Math.pow(base, exponent)); // Output: 8
 \`\`\`
-`,We=`# Scope
+`,ot=`# Scope
 
 Scope refers to the accessibility of variables and functions in different parts of your code. In JavaScript, there are two main types of scope: global scope and local scope.
 
@@ -5414,7 +7222,7 @@ If functionVar were declared with \`let\` or \`const\`, it would not be accessib
 This is called **hoisting** where \`var\` declarations are moved to the top of their enclosing function scope during compilation.
 
 It's as if they are immediately declared at the top of the function, but not initialized until the line where they are defined is executed.
-`,Ge=`# Arrays
+`,st=`# Arrays
 
 A JavaScript **Array** is a data structure that can hold more than one value at a time. It is a list-like object used to store multiple values in a single variable.
 
@@ -5700,7 +7508,7 @@ const sortedNumbers = numbers.slice().sort(); // or use [...numbers].sort()
 console.log(sortedNumbers); // Output: [1, 2, 3, 4, 5]
 console.log(numbers); // Original array remains unchanged: [4, 2, 5, 1, 3]
 \`\`\`
-`,Ke=`# Classes
+`,ct=`# Classes
 
 In JavaScript, classes are a way to create objects and manage inheritance using a more familiar syntax compared to traditional prototype-based inheritance. Classes were introduced in ECMAScript 2015 (ES6) and provide a clearer and more concise way to define object blueprints.
 
@@ -5817,7 +7625,7 @@ console.log(employee.jobTitle); // Output: Developer
 //Accessing the greet method inherited from the Person class:
 employee.greet(); // Output: Hello, my name is Charlie and I am 28 years old.
 \`\`\`
-`,qe=`# Objects
+`,lt=`# Objects
 
 In JavaScript, an object is a collection of key-value pairs, where each key (also called a property) is a string (or symbol) and the value can be any data type, including other objects or functions. Objects are used to store and organize data in a structured way.
 
@@ -5979,7 +7787,7 @@ You can access nested object properties using dot notation or bracket notation.
 console.log(student.address.city); // Output: Wonderland
 student.address.zipCode = "54321"; // Modify nested property
 \`\`\`
-`,Je=`# Importing and Exporting JavaScript Code
+`,ut=`# Importing and Exporting JavaScript Code
 
 In JavaScript, you can organize your code into separate files and modules using the \`import\` and \`export\` statements. This allows you to reuse code across different parts of your application and maintain a cleaner codebase.
 
@@ -6111,7 +7919,7 @@ console.log(math.add(2, 3)); // Output: 5
 - Use \`import\` to bring in exported items from other modules.
 - ES6 modules use \`import\` and \`export\`, while CommonJS uses \`require\` and \`module.exports\`.
 - You can have named exports, default exports, and import all exports as an object.
-`,Ye=`# Try and Catch
+`,dt=`# Try and Catch
 
 The \`try...catch\` statement in JavaScript is used for error handling. It allows you to execute a block of code (the "try" block) and catch any errors that may occur during its execution (the "catch" block). This helps prevent your program from crashing due to unhandled exceptions.
 
@@ -6245,7 +8053,7 @@ try {
   }
 }
 \`\`\`
-`,Xe=`# Promises
+`,ft=`# Promises
 
 Promises are a way to handle asynchronous operations in JavaScript. They represent a value that may be available now, later, or never. A Promise can be in one of three states: pending, fulfilled, or rejected.
 
@@ -6437,7 +8245,7 @@ Promise.any([promise1, promise2, promise3])
     console.error(error);
   });
 \`\`\`
-`,Ze=`# JSON
+`,pt=`# JSON
 
 JSON (JavaScript Object Notation) is a lightweight data interchange format that is easy for humans to read and write, and easy for machines to parse and generate. It is commonly used for transmitting data between a server and a web application as text.
 
@@ -6586,7 +8394,7 @@ The individual objects in the JSON file can be accessed via endpoints like:
 
 - \`http://localhost:3000/posts\`
 - \`http://localhost:3000/comments\`
-`,Qe=`# Eval
+`,mt=`# Eval
 
 Eval is a built-in JavaScript function that evaluates a string as code. It can execute arbitrary code represented as a string, which can lead to security vulnerabilities and performance issues. Therefore, its use is generally discouraged unless absolutely necessary, although there are some legitimate use cases.
 
@@ -6645,7 +8453,7 @@ In most cases, there are safer and more efficient alternatives to eval:
    const greeting = \`Hello, \${name}!\`;
    console.log(greeting); // Output: Hello, Alice!
    \`\`\`
-`,$e=`# Types and Instances
+`,ht=`# Types and Instances
 
 In JavaScript, types and instances are fundamental concepts that help define the nature of data and how it behaves in the language.
 
@@ -6745,7 +8553,7 @@ const greetPerson = (obj) => {
 greetPerson(alice); // Output: Hello, Alice!
 greetPerson(notAPerson); // Output: Hello, stranger!
 \`\`\`
-`,et=`# Destructuring
+`,gt=`# Destructuring
 
 Destructuring is a convenient way to extract values from arrays or properties from objects into distinct variables. It allows for cleaner and more readable code.
 
@@ -6857,7 +8665,7 @@ function sum(...numbers) {
 console.log(sum(1, 2, 3)); // Output: 6
 console.log(sum(4, 5, 6, 7, 8)); // Output: 30
 \`\`\`
-`,tt=`# Fetch API
+`,_t=`# Fetch API
 
 The Fetch API provides a modern way to make network requests in JavaScript. It is built into most modern browsers and allows you to make HTTP requests to servers and handle responses using Promises.
 
@@ -7146,7 +8954,7 @@ export function updateUser(userId, updatedData) {
     });
 }
 \`\`\`
-`,nt=`# The DOM
+`,vt=`# The DOM
 
 The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of a document as a tree of objects, allowing programming languages like JavaScript to manipulate the content, structure, and style of web pages dynamically.
 With the DOM, you can:
@@ -7468,7 +9276,7 @@ element.addEventListener(
   true
 ); // true for capturing phase
 \`\`\`
-`,rt=`# Regular Expressions (RegEx)
+`,yt=`# Regular Expressions (RegEx)
 
 Regular expressions in JavaScript are patterns used to match character combinations in strings. They are implemented using the \`RegExp\` object or by using literal syntax.
 
@@ -7768,7 +9576,7 @@ Stops at the first possible match.
 ### Simple password validator (example pattern to refine):
 
 \`^(?=.*\\d)(?=.*[a-z])(?=.*[A-Z])[A-Za-z\\d]{6,}$\` requires at least six characters including uppercase, lowercase, and a digit.
-`,it=`# Constructors and Prototypes
+`,bt=`# Constructors and Prototypes
 
 In JavaScript, constructors are special functions used to create and initialize objects. Prototypes are a mechanism by which JavaScript objects inherit features from one another.
 
@@ -7831,7 +9639,7 @@ function Person(name) {
   };
 }
 \`\`\`
-`,at=`# Sets and Maps
+`,xt=`# Sets and Maps
 
 Sets and Maps, as well as WeakSets and WeakMaps, are built-in data structures in JavaScript that provide efficient ways to store and manage collections of data.
 
@@ -8011,7 +9819,7 @@ Same as Maps, but only objects are allowed as keys.
 - Use **Maps** when you need to store key-value pairs and want to maintain the order of insertion.
 - Use **WeakSets** when you need to store a collection of objects without preventing them from being garbage collected.
 - Use **WeakMaps** when you need to associate data with objects without preventing those objects from being garbage collected.
-`,ot=`# Writing about markdown in a markdown file
+`,St=`# Writing about markdown in a markdown file
 
 How Ironic!
 
@@ -8166,7 +9974,7 @@ Use pipes \`|\` and hyphens \`-\` to create tables.
 | -------- | -------- |
 | Cell 1   | Cell 2   |
 | Cell 3   | Cell 4   |
-`,st=`# Learn SQL 🌎
+`,Ct=`# Learn SQL 🌎
 
 ## Welcome to the SQL Learning Notes!
 
@@ -8214,7 +10022,7 @@ For more in-depth learning, consider exploring the following resources:
   Happy learning! 🚀
 
 #### Setup Guide: Follow the [Setting Up SQL 🛠️](setting-up.md) notes to install and configure SQL on your machine.
-`,ct=`# Getting started with SQL 🖥️ 🪛
+`,wt=`# Getting started with SQL 🖥️ 🪛
 
 ## Intro
 
@@ -8306,7 +10114,7 @@ The following SQL statement creates a differential back up of the database "test
 #### Tip: A differential back up reduces the back up time (since only the changes are backed up).
 
 #### Previous: Explore the SQL learning notes overview in the [Learn SQL 🌎](sql-index.md) notes to understand the structure of the SQL learning material.
-`,lt=`# Setting Up SQL 🛠️
+`,Tt=`# Setting Up SQL 🛠️
 
 Welcome to the SQL setup guide! This document will help you get started with installing and configuring SQL on your local machine or server.
 
@@ -8360,7 +10168,7 @@ If the query returns the version of your SQL database, congratulations! Your set
 
 
 #### Home: Return to the [Learn SQL 🌎](sql-index.md) main index for more SQL topics and resources.
-`,ut=`# Overview of SQL Data Types
+`,Et=`# Overview of SQL Data Types
 
 SQL data types define the kind of data that can be stored in a column of a database table. Choosing the correct data type is essential for data integrity, storage efficiency, and query performance.
 
@@ -8419,7 +10227,7 @@ Variables are used to store data values. When creating tables, you need to defin
 
 
 #### Previous: Review the [SQL Basics 📝](basics.md) notes to understand fundamental SQL concepts before diving into data types and tables.
-`,dt=`# Tables in SQL 🗄️
+`,Dt=`# Tables in SQL 🗄️
 
 to get started with tables in SQL, you first need to understand the concept of variables and datatypes in SQL.
 
@@ -8554,7 +10362,7 @@ Remeber that a column is a variable name in a table, like CustomerID or Customer
 \`SELECT\` and \`FROM\` are SQL clauses and should be written in uppercase for better readability, while \`_tablename\` should be replaced with the actual name of the table you want to query.
 
 #### Previous: Review the [SQL Data Types 📊](data-types.md) notes to understand different data types available in SQL before creating tables.
-`,ft=`# SQL Constraints 📏
+`,Ot=`# SQL Constraints 📏
 
 SQL constraints are rules applied to table columns to enforce data integrity and consistency. They help ensure that the data entered into the database adheres to specific requirements.
 
@@ -8637,7 +10445,7 @@ Useful for establishing relationships between tables, such as linking orders to 
 
 
 #### Home: Return to the [Learn SQL 🌎](sql-index.md) main index for more SQL topics and resources.
-`,pt=`# Manipulating Data in SQL 🛠️
+`,kt=`# Manipulating Data in SQL 🛠️
 
 ## The SQL INSERT INTO Statement
 
@@ -8719,7 +10527,7 @@ The following SQL statement deletes the customer with CustomerID 1:
 
 
 #### Previous: Review the [Tables in SQL 🗄️](tables.md) notes to understand how to create and define tables before manipulating data.
-`,mt=`# Advanced Manipulating Data in SQL 🛠️
+`,At=`# Advanced Manipulating Data in SQL 🛠️
 
 ## The SQL MERGE Statement
 
@@ -8780,7 +10588,7 @@ ON CONFLICT (CustomerID)
 DO UPDATE SET CustomerFirstName = EXCLUDED.CustomerFirstName, CustomerLastName = EXCLUDED.CustomerLastName;
 
 #### Tip: The UPSERT operation is useful for maintaining data integrity and avoiding duplicate records in a table.
-`,ht=`# SQLite
+`,jt=`# SQLite
 
 SQLite is a lightweight, serverless, self-contained SQL database engine. It is widely used in mobile applications, embedded systems, and for prototyping due to its simplicity and minimal setup requirements.
 
@@ -8869,7 +10677,7 @@ Once you have SQLite installed, you can use the following basic commands to inte
 - \`.tables\` - Lists all tables in the current database.
 - \`.schema tablename\` - Displays the schema (structure) of the specified table.
 - \`.exit\` - Exits the SQLite shell.
-`,gt=`# TypeScript Notes
+`,Mt=`# TypeScript Notes
 
 Welcome to the TypeScript section! Here you'll find notes about TypeScript, the typed superset of JavaScript.
 
@@ -8900,7 +10708,7 @@ age = "thirty"; // Error: Type 'string' is not assignable to type 'number'.
 ## Available Topics
 
 - [TypeScript Basics](01-typescript-basics.md) - Introduction to TypeScript fundamentals
-`,_t=`# TypeScript Basics
+`,Nt=`# TypeScript Basics
 
 Welcome to TypeScript! This guide covers the fundamentals of TypeScript, a typed superset of JavaScript.
 
@@ -9081,7 +10889,7 @@ interface Repository<T> {
   delete(id: string): void;
 }
 \`\`\`
-`,vt={"../notes/c/00-c-index.md":ee,"../notes/computer-science/00-general-knowledge.md":w,"../notes/computer-science/01-hardware.md":T,"../notes/computer-science/02-numbers.md":E,"../notes/computer-science/03-strings.md":D,"../notes/computer-science/04-math-operations.md":O,"../notes/cpp/00-cpp-index.md":k,"../notes/css/01-CSS-index.md":A,"../notes/css/02-basics.md":j,"../notes/css/03-colors.md":M,"../notes/css/04-display-property.md":N,"../notes/css/05-positioning.md":te,"../notes/css/06-selectors.md":ne,"../notes/css/07-pseudo-selectors.md":re,"../notes/css/08-specificity.md":P,"../notes/css/09-inheritance.md":F,"../notes/css/10-flexbox-basics.md":I,"../notes/css/11-grid-layouts.md":L,"../notes/css/12-form-styling.md":R,"../notes/css/13-modals.md":ie,"../notes/css/14-animations.md":ae,"../notes/css/15-themeing.md":oe,"../notes/css/16-building-a-dropdown.md":se,"../notes/git/00-git-init.md":ce,"../notes/git/01-pushing-and-pulling.md":le,"../notes/git/02-reverting-changes.md":ue,"../notes/git/03-git-branching.md":de,"../notes/git/04-rebasing.md":fe,"../notes/git/05-merging.md":pe,"../notes/git/06-remote-repositories.md":me,"../notes/home.md":he,"../notes/html/00-html-index.md":ge,"../notes/html/01-get-started-with-html.md":_e,"../notes/html/02-classes-ids-and-data-attributes.md":ve,"../notes/html/03-forms.md":ye,"../notes/html/04-html-tables.md":be,"../notes/html/05-semantic-html.md":xe,"../notes/html/06-multimedia-elements.md":Se,"../notes/html/07-html5-new-fearures.md":Ce,"../notes/html/08-accessibility.md":we,"../notes/html/09-imports-and-paths.md":Te,"../notes/html/10-styling-elements.md":Ee,"../notes/java/00-java-index.md":De,"../notes/java/01-java-basics.md":Oe,"../notes/java/02-numbers.md":ke,"../notes/java/03-characters.md":Ae,"../notes/java/04-strings.md":je,"../notes/java/05-arrays.md":Me,"../notes/javascript/00-javascript-index.md":Ne,"../notes/javascript/01-variables-and-datatypes.md":Pe,"../notes/javascript/02-operators.md":Fe,"../notes/javascript/03-conditionals.md":Ie,"../notes/javascript/04-ternary-operator.md":Le,"../notes/javascript/05-loops.md":Re,"../notes/javascript/06-functions.md":ze,"../notes/javascript/07-generators.md":Be,"../notes/javascript/08-string-methods.md":Ve,"../notes/javascript/08-template-literals.md":He,"../notes/javascript/09-built-in-functions.md":Ue,"../notes/javascript/10-scope.md":We,"../notes/javascript/11-arrays.md":Ge,"../notes/javascript/12-classes.md":Ke,"../notes/javascript/13-objects.md":qe,"../notes/javascript/14-imports-and-exports.md":Je,"../notes/javascript/15-try-catch.md":Ye,"../notes/javascript/16-promises.md":Xe,"../notes/javascript/17-JSON.md":Ze,"../notes/javascript/18-the-eval-dilemma.md":Qe,"../notes/javascript/19-types-and-instances.md":$e,"../notes/javascript/20-destructuring.md":et,"../notes/javascript/21-fetch.md":tt,"../notes/javascript/22-DOM-manipulation.md":nt,"../notes/javascript/23-regular-expressions.md":rt,"../notes/javascript/24-constructors-and-prototypes.md":it,"../notes/javascript/25-sets-and-maps.md":at,"../notes/markdown/00-markdown-cheatsheet.md":ot,"../notes/react/00-react-index.md":d,"../notes/react/01-components.md":a,"../notes/react/02-state.md":i,"../notes/react/03-conditional-rendering.md":p,"../notes/react/04-hooks.md":c,"../notes/react/05-use-effect.md":r,"../notes/react/06-use-ref.md":f,"../notes/react/07-use-context.md":u,"../notes/react/08-use-reducer.md":n,"../notes/sql/00-sql-index.md":st,"../notes/sql/01-get-started.md":ct,"../notes/sql/02-setting-up.md":lt,"../notes/sql/03-data-types.md":ut,"../notes/sql/04-tables.md":dt,"../notes/sql/05-constraints.md":ft,"../notes/sql/06-manipulating-data.md":pt,"../notes/sql/07-advanced-manipulating-data.md":mt,"../notes/sql/08-installing-sqlite.md":ht,"../notes/typescript/00-typescript-index.md":gt,"../notes/typescript/01-typescript-basics.md":_t},z={},B={};Object.entries(vt).forEach(([e,t])=>{let n=e.split(`/`),r=n[n.length-1]||``;if(n.length===3&&r===`home.md`){B[r]={content:t,section:`home`};return}if(n.length>3){let e=n[n.length-2];z[e]||(z[e]={}),z[e][r]=t,B[r]={content:t,section:e}}});const V=e=>e.replace(/^\d{2}-/,``),H=e=>V(e).replace(`.md`,``).replace(/-/g,` `).replace(/\b\w/g,e=>e.toUpperCase()),U=e=>Object.keys(z[e]||{}).sort((e,t)=>{let n=parseInt(e.match(/^\d+/)?.[0]||`999`),r=parseInt(t.match(/^\d+/)?.[0]||`999`);return n===r?e.localeCompare(t):n-r}),yt=()=>Object.keys(z),W=e=>{let t=B[e];return t?t.section:null},G=e=>{let t=W(e);if(!t)return null;let n=U(t),r=n.indexOf(e);if(r===-1||r>=n.length-1)return null;let i=n[r+1];return{filename:i,title:H(i)}},K=e=>{let t=e.replace(/^\/notes\/[^/]+\//,``).replace(/^\/notes\//,``),n=B[t];if(!n){let e=Object.keys(B).join(`, `);throw Error(`Note not found: ${t}. Available: ${e}`)}return n.content},bt=e=>{if(!e.trim())return[];let t=e.toLowerCase(),n=[];return Object.entries(B).forEach(([r,i])=>{let{content:a,section:o}=i,s=a.split(`
-`),c=[];if(s.forEach((n,r)=>{if(n.toLowerCase().includes(t)){let t=xt(n,e);c.push({context:n.trim(),lineNumber:r+1,highlightedText:t})}}),c.length>0){let e=o===`home`?{name:`Home`,emojiIcon:`🏠`}:C[o]||{name:o,icon:`📄`};n.push({filename:r,title:H(r),section:e.name,sectionIcon:`icon`in e?e.icon:null,sectionEmojiIcon:`emojiIcon`in e?e.emojiIcon:null,matches:c.slice(0,3),totalMatches:c.length})}}),n.sort((e,t)=>e.totalMatches===t.totalMatches?e.title.localeCompare(t.title):t.totalMatches-e.totalMatches)};var xt=(e,t)=>{let n=RegExp(`(${t})`,`gi`);return e.replace(n,`<mark>$1</mark>`)};const St=()=>{let e=yt(),t=[];return t.push({text:`Home`,href:`home.md`,emojiIcon:`🏠`}),e.forEach(e=>{let n=C[e.toLowerCase()],r=U(e);if(r.length>0){let i=r.map(e=>({text:Ct(e),href:e})),a=null;try{a=`icon`in n?n.icon:null}catch{a=null}let o={text:n?.name||e.charAt(0).toUpperCase()+e.slice(1),children:i};if(a&&(o.icon=a),!a)try{o.emojiIcon=`emojiIcon`in n?n.emojiIcon:`📄`}catch{o.emojiIcon=`📁`}t.push(o)}}),t};var Ct=e=>V(e).replace(`.md`,``).replace(/-/g,` `).replace(/\b\w/g,e=>e.toUpperCase());const wt=St();function Tt({onSearch:e,onClear:t,placeholder:n=`Search all notes...`}){let[r,i]=(0,y.useState)(``),[a,o]=(0,y.useState)(!1),s=(0,y.useRef)(null),c=(0,y.useRef)(null),l=(0,y.useCallback)(t=>{c.current!==null&&(window.clearTimeout(c.current),c.current=null),c.current=window.setTimeout(()=>{e(t),c.current=null},800)},[e]),u=e=>{let n=e.target.value;i(n),n.trim()?l(n):(c.current!==null&&(window.clearTimeout(c.current),c.current=null),t())},d=()=>{i(``),t(),s.current?.focus()};return(0,y.useEffect)(()=>()=>{c.current!==null&&(window.clearTimeout(c.current),c.current=null)},[]),(0,y.useEffect)(()=>{let e=e=>{(e.ctrlKey||e.metaKey)&&e.key===`k`&&(e.preventDefault(),s.current?.focus())};return document.addEventListener(`keydown`,e),()=>document.removeEventListener(`keydown`,e)},[]),(0,b.jsx)(`div`,{className:`search-bar ${a?`focused`:``}`,children:(0,b.jsxs)(`div`,{className:`search-input-container`,children:[(0,b.jsx)(`span`,{className:`search-icon`,children:`🔍`}),(0,b.jsx)(`input`,{id:`search-input`,ref:s,type:`text`,value:r,onChange:u,onKeyDown:e=>{e.key===`Escape`&&d()},onFocus:()=>o(!0),onBlur:()=>o(!1),placeholder:n,className:`search-input`}),r&&(0,b.jsx)(`button`,{onClick:d,className:`search-clear`,"aria-label":`Clear search`,children:`✕`})]})})}function Et({setCurrentNote:e,currentSection:t,currentNoteName:n,onSearch:r,onClearSearch:i,isMobile:a,rightSidebarContent:o}){let[s,c]=(0,y.useState)(null),[l,u]=(0,y.useState)(`chapters`);(0,y.useEffect)(()=>{if(t){let e=wt.findIndex(e=>{if(e.text&&t in C){let n=C[t];return e.text.includes(n.name)}return!1});e!==-1&&c(e)}},[t]);let d=e=>{c(s===e?null:e)};return(0,b.jsxs)(`div`,{className:`left-nav`,children:[a&&o&&(0,b.jsxs)(`div`,{className:`mobile-nav-toggle`,children:[(0,b.jsx)(`button`,{className:`mobile-nav-btn ${l===`chapters`?`active`:``}`,onClick:()=>u(`chapters`),children:`All Chapters`}),(0,b.jsx)(`button`,{className:`mobile-nav-btn ${l===`page`?`active`:``}`,onClick:()=>u(`page`),children:`On this page`})]}),(!a||l===`chapters`)&&(0,b.jsxs)(b.Fragment,{children:[(0,b.jsx)(Tt,{onSearch:e=>{r?.(e)},onClear:()=>{i?.()},placeholder:`Search all notes...`}),wt.map((t,r)=>{if(t.children){let i=s===r;return(0,b.jsxs)(`div`,{className:`dropdown-parent ${i?`active`:``}`,children:[(0,b.jsxs)(`div`,{className:`dropdown-title`,onClick:()=>d(r),children:[(0,b.jsx)(`span`,{className:`section-arrow`,children:i?`▼`:`▶`}),t.icon&&(0,b.jsx)(`img`,{src:t.icon,alt:`${t.text} icon`,className:`section-icon-img`}),!t.icon&&t.emojiIcon&&(0,b.jsx)(`span`,{className:`emoji-icon`,children:t.emojiIcon}),!t.icon&&!t.emojiIcon&&(0,b.jsx)(`div`,{style:{marginLeft:`20px`}}),(0,b.jsx)(`span`,{children:t.text})]}),(0,b.jsx)(`div`,{className:`dropdown-children ${i?`expanded`:`collapsed`}`,children:t.children.map((t,r)=>(0,b.jsx)(`p`,{className:`child-link ${n===t.href?`active`:``}`,onClick:()=>t.href&&e(t.href),children:t.text},r))})]},r)}else return(0,b.jsxs)(`div`,{className:`parent-link ${n===t.href?`active`:``}`,onClick:()=>t.href&&e(t.href),children:[t.icon&&(0,b.jsx)(`img`,{src:t.icon,alt:`${t.text} icon`,className:`section-icon-img`}),!t.icon&&t.emojiIcon&&(0,b.jsxs)(`span`,{className:`emoji-icon`,children:[t.emojiIcon,` `]}),(0,b.jsx)(`span`,{children:t.text})]},r)})]}),a&&l===`page`&&o&&(0,b.jsx)(`div`,{className:`mobile-page-overview`,children:o})]})}function Dt({currentNote:e,currentNoteName:t,onLoadNote:n}){let[r,i]=(0,y.useState)([]),[a,o]=(0,y.useState)(null),[s,c]=(0,y.useState)(``);(0,y.useEffect)(()=>{if(!e){i([]),o(null);return}let r=/^(#{1,6})\s+(.+)$/gm,a=[],s;for(;(s=r.exec(e))!==null;){let e=s[1].length,t=s[2].trim();if(e===4)continue;let n=t.toLowerCase().replace(/[^\w\s-]/g,``).replace(/\s+/g,`-`);a.push({id:n,text:t,level:e})}if(n){let e=G(t);e&&a.push({id:`next-lesson`,text:`Next: ${e.title}`,level:2})}i(a);let c=e.replace(/#{1,6}\s+/g,``).replace(/\[([^\]]+)\]\([^)]+\)/g,`$1`).replace(/[*_`]/g,``).trim().split(/\s+/).filter(e=>e.length>0).length,l=Math.max(1,Math.ceil(c/200)),u=e.length;o({wordCount:c,readingTime:l,characterCount:u})},[e,t,n]);let l=e=>{if(e===`next-lesson`&&n){let e=G(t);e&&n(e.filename);return}let r=document.getElementById(e);r&&(r.scrollIntoView({behavior:`smooth`,block:`start`}),c(e))};return(0,y.useEffect)(()=>{let e=()=>{let e=r.map(e=>({id:e.id,element:document.getElementById(e.id)})),t=``;for(let n of e)n.element&&n.element.getBoundingClientRect().top<=100&&(t=n.id);c(t)},t=document.querySelector(`.center.main`);if(t)return t.addEventListener(`scroll`,e),()=>t.removeEventListener(`scroll`,e)},[r]),e?(0,b.jsxs)(`div`,{className:`right-sidebar`,children:[(0,b.jsxs)(`div`,{className:`sidebar-section`,children:[(0,b.jsx)(`h3`,{children:`📊 Note Info`}),(0,b.jsxs)(`div`,{className:`note-stats`,children:[(0,b.jsxs)(`div`,{className:`stat-item`,children:[(0,b.jsx)(`span`,{className:`stat-label`,children:`📄 File:`}),(0,b.jsx)(`span`,{className:`stat-value`,children:V(t)})]}),a&&(0,b.jsxs)(b.Fragment,{children:[(0,b.jsxs)(`div`,{className:`stat-item`,children:[(0,b.jsx)(`span`,{className:`stat-label`,children:`📝 Words:`}),(0,b.jsx)(`span`,{className:`stat-value`,children:a.wordCount.toLocaleString()})]}),(0,b.jsxs)(`div`,{className:`stat-item`,children:[(0,b.jsx)(`span`,{className:`stat-label`,children:`⏱️ Read time:`}),(0,b.jsxs)(`span`,{className:`stat-value`,children:[a.readingTime,` min`]})]}),(0,b.jsxs)(`div`,{className:`stat-item`,children:[(0,b.jsx)(`span`,{className:`stat-label`,children:`🔤 Characters:`}),(0,b.jsx)(`span`,{className:`stat-value`,children:a.characterCount.toLocaleString()})]})]})]})]}),r.length>0&&(0,b.jsxs)(`div`,{className:`sidebar-section`,children:[(0,b.jsx)(`h3`,{children:`📚 Table of Contents`}),(0,b.jsx)(`nav`,{className:`toc-nav`,children:r.map((e,t)=>(0,b.jsxs)(`button`,{className:`toc-item level-${e.level} ${s===e.id?`active`:``} ${e.id===`next-lesson`?`next-lesson`:``}`,onClick:()=>l(e.id),title:e.text,children:[e.id===`next-lesson`&&(0,b.jsx)(`span`,{className:`next-lesson-icon`,children:`🚀`}),e.text]},t))})]})]}):(0,b.jsx)(`div`,{className:`right-sidebar`,children:(0,b.jsxs)(`div`,{className:`sidebar-section`,children:[(0,b.jsx)(`h3`,{children:`📖 Note Info`}),(0,b.jsx)(`p`,{className:`no-note-message`,children:`Select a note to see its table of contents and information.`})]})})}var Ot=`modulepreload`,kt=function(e){return`/code-wiki-app/`+e},At={};const jt=function(e,t,n){let r=Promise.resolve();if(t&&t.length>0){let e=document.getElementsByTagName(`link`),i=document.querySelector(`meta[property=csp-nonce]`),a=i?.nonce||i?.getAttribute(`nonce`);function o(e){return Promise.all(e.map(e=>Promise.resolve(e).then(e=>({status:`fulfilled`,value:e}),e=>({status:`rejected`,reason:e}))))}r=o(t.map(t=>{if(t=kt(t,n),t in At)return;At[t]=!0;let r=t.endsWith(`.css`),i=r?`[rel="stylesheet"]`:``;if(n)for(let n=e.length-1;n>=0;n--){let i=e[n];if(i.href===t&&(!r||i.rel===`stylesheet`))return}else if(document.querySelector(`link[href="${t}"]${i}`))return;let o=document.createElement(`link`);if(o.rel=r?`stylesheet`:Ot,r||(o.as=`script`),o.crossOrigin=``,o.href=t,a&&o.setAttribute(`nonce`,a),document.head.appendChild(o),r)return new Promise((e,n)=>{o.addEventListener(`load`,e),o.addEventListener(`error`,()=>n(Error(`Unable to preload CSS for ${t}`)))})}))}function i(e){let t=new Event(`vite:preloadError`,{cancelable:!0});if(t.payload=e,window.dispatchEvent(t),!t.defaultPrevented)throw e}return r.then(t=>{for(let e of t||[])e.status===`rejected`&&i(e.reason);return e().catch(i)})};var Mt=(0,y.lazy)(()=>jt(()=>import(`./react-markdown-DPrgH-1Q.js`),__vite__mapDeps([0,1,2,3,4,5])));function Nt({displayName:e,content:t,languageDirectory:n,styleUpNextSections:r,loadNote:i}){return(0,y.useEffect)(()=>{document.title=e?`${H(e)} - ${n||`Notes`}`:`Programming Notes`},[e,n]),(0,b.jsx)(y.Suspense,{fallback:(0,b.jsx)(x,{}),children:(0,b.jsx)(Pt,{content:t,styleUpNextSections:r,loadNote:i})})}function Pt({content:e,styleUpNextSections:t,loadNote:n}){return(0,b.jsx)(Mt,{remarkPlugins:[g,_],rehypePlugins:[m,h],components:{h1:({children:e,...t})=>(0,b.jsx)(`h1`,{...t,id:String(e)?.toLowerCase().replace(/[^\w\s-]/g,``).replace(/\s+/g,`-`),children:e}),h2:({children:e,...t})=>(0,b.jsx)(`h2`,{...t,id:String(e)?.toLowerCase().replace(/[^\w\s-]/g,``).replace(/\s+/g,`-`),children:e}),h3:({children:e,...t})=>(0,b.jsx)(`h3`,{...t,id:String(e)?.toLowerCase().replace(/[^\w\s-]/g,``).replace(/\s+/g,`-`),children:e}),h4:({children:e,...n})=>(0,b.jsx)(`h4`,{...n,id:String(e)?.toLowerCase().replace(/[^\w\s-]/g,``).replace(/\s+/g,`-`),onLoad:()=>{setTimeout(t,100)},children:e}),h5:({children:e,...t})=>(0,b.jsx)(`h5`,{...t,id:String(e)?.toLowerCase().replace(/[^\w\s-]/g,``).replace(/\s+/g,`-`),children:e}),h6:({children:e,...t})=>(0,b.jsx)(`h6`,{...t,id:String(e)?.toLowerCase().replace(/[^\w\s-]/g,``).replace(/\s+/g,`-`),children:e}),a:({href:e,children:t,...r})=>(0,b.jsx)(`a`,{href:e,onClick:t=>{if(e&&e.endsWith(`.md`)&&n){t.preventDefault();let r=e;e.includes(`/`)&&(r=e.split(`/`).pop()||e),console.log(`Internal link clicked:`,e,`-> normalized:`,r);try{n(r)}catch(e){console.error(`Failed to load note: ${r}`,e);try{n(r)}catch(e){console.error(`Failed to load note with filename: ${r}`,e),alert(`Note not found: ${r}`)}}}},className:`markdown-link`,...r,children:t}),table:({children:e,...t})=>(0,b.jsx)(`table`,{...t,className:`markdown-table`,children:e}),th:({children:e,...t})=>(0,b.jsx)(`th`,{...t,className:`markdown-th`,children:e}),td:({children:e,...t})=>(0,b.jsx)(`td`,{...t,className:`markdown-td`,children:e}),img:({src:e,alt:t,...n})=>(0,b.jsx)(`img`,{src:e?.startsWith(`/`)?`/code-wiki-app/${e.slice(1)}`:e,alt:t,style:{maxWidth:`100%`,height:`auto`,border:`1px solid #ddd`,borderRadius:`4px`,margin:`15px 0`,display:`block`},...n})},children:e})}function Ft({currentFilename:e,onLoadNote:t}){let n=G(e);return n?(0,b.jsx)(`div`,{className:`next-lesson-container`,children:(0,b.jsx)(`button`,{className:`next-lesson-button`,onClick:()=>{t(n.filename)},"aria-label":`Go to next lesson: ${n.title}`,children:(0,b.jsxs)(`div`,{className:`next-lesson-content`,children:[(0,b.jsx)(`span`,{className:`next-lesson-label`,children:`Up Next`}),(0,b.jsx)(`span`,{className:`next-lesson-title`,children:n.title}),(0,b.jsx)(`span`,{className:`next-lesson-arrow`,children:`→`})]})})}):null}function It({results:e,query:t,isLoading:n=!1,onSelectNote:r,onClose:i}){let a=e=>{r(e),i()};return t.trim()?(0,b.jsx)(`div`,{className:`search-results-overlay`,onClick:i,children:(0,b.jsxs)(`div`,{className:`search-results-container`,onClick:e=>e.stopPropagation(),children:[(0,b.jsxs)(`div`,{className:`search-results-header`,children:[(0,b.jsx)(`h3`,{children:`Search Results`}),(0,b.jsx)(`button`,{onClick:i,className:`search-results-close`,"aria-label":`Close search results`,children:`✕`})]}),n?(0,b.jsxs)(`div`,{className:`search-loading`,children:[(0,b.jsx)(`div`,{className:`search-spinner`}),(0,b.jsx)(`span`,{children:`Searching...`})]}):(0,b.jsxs)(b.Fragment,{children:[(0,b.jsx)(`div`,{className:`search-results-info`,children:e.length===0?(0,b.jsxs)(`span`,{children:[`No results found for "`,t,`"`]}):(0,b.jsxs)(`span`,{children:[`Found `,e.length,` `,e.length===1?`result`:`results`,` for "`,t,`"`]})}),(0,b.jsx)(`div`,{className:`search-results-list`,children:e.map((e,t)=>(0,b.jsxs)(`div`,{className:`search-result-card`,onClick:()=>a(e.filename),children:[(0,b.jsxs)(`div`,{className:`search-result-header`,children:[(0,b.jsxs)(`div`,{className:`search-result-title`,children:[(0,b.jsxs)(`span`,{className:`search-result-icon`,children:[e.sectionIcon&&(0,b.jsx)(`img`,{src:e.sectionIcon,alt:`${e.section} icon`,className:`section-icon-img`}),!e.sectionIcon&&e.sectionEmojiIcon&&(0,b.jsx)(`span`,{className:`emoji-icon`,children:e.sectionEmojiIcon}),!e.sectionIcon&&!e.sectionEmojiIcon&&(0,b.jsx)(`div`,{style:{width:`20px`},children:`💻`})]}),(0,b.jsx)(`span`,{className:`search-result-name`,children:e.title})]}),(0,b.jsxs)(`div`,{className:`search-result-meta`,children:[(0,b.jsx)(`span`,{className:`search-result-section`,children:e.section}),(0,b.jsxs)(`span`,{className:`search-result-count`,children:[e.totalMatches,` `,e.totalMatches===1?`match`:`matches`]})]})]}),(0,b.jsxs)(`div`,{className:`search-result-matches`,children:[e.matches.map((e,t)=>(0,b.jsxs)(`div`,{className:`search-result-match`,children:[(0,b.jsxs)(`div`,{className:`search-result-line-number`,children:[`Line `,e.lineNumber]}),(0,b.jsx)(`div`,{className:`search-result-context`,dangerouslySetInnerHTML:{__html:e.highlightedText}})]},t)),e.totalMatches>e.matches.length&&(0,b.jsxs)(`div`,{className:`search-result-more`,children:[`+`,e.totalMatches-e.matches.length,` more`,` `,e.totalMatches-e.matches.length===1?`match`:`matches`]})]})]},`${e.filename}-${t}`))})]})]})}):null}var q=`notes-app-preferences`,J=`notes-app-storage-allowed`;const Y=()=>{try{return localStorage.getItem(J)===`true`}catch{return!1}},Lt=()=>{if(Y())try{let e=X();e.visitedNotes=[],localStorage.setItem(q,JSON.stringify(e))}catch{}},Rt=()=>{try{return!localStorage.getItem(`notes-app-visited`)}catch{return!0}},zt=()=>{try{localStorage.setItem(`notes-app-visited`,`true`)}catch{}},Bt=e=>{try{e?localStorage.setItem(J,`true`):localStorage.removeItem(J)}catch{}},X=()=>{let e={theme:`system`,allowsStorage:!1,visitedNotes:[],firstVisit:!0};if(!Y())return e;try{let t=localStorage.getItem(q);if(t){let n=JSON.parse(t);return{...e,...n}}}catch{}return e},Z=e=>{if(Y())try{let t={...X(),...e};localStorage.setItem(q,JSON.stringify(t))}catch{}},Vt=e=>{Y()&&Z({visitedNotes:[e,...(X().visitedNotes||[]).filter(t=>t!==e)].slice(0,20)})},Ht=()=>{try{localStorage.removeItem(q),localStorage.removeItem(J),localStorage.removeItem(`notes-app-visited`)}catch{}},Ut=()=>typeof window<`u`&&window.matchMedia&&window.matchMedia(`(prefers-color-scheme: dark)`).matches?`dark`:`light`,Q=e=>{let t=document.documentElement,n;n=e===`system`?Ut():e,t.setAttribute(`data-theme`,n),t.classList.remove(`theme-light`,`theme-dark`),t.classList.add(`theme-${n}`)},Wt=e=>{if(typeof window>`u`||!window.matchMedia)return()=>{};let t=window.matchMedia(`(prefers-color-scheme: dark)`),n=t=>{e(t.matches?`dark`:`light`)};return t.addEventListener(`change`,n),()=>t.removeEventListener(`change`,n)};function Gt({isOpen:e,onComplete:t}){let[n,r]=(0,y.useState)(`storage`),[i,a]=(0,y.useState)(!1),[o,s]=(0,y.useState)(``),[c,l]=(0,y.useState)(`system`);if(!e)return null;let u=e=>{a(e),e?r(`setup`):t({allowsStorage:!1,theme:`system`})},d=()=>{t({allowsStorage:i,username:o.trim()||void 0,theme:c})},f=()=>{s(``),d()},p=e=>{l(e),Q(e)};return(0,b.jsx)(`div`,{className:`welcome-modal-overlay`,children:(0,b.jsx)(`div`,{className:`welcome-modal`,children:n===`storage`?(0,b.jsxs)(b.Fragment,{children:[(0,b.jsx)(`div`,{className:`welcome-modal-header`,children:(0,b.jsx)(`h2`,{children:`Welcome to Programming Notes! 📚`})}),(0,b.jsxs)(`div`,{className:`welcome-modal-content`,children:[(0,b.jsx)(`p`,{children:`To provide you with a personalized experience, we'd like to save your preferences and reading history locally on your device.`}),(0,b.jsxs)(`div`,{className:`storage-benefits`,children:[(0,b.jsxs)(`div`,{className:`benefit-item`,children:[(0,b.jsx)(`span`,{className:`benefit-icon`,children:`🎨`}),(0,b.jsx)(`span`,{children:`Remember your theme preference`})]}),(0,b.jsxs)(`div`,{className:`benefit-item`,children:[(0,b.jsx)(`span`,{className:`benefit-icon`,children:`📖`}),(0,b.jsx)(`span`,{children:`Track your reading history`})]}),(0,b.jsxs)(`div`,{className:`benefit-item`,children:[(0,b.jsx)(`span`,{className:`benefit-icon`,children:`👤`}),(0,b.jsx)(`span`,{children:`Personalized welcome messages`})]})]}),(0,b.jsxs)(`p`,{className:`storage-note`,children:[(0,b.jsx)(`strong`,{children:`Your privacy matters:`}),` All data stays on your device. Nothing is sent to any servers.`]})]}),(0,b.jsxs)(`div`,{className:`welcome-modal-actions`,children:[(0,b.jsx)(`button`,{onClick:()=>u(!1),className:`btn-secondary`,children:`No Thanks`}),(0,b.jsx)(`button`,{onClick:()=>u(!0),className:`btn-primary`,children:`Allow Local Storage`})]})]}):(0,b.jsxs)(b.Fragment,{children:[(0,b.jsx)(`div`,{className:`welcome-modal-header`,children:(0,b.jsx)(`h2`,{children:`Let's Personalize Your Experience ✨`})}),(0,b.jsxs)(`div`,{className:`welcome-modal-content`,children:[(0,b.jsxs)(`div`,{className:`setup-section`,children:[(0,b.jsx)(`label`,{htmlFor:`username`,className:`setup-label`,children:`What should we call you? (Optional)`}),(0,b.jsx)(`input`,{id:`username`,type:`text`,value:o,onChange:e=>s(e.target.value),placeholder:`Enter your name...`,className:`setup-input`,maxLength:50})]}),(0,b.jsxs)(`div`,{className:`setup-section`,children:[(0,b.jsx)(`label`,{className:`setup-label`,children:`Choose your theme`}),(0,b.jsxs)(`div`,{className:`theme-options`,children:[(0,b.jsxs)(`button`,{onClick:()=>p(`system`),className:`theme-option ${c===`system`?`active`:``}`,children:[(0,b.jsx)(`span`,{className:`theme-icon`,children:`🖥️`}),(0,b.jsxs)(`div`,{className:`theme-info`,children:[(0,b.jsx)(`div`,{className:`theme-name`,children:`System`}),(0,b.jsx)(`div`,{className:`theme-desc`,children:`Match your device`})]})]}),(0,b.jsxs)(`button`,{onClick:()=>p(`light`),className:`theme-option ${c===`light`?`active`:``}`,children:[(0,b.jsx)(`span`,{className:`theme-icon`,children:`☀️`}),(0,b.jsxs)(`div`,{className:`theme-info`,children:[(0,b.jsx)(`div`,{className:`theme-name`,children:`Light`}),(0,b.jsx)(`div`,{className:`theme-desc`,children:`Bright and clean`})]})]}),(0,b.jsxs)(`button`,{onClick:()=>p(`dark`),className:`theme-option ${c===`dark`?`active`:``}`,children:[(0,b.jsx)(`span`,{className:`theme-icon`,children:`🌙`}),(0,b.jsxs)(`div`,{className:`theme-info`,children:[(0,b.jsx)(`div`,{className:`theme-name`,children:`Dark`}),(0,b.jsx)(`div`,{className:`theme-desc`,children:`Easy on the eyes`})]})]})]})]})]}),(0,b.jsxs)(`div`,{className:`welcome-modal-actions`,children:[(0,b.jsx)(`button`,{onClick:f,className:`btn-secondary`,children:`Skip Name`}),(0,b.jsx)(`button`,{onClick:d,className:`btn-primary`,children:`Get Started`})]})]})})})}function $(e){if(e.length!==20){console.error(`Invalid custom color array length. Expected 20, got`,e.length,`This may be due to corrupted data or an outdated theme format.`);return}let t=document.documentElement;t.style.setProperty(`--bg-primary`,e[0]),t.style.setProperty(`--bg-secondary`,e[1]),t.style.setProperty(`--bg-tertiary`,e[2]),t.style.setProperty(`--text-primary`,e[3]),t.style.setProperty(`--text-secondary`,e[4]),t.style.setProperty(`--text-muted`,e[5]),t.style.setProperty(`--border-color`,e[6]),t.style.setProperty(`--border-light`,e[7]),t.style.setProperty(`--border-medium`,e[8]),t.style.setProperty(`--accent-color`,e[9]),t.style.setProperty(`--accent-hover`,e[10]),t.style.setProperty(`--accent-dark`,e[11]),t.style.setProperty(`--accent-light`,e[12]),t.style.setProperty(`--accent-blue`,e[13]),t.style.setProperty(`--accent-blue-dark`,e[14]),t.style.setProperty(`--heading-primary`,e[15]),t.style.setProperty(`--heading-secondary`,e[16]),t.style.setProperty(`--heading-tertiary`,e[17]),t.style.setProperty(`--code-bg`,e[18]),t.style.setProperty(`--code-text`,e[19])}const Kt=()=>{localStorage.removeItem(`customTheme`),window.location.reload()},qt=e=>{localStorage.setItem(`customTheme`,JSON.stringify(e))},Jt=()=>{let e=document.documentElement;return[`--bg-primary`,`--bg-secondary`,`--bg-tertiary`,`--text-primary`,`--text-secondary`,`--text-muted`,`--border-color`,`--border-light`,`--border-medium`,`--accent-color`,`--accent-hover`,`--accent-dark`,`--accent-light`,`--accent-blue`,`--accent-blue-dark`,`--heading-primary`,`--heading-secondary`,`--heading-tertiary`,`--code-bg`,`--code-text`].map(t=>getComputedStyle(e).getPropertyValue(t).trim())};function Yt({customColor:e,setCustomColor:t,applyCustomTheme:n,saveCustomTheme:r,requiredLength:i}){return(0,b.jsxs)(b.Fragment,{children:[(0,b.jsx)(`button`,{className:`selector-btn`,onClick:t=>{t.preventDefault();let n=`data:text/json;charset=utf-8,`+encodeURIComponent(JSON.stringify(e,null,2)),r=document.createElement(`a`);r.setAttribute(`href`,n),r.setAttribute(`download`,`customTheme.json`),document.body.appendChild(r),r.click(),r.remove()},children:`Export Theme`}),(0,b.jsx)(`button`,{className:`selector-btn`,onClick:e=>{e.preventDefault();let a=document.createElement(`input`);a.type=`file`,a.accept=`.json,application/json`,a.onchange=e=>{let a=e.target;if(a.files&&a.files.length>0){let e=a.files[0],o=new FileReader;o.onload=e=>{try{let a=e.target?.result;if(typeof a==`string`){let e=JSON.parse(a);e.length===i?(t(e),n(e),r(e)):alert(`Invalid theme file: Incorrect number of colors.`)}}catch(e){alert(`Failed to import theme: `+e.message)}},o.readAsText(e)}},a.click()},children:`Import Theme`})]})}function Xt({handleClose:e}){let[t,n]=(0,y.useState)([]),[r,i]=(0,y.useState)(!1),a=[`Background Primary`,`Background Secondary`,`Background Tertiary`,`Text Primary`,`Text Secondary`,`Text Muted`,`Border Color`,`Border Light`,`Border Medium`,`Accent Color`,`Accent Hover`,`Accent Dark`,`Accent Light`,`Accent Secondary`,`Accent Secondary Dark`,`Heading Primary`,`Heading Secondary`,`Heading Tertiary`,`Code Background`,`Code Text`];return(0,y.useEffect)(()=>{n(Jt())},[n]),(0,b.jsx)(b.Fragment,{children:(0,b.jsx)(`div`,{className:`modal-overlay`,onClick:e,children:(0,b.jsxs)(`div`,{className:`modal`,onClick:e=>e.stopPropagation(),children:[(0,b.jsx)(`span`,{className:`modal-close`,onClick:e,children:`X`}),(0,b.jsx)(`h2`,{children:`Customize Theme Colors`}),(0,b.jsxs)(`form`,{className:`color-inputs`,onSubmit:e=>{e.preventDefault(),$(t),qt(t)},children:[(0,b.jsx)(`div`,{className:`custom-color-btns-grid`,children:t.map((e,r)=>(0,b.jsxs)(`div`,{className:`custom-color-btn`,children:[(0,b.jsxs)(`label`,{children:[a[r],`:`]}),(0,b.jsx)(`input`,{type:`color`,value:e,onChange:e=>{let i=[...t];i[r]=e.target.value,n(i)}})]},r))}),(0,b.jsxs)(`div`,{className:`selector-btns`,children:[(0,b.jsx)(`button`,{type:`button`,onClick:Kt,className:`btn-danger`,children:`Reset to Default`}),(0,b.jsx)(`input`,{type:`submit`,value:`Apply Theme`,className:`selector-btn`}),(0,b.jsx)(`button`,{type:`button`,onClick:()=>i(!r),className:`selector-btn`,children:`Import/Export Theme`}),r&&(0,b.jsxs)(b.Fragment,{children:[(0,b.jsx)(Yt,{customColor:t,setCustomColor:n,applyCustomTheme:$,saveCustomTheme:qt,requiredLength:a.length}),(0,b.jsx)(`br`,{}),(0,b.jsx)(`br`,{})]})]}),(0,b.jsx)(`br`,{})]}),(0,b.jsx)(`br`,{})]})})})}function Zt({username:e,preferences:t,onThemeChange:n,onClearData:r,onShowHistory:i}){let[a,o]=(0,y.useState)(!1),[s,c]=(0,y.useState)(!1),[l,u]=(0,y.useState)(!1),d=(0,y.useRef)(null);(0,y.useEffect)(()=>{let e=e=>{d.current&&!d.current.contains(e.target)&&o(!1)};return document.addEventListener(`mousedown`,e),()=>document.removeEventListener(`mousedown`,e)},[]);let f=()=>{c(!0),o(!1)},p=()=>{r(),c(!1)},m=e=>{switch(e){case`light`:return`☀️`;case`dark`:return`🌙`;case`system`:return`🖥️`;default:return`🖥️`}};return(0,b.jsxs)(b.Fragment,{children:[(0,b.jsxs)(`div`,{className:`user-menu`,ref:d,children:[(0,b.jsxs)(`button`,{onClick:()=>o(!a),className:`user-menu-trigger`,"aria-label":`User menu`,children:[(0,b.jsx)(`div`,{className:`user-avatar`,children:e?e.charAt(0).toUpperCase():`👤`}),(0,b.jsx)(`span`,{className:`user-menu-arrow`,children:a?`▴`:`▾`})]}),a&&(0,b.jsxs)(`div`,{className:`user-menu-dropdown`,children:[e&&(0,b.jsx)(`div`,{className:`user-menu-header`,children:(0,b.jsxs)(`div`,{className:`user-greeting`,children:[`Welcome back, `,(0,b.jsx)(`strong`,{children:e}),`!`]})}),(0,b.jsxs)(`div`,{className:`user-menu-section`,children:[(0,b.jsx)(`div`,{className:`user-menu-label`,children:`Theme`}),(0,b.jsxs)(`div`,{className:`theme-selector`,children:[[`system`,`light`,`dark`].map(e=>(0,b.jsxs)(`button`,{onClick:()=>{n(e),o(!1)},className:`theme-selector-btn ${t.theme===e?`active`:``}`,children:[(0,b.jsx)(`span`,{className:`theme-selector-icon`,children:m(e)}),(0,b.jsx)(`span`,{className:`theme-selector-name`,children:e.charAt(0).toUpperCase()+e.slice(1)})]},e)),(0,b.jsxs)(`button`,{onClick:()=>{u(!0),o(!1)},className:`theme-selector-btn`,children:[(0,b.jsx)(`span`,{className:`theme-selector-icon`,children:`🎨`}),(0,b.jsx)(`span`,{className:`theme-selector-name`,children:`Custom`})]})]})]}),(0,b.jsx)(`div`,{className:`user-menu-section`,children:(0,b.jsxs)(`button`,{onClick:()=>{i(),o(!1)},className:`user-menu-item`,children:[(0,b.jsx)(`span`,{className:`user-menu-icon`,children:`📚`}),`Reading History`,t.visitedNotes.length>0&&(0,b.jsx)(`span`,{className:`history-count`,children:t.visitedNotes.length})]})}),(0,b.jsx)(`div`,{className:`user-menu-section user-menu-danger`,children:(0,b.jsxs)(`button`,{onClick:f,className:`user-menu-item danger`,children:[(0,b.jsx)(`span`,{className:`user-menu-icon`,children:`🗑️`}),`Clear All Data`]})})]})]}),s&&(0,b.jsx)(`div`,{className:`confirm-modal-overlay`,children:(0,b.jsxs)(`div`,{className:`confirm-modal`,children:[(0,b.jsx)(`div`,{className:`confirm-modal-header`,children:(0,b.jsx)(`h3`,{children:`⚠️ Clear All Data`})}),(0,b.jsxs)(`div`,{className:`confirm-modal-content`,children:[(0,b.jsx)(`p`,{children:`This will permanently delete all your saved preferences, reading history, and personal settings.`}),(0,b.jsx)(`p`,{className:`confirm-warning`,children:(0,b.jsx)(`strong`,{children:`Once you delete your progress, this cannot be undone!`})})]}),(0,b.jsxs)(`div`,{className:`confirm-modal-actions`,children:[(0,b.jsx)(`button`,{onClick:()=>c(!1),className:`btn-secondary`,children:`Cancel`}),(0,b.jsx)(`button`,{onClick:p,className:`btn-danger`,children:`Yes, Delete Everything`})]})]})}),l&&(0,b.jsx)(Xt,{handleClose:()=>u(!1)})]})}function Qt({isOpen:e,preferences:t,onClose:n,onSelectNote:r}){let[i,a]=(0,y.useState)(!1);if(!e)return null;let o=()=>{t.visitedNotes=[],a(!1),Lt(),n()},s=e=>{r(e),n()},c=e=>{let t=W(e);return t?e===`home.md`?{name:`Home`,emojiIcon:`🏠`}:C[t]||{name:t,icon:`📄`}:{name:`General`,icon:`📄`}};return(0,b.jsx)(`div`,{className:`history-modal-overlay`,onClick:n,children:(0,b.jsxs)(`div`,{className:`history-modal`,onClick:e=>e.stopPropagation(),children:[(0,b.jsxs)(`div`,{className:`history-modal-header`,children:[(0,b.jsx)(`h3`,{children:`📚 Reading History`}),(0,b.jsx)(`button`,{onClick:n,className:`history-modal-close`,"aria-label":`Close history`,children:`✕`})]}),(0,b.jsx)(`div`,{className:`history-modal-content`,children:t.visitedNotes.length===0?(0,b.jsxs)(`div`,{className:`history-empty`,children:[(0,b.jsx)(`div`,{className:`history-empty-icon`,children:`📖`}),(0,b.jsx)(`div`,{className:`history-empty-title`,children:`No reading history yet`}),(0,b.jsx)(`div`,{className:`history-empty-desc`,children:`Start exploring the notes to build your reading history!`})]}):(0,b.jsxs)(b.Fragment,{children:[(0,b.jsxs)(`div`,{className:`history-info`,children:[`You've visited `,t.visitedNotes.length,t.visitedNotes.length===1?` note`:` notes`,` `,`recently`]}),(0,b.jsx)(`div`,{className:`history-list`,children:t.visitedNotes.map((e,t)=>{let n=c(e),r=H(e);return(0,b.jsxs)(`div`,{className:`history-item`,onClick:()=>s(e),children:[(0,b.jsxs)(`div`,{className:`history-item-main`,children:[(0,b.jsxs)(`div`,{className:`history-item-header`,children:[(0,b.jsxs)(`span`,{className:`history-item-icon`,children:[`icon`in n&&(0,b.jsx)(`img`,{src:n.icon,alt:`${n.name} icon`,className:`section-icon-img`}),!(`icon`in n)&&`emojiIcon`in n&&(0,b.jsx)(`span`,{className:`emoji-icon`,children:n.emojiIcon})]}),(0,b.jsx)(`span`,{className:`history-item-title`,children:r})]}),(0,b.jsxs)(`div`,{className:`history-item-meta`,children:[(0,b.jsx)(`span`,{className:`history-item-section`,children:n.name}),(0,b.jsxs)(`span`,{className:`history-item-position`,children:[`#`,t+1]})]})]}),(0,b.jsx)(`div`,{className:`history-item-arrow`,children:`→`})]},`${e}-${t}`)})})]})}),(0,b.jsxs)(`div`,{className:`selector-btns`,children:[!i&&(0,b.jsx)(`button`,{className:`btn-danger`,onClick:()=>a(!0),children:`Clear History`}),i&&(0,b.jsxs)(b.Fragment,{children:[(0,b.jsx)(`span`,{children:`Are you sure?`}),(0,b.jsx)(`button`,{className:`btn-danger`,onClick:o,children:`Clear`}),(0,b.jsx)(`button`,{onClick:()=>a(!1),className:`btn-primary`,children:`Nevermind...`})]})]})]})})}function $t(){let[e,t]=(0,y.useState)(null),[n,r]=(0,y.useState)(`home.md`),[i,a]=(0,y.useState)([`home.md`]),[o,s]=(0,y.useState)(null),[c,l]=(0,y.useState)(!1),[u,d]=(0,y.useState)([]),[f,p]=(0,y.useState)(``),[m,h]=(0,y.useState)(!1),[g,_]=(0,y.useState)(()=>X()),[v,S]=(0,y.useState)(!1),[ee,w]=(0,y.useState)(!1),T=(0,y.useCallback)(()=>{t(K(`home.md`)),r(`home.md`),a([`home.md`]),s(`home`),E(`home.md`,`home`)},[]);(0,y.useEffect)(()=>{if(Rt()&&!Y()&&(S(!0),zt()),Q(g.theme),g.theme===`system`)return Wt(()=>{g.theme===`system`&&Q(`system`)})},[g.theme]),(0,y.useEffect)(()=>{let e=new URLSearchParams(window.location.search),n=e.get(`note`),i=e.get(`section`);if(n)try{t(K(n)),r(n),a([n]);let e=i||W(n);s(e),E(n,e)}catch(e){console.error(`Failed to load note from URL:`,n,e),T()}else T()},[T]),(0,y.useEffect)(()=>{if(e){let e=setTimeout(()=>{A()},100);return()=>clearTimeout(e)}},[e]),(0,y.useEffect)(()=>{let e=localStorage.getItem(`customTheme`);e!==null&&$(JSON.parse(e))});let E=(e,t)=>{let n=new URLSearchParams;n.set(`note`,e),t&&n.set(`section`,t);let r=`${window.location.pathname}?${n.toString()}`;window.history.pushState({},``,r)},D=e=>{t(null),e!==n&&(a(t=>[...t,e]),r(e)),Vt(e);let i=W(e);s(i),E(e,i),l(!1),h(!1),setTimeout(()=>{try{t(K(e));let n=document.querySelector(`.center.main`);n&&(n.scrollTop=0),setTimeout(()=>{A()},50)}catch(n){console.error(`Error loading note:`,e,n),t(`# Error
+`,Pt={"../notes/c/00-c-index.md":w,"../notes/computer-science/00-general-knowledge.md":T,"../notes/computer-science/01-hardware.md":E,"../notes/computer-science/02-numbers.md":D,"../notes/computer-science/03-strings.md":O,"../notes/computer-science/04-math-operations.md":k,"../notes/cpp/00-cpp-index.md":A,"../notes/css/01-CSS-index.md":j,"../notes/css/02-basics.md":ee,"../notes/css/03-colors.md":M,"../notes/css/04-display-property.md":N,"../notes/css/05-positioning.md":te,"../notes/css/06-selectors.md":ne,"../notes/css/07-pseudo-selectors.md":re,"../notes/css/08-specificity.md":P,"../notes/css/09-inheritance.md":F,"../notes/css/10-flexbox-basics.md":I,"../notes/css/11-grid-layouts.md":L,"../notes/css/12-form-styling.md":R,"../notes/css/13-modals.md":ie,"../notes/css/14-animations.md":ae,"../notes/css/15-themeing.md":oe,"../notes/css/16-building-a-dropdown.md":se,"../notes/git/00-git-init.md":ce,"../notes/git/01-pushing-and-pulling.md":le,"../notes/git/02-reverting-changes.md":ue,"../notes/git/03-git-branching.md":de,"../notes/git/04-rebasing.md":fe,"../notes/git/05-merging.md":pe,"../notes/git/06-remote-repositories.md":me,"../notes/home.md":he,"../notes/html/00-html-index.md":ge,"../notes/html/01-get-started-with-html.md":_e,"../notes/html/02-classes-ids-and-data-attributes.md":ve,"../notes/html/03-forms.md":ye,"../notes/html/04-html-tables.md":be,"../notes/html/05-semantic-html.md":xe,"../notes/html/06-multimedia-elements.md":Se,"../notes/html/07-html5-new-fearures.md":Ce,"../notes/html/08-accessibility.md":we,"../notes/html/09-imports-and-paths.md":Te,"../notes/html/10-styling-elements.md":Ee,"../notes/java/00-java-index.md":De,"../notes/java/01-java-basics.md":Oe,"../notes/java/02-numbers.md":ke,"../notes/java/03-characters.md":Ae,"../notes/java/04-strings.md":je,"../notes/java/05-arrays.md":Me,"../notes/java/06-array-lists.md":Ne,"../notes/java/07-comparisons-and-conditionals.md":Pe,"../notes/java/08-loops-and-iterables.md":Fe,"../notes/java/09-methods.md":Ie,"../notes/java/10-classes.md":Le,"../notes/java/11-inheritance-and-super.md":Re,"../notes/java/12-compiling-java.md":ze,"../notes/java/13-packages-and-imports.md":Be,"../notes/java/14-interfaces-and-abstract-classes.md":Ve,"../notes/java/15-Collections.md":He,"../notes/java/16-inner-classes.md":Ue,"../notes/java/17-streams-and-lambda-expressions.md":We,"../notes/java/18-exceptions-handling-and-debugging.md":Ge,"../notes/java/19-testing-code.md":Ke,"../notes/java/20-network-requests.md":qe,"../notes/java/21-graphical-user-interfaces.md":Je,"../notes/javascript/00-javascript-index.md":Ye,"../notes/javascript/01-variables-and-datatypes.md":Xe,"../notes/javascript/02-operators.md":Ze,"../notes/javascript/03-conditionals.md":Qe,"../notes/javascript/04-ternary-operator.md":$e,"../notes/javascript/05-loops.md":et,"../notes/javascript/06-functions.md":tt,"../notes/javascript/07-generators.md":nt,"../notes/javascript/08-string-methods.md":rt,"../notes/javascript/08-template-literals.md":it,"../notes/javascript/09-built-in-functions.md":at,"../notes/javascript/10-scope.md":ot,"../notes/javascript/11-arrays.md":st,"../notes/javascript/12-classes.md":ct,"../notes/javascript/13-objects.md":lt,"../notes/javascript/14-imports-and-exports.md":ut,"../notes/javascript/15-try-catch.md":dt,"../notes/javascript/16-promises.md":ft,"../notes/javascript/17-JSON.md":pt,"../notes/javascript/18-the-eval-dilemma.md":mt,"../notes/javascript/19-types-and-instances.md":ht,"../notes/javascript/20-destructuring.md":gt,"../notes/javascript/21-fetch.md":_t,"../notes/javascript/22-DOM-manipulation.md":vt,"../notes/javascript/23-regular-expressions.md":yt,"../notes/javascript/24-constructors-and-prototypes.md":bt,"../notes/javascript/25-sets-and-maps.md":xt,"../notes/markdown/00-markdown-cheatsheet.md":St,"../notes/react/00-react-index.md":d,"../notes/react/01-components.md":a,"../notes/react/02-state.md":i,"../notes/react/03-conditional-rendering.md":p,"../notes/react/04-hooks.md":c,"../notes/react/05-use-effect.md":r,"../notes/react/06-use-ref.md":f,"../notes/react/07-use-context.md":u,"../notes/react/08-use-reducer.md":n,"../notes/sql/00-sql-index.md":Ct,"../notes/sql/01-get-started.md":wt,"../notes/sql/02-setting-up.md":Tt,"../notes/sql/03-data-types.md":Et,"../notes/sql/04-tables.md":Dt,"../notes/sql/05-constraints.md":Ot,"../notes/sql/06-manipulating-data.md":kt,"../notes/sql/07-advanced-manipulating-data.md":At,"../notes/sql/08-installing-sqlite.md":jt,"../notes/typescript/00-typescript-index.md":Mt,"../notes/typescript/01-typescript-basics.md":Nt},z={},B={};Object.entries(Pt).forEach(([e,t])=>{let n=e.split(`/`),r=n[n.length-1]||``;if(n.length===3&&r===`home.md`){B[r]={content:t,section:`home`};return}if(n.length>3){let e=n[n.length-2];z[e]||(z[e]={}),z[e][r]=t,B[r]={content:t,section:e}}});const V=e=>e.replace(/^\d{2}-/,``),H=e=>V(e).replace(`.md`,``).replace(/-/g,` `).replace(/\b\w/g,e=>e.toUpperCase()),U=e=>Object.keys(z[e]||{}).sort((e,t)=>{let n=parseInt(e.match(/^\d+/)?.[0]||`999`),r=parseInt(t.match(/^\d+/)?.[0]||`999`);return n===r?e.localeCompare(t):n-r}),Ft=()=>Object.keys(z),W=e=>{let t=B[e];return t?t.section:null},G=e=>{let t=W(e);if(!t)return null;let n=U(t),r=n.indexOf(e);if(r===-1||r>=n.length-1)return null;let i=n[r+1];return{filename:i,title:H(i)}},K=e=>{let t=e.replace(/^\/notes\/[^/]+\//,``).replace(/^\/notes\//,``),n=B[t];if(!n){let e=Object.keys(B).join(`, `);throw Error(`Note not found: ${t}. Available: ${e}`)}return n.content},It=e=>{if(!e.trim())return[];let t=e.toLowerCase(),n=[];return Object.entries(B).forEach(([r,i])=>{let{content:a,section:o}=i,s=a.split(`
+`),c=[];if(s.forEach((n,r)=>{if(n.toLowerCase().includes(t)){let t=Lt(n,e);c.push({context:n.trim(),lineNumber:r+1,highlightedText:t})}}),c.length>0){let e=o===`home`?{name:`Home`,emojiIcon:`🏠`}:C[o]||{name:o,icon:`📄`};n.push({filename:r,title:H(r),section:e.name,sectionIcon:`icon`in e?e.icon:null,sectionEmojiIcon:`emojiIcon`in e?e.emojiIcon:null,matches:c.slice(0,3),totalMatches:c.length})}}),n.sort((e,t)=>e.totalMatches===t.totalMatches?e.title.localeCompare(t.title):t.totalMatches-e.totalMatches)};var Lt=(e,t)=>{let n=RegExp(`(${t})`,`gi`);return e.replace(n,`<mark>$1</mark>`)};const Rt=()=>{let e=Ft(),t=[];return t.push({text:`Home`,href:`home.md`,emojiIcon:`🏠`}),e.forEach(e=>{let n=C[e.toLowerCase()],r=U(e);if(r.length>0){let i=r.map(e=>({text:zt(e),href:e})),a=null;try{a=`icon`in n?n.icon:null}catch{a=null}let o={text:n?.name||e.charAt(0).toUpperCase()+e.slice(1),children:i};if(a&&(o.icon=a),!a)try{o.emojiIcon=`emojiIcon`in n?n.emojiIcon:`📄`}catch{o.emojiIcon=`📁`}t.push(o)}}),t};var zt=e=>V(e).replace(`.md`,``).replace(/-/g,` `).replace(/\b\w/g,e=>e.toUpperCase());const Bt=Rt();function Vt({onSearch:e,onClear:t,placeholder:n=`Search all notes...`}){let[r,i]=(0,y.useState)(``),[a,o]=(0,y.useState)(!1),s=(0,y.useRef)(null),c=(0,y.useRef)(null),l=(0,y.useCallback)(t=>{c.current!==null&&(window.clearTimeout(c.current),c.current=null),c.current=window.setTimeout(()=>{e(t),c.current=null},800)},[e]),u=e=>{let n=e.target.value;i(n),n.trim()?l(n):(c.current!==null&&(window.clearTimeout(c.current),c.current=null),t())},d=()=>{i(``),t(),s.current?.focus()};return(0,y.useEffect)(()=>()=>{c.current!==null&&(window.clearTimeout(c.current),c.current=null)},[]),(0,y.useEffect)(()=>{let e=e=>{(e.ctrlKey||e.metaKey)&&e.key===`k`&&(e.preventDefault(),s.current?.focus())};return document.addEventListener(`keydown`,e),()=>document.removeEventListener(`keydown`,e)},[]),(0,b.jsx)(`div`,{className:`search-bar ${a?`focused`:``}`,children:(0,b.jsxs)(`div`,{className:`search-input-container`,children:[(0,b.jsx)(`span`,{className:`search-icon`,children:`🔍`}),(0,b.jsx)(`input`,{id:`search-input`,ref:s,type:`text`,value:r,onChange:u,onKeyDown:e=>{e.key===`Escape`&&d()},onFocus:()=>o(!0),onBlur:()=>o(!1),placeholder:n,className:`search-input`}),r&&(0,b.jsx)(`button`,{onClick:d,className:`search-clear`,"aria-label":`Clear search`,children:`✕`})]})})}function Ht({setCurrentNote:e,currentSection:t,currentNoteName:n,onSearch:r,onClearSearch:i,isMobile:a,rightSidebarContent:o}){let[s,c]=(0,y.useState)(null),[l,u]=(0,y.useState)(`chapters`);(0,y.useEffect)(()=>{if(t){let e=Bt.findIndex(e=>{if(e.text&&t in C){let n=C[t];return e.text.includes(n.name)}return!1});e!==-1&&c(e)}},[t]);let d=e=>{c(s===e?null:e)};return(0,b.jsxs)(`div`,{className:`left-nav`,children:[a&&o&&(0,b.jsxs)(`div`,{className:`mobile-nav-toggle`,children:[(0,b.jsx)(`button`,{className:`mobile-nav-btn ${l===`chapters`?`active`:``}`,onClick:()=>u(`chapters`),children:`All Chapters`}),(0,b.jsx)(`button`,{className:`mobile-nav-btn ${l===`page`?`active`:``}`,onClick:()=>u(`page`),children:`On this page`})]}),(!a||l===`chapters`)&&(0,b.jsxs)(b.Fragment,{children:[(0,b.jsx)(Vt,{onSearch:e=>{r?.(e)},onClear:()=>{i?.()},placeholder:`Search all notes...`}),Bt.map((t,r)=>{if(t.children){let i=s===r;return(0,b.jsxs)(`div`,{className:`dropdown-parent ${i?`active`:``}`,children:[(0,b.jsxs)(`div`,{className:`dropdown-title`,onClick:()=>d(r),children:[(0,b.jsx)(`span`,{className:`section-arrow`,children:i?`▼`:`▶`}),t.icon&&(0,b.jsx)(`img`,{src:t.icon,alt:`${t.text} icon`,className:`section-icon-img`}),!t.icon&&t.emojiIcon&&(0,b.jsx)(`span`,{className:`emoji-icon`,children:t.emojiIcon}),!t.icon&&!t.emojiIcon&&(0,b.jsx)(`div`,{style:{marginLeft:`20px`}}),(0,b.jsx)(`span`,{children:t.text})]}),(0,b.jsx)(`div`,{className:`dropdown-children ${i?`expanded`:`collapsed`}`,children:t.children.map((t,r)=>(0,b.jsx)(`p`,{className:`child-link ${n===t.href?`active`:``}`,onClick:()=>t.href&&e(t.href),children:t.text},r))})]},r)}else return(0,b.jsxs)(`div`,{className:`parent-link ${n===t.href?`active`:``}`,onClick:()=>t.href&&e(t.href),children:[t.icon&&(0,b.jsx)(`img`,{src:t.icon,alt:`${t.text} icon`,className:`section-icon-img`}),!t.icon&&t.emojiIcon&&(0,b.jsxs)(`span`,{className:`emoji-icon`,children:[t.emojiIcon,` `]}),(0,b.jsx)(`span`,{children:t.text})]},r)})]}),a&&l===`page`&&o&&(0,b.jsx)(`div`,{className:`mobile-page-overview`,children:o})]})}function Ut({currentNote:e,currentNoteName:t,onLoadNote:n}){let[r,i]=(0,y.useState)([]),[a,o]=(0,y.useState)(null),[s,c]=(0,y.useState)(``);(0,y.useEffect)(()=>{if(!e){i([]),o(null);return}let r=/^(#{1,6})\s+(.+)$/gm,a=[],s;for(;(s=r.exec(e))!==null;){let e=s[1].length,t=s[2].trim();if(e===4)continue;let n=t.toLowerCase().replace(/[^\w\s-]/g,``).replace(/\s+/g,`-`);a.push({id:n,text:t,level:e})}if(n){let e=G(t);e&&a.push({id:`next-lesson`,text:`Next: ${e.title}`,level:2})}i(a);let c=e.replace(/#{1,6}\s+/g,``).replace(/\[([^\]]+)\]\([^)]+\)/g,`$1`).replace(/[*_`]/g,``).trim().split(/\s+/).filter(e=>e.length>0).length,l=Math.max(1,Math.ceil(c/200)),u=e.length;o({wordCount:c,readingTime:l,characterCount:u})},[e,t,n]);let l=e=>{if(e===`next-lesson`&&n){let e=G(t);e&&n(e.filename);return}let r=document.getElementById(e);r&&(r.scrollIntoView({behavior:`smooth`,block:`start`}),c(e))};return(0,y.useEffect)(()=>{let e=()=>{let e=r.map(e=>({id:e.id,element:document.getElementById(e.id)})),t=``;for(let n of e)n.element&&n.element.getBoundingClientRect().top<=100&&(t=n.id);c(t)},t=document.querySelector(`.center.main`);if(t)return t.addEventListener(`scroll`,e),()=>t.removeEventListener(`scroll`,e)},[r]),e?(0,b.jsxs)(`div`,{className:`right-sidebar`,children:[(0,b.jsxs)(`div`,{className:`sidebar-section`,children:[(0,b.jsx)(`h3`,{children:`📊 Note Info`}),(0,b.jsxs)(`div`,{className:`note-stats`,children:[(0,b.jsxs)(`div`,{className:`stat-item`,children:[(0,b.jsx)(`span`,{className:`stat-label`,children:`📄 File:`}),(0,b.jsx)(`span`,{className:`stat-value`,children:V(t)})]}),a&&(0,b.jsxs)(b.Fragment,{children:[(0,b.jsxs)(`div`,{className:`stat-item`,children:[(0,b.jsx)(`span`,{className:`stat-label`,children:`📝 Words:`}),(0,b.jsx)(`span`,{className:`stat-value`,children:a.wordCount.toLocaleString()})]}),(0,b.jsxs)(`div`,{className:`stat-item`,children:[(0,b.jsx)(`span`,{className:`stat-label`,children:`⏱️ Read time:`}),(0,b.jsxs)(`span`,{className:`stat-value`,children:[a.readingTime,` min`]})]}),(0,b.jsxs)(`div`,{className:`stat-item`,children:[(0,b.jsx)(`span`,{className:`stat-label`,children:`🔤 Characters:`}),(0,b.jsx)(`span`,{className:`stat-value`,children:a.characterCount.toLocaleString()})]})]})]})]}),r.length>0&&(0,b.jsxs)(`div`,{className:`sidebar-section`,children:[(0,b.jsx)(`h3`,{children:`📚 Table of Contents`}),(0,b.jsx)(`nav`,{className:`toc-nav`,children:r.map((e,t)=>(0,b.jsxs)(`button`,{className:`toc-item level-${e.level} ${s===e.id?`active`:``} ${e.id===`next-lesson`?`next-lesson`:``}`,onClick:()=>l(e.id),title:e.text,children:[e.id===`next-lesson`&&(0,b.jsx)(`span`,{className:`next-lesson-icon`,children:`🚀`}),e.text]},t))})]})]}):(0,b.jsx)(`div`,{className:`right-sidebar`,children:(0,b.jsxs)(`div`,{className:`sidebar-section`,children:[(0,b.jsx)(`h3`,{children:`📖 Note Info`}),(0,b.jsx)(`p`,{className:`no-note-message`,children:`Select a note to see its table of contents and information.`})]})})}var Wt=`modulepreload`,Gt=function(e){return`/code-wiki-app/`+e},Kt={};const qt=function(e,t,n){let r=Promise.resolve();if(t&&t.length>0){let e=document.getElementsByTagName(`link`),i=document.querySelector(`meta[property=csp-nonce]`),a=i?.nonce||i?.getAttribute(`nonce`);function o(e){return Promise.all(e.map(e=>Promise.resolve(e).then(e=>({status:`fulfilled`,value:e}),e=>({status:`rejected`,reason:e}))))}r=o(t.map(t=>{if(t=Gt(t,n),t in Kt)return;Kt[t]=!0;let r=t.endsWith(`.css`),i=r?`[rel="stylesheet"]`:``;if(n)for(let n=e.length-1;n>=0;n--){let i=e[n];if(i.href===t&&(!r||i.rel===`stylesheet`))return}else if(document.querySelector(`link[href="${t}"]${i}`))return;let o=document.createElement(`link`);if(o.rel=r?`stylesheet`:Wt,r||(o.as=`script`),o.crossOrigin=``,o.href=t,a&&o.setAttribute(`nonce`,a),document.head.appendChild(o),r)return new Promise((e,n)=>{o.addEventListener(`load`,e),o.addEventListener(`error`,()=>n(Error(`Unable to preload CSS for ${t}`)))})}))}function i(e){let t=new Event(`vite:preloadError`,{cancelable:!0});if(t.payload=e,window.dispatchEvent(t),!t.defaultPrevented)throw e}return r.then(t=>{for(let e of t||[])e.status===`rejected`&&i(e.reason);return e().catch(i)})};var Jt=(0,y.lazy)(()=>qt(()=>import(`./react-markdown-DPrgH-1Q.js`),__vite__mapDeps([0,1,2,3,4,5])));function Yt({displayName:e,content:t,languageDirectory:n,styleUpNextSections:r,loadNote:i}){return(0,y.useEffect)(()=>{document.title=e?`${H(e)} - ${n||`Notes`}`:`Programming Notes`},[e,n]),(0,b.jsx)(y.Suspense,{fallback:(0,b.jsx)(x,{}),children:(0,b.jsx)(Xt,{content:t,styleUpNextSections:r,loadNote:i})})}function Xt({content:e,styleUpNextSections:t,loadNote:n}){return(0,b.jsx)(Jt,{remarkPlugins:[g,_],rehypePlugins:[m,h],components:{h1:({children:e,...t})=>(0,b.jsx)(`h1`,{...t,id:String(e)?.toLowerCase().replace(/[^\w\s-]/g,``).replace(/\s+/g,`-`),children:e}),h2:({children:e,...t})=>(0,b.jsx)(`h2`,{...t,id:String(e)?.toLowerCase().replace(/[^\w\s-]/g,``).replace(/\s+/g,`-`),children:e}),h3:({children:e,...t})=>(0,b.jsx)(`h3`,{...t,id:String(e)?.toLowerCase().replace(/[^\w\s-]/g,``).replace(/\s+/g,`-`),children:e}),h4:({children:e,...n})=>(0,b.jsx)(`h4`,{...n,id:String(e)?.toLowerCase().replace(/[^\w\s-]/g,``).replace(/\s+/g,`-`),onLoad:()=>{setTimeout(t,100)},children:e}),h5:({children:e,...t})=>(0,b.jsx)(`h5`,{...t,id:String(e)?.toLowerCase().replace(/[^\w\s-]/g,``).replace(/\s+/g,`-`),children:e}),h6:({children:e,...t})=>(0,b.jsx)(`h6`,{...t,id:String(e)?.toLowerCase().replace(/[^\w\s-]/g,``).replace(/\s+/g,`-`),children:e}),a:({href:e,children:t,...r})=>(0,b.jsx)(`a`,{href:e,onClick:t=>{if(e&&e.endsWith(`.md`)&&n){t.preventDefault();let r=e;e.includes(`/`)&&(r=e.split(`/`).pop()||e),console.log(`Internal link clicked:`,e,`-> normalized:`,r);try{n(r)}catch(e){console.error(`Failed to load note: ${r}`,e);try{n(r)}catch(e){console.error(`Failed to load note with filename: ${r}`,e),alert(`Note not found: ${r}`)}}}},className:`markdown-link`,...r,children:t}),table:({children:e,...t})=>(0,b.jsx)(`table`,{...t,className:`markdown-table`,children:e}),th:({children:e,...t})=>(0,b.jsx)(`th`,{...t,className:`markdown-th`,children:e}),td:({children:e,...t})=>(0,b.jsx)(`td`,{...t,className:`markdown-td`,children:e}),img:({src:e,alt:t,...n})=>(0,b.jsx)(`img`,{src:e?.startsWith(`/`)?`/code-wiki-app/${e.slice(1)}`:e,alt:t,style:{maxWidth:`100%`,height:`auto`,border:`1px solid #ddd`,borderRadius:`4px`,margin:`15px 0`,display:`block`},...n})},children:e})}function Zt({currentFilename:e,onLoadNote:t}){let n=G(e);return n?(0,b.jsx)(`div`,{className:`next-lesson-container`,children:(0,b.jsx)(`button`,{className:`next-lesson-button`,onClick:()=>{t(n.filename)},"aria-label":`Go to next lesson: ${n.title}`,children:(0,b.jsxs)(`div`,{className:`next-lesson-content`,children:[(0,b.jsx)(`span`,{className:`next-lesson-label`,children:`Up Next`}),(0,b.jsx)(`span`,{className:`next-lesson-title`,children:n.title}),(0,b.jsx)(`span`,{className:`next-lesson-arrow`,children:`→`})]})})}):null}function Qt({results:e,query:t,isLoading:n=!1,onSelectNote:r,onClose:i}){let a=e=>{r(e),i()};return t.trim()?(0,b.jsx)(`div`,{className:`search-results-overlay`,onClick:i,children:(0,b.jsxs)(`div`,{className:`search-results-container`,onClick:e=>e.stopPropagation(),children:[(0,b.jsxs)(`div`,{className:`search-results-header`,children:[(0,b.jsx)(`h3`,{children:`Search Results`}),(0,b.jsx)(`button`,{onClick:i,className:`search-results-close`,"aria-label":`Close search results`,children:`✕`})]}),n?(0,b.jsxs)(`div`,{className:`search-loading`,children:[(0,b.jsx)(`div`,{className:`search-spinner`}),(0,b.jsx)(`span`,{children:`Searching...`})]}):(0,b.jsxs)(b.Fragment,{children:[(0,b.jsx)(`div`,{className:`search-results-info`,children:e.length===0?(0,b.jsxs)(`span`,{children:[`No results found for "`,t,`"`]}):(0,b.jsxs)(`span`,{children:[`Found `,e.length,` `,e.length===1?`result`:`results`,` for "`,t,`"`]})}),(0,b.jsx)(`div`,{className:`search-results-list`,children:e.map((e,t)=>(0,b.jsxs)(`div`,{className:`search-result-card`,onClick:()=>a(e.filename),children:[(0,b.jsxs)(`div`,{className:`search-result-header`,children:[(0,b.jsxs)(`div`,{className:`search-result-title`,children:[(0,b.jsxs)(`span`,{className:`search-result-icon`,children:[e.sectionIcon&&(0,b.jsx)(`img`,{src:e.sectionIcon,alt:`${e.section} icon`,className:`section-icon-img`}),!e.sectionIcon&&e.sectionEmojiIcon&&(0,b.jsx)(`span`,{className:`emoji-icon`,children:e.sectionEmojiIcon}),!e.sectionIcon&&!e.sectionEmojiIcon&&(0,b.jsx)(`div`,{style:{width:`20px`},children:`💻`})]}),(0,b.jsx)(`span`,{className:`search-result-name`,children:e.title})]}),(0,b.jsxs)(`div`,{className:`search-result-meta`,children:[(0,b.jsx)(`span`,{className:`search-result-section`,children:e.section}),(0,b.jsxs)(`span`,{className:`search-result-count`,children:[e.totalMatches,` `,e.totalMatches===1?`match`:`matches`]})]})]}),(0,b.jsxs)(`div`,{className:`search-result-matches`,children:[e.matches.map((e,t)=>(0,b.jsxs)(`div`,{className:`search-result-match`,children:[(0,b.jsxs)(`div`,{className:`search-result-line-number`,children:[`Line `,e.lineNumber]}),(0,b.jsx)(`div`,{className:`search-result-context`,dangerouslySetInnerHTML:{__html:e.highlightedText}})]},t)),e.totalMatches>e.matches.length&&(0,b.jsxs)(`div`,{className:`search-result-more`,children:[`+`,e.totalMatches-e.matches.length,` more`,` `,e.totalMatches-e.matches.length===1?`match`:`matches`]})]})]},`${e.filename}-${t}`))})]})]})}):null}var q=`notes-app-preferences`,J=`notes-app-storage-allowed`;const Y=()=>{try{return localStorage.getItem(J)===`true`}catch{return!1}},$t=()=>{if(Y())try{let e=X();e.visitedNotes=[],localStorage.setItem(q,JSON.stringify(e))}catch{}},en=()=>{try{return!localStorage.getItem(`notes-app-visited`)}catch{return!0}},tn=()=>{try{localStorage.setItem(`notes-app-visited`,`true`)}catch{}},nn=e=>{try{e?localStorage.setItem(J,`true`):localStorage.removeItem(J)}catch{}},X=()=>{let e={theme:`system`,allowsStorage:!1,visitedNotes:[],firstVisit:!0};if(!Y())return e;try{let t=localStorage.getItem(q);if(t){let n=JSON.parse(t);return{...e,...n}}}catch{}return e},Z=e=>{if(Y())try{let t={...X(),...e};localStorage.setItem(q,JSON.stringify(t))}catch{}},rn=e=>{Y()&&Z({visitedNotes:[e,...(X().visitedNotes||[]).filter(t=>t!==e)].slice(0,20)})},an=()=>{try{localStorage.removeItem(q),localStorage.removeItem(J),localStorage.removeItem(`notes-app-visited`)}catch{}},on=()=>typeof window<`u`&&window.matchMedia&&window.matchMedia(`(prefers-color-scheme: dark)`).matches?`dark`:`light`,Q=e=>{let t=document.documentElement,n;n=e===`system`?on():e,t.setAttribute(`data-theme`,n),t.classList.remove(`theme-light`,`theme-dark`),t.classList.add(`theme-${n}`)},sn=e=>{if(typeof window>`u`||!window.matchMedia)return()=>{};let t=window.matchMedia(`(prefers-color-scheme: dark)`),n=t=>{e(t.matches?`dark`:`light`)};return t.addEventListener(`change`,n),()=>t.removeEventListener(`change`,n)};function cn({isOpen:e,onComplete:t}){let[n,r]=(0,y.useState)(`storage`),[i,a]=(0,y.useState)(!1),[o,s]=(0,y.useState)(``),[c,l]=(0,y.useState)(`system`);if(!e)return null;let u=e=>{a(e),e?r(`setup`):t({allowsStorage:!1,theme:`system`})},d=()=>{t({allowsStorage:i,username:o.trim()||void 0,theme:c})},f=()=>{s(``),d()},p=e=>{l(e),Q(e)};return(0,b.jsx)(`div`,{className:`welcome-modal-overlay`,children:(0,b.jsx)(`div`,{className:`welcome-modal`,children:n===`storage`?(0,b.jsxs)(b.Fragment,{children:[(0,b.jsx)(`div`,{className:`welcome-modal-header`,children:(0,b.jsx)(`h2`,{children:`Welcome to Programming Notes! 📚`})}),(0,b.jsxs)(`div`,{className:`welcome-modal-content`,children:[(0,b.jsx)(`p`,{children:`To provide you with a personalized experience, we'd like to save your preferences and reading history locally on your device.`}),(0,b.jsxs)(`div`,{className:`storage-benefits`,children:[(0,b.jsxs)(`div`,{className:`benefit-item`,children:[(0,b.jsx)(`span`,{className:`benefit-icon`,children:`🎨`}),(0,b.jsx)(`span`,{children:`Remember your theme preference`})]}),(0,b.jsxs)(`div`,{className:`benefit-item`,children:[(0,b.jsx)(`span`,{className:`benefit-icon`,children:`📖`}),(0,b.jsx)(`span`,{children:`Track your reading history`})]}),(0,b.jsxs)(`div`,{className:`benefit-item`,children:[(0,b.jsx)(`span`,{className:`benefit-icon`,children:`👤`}),(0,b.jsx)(`span`,{children:`Personalized welcome messages`})]})]}),(0,b.jsxs)(`p`,{className:`storage-note`,children:[(0,b.jsx)(`strong`,{children:`Your privacy matters:`}),` All data stays on your device. Nothing is sent to any servers.`]})]}),(0,b.jsxs)(`div`,{className:`welcome-modal-actions`,children:[(0,b.jsx)(`button`,{onClick:()=>u(!1),className:`btn-secondary`,children:`No Thanks`}),(0,b.jsx)(`button`,{onClick:()=>u(!0),className:`btn-primary`,children:`Allow Local Storage`})]})]}):(0,b.jsxs)(b.Fragment,{children:[(0,b.jsx)(`div`,{className:`welcome-modal-header`,children:(0,b.jsx)(`h2`,{children:`Let's Personalize Your Experience ✨`})}),(0,b.jsxs)(`div`,{className:`welcome-modal-content`,children:[(0,b.jsxs)(`div`,{className:`setup-section`,children:[(0,b.jsx)(`label`,{htmlFor:`username`,className:`setup-label`,children:`What should we call you? (Optional)`}),(0,b.jsx)(`input`,{id:`username`,type:`text`,value:o,onChange:e=>s(e.target.value),placeholder:`Enter your name...`,className:`setup-input`,maxLength:50})]}),(0,b.jsxs)(`div`,{className:`setup-section`,children:[(0,b.jsx)(`label`,{className:`setup-label`,children:`Choose your theme`}),(0,b.jsxs)(`div`,{className:`theme-options`,children:[(0,b.jsxs)(`button`,{onClick:()=>p(`system`),className:`theme-option ${c===`system`?`active`:``}`,children:[(0,b.jsx)(`span`,{className:`theme-icon`,children:`🖥️`}),(0,b.jsxs)(`div`,{className:`theme-info`,children:[(0,b.jsx)(`div`,{className:`theme-name`,children:`System`}),(0,b.jsx)(`div`,{className:`theme-desc`,children:`Match your device`})]})]}),(0,b.jsxs)(`button`,{onClick:()=>p(`light`),className:`theme-option ${c===`light`?`active`:``}`,children:[(0,b.jsx)(`span`,{className:`theme-icon`,children:`☀️`}),(0,b.jsxs)(`div`,{className:`theme-info`,children:[(0,b.jsx)(`div`,{className:`theme-name`,children:`Light`}),(0,b.jsx)(`div`,{className:`theme-desc`,children:`Bright and clean`})]})]}),(0,b.jsxs)(`button`,{onClick:()=>p(`dark`),className:`theme-option ${c===`dark`?`active`:``}`,children:[(0,b.jsx)(`span`,{className:`theme-icon`,children:`🌙`}),(0,b.jsxs)(`div`,{className:`theme-info`,children:[(0,b.jsx)(`div`,{className:`theme-name`,children:`Dark`}),(0,b.jsx)(`div`,{className:`theme-desc`,children:`Easy on the eyes`})]})]})]})]})]}),(0,b.jsxs)(`div`,{className:`welcome-modal-actions`,children:[(0,b.jsx)(`button`,{onClick:f,className:`btn-secondary`,children:`Skip Name`}),(0,b.jsx)(`button`,{onClick:d,className:`btn-primary`,children:`Get Started`})]})]})})})}function $(e){if(e.length!==20){console.error(`Invalid custom color array length. Expected 20, got`,e.length,`This may be due to corrupted data or an outdated theme format.`);return}let t=document.documentElement;t.style.setProperty(`--bg-primary`,e[0]),t.style.setProperty(`--bg-secondary`,e[1]),t.style.setProperty(`--bg-tertiary`,e[2]),t.style.setProperty(`--text-primary`,e[3]),t.style.setProperty(`--text-secondary`,e[4]),t.style.setProperty(`--text-muted`,e[5]),t.style.setProperty(`--border-color`,e[6]),t.style.setProperty(`--border-light`,e[7]),t.style.setProperty(`--border-medium`,e[8]),t.style.setProperty(`--accent-color`,e[9]),t.style.setProperty(`--accent-hover`,e[10]),t.style.setProperty(`--accent-dark`,e[11]),t.style.setProperty(`--accent-light`,e[12]),t.style.setProperty(`--accent-blue`,e[13]),t.style.setProperty(`--accent-blue-dark`,e[14]),t.style.setProperty(`--heading-primary`,e[15]),t.style.setProperty(`--heading-secondary`,e[16]),t.style.setProperty(`--heading-tertiary`,e[17]),t.style.setProperty(`--code-bg`,e[18]),t.style.setProperty(`--code-text`,e[19])}const ln=()=>{localStorage.removeItem(`customTheme`),window.location.reload()},un=e=>{localStorage.setItem(`customTheme`,JSON.stringify(e))},dn=()=>{let e=document.documentElement;return[`--bg-primary`,`--bg-secondary`,`--bg-tertiary`,`--text-primary`,`--text-secondary`,`--text-muted`,`--border-color`,`--border-light`,`--border-medium`,`--accent-color`,`--accent-hover`,`--accent-dark`,`--accent-light`,`--accent-blue`,`--accent-blue-dark`,`--heading-primary`,`--heading-secondary`,`--heading-tertiary`,`--code-bg`,`--code-text`].map(t=>getComputedStyle(e).getPropertyValue(t).trim())};function fn({customColor:e,setCustomColor:t,applyCustomTheme:n,saveCustomTheme:r,requiredLength:i}){return(0,b.jsxs)(b.Fragment,{children:[(0,b.jsx)(`button`,{className:`selector-btn`,onClick:t=>{t.preventDefault();let n=`data:text/json;charset=utf-8,`+encodeURIComponent(JSON.stringify(e,null,2)),r=document.createElement(`a`);r.setAttribute(`href`,n),r.setAttribute(`download`,`customTheme.json`),document.body.appendChild(r),r.click(),r.remove()},children:`Export Theme`}),(0,b.jsx)(`button`,{className:`selector-btn`,onClick:e=>{e.preventDefault();let a=document.createElement(`input`);a.type=`file`,a.accept=`.json,application/json`,a.onchange=e=>{let a=e.target;if(a.files&&a.files.length>0){let e=a.files[0],o=new FileReader;o.onload=e=>{try{let a=e.target?.result;if(typeof a==`string`){let e=JSON.parse(a);e.length===i?(t(e),n(e),r(e)):alert(`Invalid theme file: Incorrect number of colors.`)}}catch(e){alert(`Failed to import theme: `+e.message)}},o.readAsText(e)}},a.click()},children:`Import Theme`})]})}function pn({handleClose:e}){let[t,n]=(0,y.useState)([]),[r,i]=(0,y.useState)(!1),a=[`Background Primary`,`Background Secondary`,`Background Tertiary`,`Text Primary`,`Text Secondary`,`Text Muted`,`Border Color`,`Border Light`,`Border Medium`,`Accent Color`,`Accent Hover`,`Accent Dark`,`Accent Light`,`Accent Secondary`,`Accent Secondary Dark`,`Heading Primary`,`Heading Secondary`,`Heading Tertiary`,`Code Background`,`Code Text`];return(0,y.useEffect)(()=>{n(dn())},[n]),(0,b.jsx)(b.Fragment,{children:(0,b.jsx)(`div`,{className:`modal-overlay`,onClick:e,children:(0,b.jsxs)(`div`,{className:`modal`,onClick:e=>e.stopPropagation(),children:[(0,b.jsx)(`span`,{className:`modal-close`,onClick:e,children:`X`}),(0,b.jsx)(`h2`,{children:`Customize Theme Colors`}),(0,b.jsxs)(`form`,{className:`color-inputs`,onSubmit:e=>{e.preventDefault(),$(t),un(t)},children:[(0,b.jsx)(`div`,{className:`custom-color-btns-grid`,children:t.map((e,r)=>(0,b.jsxs)(`div`,{className:`custom-color-btn`,children:[(0,b.jsxs)(`label`,{children:[a[r],`:`]}),(0,b.jsx)(`input`,{type:`color`,value:e,onChange:e=>{let i=[...t];i[r]=e.target.value,n(i)}})]},r))}),(0,b.jsxs)(`div`,{className:`selector-btns`,children:[(0,b.jsx)(`button`,{type:`button`,onClick:ln,className:`btn-danger`,children:`Reset to Default`}),(0,b.jsx)(`input`,{type:`submit`,value:`Apply Theme`,className:`selector-btn`}),(0,b.jsx)(`button`,{type:`button`,onClick:()=>i(!r),className:`selector-btn`,children:`Import/Export Theme`}),r&&(0,b.jsxs)(b.Fragment,{children:[(0,b.jsx)(fn,{customColor:t,setCustomColor:n,applyCustomTheme:$,saveCustomTheme:un,requiredLength:a.length}),(0,b.jsx)(`br`,{}),(0,b.jsx)(`br`,{})]})]}),(0,b.jsx)(`br`,{})]}),(0,b.jsx)(`br`,{})]})})})}function mn({username:e,preferences:t,onThemeChange:n,onClearData:r,onShowHistory:i}){let[a,o]=(0,y.useState)(!1),[s,c]=(0,y.useState)(!1),[l,u]=(0,y.useState)(!1),d=(0,y.useRef)(null);(0,y.useEffect)(()=>{let e=e=>{d.current&&!d.current.contains(e.target)&&o(!1)};return document.addEventListener(`mousedown`,e),()=>document.removeEventListener(`mousedown`,e)},[]);let f=()=>{c(!0),o(!1)},p=()=>{r(),c(!1)},m=e=>{switch(e){case`light`:return`☀️`;case`dark`:return`🌙`;case`system`:return`🖥️`;default:return`🖥️`}};return(0,b.jsxs)(b.Fragment,{children:[(0,b.jsxs)(`div`,{className:`user-menu`,ref:d,children:[(0,b.jsxs)(`button`,{onClick:()=>o(!a),className:`user-menu-trigger`,"aria-label":`User menu`,children:[(0,b.jsx)(`div`,{className:`user-avatar`,children:e?e.charAt(0).toUpperCase():`👤`}),(0,b.jsx)(`span`,{className:`user-menu-arrow`,children:a?`▴`:`▾`})]}),a&&(0,b.jsxs)(`div`,{className:`user-menu-dropdown`,children:[e&&(0,b.jsx)(`div`,{className:`user-menu-header`,children:(0,b.jsxs)(`div`,{className:`user-greeting`,children:[`Welcome back, `,(0,b.jsx)(`strong`,{children:e}),`!`]})}),(0,b.jsxs)(`div`,{className:`user-menu-section`,children:[(0,b.jsx)(`div`,{className:`user-menu-label`,children:`Theme`}),(0,b.jsxs)(`div`,{className:`theme-selector`,children:[[`system`,`light`,`dark`].map(e=>(0,b.jsxs)(`button`,{onClick:()=>{n(e),o(!1)},className:`theme-selector-btn ${t.theme===e?`active`:``}`,children:[(0,b.jsx)(`span`,{className:`theme-selector-icon`,children:m(e)}),(0,b.jsx)(`span`,{className:`theme-selector-name`,children:e.charAt(0).toUpperCase()+e.slice(1)})]},e)),(0,b.jsxs)(`button`,{onClick:()=>{u(!0),o(!1)},className:`theme-selector-btn`,children:[(0,b.jsx)(`span`,{className:`theme-selector-icon`,children:`🎨`}),(0,b.jsx)(`span`,{className:`theme-selector-name`,children:`Custom`})]})]})]}),(0,b.jsx)(`div`,{className:`user-menu-section`,children:(0,b.jsxs)(`button`,{onClick:()=>{i(),o(!1)},className:`user-menu-item`,children:[(0,b.jsx)(`span`,{className:`user-menu-icon`,children:`📚`}),`Reading History`,t.visitedNotes.length>0&&(0,b.jsx)(`span`,{className:`history-count`,children:t.visitedNotes.length})]})}),(0,b.jsx)(`div`,{className:`user-menu-section user-menu-danger`,children:(0,b.jsxs)(`button`,{onClick:f,className:`user-menu-item danger`,children:[(0,b.jsx)(`span`,{className:`user-menu-icon`,children:`🗑️`}),`Clear All Data`]})})]})]}),s&&(0,b.jsx)(`div`,{className:`confirm-modal-overlay`,children:(0,b.jsxs)(`div`,{className:`confirm-modal`,children:[(0,b.jsx)(`div`,{className:`confirm-modal-header`,children:(0,b.jsx)(`h3`,{children:`⚠️ Clear All Data`})}),(0,b.jsxs)(`div`,{className:`confirm-modal-content`,children:[(0,b.jsx)(`p`,{children:`This will permanently delete all your saved preferences, reading history, and personal settings.`}),(0,b.jsx)(`p`,{className:`confirm-warning`,children:(0,b.jsx)(`strong`,{children:`Once you delete your progress, this cannot be undone!`})})]}),(0,b.jsxs)(`div`,{className:`confirm-modal-actions`,children:[(0,b.jsx)(`button`,{onClick:()=>c(!1),className:`btn-secondary`,children:`Cancel`}),(0,b.jsx)(`button`,{onClick:p,className:`btn-danger`,children:`Yes, Delete Everything`})]})]})}),l&&(0,b.jsx)(pn,{handleClose:()=>u(!1)})]})}function hn({isOpen:e,preferences:t,onClose:n,onSelectNote:r}){let[i,a]=(0,y.useState)(!1);if(!e)return null;let o=()=>{t.visitedNotes=[],a(!1),$t(),n()},s=e=>{r(e),n()},c=e=>{let t=W(e);return t?e===`home.md`?{name:`Home`,emojiIcon:`🏠`}:C[t]||{name:t,icon:`📄`}:{name:`General`,icon:`📄`}};return(0,b.jsx)(`div`,{className:`history-modal-overlay`,onClick:n,children:(0,b.jsxs)(`div`,{className:`history-modal`,onClick:e=>e.stopPropagation(),children:[(0,b.jsxs)(`div`,{className:`history-modal-header`,children:[(0,b.jsx)(`h3`,{children:`📚 Reading History`}),(0,b.jsx)(`button`,{onClick:n,className:`history-modal-close`,"aria-label":`Close history`,children:`✕`})]}),(0,b.jsx)(`div`,{className:`history-modal-content`,children:t.visitedNotes.length===0?(0,b.jsxs)(`div`,{className:`history-empty`,children:[(0,b.jsx)(`div`,{className:`history-empty-icon`,children:`📖`}),(0,b.jsx)(`div`,{className:`history-empty-title`,children:`No reading history yet`}),(0,b.jsx)(`div`,{className:`history-empty-desc`,children:`Start exploring the notes to build your reading history!`})]}):(0,b.jsxs)(b.Fragment,{children:[(0,b.jsxs)(`div`,{className:`history-info`,children:[`You've visited `,t.visitedNotes.length,t.visitedNotes.length===1?` note`:` notes`,` `,`recently`]}),(0,b.jsx)(`div`,{className:`history-list`,children:t.visitedNotes.map((e,t)=>{let n=c(e),r=H(e);return(0,b.jsxs)(`div`,{className:`history-item`,onClick:()=>s(e),children:[(0,b.jsxs)(`div`,{className:`history-item-main`,children:[(0,b.jsxs)(`div`,{className:`history-item-header`,children:[(0,b.jsxs)(`span`,{className:`history-item-icon`,children:[`icon`in n&&(0,b.jsx)(`img`,{src:n.icon,alt:`${n.name} icon`,className:`section-icon-img`}),!(`icon`in n)&&`emojiIcon`in n&&(0,b.jsx)(`span`,{className:`emoji-icon`,children:n.emojiIcon})]}),(0,b.jsx)(`span`,{className:`history-item-title`,children:r})]}),(0,b.jsxs)(`div`,{className:`history-item-meta`,children:[(0,b.jsx)(`span`,{className:`history-item-section`,children:n.name}),(0,b.jsxs)(`span`,{className:`history-item-position`,children:[`#`,t+1]})]})]}),(0,b.jsx)(`div`,{className:`history-item-arrow`,children:`→`})]},`${e}-${t}`)})})]})}),(0,b.jsxs)(`div`,{className:`selector-btns`,children:[!i&&(0,b.jsx)(`button`,{className:`btn-danger`,onClick:()=>a(!0),children:`Clear History`}),i&&(0,b.jsxs)(b.Fragment,{children:[(0,b.jsx)(`span`,{children:`Are you sure?`}),(0,b.jsx)(`button`,{className:`btn-danger`,onClick:o,children:`Clear`}),(0,b.jsx)(`button`,{onClick:()=>a(!1),className:`btn-primary`,children:`Nevermind...`})]})]})]})})}function gn(){let[e,t]=(0,y.useState)(null),[n,r]=(0,y.useState)(`home.md`),[i,a]=(0,y.useState)([`home.md`]),[o,s]=(0,y.useState)(null),[c,l]=(0,y.useState)(!1),[u,d]=(0,y.useState)([]),[f,p]=(0,y.useState)(``),[m,h]=(0,y.useState)(!1),[g,_]=(0,y.useState)(()=>X()),[v,S]=(0,y.useState)(!1),[w,T]=(0,y.useState)(!1),E=(0,y.useCallback)(()=>{t(K(`home.md`)),r(`home.md`),a([`home.md`]),s(`home`),D(`home.md`,`home`)},[]);(0,y.useEffect)(()=>{if(en()&&!Y()&&(S(!0),tn()),Q(g.theme),g.theme===`system`)return sn(()=>{g.theme===`system`&&Q(`system`)})},[g.theme]),(0,y.useEffect)(()=>{let e=new URLSearchParams(window.location.search),n=e.get(`note`),i=e.get(`section`);if(n)try{t(K(n)),r(n),a([n]);let e=i||W(n);s(e),D(n,e)}catch(e){console.error(`Failed to load note from URL:`,n,e),E()}else E()},[E]),(0,y.useEffect)(()=>{if(e){let e=setTimeout(()=>{j()},100);return()=>clearTimeout(e)}},[e]),(0,y.useEffect)(()=>{let e=localStorage.getItem(`customTheme`);e!==null&&$(JSON.parse(e))});let D=(e,t)=>{let n=new URLSearchParams;n.set(`note`,e),t&&n.set(`section`,t);let r=`${window.location.pathname}?${n.toString()}`;window.history.pushState({},``,r)},O=e=>{t(null),e!==n&&(a(t=>[...t,e]),r(e)),rn(e);let i=W(e);s(i),D(e,i),l(!1),h(!1),setTimeout(()=>{try{t(K(e));let n=document.querySelector(`.center.main`);n&&(n.scrollTop=0),setTimeout(()=>{j()},50)}catch(n){console.error(`Error loading note:`,e,n),t(`# Error
 
-Note not found: `+e)}},100)},O=()=>{l(!c)},k=()=>{l(!1)},A=()=>{document.querySelectorAll(`.markdown-content h3, .markdown-content h4`).forEach(e=>{e.textContent&&e.textContent.includes(`Up Next`)&&e.classList.add(`up-next-section`)})},j=()=>{if(i.length>1){let e=[...i];e.pop();let n=e[e.length-1];a(e),r(n);try{t(K(n));let e=document.querySelector(`.center.main`);e&&(e.scrollTop=0)}catch(e){console.error(`Error loading previous note:`,n,e)}}},M=e=>{p(e),e.trim()?(d(bt(e)),h(!0)):(d([]),h(!1))},N=()=>{p(``),d([]),h(!1)},te=e=>{D(e),h(!1)},ne=e=>{if(Bt(e.allowsStorage),e.allowsStorage){let t={...g,allowsStorage:!0,username:e.username,theme:e.theme,firstVisit:!1};_(t),Z(t)}Q(e.theme),S(!1)},re=e=>{_({...g,theme:e}),Z({theme:e}),Q(e)},P=()=>{Ht(),_({theme:`system`,allowsStorage:!1,visitedNotes:[],firstVisit:!0}),Q(`system`),window.location.reload()},F=()=>{w(!0)},I=o&&o in C?C[o]:null,L=o===`home`?`Verdant Webworks Learning Hub`:I?(0,b.jsxs)(`span`,{className:`header-title-with-icon`,children:[`icon`in I&&(0,b.jsx)(`img`,{src:I.icon,alt:`${I.name} icon`,className:`section-icon-img`}),!(`icon`in I)&&`emojiIcon`in I&&(0,b.jsx)(`span`,{children:I.emojiIcon}),` `,I.name,` Notes`]}):`Learning Hub`,R=V(n);return(0,b.jsxs)(b.Fragment,{children:[(0,b.jsx)(`header`,{children:(0,b.jsxs)(`div`,{className:`header-container`,children:[(0,b.jsxs)(`button`,{className:`hamburger-menu`,onClick:O,"aria-label":`Toggle navigation menu`,children:[(0,b.jsx)(`span`,{}),(0,b.jsx)(`span`,{}),(0,b.jsx)(`span`,{})]}),(0,b.jsx)(`h1`,{children:L}),(0,b.jsx)(Zt,{username:g.username,preferences:g,onThemeChange:re,onClearData:P,onShowHistory:F})]})}),(0,b.jsxs)(`div`,{className:`body-container`,children:[(0,b.jsx)(Et,{setCurrentNote:D,currentSection:o,currentNoteName:n,onSearch:M,onClearSearch:N}),c&&(0,b.jsx)(`div`,{className:`mobile-overlay`,onClick:k,children:(0,b.jsxs)(`div`,{className:`mobile-menu`,onClick:e=>e.stopPropagation(),children:[(0,b.jsxs)(`div`,{className:`mobile-menu-header`,children:[(0,b.jsx)(`h2`,{children:`Navigation`}),(0,b.jsx)(`button`,{className:`close-mobile-menu`,onClick:k,"aria-label":`Close navigation menu`,children:`✕`})]}),(0,b.jsx)(Et,{setCurrentNote:D,currentSection:o,currentNoteName:n,onSearch:M,onClearSearch:N,isMobile:!0,rightSidebarContent:(0,b.jsx)(Dt,{currentNote:e,currentNoteName:n,onLoadNote:D})})]})}),(0,b.jsxs)(`div`,{className:`center main`,children:[(0,b.jsxs)(`div`,{className:`navigation-bar`,children:[i.length>1&&(0,b.jsx)(`button`,{onClick:j,className:`back-button`,children:`← Back`}),(0,b.jsx)(`span`,{className:`current-note`,children:R})]}),e===null&&(0,b.jsx)(x,{}),e!==null&&(0,b.jsxs)(`div`,{className:`markdown-content`,children:[(0,b.jsx)(Nt,{content:e,displayName:R,languageDirectory:I?.name,styleUpNextSections:A,loadNote:D}),(0,b.jsx)(Ft,{currentFilename:n,onLoadNote:D})]})]}),(0,b.jsx)(`div`,{className:`right-nav`,children:(0,b.jsx)(Dt,{currentNote:e,currentNoteName:n,onLoadNote:D})})]}),(0,b.jsx)(`footer`,{children:(0,b.jsxs)(`div`,{className:`footer-content`,children:[(0,b.jsx)(`span`,{children:`© 2025 Verdant Webworks`}),(0,b.jsx)(`span`,{className:`footer-separator`,children:`|`}),(0,b.jsx)(`a`,{href:`https://verdant-webworks.vercel.app/`,target:`_blank`,rel:`noopener noreferrer`,children:`verdantwebworks.vercel.app`})]})}),m&&(0,b.jsx)(It,{results:u,query:f,onSelectNote:te,onClose:()=>h(!1)}),(0,b.jsx)(Gt,{isOpen:v,onComplete:ne}),(0,b.jsx)(Qt,{isOpen:ee,preferences:g,onClose:()=>w(!1),onSelectNote:D})]})}var en=$t;(0,v.createRoot)(document.getElementById(`root`)).render((0,b.jsx)(y.StrictMode,{children:(0,b.jsx)(en,{})}));
+Note not found: `+e)}},100)},k=()=>{l(!c)},A=()=>{l(!1)},j=()=>{document.querySelectorAll(`.markdown-content h3, .markdown-content h4`).forEach(e=>{e.textContent&&e.textContent.includes(`Up Next`)&&e.classList.add(`up-next-section`)})},ee=()=>{if(i.length>1){let e=[...i];e.pop();let n=e[e.length-1];a(e),r(n);try{t(K(n));let e=document.querySelector(`.center.main`);e&&(e.scrollTop=0)}catch(e){console.error(`Error loading previous note:`,n,e)}}},M=e=>{p(e),e.trim()?(d(It(e)),h(!0)):(d([]),h(!1))},N=()=>{p(``),d([]),h(!1)},te=e=>{O(e),h(!1)},ne=e=>{if(nn(e.allowsStorage),e.allowsStorage){let t={...g,allowsStorage:!0,username:e.username,theme:e.theme,firstVisit:!1};_(t),Z(t)}Q(e.theme),S(!1)},re=e=>{_({...g,theme:e}),Z({theme:e}),Q(e)},P=()=>{an(),_({theme:`system`,allowsStorage:!1,visitedNotes:[],firstVisit:!0}),Q(`system`),window.location.reload()},F=()=>{T(!0)},I=o&&o in C?C[o]:null,L=o===`home`?`Verdant Webworks Learning Hub`:I?(0,b.jsxs)(`span`,{className:`header-title-with-icon`,children:[`icon`in I&&(0,b.jsx)(`img`,{src:I.icon,alt:`${I.name} icon`,className:`section-icon-img`}),!(`icon`in I)&&`emojiIcon`in I&&(0,b.jsx)(`span`,{children:I.emojiIcon}),` `,I.name,` Notes`]}):`Learning Hub`,R=V(n);return(0,b.jsxs)(b.Fragment,{children:[(0,b.jsx)(`header`,{children:(0,b.jsxs)(`div`,{className:`header-container`,children:[(0,b.jsxs)(`button`,{className:`hamburger-menu`,onClick:k,"aria-label":`Toggle navigation menu`,children:[(0,b.jsx)(`span`,{}),(0,b.jsx)(`span`,{}),(0,b.jsx)(`span`,{})]}),(0,b.jsx)(`h1`,{children:L}),(0,b.jsx)(mn,{username:g.username,preferences:g,onThemeChange:re,onClearData:P,onShowHistory:F})]})}),(0,b.jsxs)(`div`,{className:`body-container`,children:[(0,b.jsx)(Ht,{setCurrentNote:O,currentSection:o,currentNoteName:n,onSearch:M,onClearSearch:N}),c&&(0,b.jsx)(`div`,{className:`mobile-overlay`,onClick:A,children:(0,b.jsxs)(`div`,{className:`mobile-menu`,onClick:e=>e.stopPropagation(),children:[(0,b.jsxs)(`div`,{className:`mobile-menu-header`,children:[(0,b.jsx)(`h2`,{children:`Navigation`}),(0,b.jsx)(`button`,{className:`close-mobile-menu`,onClick:A,"aria-label":`Close navigation menu`,children:`✕`})]}),(0,b.jsx)(Ht,{setCurrentNote:O,currentSection:o,currentNoteName:n,onSearch:M,onClearSearch:N,isMobile:!0,rightSidebarContent:(0,b.jsx)(Ut,{currentNote:e,currentNoteName:n,onLoadNote:O})})]})}),(0,b.jsxs)(`div`,{className:`center main`,children:[(0,b.jsxs)(`div`,{className:`navigation-bar`,children:[i.length>1&&(0,b.jsx)(`button`,{onClick:ee,className:`back-button`,children:`← Back`}),(0,b.jsx)(`span`,{className:`current-note`,children:R})]}),e===null&&(0,b.jsx)(x,{}),e!==null&&(0,b.jsxs)(`div`,{className:`markdown-content`,children:[(0,b.jsx)(Yt,{content:e,displayName:R,languageDirectory:I?.name,styleUpNextSections:j,loadNote:O}),(0,b.jsx)(Zt,{currentFilename:n,onLoadNote:O})]})]}),(0,b.jsx)(`div`,{className:`right-nav`,children:(0,b.jsx)(Ut,{currentNote:e,currentNoteName:n,onLoadNote:O})})]}),(0,b.jsx)(`footer`,{children:(0,b.jsxs)(`div`,{className:`footer-content`,children:[(0,b.jsx)(`span`,{children:`© 2025 Verdant Webworks`}),(0,b.jsx)(`span`,{className:`footer-separator`,children:`|`}),(0,b.jsx)(`a`,{href:`https://verdant-webworks.vercel.app/`,target:`_blank`,rel:`noopener noreferrer`,children:`verdantwebworks.vercel.app`})]})}),m&&(0,b.jsx)(Qt,{results:u,query:f,onSelectNote:te,onClose:()=>h(!1)}),(0,b.jsx)(cn,{isOpen:v,onComplete:ne}),(0,b.jsx)(hn,{isOpen:w,preferences:g,onClose:()=>T(!1),onSelectNote:O})]})}var _n=gn;(0,v.createRoot)(document.getElementById(`root`)).render((0,b.jsx)(y.StrictMode,{children:(0,b.jsx)(_n,{})}));
