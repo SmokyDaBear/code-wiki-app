@@ -1,5 +1,5 @@
 const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/react-markdown-DPrgH-1Q.js","assets/markdown-wrf23eDy.js","assets/highlight-0zkRWLrt.js","assets/rolldown-runtime-DGruFWvd.js","assets/highlight-DdKuH37F.css","assets/react-ebLvzBwK.js"])))=>i.map(i=>d[i]);
-import{r as e}from"./rolldown-runtime-DGruFWvd.js";import{_ as t,a as n,c as r,d as i,f as a,g as o,h as s,l as c,m as l,o as u,p as d,s as f,u as p}from"./react-ebLvzBwK.js";import{f as m,i as h,m as g,p as _}from"./markdown-wrf23eDy.js";import"./highlight-0zkRWLrt.js";(function(){let e=document.createElement(`link`).relList;if(e&&e.supports&&e.supports(`modulepreload`))return;for(let e of document.querySelectorAll(`link[rel="modulepreload"]`))n(e);new MutationObserver(e=>{for(let t of e)if(t.type===`childList`)for(let e of t.addedNodes)e.tagName===`LINK`&&e.rel===`modulepreload`&&n(e)}).observe(document,{childList:!0,subtree:!0});function t(e){let t={};return e.integrity&&(t.integrity=e.integrity),e.referrerPolicy&&(t.referrerPolicy=e.referrerPolicy),e.crossOrigin===`use-credentials`?t.credentials=`include`:e.crossOrigin===`anonymous`?t.credentials=`omit`:t.credentials=`same-origin`,t}function n(e){if(e.ep)return;e.ep=!0;let n=t(e);fetch(e.href,n)}})();var v=e(o(),1),y=e(t(),1),b=e(s(),1);function x(){return(0,b.jsx)(`div`,{className:`spinner-bg`,id:`spinner-bg`,children:(0,b.jsx)(`div`,{className:`spinner`})})}const S={sql:`/code-wiki-app/assets/sql-icon-Dmz4QLqU.png`,html:`/code-wiki-app/assets/html-icon-BhL9-oMv.png`,css:`/code-wiki-app/assets/css-icon-dYMppHUw.png`,javascript:`/code-wiki-app/assets/js-icon-DFEiZ9Qo.png`,typescript:`/code-wiki-app/assets/ts-icon-yD2EpDXD.png`,git:`data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAYAAACtWK6eAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADioAAA4qAXmYqosAAAAZdEVYdFNvZnR3YXJlAFBhaW50Lk5FVCA1LjEuMTGKCBbOAAAAuGVYSWZJSSoACAAAAAUAGgEFAAEAAABKAAAAGwEFAAEAAABSAAAAKAEDAAEAAAACAAAAMQECABEAAABaAAAAaYcEAAEAAABsAAAAAAAAAN1nAQDoAwAA3WcBAOgDAABQYWludC5ORVQgNS4xLjExAAADAACQBwAEAAAAMDIzMAGgAwABAAAAAQAAAAWgBAABAAAAlgAAAAAAAAACAAEAAgAEAAAAUjk4AAIABwAEAAAAMDEwMAAAAAArataK8XbUwgAACKhJREFUeF7t3NtVXDkQhWFBKA7CUThcR+EgnIrngaWhafpcJNVd//eIoY+0qzbNGK95a3D199fPf88f6378/vP2/DHYYgBOzorxCmXxQejGRovxiJLYI3BDK+V4RFHsELQRqXJ0lMQGIRuQLkdHSfQRsDKtcnSURBfhKtIuR0dJ9BCsEqtydJREB6EqsC5HR0nkEagwr3J0lEQWYQryLkdHSeQQpJAo5egoiQxCFBCtHB0lWUeAi6KWo6MkawhvQfRydJRkHsFNylKOjpLMIbQJ2crRUZJxBDYoazk6SjKGsAZkL0dHSe4jqJuqlKOjJPcQ0g3VytFRkmvvzx/APqoWXxLfQW6qvEy8kxwjmAGUZD+EMoiS7IVAJlCSfRDGJEqyB4JYQEnqI4RFlKS27QOQQEnq2voXhVKLXXmJpDLKquxgrzwOXmrBKy+TVEbZbHnpV4sstQCvXrsKqYwy2e7CZwsstQBnz8hOKqMstrrsncWVWoA7z8pKKqMMtrnoyMJKLcDIM7ORyii6LS45s6hSCzDz7CykMoqs/AVXFlRqAVbOEJ1URlGVvpzEYkotgMRZopLKKKKyF5NcSKkFkDxTNFIZRVPyUhqLKLUAGmeLQiqjSMpdSHMBpRZA84zepDKKotRlLBZPagEszupFKqMIylzEcuGkFqCf+ez1LO8l6exOmZS4hMcSeSyAxz1XeGQkLf0FPJfGawE87zzKKyMpqQ8fYVG8FiDC3e/yykhC2oNHWhCvBYiUwRWvjFalPHTExfBagIhZHPHKaEW6A0deCK8FiJzJM6+MZqU6bIZF8FqADNl0XhnNSPM/bciyAFnO6SlTRimanCnQzuO7ZLacPDIaFf4dJNvQcV+G2YYuSIYAsSb6jMMWJHpwZzL86BBJ5FmHLEjkwCLLXMyoMw9XkKhBQV/E2YcqSMSAYCvaDoQpSLRg4CfSLoQoSKRAEEOUnXAvSJQgKqiWZYT7uBYkQgAaqt7Lg3eWbgXxvjjy8NwVl4J4XriyzL8HueK1M+aBel3Ug9fCVs7YOlPTd5DKg4vEeoksWe+QWZDWF4vCc1krZ26Vq8lDKg/qDqthvlI5e4tc1R9QeUAjLIZ5pPIMtHNVffHKg5mhPcwzlWehmavaC1ceyCrNgZ6pPBOtTFVetPIgpGgN9Erl2WhkKv6ClQcgTWOgd1SekXSmor8HqRx8BFL5Si9RJFIZdWIFkT4YXpPKmZLcI1IQyQPhmlTelOTackGkDoIxUrlTknNLBZE4AOZJ5U9Jjk0XZPXBkCE1B0ry2lRBVh4IeVLzoCTfDRdk9kHQJTUXSvLVUEFmHgA7UvOhJJ9uF2T0heFDak6U5MOtgoy8IPxJzYuS3Pi3WHdfCONGF3B0FqOvv2r0fBFcZXT6DpLxwvhkPb8fv/+8XS1cNFcZHRbk6guRg8ccsxXlLKOXBTn7AuTjNc8KJflWkKNPRG5ec81eki8FefUJqMNrvplL8n9Bnv8ANXnNOVNJHn37EQv1eZUki8d83p8/gD14zDzTu0jPh3eQjXmUJJt3QtqXx3d0j2eu4B0EOPD3189/FAQ4QUGAExQEOEFBgBMUBDjxnu2v3QBLvIMAB378/vNGQYAT7y3hbzchw+NfUXg8c0bvxP/vIJQE+I4fsTZn+R3d8lkrHt8svhSEdxHs7rkD395Bnj8B9Vl8Z7d4xqpXu/+tIO3gE1Gb5gJrvraUo51/WZB28gWoS2ORNV5T2tmuHxakXXwhapJcaMnX0nK146d/2GW4aEZXw3lmPYfR83XW55x1536Xn9BluXQmdwb0yGsGd8/pdb4Zd+9065O6TAFkcHdIHfnLGMn99L9Bno28MBDR6A4PFaRNPACIYmZ3hwvSJh8EeJrd2amCtIUHAtZWdnW6IG3xwYCF1R1dKkgTOACgRWI3lwvShA4CSJLaSZGCNMEDAaskd1GsIE34YMAM6R0ULUhTOCBwl8buiRekKR0UOKO1cyoFaYoHroJ85GhmqfbCHf/A7ruVgZLnVytZ3qH64h1D/SA5TDKVzfOI+gO63QeqMcydM9XI8xWTh3S7DlRzmDtmqpnnM7MHdbsN1GKYO2Vqkecjtb/FOmJ9QdThsTvmD+x2+K5nOdDqeVpm+cj8HaTzurCV6vez5JmlW0Ga88WrqZql971cC9ICBIC4IuyGe0FakCAkVbuPhygZhihICxRIZlUyjHSPMAVpwYKBj2g7EKogLWBAsBNx9uEK0oIGBV1RZx6yIC1wYJAXedZhC9KCBwcZ0Wcc+nBdxn9G4TH4bDl5ZDQq9DtIlyFIjMky0xQFaYkCxbVMs0xz0C7TjxGWi5AlF8tMJKR5B+myBYxPGWeX7sAd3zE/ZcjCIgcNKQ/dZViMprwcGTLQvL+2tAfvMixIU1qSDHfXuLel1IfvMixKE16WDHeWvK+X9BfoMixME1qaDHeVuGcEJS7RZVicbmaBstxv5m5RlblIl2WJHp0tVLb7nN0lo1KX6bItVRXVytGqFqRREnMVy9EqF6RREjNVy9GqF6RREnWVy9F2KEijJGqql6PtUpBGScTtUI62U0EaJRGzSznabgVplGTZTuVoOxakUZJpu5Wj7VqQRkmG7ViOtnNBGiW5bddytN0L0ijJpZ3L0SjIB0ry2u7laBTkEyX5inJ8IIQHlOQD5fhEEE92Lwnl+IowXti1JJTjOwI5sFtJKMdrhHJil5JQjmMEc6F6SSjHOcK5oWpJKMc1ArqpWkkoxz2ENKBKSSjHfQQ1KHtJKMcYwpqQtSSUYxyBTcpWEsoxh9AWZCkJ5ZhHcIuil4RyrCE8AVFLQjnWEaCQaCWhHDIIUVCUklAOOQQpzLsklEMWYSrwKgnlkEegSqxLQjl0EKoiq5JQDj0Eq0y7JJRDF+Ea0CoJ5dBHwEakS0I5bBCyIamSUA47BO1gpSiUwxZhOxktCcXwQegBnJWFYvj6DxiTStFMybqiAAAAAElFTkSuQmCC`,c:`/code-wiki-app/assets/c-icon-CMJjUWV6.png`,cpp:`/code-wiki-app/assets/c-pp-icon-BiMgfDVt.png`,react:l,java:`/code-wiki-app/assets/java-icon-DrzBm3oM.png`,markdown:`/code-wiki-app/assets/md-icon-bHz2h5Lh.png`},C={sql:{name:`SQL`,icon:S.sql},html:{name:`HTML`,icon:S.html},css:{name:`CSS`,icon:S.css},javascript:{name:`JavaScript`,icon:S.javascript},typescript:{name:`TypeScript`,icon:S.typescript},git:{name:`Git`,icon:S.git},c:{name:`C`,icon:S.c},cpp:{name:`C++`,icon:S.cpp},react:{name:`React`,icon:S.react},java:{name:`Java`,icon:S.java},"computer-science":{name:`Computer Science`,emojiIcon:`💻`},markdown:{name:`Markdown`,icon:S.markdown}};var w=`# C Programming Language
+import{r as e}from"./rolldown-runtime-DGruFWvd.js";import{_ as t,a as n,c as r,d as i,f as a,g as o,h as s,l as c,m as l,o as u,p as d,s as f,u as p}from"./react-ebLvzBwK.js";import{f as m,i as h,m as g,p as _}from"./markdown-wrf23eDy.js";import"./highlight-0zkRWLrt.js";(function(){let e=document.createElement(`link`).relList;if(e&&e.supports&&e.supports(`modulepreload`))return;for(let e of document.querySelectorAll(`link[rel="modulepreload"]`))n(e);new MutationObserver(e=>{for(let t of e)if(t.type===`childList`)for(let e of t.addedNodes)e.tagName===`LINK`&&e.rel===`modulepreload`&&n(e)}).observe(document,{childList:!0,subtree:!0});function t(e){let t={};return e.integrity&&(t.integrity=e.integrity),e.referrerPolicy&&(t.referrerPolicy=e.referrerPolicy),e.crossOrigin===`use-credentials`?t.credentials=`include`:e.crossOrigin===`anonymous`?t.credentials=`omit`:t.credentials=`same-origin`,t}function n(e){if(e.ep)return;e.ep=!0;let n=t(e);fetch(e.href,n)}})();var v=e(o(),1),y=e(t(),1),b=e(s(),1);function x(){return(0,b.jsx)(`div`,{className:`spinner-bg`,id:`spinner-bg`,children:(0,b.jsx)(`div`,{className:`spinner`})})}const S={sql:`/code-wiki-app/assets/sql-icon-Dmz4QLqU.png`,html:`/code-wiki-app/assets/html-icon-BhL9-oMv.png`,css:`/code-wiki-app/assets/css-icon-dYMppHUw.png`,javascript:`/code-wiki-app/assets/js-icon-DFEiZ9Qo.png`,typescript:`/code-wiki-app/assets/ts-icon-yD2EpDXD.png`,git:`data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAYAAACtWK6eAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADioAAA4qAXmYqosAAAAZdEVYdFNvZnR3YXJlAFBhaW50Lk5FVCA1LjEuMTGKCBbOAAAAuGVYSWZJSSoACAAAAAUAGgEFAAEAAABKAAAAGwEFAAEAAABSAAAAKAEDAAEAAAACAAAAMQECABEAAABaAAAAaYcEAAEAAABsAAAAAAAAAN1nAQDoAwAA3WcBAOgDAABQYWludC5ORVQgNS4xLjExAAADAACQBwAEAAAAMDIzMAGgAwABAAAAAQAAAAWgBAABAAAAlgAAAAAAAAACAAEAAgAEAAAAUjk4AAIABwAEAAAAMDEwMAAAAAArataK8XbUwgAACKhJREFUeF7t3NtVXDkQhWFBKA7CUThcR+EgnIrngaWhafpcJNVd//eIoY+0qzbNGK95a3D199fPf88f6378/vP2/DHYYgBOzorxCmXxQejGRovxiJLYI3BDK+V4RFHsELQRqXJ0lMQGIRuQLkdHSfQRsDKtcnSURBfhKtIuR0dJ9BCsEqtydJREB6EqsC5HR0nkEagwr3J0lEQWYQryLkdHSeQQpJAo5egoiQxCFBCtHB0lWUeAi6KWo6MkawhvQfRydJRkHsFNylKOjpLMIbQJ2crRUZJxBDYoazk6SjKGsAZkL0dHSe4jqJuqlKOjJPcQ0g3VytFRkmvvzx/APqoWXxLfQW6qvEy8kxwjmAGUZD+EMoiS7IVAJlCSfRDGJEqyB4JYQEnqI4RFlKS27QOQQEnq2voXhVKLXXmJpDLKquxgrzwOXmrBKy+TVEbZbHnpV4sstQCvXrsKqYwy2e7CZwsstQBnz8hOKqMstrrsncWVWoA7z8pKKqMMtrnoyMJKLcDIM7ORyii6LS45s6hSCzDz7CykMoqs/AVXFlRqAVbOEJ1URlGVvpzEYkotgMRZopLKKKKyF5NcSKkFkDxTNFIZRVPyUhqLKLUAGmeLQiqjSMpdSHMBpRZA84zepDKKotRlLBZPagEszupFKqMIylzEcuGkFqCf+ez1LO8l6exOmZS4hMcSeSyAxz1XeGQkLf0FPJfGawE87zzKKyMpqQ8fYVG8FiDC3e/yykhC2oNHWhCvBYiUwRWvjFalPHTExfBagIhZHPHKaEW6A0deCK8FiJzJM6+MZqU6bIZF8FqADNl0XhnNSPM/bciyAFnO6SlTRimanCnQzuO7ZLacPDIaFf4dJNvQcV+G2YYuSIYAsSb6jMMWJHpwZzL86BBJ5FmHLEjkwCLLXMyoMw9XkKhBQV/E2YcqSMSAYCvaDoQpSLRg4CfSLoQoSKRAEEOUnXAvSJQgKqiWZYT7uBYkQgAaqt7Lg3eWbgXxvjjy8NwVl4J4XriyzL8HueK1M+aBel3Ug9fCVs7YOlPTd5DKg4vEeoksWe+QWZDWF4vCc1krZ26Vq8lDKg/qDqthvlI5e4tc1R9QeUAjLIZ5pPIMtHNVffHKg5mhPcwzlWehmavaC1ceyCrNgZ6pPBOtTFVetPIgpGgN9Erl2WhkKv6ClQcgTWOgd1SekXSmor8HqRx8BFL5Si9RJFIZdWIFkT4YXpPKmZLcI1IQyQPhmlTelOTackGkDoIxUrlTknNLBZE4AOZJ5U9Jjk0XZPXBkCE1B0ry2lRBVh4IeVLzoCTfDRdk9kHQJTUXSvLVUEFmHgA7UvOhJJ9uF2T0heFDak6U5MOtgoy8IPxJzYuS3Pi3WHdfCONGF3B0FqOvv2r0fBFcZXT6DpLxwvhkPb8fv/+8XS1cNFcZHRbk6guRg8ccsxXlLKOXBTn7AuTjNc8KJflWkKNPRG5ec81eki8FefUJqMNrvplL8n9Bnv8ANXnNOVNJHn37EQv1eZUki8d83p8/gD14zDzTu0jPh3eQjXmUJJt3QtqXx3d0j2eu4B0EOPD3189/FAQ4QUGAExQEOEFBgBMUBDjxnu2v3QBLvIMAB378/vNGQYAT7y3hbzchw+NfUXg8c0bvxP/vIJQE+I4fsTZn+R3d8lkrHt8svhSEdxHs7rkD395Bnj8B9Vl8Z7d4xqpXu/+tIO3gE1Gb5gJrvraUo51/WZB28gWoS2ORNV5T2tmuHxakXXwhapJcaMnX0nK146d/2GW4aEZXw3lmPYfR83XW55x1536Xn9BluXQmdwb0yGsGd8/pdb4Zd+9065O6TAFkcHdIHfnLGMn99L9Bno28MBDR6A4PFaRNPACIYmZ3hwvSJh8EeJrd2amCtIUHAtZWdnW6IG3xwYCF1R1dKkgTOACgRWI3lwvShA4CSJLaSZGCNMEDAaskd1GsIE34YMAM6R0ULUhTOCBwl8buiRekKR0UOKO1cyoFaYoHroJ85GhmqfbCHf/A7ruVgZLnVytZ3qH64h1D/SA5TDKVzfOI+gO63QeqMcydM9XI8xWTh3S7DlRzmDtmqpnnM7MHdbsN1GKYO2Vqkecjtb/FOmJ9QdThsTvmD+x2+K5nOdDqeVpm+cj8HaTzurCV6vez5JmlW0Ga88WrqZql971cC9ICBIC4IuyGe0FakCAkVbuPhygZhihICxRIZlUyjHSPMAVpwYKBj2g7EKogLWBAsBNx9uEK0oIGBV1RZx6yIC1wYJAXedZhC9KCBwcZ0Wcc+nBdxn9G4TH4bDl5ZDQq9DtIlyFIjMky0xQFaYkCxbVMs0xz0C7TjxGWi5AlF8tMJKR5B+myBYxPGWeX7sAd3zE/ZcjCIgcNKQ/dZViMprwcGTLQvL+2tAfvMixIU1qSDHfXuLel1IfvMixKE16WDHeWvK+X9BfoMixME1qaDHeVuGcEJS7RZVicbmaBstxv5m5RlblIl2WJHp0tVLb7nN0lo1KX6bItVRXVytGqFqRREnMVy9EqF6RREjNVy9GqF6RREnWVy9F2KEijJGqql6PtUpBGScTtUI62U0EaJRGzSznabgVplGTZTuVoOxakUZJpu5Wj7VqQRkmG7ViOtnNBGiW5bddytN0L0ijJpZ3L0SjIB0ry2u7laBTkEyX5inJ8IIQHlOQD5fhEEE92Lwnl+IowXti1JJTjOwI5sFtJKMdrhHJil5JQjmMEc6F6SSjHOcK5oWpJKMc1ArqpWkkoxz2ENKBKSSjHfQQ1KHtJKMcYwpqQtSSUYxyBTcpWEsoxh9AWZCkJ5ZhHcIuil4RyrCE8AVFLQjnWEaCQaCWhHDIIUVCUklAOOQQpzLsklEMWYSrwKgnlkEegSqxLQjl0EKoiq5JQDj0Eq0y7JJRDF+Ea0CoJ5dBHwEakS0I5bBCyIamSUA47BO1gpSiUwxZhOxktCcXwQegBnJWFYvj6DxiTStFMybqiAAAAAElFTkSuQmCC`,c:`/code-wiki-app/assets/c-icon-CMJjUWV6.png`,cpp:`/code-wiki-app/assets/c-pp-icon-BiMgfDVt.png`,react:l,java:`/code-wiki-app/assets/java-icon-DrzBm3oM.png`,markdown:`/code-wiki-app/assets/md-icon-bHz2h5Lh.png`},C={sql:{name:`SQL`,icon:S.sql},html:{name:`HTML`,icon:S.html},css:{name:`CSS`,icon:S.css},javascript:{name:`JavaScript`,icon:S.javascript},typescript:{name:`TypeScript`,icon:S.typescript},git:{name:`Git`,icon:S.git},c:{name:`C`,icon:S.c},cpp:{name:`C++`,icon:S.cpp},react:{name:`React`,icon:S.react},java:{name:`Java`,icon:S.java},"computer-science":{name:`Computer Science`,emojiIcon:`💻`},markdown:{name:`Markdown`,icon:S.markdown}};var ee=`# C Programming Language
 
 C is a low-level, procedural programming language that was developed in the early 1970s by Dennis Ritchie at Bell Labs. It is widely used for system programming, embedded systems, and applications that require high performance and low-level hardware access.
 
@@ -10,7 +10,790 @@ C is a low-level, procedural programming language that was developed in the earl
 - **Rich Standard Library**: C has a comprehensive standard library that provides functions for input/output, string manipulation, memory management, and more.
 - **Modularity**: C supports modular programming through functions and header files, allowing for code reuse and better organization.
 - **Efficiency**: C is known for its performance and efficiency, making it suitable for resource-constrained environments and high-performance applications.
-`,T=`# Computer Science General Knowledge
+
+## Usage of C
+
+C is used in most operating systems, including Unix and Linux, as well as in embedded systems, game development, and high-performance computing. It serves as the foundation for many other programming languages, such as C++, Objective-C, and C#.
+`,w='# Printing and Including Libraries in C\n\nIn C, printing output to the console is typically done using the `printf` function, which is part of the standard input/output library (`stdio.h`). The `printf` function allows you to format and display text, numbers, and other data types.\n\nLibraries are bits of pre-written code that provide additional functionality to your programs. In C, you can include libraries using the `#include` directive.\n\n## Importing Libraries in C\n\nUsing the `#include` preprocessor directive tells the compiler to include the contents of a specified header file library in the program.\n\nThere are two common ways to include libraries:\n\n1. **Standard Libraries**: These are included using angle brackets (`< >`). For example, to include the standard I/O library, you would write:\n\n```c\n#include <stdio.h>\n```\n\n2. **User-Defined Libraries**: These are included using double quotes (`" "`). For example, if you have a custom header file named `myheader.h`, you would include it like this:\n\n```c\n#include "myheader.h"\n```\n\n### Importing the Standard I/O Library For Printing\n\nTo use the `printf` function, you need to include the standard I/O library at the beginning of your C program:\n\n```c\n#include <stdio.h>\n```\n\n## Using the `printf` Function\n\nThe `printf` function takes a format string followed by a variable number of arguments. The format string contains text and format specifiers that indicate how to format the subsequent arguments.\n\nHere is a simple example of using `printf` to print a message to the console:\n\n```c\nint main() {\n    printf("Hello, World!\\n");\n    return 0;\n}\n```\n\n### Escape Sequences\n\nIn the Hello World example, `\\n` is a newline character **escape sequence** that moves the cursor to the next line after printing the message.\n\nThe backslash (`\\`) is used to introduce escape sequences in C. Using a backslash as a literal character would require escaping it with another backslash (`\\\\`).\n\nSome other common escape sequences include:\n\n- `\\t`: Tab - horizontal tab\n- `\\\\`: Backslash - prints a backslash character\n- `\\"`: Double quote - prints a double quote character\n- `\\\'`: Single quote - prints a single quote character\n\n#### Changing Text Color\n\nYou can change the text color in the console by using ANSI escape codes. For example, to print text in red, you can use the following code:\n\n```c\n    // Print red text\n    printf("\\033[31mThis text is red!\\n");\n    // Reset to default text color\n    printf("\\033[0mThis text is default color.\\n");\n\n```\n\nThe `\\033[` sequence starts the ANSI escape code, `31m` sets the text color to red, and `0m` resets the text color to the default.\n\nOther color codes include:\n\n- `30m`: Black\n- `32m`: Green\n- `33m`: Yellow\n- `34m`: Blue\n- `35m`: Magenta\n- `36m`: Cyan\n- `37m`: White\n\n### Format Specifiers\n\nYou can also use format specifiers to print different data types. Here are some common format specifiers:\n\n- `%d`: Integer\n- `%f`: Floating-point number\n- `%c`: Character\n- `%s`: String\n',T=`# Syntax
+
+C syntax is the set of rules that define how C programs are written and interpreted. Here are some key aspects of C syntax:
+
+## Comments
+
+Comments in C are used to explain code and are ignored by the compiler. There are two types of comments:
+
+- Single-line comments: Start with \`//\` and continue to the end of the line.
+
+\`\`\`c
+// This is a single-line comment
+\`\`\`
+
+- Multi-line comments: Start with \`/*\` and end with \`*/\`.
+
+\`\`\`c
+/* This is a
+   multi-line comment */
+\`\`\`
+
+## Ending Statements
+
+In C, each statement must end with a semicolon (\`;\`). This indicates the end of a complete instruction.
+
+\`\`\`c
+int a = 5; // Statement ends with a semicolon
+a = a + 10; // Another statement
+\`\`\`
+
+## Blocks of Code
+
+Blocks of code are enclosed in curly braces (\`{}\`) and are used to group multiple statements together. This is commonly seen in functions, loops, and conditional statements.
+
+\`\`\`c
+if (a > 0) {
+    // This block executes if the condition is true
+    printf("a is positive\\n");
+} else {
+    // This block executes if the condition is false
+    printf("a is not positive\\n");
+}
+\`\`\`
+`,E=`# Compiling C Programs
+
+To compile C programs, you typically use a C compiler such as GCC (GNU Compiler Collection). The compilation process involves converting the human-readable C source code into machine code that the computer can execute.
+
+## Steps to Compile a C Program
+
+1. **Write the Source Code**: Create a C source file with a \`.c\` extension using a text editor. For example, \`hello.c\`.
+
+\`\`\`c
+#include <stdio.h>
+
+int main() {
+    printf("Hello, World!\\n");
+    return 0;
+}
+\`\`\`
+
+2. **Navigate to the Source Code Directory in a Terminal**: Open your terminal of choice, and use the \`cd\`(change directory) command to change to the directory where your C source file is located.
+
+\`\`\`bash
+cd path/to/your/source/code
+\`\`\`
+
+3. **Compile the Source Code**: Use the GCC compiler to compile the source code. The basic syntax is:
+
+\`\`\`bash
+gcc -o output_name source_file.c
+\`\`\`
+
+- -o specifies the name of the output executable file followed by the name you want to give to the executable.
+
+If you don't specify the \`-o\` option, GCC will create an executable named \`a.out\` by default on Unix-like systems.
+
+This will compile \`source_file.c\` and create an executable named \`output_name\`. For example:
+
+4. **Run the Compiled Program**: After compilation, you can run the executable from the terminal:
+
+\`\`\`bash
+./output_name
+\`\`\`
+`,D="# Data Types in C\n\nC provides several built-in data types that allow you to store and manipulate different kinds of data. Understanding these data types is essential for effective programming in C.\n\n## Numeric Data Types\n\nC has several numeric data types, the most common of which are:\n\n1. **int**: Used to store integer values (whole numbers). The size of `int` can vary depending on the system, but it is typically 4 bytes.\n\n```c\nint a = 10; // Example of an integer variable\n```\n\n2. **float**: Used to store single-precision floating-point numbers (decimal numbers). It typically occupies 4 bytes.\n   - Float variables require the suffix `f` or `F` when defining a literal value.\n\n```c\nfloat b = 3.14f; // Example of a float variable\n```\n\n3. **double**: Used to store double-precision floating-point numbers. It typically occupies 8 bytes.\n\n```c\ndouble c = 3.14159265359; // Example of a double variable\n```\n\n4. **long**: Used to store larger integer values. The size of `long` can vary, but it is typically at least 4 bytes.\n   - Long variables require the suffix `l` or `L` when defining a literal value.\n\n```c\nlong largeInt = 100000L; // Example of a long variable\n```\n\n5. **short**: Used to store smaller integer values. It typically occupies 2 bytes.\n\n```c\nshort smallInt = 100; // Example of a short variable\n```\n\n6. **long long**: Used to store very large integer values. It typically occupies 8 bytes.\n   - Long long variables require the suffix `ll` or `LL` when defining a literal value.\n\n```c\nlong long veryLargeInt = 10000000000LL; // Example of a long long variable\n```\n\n7. **byte**: Used to store small integer values, typically ranging from 0 to 255. It usually occupies 1 byte.\n\n```c\nuint8_t byteValue = 255; // Example of a byte variable\n```\n\n### Unsigned Data Types\n\n**unsigned**: A modifier that can be applied to `int`, `char`, `short`, `long`, and `long long` to indicate that the variable can only hold non-negative values, effectively doubling the upper limit of the range.\n\n    - Creating a variable as unsigned requires the `unsigned` keyword before the data type, and the suffix `U` or `u` when defining a literal value.\n\n```c\nunsigned int positiveInt = 3000000000U; // Example of an unsigned int variable\n```\n\n## Character Data Type\n\n1. **char**: Used to store single characters. It typically occupies 1 byte.\n\n```c\nchar d = 'A'; // Example of a char variable\n```\n\n## Void Data Type\n\n1. **void**: Represents the absence of a value. It is commonly used for functions that do not return a value.\n\n```c\nvoid myFunction() {\n    // Function code here\n}\n```\n\n## Strings(Character Arrays)\n\nC does not have a built-in string data type. Instead, strings are represented as arrays of characters terminated by a null character (`'\\0'`).\n\n```c\nchar str[] = \"Hello, World!\"; // Example of a string (character array)\n```\n",O=`# Variables in C
+
+Variables in C are used to store data that can be manipulated throughout a program. Each variable must be declared with a specific data type before it can be used.
+
+Once a variable is declared, it can be assigned a value and used in expressions, functions, and other operations.
+
+They also have a scope (where they can be accessed) and a lifetime (how long they exist in memory), as well as a pointer (which holds the memory address of the variable).
+
+## Declaring Variables
+
+To declare a variable in C, you need to specify its data type followed by the variable name. Here are some examples of variable declarations:
+
+\`\`\`c
+int age;               // Declares an integer variable named age
+float height;         // Declares a float variable named height
+char initial;         // Declares a char variable named initial
+double weight;       // Declares a double variable named weight
+\`\`\`
+
+These declarations created variables, but were not _assigned_ a value.
+
+## Assigning Values to Variables
+
+When we assign a value to a variable, we use the assignment operator (\`=\`):
+
+- This is also called _initializing_ a variable when we assign a value at the time of declaration.
+
+\`\`\`c
+age = 25;             // Assigns the value 25 to the variable age
+height = 5.9f;       // Assigns the value 5.9 to the variable height
+initial = 'J';       // Assigns the character 'J' to the variable initial
+weight = 70.5;      // Assigns the value 70.5 to the variable weight
+\`\`\`
+
+## Retriving and Using Variable Values
+
+Once a variable has been declared and assigned a value, you can use it in expressions, functions, and other operations. For example, you can print the value of a variable using \`printf\`.
+
+In C, you use format specifiers to indicate the type of data being printed:
+
+\`\`\`c
+printf("Age: %d\\n", age);               // Prints the value of age
+printf("Height: %.2f\\n", height);       // Prints the value of height with 2 decimal places
+printf("Initial: %c\\n", initial);       // Prints the value of initial
+printf("Weight: %.2f\\n", weight);      // Prints the value of weight with 2 decimal places
+\`\`\`
+
+Learn more about [Format Specifiers and Data Types](./04-data-types.md)
+
+## Variable Scope and Lifetime
+
+In C, the scope of a variable determines where it can be accessed within the program. There are three main types of variable scope:
+
+1. **Local Variables**: Declared within a function or block and can only be accessed within that function or block. They are created when the function is called and destroyed when the function exits.
+
+\`\`\`c
+void myFunction() {
+    int localVar = 10; // local variable
+    printf("%d\\n", localVar); // Accessible here
+}
+
+printf("%d\\n", localVar); // Not accessible here, would cause an error
+\`\`\`
+
+2. **Global Variables**: Declared outside of any function and can be accessed from any function within the same file (or other files if declared with \`extern\`). They exist for the lifetime of the program.
+
+\`\`\`c
+int globalVar = 20; // global variable
+void myFunction() {
+    printf("%d\\n", globalVar); // Accessible here
+}
+printf("%d\\n", globalVar); // Accessible here as well
+\`\`\`
+
+3. **Static Variables**: Declared with the \`static\` keyword, they retain their value between function calls. If declared within a function, they have local scope but persist for the lifetime of the program.
+
+\`\`\`c
+void myFunction() {
+    static int staticVar = 0; // static variable
+    staticVar++;
+    printf("%d\\n", staticVar); // Retains value between calls
+}
+myFunction(); // Prints 1
+myFunction(); // Prints 2
+\`\`\`
+
+## Pointers
+
+Pointers are variables that store the memory address of another variable. They are declared using the asterisk (\`*\`) symbol before the pointer name.
+
+\`\`\`c
+int number = 42;          // Regular integer variable
+int *pointerToNumber = &number; // Assigning the address of number to the pointer
+\`\`\`
+
+You can access the value stored at the address pointed to by the pointer using the dereference operator (\`*\`):
+
+\`\`\`c
+printf("Value of number: %d\\n", *pointerToNumber); // Prints 42
+\`\`\`
+
+Pointers are a powerful feature in C, allowing for dynamic memory management, array manipulation, and efficient function parameter passing.
+
+## Initializing Multiple Variables
+
+You can declare and initialize multiple variables of the same type in a single line by separating them with commas:
+
+\`\`\`c
+int x = 10, y = 20, z = 30; // Declares and initializes three integer variables
+\`\`\`
+
+You can also declare multiple variables without initializing them:
+
+\`\`\`c
+float a, b, c; // Declares three float variables without initialization
+\`\`\`
+
+And then assign values later, even making them the same value by setting them equal to one another:
+
+\`\`\`c
+a = b = c = 5.5f; // Assigns the value 5.5 to all three float variables
+\`\`\`
+
+## Constants
+
+In C, you can declare constants using the \`const\` keyword. Constants are variables whose values cannot be changed after they are initialized.
+They MUST be assigned a value at the time of declaration, and any attempt to modify them later will result in a compilation error.
+
+\`\`\`c
+const int DAYS_IN_WEEK = 7; // Declares a constant integer variable
+const float PI = 3.14159f;   // Declares a constant float variable
+\`\`\`
+
+Attempting to modify a constant variable will result in a compilation error:
+
+\`\`\`c
+DAYS_IN_WEEK = 8; // Error: cannot modify a constant variable
+\`\`\`
+
+Attempting to initialize a constant variable without a value will also result in a compilation error:
+
+\`\`\`c
+const int MAX_VALUE; // Error: constant variable must be initialized
+\`\`\`
+
+## Naming Conventions
+
+When naming variables in C, there are some rules and best practices to follow:
+
+- Variable names must start with a letter (A-Z, a-z) or an underscore (\\_), followed by letters, digits (0-9), or underscores.
+- Variable names are case-sensitive (e.g., \`myVar\` and \`myvar\` are different).
+- Avoid using C reserved keywords (e.g., \`int\`, \`return\`, \`if\`, etc.) as variable names.
+- Use meaningful names that describe the purpose of the variable (e.g., \`totalScore\`, \`userName\`).
+- Follow a consistent naming convention, such as camelCase or snake_case, throughout your codebase.
+  - Typically, camelCase is used for variable names in C (e.g., \`myVariableName\`).
+
+### Naming Constants
+
+When naming constants, it is common practice to use all uppercase letters with underscores to separate words. This helps distinguish constants from regular variables.
+
+\`\`\`c
+const int MAX_SPEED = 120; // Constant variable using uppercase naming convention
+const float GRAVITY = 9.81f; // Another constant variable
+\`\`\`
+
+By following these conventions, you can improve the readability and maintainability of your C code.
+`,k="# Math Operations and Syntax in C\n\n## Common Math Operations\n\nC supports a variety of mathematical operations using standard operators. Here are some of the most common ones:\n\n- **Addition (`+`)**: Adds two numbers together.\n\n  ```c\n  int sum = a + b; // Adds a and b\n  ```\n\n- **Subtraction (`-`)**: Subtracts one number from another.\n\n  ```c\n  int difference = a - b; // Subtracts b from a\n  ```\n\n- **Multiplication (`*`)**: Multiplies two numbers.\n\n  ```c\n  int product = a * b; // Multiplies a and b\n  ```\n\n- **Division (`/`)**: Divides one number by another.\n  ```c\n  int quotient = a / b; // Divides a by b\n  ```\n- **Modulus (`%`)**: Returns the remainder of a division operation.\n\n  ```c\n  int a = 10, b = 3;\n  int remainder = a % b; // Remainder of 10 divided by 3 is 1\n  ```\n\n  ## Comparison Operators\n\n  C also provides comparison operators to compare values:\n\n- **Equal to (`==`)**: Checks if two values are equal.\n\n  ```c\n  int a= 5, b= 5;\n  bool isEqual = (a == b); // isEqual will be true\n  ```\n\n- **Not equal to (`!=`)**: Checks if two values are not equal.\n\n  ```c\n  bool isNotEqual = (a != b); // isNotEqual will be false\n  ```\n\n- **Greater than (`>`)**: Checks if one value is greater than another.\n\n  ```c\n  bool isGreater = (a > b); // isGreater will be false\n  ```\n\n- **Less than (`<`)**: Checks if one value is less than another.\n\n  ```c\n  bool isLess = (a < b); // isLess will be false\n  ```\n\n- **Greater than or equal to (`>=`)** and **Less than or equal to (`<=`)**: Checks if one value is greater than or equal to or less than or equal to another.\n\n- **And (`&&`)**: Logical AND operator.\n\n  ```c\n  bool bothGreaterThanZero = (a > 0) && (b > 0); // true if both conditions are true\n  ```\n\n- **Or (`||`)**: Logical OR operator.\n\n  ```c\n  bool atLeastOneGreaterThanZero = (a > 0) || (b > 0); // true if at least one condition is true\n  ```\n\n## Operator Precedence\n\nC follows a specific order of operations, known as operator precedence, to determine how expressions are evaluated\n. The precedence from highest to lowest is as follows:\n\n1. Parentheses `()`\n\n2. Unary operators (`+`, `-`, `++`, `--`, `!`)\n\n3. Multiplication `*`, Division `/`, Modulus `%`\n\n4. Addition `+`, Subtraction `-`\n\n5. Relational operators (`<`, `<=`, `>`, `>=`)\n\n6. Equality operators (`==`, `!=`)\n\n7. Logical AND `&&`\n\n8. Logical OR `||`\n",A=`# Conditional Logic in C
+
+Conditional Logic allows you to compare values and execute different blocks of code based on the results of those comparisons. In C, this is primarily done using \`if\`, \`else if\`, and \`else\` statements.
+
+## IF-ELSE Statements
+
+The if statement is used to execute a block of code based on a specified condition. If the condition evaluates to true, the code block inside the if statement is executed. If the condition is false, the code block is skipped.
+
+The else statement can be used in conjunction with the if statement to provide an alternative block of code that will be executed if the condition is false.
+
+There is also the else if statement, which allows you to check multiple conditions in sequence.
+
+### If Statement
+
+\`\`\`c
+int a=10, b=20;
+bool aLessThanB = (a < b);
+if (aLessThanB) {
+    printf("a is less than b\\n");
+}
+\`\`\`
+
+In this example, the condition \`a < b\` is evaluated. Since it is true, the message "a is less than b" will be printed.
+
+### Else-if Statement
+
+\`\`\`c
+int a=10, b=20;
+if (a > b) {
+    printf("a is greater than b\\n");
+} else if (a < b) {
+    printf("a is less than b\\n");
+}
+\`\`\`
+
+In this example, the first condition \`a > b\` is false, so the program checks the else-if condition \`a < b\`, which is true. Therefore, the message "a is less than b" will be printed.
+
+### Else Statement
+
+\`\`\`c
+int a=10, b=20;
+if (a > b) {
+    printf("a is greater than b\\n");
+}else if (a < b>){
+    printf("a is less than b\\n");
+} else {
+    printf("a and b are equal\\n");
+}
+\`\`\`
+
+## Ternary Operations (Short-hand If-Else)
+
+The ternary operator is a shorthand way of writing an if-else statement. It takes three operands: a condition, a value to return if the condition is true, and a value to return if the condition is false.
+
+- The condition is followed by a question mark \`?\`.
+- The value to return if the condition is true comes next, followed by a colon \`:\`.
+- Finally, the value to return if the condition is false is specified and followed by a semicolon \`;\`.
+
+\`\`\`c
+int a = 10, b = 20;
+const char* result = (a < b) ? "a is less than b" : "a is not less than b";
+printf("%s\\n", result);
+\`\`\`
+
+## Switch Statement
+
+The switch statement is another way to perform conditional logic based on the value of a variable. It allows you to execute different blocks of code based on the value of an expression.
+
+- Use the \`switch\` keyword followed by the variable or expression in parentheses.
+
+- Inside the switch block, use \`case\` labels to define different possible values and the corresponding code to execute for each case followed by a colon \`:\`. The \`break\` statement is used to exit the switch block after executing a case.
+
+- A \`default\` case can also be included to handle any values that do not match any of the specified cases.
+  - The \`default\` case is special and doesn't require a \`break\` statement since it is the last case in the switch block.
+
+\`\`\`c
+int day = 3;
+switch (day) {
+    case 1:
+        printf("Monday\\n");
+        break;
+    case 2:
+        printf("Tuesday\\n");
+        break;
+    case 3:
+        printf("Wednesday\\n");
+        break;
+    case 4:
+        printf("Thursday\\n");
+        break;
+    case 5:
+        printf("Friday\\n");
+        break;
+    case 6:
+        printf("Saturday\\n");
+        break;
+    case 7:
+        printf("Sunday\\n");
+        break;
+    default:
+        printf("Invalid day\\n");
+}
+\`\`\`
+
+In this example, the value of \`day\` is 3, so the program will print "Wednesday". The \`break\` statement is used to exit the switch block after executing the matching case. The \`default\` case is executed if none of the specified cases match the value of the expression.
+
+## Nesting Conditional Statements
+
+Conditional statements can be _nested_ within each other to create more complex decision-making structures. This means you can place an if, else if, else, or switch statement inside another if, else if, else, or switch statement.
+
+\`\`\`c
+int a = 10, b = 20, c = 15;
+if (a < b) {
+    if (a < c) {
+        printf("a is the smallest\\n");
+    } else {
+        printf("c is the smallest\\n");
+    }
+} else {
+    if (b < c) {
+        printf("b is the smallest\\n");
+    } else {
+        printf("c is the smallest\\n");
+    }
+}
+\`\`\`
+
+In this example, the program first checks if \`a\` is less than \`b\`. If true, it then checks if \`a\` is also less than \`c\` to determine if \`a\` is the smallest.
+
+If the first condition is false, it checks if \`b\` is less than \`c\` to find the smallest value among \`b\` and \`c\`.
+
+Nesting allows for more detailed and specific conditions to be evaluated, enabling complex decision-making processes in your code.
+
+Nesting can also make code harder to read and maintain, so it's important to use it judiciously and consider breaking complex logic into separate functions when appropriate.
+
+### Avoid Nesting When Possible
+
+An alternative to nesting is to use logical operators (like \`&&\` for AND, \`||\` for OR) to combine conditions in a single if statement. This can help keep the code flatter and more readable.
+
+\`\`\`c
+int a = 10, b = 20, c = 15;
+if (a < b && a < c) {
+    printf("a is the smallest\\n");
+} else if (b < c) {
+    printf("b is the smallest\\n");
+} else {
+    printf("c is the smallest\\n");
+}
+\`\`\`
+
+In this example, the conditions are combined using the logical AND operator \`&&\`, eliminating the need for nested if statements and improving readability.
+`,j=`# Arrays in C
+
+An array is a collection of elements of the same data type stored in contiguous memory locations.
+
+## Initializing an Array
+
+To initialize an array in C, you can specify the data type, name, and size of the array enclosed in square brackets \`[]\`, followed by the values enclosed in curly braces \`{}\`.
+
+- In an array, all elements must be of the same data type.
+- Arrays have a fixed size that must be defined at the time of declaration.
+
+\`\`\`c
+int numbers[5] = {1, 2, 3, 4, 5}; // An array of integers
+char letters[4] = {'A', 'B', 'C', 'D'}; // An array of characters
+\`\`\`
+
+You can also initialize an array without specifying the size; the compiler will determine the size based on the number of elements provided.
+
+\`\`\`c
+int numbers[] = {1, 2, 3, 4, 5}; // Size will be 5
+\`\`\`
+
+## Accessing Array Elements
+
+You can access individual elements of an array using their _index_, which starts from 0 for the first element.
+
+\`\`\`c
+int firstNumber = numbers[0]; // Accessing the first element (1)
+char secondLetter = letters[1]; // Accessing the second element ('B')
+\`\`\`
+
+## Replacing Array Elements
+
+You can replace elements in an array by assigning a new value to a specific index.
+
+They must be replaced with a value of the same data type as the array.
+
+\`\`\`c
+numbers[2] = 10; // Replacing the third element with 10
+letters[0] = 'Z'; // Replacing the first element with 'Z'
+\`\`\`
+
+## Array Properties
+
+Arrays have a fixed size, which is determined at the time of declaration. You can find the size of an array using the \`sizeof\` operator.
+
+- This operator returns the total number of bytes occupied by the array in memory as an \`unsigned int\`.
+
+To determine the number of elements in the array, you can divide the total size of the array by the size of a single element:
+
+\`\`\`c
+int size = sizeof(numbers) / sizeof(numbers[0]); // Calculate the number of elements in the array
+\`\`\`
+
+## Adding Elements to an Array
+
+In C, arrays have a fixed size, so you cannot directly add elements to an existing array. However, you can create a new array with a larger size and copy the elements from the old array to the new one.
+
+To copy an array, you can use a loop to iterate through the elements of the old array and assign them to the new array.
+
+\`\`\`c
+int oldArray[] = {1, 2, 3};
+int oldSize = sizeof(oldArray) / sizeof(oldArray[0]);// Calculate the size of the old array
+int newSize = oldSize + 1; // New size with one additional element
+int newArray[newSize]; // Declare the new array
+// Copy elements from old array to new array
+for (int i = 0; i < oldSize; i++) {
+    newArray[i] = oldArray[i];
+}
+// Add the new element at the end
+newArray[oldSize] = 4; // Adding element 4
+\`\`\`
+
+In this example, we create a new array \`newArray\` with one additional element, copy the elements from \`oldArray\`, and then add the new element at the end.
+
+## Dynamic Arrays
+
+C does not provide built-in dynamic arrays, but you can use pointers and dynamic memory allocation functions like \`malloc\` and \`realloc\` from the \`stdlib.h\` library to create resizable arrays.
+
+### Standard Library Inclusion
+
+The C standard library must be included to use dynamic memory allocation functions:
+
+\`\`\`c
+#include <stdlib.h>
+\`\`\`
+
+It features functions such as \`malloc\`, \`calloc\`, \`realloc\`, and \`free\` for managing dynamic memory.
+
+### Malloc
+
+The \`malloc\` function _allocates_ or assigns a specified number of bytes in memory and returns a pointer to the beginning of the allocated memory block.
+
+- It takes the size in bytes as an argument.
+
+\`\`\`c
+int size = 5; // Desired size of the array
+int *dynamicArray = (int *)malloc(size * sizeof(int)); // Allocate memory for the array
+\`\`\`
+
+### Realloc
+
+The \`realloc\` function is used to _reallocate_ memory or resize a previously allocated memory block.
+
+- It takes a pointer to the existing memory block and the new size in bytes as arguments.
+
+\`\`\`c
+int newSize = size + 1; // New size of the array
+dynamicArray = (int *)realloc(dynamicArray, newSize * sizeof(int)); // Resize the array
+\`\`\`
+
+Reallocating memory may move the memory block to a new location, so it's important to assign the result back to the original pointer.
+
+To do so, you can use a temporary pointer to avoid memory leaks in case \`realloc\` fails:
+
+\`\`\`c
+int *temp;
+temp = (int *)realloc(dynamicArray, newSize * sizeof(int));
+if (temp != NULL) {
+    dynamicArray = temp; // Update the original pointer if realloc was successful
+} else {
+    // Handle memory allocation failure
+    printf("Memory allocation failed\\n");
+}
+\`\`\`
+
+### Calloc
+
+The \`calloc\` function allocates memory for an array of elements, initializes all bytes to zero, and returns a pointer to the allocated memory block.
+
+It takes two arguments: the number of elements and the size of each element.
+
+\`\`\`c
+int *dynamicArray;
+int numElements = 5; // Desired size of the array
+dynamicArray = (int *)calloc(numElements, sizeof(int)); // Allocate and initialize memory for the array
+\`\`\`
+
+Calloc is particularly useful when you want to ensure that all elements in the array are initialized to zero, which can help prevent undefined behavior from uninitialized memory.
+
+### Free
+
+The \`free\` function is used to deallocate or release memory that was previously allocated using \`malloc\`, \`calloc\`, or \`realloc\`.
+
+- It takes a pointer to the memory block to be freed as an argument.
+- Deletes the allocated memory and makes it available for future allocations.
+
+\`\`\`c
+free(dynamicArray); // Deallocate the memory allocated for the dynamic array
+dynamicArray = NULL; // Set the pointer to NULL to avoid dangling pointer
+\`\`\`
+
+It's important to free dynamically allocated memory when it is no longer needed to prevent memory leaks in your program.
+`,M=`# Looping Over Data Structures in C
+
+Loops are used in programming to execute a block of code multiple times based on a condition.
+
+In C, there are several types of loops, including \`for\`, \`while\`, and \`do-while\` loops. These loops can be used to iterate over data structures such as arrays and linked lists.
+
+## For Loop
+
+The \`for\` loop is commonly used to iterate over arrays. It consists of three main parts: initialization, condition, and increment/decrement.
+
+\`\`\`c
+#include <stdio.h>
+int main() {
+    int numbers[] = {10, 20, 30, 40, 50};
+    int size = sizeof(numbers) / sizeof(numbers[0]); // Calculate the number of elements in the array
+
+    for (int i = 0; i < size; i++) {
+        printf("%d\\n", numbers[i]); // Access each element using the index
+    }
+
+    return 0;
+}
+\`\`\`
+
+In this example, the \`for\` loop iterates over each element in the \`numbers\` array and prints its value.
+
+## While Loop
+
+The \`while\` loop continues to execute a block of code as long as a specified condition is true.
+
+\`\`\`c
+#include <stdio.h>
+int main() {
+    int numbers[] = {10, 20, 30, 40, 50};
+    int size = sizeof(numbers) / sizeof(numbers[0]); // Calculate the number of elements in the array
+    int i = 0;
+    while (i < size) {
+        printf("%d\\n", numbers[i]); // Access each element using the index
+        i++; // Increment the index
+    }
+    return 0;
+}
+\`\`\`
+
+# Do-While Loop
+
+The \`do-while\` loop is similar to the \`while\` loop, but it guarantees that the block of code will be executed at least once before checking the condition.
+
+\`\`\`c
+#include <stdio.h>
+int main() {
+    int numbers[] = {10, 20, 30, 40, 50};
+    int size = sizeof(numbers) / sizeof(numbers[0]); // Calculate the number of elements in the array
+    int i = 0;
+    do {
+        printf("%d\\n", numbers[i]); // Access each element using the index
+        i++; // Increment the index
+    } while (i < size);
+    return 0;
+}
+\`\`\`
+
+In this example, the \`do-while\` loop prints each element in the \`numbers\` array, ensuring that the loop body is executed at least once.
+`,N=`# Functions in C
+
+Functions in C are blocks of code that perform specific tasks and can be reused throughout a program. They help in organizing code, improving readability, and reducing redundancy.
+
+## Defining a Function
+
+To define a function in C, you need to specify the return type, function name, and parameters (if any).
+
+The general syntax for defining a function is as follows:
+
+\`\`\`c
+return_type function_name(parameter_list) {
+    // Function body
+}
+\`\`\`
+
+An example of an function that adds two intergers and returns the result:
+
+\`\`\`c
+int myFunction(int a, int b) {
+    // Function body
+    return a + b; // Example return statement
+}
+\`\`\`
+
+If you don't need a return value, avoid using \`void\` as it can cause uninteded behavior.
+
+Instead, you can return an integer value to indicate success or failure, usually 0 for success and 1 for failure.
+
+\`\`\`c
+// Function that performs an action without returning a value
+int performAction() {
+    // Function body
+    return 0; // Indicate success
+}
+\`\`\`
+
+## Function Parameters
+
+Functions can accept parameters, which are values passed to the function when it is called.
+
+Parameters allow functions to operate on different data without changing the function's code.
+
+\`\`\`c
+int multiply(int x, int y) {
+    return x * y; // Example function that multiplies two integers
+}
+\`\`\`
+
+Parameters can be of any data type, including primitive types (like \`int\`, \`float\`, \`char\`), arrays, pointers, and user-defined types (like \`struct\`).
+
+## Calling a Function
+
+To call a function, you simply use its name followed by parentheses containing any required arguments.
+
+\`\`\`c
+int result = myFunction(5, 10); // Calling the function and storing the result
+\`\`\`
+
+## Importing Function Prototypes
+
+To use functions defined in other files, you need to declare their prototypes at the beginning of your file or include the appropriate header files.
+
+\`\`\`c
+#include <stdio.h>
+// Function prototype
+int myFunction(int a, int b);
+\`\`\`
+
+This allows the compiler to recognize the function when it is called later in the code.
+
+Then, import the \`myFunction\` definition from another file:
+
+\`\`\`c
+#include "myFunctions.h" // Assuming myFunctions.h contains the prototype for myFunction
+\`\`\`
+`,te=`# Linked Lists in C
+
+Linked lists are dynamic data structures that consist of nodes, where each node contains data and a pointer to the next node.
+
+This allows for efficient insertion and deletion of elements, as the size of the linked list can grow or shrink as needed.
+
+## Creating a Linked List Node
+
+First, import the standard library for memory allocation functions:
+
+\`\`\`c
+#include <stdio.h>
+#include <stdlib.h>
+\`\`\`
+
+To create a linked list in C, you first need to define a structure for the nodes.
+
+- Use the \`struct\` keyword to define a new structure type.
+
+\`\`\`c
+
+// Define the structure for a linked list node
+struct Node {
+    int data; // Data part of the node
+    struct Node* next; // Pointer to the next node
+};
+\`\`\`
+
+## Creating and Initializing Nodes
+
+To create and initialize a new node, you can use the \`malloc\` function to allocate memory for the node.
+
+Let's create a function to create a new node:
+
+\`\`\`c
+// Function to create a new node
+struct Node* createNode(int data) {
+  // Allocate memory for a new node
+    struct Node* newNode = (struct Node*)malloc(sizeof(struct Node));
+    // Initialize the node's data and next pointer
+    newNode->data = data;
+    // Set the next pointer to NULL
+    newNode->next = NULL;
+    return newNode;
+}
+\`\`\`
+
+## Adding Nodes to the Linked List
+
+To add nodes to the linked list, you can create a function that appends a new node at the end of the list.
+
+\`\`\`c
+// Function to append a node at the end of the linked list
+int appendNode(struct Node** headRef, int data) {
+    struct Node* newNode = createNode(data);
+    if (*headRef == NULL) {
+        *headRef = newNode; // If the list is empty, set the new node as the head
+        return 0;
+    }
+    struct Node* current = *headRef;
+    while (current->next != NULL) {
+        current = current->next; // Traverse to the end of the list
+    }
+    current->next = newNode; // Link the new node at the end
+    return 0;
+}
+\`\`\`
+
+## Looping Over Linked Lists
+
+To iterate over a linked list, you typically use a \`while\` loop.
+
+\`\`\`c
+int main() {
+    // Create a simple linked list: 10 -> 20 -> 30
+    struct Node* head = createNode(10);
+    head->next = createNode(20);
+    head->next->next = createNode(30);
+
+    struct Node* current = head;
+    while (current != NULL) {
+        printf("%d -> ", current->data);
+        current = current->next;
+    };
+    return 0;
+}
+\`\`\`
+`,ne=`# Computer Science General Knowledge
 
 This section contains general knowledge notes about computer science, covering fundamental concepts, theories, and principles that form the basis of the field. Topics include algorithms, data structures, computational theory, computer architecture, networking basics, and more.
 
@@ -33,7 +816,7 @@ Computers are electronic devices that process data according to a set of instruc
 - **Programming Languages**: Formal languages used to write computer programs (e.g., Python, Java, C++).
 - **Databases**: Organized collections of data that can be easily accessed, managed, and updated.
 - **Cybersecurity**: The practice of protecting computer systems and networks from digital attacks.
-`,E=`# Computer Hardware
+`,re=`# Computer Hardware
 
 Hardware refers to the physical components of a computer system. This section covers the essential hardware elements that make up a computer, including input and output devices, storage solutions, and internal components.
 
@@ -147,7 +930,7 @@ The motherboard is the main circuit board of a computer that connects all the co
 - **Input/Output Ports**: Connectors for peripherals such as USB devices, audio jacks, and network cables
 - **Memory Slots**: Slots for installing RAM modules.
   - These are referred to as DIMM Slots: Dual Inline Memory Module slots where RAM sticks are installed.
-`,D=`# How Computers Work: Numbers and Data Representation
+`,P=`# How Computers Work: Numbers and Data Representation
 
 Numbers are fundamental to how computers operate and process information.
 
@@ -293,7 +1076,7 @@ In Unicode, the character '€' (Euro sign) is represented by the decimal value 
 #### Note: Unicode can represent a vast number of characters from different languages and symbol sets, making it suitable for global applications.
 
 #### Both ASCII and Unicode have the same values for the first 128 characters, ensuring compatibility between the two encoding schemes for basic English text.
-`,O=`# Strings and Text Representation in Computers
+`,F=`# Strings and Text Representation in Computers
 
 Strings are sequences of characters used to represent text in computer systems. They can include letters, numbers, symbols, and whitespace. In programming, strings are typically enclosed in quotation marks (single, double, or backticks) to differentiate them from other data types.
 
@@ -388,7 +1171,7 @@ When a string (or any object) is no longer needed, the garbage collector identif
 This process helps prevent memory leaks and optimizes memory usage, allowing developers to focus on writing code without worrying about manual memory management. However, the specifics of garbage collection can vary between programming languages and their respective runtime environments.
 
 Some languages, like Java and Python, have built-in garbage collectors that automatically handle memory management. Others, like C and C++, require developers to manually manage memory allocation and deallocation, which can lead to issues if not handled properly.
-`,k=`# How Computers Perform Basic Math Operations
+`,I=`# How Computers Perform Basic Math Operations
 
 Computers perform basic math operations using a combination of binary arithmetic and logic gates within the CPU (Central Processing Unit). The fundamental operations include addition, subtraction, multiplication, and division. These operations are executed using binary numbers, which are represented using only two digits: 0 and 1.
 
@@ -508,7 +1291,7 @@ If we compare \`1010\` and \`1001\`(decimal 10 and 9):
 \`\`\`
 
 Since not all outputs are 1, the two numbers are not equal.
-`,A=`# C++ Programming Language
+`,L=`# C++ Programming Language
 
 C++ is a high-level, general-purpose programming language that was developed as an extension of the C programming language by Bjarne Stroustrup in the early 1980s. It is widely used for system/software development, game development, real-time simulations, and applications requiring high performance.
 
@@ -529,7 +1312,7 @@ C++ is a high-level, general-purpose programming language that was developed as 
 - **Standard Template Library (STL)**: C++ includes the STL, which provides a collection of template classes and functions for data structures and algorithms, while C lacks this feature.
 - **Namespaces**: C++ introduces namespaces to avoid name conflicts, a feature not available in C.
 - **Exception Handling**: C++ provides built-in support for exception handling using \`try\`, \`catch\`, and \`throw\` keywords, while C relies on error codes for error handling.
-`,j=`# CSS Notes
+`,R=`# CSS Notes
 
 Welcome to the CSS section! Here you'll find notes about CSS styling, layout, and design principles.
 
@@ -573,7 +1356,7 @@ selector {
 \`\`\`
 
 Stay tuned for more detailed content!
-`,ee=`# CSS Basics
+`,ie=`# CSS Basics
 
 Welcome to CSS! This guide covers the fundamentals of Cascading Style Sheets.
 
@@ -795,7 +1578,7 @@ CSS provides various properties to style text and fonts:
 <div class="small-caps-text" style="font-variant: small-caps; font-size: 16px; margin-top: 10px;">
   This text is in small-caps, which automatically capitalizes lowercase letters, while leaving them smaller than uppercase letters.
 </div>
-`,M=`# Colors
+`,ae=`# Colors
 
 CSS supports various ways to define colors:
 
@@ -991,7 +1774,7 @@ The \`text-shadow\` property can also use color values to create shadow effects 
      1px  1px 0 #000; font-size: 24px; color: white; background-color: lightgray; padding: 5px;">
   This text has an outline effect using text shadows.
 </p>
-`,N=`# Display
+`,oe=`# Display
 
 The \`display\` property in CSS is used to define how an element is displayed on the web page. It determines the layout behavior of an element and its children.
 
@@ -1094,7 +1877,7 @@ This is useful for hiding elements without deleting them from the HTML, like dro
 The \`flex\` and \`grid\` display values are used to create flexible and grid-based layouts, respectively allowing for more complex arrangements of elements.
 These layout models provide powerful tools for designing responsive and adaptive web pages that are fully customizable.
 Learn more about Flexbox in the [Flexbox Basics](06-flexbox-basics.md) section and Grid in the [Grid Basics](07-grid-basics.md) section.
-`,te=`# Positioning
+`,se=`# Positioning
 
 CSS positioning allows you to control the layout and placement of elements on a webpage. There are several positioning schemes available in CSS:
 
@@ -1241,7 +2024,7 @@ The \`z-index\` property controls the vertical stacking order of positioned elem
 </div>
 
 #### Tip: When using \`z-index\`, ensure that the elements are positioned (i.e., have a \`position\` value other than \`static\`). And also keep in mind that if an item has a parent with a defined \`z-index\`, it will be constrained within that parent's stacking context. For example, a child element cannot appear in front of an ancestor element with a lower \`z-index\`, even if the child has a higher \`z-index\` value.
-`,ne=`# CSS Selectors
+`,ce=`# CSS Selectors
 
 CSS selectors are patterns used to select and style HTML elements. They define which elements a set of CSS rules will apply to.
 Selectors can target elements based on their tag name, class, ID, attributes, and more.
@@ -1340,7 +2123,7 @@ Selectors can be combined to create more specific rules. Here are some examples:
     font-weight: bold;
   }
   \`\`\`
-`,re=`# Pseudo-Selectors
+`,le=`# Pseudo-Selectors
 
 Pseudo-selectors in CSS allow you to style elements based on their state or position in the document tree, rather than just their attributes. They are prefixed with a colon (\`:\`) and can be categorized into two main types: pseudo-classes and pseudo-elements.
 
@@ -1651,7 +2434,7 @@ Pseudo-elements allow you to style specific parts of an element. Common pseudo-e
 - **Form styling**: Use \`:focus\` for input fields and \`:invalid\` for form validation
 - **Table styling**: Use \`:nth-child()\` for alternating row colors
 - **Content decoration**: Use \`::before\` and \`::after\` for icons and decorative elements
-`,P=`# Specificity in CSS
+`,ue=`# Specificity in CSS
 
 CSS follows a set of rules to determine which styles are applied to an element when multiple rules could apply. Two key concepts in this process are specificity and inheritance.
 
@@ -1709,7 +2492,7 @@ The only way to override an \`!important\` rule is to use another \`!important\`
 \`\`\`html
 <p style="color: blue !important;">This text will be blue.</p>
 \`\`\`
-`,F=`# Inheritance in CSS
+`,de=`# Inheritance in CSS
 
 Inheritance is a fundamental concept in CSS that allows certain properties to be passed down from parent elements to their child elements. This mechanism helps maintain consistency in styling and reduces redundancy in CSS code.
 
@@ -1751,7 +2534,7 @@ Properties that are not inheritable by default include (and for good reason, jus
 - position
 - float
 - box-shadow
-`,I=`# Flexbox Basics
+`,fe=`# Flexbox Basics
 
 Flexbox, or the Flexible Box Layout, is a CSS layout model that allows you to design complex layouts more easily and efficiently. It provides a way to distribute space among items in a container, even when their size is unknown or dynamic.
 
@@ -1880,7 +2663,7 @@ Let's say we have a navigation bar with menu items that need to be spaced evenly
   <div class="nav-item" style="padding: 10px; background-color: lightgray;">Services</div>
   <div class="nav-item" style="padding: 10px; background-color: lightgray;">Contact</div>
 </div>
-`,L=`# CSS Grid Layouts
+`,pe=`# CSS Grid Layouts
 
 ## Overview
 
@@ -2035,7 +2818,7 @@ When designing your own grid layouts, you can adjust the number of columns and r
 - [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)
 - [CSS-Tricks Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
 - [W3Schools CSS Grid Tutorial](https://www.w3schools.com/css/css_grid.asp)
-`,R=`# Styling Forms with CSS
+`,me=`# Styling Forms with CSS
 
 Forms are essential components of web applications, allowing users to input and submit data. Properly styling forms enhances user experience and makes them visually appealing. In this note, we will explore various techniques for styling forms using CSS.
 
@@ -2172,7 +2955,7 @@ Proper layout is crucial for a well-organized form. You can use CSS Flexbox or G
   <input type="email" id="email" name="email" />
   <button type="submit">Submit</button>
 </div>
-`,ie=`# Modals
+`,he=`# Modals
 
 A modal is a dialog box/popup window that is displayed on top of the current page. Modals are commonly used for user notifications, forms, or additional content without navigating away from the current page.
 
@@ -2329,7 +3112,7 @@ Other uses of \`backdrop-filter\` include:
 - Grayscale effects with \`grayscale()\`
 
 These effects can be combined to create unique visual styles for your modals and overlays.
-`,ae=`# CSS Animations
+`,ge=`# CSS Animations
 
 CSS animations allow you to create dynamic and engaging user experiences by animating the properties of HTML elements over time. You can define animations using keyframes and control their behavior with various animation properties.
 
@@ -2690,7 +3473,7 @@ Another way to use this accesiblity feature is to ONLY perform the animation if 
   }
 }
 \`\`\`
-`,oe=`# Themes in CSS
+`,_e=`# Themes in CSS
 
 Themes in CSS allow developers to create different visual styles for a website or application, enabling users to switch between them easily. This can enhance user experience by providing options that suit individual preferences, typically light and dark modes although you can create custom themes as well.
 
@@ -2756,7 +3539,7 @@ You can also check the user's system preference for light or dark mode using the
   }
 }
 \`\`\`
-`,se=`# Building a Dropdown Menu with CSS
+`,ve=`# Building a Dropdown Menu with CSS
 
 Creating a dropdown menu using only CSS is a common task in web development. Below is a step-by-step guide on how to build a simple dropdown menu.
 
@@ -2897,7 +3680,246 @@ The Rendered Output will look like this:
 To enhance accessibility, we use the \`:focus-within\` pseudo-class to ensure that keyboard users can also access the dropdown menu by focusing on the button. This allows users who navigate via keyboard to open the dropdown by tabbing to the button and pressing Enter or Space.
 
 This approach ensures that the dropdown menu is usable for a wider range of users, including those relying on keyboard navigation.
-`,ce=`# Git
+`,ye=`# Creating 3D Animations and Effects with CSS
+
+3D animations and effects can add depth and interactivity to your web designs. CSS provides several properties that allow you to create 3D transformations and animations. Below are some key concepts and examples to get you started.
+
+## Perspective
+
+The \`perspective\` property defines the distance between the viewer and the z=0 plane. It gives a 3D space effect to the elements.
+
+\`\`\`css
+.container {
+  perspective: 1000px; /* Adjust the value to change the depth effect */
+}
+\`\`\`
+
+The value passed to \`perspective\` determines how intense the 3D effect will be. A smaller value results in a more pronounced 3D effect.
+
+## Perspective-Origin
+
+The \`perspective-origin\` property sets the origin point for the perspective effect. It can be defined using keywords or length values.
+
+\`\`\`css
+.container {
+  perspective-origin: center center; /* Default is center center */
+}
+\`\`\`
+
+You can also use specific values like \`top left\`, \`50% 50%\`, or pixel values to adjust the origin point.
+
+This makes an effect as if you are looking at the object from a different angle.
+
+## Transform-Style
+
+The \`transform-style\` property specifies how nested elements are rendered in 3D space. The default value is \`flat\`, which means that child elements are not rendered in 3D.
+
+We can change it to \`preserve-3d\` to maintain the 3D transformations of child elements.
+
+\`\`\`css
+.parent {
+  transform-style: preserve-3d;
+}
+\`\`\`
+
+This allows child elements to retain their 3D transformations when the parent is transformed.
+
+## Adding shadows for depth
+
+To enhance the 3D effect, you can add shadows using the \`box-shadow\` property. Shadows can give a sense of depth and realism to your 3D elements.
+
+\`\`\`css
+.box {
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+\`\`\`
+
+This adds a shadow to the box, making it appear elevated from the background.
+
+## Example: 3D Rotating Cube
+
+Here's a simple example of a 3D rotating cube using CSS:
+
+Apply classes to all of the faces of the cube:
+
+\`\`\`html
+<div class="container">
+  <div class="cube">
+    <div class="face front">Front</div>
+    <div class="face back">Back</div>
+    <div class="face right">Right</div>
+    <div class="face left">Left</div>
+    <div class="face top">Top</div>
+    <div class="face bottom">Bottom</div>
+  </div>
+</div>
+\`\`\`
+
+Then add css to style and animate the cube:
+
+\`\`\`css
+.container {
+  perspective: 800px;
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+.cube {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  animation: rotateCube 5s infinite linear;
+}
+@media (prefers-reduced-motion: reduce) {
+  .cube {
+    animation: none; /* Disable animation for users who prefer reduced motion */
+  }
+}
+@keyframes rotateCube {
+  from {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  to {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}
+.face {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: rgba(134, 56, 56, 0.8);
+  border: 2px solid #000;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+.front {
+  transform: translateZ(100px);
+}
+.back {
+  transform: rotateY(180deg) translateZ(100px);
+}
+.right {
+  transform: rotateY(90deg) translateZ(100px);
+}
+.left {
+  transform: rotateY(-90deg) translateZ(100px);
+}
+.top {
+  transform: rotateX(90deg) translateZ(100px);
+}
+.bottom {
+  transform: rotateX(-90deg) translateZ(100px);
+}
+\`\`\`
+
+This code creates a 3D rotating cube with six faces. Each face is positioned in 3D space using the \`transform\` property, and the cube is animated to rotate continuously using keyframes.
+
+The rendered cube will look like this:
+
+<style>
+  .animation-container-234 {
+  perspective: 800px;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  margin: 200px auto;
+}
+.cube {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  animation: rotateCube 5s infinite linear;
+}
+@meida(prefers-reduced-motion: reduce) {
+  .cube {
+    animation: none;
+  }
+}
+@keyframes rotateCube {
+  from {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  to {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}
+.cube .face {
+  position: absolute;
+  width:100%;
+  height: 100%;
+  background: rgba(134, 56, 56, 0.8);
+  border: 2px solid #000;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+.frontcb {
+  transform: translateZ(100px);
+}
+.backcb {
+  transform: rotateY(180deg) translateZ(100px);
+}
+.rightcb {
+  transform: rotateY(90deg) translateZ(100px);
+}
+.leftcb {
+  transform: rotateY(-90deg) translateZ(100px);
+}
+.topcb {
+  transform: rotateX(90deg) translateZ(100px);
+}
+.bottomcb {
+  transform: rotateX(-90deg) translateZ(100px);
+}
+</style>
+
+<div class="animation-container-234">
+  <div class="cube">
+    <div class="face frontcb">Front</div>
+    <div class="face backcb">Back</div>
+    <div class="face rightcb">Right</div>
+    <div class="face leftcb">Left</div>
+    <div class="face topcb">Top</div>
+    <div class="face bottomcb">Bottom</div>
+  </div>
+</div>
+</br>
+</br>
+You can also assign variables to perspective to create dynamic effects based on user interaction, such as mouse movement or scrolling.
+
+\`\`\`css
+:root {
+  --perspective-distance: 800px;
+}
+.container {
+  perspective: var(--perspective-distance);
+}
+\`\`\`
+
+This allows you to easily adjust the perspective distance by changing the value of the CSS variable \`--perspective-distance\`.
+
+We can then use JavaScript to update the \`--perspective-distance\` variable based on the scroll position or mouse movement to create interactive 3D effects.
+
+\`\`\`javascript
+window.addEventListener("scroll", () => {
+  const scrollY = window.scrollY;
+  const newPerspective = Math.max(200, 1000 - scrollY); // Adjust perspective based on scroll
+  document.documentElement.style.setProperty(
+    "--perspective-distance",
+    \`\${newPerspective}px\`
+  );
+});
+\`\`\`
+
+This code listens for the scroll event and updates the perspective distance dynamically, creating a more immersive 3D experience as the user scrolls through the page.
+`,be=`# Git
 
 Git is a distributed version control system that allows you to track changes in your codebase, collaborate with others, and manage different versions of your projects.
 
@@ -2986,7 +4008,7 @@ git commit -m "Initial commit"// -m flag is used to provide a commit message
 \`\`\`
 
 #### Note that if you only want to commit specific files, you can replace the \`.\` in the \`git add\` command with the names of those files like \`git add file1.txt file2.txt\`
-`,le="# Pushing and Pulling in Git\n\nOnce you have initialized a Git repository and made some commits, you may want to share your changes with a remote repository or fetch changes made by others. This is where pushing and pulling come into play.\n\n## Pushing Changes\n\nPushing is the process of sending your committed changes to a remote repository. This is typically done using the `git push` command.\n\n```bash\ngit push <remote> <branch>\n```\n\n- `<remote>`: The name of the remote repository (e.g., `origin`).\n- `<branch>`: The name of the branch you want to push (e.g., `main`).\n  For example, to push your changes to the `main` branch of the `origin` remote, you would run:\n\n```bash\ngit push origin main\n```\n\nThis command uploads your local commits to the remote repository, making them available to others.\n\n## Pulling Changes\n\nPulling is the process of fetching and integrating changes from a remote repository into your local repository. This is typically done using the `git pull` command.\n\n```bash\ngit pull <remote> <branch>\n```\n\n- `<remote>`: The name of the remote repository (e.g., `origin`).\n- `<branch>`: The name of the branch you want to pull (e.g., `main`).\n  For example, to pull changes from the `main` branch of the `origin` remote, you would run:\n\n```bash\ngit pull origin main\n```\n\nThis command fetches the latest changes from the remote repository and merges them into your current branch.\n",ue=`# Reverting Changes in Git
+`,xe="# Pushing and Pulling in Git\n\nOnce you have initialized a Git repository and made some commits, you may want to share your changes with a remote repository or fetch changes made by others. This is where pushing and pulling come into play.\n\n## Pushing Changes\n\nPushing is the process of sending your committed changes to a remote repository. This is typically done using the `git push` command.\n\n```bash\ngit push <remote> <branch>\n```\n\n- `<remote>`: The name of the remote repository (e.g., `origin`).\n- `<branch>`: The name of the branch you want to push (e.g., `main`).\n  For example, to push your changes to the `main` branch of the `origin` remote, you would run:\n\n```bash\ngit push origin main\n```\n\nThis command uploads your local commits to the remote repository, making them available to others.\n\n## Pulling Changes\n\nPulling is the process of fetching and integrating changes from a remote repository into your local repository. This is typically done using the `git pull` command.\n\n```bash\ngit pull <remote> <branch>\n```\n\n- `<remote>`: The name of the remote repository (e.g., `origin`).\n- `<branch>`: The name of the branch you want to pull (e.g., `main`).\n  For example, to pull changes from the `main` branch of the `origin` remote, you would run:\n\n```bash\ngit pull origin main\n```\n\nThis command fetches the latest changes from the remote repository and merges them into your current branch.\n",Se=`# Reverting Changes in Git
 
 In Git, reverting changes refers to the process of undoing modifications made to files in your repository. There are several ways to revert changes depending on the state of the changes (staged, unstaged, or committed).
 
@@ -3043,7 +4065,7 @@ git reset --hard HEAD~1
 \`\`\`
 
 **Warning:** This command will discard all changes made after the specified commit, including uncommitted changes. Use it with caution.
-`,de=`# Branching in Git
+`,Ce=`# Branching in Git
 
 Branching is a powerful feature in Git that allows you to create separate lines of development within a repository. Each branch represents an independent version of your codebase, enabling you to work on new features, bug fixes, or experiments without affecting the main codebase.
 
@@ -3076,7 +4098,7 @@ To switch to a different branch, you can use the \`git checkout\` command follow
 \`\`\`
 git checkout feature-xyz
 \`\`\`
-`,fe=`# Rebasing
+`,we=`# Rebasing
 
 Rebasing is a Git operation that allows you to integrate changes from one branch into another by moving or combining a sequence of commits. It is an alternative to merging and can help maintain a cleaner project history.
 
@@ -3130,7 +4152,7 @@ git rebase -i <commit-hash>
 \`\`\`
 
 This will open an editor where you can specify how to handle each commit.
-`,pe=`# Merging in Git
+`,Te=`# Merging in Git
 
 Merging in Git is the process of integrating changes from one branch into another. This is typically done using the \`git merge\` command.
 
@@ -3181,7 +4203,7 @@ To perform a fast-forward merge, use the same \`git merge\` command as before. I
 git checkout main
 git merge feature
 \`\`\`
-`,me="# Remotes and Repositories in Git\n\nA remote repository in Git is a version of your project that is hosted on the internet or another network. It allows multiple collaborators to work on the same project from different locations. Common platforms for hosting remote repositories include GitHub, GitLab, and Bitbucket.\n\n## Adding a Remote Repository\n\nTo add a remote repository to your local Git repository, you can use the `git remote add` command followed by the name you want to give to the remote (commonly `origin`) and the URL of the remote repository.\n\n```bash\ngit remote add <origin-name> <remote-repository-URL>\n```\n\n- `<remote-repository-URL>`: The URL of the remote repository (e.g., `https://github.com/username/repository.git`)\n- `<origin-name>`: The name for the remote repository on your local machine, typically `origin` or `upstream`.\n\n## Cloning a Remote Repository\n\nTo create a local copy of a remote repository, you can use the `git clone` command followed by the URL of the remote repository.\n\n```bash\ngit clone <remote-repository-URL>\n```\n\n- `<remote-repository-URL>`: The URL of the remote repository you want to clone.\n\nThis command will create a new directory with the name of the repository and download all the files and commit history from the remote repository to your local machine.\n\nIf using ssh, the URL might look like this:\n\n```bash\ngit clone git@github.com:username/repository.git\n```\n\n- SSH URLs require you to have your SSH keys set up with the remote repository hosting service, allowing for secure authentication without needing to enter your username and password each time.\n- Using SSH is often preferred for its security and convenience, especially for frequent interactions with the remote repository.\n\n## Viewing Remote Repositories\n\nTo view the remote repositories associated with your local Git repository, you can use the `git remote -v` command. This will list all the remote repositories along with their URLs.\n\n```bash\ngit remote -v\n```\n\nThis command will display output similar to the following:\n\n```bash\norigin  https://github.com/username/repository.git (fetch)\norigin  https://github.com/username/repository.git (push)\n```\n\n- The `(fetch)` URL is used when you pull changes from the remote repository.\n- The `(push)` URL is used when you push changes to the remote repository.\n\n## Removing a Remote Repository\n\nTo remove a remote repository from your local Git repository, you can use the `git remote remove` command followed by the name of the remote you want to remove.\n\n```bash\ngit remote remove <origin-name>\n```\n\n- `<origin-name>`: The name of the remote repository you want to remove (e.g., `origin`).\n  This command will delete the reference to the specified remote repository from your local Git configuration, without affecting the remote repository itself, or the local files in your repository.\n\n## Renaming a Remote Repository\n\nTo rename a remote repository in your local Git configuration, you can use the `git remote rename` command followed by the current name of the remote and the new name you want to assign.\n\n```bash\ngit remote rename <old-origin-name> <new-origin-name>\n```\n\n- `<old-origin-name>`: The current name of the remote repository (e.g., `origin`).\n- `<new-origin-name>`: The new name you want to assign to the remote repository (e.g., `upstream`).\n\nThis command updates the reference to the remote repository in your **local** Git configuration, allowing you to use the new name for future interactions with that remote.\n\nIt doesn't affect the remote repository itself or any other collaborators' configurations.\n",he=`# 📚 Programming Notes Hub
+`,Ee="# Remotes and Repositories in Git\n\nA remote repository in Git is a version of your project that is hosted on the internet or another network. It allows multiple collaborators to work on the same project from different locations. Common platforms for hosting remote repositories include GitHub, GitLab, and Bitbucket.\n\n## Adding a Remote Repository\n\nTo add a remote repository to your local Git repository, you can use the `git remote add` command followed by the name you want to give to the remote (commonly `origin`) and the URL of the remote repository.\n\n```bash\ngit remote add <origin-name> <remote-repository-URL>\n```\n\n- `<remote-repository-URL>`: The URL of the remote repository (e.g., `https://github.com/username/repository.git`)\n- `<origin-name>`: The name for the remote repository on your local machine, typically `origin` or `upstream`.\n\n## Cloning a Remote Repository\n\nTo create a local copy of a remote repository, you can use the `git clone` command followed by the URL of the remote repository.\n\n```bash\ngit clone <remote-repository-URL>\n```\n\n- `<remote-repository-URL>`: The URL of the remote repository you want to clone.\n\nThis command will create a new directory with the name of the repository and download all the files and commit history from the remote repository to your local machine.\n\nIf using ssh, the URL might look like this:\n\n```bash\ngit clone git@github.com:username/repository.git\n```\n\n- SSH URLs require you to have your SSH keys set up with the remote repository hosting service, allowing for secure authentication without needing to enter your username and password each time.\n- Using SSH is often preferred for its security and convenience, especially for frequent interactions with the remote repository.\n\n## Viewing Remote Repositories\n\nTo view the remote repositories associated with your local Git repository, you can use the `git remote -v` command. This will list all the remote repositories along with their URLs.\n\n```bash\ngit remote -v\n```\n\nThis command will display output similar to the following:\n\n```bash\norigin  https://github.com/username/repository.git (fetch)\norigin  https://github.com/username/repository.git (push)\n```\n\n- The `(fetch)` URL is used when you pull changes from the remote repository.\n- The `(push)` URL is used when you push changes to the remote repository.\n\n## Removing a Remote Repository\n\nTo remove a remote repository from your local Git repository, you can use the `git remote remove` command followed by the name of the remote you want to remove.\n\n```bash\ngit remote remove <origin-name>\n```\n\n- `<origin-name>`: The name of the remote repository you want to remove (e.g., `origin`).\n  This command will delete the reference to the specified remote repository from your local Git configuration, without affecting the remote repository itself, or the local files in your repository.\n\n## Renaming a Remote Repository\n\nTo rename a remote repository in your local Git configuration, you can use the `git remote rename` command followed by the current name of the remote and the new name you want to assign.\n\n```bash\ngit remote rename <old-origin-name> <new-origin-name>\n```\n\n- `<old-origin-name>`: The current name of the remote repository (e.g., `origin`).\n- `<new-origin-name>`: The new name you want to assign to the remote repository (e.g., `upstream`).\n\nThis command updates the reference to the remote repository in your **local** Git configuration, allowing you to use the new name for future interactions with that remote.\n\nIt doesn't affect the remote repository itself or any other collaborators' configurations.\n",De=`# 📚 Programming Notes Hub
 
 ![SmokyDaBear](/images/profile-animated.png)
 
@@ -3224,7 +4246,7 @@ If you do decide to use for this repository and use it as a base for your own no
 _Happy Learning! 🎉_
 
 > Last updated: November 2025
-`,ge=`# HTML Notes
+`,Oe=`# HTML Notes
 
 Welcome to the HTML section! Here you'll find notes about HTML fundamentals, elements, and best practices.
 
@@ -3262,7 +4284,7 @@ HTML (HyperText Markup Language) is the standard markup language for creating we
 \`\`\`
 
 Navigate through the topics using the links above or the navigation menu on the left.
-`,_e=`# Getting Started with HTML
+`,ke=`# Getting Started with HTML
 
 This section will teach the basics of HTML, the standard markup language for creating web pages. You'll learn about the structure of an HTML document, common tags, and how to create links and images.
 
@@ -3318,7 +4340,7 @@ Here are some commonly used HTML tags:
 
 
 #### Tip: Practice creating simple HTML pages to get comfortable with the structure and tags. Use online resources like [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/HTML) for reference and further learning.
-`,ve=`# Classes, IDs, and Data Attributes
+`,Ae=`# Classes, IDs, and Data Attributes
 
 In HTML, classes, IDs, and data attributes are used to add metadata to elements for styling, scripting, and accessibility purposes.
 
@@ -3360,7 +4382,7 @@ These attributes provide flexibility in styling and scripting without cluttering
 
 
 #### Tip: Use classes for styling multiple elements, IDs for unique elements, and data attributes for storing custom data.
-`,ye=`# HTML Forms
+`,je=`# HTML Forms
 
 HTML forms are essential for collecting user input on web pages. They allow users to submit data, which can then be processed by a server or used within the client-side application.
 
@@ -3553,7 +4575,7 @@ To make forms accessible, use labels, fieldsets, and legends to provide context 
   <input type="email" id="email" name="email" />
 </form>
 \`\`\`
-`,be=`# HTML Tables
+`,Me=`# HTML Tables
 
 HTML tables are used to display data in a structured format using rows and columns.
 
@@ -3578,7 +4600,7 @@ When rendered, this will create a table with two columns and one row of data lik
 | Header 1 | Header 2 |
 |----------|----------|
 | Data 1 | Data 2 |
-`,xe=`# Semantic HTML
+`,Ne=`# Semantic HTML
 
 Semantic in this context means using HTML elements that convey the meaning and structure of the content they contain. Semantic HTML improves accessibility, SEO, and maintainability of web pages.
 Some common semantic HTML elements include:
@@ -3702,7 +4724,7 @@ Here is an example of a simple webpage structure using semantic HTML elements:
 - \`<footer>\` for the footer section at the bottom of the page.
 
 This structure enhances the readability and accessibility of the webpage by clearly defining the purpose of each section.
-`,Se='# Multimedia Elements\n\nHTML provides several elements to embed multimedia content such as images, audio, and video into web pages. Here are the primary multimedia elements:\n\n1. **Image Element (`<img>`)**: The `<img>` element is used to embed images in an HTML document. It is a self-closing tag and requires the `src` attribute to specify the image source and the `alt` attribute for alternative text.\n\n   ```html\n   <img src="path/to/image.jpg" alt="Description of the image" />\n   ```\n\n2. **Audio Element (`<audio>`)**: The `<audio>` element is used to embed audio content. It can contain one or more `<source>` elements to specify different audio formats for better browser compatibility. The `controls` attribute adds playback controls.\n\n   ```html\n   <audio controls>\n     <source src="path/to/audio.mp3" type="audio/mpeg" />\n     <source src="path/to/audio.ogg" type="audio/ogg" />\n   </audio>\n   ```\n\n3. **Video Element (`<video>`)**: The `<video>` element is used to embed video content. Similar to the `<audio>` element, it can contain multiple `<source>` elements and the `controls` attribute for playback controls.\n\n   ```html\n   <video width="640" height="360" controls>\n     <source src="path/to/video.mp4" type="video/mp4" />\n     <source src="path/to/video.webm" type="video/webm" />\n   </video>\n   ```\n\n4. **Figure and Figcaption Elements (`<figure>` and `<figcaption>`)**: The `<figure>` element is used to group media content (like images, audio, or video) along with a caption provided by the `<figcaption>` element.\n\n   ```html\n   <figure>\n     <img src="path/to/image.jpg" alt="Description of the image" />\n     <figcaption>This is a caption for the image.</figcaption>\n   </figure>\n   ```\n\n## Attributes\n\nMultimedia elements support various attributes to enhance functionality:\n\n- `autoplay`: Automatically starts playing the media when the page loads (for `<audio>` and `<video>`).\n- `loop`: Repeats the media playback indefinitely (for `<audio>` and `<video>`).\n- `muted`: Mutes the audio of the media (for `<audio>` and `<video>`).\n- `poster`: Specifies an image to be shown while the video is downloading or until the user hits the play button (for `<video>`).\n- `width` and `height`: Define the dimensions of the media element (for `<video>` and `<img>`).\n- `preload`: Specifies if and how the media should be loaded when the page loads (for `<audio>` and `<video>`).\n- `src`: Specifies the URL of the media file (for `<img>`, `<audio>`, and `<video>`).\n',Ce="# New Features in HTML5\n\nHTML5 introduced several new features and elements that enhance the capabilities of web development. Here are some of the most notable additions:\n\n1. **New Semantic Elements**: HTML5 introduced new semantic elements that provide better structure and meaning to web documents. These include:\n\n   - `<header>`: Represents the header section of a document or a section.\n   - `<nav>`: Defines a section for navigation links.\n   - `<main>`: Represents the main content of a document.\n   - `<article>`: Defines a self-contained piece of content.\n   - `<section>`: Represents a thematic grouping of content.\n   - `<aside>`: Defines content that is tangentially related to the main content.\n   - `<footer>`: Represents the footer section of a document or a section.\n\n2. **Multimedia Elements**: HTML5 introduced native support for multimedia content without the need for external plugins:\n\n   - `<audio>`: Used to embed audio content.\n   - `<video>`: Used to embed video content.\n\n3. **Canvas Element**: The `<canvas>` element allows for dynamic, scriptable rendering of 2D shapes and bitmap images. It is commonly used for graphics, games, and visualizations.\n\n4. **New Form Controls**: HTML5 added new input types and attributes to enhance form functionality:\n\n   - New input types: `email`, `url`, `tel`, `date`, `number`, `range`, `color`, etc.\n   - New attributes: `placeholder`, `required`, `autofocus`, `pattern`, etc.\n\n5. **Local Storage and Session Storage**: HTML5 introduced the Web Storage API, which provides a way to store data on the client side. This includes:\n\n   - `localStorage`: Stores data with no expiration date.\n   - `sessionStorage`: Stores data for the duration of the page session.\n\n6. **Geolocation API**: HTML5 provides a way to access the geographical location of the user through the Geolocation API, allowing web applications to provide location-based services.\n\n7. **Drag and Drop API**: HTML5 introduced a native drag-and-drop feature that allows users to drag and drop elements within a web page.\n\n8. **Web Workers**: HTML5 introduced Web Workers, which allow for background scripts to run in parallel with the main page, improving performance for complex tasks.\n\n9. **Improved Accessibility**: HTML5 includes features that enhance accessibility, such as ARIA (Accessible Rich Internet Applications) roles and attributes.\n   These new features in HTML5 have significantly improved the capabilities of web development, making it easier to create rich, interactive, and user-friendly web applications.\n",we='# Accessiblity in HTML\n\nAccessibility in HTML is crucial for ensuring that web content is usable by all individuals, including those with disabilities. Here are some key practices and elements to enhance accessibility in HTML:\n\n1. **Use Semantic HTML**: Utilize semantic elements like `<header>`, `<nav>`, `<main>`, `<article>`, `<section>`, `<aside>`, and `<footer>` to provide meaningful structure to your content. This helps screen readers and other assistive technologies understand the layout and purpose of different sections.\n\n2. **Alt Attributes for Images**: Always provide descriptive `alt` attributes for `<img>` elements. This text is read by screen readers and helps visually impaired users understand the content of images.\n\n   Example:\n\n   ```html\n   <img src="profile.jpg" alt="Profile picture of John Doe" />\n   ```\n\n3. **Keyboard Navigation**: Ensure that all interactive elements (links, buttons, forms) are accessible via keyboard navigation. Use the `tabindex` attribute to manage focus order when necessary.\n\n4. **ARIA Roles and Attributes**: Use ARIA (Accessible Rich Internet Applications) roles and attributes to enhance the accessibility of dynamic content and custom UI components. For example, use `role="button"` for custom button elements.\n\n   Example:\n\n   ```html\n   <div role="button" tabindex="0" onclick="submitForm()">Submit</div>\n   ```\n\n   #### The role attribute defines the purpose of an element, while tabindex makes it focusable.\n\n5. **Form Accessibility**: Label all form elements using the `<label>` element and associate it with the corresponding input using the `for` attribute. This improves usability for screen reader users.\n   Example:\n\n   ```html\n   <label for="email">Email:</label>\n   <input type="email" id="email" name="email" />\n   ```\n\n6. **Color Contrast**: Ensure sufficient color contrast between text and background colors to make content readable for users with visual impairments. Use tools to check contrast ratios.\n\n#### Keep in mind those that are colorblind may have difficulty distinguishing certain color combinations.\n\n7. **Headings Structure**: Use headings (`<h1>` to `<h6>`) to create a logical document structure. This helps users navigate content easily using screen readers.\n\n8. **Skip Navigation Links**: Provide "skip to content" links at the top of the page to allow keyboard users to bypass repetitive navigation links.\n\n   Example:\n\n   ```html\n   <a href="#main-content" class="skip-link">Skip to main content</a>\n   ```\n\n9. **Responsive Design**: Ensure your website is responsive and works well on various devices and screen sizes, which benefits all users, including those with disabilities.\n\n#### Responsive design ensures content is accessible on different devices, and is mainly achieved through CSS media queries and flexible layouts.\n',Te=`# Imports and Paths in HTML
+`,Pe='# Multimedia Elements\n\nHTML provides several elements to embed multimedia content such as images, audio, and video into web pages. Here are the primary multimedia elements:\n\n1. **Image Element (`<img>`)**: The `<img>` element is used to embed images in an HTML document. It is a self-closing tag and requires the `src` attribute to specify the image source and the `alt` attribute for alternative text.\n\n   ```html\n   <img src="path/to/image.jpg" alt="Description of the image" />\n   ```\n\n2. **Audio Element (`<audio>`)**: The `<audio>` element is used to embed audio content. It can contain one or more `<source>` elements to specify different audio formats for better browser compatibility. The `controls` attribute adds playback controls.\n\n   ```html\n   <audio controls>\n     <source src="path/to/audio.mp3" type="audio/mpeg" />\n     <source src="path/to/audio.ogg" type="audio/ogg" />\n   </audio>\n   ```\n\n3. **Video Element (`<video>`)**: The `<video>` element is used to embed video content. Similar to the `<audio>` element, it can contain multiple `<source>` elements and the `controls` attribute for playback controls.\n\n   ```html\n   <video width="640" height="360" controls>\n     <source src="path/to/video.mp4" type="video/mp4" />\n     <source src="path/to/video.webm" type="video/webm" />\n   </video>\n   ```\n\n4. **Figure and Figcaption Elements (`<figure>` and `<figcaption>`)**: The `<figure>` element is used to group media content (like images, audio, or video) along with a caption provided by the `<figcaption>` element.\n\n   ```html\n   <figure>\n     <img src="path/to/image.jpg" alt="Description of the image" />\n     <figcaption>This is a caption for the image.</figcaption>\n   </figure>\n   ```\n\n## Attributes\n\nMultimedia elements support various attributes to enhance functionality:\n\n- `autoplay`: Automatically starts playing the media when the page loads (for `<audio>` and `<video>`).\n- `loop`: Repeats the media playback indefinitely (for `<audio>` and `<video>`).\n- `muted`: Mutes the audio of the media (for `<audio>` and `<video>`).\n- `poster`: Specifies an image to be shown while the video is downloading or until the user hits the play button (for `<video>`).\n- `width` and `height`: Define the dimensions of the media element (for `<video>` and `<img>`).\n- `preload`: Specifies if and how the media should be loaded when the page loads (for `<audio>` and `<video>`).\n- `src`: Specifies the URL of the media file (for `<img>`, `<audio>`, and `<video>`).\n',Fe="# New Features in HTML5\n\nHTML5 introduced several new features and elements that enhance the capabilities of web development. Here are some of the most notable additions:\n\n1. **New Semantic Elements**: HTML5 introduced new semantic elements that provide better structure and meaning to web documents. These include:\n\n   - `<header>`: Represents the header section of a document or a section.\n   - `<nav>`: Defines a section for navigation links.\n   - `<main>`: Represents the main content of a document.\n   - `<article>`: Defines a self-contained piece of content.\n   - `<section>`: Represents a thematic grouping of content.\n   - `<aside>`: Defines content that is tangentially related to the main content.\n   - `<footer>`: Represents the footer section of a document or a section.\n\n2. **Multimedia Elements**: HTML5 introduced native support for multimedia content without the need for external plugins:\n\n   - `<audio>`: Used to embed audio content.\n   - `<video>`: Used to embed video content.\n\n3. **Canvas Element**: The `<canvas>` element allows for dynamic, scriptable rendering of 2D shapes and bitmap images. It is commonly used for graphics, games, and visualizations.\n\n4. **New Form Controls**: HTML5 added new input types and attributes to enhance form functionality:\n\n   - New input types: `email`, `url`, `tel`, `date`, `number`, `range`, `color`, etc.\n   - New attributes: `placeholder`, `required`, `autofocus`, `pattern`, etc.\n\n5. **Local Storage and Session Storage**: HTML5 introduced the Web Storage API, which provides a way to store data on the client side. This includes:\n\n   - `localStorage`: Stores data with no expiration date.\n   - `sessionStorage`: Stores data for the duration of the page session.\n\n6. **Geolocation API**: HTML5 provides a way to access the geographical location of the user through the Geolocation API, allowing web applications to provide location-based services.\n\n7. **Drag and Drop API**: HTML5 introduced a native drag-and-drop feature that allows users to drag and drop elements within a web page.\n\n8. **Web Workers**: HTML5 introduced Web Workers, which allow for background scripts to run in parallel with the main page, improving performance for complex tasks.\n\n9. **Improved Accessibility**: HTML5 includes features that enhance accessibility, such as ARIA (Accessible Rich Internet Applications) roles and attributes.\n   These new features in HTML5 have significantly improved the capabilities of web development, making it easier to create rich, interactive, and user-friendly web applications.\n",Ie='# Accessiblity in HTML\n\nAccessibility in HTML is crucial for ensuring that web content is usable by all individuals, including those with disabilities. Here are some key practices and elements to enhance accessibility in HTML:\n\n1. **Use Semantic HTML**: Utilize semantic elements like `<header>`, `<nav>`, `<main>`, `<article>`, `<section>`, `<aside>`, and `<footer>` to provide meaningful structure to your content. This helps screen readers and other assistive technologies understand the layout and purpose of different sections.\n\n2. **Alt Attributes for Images**: Always provide descriptive `alt` attributes for `<img>` elements. This text is read by screen readers and helps visually impaired users understand the content of images.\n\n   Example:\n\n   ```html\n   <img src="profile.jpg" alt="Profile picture of John Doe" />\n   ```\n\n3. **Keyboard Navigation**: Ensure that all interactive elements (links, buttons, forms) are accessible via keyboard navigation. Use the `tabindex` attribute to manage focus order when necessary.\n\n4. **ARIA Roles and Attributes**: Use ARIA (Accessible Rich Internet Applications) roles and attributes to enhance the accessibility of dynamic content and custom UI components. For example, use `role="button"` for custom button elements.\n\n   Example:\n\n   ```html\n   <div role="button" tabindex="0" onclick="submitForm()">Submit</div>\n   ```\n\n   #### The role attribute defines the purpose of an element, while tabindex makes it focusable.\n\n5. **Form Accessibility**: Label all form elements using the `<label>` element and associate it with the corresponding input using the `for` attribute. This improves usability for screen reader users.\n   Example:\n\n   ```html\n   <label for="email">Email:</label>\n   <input type="email" id="email" name="email" />\n   ```\n\n6. **Color Contrast**: Ensure sufficient color contrast between text and background colors to make content readable for users with visual impairments. Use tools to check contrast ratios.\n\n#### Keep in mind those that are colorblind may have difficulty distinguishing certain color combinations.\n\n7. **Headings Structure**: Use headings (`<h1>` to `<h6>`) to create a logical document structure. This helps users navigate content easily using screen readers.\n\n8. **Skip Navigation Links**: Provide "skip to content" links at the top of the page to allow keyboard users to bypass repetitive navigation links.\n\n   Example:\n\n   ```html\n   <a href="#main-content" class="skip-link">Skip to main content</a>\n   ```\n\n9. **Responsive Design**: Ensure your website is responsive and works well on various devices and screen sizes, which benefits all users, including those with disabilities.\n\n#### Responsive design ensures content is accessible on different devices, and is mainly achieved through CSS media queries and flexible layouts.\n',Le=`# Imports and Paths in HTML
 
 In HTML, importing resources such as stylesheets, scripts, and media files is essential for building functional and visually appealing web pages. This is typically done using specific HTML elements and attributes that define the paths to these resources.
 
@@ -3816,7 +4838,7 @@ To include images in your HTML, you use the \`<img>\` element with the \`src\` a
 \`\`\`html
 <img src="images/photo.jpg" alt="A descriptive text" />
 \`\`\`
-`,Ee=`# Styling Elements
+`,Re=`# Styling Elements
 
 Styling HTML elements is primarily done using CSS (Cascading Style Sheets). There are several ways to apply styles to your HTML elements:
 
@@ -3873,7 +4895,7 @@ p {
 \`\`\`
 
 This method allows for better organization and reusability of styles across multiple HTML documents.
-`,De=`# Java Programming Language
+`,ze=`# Java Programming Language
 
 Java was developed by Sun Microsystems (now owned by Oracle Corporation) and released in 1995.
 
@@ -3952,7 +4974,7 @@ snap run intellij-idea-community
 4. Write your first Java program, compile it using the \`javac\` command, and run it using the \`java\` command.
 
 5. Explore Java documentation and tutorials to deepen your understanding of the language and its features.
-`,Oe=`# Java Basics
+`,Be=`# Java Basics
 
 ## Writing Your First Java Program
 
@@ -4098,7 +5120,7 @@ public class Dog {
 \`\`\`
 
 This class defines a \`Dog\` with attributes like \`name\`, \`age\`, and \`breed\`, a constructor to initialize these attributes, and a method \`bark()\` that prints a message to the console.
-`,ke=`# Integers/Numbers in Java
+`,Ve=`# Integers/Numbers in Java
 
 In Java, an **integer** is a data type that represents whole numbers (both positive and negative) without any decimal points. The primary integer data type in Java is \`int\`, which is a 32-bit signed two's complement integer.
 
@@ -4181,7 +5203,7 @@ It is usually best to avoid casting unless absolutely necessary, or going from a
 byte myByte = 10;
 int myInt = myByte; // Implicit casting from byte to int
 \`\`\`
-`,Ae="# Characters in Java\n\nIn Java, _characters_ or `char` values are represented using the `char` data type, which is a single 16-bit Unicode character. This allows Java to support a wide range of characters from various languages and symbol sets.\n\n## Declaring and Initializing Characters\n\nYou can declare and initialize `char` variables in Java using single quotes (`' '`). Here are some examples:\n\n```java\nchar letterA = 'A';\nchar digitFive = '5';\nchar specialChar = '@';\nchar unicodeChar = '\\u03A9'; // Greek capital letter Omega (Ω)\n```\n\n_Unicode characters_ can be represented using the `\\u` followed by a four-digit hexadecimal code.[Learn more about Unicode codes](https://unicode-table.com/en/).\n\n## Character Operations\n\nJava provides several operations and methods for working with characters. Here are some common ones:\n\n### **Comparison**: You can compare characters using relational operators (`==`, `!=`, `<`, `>`, etc.).\n\n```java\nchar a = 'A';\nchar b = 'B';\nboolean isEqual = (a == b); // false\nboolean isLess = (a < b);   // true\n```\n\n### **Character Methods**\n\nThe `Character` class provides various static methods for character manipulation and information retrieval. Some useful methods include:\n\n- `Character.isDigit(char ch)`: Checks if the character is a digit (0-9) and returns a boolean.\n- `Character.isLetter(char ch)`: Checks if the character is a letter (a-z, A-Z) and returns a boolean.\n- `Character.toUpperCase(char ch)`: Converts the character to uppercase.\n- `Character.toLowerCase(char ch)`: Converts the character to lowercase.\n- `Character.isWhitespace(char ch)`: Checks if the character is a whitespace character (`\" \"`).\n- `Character.getNumericValue(char ch)`: Returns the numeric value of the character if it is a digit (0-9).\n  - This is useful for converting character digits to their integer values, called **type casting**, **type conversion**, or sometimes **type coercion**.\n  - We can use it to compare character digits numerically instead of **lexicographically** or alphabetically.\n\n```java\nchar ch = '5';\nboolean isDigit = Character.isDigit(ch); // true\nchar upperCh = Character.toUpperCase('a'); // 'A'\n```\n\n### `Character` Class vs. `char` Primitive Type\n\nThe `char` data type is a primitive type that holds a single character value, while the `Character` class is a wrapper class that provides methods for manipulating and working with `char` values. You can convert between them using autoboxing and unboxing.\n\n```java\nchar primitiveChar = 'c';\nCharacter wrapperChar = Character.valueOf(primitiveChar); // Autoboxing\nchar unboxedChar = wrapperChar.charValue(); // Unboxing\n```\n",je=`# Strings in Java
+`,He="# Characters in Java\n\nIn Java, _characters_ or `char` values are represented using the `char` data type, which is a single 16-bit Unicode character. This allows Java to support a wide range of characters from various languages and symbol sets.\n\n## Declaring and Initializing Characters\n\nYou can declare and initialize `char` variables in Java using single quotes (`' '`). Here are some examples:\n\n```java\nchar letterA = 'A';\nchar digitFive = '5';\nchar specialChar = '@';\nchar unicodeChar = '\\u03A9'; // Greek capital letter Omega (Ω)\n```\n\n_Unicode characters_ can be represented using the `\\u` followed by a four-digit hexadecimal code.[Learn more about Unicode codes](https://unicode-table.com/en/).\n\n## Character Operations\n\nJava provides several operations and methods for working with characters. Here are some common ones:\n\n### **Comparison**: You can compare characters using relational operators (`==`, `!=`, `<`, `>`, etc.).\n\n```java\nchar a = 'A';\nchar b = 'B';\nboolean isEqual = (a == b); // false\nboolean isLess = (a < b);   // true\n```\n\n### **Character Methods**\n\nThe `Character` class provides various static methods for character manipulation and information retrieval. Some useful methods include:\n\n- `Character.isDigit(char ch)`: Checks if the character is a digit (0-9) and returns a boolean.\n- `Character.isLetter(char ch)`: Checks if the character is a letter (a-z, A-Z) and returns a boolean.\n- `Character.toUpperCase(char ch)`: Converts the character to uppercase.\n- `Character.toLowerCase(char ch)`: Converts the character to lowercase.\n- `Character.isWhitespace(char ch)`: Checks if the character is a whitespace character (`\" \"`).\n- `Character.getNumericValue(char ch)`: Returns the numeric value of the character if it is a digit (0-9).\n  - This is useful for converting character digits to their integer values, called **type casting**, **type conversion**, or sometimes **type coercion**.\n  - We can use it to compare character digits numerically instead of **lexicographically** or alphabetically.\n\n```java\nchar ch = '5';\nboolean isDigit = Character.isDigit(ch); // true\nchar upperCh = Character.toUpperCase('a'); // 'A'\n```\n\n### `Character` Class vs. `char` Primitive Type\n\nThe `char` data type is a primitive type that holds a single character value, while the `Character` class is a wrapper class that provides methods for manipulating and working with `char` values. You can convert between them using autoboxing and unboxing.\n\n```java\nchar primitiveChar = 'c';\nCharacter wrapperChar = Character.valueOf(primitiveChar); // Autoboxing\nchar unboxedChar = wrapperChar.charValue(); // Unboxing\n```\n",Ue=`# Strings in Java
 
 In Java, a _string_ is a sequence of characters that is used to represent text. Strings in Java are objects of the \`String\` class, which provides various methods for manipulating and working with strings.
 
@@ -4252,7 +5274,7 @@ String[] parts = sample.split(", "); // [" Hello", "Java! "]
 String example = "Java";
 char[] charArray = example.toCharArray(); // ['J', 'a', 'v', 'a']
 \`\`\`
-`,Me=`# Arrays
+`,We=`# Arrays
 
 Arrays in Java are a type of \`object\` that can hold multiple values of the same data type. They provide a way to store and manage collections of data efficiently.
 
@@ -4292,7 +5314,7 @@ int firstNumber = numbers[0]; // Accessing the first element (10) and storing it
 System.out.println(firstNumber); // Output: 10
 System.out.println(numbers[1]); // Output: 20
 \`\`\`
-`,Ne=`# Array Lists
+`,Ge=`# Array Lists
 
 Array Lists in Java are part of the \`java.util\` package and provide a dynamic array-like structure that can grow and shrink in size as needed. They are more flexible than traditional arrays, allowing for easy addition, removal, and manipulation of elements.
 
@@ -4340,7 +5362,7 @@ You can remove elements from an Array List using the \`remove()\` method. You ca
 \`\`\`java
 fruits.remove(1); // Removes the element at index 1 (Banana)
 \`\`\`
-`,Pe=`# Comparisons and Conditionals in Java
+`,Ke=`# Comparisons and Conditionals in Java
 
 Comparisons and conditionals are fundamental concepts in programming that allow you to control the flow of your program based on certain conditions.
 
@@ -4471,7 +5493,7 @@ String result =
 "5 or less";
 System.out.println(result); // Output: Greater than 5 but less than or equal to 15
 \`\`\`
-`,Fe=`# Loops and Iterables in Java
+`,qe=`# Loops and Iterables in Java
 
 Loops are fundamental constructs in programming that allow you to execute a block of code multiple times based on certain conditions. In Java, loops are commonly used to iterate over arrays, collections, and other data structures.
 
@@ -4625,7 +5647,7 @@ for (int i = 0; i < 10; i++) {
 \`\`\`
 
 This will print only odd numbers from 0 to 9, skipping the even numbers.
-`,Ie=`# Methods
+`,Je=`# Methods
 
 In Java, a method is a block of code that performs a specific task. Methods are used to organize code into reusable sections, making it easier to read, maintain, and debug.
 
@@ -4729,7 +5751,7 @@ You can call the \`factorial\` method like this:
 int result = factorial(5);
 System.out.println("Factorial of 5 is: " + result); // Output: Factorial of 5 is: 120
 \`\`\`
-`,Le=`# Classes in Java
+`,Ye=`# Classes in Java
 
 Classes in Java are blueprints for creating objects.
 
@@ -4979,7 +6001,7 @@ public class Car {
 In this example, the \`Main\` class contains the \`main\` method, which is the starting point of the program.
 
 After compiling both the \`Car\` and \`Main\` classes, you can run the \`Main\` class to see the output of the program.
-`,Re=`# Inheritance and \`super\` in Java
+`,Xe=`# Inheritance and \`super\` in Java
 
 Inheritance is a key feature of object-oriented programming that allows a new class to inherit properties and methods from an existing class.
 
@@ -5056,7 +6078,7 @@ myDog.makeSound(); // Output: Some generic animal sound
 \`\`\`
 
 This demonstrates polymorphism, as the same method call behaves differently based on the actual object type (\`Dog\` in this case) rather than the reference type (\`Animal\`).
-`,ze=`# Comiling Java into Usable Programs
+`,Ze=`# Comiling Java into Usable Programs
 
 After writing your Java code in \`.java\` files, you need to compile them into bytecode that the Java Virtual Machine (JVM) can execute. This bytecode is stored in \`.class\` files.
 
@@ -5101,7 +6123,7 @@ public static void main(String[] args) {
     // Your code here
 }
 \`\`\`
-`,Be=`# Packages and Imports
+`,Qe=`# Packages and Imports
 
 In Java, packages are used to group related classes and interfaces together, providing a namespace management system that helps avoid naming conflicts.
 
@@ -5161,7 +6183,7 @@ public class MyApp {
     }
 }
 \`\`\`
-`,Ve=`# Interfaces and Abstract Classes in Java
+`,$e=`# Interfaces and Abstract Classes in Java
 
 Abstraction is a core principle of object-oriented programming that allows you to define common behaviors and properties for related classes while hiding the implementation details.
 
@@ -5246,7 +6268,7 @@ public interface Animal {
 An interface with a single abstract method is called a functional interface.
 
 Functional interfaces can be implemented using lambda expressions, providing a concise way to represent single-method interfaces.[Learn about lambda expressions here](./17-streams-and-lambda-expressions.md).
-`,He=`# Collections
+`,et=`# Collections
 
 Collections in Java are data structures that allow you to store, organize, and manipulate groups of objects.
 
@@ -5359,7 +6381,7 @@ moreFruits.add("Grapes");
 fruits.addAll(moreFruits);
 System.out.println(fruits); // Output: [Apple, Banana, Apple, Orange, Grapes]
 \`\`\`
-`,Ue=`# Inner Classes
+`,tt=`# Inner Classes
 
 Similar to how classes can extend a superclass or implement interfaces, Java also allows you to define classes within other classes, known as inner classes.
 
@@ -5492,7 +6514,7 @@ public class Main {
 \`\`\`
 
 We didn't create a new named class that implements the \`Greeting\` interface; instead, we defined it inline as an anonymous inner class, using the \`new\` keyword followed by the interface name and a class body, and using the \`@Override\` annotation to implement the \`sayHello\` method.
-`,We=`# Streams and Lambda Expressions in Java
+`,nt=`# Streams and Lambda Expressions in Java
 
 **Streams** are a powerful feature in Java that allows for functional-style operations on collections of data.
 They provide a way to process sequences of elements (like collections, arrays, etc.) in a declarative manner.
@@ -5613,7 +6635,7 @@ public class Main {
 \`\`\`
 
 These are like arrow functions in JavaScript, where \`()\` represents the parameters (none in this case), and \`->\` separates the parameters from the method body, removing the need for \`@Override\`, \`{}\`(curly braces) around the method body, and the class boilerplate.
-`,Ge=`# Handling Errors and Debugging in Java
+`,rt=`# Handling Errors and Debugging in Java
 
 Errors and exceptions are inevitable in programming. Java provides a robust mechanism for handling errors through exceptions, allowing developers to manage unexpected situations gracefully.
 
@@ -5852,7 +6874,7 @@ LogUtil.logInfo("Application started.");
 LogUtil.logWarning("This is a warning message.");
 LogUtil.logSevere("This is a severe error message.");
 \`\`\`
-`,Ke=`# Testing Code in Java
+`,it=`# Testing Code in Java
 
 Testing is a crucial part of software development that helps ensure the correctness and reliability of your code. In Java, there are several approaches to testing, including:
 
@@ -5908,7 +6930,7 @@ public class UserServiceIntegrationTest {
 In this example, the \`UserServiceIntegrationTest\` class tests the interaction between user creation and retrieval functionalities of the \`UserService\` class.
 
 Keep in mind that when testing, look out for edge cases and error conditions to ensure your code handles all scenarios gracefully.
-`,qe=`# Network Requests in Java
+`,at=`# Network Requests in Java
 
 To make network requests in Java, you can use the \`HttpURLConnection\` class from the \`java.net\` package for basic HTTP operations. For more advanced features, you can use the \`HttpClient\` class introduced in Java 11.
 
@@ -6011,7 +7033,7 @@ In this example, we use the \`HttpClient\` class to create an HTTP client and th
 - We check the status code of the response to determine if the request was successful and print the response body or handle errors accordingly.
 
 Both methods allow you to make network requests in Java, with \`HttpClient\` providing a more modern and flexible approach for handling HTTP operations.
-`,Je=`# Graphical User Interfaces (GUIs) in Java
+`,ot=`# Graphical User Interfaces (GUIs) in Java
 
 Graphical User Interfaces (GUIs) allow users to interact with applications through graphical elements such as windows, buttons, text fields, and menus. In Java, GUIs can be created using libraries such as Swing and JavaFX.
 
@@ -6094,7 +7116,7 @@ The JFrame has several properties you can set, including:
   - This allows you to apply different themes to your application, such as the system look and feel or custom themes.
 
 These properties allow you to customize the appearance and behavior of your Swing application windows to suit your needs.
-`,Ye=`# JavaScript Notes
+`,st=`# JavaScript Notes
 
 Welcome to the JavaScript section! Here you'll find comprehensive notes about JavaScript programming.
 
@@ -6253,7 +7275,7 @@ Some other useful methods of the \`console\` object include:
 - \`console.info()\`: Outputs an informational message to the console.
 - \`console.debug()\`: Outputs a debug message to the console.
 - \`console.clear()\`: Clears the console.
-`,Xe=`# Variables and Data Types in JavaScript
+`,ct=`# Variables and Data Types in JavaScript
 
 A **variable** is a named container used to store data values. In JavaScript, you can declare variables using three keywords: \`var\`, \`let\`, and \`const\`. Each has its own characteristics and scope rules.
 
@@ -6385,7 +7407,7 @@ let b = 10;
 \`\`\`
 
 #### This is one of the reasons why \`let\` and \`const\` are preferred over \`var\` in modern JavaScript, as the temporal dead zone helps catch errors related to variable usage before declaration.
-`,Ze='# Operators in JavaScript\n\nOperators are special symbols or keywords in JavaScript that perform operations on operands (values or variables). They are used to manipulate data and perform calculations.\nThey are similar to most other commone programming languages.\n\n## Types of Operators\n\nJavaScript provides several types of operators, including:\n\n- Arithmetic Operators\n- Comparison Operators\n- Logical Operators\n- Assignment Operators\n\n## Arithmetic Operators\n\nArithmetic operators are used to perform mathematical operations.\n\n### Common arithmetic operators:\n\n- `+` : Addition\n- `-` : Subtraction\n- `*` : Multiplication\n- `/` : Division\n\n### Additional arithmetic operators:\n\n- `%` : Modulus (Remainder)\n  - Example: `5 % 2` results in `1`, since 5 divided by 2 leaves a remainder of 1.\n- `**` : Exponentiation\n  - Example: `2 ** 3` results in `8`, since 2 raised to the power of 3 is 8.\n- `++` : Increment by 1\n  - Example: `let a = 5; a++;` results in `a` being `6`.\n- `--` : Decrement by 1\n  - Example: `let a = 5; a--;` results in `a` being `4`.\n\n#### Note: the increment (`++`) and decrement (`--`) operators can only be used with let and var declared variables, not with const, unless the const holds an object or array and you are modifying its properties or elements.\n\n### Syntax Using Arithmetic Operators:\n\n```javascript\nlet a = 10;\n\nlet b = 5;\n\nlet sum = a + b; // 15\n\nlet difference = a - b; // 5\n\nlet product = a * b; // 50\n\nlet quotient = a / b; // 2\n\nlet remainder = a % b; // 0\n\nlet power = a ** 2; // 100\n\na++; // a is now 11\n\nb--; // b is now 4\n```\n\n## Comparison Operators\n\nComparison operators are used to compare two values and return a boolean result (`true` or `false`).\n\n### Common comparison operators:\n\n- `==` : Equal to (loose equality)\n- `===` : Strict equal to\n- `!=` : Not equal to (loose inequality)\n- `!==` : Strict not equal to\n- `>` : Greater than\n- `<` : Less than\n- `>=` : Greater than or equal to\n- `<=` : Less than or equal to\n\n#### The `loose` tag refers to the fact that these operators perform type coercion, meaning they convert the operands to the same type before making the comparison. The `strict` tag means that no type conversion is performed, and both value and type must be the same for the comparison to return true.\n\n### Syntax Using Comparison Operators:\n\n```javascript\nlet x = 10;\n\nlet y = "10";\n\nconst areStringsEqualToNumbers = x === y; // false, because types are different\n\nconst areValuesEqual = x == y; // true, because values are equal after type coercion\n\nconst isNotEqual = x != 5; // true\n\nconst isGreaterThan = x > 5; // true\n\nconst isLessThanOrEqual = x <= 10; // true\n```\n\n### Type Coercion\n\n- The `==` and `!=` operators perform type coercion, meaning they convert the operands to the same type before making the comparison.\n- The `===` and `!==` operators do not perform type coercion and compare both value and type.\n  - It is generally recommended to use `===` and `!==` to avoid unexpected results due to type coercion.\n\n## Logical Operators\n\nLogical operators are used to combine multiple boolean expressions and return a boolean result.\n\n#### Common logical operators:\n\n- `&&` : Logical AND\n- `||` : Logical OR\n- `!` : Logical NOT\n\n#### Syntax Using Logical Operators:\n\n```javascript\nlet a = true;\n\nlet b = false;\n\nconst aAndB = a && b; // false\n\nconst aOrB = a || b; // true\n\nconst notA = !a; // false\n```\n\n## Assignment Operators\n\nAssignment operators are used to assign values to variables.\n\n#### Common assignment operators:\n\n- `=` : Simple assignment\n  - Example: `let x = 10;` assigns the value `10` to the variable `x`.\n- `+=` : Addition assignment\\\n  - Example: `x += 5;` is equivalent to `x = x + 5;`, so if `x` was `10`, it becomes `15`.\n- `-=` : Subtraction assignment\n  - Example: `x -= 3;` is equivalent to `x = x - 3;`, so if `x` was `10`, it becomes `7`.\n- `*=` : Multiplication assignment\n  - Example: `x *= 2;` is equivalent to `x = x * 2;`, so if `x` was `10`, it becomes `20`.\n- `**=` : Exponentiation assignment\n  - Example: `x **= 3;` is equivalent to `x = x ** 3;`, so if `x` was `2`, it becomes `8`.\n- `/=` : Division assignment\n  - Example: `x /= 2;` is equivalent to `x = x / 2;`, so if `x` was `10`, it becomes `5`.\n- `%=` : Modulus assignment\n  - Example: `x %= 3;` is equivalent to `x = x % 3;`, so if `x` was `10`, it becomes `1`.\n\n#### Note: Assignment operators can only be used with `let` and `var` declared variables, not with `const`, unless the `const` holds an object or array and you are modifying its properties or elements.\n',Qe=`# Conditionals
+`,lt='# Operators in JavaScript\n\nOperators are special symbols or keywords in JavaScript that perform operations on operands (values or variables). They are used to manipulate data and perform calculations.\nThey are similar to most other commone programming languages.\n\n## Types of Operators\n\nJavaScript provides several types of operators, including:\n\n- Arithmetic Operators\n- Comparison Operators\n- Logical Operators\n- Assignment Operators\n\n## Arithmetic Operators\n\nArithmetic operators are used to perform mathematical operations.\n\n### Common arithmetic operators:\n\n- `+` : Addition\n- `-` : Subtraction\n- `*` : Multiplication\n- `/` : Division\n\n### Additional arithmetic operators:\n\n- `%` : Modulus (Remainder)\n  - Example: `5 % 2` results in `1`, since 5 divided by 2 leaves a remainder of 1.\n- `**` : Exponentiation\n  - Example: `2 ** 3` results in `8`, since 2 raised to the power of 3 is 8.\n- `++` : Increment by 1\n  - Example: `let a = 5; a++;` results in `a` being `6`.\n- `--` : Decrement by 1\n  - Example: `let a = 5; a--;` results in `a` being `4`.\n\n#### Note: the increment (`++`) and decrement (`--`) operators can only be used with let and var declared variables, not with const, unless the const holds an object or array and you are modifying its properties or elements.\n\n### Syntax Using Arithmetic Operators:\n\n```javascript\nlet a = 10;\n\nlet b = 5;\n\nlet sum = a + b; // 15\n\nlet difference = a - b; // 5\n\nlet product = a * b; // 50\n\nlet quotient = a / b; // 2\n\nlet remainder = a % b; // 0\n\nlet power = a ** 2; // 100\n\na++; // a is now 11\n\nb--; // b is now 4\n```\n\n## Comparison Operators\n\nComparison operators are used to compare two values and return a boolean result (`true` or `false`).\n\n### Common comparison operators:\n\n- `==` : Equal to (loose equality)\n- `===` : Strict equal to\n- `!=` : Not equal to (loose inequality)\n- `!==` : Strict not equal to\n- `>` : Greater than\n- `<` : Less than\n- `>=` : Greater than or equal to\n- `<=` : Less than or equal to\n\n#### The `loose` tag refers to the fact that these operators perform type coercion, meaning they convert the operands to the same type before making the comparison. The `strict` tag means that no type conversion is performed, and both value and type must be the same for the comparison to return true.\n\n### Syntax Using Comparison Operators:\n\n```javascript\nlet x = 10;\n\nlet y = "10";\n\nconst areStringsEqualToNumbers = x === y; // false, because types are different\n\nconst areValuesEqual = x == y; // true, because values are equal after type coercion\n\nconst isNotEqual = x != 5; // true\n\nconst isGreaterThan = x > 5; // true\n\nconst isLessThanOrEqual = x <= 10; // true\n```\n\n### Type Coercion\n\n- The `==` and `!=` operators perform type coercion, meaning they convert the operands to the same type before making the comparison.\n- The `===` and `!==` operators do not perform type coercion and compare both value and type.\n  - It is generally recommended to use `===` and `!==` to avoid unexpected results due to type coercion.\n\n## Logical Operators\n\nLogical operators are used to combine multiple boolean expressions and return a boolean result.\n\n#### Common logical operators:\n\n- `&&` : Logical AND\n- `||` : Logical OR\n- `!` : Logical NOT\n\n#### Syntax Using Logical Operators:\n\n```javascript\nlet a = true;\n\nlet b = false;\n\nconst aAndB = a && b; // false\n\nconst aOrB = a || b; // true\n\nconst notA = !a; // false\n```\n\n## Assignment Operators\n\nAssignment operators are used to assign values to variables.\n\n#### Common assignment operators:\n\n- `=` : Simple assignment\n  - Example: `let x = 10;` assigns the value `10` to the variable `x`.\n- `+=` : Addition assignment\\\n  - Example: `x += 5;` is equivalent to `x = x + 5;`, so if `x` was `10`, it becomes `15`.\n- `-=` : Subtraction assignment\n  - Example: `x -= 3;` is equivalent to `x = x - 3;`, so if `x` was `10`, it becomes `7`.\n- `*=` : Multiplication assignment\n  - Example: `x *= 2;` is equivalent to `x = x * 2;`, so if `x` was `10`, it becomes `20`.\n- `**=` : Exponentiation assignment\n  - Example: `x **= 3;` is equivalent to `x = x ** 3;`, so if `x` was `2`, it becomes `8`.\n- `/=` : Division assignment\n  - Example: `x /= 2;` is equivalent to `x = x / 2;`, so if `x` was `10`, it becomes `5`.\n- `%=` : Modulus assignment\n  - Example: `x %= 3;` is equivalent to `x = x % 3;`, so if `x` was `10`, it becomes `1`.\n\n#### Note: Assignment operators can only be used with `let` and `var` declared variables, not with `const`, unless the `const` holds an object or array and you are modifying its properties or elements.\n',ut=`# Conditionals
 
 Conditionals in JavaScript are used to perform different actions based on different conditions. The primary conditional statements in JavaScript are:
 
@@ -6483,7 +7505,7 @@ switch (day) {
 
 console.log(dayName);
 \`\`\`
-`,$e='# Ternary Expressions\n\nThe ternary operator is a concise way to perform conditional evaluations in JavaScript. It is often used as a shorthand for simple `if-else` statements.\n\n### Syntax\n\n```javascript\ncondition ? expressionIfTrue : expressionIfFalse;\n```\n\n- `condition`: A boolean expression that evaluates to `true` or `false`.\n  - The condition is followed by a `?` operator.\n- `expressionIfTrue`: The expression that is executed if the condition is `true`.\n  - This is followed by a `:` operator, or another ternary expression for nested conditions.\n- `expressionIfFalse`: The expression that is executed if the condition is `false`.\n\n### Example\n\n```javascript\nlet age = 20;\nlet canVote = age >= 18 ? "Yes" : "No";\nconsole.log(canVote);\n```\n\nIn this example, the condition `age >= 18` is evaluated. Since `age` is `20`, which is greater than `18`, the expression `"Yes"` is assigned to the variable `canVote`. If `age` were less than `18`, `"No"` would be assigned instead.\n\n### Nested Ternary Operators\n\nTernary operators can be nested to handle multiple conditions, but be cautious as it can reduce code readability.\n\n```javascript\nlet score = 85;\nlet grade = score >= 90 ? "A" : score >= 80 ? "B" : score >= 70 ? "C" : "F";\nconsole.log(grade);\n```\n\nIn this example, the `score` is evaluated against multiple conditions to determine the corresponding `grade`. Since `score` is `85`, the result will be `"B"`.\n\n### When to Use\n\n- Use the ternary operator for simple conditional assignments to improve code conciseness.\n- Avoid using it for complex conditions or multiple nested ternary operators, as it can make the code harder to read and maintain. In such cases, prefer using traditional `if-else` statements.\n\nAn example of a good use case for the ternary operator is when assigning a value based on a simple condition, such as determining if a number is even or odd:\n\n```javascript\nlet number = 4;\nlet isEven = number % 2 === 0 ? "Even" : "Odd";\nconsole.log(isEven); // Output: Even\n```\n\nIn this case, the ternary operator provides a clear and concise way to assign the value of `isEven` based on whether `number` is even or odd, and is easily readable.\n',et=`# Loops in JavaScript
+`,dt='# Ternary Expressions\n\nThe ternary operator is a concise way to perform conditional evaluations in JavaScript. It is often used as a shorthand for simple `if-else` statements.\n\n### Syntax\n\n```javascript\ncondition ? expressionIfTrue : expressionIfFalse;\n```\n\n- `condition`: A boolean expression that evaluates to `true` or `false`.\n  - The condition is followed by a `?` operator.\n- `expressionIfTrue`: The expression that is executed if the condition is `true`.\n  - This is followed by a `:` operator, or another ternary expression for nested conditions.\n- `expressionIfFalse`: The expression that is executed if the condition is `false`.\n\n### Example\n\n```javascript\nlet age = 20;\nlet canVote = age >= 18 ? "Yes" : "No";\nconsole.log(canVote);\n```\n\nIn this example, the condition `age >= 18` is evaluated. Since `age` is `20`, which is greater than `18`, the expression `"Yes"` is assigned to the variable `canVote`. If `age` were less than `18`, `"No"` would be assigned instead.\n\n### Nested Ternary Operators\n\nTernary operators can be nested to handle multiple conditions, but be cautious as it can reduce code readability.\n\n```javascript\nlet score = 85;\nlet grade = score >= 90 ? "A" : score >= 80 ? "B" : score >= 70 ? "C" : "F";\nconsole.log(grade);\n```\n\nIn this example, the `score` is evaluated against multiple conditions to determine the corresponding `grade`. Since `score` is `85`, the result will be `"B"`.\n\n### When to Use\n\n- Use the ternary operator for simple conditional assignments to improve code conciseness.\n- Avoid using it for complex conditions or multiple nested ternary operators, as it can make the code harder to read and maintain. In such cases, prefer using traditional `if-else` statements.\n\nAn example of a good use case for the ternary operator is when assigning a value based on a simple condition, such as determining if a number is even or odd:\n\n```javascript\nlet number = 4;\nlet isEven = number % 2 === 0 ? "Even" : "Odd";\nconsole.log(isEven); // Output: Even\n```\n\nIn this case, the ternary operator provides a clear and concise way to assign the value of `isEven` based on whether `number` is even or odd, and is easily readable.\n',ft=`# Loops in JavaScript
 
 Loops are used in JavaScript to execute a block of code multiple times until a specified condition is met. They are essential for tasks that require repetition, such as iterating over arrays or performing actions a certain number of times.
 
@@ -6602,7 +7624,7 @@ for (value of iterable) {
 \`\`\`
 
 We will cover these loops in more detail in later notes, after we learn about objects and arrays.
-`,tt=`# Functions
+`,pt=`# Functions
 
 Functions are reusable blocks of code that perform a specific task. They can take inputs (parameters) and return an output (return value).
 
@@ -6723,7 +7745,7 @@ function factorial(n) {
 }
 console.log(factorial(5)); // Output: 120
 \`\`\`
-`,nt=`# Function Generators
+`,mt=`# Function Generators
 
 Generators are a special type of function in JavaScript that can be paused and resumed, allowing you to produce a sequence of values over time.
 
@@ -6779,7 +7801,7 @@ for (let i = 0; i < 10; i++) {
 }
 // Output: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34
 \`\`\`
-`,rt=`# Methods
+`,ht=`# Methods
 
 In JavaScript, methods are functions that are associated with objects. They are used to define behaviors for objects and can manipulate the object's properties or perform actions related to the object.
 
@@ -6903,7 +7925,7 @@ Now you can use the \`reverse\` method on any string:
 let str = "hello";
 console.log(str.reverse()); // Output: "olleh"
 \`\`\`
-`,it=`# Template Strings
+`,gt=`# Template Strings
 
 Template strings (also known as template literals) in JavaScript are a way to work with strings that allow for easier embedding of expressions and multi-line strings.
 
@@ -6961,7 +7983,7 @@ They are enclosed by backticks (\`\` \` \` \`\`) instead of single ( \`' '\`) or
    }.\`;
    console.log(membershipStatus); // Output: You are a member.
    \`\`\`
-`,at=`# JavaScript Built-in Functions
+`,_t=`# JavaScript Built-in Functions
 
 JavaScript provides several built-in functions that are readily available for use without needing to define them yourself. These functions perform common tasks and operations, making it easier to work with data and perform calculations.
 
@@ -7130,7 +8152,7 @@ const exponent = 3;
 
 console.log(Math.pow(base, exponent)); // Output: 8
 \`\`\`
-`,ot=`# Scope
+`,vt=`# Scope
 
 Scope refers to the accessibility of variables and functions in different parts of your code. In JavaScript, there are two main types of scope: global scope and local scope.
 
@@ -7222,7 +8244,7 @@ If functionVar were declared with \`let\` or \`const\`, it would not be accessib
 This is called **hoisting** where \`var\` declarations are moved to the top of their enclosing function scope during compilation.
 
 It's as if they are immediately declared at the top of the function, but not initialized until the line where they are defined is executed.
-`,st=`# Arrays
+`,yt=`# Arrays
 
 A JavaScript **Array** is a data structure that can hold more than one value at a time. It is a list-like object used to store multiple values in a single variable.
 
@@ -7508,7 +8530,7 @@ const sortedNumbers = numbers.slice().sort(); // or use [...numbers].sort()
 console.log(sortedNumbers); // Output: [1, 2, 3, 4, 5]
 console.log(numbers); // Original array remains unchanged: [4, 2, 5, 1, 3]
 \`\`\`
-`,ct=`# Classes
+`,bt=`# Classes
 
 In JavaScript, classes are a way to create objects and manage inheritance using a more familiar syntax compared to traditional prototype-based inheritance. Classes were introduced in ECMAScript 2015 (ES6) and provide a clearer and more concise way to define object blueprints.
 
@@ -7625,7 +8647,7 @@ console.log(employee.jobTitle); // Output: Developer
 //Accessing the greet method inherited from the Person class:
 employee.greet(); // Output: Hello, my name is Charlie and I am 28 years old.
 \`\`\`
-`,lt=`# Objects
+`,xt=`# Objects
 
 In JavaScript, an object is a collection of key-value pairs, where each key (also called a property) is a string (or symbol) and the value can be any data type, including other objects or functions. Objects are used to store and organize data in a structured way.
 
@@ -7787,7 +8809,7 @@ You can access nested object properties using dot notation or bracket notation.
 console.log(student.address.city); // Output: Wonderland
 student.address.zipCode = "54321"; // Modify nested property
 \`\`\`
-`,ut=`# Importing and Exporting JavaScript Code
+`,St=`# Importing and Exporting JavaScript Code
 
 In JavaScript, you can organize your code into separate files and modules using the \`import\` and \`export\` statements. This allows you to reuse code across different parts of your application and maintain a cleaner codebase.
 
@@ -7919,7 +8941,7 @@ console.log(math.add(2, 3)); // Output: 5
 - Use \`import\` to bring in exported items from other modules.
 - ES6 modules use \`import\` and \`export\`, while CommonJS uses \`require\` and \`module.exports\`.
 - You can have named exports, default exports, and import all exports as an object.
-`,dt=`# Try and Catch
+`,Ct=`# Try and Catch
 
 The \`try...catch\` statement in JavaScript is used for error handling. It allows you to execute a block of code (the "try" block) and catch any errors that may occur during its execution (the "catch" block). This helps prevent your program from crashing due to unhandled exceptions.
 
@@ -8053,7 +9075,7 @@ try {
   }
 }
 \`\`\`
-`,ft=`# Promises
+`,wt=`# Promises
 
 Promises are a way to handle asynchronous operations in JavaScript. They represent a value that may be available now, later, or never. A Promise can be in one of three states: pending, fulfilled, or rejected.
 
@@ -8245,7 +9267,7 @@ Promise.any([promise1, promise2, promise3])
     console.error(error);
   });
 \`\`\`
-`,pt=`# JSON
+`,Tt=`# JSON
 
 JSON (JavaScript Object Notation) is a lightweight data interchange format that is easy for humans to read and write, and easy for machines to parse and generate. It is commonly used for transmitting data between a server and a web application as text.
 
@@ -8394,7 +9416,7 @@ The individual objects in the JSON file can be accessed via endpoints like:
 
 - \`http://localhost:3000/posts\`
 - \`http://localhost:3000/comments\`
-`,mt=`# Eval
+`,Et=`# Eval
 
 Eval is a built-in JavaScript function that evaluates a string as code. It can execute arbitrary code represented as a string, which can lead to security vulnerabilities and performance issues. Therefore, its use is generally discouraged unless absolutely necessary, although there are some legitimate use cases.
 
@@ -8453,7 +9475,7 @@ In most cases, there are safer and more efficient alternatives to eval:
    const greeting = \`Hello, \${name}!\`;
    console.log(greeting); // Output: Hello, Alice!
    \`\`\`
-`,ht=`# Types and Instances
+`,Dt=`# Types and Instances
 
 In JavaScript, types and instances are fundamental concepts that help define the nature of data and how it behaves in the language.
 
@@ -8553,7 +9575,7 @@ const greetPerson = (obj) => {
 greetPerson(alice); // Output: Hello, Alice!
 greetPerson(notAPerson); // Output: Hello, stranger!
 \`\`\`
-`,gt=`# Destructuring
+`,Ot=`# Destructuring
 
 Destructuring is a convenient way to extract values from arrays or properties from objects into distinct variables. It allows for cleaner and more readable code.
 
@@ -8665,7 +9687,7 @@ function sum(...numbers) {
 console.log(sum(1, 2, 3)); // Output: 6
 console.log(sum(4, 5, 6, 7, 8)); // Output: 30
 \`\`\`
-`,_t=`# Fetch API
+`,kt=`# Fetch API
 
 The Fetch API provides a modern way to make network requests in JavaScript. It is built into most modern browsers and allows you to make HTTP requests to servers and handle responses using Promises.
 
@@ -8954,7 +9976,7 @@ export function updateUser(userId, updatedData) {
     });
 }
 \`\`\`
-`,vt=`# The DOM
+`,At=`# The DOM
 
 The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of a document as a tree of objects, allowing programming languages like JavaScript to manipulate the content, structure, and style of web pages dynamically.
 With the DOM, you can:
@@ -9276,7 +10298,7 @@ element.addEventListener(
   true
 ); // true for capturing phase
 \`\`\`
-`,yt=`# Regular Expressions (RegEx)
+`,jt=`# Regular Expressions (RegEx)
 
 Regular expressions in JavaScript are patterns used to match character combinations in strings. They are implemented using the \`RegExp\` object or by using literal syntax.
 
@@ -9576,7 +10598,7 @@ Stops at the first possible match.
 ### Simple password validator (example pattern to refine):
 
 \`^(?=.*\\d)(?=.*[a-z])(?=.*[A-Z])[A-Za-z\\d]{6,}$\` requires at least six characters including uppercase, lowercase, and a digit.
-`,bt=`# Constructors and Prototypes
+`,Mt=`# Constructors and Prototypes
 
 In JavaScript, constructors are special functions used to create and initialize objects. Prototypes are a mechanism by which JavaScript objects inherit features from one another.
 
@@ -9639,7 +10661,7 @@ function Person(name) {
   };
 }
 \`\`\`
-`,xt=`# Sets and Maps
+`,Nt=`# Sets and Maps
 
 Sets and Maps, as well as WeakSets and WeakMaps, are built-in data structures in JavaScript that provide efficient ways to store and manage collections of data.
 
@@ -9819,7 +10841,7 @@ Same as Maps, but only objects are allowed as keys.
 - Use **Maps** when you need to store key-value pairs and want to maintain the order of insertion.
 - Use **WeakSets** when you need to store a collection of objects without preventing them from being garbage collected.
 - Use **WeakMaps** when you need to associate data with objects without preventing those objects from being garbage collected.
-`,St=`# Writing about markdown in a markdown file
+`,Pt=`# Writing about markdown in a markdown file
 
 How Ironic!
 
@@ -9974,7 +10996,7 @@ Use pipes \`|\` and hyphens \`-\` to create tables.
 | -------- | -------- |
 | Cell 1   | Cell 2   |
 | Cell 3   | Cell 4   |
-`,Ct=`# Learn SQL 🌎
+`,Ft=`# Learn SQL 🌎
 
 ## Welcome to the SQL Learning Notes!
 
@@ -10022,7 +11044,7 @@ For more in-depth learning, consider exploring the following resources:
   Happy learning! 🚀
 
 #### Setup Guide: Follow the [Setting Up SQL 🛠️](setting-up.md) notes to install and configure SQL on your machine.
-`,wt=`# Getting started with SQL 🖥️ 🪛
+`,It=`# Getting started with SQL 🖥️ 🪛
 
 ## Intro
 
@@ -10114,7 +11136,7 @@ The following SQL statement creates a differential back up of the database "test
 #### Tip: A differential back up reduces the back up time (since only the changes are backed up).
 
 #### Previous: Explore the SQL learning notes overview in the [Learn SQL 🌎](sql-index.md) notes to understand the structure of the SQL learning material.
-`,Tt=`# Setting Up SQL 🛠️
+`,Lt=`# Setting Up SQL 🛠️
 
 Welcome to the SQL setup guide! This document will help you get started with installing and configuring SQL on your local machine or server.
 
@@ -10168,7 +11190,7 @@ If the query returns the version of your SQL database, congratulations! Your set
 
 
 #### Home: Return to the [Learn SQL 🌎](sql-index.md) main index for more SQL topics and resources.
-`,Et=`# Overview of SQL Data Types
+`,Rt=`# Overview of SQL Data Types
 
 SQL data types define the kind of data that can be stored in a column of a database table. Choosing the correct data type is essential for data integrity, storage efficiency, and query performance.
 
@@ -10227,7 +11249,7 @@ Variables are used to store data values. When creating tables, you need to defin
 
 
 #### Previous: Review the [SQL Basics 📝](basics.md) notes to understand fundamental SQL concepts before diving into data types and tables.
-`,Dt=`# Tables in SQL 🗄️
+`,zt=`# Tables in SQL 🗄️
 
 to get started with tables in SQL, you first need to understand the concept of variables and datatypes in SQL.
 
@@ -10362,7 +11384,7 @@ Remeber that a column is a variable name in a table, like CustomerID or Customer
 \`SELECT\` and \`FROM\` are SQL clauses and should be written in uppercase for better readability, while \`_tablename\` should be replaced with the actual name of the table you want to query.
 
 #### Previous: Review the [SQL Data Types 📊](data-types.md) notes to understand different data types available in SQL before creating tables.
-`,Ot=`# SQL Constraints 📏
+`,Bt=`# SQL Constraints 📏
 
 SQL constraints are rules applied to table columns to enforce data integrity and consistency. They help ensure that the data entered into the database adheres to specific requirements.
 
@@ -10445,7 +11467,7 @@ Useful for establishing relationships between tables, such as linking orders to 
 
 
 #### Home: Return to the [Learn SQL 🌎](sql-index.md) main index for more SQL topics and resources.
-`,kt=`# Manipulating Data in SQL 🛠️
+`,Vt=`# Manipulating Data in SQL 🛠️
 
 ## The SQL INSERT INTO Statement
 
@@ -10527,7 +11549,7 @@ The following SQL statement deletes the customer with CustomerID 1:
 
 
 #### Previous: Review the [Tables in SQL 🗄️](tables.md) notes to understand how to create and define tables before manipulating data.
-`,At=`# Advanced Manipulating Data in SQL 🛠️
+`,Ht=`# Advanced Manipulating Data in SQL 🛠️
 
 ## The SQL MERGE Statement
 
@@ -10588,7 +11610,7 @@ ON CONFLICT (CustomerID)
 DO UPDATE SET CustomerFirstName = EXCLUDED.CustomerFirstName, CustomerLastName = EXCLUDED.CustomerLastName;
 
 #### Tip: The UPSERT operation is useful for maintaining data integrity and avoiding duplicate records in a table.
-`,jt=`# SQLite
+`,Ut=`# SQLite
 
 SQLite is a lightweight, serverless, self-contained SQL database engine. It is widely used in mobile applications, embedded systems, and for prototyping due to its simplicity and minimal setup requirements.
 
@@ -10677,7 +11699,7 @@ Once you have SQLite installed, you can use the following basic commands to inte
 - \`.tables\` - Lists all tables in the current database.
 - \`.schema tablename\` - Displays the schema (structure) of the specified table.
 - \`.exit\` - Exits the SQLite shell.
-`,Mt=`# TypeScript Notes
+`,Wt=`# TypeScript Notes
 
 Welcome to the TypeScript section! Here you'll find notes about TypeScript, the typed superset of JavaScript.
 
@@ -10708,7 +11730,7 @@ age = "thirty"; // Error: Type 'string' is not assignable to type 'number'.
 ## Available Topics
 
 - [TypeScript Basics](01-typescript-basics.md) - Introduction to TypeScript fundamentals
-`,Nt=`# TypeScript Basics
+`,Gt=`# TypeScript Basics
 
 Welcome to TypeScript! This guide covers the fundamentals of TypeScript, a typed superset of JavaScript.
 
@@ -10889,7 +11911,7 @@ interface Repository<T> {
   delete(id: string): void;
 }
 \`\`\`
-`,Pt={"../notes/c/00-c-index.md":w,"../notes/computer-science/00-general-knowledge.md":T,"../notes/computer-science/01-hardware.md":E,"../notes/computer-science/02-numbers.md":D,"../notes/computer-science/03-strings.md":O,"../notes/computer-science/04-math-operations.md":k,"../notes/cpp/00-cpp-index.md":A,"../notes/css/01-CSS-index.md":j,"../notes/css/02-basics.md":ee,"../notes/css/03-colors.md":M,"../notes/css/04-display-property.md":N,"../notes/css/05-positioning.md":te,"../notes/css/06-selectors.md":ne,"../notes/css/07-pseudo-selectors.md":re,"../notes/css/08-specificity.md":P,"../notes/css/09-inheritance.md":F,"../notes/css/10-flexbox-basics.md":I,"../notes/css/11-grid-layouts.md":L,"../notes/css/12-form-styling.md":R,"../notes/css/13-modals.md":ie,"../notes/css/14-animations.md":ae,"../notes/css/15-themeing.md":oe,"../notes/css/16-building-a-dropdown.md":se,"../notes/git/00-git-init.md":ce,"../notes/git/01-pushing-and-pulling.md":le,"../notes/git/02-reverting-changes.md":ue,"../notes/git/03-git-branching.md":de,"../notes/git/04-rebasing.md":fe,"../notes/git/05-merging.md":pe,"../notes/git/06-remote-repositories.md":me,"../notes/home.md":he,"../notes/html/00-html-index.md":ge,"../notes/html/01-get-started-with-html.md":_e,"../notes/html/02-classes-ids-and-data-attributes.md":ve,"../notes/html/03-forms.md":ye,"../notes/html/04-html-tables.md":be,"../notes/html/05-semantic-html.md":xe,"../notes/html/06-multimedia-elements.md":Se,"../notes/html/07-html5-new-fearures.md":Ce,"../notes/html/08-accessibility.md":we,"../notes/html/09-imports-and-paths.md":Te,"../notes/html/10-styling-elements.md":Ee,"../notes/java/00-java-index.md":De,"../notes/java/01-java-basics.md":Oe,"../notes/java/02-numbers.md":ke,"../notes/java/03-characters.md":Ae,"../notes/java/04-strings.md":je,"../notes/java/05-arrays.md":Me,"../notes/java/06-array-lists.md":Ne,"../notes/java/07-comparisons-and-conditionals.md":Pe,"../notes/java/08-loops-and-iterables.md":Fe,"../notes/java/09-methods.md":Ie,"../notes/java/10-classes.md":Le,"../notes/java/11-inheritance-and-super.md":Re,"../notes/java/12-compiling-java.md":ze,"../notes/java/13-packages-and-imports.md":Be,"../notes/java/14-interfaces-and-abstract-classes.md":Ve,"../notes/java/15-Collections.md":He,"../notes/java/16-inner-classes.md":Ue,"../notes/java/17-streams-and-lambda-expressions.md":We,"../notes/java/18-exceptions-handling-and-debugging.md":Ge,"../notes/java/19-testing-code.md":Ke,"../notes/java/20-network-requests.md":qe,"../notes/java/21-graphical-user-interfaces.md":Je,"../notes/javascript/00-javascript-index.md":Ye,"../notes/javascript/01-variables-and-datatypes.md":Xe,"../notes/javascript/02-operators.md":Ze,"../notes/javascript/03-conditionals.md":Qe,"../notes/javascript/04-ternary-operator.md":$e,"../notes/javascript/05-loops.md":et,"../notes/javascript/06-functions.md":tt,"../notes/javascript/07-generators.md":nt,"../notes/javascript/08-string-methods.md":rt,"../notes/javascript/08-template-literals.md":it,"../notes/javascript/09-built-in-functions.md":at,"../notes/javascript/10-scope.md":ot,"../notes/javascript/11-arrays.md":st,"../notes/javascript/12-classes.md":ct,"../notes/javascript/13-objects.md":lt,"../notes/javascript/14-imports-and-exports.md":ut,"../notes/javascript/15-try-catch.md":dt,"../notes/javascript/16-promises.md":ft,"../notes/javascript/17-JSON.md":pt,"../notes/javascript/18-the-eval-dilemma.md":mt,"../notes/javascript/19-types-and-instances.md":ht,"../notes/javascript/20-destructuring.md":gt,"../notes/javascript/21-fetch.md":_t,"../notes/javascript/22-DOM-manipulation.md":vt,"../notes/javascript/23-regular-expressions.md":yt,"../notes/javascript/24-constructors-and-prototypes.md":bt,"../notes/javascript/25-sets-and-maps.md":xt,"../notes/markdown/00-markdown-cheatsheet.md":St,"../notes/react/00-react-index.md":d,"../notes/react/01-components.md":a,"../notes/react/02-state.md":i,"../notes/react/03-conditional-rendering.md":p,"../notes/react/04-hooks.md":c,"../notes/react/05-use-effect.md":r,"../notes/react/06-use-ref.md":f,"../notes/react/07-use-context.md":u,"../notes/react/08-use-reducer.md":n,"../notes/sql/00-sql-index.md":Ct,"../notes/sql/01-get-started.md":wt,"../notes/sql/02-setting-up.md":Tt,"../notes/sql/03-data-types.md":Et,"../notes/sql/04-tables.md":Dt,"../notes/sql/05-constraints.md":Ot,"../notes/sql/06-manipulating-data.md":kt,"../notes/sql/07-advanced-manipulating-data.md":At,"../notes/sql/08-installing-sqlite.md":jt,"../notes/typescript/00-typescript-index.md":Mt,"../notes/typescript/01-typescript-basics.md":Nt},z={},B={};Object.entries(Pt).forEach(([e,t])=>{let n=e.split(`/`),r=n[n.length-1]||``;if(n.length===3&&r===`home.md`){B[r]={content:t,section:`home`};return}if(n.length>3){let e=n[n.length-2];z[e]||(z[e]={}),z[e][r]=t,B[r]={content:t,section:e}}});const V=e=>e.replace(/^\d{2}-/,``),H=e=>V(e).replace(`.md`,``).replace(/-/g,` `).replace(/\b\w/g,e=>e.toUpperCase()),U=e=>Object.keys(z[e]||{}).sort((e,t)=>{let n=parseInt(e.match(/^\d+/)?.[0]||`999`),r=parseInt(t.match(/^\d+/)?.[0]||`999`);return n===r?e.localeCompare(t):n-r}),Ft=()=>Object.keys(z),W=e=>{let t=B[e];return t?t.section:null},G=e=>{let t=W(e);if(!t)return null;let n=U(t),r=n.indexOf(e);if(r===-1||r>=n.length-1)return null;let i=n[r+1];return{filename:i,title:H(i)}},K=e=>{let t=e.replace(/^\/notes\/[^/]+\//,``).replace(/^\/notes\//,``),n=B[t];if(!n){let e=Object.keys(B).join(`, `);throw Error(`Note not found: ${t}. Available: ${e}`)}return n.content},It=e=>{if(!e.trim())return[];let t=e.toLowerCase(),n=[];return Object.entries(B).forEach(([r,i])=>{let{content:a,section:o}=i,s=a.split(`
-`),c=[];if(s.forEach((n,r)=>{if(n.toLowerCase().includes(t)){let t=Lt(n,e);c.push({context:n.trim(),lineNumber:r+1,highlightedText:t})}}),c.length>0){let e=o===`home`?{name:`Home`,emojiIcon:`🏠`}:C[o]||{name:o,icon:`📄`};n.push({filename:r,title:H(r),section:e.name,sectionIcon:`icon`in e?e.icon:null,sectionEmojiIcon:`emojiIcon`in e?e.emojiIcon:null,matches:c.slice(0,3),totalMatches:c.length})}}),n.sort((e,t)=>e.totalMatches===t.totalMatches?e.title.localeCompare(t.title):t.totalMatches-e.totalMatches)};var Lt=(e,t)=>{let n=RegExp(`(${t})`,`gi`);return e.replace(n,`<mark>$1</mark>`)};const Rt=()=>{let e=Ft(),t=[];return t.push({text:`Home`,href:`home.md`,emojiIcon:`🏠`}),e.forEach(e=>{let n=C[e.toLowerCase()],r=U(e);if(r.length>0){let i=r.map(e=>({text:zt(e),href:e})),a=null;try{a=`icon`in n?n.icon:null}catch{a=null}let o={text:n?.name||e.charAt(0).toUpperCase()+e.slice(1),children:i};if(a&&(o.icon=a),!a)try{o.emojiIcon=`emojiIcon`in n?n.emojiIcon:`📄`}catch{o.emojiIcon=`📁`}t.push(o)}}),t};var zt=e=>V(e).replace(`.md`,``).replace(/-/g,` `).replace(/\b\w/g,e=>e.toUpperCase());const Bt=Rt();function Vt({onSearch:e,onClear:t,placeholder:n=`Search all notes...`}){let[r,i]=(0,y.useState)(``),[a,o]=(0,y.useState)(!1),s=(0,y.useRef)(null),c=(0,y.useRef)(null),l=(0,y.useCallback)(t=>{c.current!==null&&(window.clearTimeout(c.current),c.current=null),c.current=window.setTimeout(()=>{e(t),c.current=null},800)},[e]),u=e=>{let n=e.target.value;i(n),n.trim()?l(n):(c.current!==null&&(window.clearTimeout(c.current),c.current=null),t())},d=()=>{i(``),t(),s.current?.focus()};return(0,y.useEffect)(()=>()=>{c.current!==null&&(window.clearTimeout(c.current),c.current=null)},[]),(0,y.useEffect)(()=>{let e=e=>{(e.ctrlKey||e.metaKey)&&e.key===`k`&&(e.preventDefault(),s.current?.focus())};return document.addEventListener(`keydown`,e),()=>document.removeEventListener(`keydown`,e)},[]),(0,b.jsx)(`div`,{className:`search-bar ${a?`focused`:``}`,children:(0,b.jsxs)(`div`,{className:`search-input-container`,children:[(0,b.jsx)(`span`,{className:`search-icon`,children:`🔍`}),(0,b.jsx)(`input`,{id:`search-input`,ref:s,type:`text`,value:r,onChange:u,onKeyDown:e=>{e.key===`Escape`&&d()},onFocus:()=>o(!0),onBlur:()=>o(!1),placeholder:n,className:`search-input`}),r&&(0,b.jsx)(`button`,{onClick:d,className:`search-clear`,"aria-label":`Clear search`,children:`✕`})]})})}function Ht({setCurrentNote:e,currentSection:t,currentNoteName:n,onSearch:r,onClearSearch:i,isMobile:a,rightSidebarContent:o}){let[s,c]=(0,y.useState)(null),[l,u]=(0,y.useState)(`chapters`);(0,y.useEffect)(()=>{if(t){let e=Bt.findIndex(e=>{if(e.text&&t in C){let n=C[t];return e.text.includes(n.name)}return!1});e!==-1&&c(e)}},[t]);let d=e=>{c(s===e?null:e)};return(0,b.jsxs)(`div`,{className:`left-nav`,children:[a&&o&&(0,b.jsxs)(`div`,{className:`mobile-nav-toggle`,children:[(0,b.jsx)(`button`,{className:`mobile-nav-btn ${l===`chapters`?`active`:``}`,onClick:()=>u(`chapters`),children:`All Chapters`}),(0,b.jsx)(`button`,{className:`mobile-nav-btn ${l===`page`?`active`:``}`,onClick:()=>u(`page`),children:`On this page`})]}),(!a||l===`chapters`)&&(0,b.jsxs)(b.Fragment,{children:[(0,b.jsx)(Vt,{onSearch:e=>{r?.(e)},onClear:()=>{i?.()},placeholder:`Search all notes...`}),Bt.map((t,r)=>{if(t.children){let i=s===r;return(0,b.jsxs)(`div`,{className:`dropdown-parent ${i?`active`:``}`,children:[(0,b.jsxs)(`div`,{className:`dropdown-title`,onClick:()=>d(r),children:[(0,b.jsx)(`span`,{className:`section-arrow`,children:i?`▼`:`▶`}),t.icon&&(0,b.jsx)(`img`,{src:t.icon,alt:`${t.text} icon`,className:`section-icon-img`}),!t.icon&&t.emojiIcon&&(0,b.jsx)(`span`,{className:`emoji-icon`,children:t.emojiIcon}),!t.icon&&!t.emojiIcon&&(0,b.jsx)(`div`,{style:{marginLeft:`20px`}}),(0,b.jsx)(`span`,{children:t.text})]}),(0,b.jsx)(`div`,{className:`dropdown-children ${i?`expanded`:`collapsed`}`,children:t.children.map((t,r)=>(0,b.jsx)(`p`,{className:`child-link ${n===t.href?`active`:``}`,onClick:()=>t.href&&e(t.href),children:t.text},r))})]},r)}else return(0,b.jsxs)(`div`,{className:`parent-link ${n===t.href?`active`:``}`,onClick:()=>t.href&&e(t.href),children:[t.icon&&(0,b.jsx)(`img`,{src:t.icon,alt:`${t.text} icon`,className:`section-icon-img`}),!t.icon&&t.emojiIcon&&(0,b.jsxs)(`span`,{className:`emoji-icon`,children:[t.emojiIcon,` `]}),(0,b.jsx)(`span`,{children:t.text})]},r)})]}),a&&l===`page`&&o&&(0,b.jsx)(`div`,{className:`mobile-page-overview`,children:o})]})}function Ut({currentNote:e,currentNoteName:t,onLoadNote:n}){let[r,i]=(0,y.useState)([]),[a,o]=(0,y.useState)(null),[s,c]=(0,y.useState)(``);(0,y.useEffect)(()=>{if(!e){i([]),o(null);return}let r=/^(#{1,6})\s+(.+)$/gm,a=[],s;for(;(s=r.exec(e))!==null;){let e=s[1].length,t=s[2].trim();if(e===4)continue;let n=t.toLowerCase().replace(/[^\w\s-]/g,``).replace(/\s+/g,`-`);a.push({id:n,text:t,level:e})}if(n){let e=G(t);e&&a.push({id:`next-lesson`,text:`Next: ${e.title}`,level:2})}i(a);let c=e.replace(/#{1,6}\s+/g,``).replace(/\[([^\]]+)\]\([^)]+\)/g,`$1`).replace(/[*_`]/g,``).trim().split(/\s+/).filter(e=>e.length>0).length,l=Math.max(1,Math.ceil(c/200)),u=e.length;o({wordCount:c,readingTime:l,characterCount:u})},[e,t,n]);let l=e=>{if(e===`next-lesson`&&n){let e=G(t);e&&n(e.filename);return}let r=document.getElementById(e);r&&(r.scrollIntoView({behavior:`smooth`,block:`start`}),c(e))};return(0,y.useEffect)(()=>{let e=()=>{let e=r.map(e=>({id:e.id,element:document.getElementById(e.id)})),t=``;for(let n of e)n.element&&n.element.getBoundingClientRect().top<=100&&(t=n.id);c(t)},t=document.querySelector(`.center.main`);if(t)return t.addEventListener(`scroll`,e),()=>t.removeEventListener(`scroll`,e)},[r]),e?(0,b.jsxs)(`div`,{className:`right-sidebar`,children:[(0,b.jsxs)(`div`,{className:`sidebar-section`,children:[(0,b.jsx)(`h3`,{children:`📊 Note Info`}),(0,b.jsxs)(`div`,{className:`note-stats`,children:[(0,b.jsxs)(`div`,{className:`stat-item`,children:[(0,b.jsx)(`span`,{className:`stat-label`,children:`📄 File:`}),(0,b.jsx)(`span`,{className:`stat-value`,children:V(t)})]}),a&&(0,b.jsxs)(b.Fragment,{children:[(0,b.jsxs)(`div`,{className:`stat-item`,children:[(0,b.jsx)(`span`,{className:`stat-label`,children:`📝 Words:`}),(0,b.jsx)(`span`,{className:`stat-value`,children:a.wordCount.toLocaleString()})]}),(0,b.jsxs)(`div`,{className:`stat-item`,children:[(0,b.jsx)(`span`,{className:`stat-label`,children:`⏱️ Read time:`}),(0,b.jsxs)(`span`,{className:`stat-value`,children:[a.readingTime,` min`]})]}),(0,b.jsxs)(`div`,{className:`stat-item`,children:[(0,b.jsx)(`span`,{className:`stat-label`,children:`🔤 Characters:`}),(0,b.jsx)(`span`,{className:`stat-value`,children:a.characterCount.toLocaleString()})]})]})]})]}),r.length>0&&(0,b.jsxs)(`div`,{className:`sidebar-section`,children:[(0,b.jsx)(`h3`,{children:`📚 Table of Contents`}),(0,b.jsx)(`nav`,{className:`toc-nav`,children:r.map((e,t)=>(0,b.jsxs)(`button`,{className:`toc-item level-${e.level} ${s===e.id?`active`:``} ${e.id===`next-lesson`?`next-lesson`:``}`,onClick:()=>l(e.id),title:e.text,children:[e.id===`next-lesson`&&(0,b.jsx)(`span`,{className:`next-lesson-icon`,children:`🚀`}),e.text]},t))})]})]}):(0,b.jsx)(`div`,{className:`right-sidebar`,children:(0,b.jsxs)(`div`,{className:`sidebar-section`,children:[(0,b.jsx)(`h3`,{children:`📖 Note Info`}),(0,b.jsx)(`p`,{className:`no-note-message`,children:`Select a note to see its table of contents and information.`})]})})}var Wt=`modulepreload`,Gt=function(e){return`/code-wiki-app/`+e},Kt={};const qt=function(e,t,n){let r=Promise.resolve();if(t&&t.length>0){let e=document.getElementsByTagName(`link`),i=document.querySelector(`meta[property=csp-nonce]`),a=i?.nonce||i?.getAttribute(`nonce`);function o(e){return Promise.all(e.map(e=>Promise.resolve(e).then(e=>({status:`fulfilled`,value:e}),e=>({status:`rejected`,reason:e}))))}r=o(t.map(t=>{if(t=Gt(t,n),t in Kt)return;Kt[t]=!0;let r=t.endsWith(`.css`),i=r?`[rel="stylesheet"]`:``;if(n)for(let n=e.length-1;n>=0;n--){let i=e[n];if(i.href===t&&(!r||i.rel===`stylesheet`))return}else if(document.querySelector(`link[href="${t}"]${i}`))return;let o=document.createElement(`link`);if(o.rel=r?`stylesheet`:Wt,r||(o.as=`script`),o.crossOrigin=``,o.href=t,a&&o.setAttribute(`nonce`,a),document.head.appendChild(o),r)return new Promise((e,n)=>{o.addEventListener(`load`,e),o.addEventListener(`error`,()=>n(Error(`Unable to preload CSS for ${t}`)))})}))}function i(e){let t=new Event(`vite:preloadError`,{cancelable:!0});if(t.payload=e,window.dispatchEvent(t),!t.defaultPrevented)throw e}return r.then(t=>{for(let e of t||[])e.status===`rejected`&&i(e.reason);return e().catch(i)})};var Jt=(0,y.lazy)(()=>qt(()=>import(`./react-markdown-DPrgH-1Q.js`),__vite__mapDeps([0,1,2,3,4,5])));function Yt({displayName:e,content:t,languageDirectory:n,styleUpNextSections:r,loadNote:i}){return(0,y.useEffect)(()=>{document.title=e?`${H(e)} - ${n||`Notes`}`:`Programming Notes`},[e,n]),(0,b.jsx)(y.Suspense,{fallback:(0,b.jsx)(x,{}),children:(0,b.jsx)(Xt,{content:t,styleUpNextSections:r,loadNote:i})})}function Xt({content:e,styleUpNextSections:t,loadNote:n}){return(0,b.jsx)(Jt,{remarkPlugins:[g,_],rehypePlugins:[m,h],components:{h1:({children:e,...t})=>(0,b.jsx)(`h1`,{...t,id:String(e)?.toLowerCase().replace(/[^\w\s-]/g,``).replace(/\s+/g,`-`),children:e}),h2:({children:e,...t})=>(0,b.jsx)(`h2`,{...t,id:String(e)?.toLowerCase().replace(/[^\w\s-]/g,``).replace(/\s+/g,`-`),children:e}),h3:({children:e,...t})=>(0,b.jsx)(`h3`,{...t,id:String(e)?.toLowerCase().replace(/[^\w\s-]/g,``).replace(/\s+/g,`-`),children:e}),h4:({children:e,...n})=>(0,b.jsx)(`h4`,{...n,id:String(e)?.toLowerCase().replace(/[^\w\s-]/g,``).replace(/\s+/g,`-`),onLoad:()=>{setTimeout(t,100)},children:e}),h5:({children:e,...t})=>(0,b.jsx)(`h5`,{...t,id:String(e)?.toLowerCase().replace(/[^\w\s-]/g,``).replace(/\s+/g,`-`),children:e}),h6:({children:e,...t})=>(0,b.jsx)(`h6`,{...t,id:String(e)?.toLowerCase().replace(/[^\w\s-]/g,``).replace(/\s+/g,`-`),children:e}),a:({href:e,children:t,...r})=>(0,b.jsx)(`a`,{href:e,onClick:t=>{if(e&&e.endsWith(`.md`)&&n){t.preventDefault();let r=e;e.includes(`/`)&&(r=e.split(`/`).pop()||e),console.log(`Internal link clicked:`,e,`-> normalized:`,r);try{n(r)}catch(e){console.error(`Failed to load note: ${r}`,e);try{n(r)}catch(e){console.error(`Failed to load note with filename: ${r}`,e),alert(`Note not found: ${r}`)}}}},className:`markdown-link`,...r,children:t}),table:({children:e,...t})=>(0,b.jsx)(`table`,{...t,className:`markdown-table`,children:e}),th:({children:e,...t})=>(0,b.jsx)(`th`,{...t,className:`markdown-th`,children:e}),td:({children:e,...t})=>(0,b.jsx)(`td`,{...t,className:`markdown-td`,children:e}),img:({src:e,alt:t,...n})=>(0,b.jsx)(`img`,{src:e?.startsWith(`/`)?`/code-wiki-app/${e.slice(1)}`:e,alt:t,style:{maxWidth:`100%`,height:`auto`,border:`1px solid #ddd`,borderRadius:`4px`,margin:`15px 0`,display:`block`},...n})},children:e})}function Zt({currentFilename:e,onLoadNote:t}){let n=G(e);return n?(0,b.jsx)(`div`,{className:`next-lesson-container`,children:(0,b.jsx)(`button`,{className:`next-lesson-button`,onClick:()=>{t(n.filename)},"aria-label":`Go to next lesson: ${n.title}`,children:(0,b.jsxs)(`div`,{className:`next-lesson-content`,children:[(0,b.jsx)(`span`,{className:`next-lesson-label`,children:`Up Next`}),(0,b.jsx)(`span`,{className:`next-lesson-title`,children:n.title}),(0,b.jsx)(`span`,{className:`next-lesson-arrow`,children:`→`})]})})}):null}function Qt({results:e,query:t,isLoading:n=!1,onSelectNote:r,onClose:i}){let a=e=>{r(e),i()};return t.trim()?(0,b.jsx)(`div`,{className:`search-results-overlay`,onClick:i,children:(0,b.jsxs)(`div`,{className:`search-results-container`,onClick:e=>e.stopPropagation(),children:[(0,b.jsxs)(`div`,{className:`search-results-header`,children:[(0,b.jsx)(`h3`,{children:`Search Results`}),(0,b.jsx)(`button`,{onClick:i,className:`search-results-close`,"aria-label":`Close search results`,children:`✕`})]}),n?(0,b.jsxs)(`div`,{className:`search-loading`,children:[(0,b.jsx)(`div`,{className:`search-spinner`}),(0,b.jsx)(`span`,{children:`Searching...`})]}):(0,b.jsxs)(b.Fragment,{children:[(0,b.jsx)(`div`,{className:`search-results-info`,children:e.length===0?(0,b.jsxs)(`span`,{children:[`No results found for "`,t,`"`]}):(0,b.jsxs)(`span`,{children:[`Found `,e.length,` `,e.length===1?`result`:`results`,` for "`,t,`"`]})}),(0,b.jsx)(`div`,{className:`search-results-list`,children:e.map((e,t)=>(0,b.jsxs)(`div`,{className:`search-result-card`,onClick:()=>a(e.filename),children:[(0,b.jsxs)(`div`,{className:`search-result-header`,children:[(0,b.jsxs)(`div`,{className:`search-result-title`,children:[(0,b.jsxs)(`span`,{className:`search-result-icon`,children:[e.sectionIcon&&(0,b.jsx)(`img`,{src:e.sectionIcon,alt:`${e.section} icon`,className:`section-icon-img`}),!e.sectionIcon&&e.sectionEmojiIcon&&(0,b.jsx)(`span`,{className:`emoji-icon`,children:e.sectionEmojiIcon}),!e.sectionIcon&&!e.sectionEmojiIcon&&(0,b.jsx)(`div`,{style:{width:`20px`},children:`💻`})]}),(0,b.jsx)(`span`,{className:`search-result-name`,children:e.title})]}),(0,b.jsxs)(`div`,{className:`search-result-meta`,children:[(0,b.jsx)(`span`,{className:`search-result-section`,children:e.section}),(0,b.jsxs)(`span`,{className:`search-result-count`,children:[e.totalMatches,` `,e.totalMatches===1?`match`:`matches`]})]})]}),(0,b.jsxs)(`div`,{className:`search-result-matches`,children:[e.matches.map((e,t)=>(0,b.jsxs)(`div`,{className:`search-result-match`,children:[(0,b.jsxs)(`div`,{className:`search-result-line-number`,children:[`Line `,e.lineNumber]}),(0,b.jsx)(`div`,{className:`search-result-context`,dangerouslySetInnerHTML:{__html:e.highlightedText}})]},t)),e.totalMatches>e.matches.length&&(0,b.jsxs)(`div`,{className:`search-result-more`,children:[`+`,e.totalMatches-e.matches.length,` more`,` `,e.totalMatches-e.matches.length===1?`match`:`matches`]})]})]},`${e.filename}-${t}`))})]})]})}):null}var q=`notes-app-preferences`,J=`notes-app-storage-allowed`;const Y=()=>{try{return localStorage.getItem(J)===`true`}catch{return!1}},$t=()=>{if(Y())try{let e=X();e.visitedNotes=[],localStorage.setItem(q,JSON.stringify(e))}catch{}},en=()=>{try{return!localStorage.getItem(`notes-app-visited`)}catch{return!0}},tn=()=>{try{localStorage.setItem(`notes-app-visited`,`true`)}catch{}},nn=e=>{try{e?localStorage.setItem(J,`true`):localStorage.removeItem(J)}catch{}},X=()=>{let e={theme:`system`,allowsStorage:!1,visitedNotes:[],firstVisit:!0};if(!Y())return e;try{let t=localStorage.getItem(q);if(t){let n=JSON.parse(t);return{...e,...n}}}catch{}return e},Z=e=>{if(Y())try{let t={...X(),...e};localStorage.setItem(q,JSON.stringify(t))}catch{}},rn=e=>{Y()&&Z({visitedNotes:[e,...(X().visitedNotes||[]).filter(t=>t!==e)].slice(0,20)})},an=()=>{try{localStorage.removeItem(q),localStorage.removeItem(J),localStorage.removeItem(`notes-app-visited`)}catch{}},on=()=>typeof window<`u`&&window.matchMedia&&window.matchMedia(`(prefers-color-scheme: dark)`).matches?`dark`:`light`,Q=e=>{let t=document.documentElement,n;n=e===`system`?on():e,t.setAttribute(`data-theme`,n),t.classList.remove(`theme-light`,`theme-dark`),t.classList.add(`theme-${n}`)},sn=e=>{if(typeof window>`u`||!window.matchMedia)return()=>{};let t=window.matchMedia(`(prefers-color-scheme: dark)`),n=t=>{e(t.matches?`dark`:`light`)};return t.addEventListener(`change`,n),()=>t.removeEventListener(`change`,n)};function cn({isOpen:e,onComplete:t}){let[n,r]=(0,y.useState)(`storage`),[i,a]=(0,y.useState)(!1),[o,s]=(0,y.useState)(``),[c,l]=(0,y.useState)(`system`);if(!e)return null;let u=e=>{a(e),e?r(`setup`):t({allowsStorage:!1,theme:`system`})},d=()=>{t({allowsStorage:i,username:o.trim()||void 0,theme:c})},f=()=>{s(``),d()},p=e=>{l(e),Q(e)};return(0,b.jsx)(`div`,{className:`welcome-modal-overlay`,children:(0,b.jsx)(`div`,{className:`welcome-modal`,children:n===`storage`?(0,b.jsxs)(b.Fragment,{children:[(0,b.jsx)(`div`,{className:`welcome-modal-header`,children:(0,b.jsx)(`h2`,{children:`Welcome to Programming Notes! 📚`})}),(0,b.jsxs)(`div`,{className:`welcome-modal-content`,children:[(0,b.jsx)(`p`,{children:`To provide you with a personalized experience, we'd like to save your preferences and reading history locally on your device.`}),(0,b.jsxs)(`div`,{className:`storage-benefits`,children:[(0,b.jsxs)(`div`,{className:`benefit-item`,children:[(0,b.jsx)(`span`,{className:`benefit-icon`,children:`🎨`}),(0,b.jsx)(`span`,{children:`Remember your theme preference`})]}),(0,b.jsxs)(`div`,{className:`benefit-item`,children:[(0,b.jsx)(`span`,{className:`benefit-icon`,children:`📖`}),(0,b.jsx)(`span`,{children:`Track your reading history`})]}),(0,b.jsxs)(`div`,{className:`benefit-item`,children:[(0,b.jsx)(`span`,{className:`benefit-icon`,children:`👤`}),(0,b.jsx)(`span`,{children:`Personalized welcome messages`})]})]}),(0,b.jsxs)(`p`,{className:`storage-note`,children:[(0,b.jsx)(`strong`,{children:`Your privacy matters:`}),` All data stays on your device. Nothing is sent to any servers.`]})]}),(0,b.jsxs)(`div`,{className:`welcome-modal-actions`,children:[(0,b.jsx)(`button`,{onClick:()=>u(!1),className:`btn-secondary`,children:`No Thanks`}),(0,b.jsx)(`button`,{onClick:()=>u(!0),className:`btn-primary`,children:`Allow Local Storage`})]})]}):(0,b.jsxs)(b.Fragment,{children:[(0,b.jsx)(`div`,{className:`welcome-modal-header`,children:(0,b.jsx)(`h2`,{children:`Let's Personalize Your Experience ✨`})}),(0,b.jsxs)(`div`,{className:`welcome-modal-content`,children:[(0,b.jsxs)(`div`,{className:`setup-section`,children:[(0,b.jsx)(`label`,{htmlFor:`username`,className:`setup-label`,children:`What should we call you? (Optional)`}),(0,b.jsx)(`input`,{id:`username`,type:`text`,value:o,onChange:e=>s(e.target.value),placeholder:`Enter your name...`,className:`setup-input`,maxLength:50})]}),(0,b.jsxs)(`div`,{className:`setup-section`,children:[(0,b.jsx)(`label`,{className:`setup-label`,children:`Choose your theme`}),(0,b.jsxs)(`div`,{className:`theme-options`,children:[(0,b.jsxs)(`button`,{onClick:()=>p(`system`),className:`theme-option ${c===`system`?`active`:``}`,children:[(0,b.jsx)(`span`,{className:`theme-icon`,children:`🖥️`}),(0,b.jsxs)(`div`,{className:`theme-info`,children:[(0,b.jsx)(`div`,{className:`theme-name`,children:`System`}),(0,b.jsx)(`div`,{className:`theme-desc`,children:`Match your device`})]})]}),(0,b.jsxs)(`button`,{onClick:()=>p(`light`),className:`theme-option ${c===`light`?`active`:``}`,children:[(0,b.jsx)(`span`,{className:`theme-icon`,children:`☀️`}),(0,b.jsxs)(`div`,{className:`theme-info`,children:[(0,b.jsx)(`div`,{className:`theme-name`,children:`Light`}),(0,b.jsx)(`div`,{className:`theme-desc`,children:`Bright and clean`})]})]}),(0,b.jsxs)(`button`,{onClick:()=>p(`dark`),className:`theme-option ${c===`dark`?`active`:``}`,children:[(0,b.jsx)(`span`,{className:`theme-icon`,children:`🌙`}),(0,b.jsxs)(`div`,{className:`theme-info`,children:[(0,b.jsx)(`div`,{className:`theme-name`,children:`Dark`}),(0,b.jsx)(`div`,{className:`theme-desc`,children:`Easy on the eyes`})]})]})]})]})]}),(0,b.jsxs)(`div`,{className:`welcome-modal-actions`,children:[(0,b.jsx)(`button`,{onClick:f,className:`btn-secondary`,children:`Skip Name`}),(0,b.jsx)(`button`,{onClick:d,className:`btn-primary`,children:`Get Started`})]})]})})})}function $(e){if(e.length!==20){console.error(`Invalid custom color array length. Expected 20, got`,e.length,`This may be due to corrupted data or an outdated theme format.`);return}let t=document.documentElement;t.style.setProperty(`--bg-primary`,e[0]),t.style.setProperty(`--bg-secondary`,e[1]),t.style.setProperty(`--bg-tertiary`,e[2]),t.style.setProperty(`--text-primary`,e[3]),t.style.setProperty(`--text-secondary`,e[4]),t.style.setProperty(`--text-muted`,e[5]),t.style.setProperty(`--border-color`,e[6]),t.style.setProperty(`--border-light`,e[7]),t.style.setProperty(`--border-medium`,e[8]),t.style.setProperty(`--accent-color`,e[9]),t.style.setProperty(`--accent-hover`,e[10]),t.style.setProperty(`--accent-dark`,e[11]),t.style.setProperty(`--accent-light`,e[12]),t.style.setProperty(`--accent-blue`,e[13]),t.style.setProperty(`--accent-blue-dark`,e[14]),t.style.setProperty(`--heading-primary`,e[15]),t.style.setProperty(`--heading-secondary`,e[16]),t.style.setProperty(`--heading-tertiary`,e[17]),t.style.setProperty(`--code-bg`,e[18]),t.style.setProperty(`--code-text`,e[19])}const ln=()=>{localStorage.removeItem(`customTheme`),window.location.reload()},un=e=>{localStorage.setItem(`customTheme`,JSON.stringify(e))},dn=()=>{let e=document.documentElement;return[`--bg-primary`,`--bg-secondary`,`--bg-tertiary`,`--text-primary`,`--text-secondary`,`--text-muted`,`--border-color`,`--border-light`,`--border-medium`,`--accent-color`,`--accent-hover`,`--accent-dark`,`--accent-light`,`--accent-blue`,`--accent-blue-dark`,`--heading-primary`,`--heading-secondary`,`--heading-tertiary`,`--code-bg`,`--code-text`].map(t=>getComputedStyle(e).getPropertyValue(t).trim())};function fn({customColor:e,setCustomColor:t,applyCustomTheme:n,saveCustomTheme:r,requiredLength:i}){return(0,b.jsxs)(b.Fragment,{children:[(0,b.jsx)(`button`,{className:`selector-btn`,onClick:t=>{t.preventDefault();let n=`data:text/json;charset=utf-8,`+encodeURIComponent(JSON.stringify(e,null,2)),r=document.createElement(`a`);r.setAttribute(`href`,n),r.setAttribute(`download`,`customTheme.json`),document.body.appendChild(r),r.click(),r.remove()},children:`Export Theme`}),(0,b.jsx)(`button`,{className:`selector-btn`,onClick:e=>{e.preventDefault();let a=document.createElement(`input`);a.type=`file`,a.accept=`.json,application/json`,a.onchange=e=>{let a=e.target;if(a.files&&a.files.length>0){let e=a.files[0],o=new FileReader;o.onload=e=>{try{let a=e.target?.result;if(typeof a==`string`){let e=JSON.parse(a);e.length===i?(t(e),n(e),r(e)):alert(`Invalid theme file: Incorrect number of colors.`)}}catch(e){alert(`Failed to import theme: `+e.message)}},o.readAsText(e)}},a.click()},children:`Import Theme`})]})}function pn({handleClose:e}){let[t,n]=(0,y.useState)([]),[r,i]=(0,y.useState)(!1),a=[`Background Primary`,`Background Secondary`,`Background Tertiary`,`Text Primary`,`Text Secondary`,`Text Muted`,`Border Color`,`Border Light`,`Border Medium`,`Accent Color`,`Accent Hover`,`Accent Dark`,`Accent Light`,`Accent Secondary`,`Accent Secondary Dark`,`Heading Primary`,`Heading Secondary`,`Heading Tertiary`,`Code Background`,`Code Text`];return(0,y.useEffect)(()=>{n(dn())},[n]),(0,b.jsx)(b.Fragment,{children:(0,b.jsx)(`div`,{className:`modal-overlay`,onClick:e,children:(0,b.jsxs)(`div`,{className:`modal`,onClick:e=>e.stopPropagation(),children:[(0,b.jsx)(`span`,{className:`modal-close`,onClick:e,children:`X`}),(0,b.jsx)(`h2`,{children:`Customize Theme Colors`}),(0,b.jsxs)(`form`,{className:`color-inputs`,onSubmit:e=>{e.preventDefault(),$(t),un(t)},children:[(0,b.jsx)(`div`,{className:`custom-color-btns-grid`,children:t.map((e,r)=>(0,b.jsxs)(`div`,{className:`custom-color-btn`,children:[(0,b.jsxs)(`label`,{children:[a[r],`:`]}),(0,b.jsx)(`input`,{type:`color`,value:e,onChange:e=>{let i=[...t];i[r]=e.target.value,n(i)}})]},r))}),(0,b.jsxs)(`div`,{className:`selector-btns`,children:[(0,b.jsx)(`button`,{type:`button`,onClick:ln,className:`btn-danger`,children:`Reset to Default`}),(0,b.jsx)(`input`,{type:`submit`,value:`Apply Theme`,className:`selector-btn`}),(0,b.jsx)(`button`,{type:`button`,onClick:()=>i(!r),className:`selector-btn`,children:`Import/Export Theme`}),r&&(0,b.jsxs)(b.Fragment,{children:[(0,b.jsx)(fn,{customColor:t,setCustomColor:n,applyCustomTheme:$,saveCustomTheme:un,requiredLength:a.length}),(0,b.jsx)(`br`,{}),(0,b.jsx)(`br`,{})]})]}),(0,b.jsx)(`br`,{})]}),(0,b.jsx)(`br`,{})]})})})}function mn({username:e,preferences:t,onThemeChange:n,onClearData:r,onShowHistory:i}){let[a,o]=(0,y.useState)(!1),[s,c]=(0,y.useState)(!1),[l,u]=(0,y.useState)(!1),d=(0,y.useRef)(null);(0,y.useEffect)(()=>{let e=e=>{d.current&&!d.current.contains(e.target)&&o(!1)};return document.addEventListener(`mousedown`,e),()=>document.removeEventListener(`mousedown`,e)},[]);let f=()=>{c(!0),o(!1)},p=()=>{r(),c(!1)},m=e=>{switch(e){case`light`:return`☀️`;case`dark`:return`🌙`;case`system`:return`🖥️`;default:return`🖥️`}};return(0,b.jsxs)(b.Fragment,{children:[(0,b.jsxs)(`div`,{className:`user-menu`,ref:d,children:[(0,b.jsxs)(`button`,{onClick:()=>o(!a),className:`user-menu-trigger`,"aria-label":`User menu`,children:[(0,b.jsx)(`div`,{className:`user-avatar`,children:e?e.charAt(0).toUpperCase():`👤`}),(0,b.jsx)(`span`,{className:`user-menu-arrow`,children:a?`▴`:`▾`})]}),a&&(0,b.jsxs)(`div`,{className:`user-menu-dropdown`,children:[e&&(0,b.jsx)(`div`,{className:`user-menu-header`,children:(0,b.jsxs)(`div`,{className:`user-greeting`,children:[`Welcome back, `,(0,b.jsx)(`strong`,{children:e}),`!`]})}),(0,b.jsxs)(`div`,{className:`user-menu-section`,children:[(0,b.jsx)(`div`,{className:`user-menu-label`,children:`Theme`}),(0,b.jsxs)(`div`,{className:`theme-selector`,children:[[`system`,`light`,`dark`].map(e=>(0,b.jsxs)(`button`,{onClick:()=>{n(e),o(!1)},className:`theme-selector-btn ${t.theme===e?`active`:``}`,children:[(0,b.jsx)(`span`,{className:`theme-selector-icon`,children:m(e)}),(0,b.jsx)(`span`,{className:`theme-selector-name`,children:e.charAt(0).toUpperCase()+e.slice(1)})]},e)),(0,b.jsxs)(`button`,{onClick:()=>{u(!0),o(!1)},className:`theme-selector-btn`,children:[(0,b.jsx)(`span`,{className:`theme-selector-icon`,children:`🎨`}),(0,b.jsx)(`span`,{className:`theme-selector-name`,children:`Custom`})]})]})]}),(0,b.jsx)(`div`,{className:`user-menu-section`,children:(0,b.jsxs)(`button`,{onClick:()=>{i(),o(!1)},className:`user-menu-item`,children:[(0,b.jsx)(`span`,{className:`user-menu-icon`,children:`📚`}),`Reading History`,t.visitedNotes.length>0&&(0,b.jsx)(`span`,{className:`history-count`,children:t.visitedNotes.length})]})}),(0,b.jsx)(`div`,{className:`user-menu-section user-menu-danger`,children:(0,b.jsxs)(`button`,{onClick:f,className:`user-menu-item danger`,children:[(0,b.jsx)(`span`,{className:`user-menu-icon`,children:`🗑️`}),`Clear All Data`]})})]})]}),s&&(0,b.jsx)(`div`,{className:`confirm-modal-overlay`,children:(0,b.jsxs)(`div`,{className:`confirm-modal`,children:[(0,b.jsx)(`div`,{className:`confirm-modal-header`,children:(0,b.jsx)(`h3`,{children:`⚠️ Clear All Data`})}),(0,b.jsxs)(`div`,{className:`confirm-modal-content`,children:[(0,b.jsx)(`p`,{children:`This will permanently delete all your saved preferences, reading history, and personal settings.`}),(0,b.jsx)(`p`,{className:`confirm-warning`,children:(0,b.jsx)(`strong`,{children:`Once you delete your progress, this cannot be undone!`})})]}),(0,b.jsxs)(`div`,{className:`confirm-modal-actions`,children:[(0,b.jsx)(`button`,{onClick:()=>c(!1),className:`btn-secondary`,children:`Cancel`}),(0,b.jsx)(`button`,{onClick:p,className:`btn-danger`,children:`Yes, Delete Everything`})]})]})}),l&&(0,b.jsx)(pn,{handleClose:()=>u(!1)})]})}function hn({isOpen:e,preferences:t,onClose:n,onSelectNote:r}){let[i,a]=(0,y.useState)(!1);if(!e)return null;let o=()=>{t.visitedNotes=[],a(!1),$t(),n()},s=e=>{r(e),n()},c=e=>{let t=W(e);return t?e===`home.md`?{name:`Home`,emojiIcon:`🏠`}:C[t]||{name:t,icon:`📄`}:{name:`General`,icon:`📄`}};return(0,b.jsx)(`div`,{className:`history-modal-overlay`,onClick:n,children:(0,b.jsxs)(`div`,{className:`history-modal`,onClick:e=>e.stopPropagation(),children:[(0,b.jsxs)(`div`,{className:`history-modal-header`,children:[(0,b.jsx)(`h3`,{children:`📚 Reading History`}),(0,b.jsx)(`button`,{onClick:n,className:`history-modal-close`,"aria-label":`Close history`,children:`✕`})]}),(0,b.jsx)(`div`,{className:`history-modal-content`,children:t.visitedNotes.length===0?(0,b.jsxs)(`div`,{className:`history-empty`,children:[(0,b.jsx)(`div`,{className:`history-empty-icon`,children:`📖`}),(0,b.jsx)(`div`,{className:`history-empty-title`,children:`No reading history yet`}),(0,b.jsx)(`div`,{className:`history-empty-desc`,children:`Start exploring the notes to build your reading history!`})]}):(0,b.jsxs)(b.Fragment,{children:[(0,b.jsxs)(`div`,{className:`history-info`,children:[`You've visited `,t.visitedNotes.length,t.visitedNotes.length===1?` note`:` notes`,` `,`recently`]}),(0,b.jsx)(`div`,{className:`history-list`,children:t.visitedNotes.map((e,t)=>{let n=c(e),r=H(e);return(0,b.jsxs)(`div`,{className:`history-item`,onClick:()=>s(e),children:[(0,b.jsxs)(`div`,{className:`history-item-main`,children:[(0,b.jsxs)(`div`,{className:`history-item-header`,children:[(0,b.jsxs)(`span`,{className:`history-item-icon`,children:[`icon`in n&&(0,b.jsx)(`img`,{src:n.icon,alt:`${n.name} icon`,className:`section-icon-img`}),!(`icon`in n)&&`emojiIcon`in n&&(0,b.jsx)(`span`,{className:`emoji-icon`,children:n.emojiIcon})]}),(0,b.jsx)(`span`,{className:`history-item-title`,children:r})]}),(0,b.jsxs)(`div`,{className:`history-item-meta`,children:[(0,b.jsx)(`span`,{className:`history-item-section`,children:n.name}),(0,b.jsxs)(`span`,{className:`history-item-position`,children:[`#`,t+1]})]})]}),(0,b.jsx)(`div`,{className:`history-item-arrow`,children:`→`})]},`${e}-${t}`)})})]})}),(0,b.jsxs)(`div`,{className:`selector-btns`,children:[!i&&(0,b.jsx)(`button`,{className:`btn-danger`,onClick:()=>a(!0),children:`Clear History`}),i&&(0,b.jsxs)(b.Fragment,{children:[(0,b.jsx)(`span`,{children:`Are you sure?`}),(0,b.jsx)(`button`,{className:`btn-danger`,onClick:o,children:`Clear`}),(0,b.jsx)(`button`,{onClick:()=>a(!1),className:`btn-primary`,children:`Nevermind...`})]})]})]})})}function gn(){let[e,t]=(0,y.useState)(null),[n,r]=(0,y.useState)(`home.md`),[i,a]=(0,y.useState)([`home.md`]),[o,s]=(0,y.useState)(null),[c,l]=(0,y.useState)(!1),[u,d]=(0,y.useState)([]),[f,p]=(0,y.useState)(``),[m,h]=(0,y.useState)(!1),[g,_]=(0,y.useState)(()=>X()),[v,S]=(0,y.useState)(!1),[w,T]=(0,y.useState)(!1),E=(0,y.useCallback)(()=>{t(K(`home.md`)),r(`home.md`),a([`home.md`]),s(`home`),D(`home.md`,`home`)},[]);(0,y.useEffect)(()=>{if(en()&&!Y()&&(S(!0),tn()),Q(g.theme),g.theme===`system`)return sn(()=>{g.theme===`system`&&Q(`system`)})},[g.theme]),(0,y.useEffect)(()=>{let e=new URLSearchParams(window.location.search),n=e.get(`note`),i=e.get(`section`);if(n)try{t(K(n)),r(n),a([n]);let e=i||W(n);s(e),D(n,e)}catch(e){console.error(`Failed to load note from URL:`,n,e),E()}else E()},[E]),(0,y.useEffect)(()=>{if(e){let e=setTimeout(()=>{j()},100);return()=>clearTimeout(e)}},[e]),(0,y.useEffect)(()=>{let e=localStorage.getItem(`customTheme`);e!==null&&$(JSON.parse(e))});let D=(e,t)=>{let n=new URLSearchParams;n.set(`note`,e),t&&n.set(`section`,t);let r=`${window.location.pathname}?${n.toString()}`;window.history.pushState({},``,r)},O=e=>{t(null),e!==n&&(a(t=>[...t,e]),r(e)),rn(e);let i=W(e);s(i),D(e,i),l(!1),h(!1),setTimeout(()=>{try{t(K(e));let n=document.querySelector(`.center.main`);n&&(n.scrollTop=0),setTimeout(()=>{j()},50)}catch(n){console.error(`Error loading note:`,e,n),t(`# Error
+`,Kt={"../notes/c/00-c-index.md":ee,"../notes/c/01-printing-and-importing-libraries.md":w,"../notes/c/02-syntax.md":T,"../notes/c/03-compiling.md":E,"../notes/c/04-data-types.md":D,"../notes/c/05-variables.md":O,"../notes/c/06-math-operations.md":k,"../notes/c/07-conditional-logic.md":A,"../notes/c/08-arrays-and-memory.md":j,"../notes/c/09-loops.md":M,"../notes/c/10-functions.md":N,"../notes/c/11-linked-lists.md":te,"../notes/computer-science/00-general-knowledge.md":ne,"../notes/computer-science/01-hardware.md":re,"../notes/computer-science/02-numbers.md":P,"../notes/computer-science/03-strings.md":F,"../notes/computer-science/04-math-operations.md":I,"../notes/cpp/00-cpp-index.md":L,"../notes/css/01-CSS-index.md":R,"../notes/css/02-basics.md":ie,"../notes/css/03-colors.md":ae,"../notes/css/04-display-property.md":oe,"../notes/css/05-positioning.md":se,"../notes/css/06-selectors.md":ce,"../notes/css/07-pseudo-selectors.md":le,"../notes/css/08-specificity.md":ue,"../notes/css/09-inheritance.md":de,"../notes/css/10-flexbox-basics.md":fe,"../notes/css/11-grid-layouts.md":pe,"../notes/css/12-form-styling.md":me,"../notes/css/13-modals.md":he,"../notes/css/14-animations.md":ge,"../notes/css/15-themeing.md":_e,"../notes/css/16-building-a-dropdown.md":ve,"../notes/css/17-3d-animations.md":ye,"../notes/git/00-git-init.md":be,"../notes/git/01-pushing-and-pulling.md":xe,"../notes/git/02-reverting-changes.md":Se,"../notes/git/03-git-branching.md":Ce,"../notes/git/04-rebasing.md":we,"../notes/git/05-merging.md":Te,"../notes/git/06-remote-repositories.md":Ee,"../notes/home.md":De,"../notes/html/00-html-index.md":Oe,"../notes/html/01-get-started-with-html.md":ke,"../notes/html/02-classes-ids-and-data-attributes.md":Ae,"../notes/html/03-forms.md":je,"../notes/html/04-html-tables.md":Me,"../notes/html/05-semantic-html.md":Ne,"../notes/html/06-multimedia-elements.md":Pe,"../notes/html/07-html5-new-fearures.md":Fe,"../notes/html/08-accessibility.md":Ie,"../notes/html/09-imports-and-paths.md":Le,"../notes/html/10-styling-elements.md":Re,"../notes/java/00-java-index.md":ze,"../notes/java/01-java-basics.md":Be,"../notes/java/02-numbers.md":Ve,"../notes/java/03-characters.md":He,"../notes/java/04-strings.md":Ue,"../notes/java/05-arrays.md":We,"../notes/java/06-array-lists.md":Ge,"../notes/java/07-comparisons-and-conditionals.md":Ke,"../notes/java/08-loops-and-iterables.md":qe,"../notes/java/09-methods.md":Je,"../notes/java/10-classes.md":Ye,"../notes/java/11-inheritance-and-super.md":Xe,"../notes/java/12-compiling-java.md":Ze,"../notes/java/13-packages-and-imports.md":Qe,"../notes/java/14-interfaces-and-abstract-classes.md":$e,"../notes/java/15-Collections.md":et,"../notes/java/16-inner-classes.md":tt,"../notes/java/17-streams-and-lambda-expressions.md":nt,"../notes/java/18-exceptions-handling-and-debugging.md":rt,"../notes/java/19-testing-code.md":it,"../notes/java/20-network-requests.md":at,"../notes/java/21-graphical-user-interfaces.md":ot,"../notes/javascript/00-javascript-index.md":st,"../notes/javascript/01-variables-and-datatypes.md":ct,"../notes/javascript/02-operators.md":lt,"../notes/javascript/03-conditionals.md":ut,"../notes/javascript/04-ternary-operator.md":dt,"../notes/javascript/05-loops.md":ft,"../notes/javascript/06-functions.md":pt,"../notes/javascript/07-generators.md":mt,"../notes/javascript/08-string-methods.md":ht,"../notes/javascript/08-template-literals.md":gt,"../notes/javascript/09-built-in-functions.md":_t,"../notes/javascript/10-scope.md":vt,"../notes/javascript/11-arrays.md":yt,"../notes/javascript/12-classes.md":bt,"../notes/javascript/13-objects.md":xt,"../notes/javascript/14-imports-and-exports.md":St,"../notes/javascript/15-try-catch.md":Ct,"../notes/javascript/16-promises.md":wt,"../notes/javascript/17-JSON.md":Tt,"../notes/javascript/18-the-eval-dilemma.md":Et,"../notes/javascript/19-types-and-instances.md":Dt,"../notes/javascript/20-destructuring.md":Ot,"../notes/javascript/21-fetch.md":kt,"../notes/javascript/22-DOM-manipulation.md":At,"../notes/javascript/23-regular-expressions.md":jt,"../notes/javascript/24-constructors-and-prototypes.md":Mt,"../notes/javascript/25-sets-and-maps.md":Nt,"../notes/markdown/00-markdown-cheatsheet.md":Pt,"../notes/react/00-react-index.md":d,"../notes/react/01-components.md":a,"../notes/react/02-state.md":i,"../notes/react/03-conditional-rendering.md":p,"../notes/react/04-hooks.md":c,"../notes/react/05-use-effect.md":r,"../notes/react/06-use-ref.md":f,"../notes/react/07-use-context.md":u,"../notes/react/08-use-reducer.md":n,"../notes/sql/00-sql-index.md":Ft,"../notes/sql/01-get-started.md":It,"../notes/sql/02-setting-up.md":Lt,"../notes/sql/03-data-types.md":Rt,"../notes/sql/04-tables.md":zt,"../notes/sql/05-constraints.md":Bt,"../notes/sql/06-manipulating-data.md":Vt,"../notes/sql/07-advanced-manipulating-data.md":Ht,"../notes/sql/08-installing-sqlite.md":Ut,"../notes/typescript/00-typescript-index.md":Wt,"../notes/typescript/01-typescript-basics.md":Gt},z={},B={};Object.entries(Kt).forEach(([e,t])=>{let n=e.split(`/`),r=n[n.length-1]||``;if(n.length===3&&r===`home.md`){B[r]={content:t,section:`home`};return}if(n.length>3){let e=n[n.length-2];z[e]||(z[e]={}),z[e][r]=t,B[r]={content:t,section:e}}});const V=e=>e.replace(/^\d{2}-/,``),H=e=>V(e).replace(`.md`,``).replace(/-/g,` `).replace(/\b\w/g,e=>e.toUpperCase()),U=e=>Object.keys(z[e]||{}).sort((e,t)=>{let n=parseInt(e.match(/^\d+/)?.[0]||`999`),r=parseInt(t.match(/^\d+/)?.[0]||`999`);return n===r?e.localeCompare(t):n-r}),qt=()=>Object.keys(z),W=e=>{let t=B[e];return t?t.section:null},G=e=>{let t=W(e);if(!t)return null;let n=U(t),r=n.indexOf(e);if(r===-1||r>=n.length-1)return null;let i=n[r+1];return{filename:i,title:H(i)}},K=e=>{let t=e.replace(/^\/notes\/[^/]+\//,``).replace(/^\/notes\//,``),n=B[t];if(!n){let e=Object.keys(B).join(`, `);throw Error(`Note not found: ${t}. Available: ${e}`)}return n.content},Jt=e=>{if(!e.trim())return[];let t=e.toLowerCase(),n=[];return Object.entries(B).forEach(([r,i])=>{let{content:a,section:o}=i,s=a.split(`
+`),c=[];if(s.forEach((n,r)=>{if(n.toLowerCase().includes(t)){let t=Yt(n,e);c.push({context:n.trim(),lineNumber:r+1,highlightedText:t})}}),c.length>0){let e=o===`home`?{name:`Home`,emojiIcon:`🏠`}:C[o]||{name:o,icon:`📄`};n.push({filename:r,title:H(r),section:e.name,sectionIcon:`icon`in e?e.icon:null,sectionEmojiIcon:`emojiIcon`in e?e.emojiIcon:null,matches:c.slice(0,3),totalMatches:c.length})}}),n.sort((e,t)=>e.totalMatches===t.totalMatches?e.title.localeCompare(t.title):t.totalMatches-e.totalMatches)};var Yt=(e,t)=>{let n=RegExp(`(${t})`,`gi`);return e.replace(n,`<mark>$1</mark>`)};const Xt=()=>{let e=qt(),t=[];return t.push({text:`Home`,href:`home.md`,emojiIcon:`🏠`}),e.forEach(e=>{let n=C[e.toLowerCase()],r=U(e);if(r.length>0){let i=r.map(e=>({text:Zt(e),href:e})),a=null;try{a=`icon`in n?n.icon:null}catch{a=null}let o={text:n?.name||e.charAt(0).toUpperCase()+e.slice(1),children:i};if(a&&(o.icon=a),!a)try{o.emojiIcon=`emojiIcon`in n?n.emojiIcon:`📄`}catch{o.emojiIcon=`📁`}t.push(o)}}),t};var Zt=e=>V(e).replace(`.md`,``).replace(/-/g,` `).replace(/\b\w/g,e=>e.toUpperCase());const Qt=Xt();function $t({onSearch:e,onClear:t,placeholder:n=`Search all notes...`}){let[r,i]=(0,y.useState)(``),[a,o]=(0,y.useState)(!1),s=(0,y.useRef)(null),c=(0,y.useRef)(null),l=(0,y.useCallback)(t=>{c.current!==null&&(window.clearTimeout(c.current),c.current=null),c.current=window.setTimeout(()=>{e(t),c.current=null},800)},[e]),u=e=>{let n=e.target.value;i(n),n.trim()?l(n):(c.current!==null&&(window.clearTimeout(c.current),c.current=null),t())},d=()=>{i(``),t(),s.current?.focus()};return(0,y.useEffect)(()=>()=>{c.current!==null&&(window.clearTimeout(c.current),c.current=null)},[]),(0,y.useEffect)(()=>{let e=e=>{(e.ctrlKey||e.metaKey)&&e.key===`k`&&(e.preventDefault(),s.current?.focus())};return document.addEventListener(`keydown`,e),()=>document.removeEventListener(`keydown`,e)},[]),(0,b.jsx)(`div`,{className:`search-bar ${a?`focused`:``}`,children:(0,b.jsxs)(`div`,{className:`search-input-container`,children:[(0,b.jsx)(`span`,{className:`search-icon`,children:`🔍`}),(0,b.jsx)(`input`,{id:`search-input`,ref:s,type:`text`,value:r,onChange:u,onKeyDown:e=>{e.key===`Escape`&&d()},onFocus:()=>o(!0),onBlur:()=>o(!1),placeholder:n,className:`search-input`}),r&&(0,b.jsx)(`button`,{onClick:d,className:`search-clear`,"aria-label":`Clear search`,children:`✕`})]})})}function en({setCurrentNote:e,currentSection:t,currentNoteName:n,onSearch:r,onClearSearch:i,isMobile:a,rightSidebarContent:o}){let[s,c]=(0,y.useState)(null),[l,u]=(0,y.useState)(`chapters`);(0,y.useEffect)(()=>{if(t){let e=Qt.findIndex(e=>{if(e.text&&t in C){let n=C[t];return e.text.includes(n.name)}return!1});e!==-1&&c(e)}},[t]);let d=e=>{c(s===e?null:e)};return(0,b.jsxs)(`div`,{className:`left-nav`,children:[a&&o&&(0,b.jsxs)(`div`,{className:`mobile-nav-toggle`,children:[(0,b.jsx)(`button`,{className:`mobile-nav-btn ${l===`chapters`?`active`:``}`,onClick:()=>u(`chapters`),children:`All Chapters`}),(0,b.jsx)(`button`,{className:`mobile-nav-btn ${l===`page`?`active`:``}`,onClick:()=>u(`page`),children:`On this page`})]}),(!a||l===`chapters`)&&(0,b.jsxs)(b.Fragment,{children:[(0,b.jsx)($t,{onSearch:e=>{r?.(e)},onClear:()=>{i?.()},placeholder:`Search all notes...`}),Qt.map((t,r)=>{if(t.children){let i=s===r;return(0,b.jsxs)(`div`,{className:`dropdown-parent ${i?`active`:``}`,children:[(0,b.jsxs)(`div`,{className:`dropdown-title`,onClick:()=>d(r),children:[(0,b.jsx)(`span`,{className:`section-arrow`,children:i?`▼`:`▶`}),t.icon&&(0,b.jsx)(`img`,{src:t.icon,alt:`${t.text} icon`,className:`section-icon-img`}),!t.icon&&t.emojiIcon&&(0,b.jsx)(`span`,{className:`emoji-icon`,children:t.emojiIcon}),!t.icon&&!t.emojiIcon&&(0,b.jsx)(`div`,{style:{marginLeft:`20px`}}),(0,b.jsx)(`span`,{children:t.text})]}),(0,b.jsx)(`div`,{className:`dropdown-children ${i?`expanded`:`collapsed`}`,children:t.children.map((t,r)=>(0,b.jsx)(`p`,{className:`child-link ${n===t.href?`active`:``}`,onClick:()=>t.href&&e(t.href),children:t.text},r))})]},r)}else return(0,b.jsxs)(`div`,{className:`parent-link ${n===t.href?`active`:``}`,onClick:()=>t.href&&e(t.href),children:[t.icon&&(0,b.jsx)(`img`,{src:t.icon,alt:`${t.text} icon`,className:`section-icon-img`}),!t.icon&&t.emojiIcon&&(0,b.jsxs)(`span`,{className:`emoji-icon`,children:[t.emojiIcon,` `]}),(0,b.jsx)(`span`,{children:t.text})]},r)})]}),a&&l===`page`&&o&&(0,b.jsx)(`div`,{className:`mobile-page-overview`,children:o})]})}function tn({currentNote:e,currentNoteName:t,onLoadNote:n}){let[r,i]=(0,y.useState)([]),[a,o]=(0,y.useState)(null),[s,c]=(0,y.useState)(``);(0,y.useEffect)(()=>{if(!e){i([]),o(null);return}let r=/^(#{1,6})\s+(.+)$/gm,a=[],s;for(;(s=r.exec(e))!==null;){let e=s[1].length,t=s[2].trim();if(e===4)continue;let n=t.toLowerCase().replace(/[^\w\s-]/g,``).replace(/\s+/g,`-`);a.push({id:n,text:t,level:e})}if(n){let e=G(t);e&&a.push({id:`next-lesson`,text:`Next: ${e.title}`,level:2})}i(a);let c=e.replace(/#{1,6}\s+/g,``).replace(/\[([^\]]+)\]\([^)]+\)/g,`$1`).replace(/[*_`]/g,``).trim().split(/\s+/).filter(e=>e.length>0).length,l=Math.max(1,Math.ceil(c/200)),u=e.length;o({wordCount:c,readingTime:l,characterCount:u})},[e,t,n]);let l=e=>{if(e===`next-lesson`&&n){let e=G(t);e&&n(e.filename);return}let r=document.getElementById(e);r&&(r.scrollIntoView({behavior:`smooth`,block:`start`}),c(e))};return(0,y.useEffect)(()=>{let e=()=>{let e=r.map(e=>({id:e.id,element:document.getElementById(e.id)})),t=``;for(let n of e)n.element&&n.element.getBoundingClientRect().top<=100&&(t=n.id);c(t)},t=document.querySelector(`.center.main`);if(t)return t.addEventListener(`scroll`,e),()=>t.removeEventListener(`scroll`,e)},[r]),e?(0,b.jsxs)(`div`,{className:`right-sidebar`,children:[(0,b.jsxs)(`div`,{className:`sidebar-section`,children:[(0,b.jsx)(`h3`,{children:`📊 Note Info`}),(0,b.jsxs)(`div`,{className:`note-stats`,children:[(0,b.jsxs)(`div`,{className:`stat-item`,children:[(0,b.jsx)(`span`,{className:`stat-label`,children:`📄 File:`}),(0,b.jsx)(`span`,{className:`stat-value`,children:V(t)})]}),a&&(0,b.jsxs)(b.Fragment,{children:[(0,b.jsxs)(`div`,{className:`stat-item`,children:[(0,b.jsx)(`span`,{className:`stat-label`,children:`📝 Words:`}),(0,b.jsx)(`span`,{className:`stat-value`,children:a.wordCount.toLocaleString()})]}),(0,b.jsxs)(`div`,{className:`stat-item`,children:[(0,b.jsx)(`span`,{className:`stat-label`,children:`⏱️ Read time:`}),(0,b.jsxs)(`span`,{className:`stat-value`,children:[a.readingTime,` min`]})]}),(0,b.jsxs)(`div`,{className:`stat-item`,children:[(0,b.jsx)(`span`,{className:`stat-label`,children:`🔤 Characters:`}),(0,b.jsx)(`span`,{className:`stat-value`,children:a.characterCount.toLocaleString()})]})]})]})]}),r.length>0&&(0,b.jsxs)(`div`,{className:`sidebar-section`,children:[(0,b.jsx)(`h3`,{children:`📚 Table of Contents`}),(0,b.jsx)(`nav`,{className:`toc-nav`,children:r.map((e,t)=>(0,b.jsxs)(`button`,{className:`toc-item level-${e.level} ${s===e.id?`active`:``} ${e.id===`next-lesson`?`next-lesson`:``}`,onClick:()=>l(e.id),title:e.text,children:[e.id===`next-lesson`&&(0,b.jsx)(`span`,{className:`next-lesson-icon`,children:`🚀`}),e.text]},t))})]})]}):(0,b.jsx)(`div`,{className:`right-sidebar`,children:(0,b.jsxs)(`div`,{className:`sidebar-section`,children:[(0,b.jsx)(`h3`,{children:`📖 Note Info`}),(0,b.jsx)(`p`,{className:`no-note-message`,children:`Select a note to see its table of contents and information.`})]})})}var nn=`modulepreload`,rn=function(e){return`/code-wiki-app/`+e},an={};const on=function(e,t,n){let r=Promise.resolve();if(t&&t.length>0){let e=document.getElementsByTagName(`link`),i=document.querySelector(`meta[property=csp-nonce]`),a=i?.nonce||i?.getAttribute(`nonce`);function o(e){return Promise.all(e.map(e=>Promise.resolve(e).then(e=>({status:`fulfilled`,value:e}),e=>({status:`rejected`,reason:e}))))}r=o(t.map(t=>{if(t=rn(t,n),t in an)return;an[t]=!0;let r=t.endsWith(`.css`),i=r?`[rel="stylesheet"]`:``;if(n)for(let n=e.length-1;n>=0;n--){let i=e[n];if(i.href===t&&(!r||i.rel===`stylesheet`))return}else if(document.querySelector(`link[href="${t}"]${i}`))return;let o=document.createElement(`link`);if(o.rel=r?`stylesheet`:nn,r||(o.as=`script`),o.crossOrigin=``,o.href=t,a&&o.setAttribute(`nonce`,a),document.head.appendChild(o),r)return new Promise((e,n)=>{o.addEventListener(`load`,e),o.addEventListener(`error`,()=>n(Error(`Unable to preload CSS for ${t}`)))})}))}function i(e){let t=new Event(`vite:preloadError`,{cancelable:!0});if(t.payload=e,window.dispatchEvent(t),!t.defaultPrevented)throw e}return r.then(t=>{for(let e of t||[])e.status===`rejected`&&i(e.reason);return e().catch(i)})};var sn=(0,y.lazy)(()=>on(()=>import(`./react-markdown-DPrgH-1Q.js`),__vite__mapDeps([0,1,2,3,4,5])));function cn({displayName:e,content:t,languageDirectory:n,styleUpNextSections:r,loadNote:i}){return(0,y.useEffect)(()=>{document.title=e?`${H(e)} - ${n||`Notes`}`:`Programming Notes`},[e,n]),(0,b.jsx)(y.Suspense,{fallback:(0,b.jsx)(x,{}),children:(0,b.jsx)(ln,{content:t,styleUpNextSections:r,loadNote:i})})}function ln({content:e,styleUpNextSections:t,loadNote:n}){return(0,b.jsx)(sn,{remarkPlugins:[g,_],rehypePlugins:[m,h],components:{h1:({children:e,...t})=>(0,b.jsx)(`h1`,{...t,id:String(e)?.toLowerCase().replace(/[^\w\s-]/g,``).replace(/\s+/g,`-`),children:e}),h2:({children:e,...t})=>(0,b.jsx)(`h2`,{...t,id:String(e)?.toLowerCase().replace(/[^\w\s-]/g,``).replace(/\s+/g,`-`),children:e}),h3:({children:e,...t})=>(0,b.jsx)(`h3`,{...t,id:String(e)?.toLowerCase().replace(/[^\w\s-]/g,``).replace(/\s+/g,`-`),children:e}),h4:({children:e,...n})=>(0,b.jsx)(`h4`,{...n,id:String(e)?.toLowerCase().replace(/[^\w\s-]/g,``).replace(/\s+/g,`-`),onLoad:()=>{setTimeout(t,100)},children:e}),h5:({children:e,...t})=>(0,b.jsx)(`h5`,{...t,id:String(e)?.toLowerCase().replace(/[^\w\s-]/g,``).replace(/\s+/g,`-`),children:e}),h6:({children:e,...t})=>(0,b.jsx)(`h6`,{...t,id:String(e)?.toLowerCase().replace(/[^\w\s-]/g,``).replace(/\s+/g,`-`),children:e}),a:({href:e,children:t,...r})=>(0,b.jsx)(`a`,{href:e,onClick:t=>{if(e&&e.endsWith(`.md`)&&n){t.preventDefault();let r=e;e.includes(`/`)&&(r=e.split(`/`).pop()||e),console.log(`Internal link clicked:`,e,`-> normalized:`,r);try{n(r)}catch(e){console.error(`Failed to load note: ${r}`,e);try{n(r)}catch(e){console.error(`Failed to load note with filename: ${r}`,e),alert(`Note not found: ${r}`)}}}},className:`markdown-link`,...r,children:t}),table:({children:e,...t})=>(0,b.jsx)(`table`,{...t,className:`markdown-table`,children:e}),th:({children:e,...t})=>(0,b.jsx)(`th`,{...t,className:`markdown-th`,children:e}),td:({children:e,...t})=>(0,b.jsx)(`td`,{...t,className:`markdown-td`,children:e}),img:({src:e,alt:t,...n})=>(0,b.jsx)(`img`,{src:e?.startsWith(`/`)?`/code-wiki-app/${e.slice(1)}`:e,alt:t,style:{maxWidth:`100%`,height:`auto`,border:`1px solid #ddd`,borderRadius:`4px`,margin:`15px 0`,display:`block`},...n})},children:e})}function un({currentFilename:e,onLoadNote:t}){let n=G(e);return n?(0,b.jsx)(`div`,{className:`next-lesson-container`,children:(0,b.jsx)(`button`,{className:`next-lesson-button`,onClick:()=>{t(n.filename)},"aria-label":`Go to next lesson: ${n.title}`,children:(0,b.jsxs)(`div`,{className:`next-lesson-content`,children:[(0,b.jsx)(`span`,{className:`next-lesson-label`,children:`Up Next`}),(0,b.jsx)(`span`,{className:`next-lesson-title`,children:n.title}),(0,b.jsx)(`span`,{className:`next-lesson-arrow`,children:`→`})]})})}):null}function dn({results:e,query:t,isLoading:n=!1,onSelectNote:r,onClose:i}){let a=e=>{r(e),i()};return t.trim()?(0,b.jsx)(`div`,{className:`search-results-overlay`,onClick:i,children:(0,b.jsxs)(`div`,{className:`search-results-container`,onClick:e=>e.stopPropagation(),children:[(0,b.jsxs)(`div`,{className:`search-results-header`,children:[(0,b.jsx)(`h3`,{children:`Search Results`}),(0,b.jsx)(`button`,{onClick:i,className:`search-results-close`,"aria-label":`Close search results`,children:`✕`})]}),n?(0,b.jsxs)(`div`,{className:`search-loading`,children:[(0,b.jsx)(`div`,{className:`search-spinner`}),(0,b.jsx)(`span`,{children:`Searching...`})]}):(0,b.jsxs)(b.Fragment,{children:[(0,b.jsx)(`div`,{className:`search-results-info`,children:e.length===0?(0,b.jsxs)(`span`,{children:[`No results found for "`,t,`"`]}):(0,b.jsxs)(`span`,{children:[`Found `,e.length,` `,e.length===1?`result`:`results`,` for "`,t,`"`]})}),(0,b.jsx)(`div`,{className:`search-results-list`,children:e.map((e,t)=>(0,b.jsxs)(`div`,{className:`search-result-card`,onClick:()=>a(e.filename),children:[(0,b.jsxs)(`div`,{className:`search-result-header`,children:[(0,b.jsxs)(`div`,{className:`search-result-title`,children:[(0,b.jsxs)(`span`,{className:`search-result-icon`,children:[e.sectionIcon&&(0,b.jsx)(`img`,{src:e.sectionIcon,alt:`${e.section} icon`,className:`section-icon-img`}),!e.sectionIcon&&e.sectionEmojiIcon&&(0,b.jsx)(`span`,{className:`emoji-icon`,children:e.sectionEmojiIcon}),!e.sectionIcon&&!e.sectionEmojiIcon&&(0,b.jsx)(`div`,{style:{width:`20px`},children:`💻`})]}),(0,b.jsx)(`span`,{className:`search-result-name`,children:e.title})]}),(0,b.jsxs)(`div`,{className:`search-result-meta`,children:[(0,b.jsx)(`span`,{className:`search-result-section`,children:e.section}),(0,b.jsxs)(`span`,{className:`search-result-count`,children:[e.totalMatches,` `,e.totalMatches===1?`match`:`matches`]})]})]}),(0,b.jsxs)(`div`,{className:`search-result-matches`,children:[e.matches.map((e,t)=>(0,b.jsxs)(`div`,{className:`search-result-match`,children:[(0,b.jsxs)(`div`,{className:`search-result-line-number`,children:[`Line `,e.lineNumber]}),(0,b.jsx)(`div`,{className:`search-result-context`,dangerouslySetInnerHTML:{__html:e.highlightedText}})]},t)),e.totalMatches>e.matches.length&&(0,b.jsxs)(`div`,{className:`search-result-more`,children:[`+`,e.totalMatches-e.matches.length,` more`,` `,e.totalMatches-e.matches.length===1?`match`:`matches`]})]})]},`${e.filename}-${t}`))})]})]})}):null}var q=`notes-app-preferences`,J=`notes-app-storage-allowed`;const Y=()=>{try{return localStorage.getItem(J)===`true`}catch{return!1}},fn=()=>{if(Y())try{let e=X();e.visitedNotes=[],localStorage.setItem(q,JSON.stringify(e))}catch{}},pn=()=>{try{return!localStorage.getItem(`notes-app-visited`)}catch{return!0}},mn=()=>{try{localStorage.setItem(`notes-app-visited`,`true`)}catch{}},hn=e=>{try{e?localStorage.setItem(J,`true`):localStorage.removeItem(J)}catch{}},X=()=>{let e={theme:`system`,allowsStorage:!1,visitedNotes:[],firstVisit:!0};if(!Y())return e;try{let t=localStorage.getItem(q);if(t){let n=JSON.parse(t);return{...e,...n}}}catch{}return e},Z=e=>{if(Y())try{let t={...X(),...e};localStorage.setItem(q,JSON.stringify(t))}catch{}},gn=e=>{Y()&&Z({visitedNotes:[e,...(X().visitedNotes||[]).filter(t=>t!==e)].slice(0,20)})},_n=()=>{try{localStorage.removeItem(q),localStorage.removeItem(J),localStorage.removeItem(`notes-app-visited`)}catch{}},vn=()=>typeof window<`u`&&window.matchMedia&&window.matchMedia(`(prefers-color-scheme: dark)`).matches?`dark`:`light`,Q=e=>{let t=document.documentElement,n;n=e===`system`?vn():e,t.setAttribute(`data-theme`,n),t.classList.remove(`theme-light`,`theme-dark`),t.classList.add(`theme-${n}`)},yn=e=>{if(typeof window>`u`||!window.matchMedia)return()=>{};let t=window.matchMedia(`(prefers-color-scheme: dark)`),n=t=>{e(t.matches?`dark`:`light`)};return t.addEventListener(`change`,n),()=>t.removeEventListener(`change`,n)};function bn({isOpen:e,onComplete:t}){let[n,r]=(0,y.useState)(`storage`),[i,a]=(0,y.useState)(!1),[o,s]=(0,y.useState)(``),[c,l]=(0,y.useState)(`system`);if(!e)return null;let u=e=>{a(e),e?r(`setup`):t({allowsStorage:!1,theme:`system`})},d=()=>{t({allowsStorage:i,username:o.trim()||void 0,theme:c})},f=()=>{s(``),d()},p=e=>{l(e),Q(e)};return(0,b.jsx)(`div`,{className:`welcome-modal-overlay`,children:(0,b.jsx)(`div`,{className:`welcome-modal`,children:n===`storage`?(0,b.jsxs)(b.Fragment,{children:[(0,b.jsx)(`div`,{className:`welcome-modal-header`,children:(0,b.jsx)(`h2`,{children:`Welcome to Programming Notes! 📚`})}),(0,b.jsxs)(`div`,{className:`welcome-modal-content`,children:[(0,b.jsx)(`p`,{children:`To provide you with a personalized experience, we'd like to save your preferences and reading history locally on your device.`}),(0,b.jsxs)(`div`,{className:`storage-benefits`,children:[(0,b.jsxs)(`div`,{className:`benefit-item`,children:[(0,b.jsx)(`span`,{className:`benefit-icon`,children:`🎨`}),(0,b.jsx)(`span`,{children:`Remember your theme preference`})]}),(0,b.jsxs)(`div`,{className:`benefit-item`,children:[(0,b.jsx)(`span`,{className:`benefit-icon`,children:`📖`}),(0,b.jsx)(`span`,{children:`Track your reading history`})]}),(0,b.jsxs)(`div`,{className:`benefit-item`,children:[(0,b.jsx)(`span`,{className:`benefit-icon`,children:`👤`}),(0,b.jsx)(`span`,{children:`Personalized welcome messages`})]})]}),(0,b.jsxs)(`p`,{className:`storage-note`,children:[(0,b.jsx)(`strong`,{children:`Your privacy matters:`}),` All data stays on your device. Nothing is sent to any servers.`]})]}),(0,b.jsxs)(`div`,{className:`welcome-modal-actions`,children:[(0,b.jsx)(`button`,{onClick:()=>u(!1),className:`btn-secondary`,children:`No Thanks`}),(0,b.jsx)(`button`,{onClick:()=>u(!0),className:`btn-primary`,children:`Allow Local Storage`})]})]}):(0,b.jsxs)(b.Fragment,{children:[(0,b.jsx)(`div`,{className:`welcome-modal-header`,children:(0,b.jsx)(`h2`,{children:`Let's Personalize Your Experience ✨`})}),(0,b.jsxs)(`div`,{className:`welcome-modal-content`,children:[(0,b.jsxs)(`div`,{className:`setup-section`,children:[(0,b.jsx)(`label`,{htmlFor:`username`,className:`setup-label`,children:`What should we call you? (Optional)`}),(0,b.jsx)(`input`,{id:`username`,type:`text`,value:o,onChange:e=>s(e.target.value),placeholder:`Enter your name...`,className:`setup-input`,maxLength:50})]}),(0,b.jsxs)(`div`,{className:`setup-section`,children:[(0,b.jsx)(`label`,{className:`setup-label`,children:`Choose your theme`}),(0,b.jsxs)(`div`,{className:`theme-options`,children:[(0,b.jsxs)(`button`,{onClick:()=>p(`system`),className:`theme-option ${c===`system`?`active`:``}`,children:[(0,b.jsx)(`span`,{className:`theme-icon`,children:`🖥️`}),(0,b.jsxs)(`div`,{className:`theme-info`,children:[(0,b.jsx)(`div`,{className:`theme-name`,children:`System`}),(0,b.jsx)(`div`,{className:`theme-desc`,children:`Match your device`})]})]}),(0,b.jsxs)(`button`,{onClick:()=>p(`light`),className:`theme-option ${c===`light`?`active`:``}`,children:[(0,b.jsx)(`span`,{className:`theme-icon`,children:`☀️`}),(0,b.jsxs)(`div`,{className:`theme-info`,children:[(0,b.jsx)(`div`,{className:`theme-name`,children:`Light`}),(0,b.jsx)(`div`,{className:`theme-desc`,children:`Bright and clean`})]})]}),(0,b.jsxs)(`button`,{onClick:()=>p(`dark`),className:`theme-option ${c===`dark`?`active`:``}`,children:[(0,b.jsx)(`span`,{className:`theme-icon`,children:`🌙`}),(0,b.jsxs)(`div`,{className:`theme-info`,children:[(0,b.jsx)(`div`,{className:`theme-name`,children:`Dark`}),(0,b.jsx)(`div`,{className:`theme-desc`,children:`Easy on the eyes`})]})]})]})]})]}),(0,b.jsxs)(`div`,{className:`welcome-modal-actions`,children:[(0,b.jsx)(`button`,{onClick:f,className:`btn-secondary`,children:`Skip Name`}),(0,b.jsx)(`button`,{onClick:d,className:`btn-primary`,children:`Get Started`})]})]})})})}function $(e){if(e.length!==20){console.error(`Invalid custom color array length. Expected 20, got`,e.length,`This may be due to corrupted data or an outdated theme format.`);return}let t=document.documentElement;t.style.setProperty(`--bg-primary`,e[0]),t.style.setProperty(`--bg-secondary`,e[1]),t.style.setProperty(`--bg-tertiary`,e[2]),t.style.setProperty(`--text-primary`,e[3]),t.style.setProperty(`--text-secondary`,e[4]),t.style.setProperty(`--text-muted`,e[5]),t.style.setProperty(`--border-color`,e[6]),t.style.setProperty(`--border-light`,e[7]),t.style.setProperty(`--border-medium`,e[8]),t.style.setProperty(`--accent-color`,e[9]),t.style.setProperty(`--accent-hover`,e[10]),t.style.setProperty(`--accent-dark`,e[11]),t.style.setProperty(`--accent-light`,e[12]),t.style.setProperty(`--accent-blue`,e[13]),t.style.setProperty(`--accent-blue-dark`,e[14]),t.style.setProperty(`--heading-primary`,e[15]),t.style.setProperty(`--heading-secondary`,e[16]),t.style.setProperty(`--heading-tertiary`,e[17]),t.style.setProperty(`--code-bg`,e[18]),t.style.setProperty(`--code-text`,e[19])}const xn=()=>{localStorage.removeItem(`customTheme`),window.location.reload()},Sn=e=>{localStorage.setItem(`customTheme`,JSON.stringify(e))},Cn=()=>{let e=document.documentElement;return[`--bg-primary`,`--bg-secondary`,`--bg-tertiary`,`--text-primary`,`--text-secondary`,`--text-muted`,`--border-color`,`--border-light`,`--border-medium`,`--accent-color`,`--accent-hover`,`--accent-dark`,`--accent-light`,`--accent-blue`,`--accent-blue-dark`,`--heading-primary`,`--heading-secondary`,`--heading-tertiary`,`--code-bg`,`--code-text`].map(t=>getComputedStyle(e).getPropertyValue(t).trim())};function wn({customColor:e,setCustomColor:t,applyCustomTheme:n,saveCustomTheme:r,requiredLength:i}){return(0,b.jsxs)(b.Fragment,{children:[(0,b.jsx)(`button`,{className:`selector-btn`,onClick:t=>{t.preventDefault();let n=`data:text/json;charset=utf-8,`+encodeURIComponent(JSON.stringify(e,null,2)),r=document.createElement(`a`);r.setAttribute(`href`,n),r.setAttribute(`download`,`customTheme.json`),document.body.appendChild(r),r.click(),r.remove()},children:`Export Theme`}),(0,b.jsx)(`button`,{className:`selector-btn`,onClick:e=>{e.preventDefault();let a=document.createElement(`input`);a.type=`file`,a.accept=`.json,application/json`,a.onchange=e=>{let a=e.target;if(a.files&&a.files.length>0){let e=a.files[0],o=new FileReader;o.onload=e=>{try{let a=e.target?.result;if(typeof a==`string`){let e=JSON.parse(a);e.length===i?(t(e),n(e),r(e)):alert(`Invalid theme file: Incorrect number of colors.`)}}catch(e){alert(`Failed to import theme: `+e.message)}},o.readAsText(e)}},a.click()},children:`Import Theme`})]})}function Tn({handleClose:e}){let[t,n]=(0,y.useState)([]),[r,i]=(0,y.useState)(!1),a=[`Background Primary`,`Background Secondary`,`Background Tertiary`,`Text Primary`,`Text Secondary`,`Text Muted`,`Border Color`,`Border Light`,`Border Medium`,`Accent Color`,`Accent Hover`,`Accent Dark`,`Accent Light`,`Accent Secondary`,`Accent Secondary Dark`,`Heading Primary`,`Heading Secondary`,`Heading Tertiary`,`Code Background`,`Code Text`];return(0,y.useEffect)(()=>{n(Cn())},[n]),(0,b.jsx)(b.Fragment,{children:(0,b.jsx)(`div`,{className:`modal-overlay`,onClick:e,children:(0,b.jsxs)(`div`,{className:`modal`,onClick:e=>e.stopPropagation(),children:[(0,b.jsx)(`span`,{className:`modal-close`,onClick:e,children:`X`}),(0,b.jsx)(`h2`,{children:`Customize Theme Colors`}),(0,b.jsxs)(`form`,{className:`color-inputs`,onSubmit:e=>{e.preventDefault(),$(t),Sn(t)},children:[(0,b.jsx)(`div`,{className:`custom-color-btns-grid`,children:t.map((e,r)=>(0,b.jsxs)(`div`,{className:`custom-color-btn`,children:[(0,b.jsxs)(`label`,{children:[a[r],`:`]}),(0,b.jsx)(`input`,{type:`color`,value:e,onChange:e=>{let i=[...t];i[r]=e.target.value,n(i)}})]},r))}),(0,b.jsxs)(`div`,{className:`selector-btns`,children:[(0,b.jsx)(`button`,{type:`button`,onClick:xn,className:`btn-danger`,children:`Reset to Default`}),(0,b.jsx)(`input`,{type:`submit`,value:`Apply Theme`,className:`selector-btn`}),(0,b.jsx)(`button`,{type:`button`,onClick:()=>i(!r),className:`selector-btn`,children:`Import/Export Theme`}),r&&(0,b.jsxs)(b.Fragment,{children:[(0,b.jsx)(wn,{customColor:t,setCustomColor:n,applyCustomTheme:$,saveCustomTheme:Sn,requiredLength:a.length}),(0,b.jsx)(`br`,{}),(0,b.jsx)(`br`,{})]})]}),(0,b.jsx)(`br`,{})]}),(0,b.jsx)(`br`,{})]})})})}function En({username:e,preferences:t,onThemeChange:n,onClearData:r,onShowHistory:i}){let[a,o]=(0,y.useState)(!1),[s,c]=(0,y.useState)(!1),[l,u]=(0,y.useState)(!1),d=(0,y.useRef)(null);(0,y.useEffect)(()=>{let e=e=>{d.current&&!d.current.contains(e.target)&&o(!1)};return document.addEventListener(`mousedown`,e),()=>document.removeEventListener(`mousedown`,e)},[]);let f=()=>{c(!0),o(!1)},p=()=>{r(),c(!1)},m=e=>{switch(e){case`light`:return`☀️`;case`dark`:return`🌙`;case`system`:return`🖥️`;default:return`🖥️`}};return(0,b.jsxs)(b.Fragment,{children:[(0,b.jsxs)(`div`,{className:`user-menu`,ref:d,children:[(0,b.jsxs)(`button`,{onClick:()=>o(!a),className:`user-menu-trigger`,"aria-label":`User menu`,children:[(0,b.jsx)(`div`,{className:`user-avatar`,children:e?e.charAt(0).toUpperCase():`👤`}),(0,b.jsx)(`span`,{className:`user-menu-arrow`,children:a?`▴`:`▾`})]}),a&&(0,b.jsxs)(`div`,{className:`user-menu-dropdown`,children:[e&&(0,b.jsx)(`div`,{className:`user-menu-header`,children:(0,b.jsxs)(`div`,{className:`user-greeting`,children:[`Welcome back, `,(0,b.jsx)(`strong`,{children:e}),`!`]})}),(0,b.jsxs)(`div`,{className:`user-menu-section`,children:[(0,b.jsx)(`div`,{className:`user-menu-label`,children:`Theme`}),(0,b.jsxs)(`div`,{className:`theme-selector`,children:[[`system`,`light`,`dark`].map(e=>(0,b.jsxs)(`button`,{onClick:()=>{n(e),o(!1)},className:`theme-selector-btn ${t.theme===e?`active`:``}`,children:[(0,b.jsx)(`span`,{className:`theme-selector-icon`,children:m(e)}),(0,b.jsx)(`span`,{className:`theme-selector-name`,children:e.charAt(0).toUpperCase()+e.slice(1)})]},e)),(0,b.jsxs)(`button`,{onClick:()=>{u(!0),o(!1)},className:`theme-selector-btn`,children:[(0,b.jsx)(`span`,{className:`theme-selector-icon`,children:`🎨`}),(0,b.jsx)(`span`,{className:`theme-selector-name`,children:`Custom`})]})]})]}),(0,b.jsx)(`div`,{className:`user-menu-section`,children:(0,b.jsxs)(`button`,{onClick:()=>{i(),o(!1)},className:`user-menu-item`,children:[(0,b.jsx)(`span`,{className:`user-menu-icon`,children:`📚`}),`Reading History`,t.visitedNotes.length>0&&(0,b.jsx)(`span`,{className:`history-count`,children:t.visitedNotes.length})]})}),(0,b.jsx)(`div`,{className:`user-menu-section user-menu-danger`,children:(0,b.jsxs)(`button`,{onClick:f,className:`user-menu-item danger`,children:[(0,b.jsx)(`span`,{className:`user-menu-icon`,children:`🗑️`}),`Clear All Data`]})})]})]}),s&&(0,b.jsx)(`div`,{className:`confirm-modal-overlay`,children:(0,b.jsxs)(`div`,{className:`confirm-modal`,children:[(0,b.jsx)(`div`,{className:`confirm-modal-header`,children:(0,b.jsx)(`h3`,{children:`⚠️ Clear All Data`})}),(0,b.jsxs)(`div`,{className:`confirm-modal-content`,children:[(0,b.jsx)(`p`,{children:`This will permanently delete all your saved preferences, reading history, and personal settings.`}),(0,b.jsx)(`p`,{className:`confirm-warning`,children:(0,b.jsx)(`strong`,{children:`Once you delete your progress, this cannot be undone!`})})]}),(0,b.jsxs)(`div`,{className:`confirm-modal-actions`,children:[(0,b.jsx)(`button`,{onClick:()=>c(!1),className:`btn-secondary`,children:`Cancel`}),(0,b.jsx)(`button`,{onClick:p,className:`btn-danger`,children:`Yes, Delete Everything`})]})]})}),l&&(0,b.jsx)(Tn,{handleClose:()=>u(!1)})]})}function Dn({isOpen:e,preferences:t,onClose:n,onSelectNote:r}){let[i,a]=(0,y.useState)(!1);if(!e)return null;let o=()=>{t.visitedNotes=[],a(!1),fn(),n()},s=e=>{r(e),n()},c=e=>{let t=W(e);return t?e===`home.md`?{name:`Home`,emojiIcon:`🏠`}:C[t]||{name:t,icon:`📄`}:{name:`General`,icon:`📄`}};return(0,b.jsx)(`div`,{className:`history-modal-overlay`,onClick:n,children:(0,b.jsxs)(`div`,{className:`history-modal`,onClick:e=>e.stopPropagation(),children:[(0,b.jsxs)(`div`,{className:`history-modal-header`,children:[(0,b.jsx)(`h3`,{children:`📚 Reading History`}),(0,b.jsx)(`button`,{onClick:n,className:`history-modal-close`,"aria-label":`Close history`,children:`✕`})]}),(0,b.jsx)(`div`,{className:`history-modal-content`,children:t.visitedNotes.length===0?(0,b.jsxs)(`div`,{className:`history-empty`,children:[(0,b.jsx)(`div`,{className:`history-empty-icon`,children:`📖`}),(0,b.jsx)(`div`,{className:`history-empty-title`,children:`No reading history yet`}),(0,b.jsx)(`div`,{className:`history-empty-desc`,children:`Start exploring the notes to build your reading history!`})]}):(0,b.jsxs)(b.Fragment,{children:[(0,b.jsxs)(`div`,{className:`history-info`,children:[`You've visited `,t.visitedNotes.length,t.visitedNotes.length===1?` note`:` notes`,` `,`recently`]}),(0,b.jsx)(`div`,{className:`history-list`,children:t.visitedNotes.map((e,t)=>{let n=c(e),r=H(e);return(0,b.jsxs)(`div`,{className:`history-item`,onClick:()=>s(e),children:[(0,b.jsxs)(`div`,{className:`history-item-main`,children:[(0,b.jsxs)(`div`,{className:`history-item-header`,children:[(0,b.jsxs)(`span`,{className:`history-item-icon`,children:[`icon`in n&&(0,b.jsx)(`img`,{src:n.icon,alt:`${n.name} icon`,className:`section-icon-img`}),!(`icon`in n)&&`emojiIcon`in n&&(0,b.jsx)(`span`,{className:`emoji-icon`,children:n.emojiIcon})]}),(0,b.jsx)(`span`,{className:`history-item-title`,children:r})]}),(0,b.jsxs)(`div`,{className:`history-item-meta`,children:[(0,b.jsx)(`span`,{className:`history-item-section`,children:n.name}),(0,b.jsxs)(`span`,{className:`history-item-position`,children:[`#`,t+1]})]})]}),(0,b.jsx)(`div`,{className:`history-item-arrow`,children:`→`})]},`${e}-${t}`)})})]})}),(0,b.jsxs)(`div`,{className:`selector-btns`,children:[!i&&(0,b.jsx)(`button`,{className:`btn-danger`,onClick:()=>a(!0),children:`Clear History`}),i&&(0,b.jsxs)(b.Fragment,{children:[(0,b.jsx)(`span`,{children:`Are you sure?`}),(0,b.jsx)(`button`,{className:`btn-danger`,onClick:o,children:`Clear`}),(0,b.jsx)(`button`,{onClick:()=>a(!1),className:`btn-primary`,children:`Nevermind...`})]})]})]})})}function On(){let[e,t]=(0,y.useState)(null),[n,r]=(0,y.useState)(`home.md`),[i,a]=(0,y.useState)([`home.md`]),[o,s]=(0,y.useState)(null),[c,l]=(0,y.useState)(!1),[u,d]=(0,y.useState)([]),[f,p]=(0,y.useState)(``),[m,h]=(0,y.useState)(!1),[g,_]=(0,y.useState)(()=>X()),[v,S]=(0,y.useState)(!1),[ee,w]=(0,y.useState)(!1),T=(0,y.useCallback)(()=>{t(K(`home.md`)),r(`home.md`),a([`home.md`]),s(`home`),E(`home.md`,`home`)},[]);(0,y.useEffect)(()=>{if(pn()&&!Y()&&(S(!0),mn()),Q(g.theme),g.theme===`system`)return yn(()=>{g.theme===`system`&&Q(`system`)})},[g.theme]),(0,y.useEffect)(()=>{let e=new URLSearchParams(window.location.search),n=e.get(`note`),i=e.get(`section`);if(n)try{t(K(n)),r(n),a([n]);let e=i||W(n);s(e),E(n,e)}catch(e){console.error(`Failed to load note from URL:`,n,e),T()}else T()},[T]),(0,y.useEffect)(()=>{if(e){let e=setTimeout(()=>{A()},100);return()=>clearTimeout(e)}},[e]),(0,y.useEffect)(()=>{let e=localStorage.getItem(`customTheme`);e!==null&&$(JSON.parse(e))});let E=(e,t)=>{let n=new URLSearchParams;n.set(`note`,e),t&&n.set(`section`,t);let r=`${window.location.pathname}?${n.toString()}`;window.history.pushState({},``,r)},D=e=>{t(null),e!==n&&(a(t=>[...t,e]),r(e)),gn(e);let i=W(e);s(i),E(e,i),l(!1),h(!1),setTimeout(()=>{try{t(K(e));let n=document.querySelector(`.center.main`);n&&(n.scrollTop=0),setTimeout(()=>{A()},50)}catch(n){console.error(`Error loading note:`,e,n),t(`# Error
 
-Note not found: `+e)}},100)},k=()=>{l(!c)},A=()=>{l(!1)},j=()=>{document.querySelectorAll(`.markdown-content h3, .markdown-content h4`).forEach(e=>{e.textContent&&e.textContent.includes(`Up Next`)&&e.classList.add(`up-next-section`)})},ee=()=>{if(i.length>1){let e=[...i];e.pop();let n=e[e.length-1];a(e),r(n);try{t(K(n));let e=document.querySelector(`.center.main`);e&&(e.scrollTop=0)}catch(e){console.error(`Error loading previous note:`,n,e)}}},M=e=>{p(e),e.trim()?(d(It(e)),h(!0)):(d([]),h(!1))},N=()=>{p(``),d([]),h(!1)},te=e=>{O(e),h(!1)},ne=e=>{if(nn(e.allowsStorage),e.allowsStorage){let t={...g,allowsStorage:!0,username:e.username,theme:e.theme,firstVisit:!1};_(t),Z(t)}Q(e.theme),S(!1)},re=e=>{_({...g,theme:e}),Z({theme:e}),Q(e)},P=()=>{an(),_({theme:`system`,allowsStorage:!1,visitedNotes:[],firstVisit:!0}),Q(`system`),window.location.reload()},F=()=>{T(!0)},I=o&&o in C?C[o]:null,L=o===`home`?`Verdant Webworks Learning Hub`:I?(0,b.jsxs)(`span`,{className:`header-title-with-icon`,children:[`icon`in I&&(0,b.jsx)(`img`,{src:I.icon,alt:`${I.name} icon`,className:`section-icon-img`}),!(`icon`in I)&&`emojiIcon`in I&&(0,b.jsx)(`span`,{children:I.emojiIcon}),` `,I.name,` Notes`]}):`Learning Hub`,R=V(n);return(0,b.jsxs)(b.Fragment,{children:[(0,b.jsx)(`header`,{children:(0,b.jsxs)(`div`,{className:`header-container`,children:[(0,b.jsxs)(`button`,{className:`hamburger-menu`,onClick:k,"aria-label":`Toggle navigation menu`,children:[(0,b.jsx)(`span`,{}),(0,b.jsx)(`span`,{}),(0,b.jsx)(`span`,{})]}),(0,b.jsx)(`h1`,{children:L}),(0,b.jsx)(mn,{username:g.username,preferences:g,onThemeChange:re,onClearData:P,onShowHistory:F})]})}),(0,b.jsxs)(`div`,{className:`body-container`,children:[(0,b.jsx)(Ht,{setCurrentNote:O,currentSection:o,currentNoteName:n,onSearch:M,onClearSearch:N}),c&&(0,b.jsx)(`div`,{className:`mobile-overlay`,onClick:A,children:(0,b.jsxs)(`div`,{className:`mobile-menu`,onClick:e=>e.stopPropagation(),children:[(0,b.jsxs)(`div`,{className:`mobile-menu-header`,children:[(0,b.jsx)(`h2`,{children:`Navigation`}),(0,b.jsx)(`button`,{className:`close-mobile-menu`,onClick:A,"aria-label":`Close navigation menu`,children:`✕`})]}),(0,b.jsx)(Ht,{setCurrentNote:O,currentSection:o,currentNoteName:n,onSearch:M,onClearSearch:N,isMobile:!0,rightSidebarContent:(0,b.jsx)(Ut,{currentNote:e,currentNoteName:n,onLoadNote:O})})]})}),(0,b.jsxs)(`div`,{className:`center main`,children:[(0,b.jsxs)(`div`,{className:`navigation-bar`,children:[i.length>1&&(0,b.jsx)(`button`,{onClick:ee,className:`back-button`,children:`← Back`}),(0,b.jsx)(`span`,{className:`current-note`,children:R})]}),e===null&&(0,b.jsx)(x,{}),e!==null&&(0,b.jsxs)(`div`,{className:`markdown-content`,children:[(0,b.jsx)(Yt,{content:e,displayName:R,languageDirectory:I?.name,styleUpNextSections:j,loadNote:O}),(0,b.jsx)(Zt,{currentFilename:n,onLoadNote:O})]})]}),(0,b.jsx)(`div`,{className:`right-nav`,children:(0,b.jsx)(Ut,{currentNote:e,currentNoteName:n,onLoadNote:O})})]}),(0,b.jsx)(`footer`,{children:(0,b.jsxs)(`div`,{className:`footer-content`,children:[(0,b.jsx)(`span`,{children:`© 2025 Verdant Webworks`}),(0,b.jsx)(`span`,{className:`footer-separator`,children:`|`}),(0,b.jsx)(`a`,{href:`https://verdant-webworks.vercel.app/`,target:`_blank`,rel:`noopener noreferrer`,children:`verdantwebworks.vercel.app`})]})}),m&&(0,b.jsx)(Qt,{results:u,query:f,onSelectNote:te,onClose:()=>h(!1)}),(0,b.jsx)(cn,{isOpen:v,onComplete:ne}),(0,b.jsx)(hn,{isOpen:w,preferences:g,onClose:()=>T(!1),onSelectNote:O})]})}var _n=gn;(0,v.createRoot)(document.getElementById(`root`)).render((0,b.jsx)(y.StrictMode,{children:(0,b.jsx)(_n,{})}));
+Note not found: `+e)}},100)},O=()=>{l(!c)},k=()=>{l(!1)},A=()=>{document.querySelectorAll(`.markdown-content h3, .markdown-content h4`).forEach(e=>{e.textContent&&e.textContent.includes(`Up Next`)&&e.classList.add(`up-next-section`)})},j=()=>{if(i.length>1){let e=[...i];e.pop();let n=e[e.length-1];a(e),r(n);try{t(K(n));let e=document.querySelector(`.center.main`);e&&(e.scrollTop=0)}catch(e){console.error(`Error loading previous note:`,n,e)}}},M=e=>{p(e),e.trim()?(d(Jt(e)),h(!0)):(d([]),h(!1))},N=()=>{p(``),d([]),h(!1)},te=e=>{D(e),h(!1)},ne=e=>{if(hn(e.allowsStorage),e.allowsStorage){let t={...g,allowsStorage:!0,username:e.username,theme:e.theme,firstVisit:!1};_(t),Z(t)}Q(e.theme),S(!1)},re=e=>{_({...g,theme:e}),Z({theme:e}),Q(e)},P=()=>{_n(),_({theme:`system`,allowsStorage:!1,visitedNotes:[],firstVisit:!0}),Q(`system`),window.location.reload()},F=()=>{w(!0)},I=o&&o in C?C[o]:null,L=o===`home`?`Verdant Webworks Learning Hub`:I?(0,b.jsxs)(`span`,{className:`header-title-with-icon`,children:[`icon`in I&&(0,b.jsx)(`img`,{src:I.icon,alt:`${I.name} icon`,className:`section-icon-img`}),!(`icon`in I)&&`emojiIcon`in I&&(0,b.jsx)(`span`,{children:I.emojiIcon}),` `,I.name,` Notes`]}):`Learning Hub`,R=V(n);return(0,b.jsxs)(b.Fragment,{children:[(0,b.jsx)(`header`,{children:(0,b.jsxs)(`div`,{className:`header-container`,children:[(0,b.jsxs)(`button`,{className:`hamburger-menu`,onClick:O,"aria-label":`Toggle navigation menu`,children:[(0,b.jsx)(`span`,{}),(0,b.jsx)(`span`,{}),(0,b.jsx)(`span`,{})]}),(0,b.jsx)(`h1`,{children:L}),(0,b.jsx)(En,{username:g.username,preferences:g,onThemeChange:re,onClearData:P,onShowHistory:F})]})}),(0,b.jsxs)(`div`,{className:`body-container`,children:[(0,b.jsx)(en,{setCurrentNote:D,currentSection:o,currentNoteName:n,onSearch:M,onClearSearch:N}),c&&(0,b.jsx)(`div`,{className:`mobile-overlay`,onClick:k,children:(0,b.jsxs)(`div`,{className:`mobile-menu`,onClick:e=>e.stopPropagation(),children:[(0,b.jsxs)(`div`,{className:`mobile-menu-header`,children:[(0,b.jsx)(`h2`,{children:`Navigation`}),(0,b.jsx)(`button`,{className:`close-mobile-menu`,onClick:k,"aria-label":`Close navigation menu`,children:`✕`})]}),(0,b.jsx)(en,{setCurrentNote:D,currentSection:o,currentNoteName:n,onSearch:M,onClearSearch:N,isMobile:!0,rightSidebarContent:(0,b.jsx)(tn,{currentNote:e,currentNoteName:n,onLoadNote:D})})]})}),(0,b.jsxs)(`div`,{className:`center main`,children:[(0,b.jsxs)(`div`,{className:`navigation-bar`,children:[i.length>1&&(0,b.jsx)(`button`,{onClick:j,className:`back-button`,children:`← Back`}),(0,b.jsx)(`span`,{className:`current-note`,children:R})]}),e===null&&(0,b.jsx)(x,{}),e!==null&&(0,b.jsxs)(`div`,{className:`markdown-content`,children:[(0,b.jsx)(cn,{content:e,displayName:R,languageDirectory:I?.name,styleUpNextSections:A,loadNote:D}),(0,b.jsx)(un,{currentFilename:n,onLoadNote:D})]})]}),(0,b.jsx)(`div`,{className:`right-nav`,children:(0,b.jsx)(tn,{currentNote:e,currentNoteName:n,onLoadNote:D})})]}),(0,b.jsx)(`footer`,{children:(0,b.jsxs)(`div`,{className:`footer-content`,children:[(0,b.jsx)(`span`,{children:`© 2025 Verdant Webworks`}),(0,b.jsx)(`span`,{className:`footer-separator`,children:`|`}),(0,b.jsx)(`a`,{href:`https://verdant-webworks.vercel.app/`,target:`_blank`,rel:`noopener noreferrer`,children:`verdantwebworks.vercel.app`})]})}),m&&(0,b.jsx)(dn,{results:u,query:f,onSelectNote:te,onClose:()=>h(!1)}),(0,b.jsx)(bn,{isOpen:v,onComplete:ne}),(0,b.jsx)(Dn,{isOpen:ee,preferences:g,onClose:()=>w(!1),onSelectNote:D})]})}var kn=On;(0,v.createRoot)(document.getElementById(`root`)).render((0,b.jsx)(y.StrictMode,{children:(0,b.jsx)(kn,{})}));
