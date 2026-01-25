@@ -362,7 +362,7 @@ function App() {
   };
 
   // Get current section info for dynamic header
-  const sectionInfo =
+  const sectionInfo: { [key: string]: any } | null =
     currentSection && currentSection in NoteSections
       ? NoteSections[currentSection as NoteSection]
       : null;
@@ -378,9 +378,6 @@ function App() {
             alt={`${sectionInfo.name} icon`}
             className="section-icon-img"
           />
-        )}
-        {sectionInfo && !("icon" in sectionInfo) && "emojiIcon" in sectionInfo && (
-          <span>{sectionInfo.emojiIcon}</span>
         )}{" "}
         {sectionInfo.name}
       </span>
