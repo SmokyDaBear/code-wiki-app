@@ -25,7 +25,11 @@ The CREATE DATABASE statement is used to create a new SQL database.
 
 The following SQL statement creates a database called "testDB":
 
+    ```sql
+
     CREATE DATABASE testDB;
+
+    ```
 
 #### Tip: Make sure you have admin privilege before creating any database. Once a database is created, you can check it in the list of databases with the following SQL command:
 
@@ -90,3 +94,7 @@ The following SQL statement creates a differential back up of the database "test
 #### Tip: A differential back up reduces the back up time (since only the changes are backed up).
 
 #### Previous: Explore the SQL learning notes overview in the [Learn SQL 🌎](sql-index.md) notes to understand the structure of the SQL learning material.
+
+```
+
+```

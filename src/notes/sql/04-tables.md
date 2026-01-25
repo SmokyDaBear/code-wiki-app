@@ -119,7 +119,7 @@ The following SQL statements demonstrate how to alter the "Customers" table by a
 
 #### Tip: When altering a table, ensure that any changes made do not violate existing data integrity constraints or relationships with other tables.
 
-## Selecting Data from a Table
+## Selecting (Retrieving) Data from a Table
 
 The `SELECT` statement is used to retrieve data from a table.
 
@@ -128,8 +128,189 @@ Remeber that a column is a variable name in a table, like CustomerID or Customer
 
 ### Syntax
 
+    ```sql
+
     SELECT * FROM _tablename;
+    ```
 
 `SELECT` and `FROM` are SQL clauses and should be written in uppercase for better readability, while `_tablename` should be replaced with the actual name of the table you want to query.
 
-#### Previous: Review the [SQL Data Types 📊](data-types.md) notes to understand different data types available in SQL before creating tables.
+## Aliasing with the "AS" Keyword
+
+The AS keyword in SQL is used to create an alias, which is a temporary name for a table or column in a query. This can make the output more readable or help avoid naming conflicts.
+
+### Syntax
+
+    ```sql
+
+    SELECT columnname AS aliasname
+
+    FROM tablename;
+    ```
+
+    This will return all of the data from the specified column but with the column header renamed to the alias name.
+
+## Removing Duplicates with the Distinct Keyword
+
+The DISTINCT keyword in SQL is used to return only unique (distinct) values from a specified column, eliminating duplicate entries in the result set.
+
+If you have a table called "Inventory" which has several rows with duplicate names like "Apple" and "Banana", using the DISTINCT keyword will ensure that each fruit appears only once in the results.
+
+```sql
+SELECT DISTINCT columnname
+FROM tablename;
+```
+
+## Adding Specificity with the WHERE Clause
+
+The WHERE clause in SQL is used to filter records and specify which rows should be returned based on a given condition.
+
+### Syntax
+
+    ```sql
+
+    SELECT columnname1, columnname2
+
+    FROM tablename
+
+    WHERE condition;
+    ```
+
+    This will return only the rows that meet the specified condition in the WHERE clause.
+
+    Examples of conditions include:
+    - columnname = value
+    - columnname > value
+    - columnname < value
+    - columnname LIKE pattern
+    - columnname IN (value1, value2, ...)
+    - columnname BETWEEN value1 AND value2
+    - columnname IS NULL / IS NOT NULL
+
+### Checking for NULL of NOT NULL Values
+
+Using the where clause, you can filter for NULL or NOT NULL values in a column using `is` and `is not` operators.
+
+    ```sql
+
+    SELECT columnname1, columnname2
+
+    FROM tablename
+
+    WHERE columnname IS NULL;
+
+    SELECT columnname1, columnname2
+
+    FROM tablename
+
+    WHERE columnname IS NOT NULL;
+    ```
+
+#### Tip: The WHERE clause is essential for narrowing down results and retrieving only the data that meets specific criteria, making your queries more efficient and relevant.
+
+### Using the LIKE Pattern Matching Operator and Wildcards (`%` and `_`)
+
+The LIKE operator in SQL is used in the WHERE clause to search for a specified pattern in a column. It allows for wildcard characters to be used for more flexible matching.
+
+Provide a string pattern to match against the values in the specified column.
+
+The patterna starts with a character string, and can include `_` and `%` as wildcard characters.
+
+The underscore (`_`) represents a single character, while the percent sign (`%`) represents zero or more characters.
+
+To match any value that starts with 'a', you would use 'a%'.
+
+To match any value that ends with 'a', you would use '%a'.
+
+To match any value that contains 'a' anywhere, you would use '%a%'.
+
+To match a value with 'a' as the second character, you would use '\_a%'.
+
+To match a value with 'a' as the second to last character, you would use '%a\_'.
+
+To match a an value that starts with 'a' and ends with 'c', you would use 'a%c', or 'a_c' to match a value that starts with 'a', ends with 'c', and has exactly one character in between.
+
+Multiple wildcards can be used in a single pattern.
+
+### Syntax
+
+    ```sql
+
+    SELECT columnname1, columnname2
+
+    FROM tablename
+
+    WHERE columnname LIKE pattern;
+    ```
+
+### Using The BETWEEN Operator
+
+The BETWEEN operator in SQL is used in the WHERE clause to filter the result set within a certain range. It can be used with numeric, date, or text data types.
+
+Using BETWEEN, has some interesting properties:
+
+- It is inclusive, meaning it includes the boundary values specified in the range.
+- It can be used with numbers, dates, and text (strings).
+
+### Syntax
+
+    ```sql
+
+    SELECT columnname1, columnname2
+
+    FROM tablename
+
+    WHERE columnname BETWEEN value1 AND value2;
+    ```
+
+    If wanting to include years in a range, you would use:
+
+    ```sql
+    SELECT * FROM tablename
+    WHERE year BETWEEN 2000 AND 2020;
+    ```
+
+    This would return all rows where the year is between 2000 and 2020, inclusive of both years.
+
+    If using for inclusive text ranges like:
+
+    ```sql
+    SELECT * FROM tablename
+    WHERE name BETWEEN 'A' AND 'M';
+    ```
+
+    This would return all rows where the name starts with letters from A to M, inclusive.
+
+    It is a bit weird however, as if a name is EXACTLY "M", it would be included, but "MARY" would not, since it starts with "MA", which is after "M" in alphabetical order.
+
+## Using the AND operator
+
+The AND operator checks for multiple conditions in the WHERE clause. All conditions separated by AND must be true for a row to be included in the result set.
+
+### Syntax
+
+    ```sql
+
+    SELECT columnname1, columnname2
+
+    FROM tablename
+
+    WHERE name IS NOT NULL AND year BETWEEN 2000 AND 2020;
+    ```
+
+    ## OR Operator
+
+The OR operator checks for multiple conditions in the WHERE clause. If any of the conditions separated by OR is true, the row will be included in the result set.
+
+### Syntax
+
+    ```sql
+
+    SELECT columnname1, columnname2
+
+    FROM tablename
+
+    WHERE name IS NULL OR year < 2000;
+    ```
+
+#### Tip: Combining AND and OR operators can help create complex filtering criteria to retrieve specific data from a table.

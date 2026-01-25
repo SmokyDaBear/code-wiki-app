@@ -4,7 +4,7 @@ import {
   getAvailableSections,
   getDisplayName,
 } from "./notes";
-
+import homeIcon from "../assets/code-icons/home-icon.png";
 import { NoteSections } from "./sectionsIndex";
 // Define types for navigation links
 export type NavLink = {
@@ -24,7 +24,7 @@ export const generateSectionLinks = (): NavLink[] => {
   sectionLinks.push({
     text: "Home",
     href: "home.md",
-    emojiIcon: "🏠", // keep emoji for home (not part of NoteSections)
+    icon: homeIcon,
   });
 
   availableSections.forEach((section) => {
@@ -57,7 +57,9 @@ export const generateSectionLinks = (): NavLink[] => {
       if (!icon)
         try {
           sectionLink.emojiIcon =
-            "emojiIcon" in sectionInfo ? sectionInfo.emojiIcon : "📄";
+            "emojiIcon" in sectionInfo
+              ? (sectionInfo.emojiIcon as string)
+              : "📄";
         } catch {
           sectionLink.emojiIcon = "📁";
         }

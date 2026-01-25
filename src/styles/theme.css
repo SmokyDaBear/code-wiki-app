@@ -12,6 +12,7 @@
   --text-primary: #333333;
   --text-secondary: #6c757d;
   --text-muted: #9ca3af;
+  --text-opacity: rgb(245, 250, 249);
 
   /* Border Colors */
   --border-color: #e9ecef;
@@ -71,6 +72,7 @@
 
   --opacity-dark-5: rgba(0, 0, 0, 0.05);
   --opacity-dark-10: rgba(0, 0, 0, 0.1);
+  --opacity-dark-20: rgba(0, 0, 0, 0.2);
   --opacity-dark-50: rgba(0, 0, 0, 0.5);
 
   /* Shadow Variables */
@@ -97,10 +99,10 @@
   --border-medium: #4a4a4a;
 
   /* Accent Colors - Green Theme (Adjusted for dark) */
-  --accent-color: #5cbf60;
+  --accent-color: #3ca049;
   --accent-hover: #4a9f4e;
-  --accent-dark: #3d8b41;
-  --accent-light: #7dd87f;
+  --accent-dark: #073d22;
+  --accent-light: var(--accent-hover);
 
   /* Secondary Accent - Blue (Adjusted for dark) */
   --accent-blue: #64b5f6;

@@ -88,3 +88,4 @@ You can also use format specifiers to print different data types. Here are some 
 - `%f`: Floating-point number
 - `%c`: Character
 - `%s`: String
+- `%zu`: Unsigned integer used for sizes (e.g., the result of `sizeof` or `strlen`)

@@ -5,6 +5,7 @@ import remarkBreaks from "remark-breaks";
 import rehypeHighlight from "rehype-highlight";
 import rehypeRaw from "rehype-raw";
 import { getCleanTitle } from "../data/notes";
+import toast from "react-hot-toast";
 
 // Lazy load only the Markdown component
 const Markdown = lazy(() => import("react-markdown"));
@@ -60,20 +61,19 @@ function LazyMarkdown({
         if (href.includes("/")) {
           filename = href.split("/").pop() || href;
         }
-        console.log("Internal link clicked:", href, "-> normalized:", filename);
+        toast.success(`Navigating to ${filename}`);
 
         try {
           loadNote(filename);
         } catch (error) {
-          console.error(`Failed to load note: ${filename}`, error);
+          toast.error(`Failed to load note: ${filename} \n${error}`);
           try {
             loadNote(filename);
           } catch (fallbackError) {
-            console.error(
-              `Failed to load note with filename: ${filename}`,
-              fallbackError
+            toast.error(
+              `Failed to load note with filename: ${filename}\n${fallbackError}`
             );
-            alert(`Note not found: ${filename}`);
+            toast.error(`Note not found: ${filename}`);
           }
         }
       }

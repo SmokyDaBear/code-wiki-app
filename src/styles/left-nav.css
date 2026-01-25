@@ -1,18 +1,20 @@
 /* Left Navigation Styles */
 
 .left-nav {
-  width: 15%;
+  flex-shrink: 0;
+  width: max(20%, 350px);
+  max-width: 95vw;
   background: var(--bg-secondary);
   padding: 10px;
   box-sizing: border-box;
-  height: 100%;
+  max-height: 100%;
   overflow-y: auto;
   border-right: 1px solid var(--border-color);
+  animation: slideFromLeft 0.3s ease;
 }
-
 /* Dropdown Styles */
 .dropdown-parent {
-  margin: 2px 2px 8px;
+  margin: 1px 1px 2px;
   border-radius: 6px;
   overflow: hidden;
   background: var(--bg-primary);
@@ -23,7 +25,7 @@
 .dropdown-title {
   background: var(--accent-color);
   color: white;
-  padding: 12px 15px;
+  padding: 0.4rem 0.8rem;
   cursor: pointer;
   font-weight: 600;
   display: flex;
@@ -68,7 +70,7 @@
 .parent-link {
   background: var(--accent-color);
   color: white;
-  padding: 12px 15px;
+  padding: 0.3rem 0.8rem;
   margin-bottom: 8px;
   cursor: pointer;
   font-weight: 600;
@@ -116,6 +118,37 @@
   background: var(--accent-15);
   border-left: 4px solid var(--accent-color);
   padding-left: 24px;
+}
+
+/* Custom Notes Styles */
+.new-note-link {
+  font-weight: 600;
+  color: var(--accent-color);
+}
+
+.new-note-link:hover {
+  background: var(--accent-10);
+  color: var(--accent-hover);
+}
+
+.note-section {
+  margin-top: 8px;
+}
+
+.note-section-title {
+  padding: 8px 20px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  background: var(--bg-secondary);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.custom-note-link {
+  padding-left: 30px;
+  font-size: 13px;
   font-weight: 600;
   color: var(--accent-dark);
 }
@@ -130,7 +163,8 @@
 }
 
 /* Mobile Nav Toggle Styles */
-.mobile-nav-toggle {
+.mobile-nav-toggle,
+.toggle-btns {
   display: flex;
   gap: 8px;
   padding: 12px;
@@ -138,10 +172,11 @@
   border-bottom: 2px solid var(--border-color);
   position: sticky;
   top: 0;
-  z-index: 10;
+  z-index: 101;
 }
 
-.mobile-nav-btn {
+.mobile-nav-btn,
+.toggle-btn {
   flex: 1;
   padding: 8px 12px;
   border: 2px solid var(--border-color);
@@ -158,12 +193,14 @@
   gap: 6px;
 }
 
-.mobile-nav-btn:hover {
+.mobile-nav-btn:hover,
+.toggle-btn:hover {
   border-color: var(--accent-color);
   background: var(--bg-secondary);
 }
 
-.mobile-nav-btn.active {
+.mobile-nav-btn.active,
+.toggle-btn.active {
   border-color: var(--accent-color);
   background: var(--accent-color);
   color: white;

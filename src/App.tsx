@@ -4,7 +4,6 @@ import "./styles/markdown.css";
 import "./styles/responsive.css";
 import { SpinLoader } from "./Components/SpinLoader";
 import { LeftNav } from "./Components/LeftNav";
-import { RightSidebar } from "./Components/RightSidebar";
 import { MarkdownRenderer } from "./Components/MarkdownRenderer";
 import { NextLessonButton } from "./Components/NextLessonButton/NextLessonButton";
 import {
@@ -33,13 +32,20 @@ import {
   type UserPreferences,
 } from "./utils/userPreferences";
 import { applyCustomTheme } from "./utils/customTheme";
+import { TableOfContents } from "./Components/TableOfContents";
+import { NoteBuilder } from "./Components/CustomNotes/NoteBuilder";
+import { CustomNoteViewer } from "./Components/CustomNotes/CustomNoteViewer";
+import { searchCustomNotes } from "./utils/notesDb";
+import toast, { Toaster } from "react-hot-toast";
 
 function App() {
   const [currentNote, setCurrentNote] = useState<string | null>(null);
   const [currentNoteName, setCurrentNoteName] = useState<string>("home.md");
   const [noteHistory, setNoteHistory] = useState<string[]>(["home.md"]);
   const [currentSection, setCurrentSection] = useState<string | null>(null);
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [menuOpen, setmenuOpen] = useState(
+    window.matchMedia("(min-width: 768px)").matches
+  );
   const [searchResults, setSearchResults] = useState<SearchResult[]>([]);
   const [searchQuery, setSearchQuery] = useState<string>("");
   const [showSearchResults, setShowSearchResults] = useState(false);
@@ -68,6 +74,11 @@ function App() {
 
     // Apply saved theme
     applyTheme(userPreferences.theme);
+    if (userPreferences.hideScrollbar) {
+      document.body.classList.add("hide-scrollbar");
+    } else {
+      document.body.classList.remove("hide-scrollbar");
+    }
 
     // Watch for system theme changes if user selected system theme
     if (userPreferences.theme === "system") {
@@ -78,7 +89,7 @@ function App() {
       });
       return cleanup;
     }
-  }, [userPreferences.theme]);
+  }, [userPreferences.theme, userPreferences.hideScrollbar]);
 
   // Initialize from URL parameters or default
   useEffect(() => {
@@ -98,14 +109,34 @@ function App() {
         setCurrentSection(detectedSection);
         updateURL(noteFromUrl, detectedSection);
       } catch (error) {
-        console.error("Failed to load note from URL:", noteFromUrl, error);
+        toast.error(`Failed to load note from URL: ${noteFromUrl} \n${error}`);
         // Fall back to default
+        loadDefaultNote();
+      }
+    } else if (userPreferences.visitedNotes.length > 0) {
+      const lastVisitedNote =
+        userPreferences.visitedNotes[userPreferences.visitedNotes.length - 1];
+      try {
+        const noteHTML = retrieveNoteHTML(lastVisitedNote);
+        setCurrentNote(noteHTML);
+        setCurrentNoteName(lastVisitedNote);
+        setNoteHistory([lastVisitedNote]);
+
+        const detectedSection = getNoteSection(lastVisitedNote);
+        setCurrentSection(detectedSection);
+        updateURL(lastVisitedNote, detectedSection);
+      } catch (error) {
+        toast.error(
+          `Failed to load last visited note:
+              ${lastVisitedNote}\n
+              ${error}`
+        );
         loadDefaultNote();
       }
     } else {
       loadDefaultNote();
     }
-  }, [loadDefaultNote]);
+  }, [loadDefaultNote, userPreferences.visitedNotes]);
 
   // Style Up Next sections after markdown content is rendered
   useEffect(() => {
@@ -145,6 +176,21 @@ function App() {
       setNoteHistory((prev) => [...prev, note]);
       setCurrentNoteName(note);
     }
+    if (note === "new-note") {
+      setCurrentNote(note);
+      toast.success("Creating a new custom note");
+      return;
+    }
+
+    // Handle custom notes
+    if (note.startsWith("custom:")) {
+      setCurrentNote(note);
+      setCurrentSection("custom");
+      updateURL(note, "custom");
+      setmenuOpen(window.matchMedia("(min-width: 768px)").matches);
+      setShowSearchResults(false);
+      return;
+    }
 
     // Add to visited notes for reading history
     addVisitedNote(note);
@@ -157,9 +203,8 @@ function App() {
     updateURL(note, detectedSection);
 
     // Close mobile menu and search results when loading a note
-    setIsMobileMenuOpen(false);
+    setmenuOpen(window.matchMedia("(min-width: 768px)").matches);
     setShowSearchResults(false);
-
     // Small delay to show loading state
     setTimeout(() => {
       try {
@@ -178,20 +223,15 @@ function App() {
           styleUpNextSections();
         }, 50);
       } catch (error) {
-        console.error("Error loading note:", note, error);
+        toast.error(`Error loading note: ${note} \n${error}`);
         setCurrentNote("# Error\n\nNote not found: " + note);
       }
     }, 100);
   };
 
   const toggleMobileMenu = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen);
+    setmenuOpen(!menuOpen);
   };
-
-  const closeMobileMenu = () => {
-    setIsMobileMenuOpen(false);
-  };
-
   const styleUpNextSections = () => {
     // Find all h3 and h4 elements that contain "Up Next" text
     const headers = document.querySelectorAll(
@@ -223,16 +263,37 @@ function App() {
           mainContent.scrollTop = 0;
         }
       } catch (error) {
-        console.error("Error loading previous note:", previousNote, error);
+        toast.error(`Error loading previous note: ${previousNote} \n${error}`);
       }
     }
   };
 
-  const handleSearch = (query: string) => {
+  const handleSearch = async (query: string) => {
     setSearchQuery(query);
     if (query.trim()) {
       const results = searchNotes(query);
-      setSearchResults(results);
+
+      // Also search custom notes
+      const customResults = await searchCustomNotes(query);
+
+      // Convert custom notes to SearchResult format
+      const customSearchResults: SearchResult[] = customResults.map((note) => ({
+        filename: `custom:${note.id}`,
+        title: note.title,
+        section: note.section,
+        sectionIcon: null,
+        sectionEmojiIcon: "📒",
+        matches: [
+          {
+            context: note.preview,
+            lineNumber: 0,
+            highlightedText: note.preview,
+          },
+        ],
+        totalMatches: 1,
+      }));
+
+      setSearchResults([...results, ...customSearchResults]);
       setShowSearchResults(true);
     } else {
       setSearchResults([]);
@@ -318,10 +379,10 @@ function App() {
             className="section-icon-img"
           />
         )}
-        {!("icon" in sectionInfo) && "emojiIcon" in sectionInfo && (
+        {sectionInfo && !("icon" in sectionInfo) && "emojiIcon" in sectionInfo && (
           <span>{sectionInfo.emojiIcon}</span>
         )}{" "}
-        {sectionInfo.name} Notes
+        {sectionInfo.name}
       </span>
     ) : (
       "Learning Hub"
@@ -330,10 +391,11 @@ function App() {
 
   return (
     <>
+      <Toaster position="top-center" />
       <header>
         <div className="header-container">
           <button
-            className="hamburger-menu"
+            className={"hamburger " + (menuOpen ? " active" : "")}
             onClick={toggleMobileMenu}
             aria-label="Toggle navigation menu"
           >
@@ -352,51 +414,26 @@ function App() {
         </div>
       </header>
       <div className="body-container">
-        {/* Desktop Navigation */}
-        <LeftNav
-          setCurrentNote={loadNote}
-          currentSection={currentSection}
-          currentNoteName={currentNoteName}
-          onSearch={handleSearch}
-          onClearSearch={handleClearSearch}
-        />
-
         {/* Mobile Menu Overlay */}
-        {isMobileMenuOpen && (
-          <div className="mobile-overlay" onClick={closeMobileMenu}>
-            <div className="mobile-menu" onClick={(e) => e.stopPropagation()}>
-              <div className="mobile-menu-header">
-                <h2>Navigation</h2>
-                <button
-                  className="close-mobile-menu"
-                  onClick={closeMobileMenu}
-                  aria-label="Close navigation menu"
-                >
-                  ✕
-                </button>
-              </div>
-              <LeftNav
-                setCurrentNote={loadNote}
-                currentSection={currentSection}
+        {menuOpen && (
+          <LeftNav
+            setCurrentNote={loadNote}
+            currentSection={currentSection}
+            currentNoteName={currentNoteName}
+            onSearch={handleSearch}
+            onClearSearch={handleClearSearch}
+            rightSidebarContent={
+              <TableOfContents
+                currentNote={currentNote}
                 currentNoteName={currentNoteName}
-                onSearch={handleSearch}
-                onClearSearch={handleClearSearch}
-                isMobile={true}
-                rightSidebarContent={
-                  <RightSidebar
-                    currentNote={currentNote}
-                    currentNoteName={currentNoteName}
-                    onLoadNote={loadNote}
-                  />
-                }
+                onLoadNote={loadNote}
               />
-            </div>
-          </div>
+            }
+          />
         )}
 
-        <div className="center main">
-          {/* Navigation breadcrumb and back button */}
-          <div className="navigation-bar">
+        <div className={"center main" + (menuOpen ? " toc-open" : "")}>
+          <div className="back-bar">
             {noteHistory.length > 1 && (
               <button onClick={goBack} className="back-button">
                 ← Back
@@ -404,30 +441,28 @@ function App() {
             )}
             <span className="current-note">{displayName}</span>
           </div>
-
           {currentNote === null && <SpinLoader />}
-          {currentNote !== null && (
-            <div className="markdown-content">
-              <MarkdownRenderer
-                content={currentNote}
-                displayName={displayName}
-                languageDirectory={sectionInfo?.name}
-                styleUpNextSections={styleUpNextSections}
-                loadNote={loadNote}
-              />
-              <NextLessonButton
-                currentFilename={currentNoteName}
-                onLoadNote={loadNote}
-              />
-            </div>
+          {currentNote !== null &&
+            currentNote !== "new-note" &&
+            !currentNote.startsWith("custom:") && (
+              <div className="markdown-content">
+                <MarkdownRenderer
+                  content={currentNote}
+                  displayName={displayName}
+                  languageDirectory={sectionInfo?.name}
+                  styleUpNextSections={styleUpNextSections}
+                  loadNote={loadNote}
+                />
+                <NextLessonButton
+                  currentFilename={currentNoteName}
+                  onLoadNote={loadNote}
+                />
+              </div>
+            )}
+          {currentNote === "new-note" && <NoteBuilder />}
+          {currentNote?.startsWith("custom:") && (
+            <CustomNoteViewer noteId={currentNote.replace("custom:", "")} />
           )}
-        </div>
-        <div className="right-nav">
-          <RightSidebar
-            currentNote={currentNote}
-            currentNoteName={currentNoteName}
-            onLoadNote={loadNote}
-          />
         </div>
       </div>
       <footer>

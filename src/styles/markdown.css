@@ -1,19 +1,24 @@
 /* Markdown Content Styles */
 
 .center.main {
-  width: 70%;
-  padding: 20px;
+  width: 100%;
+  padding: 10px;
   box-sizing: border-box;
-  position: relative;
   overflow-y: auto;
-  height: 100%;
   background: var(--bg-primary);
   color: var(--text-primary);
+  transition: width 0.3s ease;
+  padding-bottom: 20vh;
+}
+.center.main.toc-open {
+  width: calc(100% - max(15%, 200px));
 }
 
 /* Smooth content transitions */
 .center.main .markdown-content {
   animation: fadeIn 0.3s ease-in-out;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /* Markdown Table Styles */

@@ -4,8 +4,6 @@
 
 #### Author: SmokyDaBear Check out my [GitHub](https://github.com/SmokyDaBear)
 
-#### Disclaimer: These notes are a collection of my personal learning journey and may contain simplifications or omissions. Always refer to official documentation for comprehensive information. Some of these notes were directly or indirectly assisted by AI tools like ChatGPT, or copied from other sources and then modified to fit my learning style. If you find any content that infringes on your rights, please contact me to have it removed or properly credited. You can reach me by email at [verdant-webworks@gmail.com](mailto:verdant-webworks@gmail.com).
-
 <br/>
 
 #### Want your own website, or help setting one up? Visit my Landing Page [Verdant Webworks](https://verdant-webworks.vercel.app/)
@@ -41,3 +39,5 @@ If you do decide to use for this repository and use it as a base for your own no
 _Happy Learning! 🎉_
 
 > Last updated: November 2025
+
+#### Disclaimer: These notes are a collection of my personal learning journey and may contain simplifications or omissions. Always refer to official documentation for comprehensive information. Some of these notes were directly or indirectly assisted by AI tools like ChatGPT, or copied from other sources and then modified to fit my learning style. If you find any content that infringes on your rights, please contact me to have it removed or properly credited. You can reach me by email at [verdant-webworks@gmail.com](mailto:verdant-webworks@gmail.com).

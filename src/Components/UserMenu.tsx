@@ -1,5 +1,8 @@
 import { useState, useRef, useEffect } from "react";
-import type { UserPreferences } from "../utils/userPreferences";
+import {
+  saveUserPreferences,
+  type UserPreferences,
+} from "../utils/userPreferences";
 import "../styles/modals.css";
 import { CustomTheme } from "./CustomTheme";
 
@@ -21,6 +24,9 @@ export function UserMenu({
   const [isOpen, setIsOpen] = useState(false);
   const [showClearConfirm, setShowClearConfirm] = useState(false);
   const [showCustomTheme, setShowCustomTheme] = useState(false);
+  const [hideScrollbar, setHideScrollbar] = useState(
+    preferences.hideScrollbar || false
+  );
   const menuRef = useRef<HTMLDivElement>(null);
 
   // Close menu when clicking outside
@@ -126,13 +132,28 @@ export function UserMenu({
                 }}
                 className="user-menu-item"
               >
-                <span className="user-menu-icon">📚</span>
                 Reading History
                 {preferences.visitedNotes.length > 0 && (
                   <span className="history-count">
                     {preferences.visitedNotes.length}
                   </span>
                 )}
+              </button>
+              <button
+                onClick={() => {
+                  preferences.hideScrollbar = !preferences.hideScrollbar;
+                  setHideScrollbar(preferences.hideScrollbar);
+
+                  if (preferences.hideScrollbar) {
+                    document.body.classList.add("hide-scrollbar");
+                  } else {
+                    document.body.classList.remove("hide-scrollbar");
+                  }
+                  saveUserPreferences(preferences);
+                }}
+                className="user-menu-item"
+              >
+                {hideScrollbar ? "Show Scrollbars" : "Hide Scrollbars"}
               </button>
             </div>
 

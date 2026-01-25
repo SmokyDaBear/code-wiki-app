@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { leftLinks } from "../data/data";
 import { NoteSections, type NoteSection } from "../data/sectionsIndex";
 import { SearchBar } from "./SearchBar";
+import { getAllNotes, type NoteMetadata } from "../utils/notesDb";
 import "../styles/left-nav.css";
 
 export function LeftNav({
@@ -10,7 +11,6 @@ export function LeftNav({
   currentNoteName,
   onSearch,
   onClearSearch,
-  isMobile,
   rightSidebarContent,
 }: {
   setCurrentNote: (note: string) => void;
@@ -18,11 +18,38 @@ export function LeftNav({
   currentNoteName?: string;
   onSearch?: (query: string) => void;
   onClearSearch?: () => void;
-  isMobile?: boolean;
   rightSidebarContent?: React.ReactNode;
 }) {
   const [activeDropdown, setActiveDropdown] = useState<number | null>(null);
-  const [mobileView, setMobileView] = useState<"chapters" | "page">("chapters");
+  const [selectedView, setselectedView] = useState<"chapters" | "page">(
+    "chapters"
+  );
+  const [customNoteSections, setCustomNoteSections] = useState<
+    Record<string, NoteMetadata[]>
+  >({});
+
+  // Load custom notes
+  useEffect(() => {
+    const loadCustomNotes = async () => {
+      try {
+        const notes = await getAllNotes();
+
+        // Group notes by section
+        const grouped: Record<string, NoteMetadata[]> = {};
+        notes.forEach((note) => {
+          if (!grouped[note.section]) {
+            grouped[note.section] = [];
+          }
+          grouped[note.section].push(note);
+        });
+        setCustomNoteSections(grouped);
+      } catch (error) {
+        console.error("Failed to load custom notes:", error);
+      }
+    };
+
+    loadCustomNotes();
+  }, []);
 
   // Update active dropdown based on current section
   useEffect(() => {
@@ -56,46 +83,88 @@ export function LeftNav({
 
   return (
     <div className="left-nav">
-      {isMobile && rightSidebarContent && (
-        <div className="mobile-nav-toggle">
-          <button
-            className={`mobile-nav-btn ${
-              mobileView === "chapters" ? "active" : ""
+      <div className="mobile-nav-toggle">
+        <button
+          className={`mobile-nav-btn ${selectedView === "chapters" ? "active" : ""
             }`}
-            onClick={() => setMobileView("chapters")}
-          >
-            All Chapters
-          </button>
-          <button
-            className={`mobile-nav-btn ${
-              mobileView === "page" ? "active" : ""
+          onClick={() => setselectedView("chapters")}
+        >
+          All Chapters
+        </button>
+        <button
+          className={`mobile-nav-btn ${selectedView === "page" ? "active" : ""
             }`}
-            onClick={() => setMobileView("page")}
-          >
-            On this page
-          </button>
-        </div>
-      )}
+          onClick={() => setselectedView("page")}
+        >
+          On this page
+        </button>
+      </div>
 
-      {(!isMobile || mobileView === "chapters") && (
+      {selectedView === "chapters" && (
         <>
           <SearchBar
             onSearch={handleSearch}
             onClear={handleClearSearch}
             placeholder="Search all notes..."
           />
+          <div
+            className={`dropdown-parent ${activeDropdown === 0 ? "active" : ""
+              }`}
+          >
+            <div className="dropdown-title" onClick={() => toggleDropdown(0)}>
+              <span className="section-arrow">
+                {activeDropdown === 0 ? "▼" : "▶"}
+                <span className="emoji-icon">📒</span>
+              </span>
+              <span>My Notes</span>
+            </div>
+            <div
+              className={`dropdown-children ${activeDropdown === 0 ? "expanded" : "collapsed"
+                }`}
+            >
+              <div
+                className="child-link new-note-link"
+                onClick={() => setCurrentNote("new-note")}
+              >
+                + New Note
+              </div>
+              {Object.keys(customNoteSections).length > 0 && (
+                <>
+                  {Object.entries(customNoteSections)
+                    .sort(([a], [b]) => a.localeCompare(b))
+                    .map(([sectionName, notes]) => (
+                      <div key={sectionName} className="note-section">
+                        <div className="note-section-title">{sectionName}</div>
+                        {notes.map((note) => (
+                          <div
+                            key={note.id}
+                            className={`child-link custom-note-link ${currentNoteName === `custom:${note.id}`
+                                ? "active"
+                                : ""
+                              }`}
+                            onClick={() => setCurrentNote(`custom:${note.id}`)}
+                          >
+                            {note.title}
+                          </div>
+                        ))}
+                      </div>
+                    ))}
+                </>
+              )}
+            </div>
+          </div>
 
           {leftLinks.map((link, index) => {
             if (link.children) {
-              const isActive = activeDropdown === index;
+              const isActive = activeDropdown === index + 1;
               return (
                 <div
                   className={`dropdown-parent ${isActive ? "active" : ""}`}
-                  key={index}
+                  key={index + 1}
                 >
                   <div
                     className="dropdown-title"
-                    onClick={() => toggleDropdown(index)}
+                    onClick={() => toggleDropdown(index + 1)}
                   >
                     <span className="section-arrow">
                       {isActive ? "▼" : "▶"}
@@ -116,15 +185,13 @@ export function LeftNav({
                     <span>{link.text}</span>
                   </div>
                   <div
-                    className={`dropdown-children ${
-                      isActive ? "expanded" : "collapsed"
-                    }`}
+                    className={`dropdown-children ${isActive ? "expanded" : "collapsed"
+                      }`}
                   >
                     {link.children.map((child, cIndex) => (
                       <p
-                        className={`child-link ${
-                          currentNoteName === child.href ? "active" : ""
-                        }`}
+                        className={`child-link ${currentNoteName === child.href ? "active" : ""
+                          }`}
                         key={cIndex}
                         onClick={() => child.href && setCurrentNote(child.href)}
                       >
@@ -137,9 +204,8 @@ export function LeftNav({
             } else {
               return (
                 <div
-                  className={`parent-link ${
-                    currentNoteName === link.href ? "active" : ""
-                  }`}
+                  className={`parent-link ${currentNoteName === link.href ? "active" : ""
+                    }`}
                   key={index}
                   onClick={() => link.href && setCurrentNote(link.href)}
                 >
@@ -161,7 +227,7 @@ export function LeftNav({
         </>
       )}
 
-      {isMobile && mobileView === "page" && rightSidebarContent && (
+      {selectedView === "page" && rightSidebarContent && (
         <div className="mobile-page-overview">{rightSidebarContent}</div>
       )}
     </div>

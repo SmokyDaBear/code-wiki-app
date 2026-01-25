@@ -2,21 +2,6 @@
 
 /* Mobile Responsive Styles */
 @media (max-width: 1200px) {
-  /* Show hamburger menu on mobile */
-  .hamburger-menu {
-    display: flex !important;
-    visibility: visible !important;
-    position: absolute;
-    left: 15px;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-
-  /* Hide desktop navigation on mobile */
-  .left-nav {
-    display: none;
-  }
-
   /* Show mobile overlay when active */
   .mobile-overlay {
     display: block !important;
@@ -66,34 +51,6 @@
     height: auto;
   }
 
-  /* Adjust mobile menu left nav styles */
-  .mobile-menu .left-nav {
-    display: block;
-    width: 100%;
-    padding: 0;
-    background-color: transparent;
-    height: auto;
-    overflow-y: visible;
-  }
-
-  .mobile-menu .dropdown-parent {
-    margin-bottom: 4px;
-  }
-
-  .mobile-menu .dropdown-title {
-    padding: 10px 15px;
-    font-size: 14px;
-  }
-
-  .mobile-menu .child-link {
-    padding: 8px 15px;
-    font-size: 13px;
-  }
-
-  .mobile-menu .child-link:hover {
-    padding-left: 18px;
-  }
-
   .mobile-menu .child-link.active {
     background-color: var(--success-bg);
     border-left: 4px solid var(--success-color);
@@ -106,17 +63,6 @@
     background-color: var(--success-bg-light);
     border-left: 4px solid var(--success-border);
   }
-
-  /* Hide right nav on mobile */
-  .right-nav {
-    display: none;
-  }
-
-  /* Mobile Search Styles */
-  .search-shortcut {
-    display: none;
-  }
-
   .search-results-overlay {
     padding: 20px 16px;
   }
@@ -177,26 +123,5 @@
   header h1 {
     font-size: 1rem;
     padding-left: 45px;
-  }
-
-  .hamburger-menu {
-    width: 25px;
-    height: 20px;
-    left: 10px;
-  }
-
-  .mobile-menu {
-    width: 95%;
-    padding: 4px;
-    max-width: none;
-  }
-
-  .center.main {
-    padding: 8px;
-  }
-
-  .navigation-bar {
-    padding: 8px;
-    gap: 10px;
   }
 }

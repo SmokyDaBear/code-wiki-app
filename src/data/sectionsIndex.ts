@@ -9,7 +9,13 @@ import tsIcon from "../assets/code-icons/ts-icon.png";
 import reactIcon from "../assets/code-icons/react-icon.png";
 import javaIcon from "../assets/code-icons/java-icon.png";
 import markdownIcon from "../assets/code-icons/md-icon.png";
-
+import postrgresIcon from "../assets/code-icons/postgres-icon.png";
+import dartIcon from "../assets/code-icons/dart-icon.png";
+import pythonIcon from "../assets/code-icons/python-icon.png";
+import expressIcon from "../assets/code-icons/express-icon.png";
+import xmlIcon from "../assets/code-icons/xml-icon.png";
+import computerScienceIcon from "../assets/code-icons/computer-science.png";
+import aboutIcon from "../assets/code-icons/about-icon.png";
 // Map of code logos for different sections
 
 export const CodeLogos = {
@@ -24,6 +30,13 @@ export const CodeLogos = {
   react: reactIcon,
   java: javaIcon,
   markdown: markdownIcon,
+  postgres: postrgresIcon,
+  dart: dartIcon,
+  python: pythonIcon,
+  express: expressIcon,
+  xml: xmlIcon,
+  computerScience: computerScienceIcon,
+  about: aboutIcon,
 };
 
 // Define note sections and their display names
@@ -38,8 +51,17 @@ export const NoteSections = {
   cpp: { name: "C++", icon: CodeLogos.cpp },
   react: { name: "React", icon: CodeLogos.react },
   java: { name: "Java", icon: CodeLogos.java },
-  "computer-science": { name: "Computer Science", emojiIcon: "💻" },
   markdown: { name: "Markdown", icon: CodeLogos.markdown },
+  postgres: { name: "PostgreSQL", icon: CodeLogos.postgres },
+  dart: { name: "Dart", icon: CodeLogos.dart },
+  python: { name: "Python", icon: CodeLogos.python },
+  express: { name: "Express.js", icon: CodeLogos.express },
+  xml: { name: "XML", icon: CodeLogos.xml },
+  "computer-science": {
+    name: "Computer Science",
+    icon: CodeLogos.computerScience,
+  },
+  about: { name: "About", icon: CodeLogos.about },
 } as const;
 
 export type NoteSection = keyof typeof NoteSections;

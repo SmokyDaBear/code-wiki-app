@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { getDisplayName, getNextLesson } from "../data/notes";
-import "../styles/right-nav.css";
+import "../styles/toc.css";
 
 interface TocItem {
   id: string;
@@ -14,7 +14,7 @@ interface NoteInfo {
   characterCount: number;
 }
 
-export function RightSidebar({
+export function TableOfContents({
   currentNote,
   currentNoteName,
   onLoadNote,

@@ -2,6 +2,7 @@
 export interface UserPreferences {
   username?: string;
   theme: "system" | "light" | "dark";
+  hideScrollbar?: boolean;
   allowsStorage: boolean;
   visitedNotes: string[];
   firstVisit: boolean;
@@ -71,6 +72,7 @@ export const getUserPreferences = (): UserPreferences => {
     allowsStorage: false,
     visitedNotes: [],
     firstVisit: true,
+    hideScrollbar: false,
   };
 
   if (!hasStoragePermission()) {
@@ -81,6 +83,7 @@ export const getUserPreferences = (): UserPreferences => {
     const stored = localStorage.getItem(STORAGE_KEY);
     if (stored) {
       const parsed = JSON.parse(stored);
+      console.log("Loaded user preferences:", parsed);
       return { ...defaultPrefs, ...parsed };
     }
   } catch {

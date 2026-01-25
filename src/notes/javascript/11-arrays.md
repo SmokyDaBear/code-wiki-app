@@ -223,10 +223,10 @@ Takes in two arguments:
 ```javascript
 const numbers = [1, 2, 3, 4];
 let intialValue = 0;
-const sum = numbers.reduce(
-  (accumulator, currentValue) => accumulator + currentValue,
-  intialValue
-);
+const sum = numbers.reduce((accumulator, currentValue, index) => {
+  console.log(index);
+  return accumulator + currentValue;
+}, intialValue);
 console.log(sum); // Output: 10
 ```
 

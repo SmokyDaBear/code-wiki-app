@@ -86,3 +86,59 @@ C does not have a built-in string data type. Instead, strings are represented as
 ```c
 char str[] = "Hello, World!"; // Example of a string (character array)
 ```
+
+## Type Conversion
+
+C allows for type conversion between different data types, either implicitly or explicitly.
+
+### Implicit Conversion
+
+Implicit conversion occurs when the compiler automatically converts one data type to another during operations.
+
+```c
+int a = 10;
+float b = 5.5f;
+float result = a + b; // 'a' is implicitly converted to float
+```
+
+### Explicit Conversion (Type Casting)
+
+Explicit conversion, or type casting, is when you manually convert one data type to another using a cast operator.
+
+The type that you want to convert to is placed in parentheses before the value to be converted.
+
+```c
+float a = 5.5f;
+int b = (int)a; // 'a' is explicitly cast to int, resulting in 5
+```
+
+Can also be used to convert a number into a character, however this uses the ASCII values of characters:
+
+```c
+int num = 65;
+char ch = (char)num; // 'ch' will be 'A' since 65 is the ASCII value for 'A'
+```
+
+The reverse of this is also possible:
+
+```c
+char ch = 'B';
+int num = (int)ch; // 'num' will be 66 since 'B' is 66 in ASCII
+```
+
+To convert a number as a literal string into an integer, you can use the `atoi` function from the `<stdlib.h>` library:
+
+```c
+#include <stdlib.h>
+char strNum[] = "1234";
+int num = atoi(strNum); // 'num' will be 1234 as an integer
+```
+
+And the reverse using the `sprintf` function from the `<stdio.h>` library:
+
+```c
+#include <stdio.h>
+int num = 5678;
+char strNum[10];
+sprintf(strNum, "%d", num); // 'strNum' will be "5678" as a string
+```

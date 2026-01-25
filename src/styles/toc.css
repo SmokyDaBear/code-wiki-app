@@ -1,20 +1,3 @@
-/* Right Navigation Sidebar Styles */
-
-.right-nav {
-  width: 15%;
-  background: var(--bg-secondary);
-  padding: 0;
-  box-sizing: border-box;
-  height: 100%;
-  overflow-y: auto;
-  border-left: 1px solid var(--border-color);
-}
-
-.right-sidebar {
-  width: 100%;
-  height: 100%;
-}
-
 .sidebar-section {
   padding: 15px;
   border-bottom: 1px solid var(--border-color);
