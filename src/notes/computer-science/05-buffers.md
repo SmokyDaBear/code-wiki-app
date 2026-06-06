@@ -71,4 +71,6 @@ void changeName(struct User* user, const char* newName) {
 
 If there is not input validation, a user could input a name longer than 10 characters, causing the overflow to overwrite the age, password, and displayName fields, leading to data corruption or security vulnerabilities. This happens because the struct stores its fields in contiguous memory locations, and overflowing one field can affect the others.
 
+Similarly, if this were a `changePassword()` function, it could cause part of the user's new password to overwrite the displayName field, leading to unexpected behavior when the program tries to access the displayName later, potentially exposing sensitive information or causing crashes.
+
 To combat this, validate the size of the input before writing it to the buffer, ensuring it does not exceed the allocated size.
